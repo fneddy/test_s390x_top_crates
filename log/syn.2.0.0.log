@@ -18,29 +18,29 @@ warning: refs/tags/2.0.0 31ebf3d6058d97741e99d6d358ded5eada35de78 is not a commi
    Compiling cc v1.2.23
    Compiling pkg-config v0.3.32
    Compiling quote v1.0.40
+   Compiling pin-project-lite v0.2.16
    Compiling vcpkg v0.2.15
    Compiling syn v2.0.101
-   Compiling pin-project-lite v0.2.16
    Compiling cfg-if v1.0.0
    Compiling bytes v1.10.1
    Compiling autocfg v1.4.0
    Compiling openssl-sys v0.9.108
-   Compiling bitflags v2.9.1
-   Compiling litemap v0.8.0
-   Compiling writeable v0.6.1
    Compiling memchr v2.7.4
+   Compiling litemap v0.8.0
+   Compiling bitflags v2.9.1
+   Compiling writeable v0.6.1
    Compiling slab v0.4.9
-   Compiling mio v1.0.3
    Compiling socket2 v0.5.9
+   Compiling mio v1.0.3
    Compiling icu_properties_data v2.0.0
+   Compiling itoa v1.0.15
    Compiling futures-core v0.3.31
    Compiling icu_normalizer_data v2.0.0
-   Compiling itoa v1.0.15
    Compiling tokio v1.45.0
-   Compiling fnv v1.0.7
    Compiling crossbeam-utils v0.8.21
-   Compiling openssl v0.10.72
+   Compiling fnv v1.0.7
    Compiling foreign-types-shared v0.1.1
+   Compiling openssl v0.10.72
    Compiling foreign-types v0.3.2
    Compiling http v0.2.12
    Compiling synstructure v0.13.2
@@ -49,37 +49,37 @@ warning: refs/tags/2.0.0 31ebf3d6058d97741e99d6d358ded5eada35de78 is not a commi
    Compiling zerofrom-derive v0.1.6
    Compiling yoke-derive v0.8.0
    Compiling zerovec-derive v0.11.1
+   Compiling zerofrom v0.1.6
    Compiling displaydoc v0.2.5
    Compiling openssl-macros v0.1.1
-   Compiling zerofrom v0.1.6
    Compiling yoke v0.8.0
-   Compiling smallvec v1.15.0
    Compiling zerovec v0.11.2
+   Compiling native-tls v0.2.14
    Compiling equivalent v1.0.2
    Compiling zerotrie v0.2.2
-   Compiling futures-io v0.3.31
-   Compiling native-tls v0.2.14
-   Compiling futures-sink v0.3.31
    Compiling httparse v1.10.1
-   Compiling futures-task v0.3.31
+   Compiling smallvec v1.15.0
+   Compiling futures-sink v0.3.31
    Compiling pin-utils v0.1.0
-   Compiling tinystr v0.8.1
-   Compiling potential_utf v0.1.2
+   Compiling futures-task v0.3.31
+   Compiling futures-io v0.3.31
    Compiling futures-util v0.3.31
+   Compiling tokio-util v0.7.15
+   Compiling tinystr v0.8.1
    Compiling icu_locale_core v2.0.0
+   Compiling potential_utf v0.1.2
    Compiling icu_collections v2.0.0
    Compiling icu_provider v2.0.0
-   Compiling icu_properties v2.0.0
    Compiling icu_normalizer v2.0.0
-   Compiling tokio-util v0.7.15
+   Compiling icu_properties v2.0.0
    Compiling indexmap v2.9.0
    Compiling tracing v0.1.41
-   Compiling log v0.4.27
    Compiling try-lock v0.2.5
-   Compiling serde v1.0.219
-   Compiling percent-encoding v2.3.1
    Compiling rustix v1.0.7
+   Compiling serde v1.0.219
    Compiling openssl-probe v0.1.6
+   Compiling percent-encoding v2.3.1
+   Compiling log v0.4.27
    Compiling form_urlencoded v1.2.1
    Compiling crossbeam-epoch v0.9.18
    Compiling want v0.3.1
@@ -88,50 +88,50 @@ warning: refs/tags/2.0.0 31ebf3d6058d97741e99d6d358ded5eada35de78 is not a commi
    Compiling http-body v0.4.6
    Compiling futures-channel v0.3.31
    Compiling errno v0.3.12
-   Compiling utf8_iter v1.0.4
    Compiling rayon-core v1.12.1
+   Compiling utf8_iter v1.0.4
+   Compiling tower-service v0.3.3
    Compiling httpdate v1.0.3
    Compiling linux-raw-sys v0.9.4
-   Compiling tower-service v0.3.3
    Compiling tokio-native-tls v0.3.1
-   Compiling hyper v0.14.32
    Compiling idna v1.0.3
+   Compiling hyper v0.14.32
    Compiling crossbeam-deque v0.8.6
    Compiling aho-corasick v1.1.3
    Compiling rustversion v1.0.20
-   Compiling anyhow v1.0.98
-   Compiling regex-syntax v0.8.5
-   Compiling base64 v0.21.7
-   Compiling ref-cast v1.0.24
    Compiling adler2 v2.0.0
-   Compiling termcolor v1.4.1
+   Compiling base64 v0.21.7
    Compiling syn v2.0.0 (/tmp/top100_artifacts/syn-2.0.0)
+   Compiling ref-cast v1.0.24
+   Compiling anyhow v1.0.98
+   Compiling termcolor v1.4.1
+   Compiling regex-syntax v0.8.5
    Compiling ryu v1.0.20
    Compiling serde_urlencoded v0.7.1
-   Compiling regex-automata v0.4.9
    Compiling syn-test-suite-feature-check v0.0.0 (/tmp/top100_artifacts/syn-2.0.0/tests/features/macro)
-   Compiling miniz_oxide v0.8.8
    Compiling rustls-pemfile v1.0.4
+   Compiling miniz_oxide v0.8.8
+   Compiling regex-automata v0.4.9
    Compiling hyper-tls v0.5.0
-   Compiling url v2.5.4
    Compiling xattr v1.5.0
+   Compiling url v2.5.4
    Compiling ref-cast-impl v1.0.24
+   Compiling filetime v0.2.25
    Compiling encoding_rs v0.8.35
    Compiling crc32fast v1.4.2
-   Compiling filetime v0.2.25
    Compiling console v0.15.11
-   Compiling mime v0.3.17
    Compiling either v1.15.0
+   Compiling sync_wrapper v0.1.2
    Compiling same-file v1.0.6
    Compiling ipnet v2.11.0
+   Compiling mime v0.3.17
    Compiling similar v2.7.0
-   Compiling sync_wrapper v0.1.2
-   Compiling reqwest v0.11.27
    Compiling insta v1.43.1
+   Compiling reqwest v0.11.27
    Compiling walkdir v2.5.0
    Compiling rayon v1.10.0
-   Compiling tar v0.4.44
    Compiling flate2 v1.1.1
+   Compiling tar v0.4.44
    Compiling regex v1.11.1
    Compiling syn-test-suite v0.0.0 (/tmp/top100_artifacts/syn-2.0.0/tests/features)
    Compiling automod v1.0.15
@@ -5730,21 +5730,26 @@ warning: field `0` is never read
 
 warning: `syn` (lib test) generated 503 warnings (503 duplicates)
 warning: `syn` (lib) generated 503 warnings (90 duplicates) (run `cargo fix --lib -p syn` to apply 1 suggestion)
-warning: unexpected `cfg` condition name: `syn_disable_nightly_tests`
- --> tests/zzz_stable.rs:1:8
-  |
-1 | #![cfg(syn_disable_nightly_tests)]
-  |        ^^^^^^^^^^^^^^^^^^^^^^^^^
-  |
-  = help: expected names are: `docsrs`, `feature`, and `test` and 31 more
-  = help: consider using a Cargo feature instead
-  = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
-           [lints.rust]
-           unexpected_cfgs = { level = "warn", check-cfg = ['cfg(syn_disable_nightly_tests)'] }
-  = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(syn_disable_nightly_tests)");` to the top of the `build.rs`
-  = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
-  = note: `#[warn(unexpected_cfgs)]` on by default
+error[E0425]: cannot find function `parse_file` in crate `syn`
+   --> tests/crates/main.rs:81:22
+    |
+81  |         let _ = syn::parse_file(&contents);
+    |                      ^^^^^^^^^^ not found in `syn`
+    |
+note: found an item that was configured out
+   --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:952:8
+    |
+952 | pub fn parse_file(mut content: &str) -> Result<File> {
+    |        ^^^^^^^^^^
+note: the item is gated here
+   --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:950:1
+    |
+950 | #[cfg(all(feature = "parsing", feature = "full"))]
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+For more information about this error, try `rustc --explain E0425`.
+error: could not compile `syn` (test "crates") due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
 error[E0433]: failed to resolve: could not find `FnArg` in `syn`
     --> tests/macros/../debug/gen.rs:1847:18
      |
@@ -8407,6 +8412,34 @@ note: the item is gated behind the `full` feature
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
 
+error[E0412]: cannot find type `Block` in crate `syn`
+   --> tests/macros/../debug/gen.rs:300:26
+    |
+300 | impl Debug for Lite<syn::Block> {
+    |                          ^^^^^ not found in `syn`
+    |
+note: found an item that was configured out
+   --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:23
+    |
+475 | pub use crate::stmt::{Block, Local, LocalInit, Stmt, StmtMacro};
+    |                       ^^^^^
+note: the item is gated behind the `full` feature
+   --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
+    |
+474 | #[cfg(feature = "full")]
+    |       ^^^^^^^^^^^^^^^^
+help: there is an enum variant `crate::Expr::Block` and 3 others; try using the variant's enum
+    |
+300 - impl Debug for Lite<syn::Block> {
+300 + impl Debug for Lite<crate::Expr> {
+    |
+300 - impl Debug for Lite<syn::Block> {
+300 + impl Debug for Lite<syn::Expr> {
+    |
+300 - impl Debug for Lite<syn::Block> {
+300 + impl Debug for Lite<tar::EntryType> {
+    |
+
 error[E0412]: cannot find type `UseGroup` in crate `syn`
     --> tests/macros/../debug/gen.rs:4481:26
      |
@@ -8536,68 +8569,61 @@ note: the item is gated behind the `full` feature
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
 
-error[E0425]: cannot find function `parse_file` in crate `syn`
-   --> tests/test_shebang.rs:9:21
-    |
-9   |     let file = syn::parse_file(content).unwrap();
-    |                     ^^^^^^^^^^ not found in `syn`
-    |
-note: found an item that was configured out
-   --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:952:8
-    |
-952 | pub fn parse_file(mut content: &str) -> Result<File> {
-    |        ^^^^^^^^^^
-note: the item is gated here
-   --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:950:1
-    |
-950 | #[cfg(all(feature = "parsing", feature = "full"))]
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-error[E0425]: cannot find function `parse_file` in crate `syn`
-   --> tests/test_shebang.rs:31:21
-    |
-31  |     let file = syn::parse_file(content).unwrap();
-    |                     ^^^^^^^^^^ not found in `syn`
-    |
-note: found an item that was configured out
-   --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:952:8
-    |
-952 | pub fn parse_file(mut content: &str) -> Result<File> {
-    |        ^^^^^^^^^^
-note: the item is gated here
-   --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:950:1
-    |
-950 | #[cfg(all(feature = "parsing", feature = "full"))]
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-warning: `syn` (test "zzz_stable") generated 1 warning
 error[E0412]: cannot find type `Block` in crate `syn`
-   --> tests/macros/../debug/gen.rs:300:26
-    |
-300 | impl Debug for Lite<syn::Block> {
-    |                          ^^^^^ not found in `syn`
-    |
+    --> tests/macros/../debug/gen.rs:3865:39
+     |
+3865 |                     struct Print(syn::Block);
+     |                                       ^^^^^ not found in `syn`
+     |
 note: found an item that was configured out
-   --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:23
-    |
-475 | pub use crate::stmt::{Block, Local, LocalInit, Stmt, StmtMacro};
-    |                       ^^^^^
+    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:23
+     |
+475  | pub use crate::stmt::{Block, Local, LocalInit, Stmt, StmtMacro};
+     |                       ^^^^^
 note: the item is gated behind the `full` feature
-   --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
-    |
-474 | #[cfg(feature = "full")]
-    |       ^^^^^^^^^^^^^^^^
+    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
+     |
+474  | #[cfg(feature = "full")]
+     |       ^^^^^^^^^^^^^^^^
 help: there is an enum variant `crate::Expr::Block` and 3 others; try using the variant's enum
-    |
-300 - impl Debug for Lite<syn::Block> {
-300 + impl Debug for Lite<crate::Expr> {
-    |
-300 - impl Debug for Lite<syn::Block> {
-300 + impl Debug for Lite<syn::Expr> {
-    |
-300 - impl Debug for Lite<syn::Block> {
-300 + impl Debug for Lite<tar::EntryType> {
-    |
+     |
+3865 -                     struct Print(syn::Block);
+3865 +                     struct Print(crate::Expr);
+     |
+3865 -                     struct Print(syn::Block);
+3865 +                     struct Print(syn::Expr);
+     |
+3865 -                     struct Print(syn::Block);
+3865 +                     struct Print(tar::EntryType);
+     |
+
+error[E0412]: cannot find type `Block` in crate `syn`
+    --> tests/macros/../debug/gen.rs:3968:31
+     |
+3968 |             struct Print(syn::Block);
+     |                               ^^^^^ not found in `syn`
+     |
+note: found an item that was configured out
+    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:23
+     |
+475  | pub use crate::stmt::{Block, Local, LocalInit, Stmt, StmtMacro};
+     |                       ^^^^^
+note: the item is gated behind the `full` feature
+    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
+     |
+474  | #[cfg(feature = "full")]
+     |       ^^^^^^^^^^^^^^^^
+help: there is an enum variant `crate::Expr::Block` and 3 others; try using the variant's enum
+     |
+3968 -             struct Print(syn::Block);
+3968 +             struct Print(crate::Expr);
+     |
+3968 -             struct Print(syn::Block);
+3968 +             struct Print(syn::Expr);
+     |
+3968 -             struct Print(syn::Block);
+3968 +             struct Print(tar::EntryType);
+     |
 
 error[E0609]: no field `attrs` on type `&ExprArray`
    --> tests/macros/../debug/gen.rs:440:26
@@ -8766,62 +8792,6 @@ error[E0609]: no field `movability` on type `&ExprClosure`
     |
 585 |                 if _val.movability.is_some() {
     |                         ^^^^^^^^^^ unknown field
-
-error[E0412]: cannot find type `Block` in crate `syn`
-    --> tests/macros/../debug/gen.rs:3865:39
-     |
-3865 |                     struct Print(syn::Block);
-     |                                       ^^^^^ not found in `syn`
-     |
-note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:23
-     |
-475  | pub use crate::stmt::{Block, Local, LocalInit, Stmt, StmtMacro};
-     |                       ^^^^^
-note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
-     |
-474  | #[cfg(feature = "full")]
-     |       ^^^^^^^^^^^^^^^^
-help: there is an enum variant `crate::Expr::Block` and 3 others; try using the variant's enum
-     |
-3865 -                     struct Print(syn::Block);
-3865 +                     struct Print(crate::Expr);
-     |
-3865 -                     struct Print(syn::Block);
-3865 +                     struct Print(syn::Expr);
-     |
-3865 -                     struct Print(syn::Block);
-3865 +                     struct Print(tar::EntryType);
-     |
-
-error[E0412]: cannot find type `Block` in crate `syn`
-    --> tests/macros/../debug/gen.rs:3968:31
-     |
-3968 |             struct Print(syn::Block);
-     |                               ^^^^^ not found in `syn`
-     |
-note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:23
-     |
-475  | pub use crate::stmt::{Block, Local, LocalInit, Stmt, StmtMacro};
-     |                       ^^^^^
-note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
-     |
-474  | #[cfg(feature = "full")]
-     |       ^^^^^^^^^^^^^^^^
-help: there is an enum variant `crate::Expr::Block` and 3 others; try using the variant's enum
-     |
-3968 -             struct Print(syn::Block);
-3968 +             struct Print(crate::Expr);
-     |
-3968 -             struct Print(syn::Block);
-3968 +             struct Print(syn::Expr);
-     |
-3968 -             struct Print(syn::Block);
-3968 +             struct Print(tar::EntryType);
-     |
 
 error[E0609]: no field `asyncness` on type `&ExprClosure`
    --> tests/macros/../debug/gen.rs:588:25
@@ -9723,23 +9693,6 @@ error[E0609]: no field `else_branch` on type `ExprIf`
 1312 |         if let Some(val) = &self.value.else_branch {
      |                                        ^^^^^^^^^^^ unknown field
 
-error[E0432]: unresolved import `syn::TraitItemFn`
-   --> tests/test_receiver.rs:6:24
-    |
-6   | use syn::{parse_quote, TraitItemFn};
-    |                        ^^^^^^^^^^^ no `TraitItemFn` in the root
-    |
-note: found an item that was configured out
-   --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:61
-    |
-387 |     Signature, StaticMutability, TraitItem, TraitItemConst, TraitItemFn, TraitItemMacro,
-    |                                                             ^^^^^^^^^^^
-note: the item is gated behind the `full` feature
-   --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
-    |
-381 | #[cfg(feature = "full")]
-    |       ^^^^^^^^^^^^^^^^
-
 error[E0609]: no field `attrs` on type `ExprInfer`
     --> tests/macros/../debug/gen.rs:1343:24
      |
@@ -10160,6 +10113,14 @@ error[E0609]: no field `expr` on type `ExprYield`
 1692 |         if let Some(val) = &self.value.expr {
      |                                        ^^^^ unknown field
 
+error[E0277]: `syn::Lit` doesn't implement `Debug`
+  --> tests/test_lit.rs:38:37
+   |
+38 |             wrong => panic!("{:?}", wrong),
+   |                                     ^^^^^ `syn::Lit` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+   |
+   = help: the trait `Debug` is not implemented for `syn::Lit`
+
 error[E0277]: `syn::Type` doesn't implement `Debug`
     --> tests/test_ty.rs:15:49
      |
@@ -10192,6 +10153,14 @@ note: required by a bound in `Result::<T, E>::unwrap_err`
 1200 |         T: fmt::Debug,
      |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
 
+error[E0277]: `syn::Lit` doesn't implement `Debug`
+  --> tests/test_lit.rs:77:37
+   |
+77 |             wrong => panic!("{:?}", wrong),
+   |                                     ^^^^^ `syn::Lit` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+   |
+   = help: the trait `Debug` is not implemented for `syn::Lit`
+
 error[E0277]: `syn::Type` doesn't implement `Debug`
     --> tests/test_ty.rs:17:47
      |
@@ -10207,6 +10176,38 @@ note: required by a bound in `Result::<T, E>::unwrap_err`
 1199 |     where
 1200 |         T: fmt::Debug,
      |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
+
+error[E0277]: `syn::Lit` doesn't implement `Debug`
+   --> tests/test_lit.rs:107:37
+    |
+107 |             wrong => panic!("{:?}", wrong),
+    |                                     ^^^^^ `syn::Lit` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+    |
+    = help: the trait `Debug` is not implemented for `syn::Lit`
+
+error[E0277]: `syn::Lit` doesn't implement `Debug`
+   --> tests/test_lit.rs:131:37
+    |
+131 |             wrong => panic!("{:?}", wrong),
+    |                                     ^^^^^ `syn::Lit` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+    |
+    = help: the trait `Debug` is not implemented for `syn::Lit`
+
+error[E0277]: `syn::Lit` doesn't implement `Debug`
+   --> tests/test_lit.rs:158:37
+    |
+158 |             wrong => panic!("{:?}", wrong),
+    |                                     ^^^^^ `syn::Lit` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+    |
+    = help: the trait `Debug` is not implemented for `syn::Lit`
+
+error[E0277]: `syn::Lit` doesn't implement `Debug`
+   --> tests/test_lit.rs:198:37
+    |
+198 |             wrong => panic!("{:?}", wrong),
+    |                                     ^^^^^ `syn::Lit` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+    |
+    = help: the trait `Debug` is not implemented for `syn::Lit`
 
 error[E0277]: `syn::Type` doesn't implement `Debug`
     --> tests/test_ty.rs:277:53
@@ -10240,227 +10241,45 @@ note: required by a bound in `Result::<T, E>::unwrap_err`
 1200 |         T: fmt::Debug,
      |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
 
-Some errors have detailed explanations: E0412, E0425, E0433, E0609.
+error[E0277]: `LitStr` doesn't implement `Debug`
+    --> tests/test_lit.rs:268:47
+     |
+268  |     let err = syn::parse_str::<LitStr>("...").unwrap_err();
+     |                                               ^^^^^^^^^^ `LitStr` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+     |
+     = help: the trait `Debug` is not implemented for `LitStr`
+note: required by a bound in `Result::<T, E>::unwrap_err`
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
+     |
+1198 |     pub fn unwrap_err(self) -> E
+     |            ---------- required by a bound in this associated function
+1199 |     where
+1200 |         T: fmt::Debug,
+     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
+
+error[E0277]: `LitStr` doesn't implement `Debug`
+    --> tests/test_lit.rs:271:45
+     |
+271  |     let err = syn::parse_str::<LitStr>("5").unwrap_err();
+     |                                             ^^^^^^^^^^ `LitStr` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+     |
+     = help: the trait `Debug` is not implemented for `LitStr`
+note: required by a bound in `Result::<T, E>::unwrap_err`
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
+     |
+1198 |     pub fn unwrap_err(self) -> E
+     |            ---------- required by a bound in this associated function
+1199 |     where
+1200 |         T: fmt::Debug,
+     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
+
+Some errors have detailed explanations: E0412, E0433, E0609.
 For more information about an error, try `rustc --explain E0412`.
-error: could not compile `syn` (test "test_shebang") due to 405 previous errors
-warning: build failed, waiting for other jobs to finish...
+error: could not compile `syn` (test "test_grouping") due to 403 previous errors
 Some errors have detailed explanations: E0277, E0412, E0433, E0609.
 For more information about an error, try `rustc --explain E0277`.
 error: could not compile `syn` (test "test_ty") due to 408 previous errors
-error[E0277]: the trait bound `ExprRange: Parse` is not satisfied
-  --> tests/test_expr.rs:23:25
-   |
-23 |     snapshot!(tokens as ExprRange, @r###"
-   |                         ^^^^^^^^^ the trait `Parse` is not implemented for `ExprRange`
-   |
-   = help: the following other types implement trait `Parse`:
-             Abstract
-             AndAnd
-             AndEq
-             AngleBracketedGenericArguments
-             As
-             At
-             Auto
-             BareFnArg
-           and 163 others
-note: required by a bound in `Tokens::parse`
-  --> tests/macros/mod.rs:66:17
-   |
-66 |     fn parse<T: Parse>(self) -> Result<T>;
-   |                 ^^^^^ required by this bound in `Tokens::parse`
-
-error[E0369]: binary operation `==` cannot be applied to type `Expr`
-   --> tests/test_expr.rs:85:9
-    |
-85  |         assert_eq!(expected, syn::parse_str(input).unwrap());
-    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    |         |
-    |         Expr
-    |         _
-    |
-note: the foreign item type `Expr` doesn't implement `PartialEq<_>`
-   --> /tmp/top100_artifacts/syn-2.0.0/src/expr.rs:12:1
-    |
-12  | / ast_enum_of_structs! {
-13  | |     /// A Rust expression.
-14  | |     ///
-15  | |     /// *This type is available only if Syn is built with the `"derive"` or `"full"`
-...   |
-240 | | }
-    | |_^ not implement `PartialEq<_>`
-    = note: this error originates in the macro `assert_eq` which comes from the expansion of the macro `ast_enum_of_structs` (in Nightly builds, run with -Z macro-backtrace for more info)
-
-error[E0277]: `Expr` doesn't implement `Debug`
-  --> tests/test_expr.rs:85:9
-   |
-85 |         assert_eq!(expected, syn::parse_str(input).unwrap());
-   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `Expr` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-   |
-   = help: the trait `Debug` is not implemented for `Expr`
-   = note: this error originates in the macro `assert_eq` (in Nightly builds, run with -Z macro-backtrace for more info)
-
-error[E0369]: binary operation `==` cannot be applied to type `Expr`
-   --> tests/test_expr.rs:96:9
-    |
-96  |         assert_eq!(expected, syn::parse2(tokens).unwrap());
-    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-    |         |
-    |         Expr
-    |         _
-    |
-note: the foreign item type `Expr` doesn't implement `PartialEq<_>`
-   --> /tmp/top100_artifacts/syn-2.0.0/src/expr.rs:12:1
-    |
-12  | / ast_enum_of_structs! {
-13  | |     /// A Rust expression.
-14  | |     ///
-15  | |     /// *This type is available only if Syn is built with the `"derive"` or `"full"`
-...   |
-240 | | }
-    | |_^ not implement `PartialEq<_>`
-    = note: this error originates in the macro `assert_eq` which comes from the expansion of the macro `ast_enum_of_structs` (in Nightly builds, run with -Z macro-backtrace for more info)
-
-error[E0277]: `Expr` doesn't implement `Debug`
-  --> tests/test_expr.rs:96:9
-   |
-96 |         assert_eq!(expected, syn::parse2(tokens).unwrap());
-   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `Expr` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-   |
-   = help: the trait `Debug` is not implemented for `Expr`
-   = note: this error originates in the macro `assert_eq` (in Nightly builds, run with -Z macro-backtrace for more info)
-
-error[E0277]: `Expr` doesn't implement `Debug`
-    --> tests/test_expr.rs:292:45
-     |
-292  |     syn::parse_str::<Expr>("|| &x as T[0]").unwrap_err();
-     |                                             ^^^^^^^^^^ `Expr` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-     |
-     = help: the trait `Debug` is not implemented for `Expr`
-note: required by a bound in `Result::<T, E>::unwrap_err`
-    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
-     |
-1198 |     pub fn unwrap_err(self) -> E
-     |            ---------- required by a bound in this associated function
-1199 |     where
-1200 |         T: fmt::Debug,
-     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
-
-error[E0277]: `Expr` doesn't implement `Debug`
-    --> tests/test_expr.rs:293:45
-     |
-293  |     syn::parse_str::<Expr>("|| () as ()()").unwrap_err();
-     |                                             ^^^^^^^^^^ `Expr` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-     |
-     = help: the trait `Debug` is not implemented for `Expr`
-note: required by a bound in `Result::<T, E>::unwrap_err`
-    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
-     |
-1198 |     pub fn unwrap_err(self) -> E
-     |            ---------- required by a bound in this associated function
-1199 |     where
-1200 |         T: fmt::Debug,
-     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
-
-error[E0277]: `Expr` doesn't implement `Debug`
-    --> tests/test_expr.rs:303:35
-     |
-303  |     syn::parse_str::<Expr>("..=").unwrap_err();
-     |                                   ^^^^^^^^^^ `Expr` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-     |
-     = help: the trait `Debug` is not implemented for `Expr`
-note: required by a bound in `Result::<T, E>::unwrap_err`
-    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
-     |
-1198 |     pub fn unwrap_err(self) -> E
-     |            ---------- required by a bound in this associated function
-1199 |     where
-1200 |         T: fmt::Debug,
-     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
-
-error[E0277]: `Expr` doesn't implement `Debug`
-    --> tests/test_expr.rs:305:37
-     |
-305  |     syn::parse_str::<Expr>("lo..=").unwrap_err();
-     |                                     ^^^^^^^^^^ `Expr` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-     |
-     = help: the trait `Debug` is not implemented for `Expr`
-note: required by a bound in `Result::<T, E>::unwrap_err`
-    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
-     |
-1198 |     pub fn unwrap_err(self) -> E
-     |            ---------- required by a bound in this associated function
-1199 |     where
-1200 |         T: fmt::Debug,
-     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
-
-error[E0277]: `Expr` doesn't implement `Debug`
-    --> tests/test_expr.rs:308:35
-     |
-308  |     syn::parse_str::<Expr>("...").unwrap_err();
-     |                                   ^^^^^^^^^^ `Expr` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-     |
-     = help: the trait `Debug` is not implemented for `Expr`
-note: required by a bound in `Result::<T, E>::unwrap_err`
-    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
-     |
-1198 |     pub fn unwrap_err(self) -> E
-     |            ---------- required by a bound in this associated function
-1199 |     where
-1200 |         T: fmt::Debug,
-     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
-
-error[E0277]: `Expr` doesn't implement `Debug`
-    --> tests/test_expr.rs:309:37
-     |
-309  |     syn::parse_str::<Expr>("...hi").unwrap_err();
-     |                                     ^^^^^^^^^^ `Expr` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-     |
-     = help: the trait `Debug` is not implemented for `Expr`
-note: required by a bound in `Result::<T, E>::unwrap_err`
-    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
-     |
-1198 |     pub fn unwrap_err(self) -> E
-     |            ---------- required by a bound in this associated function
-1199 |     where
-1200 |         T: fmt::Debug,
-     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
-
-error[E0277]: `Expr` doesn't implement `Debug`
-    --> tests/test_expr.rs:310:37
-     |
-310  |     syn::parse_str::<Expr>("lo...").unwrap_err();
-     |                                     ^^^^^^^^^^ `Expr` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-     |
-     = help: the trait `Debug` is not implemented for `Expr`
-note: required by a bound in `Result::<T, E>::unwrap_err`
-    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
-     |
-1198 |     pub fn unwrap_err(self) -> E
-     |            ---------- required by a bound in this associated function
-1199 |     where
-1200 |         T: fmt::Debug,
-     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
-
-error[E0277]: `Expr` doesn't implement `Debug`
-    --> tests/test_expr.rs:311:39
-     |
-311  |     syn::parse_str::<Expr>("lo...hi").unwrap_err();
-     |                                       ^^^^^^^^^^ `Expr` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-     |
-     = help: the trait `Debug` is not implemented for `Expr`
-note: required by a bound in `Result::<T, E>::unwrap_err`
-    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
-     |
-1198 |     pub fn unwrap_err(self) -> E
-     |            ---------- required by a bound in this associated function
-1199 |     where
-1200 |         T: fmt::Debug,
-     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
-
-Some errors have detailed explanations: E0277, E0369, E0412, E0433, E0609.
-error: could not compile `syn` (test "test_expr") due to 416 previous errors
-Some errors have detailed explanations: E0412, E0432, E0433, E0609.
-error: could not compile `syn` (test "test_receiver") due to 404 previous errors
+error: could not compile `syn` (test "test_lit") due to 411 previous errors
 + RESULT=101
 + cd /tmp/top100_artifacts
 + rm -rf /tmp/top100_artifacts/syn-2.0.0

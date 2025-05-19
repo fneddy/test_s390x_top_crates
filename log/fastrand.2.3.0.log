@@ -12,8 +12,8 @@
       Adding rand v0.8.5 (available: v0.9.1)
     Blocking waiting for file lock on package cache
    Compiling libc v0.2.172
-   Compiling cfg-if v1.0.0
    Compiling zerocopy v0.8.25
+   Compiling cfg-if v1.0.0
    Compiling fastrand v2.3.0 (/tmp/top100_artifacts/fastrand-2.3.0)
    Compiling getrandom v0.2.16
    Compiling rand_core v0.6.4
@@ -21,7 +21,7 @@
    Compiling ppv-lite86 v0.2.21
    Compiling rand_chacha v0.3.1
    Compiling rand v0.8.5
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 9.77s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 9.50s
      Running unittests src/lib.rs (target/debug/deps/fastrand-530c3c5668fb0c45)
 
 running 0 tests
@@ -38,20 +38,20 @@ test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
      Running tests/smoke.rs (target/debug/deps/smoke-2459086dc6830519)
 
 running 12 tests
-test bool ... ok
 test choice ... ok
-test choose_multiple ... ok
 test fill ... ok
-test i8 ... ok
-test rng_init ... ok
+test bool ... ok
 test rng ... ok
+test choose_multiple ... ok
+test rng_init ... ok
+test i8 ... ok
 test u8 ... ok
 test with_seed ... ok
 test u32 ... ok
 test u64 ... ok
 test u128 ... ok
 
-test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 6.44s
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 5.90s
 
 + RESULT=0
 + cd /tmp/top100_artifacts

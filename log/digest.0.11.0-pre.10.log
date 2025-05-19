@@ -5,13 +5,12 @@
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
-    Blocking waiting for file lock on package cache
    Compiling typenum v1.18.0
    Compiling hybrid-array v0.3.0
    Compiling crypto-common v0.2.0-rc.2
    Compiling block-buffer v0.11.0-rc.4
    Compiling digest v0.11.0-pre.10 (/tmp/top100_artifacts/digest-0.11.0-pre.10)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.09s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.82s
      Running unittests src/lib.rs (target/debug/deps/digest-75515c272054db55)
 
 running 0 tests

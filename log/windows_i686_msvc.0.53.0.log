@@ -7,9 +7,8 @@
 + cargo +stable test ''
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
    Compiling windows_i686_msvc v0.53.0 (/tmp/top100_artifacts/windows_i686_msvc-0.53.0)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.15s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.98s
      Running unittests src/lib.rs (target/debug/deps/windows_i686_msvc-be3993f940070e7f)
 
 running 0 tests

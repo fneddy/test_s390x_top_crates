@@ -6,13 +6,14 @@
      Removed 0 files
 + cargo +stable test ''
     Updating crates.io index
+    Blocking waiting for file lock on package cache
      Locking 2 packages to latest compatible versions
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
    Compiling semver v1.0.26
    Compiling doc-comment v0.3.3
    Compiling rustc_version v0.4.1 (/tmp/top100_artifacts/rustc_version-0.4.1)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.90s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.95s
      Running unittests src/lib.rs (target/debug/deps/rustc_version-36d7cff7b86146d4)
 
 running 0 tests
@@ -23,12 +24,9 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 
 running 28 tests
 test parse_1_0_0 ... ok
-test parse_1_16_0_nightly ... ok
-test parse_1_47_0_stable ... ok
 test parse_debian_buster ... ok
+test parse_1_16_0_nightly ... ok
 test parse_llvm_micro ... ok
-test parse_llvm_version_11 ... ok
-test parse_llvm_version_11_0 ... ok
 test parse_llvm_version_3 ... ok
 test parse_llvm_version_3_0 ... ok
 test parse_llvm_version_3_9 ... ok
@@ -47,11 +45,14 @@ test parse_nightly ... ok
 test parse_stable ... ok
 test parse_termux ... ok
 test parse_unknown ... ok
+test parse_llvm_version_11_0 ... ok
+test parse_llvm_version_11 ... ok
 test test_llvm_version_comparison ... ok
+test parse_1_47_0_stable ... ok
 test rustc_error ... ok
 test smoketest ... ok
 
-test result: ok. 28 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.19s
+test result: ok. 28 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.20s
 
 + RESULT=0
 + cd /tmp/top100_artifacts

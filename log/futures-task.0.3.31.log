@@ -7,10 +7,8 @@
 + cargo +stable test ''
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
    Compiling futures-task v0.3.31 (/tmp/top100_artifacts/futures-task-0.3.31)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.74s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.10s
      Running unittests src/lib.rs (target/debug/deps/futures_task-7517f4299dbcfbd5)
 
 running 1 test

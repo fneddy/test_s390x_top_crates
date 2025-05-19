@@ -13,7 +13,7 @@
    Compiling quote v1.0.38
    Compiling syn v2.0.98
    Compiling thiserror-impl v2.0.12 (/tmp/top100_artifacts/thiserror-impl-2.0.12)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 8.68s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 7.87s
      Running unittests src/lib.rs (target/debug/deps/thiserror_impl-fdceb6bcc4b9eb98)
 
 running 0 tests

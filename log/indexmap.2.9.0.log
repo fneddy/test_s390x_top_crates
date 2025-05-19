@@ -8,29 +8,29 @@
     Blocking waiting for file lock on package cache
    Compiling libc v0.2.171
    Compiling cfg-if v1.0.0
-   Compiling getrandom v0.3.2
-   Compiling proc-macro2 v1.0.94
    Compiling zerocopy v0.8.24
+   Compiling proc-macro2 v1.0.94
+   Compiling getrandom v0.3.2
    Compiling unicode-ident v1.0.18
-   Compiling equivalent v1.0.2
-   Compiling either v1.15.0
    Compiling hashbrown v0.15.2
    Compiling getrandom v0.2.15
    Compiling rand_core v0.9.3
-   Compiling quote v1.0.40
    Compiling rand_core v0.6.4
-   Compiling syn v2.0.100
+   Compiling quote v1.0.40
    Compiling rand v0.8.5
+   Compiling syn v2.0.100
+   Compiling equivalent v1.0.2
+   Compiling either v1.15.0
    Compiling itertools v0.14.0
-   Compiling ppv-lite86 v0.2.21
    Compiling quickcheck v1.0.3
+   Compiling ppv-lite86 v0.2.21
    Compiling rand_chacha v0.9.0
    Compiling rand v0.9.0
-   Compiling lazy_static v1.5.0
    Compiling fnv v1.0.7
+   Compiling lazy_static v1.5.0
    Compiling indexmap v2.9.0 (/tmp/top100_artifacts/indexmap-2.9.0)
    Compiling serde_derive v1.0.219
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 10.57s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 10.28s
      Running unittests src/lib.rs (target/debug/deps/indexmap-6e49e1f072c924fd)
 
 running 85 tests
@@ -38,9 +38,9 @@ test map::core::assert_send_sync ... ok
 test map::tests::disjoint_indices_mut_empty ... ok
 test map::tests::disjoint_indices_mut_fail_duplicate ... ok
 test map::tests::disjoint_indices_mut_fail_oob ... ok
+test map::tests::disjoint_indices_mut_success ... ok
 test map::slice::tests::slice_index_mut ... ok
 test map::slice::tests::slice_index ... ok
-test map::tests::disjoint_indices_mut_success ... ok
 test map::tests::disjoint_mut_empty_map ... ok
 test map::tests::disjoint_mut_empty_param ... ok
 test map::tests::disjoint_mut_multi_fail_missing ... ok
@@ -53,18 +53,18 @@ test map::tests::disjoint_mut_single_success ... ok
 test map::tests::entry ... ok
 test map::tests::entry_and_modify ... ok
 test map::tests::entry_or_default ... ok
+test map::tests::from_entries ... ok
 test map::tests::extend ... ok
 test map::tests::from_array ... ok
-test map::tests::from_entries ... ok
 test map::tests::get_index_entry ... ok
 test map::tests::insert ... ok
-test map::tests::insert_full ... ok
-test map::tests::insert_order ... ok
 test map::tests::grow ... ok
-test map::tests::insert_sorted_bad ... ok
 test map::tests::drain_range ... ok
 test map::tests::insert_2 ... ok
+test map::tests::insert_full ... ok
+test map::tests::insert_order ... ok
 test map::tests::into_keys ... ok
+test map::tests::insert_sorted_bad ... ok
 test map::tests::into_values ... ok
 test map::tests::it_works ... ok
 test map::tests::iter_default ... ok
@@ -76,38 +76,38 @@ test map::tests::remove_to_empty ... ok
 test map::tests::remove ... ok
 test map::tests::shift_insert ... ok
 test map::tests::swap_remove_index ... ok
-test map::tests::test_binary_search_by ... ok
 test map::tests::reserve ... ok
+test map::tests::test_binary_search_by ... ok
 test map::tests::test_binary_search_by_key ... ok
 test map::tests::test_move_index_out_of_bounds_0_10 - should panic ... ok
 test map::tests::test_move_index_out_of_bounds_0_max - should panic ... ok
+test map::tests::test_move_index_out_of_bounds_10_0 - should panic ... ok
 test map::tests::test_move_index_out_of_bounds_max_0 - should panic ... ok
 test map::tests::shrink_to_fit ... ok
-test map::tests::test_move_index_out_of_bounds_10_0 - should panic ... ok
-test map::tests::test_partition_point ... ok
 test map::tests::try_reserve ... ok
 test map::tests::values ... ok
+test map::tests::test_partition_point ... ok
 test map::tests::values_mut ... ok
 test set::tests::extend ... ok
-test set::slice::tests::slice_index ... ok
 test set::tests::comparisons ... ok
+test set::slice::tests::slice_index ... ok
 test set::tests::insert ... ok
 test set::tests::from_array ... ok
 test set::tests::insert_dup ... ok
 test set::tests::insert_full ... ok
-test set::tests::insert_order ... ok
 test set::tests::grow ... ok
 test set::tests::it_works ... ok
+test set::tests::insert_order ... ok
 test set::tests::iter_default ... ok
 test set::tests::new ... ok
-test set::tests::iter_comparisons ... ok
 test set::tests::partial_eq_and_eq ... ok
-test set::tests::replace ... ok
+test set::tests::iter_comparisons ... ok
 test set::tests::remove ... ok
+test set::tests::replace ... ok
 test set::tests::replace_change ... ok
 test set::tests::replace_dup ... ok
-test set::tests::replace_full ... ok
 test set::tests::ops ... ok
+test set::tests::replace_full ... ok
 test set::tests::replace_order ... ok
 test set::tests::shift_insert ... ok
 test set::tests::reserve ... ok
@@ -115,8 +115,8 @@ test set::tests::shrink_to_fit ... ok
 test set::tests::swap_remove_index ... ok
 test set::tests::test_binary_search_by ... ok
 test set::tests::test_binary_search_by_key ... ok
-test set::tests::test_partition_point ... ok
 test set::tests::try_reserve ... ok
+test set::tests::test_partition_point ... ok
 test set::tests::insert_2 ... ok
 test set::tests::replace_2 ... ok
 
@@ -133,8 +133,8 @@ test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
      Running tests/macros_full_path.rs (target/debug/deps/macros_full_path-80fce86379c118a4)
 
 running 2 tests
-test test_create_set ... ok
 test test_create_map ... ok
+test test_create_set ... ok
 
 test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 
@@ -142,8 +142,8 @@ test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 
 running 33 tests
 test contains ... ok
-test drain_bounds ... ok
 test drain_full ... ok
+test drain_bounds ... ok
 test contains_not ... ok
 test equality ... ok
 test indexing ... ok
@@ -153,29 +153,29 @@ test insert_sorted ... ok
 test indexed_entry_swap_indices ... ok
 test indexed_entry_move_index ... ok
 test keys_values ... ok
-test map_move_index ... ok
 test keys_values_mut ... ok
-test map_swap_indices ... ok
 test occupied_entry_shift_insert ... ok
+test map_swap_indices ... ok
+test map_move_index ... ok
 test operations_string ... ok
 test occupied_entry_move_index ... ok
 test pop ... ok
-test raw_occupied_entry_shift_insert ... ok
 test occupied_entry_swap_indices ... ok
+test raw_occupied_entry_shift_insert ... ok
 test operations_i8 ... ok
 test raw_occupied_entry_move_index ... ok
 test raw_occupied_entry_swap_indices ... ok
-test reverse ... ok
 test retain_ordered ... ok
+test reverse ... ok
 test set_move_index ... ok
-test shift_remove ... ok
 test set_swap_indices ... ok
+test shift_remove ... ok
 test with_cap ... ok
 test sort_2 ... ok
 test sort_3 ... ok
 test sort_1 ... ok
 
-test result: ok. 33 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.35s
+test result: ok. 33 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.36s
 
      Running tests/tests.rs (target/debug/deps/tests-2241f2bc6208b01e)
 

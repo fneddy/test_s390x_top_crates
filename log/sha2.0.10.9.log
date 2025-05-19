@@ -6,9 +6,6 @@
      Removed 0 files
 + cargo +stable test ''
     Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
    Compiling version_check v0.9.4
    Compiling typenum v1.17.0
    Compiling proc-macro-hack v0.5.20+deprecated
@@ -17,11 +14,11 @@
    Compiling generic-array v0.14.7
    Compiling hex-literal-impl v0.2.3
    Compiling hex-literal v0.2.2
-   Compiling block-buffer v0.10.4
    Compiling crypto-common v0.1.6
+   Compiling block-buffer v0.10.4
    Compiling digest v0.10.7
    Compiling sha2 v0.10.9 (/tmp/top100_artifacts/sha2-0.10.9)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 6.08s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 4.31s
      Running unittests src/lib.rs (target/debug/deps/sha2-72068c9b8ebbf88d)
 
 running 0 tests
@@ -35,8 +32,8 @@ test sha224_main ... ok
 test sha256_main ... ok
 test sha384_main ... ok
 test sha512_256_main ... ok
-test sha512_main ... ok
 test sha512_224_main ... ok
+test sha512_main ... ok
 test sha512_rand ... ok
 test sha256_rand ... ok
 

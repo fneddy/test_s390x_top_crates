@@ -5,51 +5,52 @@
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
+    Blocking waiting for file lock on package cache
    Compiling proc-macro2 v1.0.94
    Compiling unicode-ident v1.0.17
-   Compiling cfg-if v1.0.0
    Compiling libc v0.2.170
+   Compiling cfg-if v1.0.0
    Compiling serde v1.0.218
-   Compiling getrandom v0.3.1
    Compiling byteorder v1.5.0
-   Compiling autocfg v1.4.0
+   Compiling getrandom v0.3.1
    Compiling serde_json v1.0.140
+   Compiling autocfg v1.4.0
    Compiling half v2.4.1
    Compiling quote v1.0.39
-   Compiling num-traits v0.2.19
    Compiling syn v2.0.99
-   Compiling clap_lex v0.7.4
-   Compiling memchr v2.7.4
-   Compiling regex-syntax v0.8.5
-   Compiling anstyle v1.0.10
-   Compiling itoa v1.0.15
+   Compiling num-traits v0.2.19
    Compiling either v1.14.0
-   Compiling ryu v1.0.20
-   Compiling ciborium-io v0.2.2
+   Compiling anstyle v1.0.10
+   Compiling regex-syntax v0.8.5
    Compiling zerocopy v0.8.21
+   Compiling itoa v1.0.15
+   Compiling ryu v1.0.20
+   Compiling memchr v2.7.4
+   Compiling clap_lex v0.7.4
+   Compiling ciborium-io v0.2.2
    Compiling ciborium-ll v0.2.2
-   Compiling itertools v0.10.5
    Compiling clap_builder v4.5.31
-   Compiling regex-automata v0.4.9
    Compiling rand_core v0.9.3
-   Compiling same-file v1.0.6
-   Compiling fst v0.4.7
-   Compiling cast v0.3.0
-   Compiling criterion-plot v0.5.0
-   Compiling regex v1.11.1
-   Compiling walkdir v2.5.0
+   Compiling regex-automata v0.4.9
+   Compiling itertools v0.10.5
    Compiling serde_derive v1.0.218
    Compiling zerocopy-derive v0.7.35
-   Compiling clap v4.5.31
-   Compiling is-terminal v0.4.15
-   Compiling anes v0.1.6
-   Compiling bytemuck v1.22.0
+   Compiling cast v0.3.0
+   Compiling fst v0.4.7
+   Compiling same-file v1.0.6
+   Compiling walkdir v2.5.0
+   Compiling criterion-plot v0.5.0
    Compiling zerocopy v0.7.35
-   Compiling oorandom v11.1.4
-   Compiling once_cell v1.20.3
-   Compiling roaring v0.10.10
+   Compiling clap v4.5.31
+   Compiling regex v1.11.1
    Compiling ppv-lite86 v0.2.20
+   Compiling is-terminal v0.4.15
+   Compiling bytemuck v1.22.0
    Compiling rand_chacha v0.9.0
+   Compiling anes v0.1.6
+   Compiling once_cell v1.20.3
+   Compiling oorandom v11.1.4
+   Compiling roaring v0.10.10
    Compiling rand v0.9.0
    Compiling ucd-trie v0.1.7
    Compiling unicode-xid v0.2.6
@@ -57,7 +58,7 @@
    Compiling ciborium v0.2.2
    Compiling tinytemplate v1.2.1
    Compiling criterion v0.5.1
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 30.85s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 22.19s
      Running unittests src/lib.rs (target/debug/deps/unicode_ident-83b8c0f9948e9d92)
 
 running 0 tests
@@ -69,7 +70,7 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 running 1 test
 test compare_all_implementations ... ok
 
-test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.65s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.51s
 
      Running tests/static_size.rs (target/debug/deps/static_size-8d16452856701071)
 

@@ -1,6 +1,6 @@
 [serde] download directory: /tmp/top100_artifacts/serde-1.0.219
-+ curl -sL https://crates.io/api/v1/crates/serde/1.0.219/download
 + tar xzf -
++ curl -sL https://crates.io/api/v1/crates/serde/1.0.219/download
 + cd /tmp/top100_artifacts/serde-1.0.219
 + cargo clean
      Removed 0 files
@@ -14,7 +14,7 @@
    Compiling quote v1.0.39
    Compiling syn v2.0.99
    Compiling serde_derive v1.0.219
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 7.62s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 7.57s
      Running unittests src/lib.rs (target/debug/deps/serde-8f90989bb793f811)
 
 running 1 test

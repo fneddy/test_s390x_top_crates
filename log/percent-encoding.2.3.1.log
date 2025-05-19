@@ -29,7 +29,7 @@ help: use explicit `std::ptr::eq` method to compare metadata and addresses
     |
 
 warning: `percent-encoding` (lib test) generated 1 warning
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.42s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.65s
      Running unittests src/lib.rs (target/debug/deps/percent_encoding-31bad9d23c74dc5b)
 
 running 0 tests

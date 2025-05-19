@@ -13,7 +13,7 @@
     Blocking waiting for file lock on package cache
    Compiling zerocopy v0.8.25
    Compiling ppv-lite86 v0.2.21 (/tmp/top100_artifacts/ppv-lite86-0.2.21)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.29s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.50s
      Running unittests src/lib.rs (target/debug/deps/ppv_lite86-41e8bbe113136f24)
 
 running 2 tests

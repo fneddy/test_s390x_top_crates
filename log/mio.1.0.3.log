@@ -8,16 +8,17 @@
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
    Compiling proc-macro2 v1.0.86
    Compiling unicode-ident v1.0.12
    Compiling libc v0.2.167
-   Compiling cfg-if v1.0.0
    Compiling byteorder v1.5.0
+   Compiling cfg-if v1.0.0
    Compiling log v0.4.22
    Compiling env_logger v0.9.3
    Compiling quote v1.0.36
-   Compiling getrandom v0.2.15
    Compiling syn v2.0.74
+   Compiling getrandom v0.2.15
    Compiling rand_core v0.6.4
    Compiling zerocopy-derive v0.7.35
    Compiling zerocopy v0.7.35
@@ -25,7 +26,7 @@
    Compiling rand_chacha v0.3.1
    Compiling rand v0.8.5
    Compiling mio v1.0.3 (/tmp/top100_artifacts/mio-1.0.3)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 6.67s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 6.50s
      Running unittests src/lib.rs (target/debug/deps/mio-1a266126ca79b220)
 
 running 0 tests

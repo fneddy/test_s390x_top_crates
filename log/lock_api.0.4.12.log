@@ -1,11 +1,10 @@
 [lock_api] download directory: /tmp/top100_artifacts/lock_api-0.4.12
-+ tar xzf -
 + curl -sL https://crates.io/api/v1/crates/lock_api/0.4.12/download
++ tar xzf -
 + cd /tmp/top100_artifacts/lock_api-0.4.12
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
-    Blocking waiting for file lock on package cache
     Updating crates.io index
      Locking 10 packages to latest compatible versions
     Blocking waiting for file lock on package cache
@@ -105,7 +104,7 @@ warning: field `0` is never read
     = note: `#[warn(dead_code)]` on by default
 
 warning: `lock_api` (lib test) generated 7 warnings
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.13s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.18s
      Running unittests src/lib.rs (target/debug/deps/lock_api-2627dc543a4e4465)
 
 running 0 tests

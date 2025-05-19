@@ -5,6 +5,7 @@
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
+    Blocking waiting for file lock on package cache
     Updating crates.io index
     Blocking waiting for file lock on package cache
      Locking 68 packages to latest compatible versions
@@ -19,16 +20,16 @@
    Compiling icu_properties_data v2.0.0
    Compiling smallvec v1.15.0
    Compiling serde v1.0.219
-   Compiling serde_json v1.0.140
-   Compiling utf8_iter v1.0.4
    Compiling percent-encoding v2.3.1
+   Compiling utf8_iter v1.0.4
+   Compiling quote v1.0.40
+   Compiling serde_json v1.0.140
    Compiling form_urlencoded v1.2.1
+   Compiling syn v2.0.101
    Compiling ryu v1.0.20
    Compiling itoa v1.0.15
    Compiling memchr v2.7.4
    Compiling bencher v0.1.5
-   Compiling quote v1.0.40
-   Compiling syn v2.0.101
    Compiling synstructure v0.13.2
    Compiling zerofrom-derive v0.1.6
    Compiling yoke-derive v0.8.0
@@ -49,7 +50,7 @@
    Compiling idna_adapter v1.2.1
    Compiling idna v1.0.3
    Compiling url v2.5.4 (/tmp/top100_artifacts/url-2.5.4)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 15.04s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 15.53s
      Running unittests src/lib.rs (target/debug/deps/url-03c7b47cfac61e9e)
 
 running 1 test
@@ -61,69 +62,69 @@ test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 
 running 64 tests
 test form_urlencoded_encoding_override ... ok
+test append_trailing_slash ... ok
 test append_empty_segment_then_mutate ... ok
 test extend_query_pairs_then_mutate ... ok
 test from_str ... ok
 test host_serialization ... ok
-test append_trailing_slash ... ok
 test issue_124 ... ok
 test issue_197 ... ok
-test issue_61 ... ok
+test issue_241 ... ok
 test issue_864 ... ok
 test host ... ok
-test issue_974 ... ok
-test new_directory_paths ... ok
-test issue_241 ... ok
+test issue_61 ... ok
 test new_file_paths ... ok
-test no_panic ... ok
+test issue_974 ... ok
 test new_path_bad_utf8 ... ok
-test path_backslash_fun ... ok
-test parse_with_params ... ok
-test size ... ok
+test new_directory_paths ... ok
+test no_panic ... ok
 test pop_if_empty_in_bounds ... ok
-test test_authority ... ok
+test path_backslash_fun ... ok
+test size ... ok
+test parse_with_params ... ok
 test test_domain ... ok
 test test_file_with_drive ... ok
 test test_domain_encoding_quirks ... ok
+test test_authority ... ok
 test test_file_with_drive_and_path ... ok
 test test_form_serialize ... ok
-test test_form_urlencoded ... ok
-test test_has_authority ... ok
 test test_equality ... ok
-test test_leading_dots ... ok
+test test_form_urlencoded ... ok
 test test_fragment ... ok
+test test_has_authority ... ok
+test test_leading_dots ... ok
 test test_idna ... ok
 test test_no_base_url ... ok
+test test_non_special_path ... ok
 test test_non_special_path2 ... ok
-test test_non_special_path3 ... ok
 test test_null_host_with_leading_empty_path_segment ... ok
-test test_options_reuse ... ok
+test test_non_special_path3 ... ok
 test test_origin_blob_equality ... ok
+test test_options_reuse ... ok
 test test_origin_opaque ... ok
-test test_origin_hash ... ok
 test test_query ... ok
+test test_origin_hash ... ok
 test test_relative ... ok
-test test_origin_unicode_serialization ... ok
 test test_relative_empty ... ok
 test test_serialization ... ok
+test test_origin_unicode_serialization ... ok
 test test_set_empty_host ... ok
 test test_set_empty_hostname ... ok
-test test_set_empty_password ... ok
 test test_set_empty_query ... ok
-test test_make_relative ... ok
+test test_set_empty_password ... ok
 test test_set_empty_username_and_password ... ok
-test test_non_special_path ... ok
+test test_set_host ... ok
 test test_set_ip_host ... ok
 test test_set_href ... ok
-test test_set_host ... ok
+test test_make_relative ... ok
 test test_set_scheme_to_file_with_host ... ok
-test test_syntax_violation_callback ... ok
-test test_slicing ... ok
 test test_strip_trailing_spaces_from_opaque_path ... ok
-test test_syntax_violation_callback_lifetimes ... ok
-test test_syntax_violation_callback_types ... ok
-test test_url_from_file_path ... ok
+test test_slicing ... ok
+test test_syntax_violation_callback ... ok
 test test_socket_addrs ... ok
+test test_syntax_violation_callback_lifetimes ... ok
+test test_url_from_file_path ... ok
+test test_syntax_violation_callback_types ... ok
 
 test result: ok. 64 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 
@@ -972,38 +973,40 @@ test result: ok. 64 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fin
 <https://domain.com:443> set port to <\t8080> ... ✅
 <wpt++://domain.com:443> set port to <\t8080> ... ✅
 <https://www.google.com:4343> set port to <4wpt> ... ✅
-<mailto:me@example.net> set pathname to </foo> ... ✅
-<data:original> set pathname to <new value> ... ✅
-<sc:original> set pathname to <new value> ... ✅
-<file:///some/path> set pathname to <> ... ✅
-<foo://somehost/some/path> set pathname to <> ... ✅
-<foo:///some/path> set pathname to <> ... ✅ (expected fail)
-<foo:/some/path> set pathname to <> ... ✅
-<foo:/some/path> set pathname to <test> ... ✅
-<unix:/run/foo.socket?timeout=10> set pathname to </var/log/../run/bar.socket> ... ✅
-<https://example.net#nav> set pathname to <home> ... ✅
-<https://example.net#nav> set pathname to <../home> ... ✅
-<http://example.net/home?lang=fr#nav> set pathname to <\\a\\%2E\\b\\%2e.\\c> ... ✅
-<view-source+http://example.net/home?lang=fr#nav> set pathname to <\\a\\%2E\\b\\%2e.\\c> ... ✅
-<a:/> set pathname to <\u{0}\u{1}\t\n\r\u{1f} !\"#$%&\'()*+,-./09:;<=>?@AZ[\\]^_`az{|}~\u{7f}\u{80}\u{81}\u{c9}\u{e9}> ... ✅
-<http://example.net> set pathname to <%2e%2E%c3%89t\u{e9}> ... ✅
-<http://example.net> set pathname to <?> ... ✅
-<http://example.net> set pathname to <#> ... ✅
-<sc://example.net> set pathname to <?> ... ✅
-<sc://example.net> set pathname to <#> ... ✅
-<http://example.net> set pathname to </?\u{e9}> ... ✅
-<http://example.net> set pathname to </#\u{e9}> ... ✅
-<file://monkey/> set pathname to <\\\\> ... ✅ (expected fail)
-<file:///unicorn> set pathname to <//\\/> ... ✅ (expected fail)
-<file:///unicorn> set pathname to <//monkey/..//> ... ✅ (expected fail)
-<non-spec:/> set pathname to </.//p> ... ✅ (expected fail)
-<non-spec:/> set pathname to </..//p> ... ✅ (expected fail)
-<non-spec:/> set pathname to <//p> ... ✅ (expected fail)
-<non-spec:/.//> set pathname to <p> ... ✅ (expected fail)
-<data:/nospace> set pathname to <space > ... ✅
-<sc:/nospace> set pathname to <space > ... ✅
-<http://example.net> set pathname to < > ... ✅
-<http://example.net> set pathname to <\u{0}> ... ✅
+<file:///home/me/index.html> set password to <secret> ... ✅
+<unix:/run/foo.socket> set password to <secret> ... ✅
+<mailto:me@example.net> set password to <secret> ... ✅
+<http://example.net> set password to <secret> ... ✅
+<http://me@example.net> set password to <secret> ... ✅
+<http://:secret@example.net> set password to <> ... ✅
+<http://me:secret@example.net> set password to <> ... ✅
+<http://example.net> set password to <\u{0}\u{1}\t\n\r\u{1f} !\"#$%&\'()*+,-./09:;<=>?@AZ[\\]^_`az{|}~\u{7f}\u{80}\u{81}\u{c9}\u{e9}> ... ✅
+<http://example.net> set password to <%c3%89t\u{e9}> ... ✅
+<sc:///> set password to <x> ... ✅
+<javascript://x/> set password to <bowser> ... ✅
+<file://test/> set password to <test> ... ✅
+<https://example.net> set hash to <main> ... ✅
+<https://example.net#nav> set hash to <main> ... ✅
+<https://example.net?lang=en-US> set hash to <##nav> ... ✅
+<https://example.net?lang=en-US#nav> set hash to <#main> ... ✅
+<https://example.net?lang=en-US#nav> set hash to <#> ... ✅
+<https://example.net?lang=en-US#nav> set hash to <> ... ✅
+<http://example.net> set hash to <#foo bar> ... ✅
+<http://example.net> set hash to <#foo\"bar> ... ✅
+<http://example.net> set hash to <#foo<bar> ... ✅
+<http://example.net> set hash to <#foo>bar> ... ✅
+<http://example.net> set hash to <#foo`bar> ... ✅
+<a:/> set hash to <\u{0}\u{1}\t\n\r\u{1f} !\"#$%&\'()*+,-./09:;<=>?@AZ[\\]^_`az{|}~\u{7f}\u{80}\u{81}\u{c9}\u{e9}> ... ✅
+<http://example.net> set hash to <a\u{0}b> ... ✅
+<non-spec:/> set hash to <a\u{0}b> ... ✅
+<http://example.net> set hash to <%c3%89t\u{e9}> ... ✅
+<javascript:alert(1)> set hash to <castle> ... ✅
+<data:space                                                                                                                                  #fragment> set hash to <> ... ✅
+<sc:space    #fragment> set hash to <> ... ✅
+<data:space  ?query#fragment> set hash to <> ... ✅
+<sc:space  ?query#fragment> set hash to <> ... ✅
+<http://example.net> set hash to < > ... ✅
+<http://example.net> set hash to <\u{0}> ... ✅
 <sc://x/> set host to <\u{0}> ... ✅
 <sc://x/> set host to <\t> ... ✅
 <sc://x/> set host to <\n> ... ✅
@@ -1076,18 +1079,6 @@ test result: ok. 64 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fin
 <sc:space  ?query#fragment> set search to <> ... ✅
 <http://example.net> set search to < > ... ✅
 <http://example.net> set search to <\u{0}> ... ✅
-<file:///home/me/index.html> set password to <secret> ... ✅
-<unix:/run/foo.socket> set password to <secret> ... ✅
-<mailto:me@example.net> set password to <secret> ... ✅
-<http://example.net> set password to <secret> ... ✅
-<http://me@example.net> set password to <secret> ... ✅
-<http://:secret@example.net> set password to <> ... ✅
-<http://me:secret@example.net> set password to <> ... ✅
-<http://example.net> set password to <\u{0}\u{1}\t\n\r\u{1f} !\"#$%&\'()*+,-./09:;<=>?@AZ[\\]^_`az{|}~\u{7f}\u{80}\u{81}\u{c9}\u{e9}> ... ✅
-<http://example.net> set password to <%c3%89t\u{e9}> ... ✅
-<sc:///> set password to <x> ... ✅
-<javascript://x/> set password to <bowser> ... ✅
-<file://test/> set password to <test> ... ✅
 <file:///home/you/index.html> set username to <me> ... ✅
 <unix:/run/foo.socket> set username to <me> ... ✅
 <mailto:you@example.net> set username to <me> ... ✅
@@ -1101,41 +1092,38 @@ test result: ok. 64 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fin
 <sc:///> set username to <x> ... ✅
 <javascript://x/> set username to <wario> ... ✅
 <file://test/> set username to <test> ... ✅
-<a://example.net> set protocol to <> ... ✅
-<a://example.net> set protocol to <b> ... ✅
-<javascript:alert(1)> set protocol to <defuse> ... ✅
-<a://example.net> set protocol to <B> ... ✅
-<a://example.net> set protocol to <\u{e9}> ... ✅
-<a://example.net> set protocol to <0b> ... ✅
-<a://example.net> set protocol to <+b> ... ✅
-<a://example.net> set protocol to <bC0+-.> ... ✅
-<a://example.net> set protocol to <b,c> ... ✅
-<a://example.net> set protocol to <b\u{e9}> ... ✅
-<http://test@example.net> set protocol to <file> ... ✅
-<https://example.net:1234> set protocol to <file> ... ✅
-<wss://x:x@example.net:1234> set protocol to <file> ... ✅
-<file://localhost/> set protocol to <http> ... ✅
-<file:///test> set protocol to <https> ... ✅
-<file:> set protocol to <wss> ... ✅
-<http://example.net> set protocol to <b> ... ✅
-<file://hi/path> set protocol to <s> ... ✅
-<https://example.net> set protocol to <s> ... ✅
-<ftp://example.net> set protocol to <test> ... ✅
-<mailto:me@example.net> set protocol to <http> ... ✅
-<ssh://me@example.net> set protocol to <http> ... ✅
-<ssh://me@example.net> set protocol to <https> ... ✅
-<ssh://me@example.net> set protocol to <file> ... ✅
-<ssh://example.net> set protocol to <file> ... ✅
-<nonsense:///test> set protocol to <https> ... ✅
-<http://example.net> set protocol to <https:foo : bar> ... ✅
-<data:text/html,<p>Test> set protocol to <view-source+data:foo : bar> ... ✅
-<http://foo.com:443/> set protocol to <https> ... ✅
-<http://test/> set protocol to <h\r\ntt\tps> ... ✅
-<http://test/> set protocol to <https\r> ... ✅
-<http://test/> set protocol to <https\u{0}> ... ✅
-<http://test/> set protocol to <https\u{c}> ... ✅
-<http://test/> set protocol to <https\u{e}> ... ✅
-<http://test/> set protocol to <https > ... ✅
+<mailto:me@example.net> set pathname to </foo> ... ✅
+<data:original> set pathname to <new value> ... ✅
+<sc:original> set pathname to <new value> ... ✅
+<file:///some/path> set pathname to <> ... ✅
+<foo://somehost/some/path> set pathname to <> ... ✅
+<foo:///some/path> set pathname to <> ... ✅ (expected fail)
+<foo:/some/path> set pathname to <> ... ✅
+<foo:/some/path> set pathname to <test> ... ✅
+<unix:/run/foo.socket?timeout=10> set pathname to </var/log/../run/bar.socket> ... ✅
+<https://example.net#nav> set pathname to <home> ... ✅
+<https://example.net#nav> set pathname to <../home> ... ✅
+<http://example.net/home?lang=fr#nav> set pathname to <\\a\\%2E\\b\\%2e.\\c> ... ✅
+<view-source+http://example.net/home?lang=fr#nav> set pathname to <\\a\\%2E\\b\\%2e.\\c> ... ✅
+<a:/> set pathname to <\u{0}\u{1}\t\n\r\u{1f} !\"#$%&\'()*+,-./09:;<=>?@AZ[\\]^_`az{|}~\u{7f}\u{80}\u{81}\u{c9}\u{e9}> ... ✅
+<http://example.net> set pathname to <%2e%2E%c3%89t\u{e9}> ... ✅
+<http://example.net> set pathname to <?> ... ✅
+<http://example.net> set pathname to <#> ... ✅
+<sc://example.net> set pathname to <?> ... ✅
+<sc://example.net> set pathname to <#> ... ✅
+<http://example.net> set pathname to </?\u{e9}> ... ✅
+<http://example.net> set pathname to </#\u{e9}> ... ✅
+<file://monkey/> set pathname to <\\\\> ... ✅ (expected fail)
+<file:///unicorn> set pathname to <//\\/> ... ✅ (expected fail)
+<file:///unicorn> set pathname to <//monkey/..//> ... ✅ (expected fail)
+<non-spec:/> set pathname to </.//p> ... ✅ (expected fail)
+<non-spec:/> set pathname to </..//p> ... ✅ (expected fail)
+<non-spec:/> set pathname to <//p> ... ✅ (expected fail)
+<non-spec:/.//> set pathname to <p> ... ✅ (expected fail)
+<data:/nospace> set pathname to <space > ... ✅
+<sc:/nospace> set pathname to <space > ... ✅
+<http://example.net> set pathname to < > ... ✅
+<http://example.net> set pathname to <\u{0}> ... ✅
 <file:///var/log/system.log> set href to <http://0300.168.0xF0> ... ✅ (expected fail)
 <sc://x/> set hostname to <\u{0}> ... ✅
 <sc://x/> set hostname to <\t> ... ✅
@@ -1179,28 +1167,41 @@ test result: ok. 64 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fin
 <https://example.com/> set hostname to <\u{ad}> ... ✅
 <https://example.com/> set hostname to <%C2%AD> ... ✅
 <https://example.com/> set hostname to <xn--> ... ✅
-<https://example.net> set hash to <main> ... ✅
-<https://example.net#nav> set hash to <main> ... ✅
-<https://example.net?lang=en-US> set hash to <##nav> ... ✅
-<https://example.net?lang=en-US#nav> set hash to <#main> ... ✅
-<https://example.net?lang=en-US#nav> set hash to <#> ... ✅
-<https://example.net?lang=en-US#nav> set hash to <> ... ✅
-<http://example.net> set hash to <#foo bar> ... ✅
-<http://example.net> set hash to <#foo\"bar> ... ✅
-<http://example.net> set hash to <#foo<bar> ... ✅
-<http://example.net> set hash to <#foo>bar> ... ✅
-<http://example.net> set hash to <#foo`bar> ... ✅
-<a:/> set hash to <\u{0}\u{1}\t\n\r\u{1f} !\"#$%&\'()*+,-./09:;<=>?@AZ[\\]^_`az{|}~\u{7f}\u{80}\u{81}\u{c9}\u{e9}> ... ✅
-<http://example.net> set hash to <a\u{0}b> ... ✅
-<non-spec:/> set hash to <a\u{0}b> ... ✅
-<http://example.net> set hash to <%c3%89t\u{e9}> ... ✅
-<javascript:alert(1)> set hash to <castle> ... ✅
-<data:space                                                                                                                                  #fragment> set hash to <> ... ✅
-<sc:space    #fragment> set hash to <> ... ✅
-<data:space  ?query#fragment> set hash to <> ... ✅
-<sc:space  ?query#fragment> set hash to <> ... ✅
-<http://example.net> set hash to < > ... ✅
-<http://example.net> set hash to <\u{0}> ... ✅
+<a://example.net> set protocol to <> ... ✅
+<a://example.net> set protocol to <b> ... ✅
+<javascript:alert(1)> set protocol to <defuse> ... ✅
+<a://example.net> set protocol to <B> ... ✅
+<a://example.net> set protocol to <\u{e9}> ... ✅
+<a://example.net> set protocol to <0b> ... ✅
+<a://example.net> set protocol to <+b> ... ✅
+<a://example.net> set protocol to <bC0+-.> ... ✅
+<a://example.net> set protocol to <b,c> ... ✅
+<a://example.net> set protocol to <b\u{e9}> ... ✅
+<http://test@example.net> set protocol to <file> ... ✅
+<https://example.net:1234> set protocol to <file> ... ✅
+<wss://x:x@example.net:1234> set protocol to <file> ... ✅
+<file://localhost/> set protocol to <http> ... ✅
+<file:///test> set protocol to <https> ... ✅
+<file:> set protocol to <wss> ... ✅
+<http://example.net> set protocol to <b> ... ✅
+<file://hi/path> set protocol to <s> ... ✅
+<https://example.net> set protocol to <s> ... ✅
+<ftp://example.net> set protocol to <test> ... ✅
+<mailto:me@example.net> set protocol to <http> ... ✅
+<ssh://me@example.net> set protocol to <http> ... ✅
+<ssh://me@example.net> set protocol to <https> ... ✅
+<ssh://me@example.net> set protocol to <file> ... ✅
+<ssh://example.net> set protocol to <file> ... ✅
+<nonsense:///test> set protocol to <https> ... ✅
+<http://example.net> set protocol to <https:foo : bar> ... ✅
+<data:text/html,<p>Test> set protocol to <view-source+data:foo : bar> ... ✅
+<http://foo.com:443/> set protocol to <https> ... ✅
+<http://test/> set protocol to <h\r\ntt\tps> ... ✅
+<http://test/> set protocol to <https\r> ... ✅
+<http://test/> set protocol to <https\u{0}> ... ✅
+<http://test/> set protocol to <https\u{c}> ... ✅
+<http://test/> set protocol to <https\u{e}> ... ✅
+<http://test/> set protocol to <https > ... ✅
 
 ====================
 

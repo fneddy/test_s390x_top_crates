@@ -10,7 +10,7 @@
    Compiling serde v1.0.143
    Compiling serde_test v1.0.143
    Compiling bytes v1.10.1 (/tmp/top100_artifacts/bytes-1.10.1)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 6.33s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 5.65s
      Running unittests src/lib.rs (target/debug/deps/bytes-7898acc39ce8b430)
 
 running 2 tests
@@ -23,97 +23,97 @@ test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 
 running 820 tests
 test box_bytes::advance ... ok
-test box_bytes::advance_to_end ... ok
 test box_bytes::advance_past_end - should panic ... ok
 test box_bytes::chunks_vectored_empty ... ok
 test box_bytes::chunks_vectored_is_complete ... ok
-test box_bytes::copy_to_bytes ... ok
-test box_bytes::copy_to_bytes_big ... ok
-test box_bytes::copy_to_bytes_to_end ... ok
 test box_bytes::copy_to_bytes_overflow - should panic ... ok
+test box_bytes::advance_to_end ... ok
+test box_bytes::copy_to_bytes ... ok
+test box_bytes::copy_to_bytes_to_end ... ok
 test box_bytes::copy_to_slice ... ok
+test box_bytes::copy_to_bytes_big ... ok
 test box_bytes::copy_to_slice_big ... ok
-test box_bytes::copy_to_slice_to_end ... ok
 test box_bytes::copy_to_slice_overflow - should panic ... ok
+test box_bytes::copy_to_slice_to_end ... ok
 test box_bytes::empty_state ... ok
 test box_bytes::fresh_state ... ok
 test box_bytes::get_f32_be ... ok
-test box_bytes::get_f32_be_overflow - should panic ... ok
 test box_bytes::get_f32_le ... ok
+test box_bytes::get_f32_be_overflow - should panic ... ok
 test box_bytes::get_f32_ne ... ok
 test box_bytes::get_f32_le_overflow - should panic ... ok
 test box_bytes::get_f64_be ... ok
 test box_bytes::get_f32_ne_overflow - should panic ... ok
-test box_bytes::get_f64_le ... ok
 test box_bytes::get_f64_be_overflow - should panic ... ok
-test box_bytes::get_f64_le_overflow - should panic ... ok
+test box_bytes::get_f64_le ... ok
 test box_bytes::get_f64_ne ... ok
-test box_bytes::get_f64_ne_overflow - should panic ... ok
+test box_bytes::get_f64_le_overflow - should panic ... ok
 test box_bytes::get_i128_be ... ok
-test box_bytes::get_i128_be_overflow - should panic ... ok
+test box_bytes::get_f64_ne_overflow - should panic ... ok
 test box_bytes::get_i128_le ... ok
-test box_bytes::get_i128_le_overflow - should panic ... ok
+test box_bytes::get_i128_be_overflow - should panic ... ok
 test box_bytes::get_i128_ne ... ok
+test box_bytes::get_i128_le_overflow - should panic ... ok
 test box_bytes::get_i16_be ... ok
 test box_bytes::get_i128_ne_overflow - should panic ... ok
-test box_bytes::get_i16_be_overflow - should panic ... ok
 test box_bytes::get_i16_le ... ok
-test box_bytes::get_i16_le_overflow - should panic ... ok
+test box_bytes::get_i16_be_overflow - should panic ... ok
 test box_bytes::get_i16_ne ... ok
-test box_bytes::get_i16_ne_overflow - should panic ... ok
+test box_bytes::get_i16_le_overflow - should panic ... ok
 test box_bytes::get_i32_be ... ok
-test box_bytes::get_i32_be_overflow - should panic ... ok
+test box_bytes::get_i16_ne_overflow - should panic ... ok
 test box_bytes::get_i32_le ... ok
-test box_bytes::get_i32_le_overflow - should panic ... ok
 test box_bytes::get_i32_ne ... ok
+test box_bytes::get_i32_le_overflow - should panic ... ok
+test box_bytes::get_i32_be_overflow - should panic ... ok
 test box_bytes::get_i32_ne_overflow - should panic ... ok
 test box_bytes::get_i64_be ... ok
 test box_bytes::get_i64_be_overflow - should panic ... ok
 test box_bytes::get_i64_le ... ok
-test box_bytes::get_i64_le_overflow - should panic ... ok
 test box_bytes::get_i64_ne ... ok
-test box_bytes::get_i64_ne_overflow - should panic ... ok
+test box_bytes::get_i64_le_overflow - should panic ... ok
 test box_bytes::get_i8 ... ok
-test box_bytes::get_i8_overflow - should panic ... ok
+test box_bytes::get_i64_ne_overflow - should panic ... ok
 test box_bytes::get_int_be ... ok
-test box_bytes::get_int_be_overflow - should panic ... ok
+test box_bytes::get_i8_overflow - should panic ... ok
 test box_bytes::get_int_le ... ok
+test box_bytes::get_int_be_overflow - should panic ... ok
 test box_bytes::get_int_ne ... ok
 test box_bytes::get_int_le_overflow - should panic ... ok
-test box_bytes::get_int_ne_overflow - should panic ... ok
 test box_bytes::get_u128_be ... ok
-test box_bytes::get_u128_be_overflow - should panic ... ok
+test box_bytes::get_int_ne_overflow - should panic ... ok
 test box_bytes::get_u128_le ... ok
+test box_bytes::get_u128_be_overflow - should panic ... ok
 test box_bytes::get_u128_ne ... ok
 test box_bytes::get_u128_le_overflow - should panic ... ok
-test box_bytes::get_u128_ne_overflow - should panic ... ok
 test box_bytes::get_u16_be ... ok
-test box_bytes::get_u16_be_overflow - should panic ... ok
+test box_bytes::get_u128_ne_overflow - should panic ... ok
 test box_bytes::get_u16_le ... ok
-test box_bytes::get_u16_le_overflow - should panic ... ok
+test box_bytes::get_u16_be_overflow - should panic ... ok
 test box_bytes::get_u16_ne ... ok
-test box_bytes::get_u16_ne_overflow - should panic ... ok
+test box_bytes::get_u16_le_overflow - should panic ... ok
 test box_bytes::get_u32_be ... ok
+test box_bytes::get_u16_ne_overflow - should panic ... ok
 test box_bytes::get_u32_be_overflow - should panic ... ok
 test box_bytes::get_u32_le ... ok
 test box_bytes::get_u32_le_overflow - should panic ... ok
 test box_bytes::get_u32_ne ... ok
 test box_bytes::get_u32_ne_overflow - should panic ... ok
 test box_bytes::get_u64_be ... ok
-test box_bytes::get_u64_be_overflow - should panic ... ok
 test box_bytes::get_u64_le ... ok
-test box_bytes::get_u64_ne ... ok
+test box_bytes::get_u64_be_overflow - should panic ... ok
 test box_bytes::get_u64_le_overflow - should panic ... ok
-test box_bytes::get_u64_ne_overflow - should panic ... ok
+test box_bytes::get_u64_ne ... ok
 test box_bytes::get_u8 ... ok
-test box_bytes::get_u8_overflow - should panic ... ok
+test box_bytes::get_u64_ne_overflow - should panic ... ok
 test box_bytes::get_uint_be ... ok
-test box_bytes::get_uint_be_overflow - should panic ... ok
+test box_bytes::get_u8_overflow - should panic ... ok
 test box_bytes::get_uint_le ... ok
-test box_bytes::get_uint_le_overflow - should panic ... ok
+test box_bytes::get_uint_be_overflow - should panic ... ok
 test box_bytes::get_uint_ne ... ok
-test box_bytes::get_uint_ne_overflow - should panic ... ok
+test box_bytes::get_uint_le_overflow - should panic ... ok
 test bytes::advance ... ok
+test box_bytes::get_uint_ne_overflow - should panic ... ok
 test bytes::advance_to_end ... ok
 test bytes::advance_past_end - should panic ... ok
 test bytes::chunks_vectored_empty ... ok
@@ -124,43 +124,43 @@ test bytes::copy_to_bytes_overflow - should panic ... ok
 test bytes::copy_to_bytes_to_end ... ok
 test bytes::copy_to_slice ... ok
 test bytes::copy_to_slice_big ... ok
-test bytes::copy_to_slice_overflow - should panic ... ok
 test bytes::copy_to_slice_to_end ... ok
+test bytes::copy_to_slice_overflow - should panic ... ok
 test bytes::empty_state ... ok
 test bytes::fresh_state ... ok
 test bytes::get_f32_be ... ok
 test bytes::get_f32_be_overflow - should panic ... ok
 test bytes::get_f32_le ... ok
-test bytes::get_f32_le_overflow - should panic ... ok
 test bytes::get_f32_ne ... ok
-test bytes::get_f32_ne_overflow - should panic ... ok
+test bytes::get_f32_le_overflow - should panic ... ok
 test bytes::get_f64_be ... ok
+test bytes::get_f32_ne_overflow - should panic ... ok
 test bytes::get_f64_le ... ok
 test bytes::get_f64_be_overflow - should panic ... ok
 test bytes::get_f64_le_overflow - should panic ... ok
 test bytes::get_f64_ne ... ok
 test bytes::get_f64_ne_overflow - should panic ... ok
 test bytes::get_i128_be ... ok
-test bytes::get_i128_be_overflow - should panic ... ok
 test bytes::get_i128_le ... ok
+test bytes::get_i128_be_overflow - should panic ... ok
 test bytes::get_i128_le_overflow - should panic ... ok
 test bytes::get_i128_ne ... ok
-test bytes::get_i128_ne_overflow - should panic ... ok
 test bytes::get_i16_be ... ok
-test bytes::get_i16_be_overflow - should panic ... ok
+test bytes::get_i128_ne_overflow - should panic ... ok
 test bytes::get_i16_le ... ok
-test bytes::get_i16_le_overflow - should panic ... ok
+test bytes::get_i16_be_overflow - should panic ... ok
 test bytes::get_i16_ne ... ok
-test bytes::get_i16_ne_overflow - should panic ... ok
+test bytes::get_i16_le_overflow - should panic ... ok
 test bytes::get_i32_be ... ok
-test bytes::get_i32_be_overflow - should panic ... ok
+test bytes::get_i16_ne_overflow - should panic ... ok
 test bytes::get_i32_le ... ok
-test bytes::get_i32_le_overflow - should panic ... ok
+test bytes::get_i32_be_overflow - should panic ... ok
 test bytes::get_i32_ne ... ok
-test bytes::get_i32_ne_overflow - should panic ... ok
+test bytes::get_i32_le_overflow - should panic ... ok
 test bytes::get_i64_be ... ok
-test bytes::get_i64_be_overflow - should panic ... ok
+test bytes::get_i32_ne_overflow - should panic ... ok
 test bytes::get_i64_le ... ok
+test bytes::get_i64_be_overflow - should panic ... ok
 test bytes::get_i64_le_overflow - should panic ... ok
 test bytes::get_i64_ne ... ok
 test bytes::get_i64_ne_overflow - should panic ... ok
@@ -171,42 +171,42 @@ test bytes::get_int_be_overflow - should panic ... ok
 test bytes::get_int_le ... ok
 test bytes::get_int_le_overflow - should panic ... ok
 test bytes::get_int_ne ... ok
-test bytes::get_u128_be ... ok
 test bytes::get_int_ne_overflow - should panic ... ok
-test bytes::get_u128_be_overflow - should panic ... ok
+test bytes::get_u128_be ... ok
 test bytes::get_u128_le ... ok
-test bytes::get_u128_le_overflow - should panic ... ok
+test bytes::get_u128_be_overflow - should panic ... ok
 test bytes::get_u128_ne ... ok
-test bytes::get_u128_ne_overflow - should panic ... ok
+test bytes::get_u128_le_overflow - should panic ... ok
 test bytes::get_u16_be ... ok
-test bytes::get_u16_be_overflow - should panic ... ok
+test bytes::get_u128_ne_overflow - should panic ... ok
 test bytes::get_u16_le ... ok
-test bytes::get_u16_le_overflow - should panic ... ok
+test bytes::get_u16_be_overflow - should panic ... ok
 test bytes::get_u16_ne ... ok
-test bytes::get_u16_ne_overflow - should panic ... ok
+test bytes::get_u16_le_overflow - should panic ... ok
 test bytes::get_u32_be ... ok
+test bytes::get_u16_ne_overflow - should panic ... ok
 test bytes::get_u32_be_overflow - should panic ... ok
 test bytes::get_u32_le ... ok
-test bytes::get_u32_le_overflow - should panic ... ok
 test bytes::get_u32_ne ... ok
+test bytes::get_u32_le_overflow - should panic ... ok
 test bytes::get_u32_ne_overflow - should panic ... ok
 test bytes::get_u64_be ... ok
 test bytes::get_u64_be_overflow - should panic ... ok
 test bytes::get_u64_le ... ok
 test bytes::get_u64_le_overflow - should panic ... ok
 test bytes::get_u64_ne ... ok
-test bytes::get_u64_ne_overflow - should panic ... ok
 test bytes::get_u8 ... ok
-test bytes::get_u8_overflow - should panic ... ok
+test bytes::get_u64_ne_overflow - should panic ... ok
 test bytes::get_uint_be ... ok
-test bytes::get_uint_be_overflow - should panic ... ok
+test bytes::get_u8_overflow - should panic ... ok
 test bytes::get_uint_le ... ok
-test bytes::get_uint_le_overflow - should panic ... ok
+test bytes::get_uint_be_overflow - should panic ... ok
 test bytes::get_uint_ne ... ok
-test bytes::get_uint_ne_overflow - should panic ... ok
+test bytes::get_uint_le_overflow - should panic ... ok
 test bytes_mut::advance ... ok
-test bytes_mut::advance_past_end - should panic ... ok
+test bytes::get_uint_ne_overflow - should panic ... ok
 test bytes_mut::advance_to_end ... ok
+test bytes_mut::advance_past_end - should panic ... ok
 test bytes_mut::chunks_vectored_empty ... ok
 test bytes_mut::chunks_vectored_is_complete ... ok
 test bytes_mut::copy_to_bytes ... ok
@@ -215,8 +215,8 @@ test bytes_mut::copy_to_bytes_overflow - should panic ... ok
 test bytes_mut::copy_to_bytes_to_end ... ok
 test bytes_mut::copy_to_slice ... ok
 test bytes_mut::copy_to_slice_big ... ok
-test bytes_mut::copy_to_slice_overflow - should panic ... ok
 test bytes_mut::copy_to_slice_to_end ... ok
+test bytes_mut::copy_to_slice_overflow - should panic ... ok
 test bytes_mut::empty_state ... ok
 test bytes_mut::fresh_state ... ok
 test bytes_mut::get_f32_be ... ok
@@ -224,121 +224,121 @@ test bytes_mut::get_f32_be_overflow - should panic ... ok
 test bytes_mut::get_f32_le ... ok
 test bytes_mut::get_f32_le_overflow - should panic ... ok
 test bytes_mut::get_f32_ne ... ok
-test bytes_mut::get_f32_ne_overflow - should panic ... ok
 test bytes_mut::get_f64_be ... ok
-test bytes_mut::get_f64_be_overflow - should panic ... ok
+test bytes_mut::get_f32_ne_overflow - should panic ... ok
 test bytes_mut::get_f64_le ... ok
-test bytes_mut::get_f64_le_overflow - should panic ... ok
+test bytes_mut::get_f64_be_overflow - should panic ... ok
 test bytes_mut::get_f64_ne ... ok
-test bytes_mut::get_f64_ne_overflow - should panic ... ok
+test bytes_mut::get_f64_le_overflow - should panic ... ok
 test bytes_mut::get_i128_be ... ok
-test bytes_mut::get_i128_be_overflow - should panic ... ok
+test bytes_mut::get_f64_ne_overflow - should panic ... ok
 test bytes_mut::get_i128_le ... ok
-test bytes_mut::get_i128_le_overflow - should panic ... ok
+test bytes_mut::get_i128_be_overflow - should panic ... ok
 test bytes_mut::get_i128_ne ... ok
-test bytes_mut::get_i128_ne_overflow - should panic ... ok
+test bytes_mut::get_i128_le_overflow - should panic ... ok
 test bytes_mut::get_i16_be ... ok
-test bytes_mut::get_i16_be_overflow - should panic ... ok
+test bytes_mut::get_i128_ne_overflow - should panic ... ok
 test bytes_mut::get_i16_le ... ok
-test bytes_mut::get_i16_le_overflow - should panic ... ok
+test bytes_mut::get_i16_be_overflow - should panic ... ok
 test bytes_mut::get_i16_ne ... ok
 test bytes_mut::get_i16_ne_overflow - should panic ... ok
 test bytes_mut::get_i32_be ... ok
 test bytes_mut::get_i32_be_overflow - should panic ... ok
 test bytes_mut::get_i32_le ... ok
+test bytes_mut::get_i16_le_overflow - should panic ... ok
 test bytes_mut::get_i32_le_overflow - should panic ... ok
 test bytes_mut::get_i32_ne ... ok
-test bytes_mut::get_i32_ne_overflow - should panic ... ok
 test bytes_mut::get_i64_be ... ok
-test bytes_mut::get_i64_be_overflow - should panic ... ok
+test bytes_mut::get_i32_ne_overflow - should panic ... ok
 test bytes_mut::get_i64_le ... ok
+test bytes_mut::get_i64_be_overflow - should panic ... ok
 test bytes_mut::get_i64_le_overflow - should panic ... ok
 test bytes_mut::get_i64_ne ... ok
-test bytes_mut::get_i64_ne_overflow - should panic ... ok
 test bytes_mut::get_i8 ... ok
-test bytes_mut::get_i8_overflow - should panic ... ok
+test bytes_mut::get_i64_ne_overflow - should panic ... ok
 test bytes_mut::get_int_be ... ok
-test bytes_mut::get_int_be_overflow - should panic ... ok
+test bytes_mut::get_i8_overflow - should panic ... ok
 test bytes_mut::get_int_le ... ok
-test bytes_mut::get_int_le_overflow - should panic ... ok
+test bytes_mut::get_int_be_overflow - should panic ... ok
 test bytes_mut::get_int_ne ... ok
-test bytes_mut::get_int_ne_overflow - should panic ... ok
+test bytes_mut::get_int_le_overflow - should panic ... ok
 test bytes_mut::get_u128_be ... ok
+test bytes_mut::get_int_ne_overflow - should panic ... ok
 test bytes_mut::get_u128_le ... ok
-test bytes_mut::get_u128_be_overflow - should panic ... ok
-test bytes_mut::get_u128_le_overflow - should panic ... ok
 test bytes_mut::get_u128_ne ... ok
-test bytes_mut::get_u128_ne_overflow - should panic ... ok
+test bytes_mut::get_u128_le_overflow - should panic ... ok
 test bytes_mut::get_u16_be ... ok
-test bytes_mut::get_u16_le ... ok
+test bytes_mut::get_u128_ne_overflow - should panic ... ok
+test bytes_mut::get_u128_be_overflow - should panic ... ok
 test bytes_mut::get_u16_be_overflow - should panic ... ok
+test bytes_mut::get_u16_le ... ok
 test bytes_mut::get_u16_le_overflow - should panic ... ok
 test bytes_mut::get_u16_ne ... ok
 test bytes_mut::get_u16_ne_overflow - should panic ... ok
-test bytes_mut::get_u32_be ... ok
-test bytes_mut::get_u32_le ... ok
 test bytes_mut::get_u32_be_overflow - should panic ... ok
+test bytes_mut::get_u32_le ... ok
+test bytes_mut::get_u32_be ... ok
 test bytes_mut::get_u32_le_overflow - should panic ... ok
 test bytes_mut::get_u32_ne ... ok
 test bytes_mut::get_u32_ne_overflow - should panic ... ok
 test bytes_mut::get_u64_be ... ok
-test bytes_mut::get_u64_be_overflow - should panic ... ok
 test bytes_mut::get_u64_le ... ok
+test bytes_mut::get_u64_be_overflow - should panic ... ok
 test bytes_mut::get_u64_le_overflow - should panic ... ok
 test bytes_mut::get_u64_ne ... ok
-test bytes_mut::get_u64_ne_overflow - should panic ... ok
-test bytes_mut::get_u8 ... ok
 test bytes_mut::get_u8_overflow - should panic ... ok
+test bytes_mut::get_u8 ... ok
+test bytes_mut::get_u64_ne_overflow - should panic ... ok
 test bytes_mut::get_uint_be ... ok
-test bytes_mut::get_uint_be_overflow - should panic ... ok
 test bytes_mut::get_uint_le ... ok
-test bytes_mut::get_uint_le_overflow - should panic ... ok
+test bytes_mut::get_uint_be_overflow - should panic ... ok
 test bytes_mut::get_uint_ne ... ok
+test bytes_mut::get_uint_le_overflow - should panic ... ok
 test chain_limited_slices::advance ... ok
 test bytes_mut::get_uint_ne_overflow - should panic ... ok
 test chain_limited_slices::advance_past_end - should panic ... ok
-test chain_limited_slices::advance_to_end ... ok
 test chain_limited_slices::chunks_vectored_empty ... ok
 test chain_limited_slices::chunks_vectored_is_complete ... ok
 test chain_limited_slices::copy_to_bytes ... ok
 test chain_limited_slices::copy_to_bytes_big ... ok
-test chain_limited_slices::copy_to_bytes_overflow - should panic ... ok
 test chain_limited_slices::copy_to_bytes_to_end ... ok
+test chain_limited_slices::copy_to_bytes_overflow - should panic ... ok
+test chain_limited_slices::advance_to_end ... ok
 test chain_limited_slices::copy_to_slice ... ok
 test chain_limited_slices::copy_to_slice_big ... ok
-test chain_limited_slices::copy_to_slice_to_end ... ok
 test chain_limited_slices::copy_to_slice_overflow - should panic ... ok
+test chain_limited_slices::copy_to_slice_to_end ... ok
 test chain_limited_slices::empty_state ... ok
 test chain_limited_slices::fresh_state ... ok
 test chain_limited_slices::get_f32_be ... ok
 test chain_limited_slices::get_f32_be_overflow - should panic ... ok
 test chain_limited_slices::get_f32_le ... ok
-test chain_limited_slices::get_f32_le_overflow - should panic ... ok
 test chain_limited_slices::get_f32_ne ... ok
+test chain_limited_slices::get_f32_le_overflow - should panic ... ok
 test chain_limited_slices::get_f32_ne_overflow - should panic ... ok
 test chain_limited_slices::get_f64_be ... ok
 test chain_limited_slices::get_f64_be_overflow - should panic ... ok
 test chain_limited_slices::get_f64_le ... ok
 test chain_limited_slices::get_f64_le_overflow - should panic ... ok
 test chain_limited_slices::get_f64_ne ... ok
-test chain_limited_slices::get_f64_ne_overflow - should panic ... ok
 test chain_limited_slices::get_i128_be ... ok
+test chain_limited_slices::get_f64_ne_overflow - should panic ... ok
 test chain_limited_slices::get_i128_be_overflow - should panic ... ok
-test chain_limited_slices::get_i128_le ... ok
-test chain_limited_slices::get_i128_le_overflow - should panic ... ok
 test chain_limited_slices::get_i128_ne ... ok
+test chain_limited_slices::get_i128_le_overflow - should panic ... ok
+test chain_limited_slices::get_i128_le ... ok
 test chain_limited_slices::get_i128_ne_overflow - should panic ... ok
 test chain_limited_slices::get_i16_be ... ok
 test chain_limited_slices::get_i16_be_overflow - should panic ... ok
 test chain_limited_slices::get_i16_le ... ok
-test chain_limited_slices::get_i16_le_overflow - should panic ... ok
 test chain_limited_slices::get_i16_ne ... ok
+test chain_limited_slices::get_i16_le_overflow - should panic ... ok
 test chain_limited_slices::get_i16_ne_overflow - should panic ... ok
-test chain_limited_slices::get_i32_be ... ok
 test chain_limited_slices::get_i32_be_overflow - should panic ... ok
 test chain_limited_slices::get_i32_le ... ok
-test chain_limited_slices::get_i32_le_overflow - should panic ... ok
 test chain_limited_slices::get_i32_ne ... ok
+test chain_limited_slices::get_i32_le_overflow - should panic ... ok
+test chain_limited_slices::get_i32_be ... ok
 test chain_limited_slices::get_i32_ne_overflow - should panic ... ok
 test chain_limited_slices::get_i64_be ... ok
 test chain_limited_slices::get_i64_be_overflow - should panic ... ok
@@ -348,47 +348,47 @@ test chain_limited_slices::get_i64_ne ... ok
 test chain_limited_slices::get_i64_ne_overflow - should panic ... ok
 test chain_limited_slices::get_i8 ... ok
 test chain_limited_slices::get_i8_overflow - should panic ... ok
-test chain_limited_slices::get_int_be ... ok
-test chain_limited_slices::get_int_be_overflow - should panic ... ok
 test chain_limited_slices::get_int_le ... ok
+test chain_limited_slices::get_int_be_overflow - should panic ... ok
+test chain_limited_slices::get_int_be ... ok
 test chain_limited_slices::get_int_le_overflow - should panic ... ok
 test chain_limited_slices::get_int_ne ... ok
 test chain_limited_slices::get_int_ne_overflow - should panic ... ok
 test chain_limited_slices::get_u128_be ... ok
-test chain_limited_slices::get_u128_be_overflow - should panic ... ok
 test chain_limited_slices::get_u128_le ... ok
+test chain_limited_slices::get_u128_be_overflow - should panic ... ok
 test chain_limited_slices::get_u128_le_overflow - should panic ... ok
-test chain_limited_slices::get_u128_ne ... ok
 test chain_limited_slices::get_u128_ne_overflow - should panic ... ok
 test chain_limited_slices::get_u16_be ... ok
+test chain_limited_slices::get_u128_ne ... ok
 test chain_limited_slices::get_u16_be_overflow - should panic ... ok
 test chain_limited_slices::get_u16_le ... ok
 test chain_limited_slices::get_u16_le_overflow - should panic ... ok
 test chain_limited_slices::get_u16_ne ... ok
 test chain_limited_slices::get_u16_ne_overflow - should panic ... ok
-test chain_limited_slices::get_u32_be ... ok
 test chain_limited_slices::get_u32_be_overflow - should panic ... ok
 test chain_limited_slices::get_u32_le ... ok
+test chain_limited_slices::get_u32_be ... ok
 test chain_limited_slices::get_u32_le_overflow - should panic ... ok
 test chain_limited_slices::get_u32_ne ... ok
 test chain_limited_slices::get_u32_ne_overflow - should panic ... ok
 test chain_limited_slices::get_u64_be ... ok
-test chain_limited_slices::get_u64_be_overflow - should panic ... ok
 test chain_limited_slices::get_u64_le ... ok
-test chain_limited_slices::get_u64_le_overflow - should panic ... ok
+test chain_limited_slices::get_u64_be_overflow - should panic ... ok
 test chain_limited_slices::get_u64_ne ... ok
+test chain_limited_slices::get_u64_le_overflow - should panic ... ok
 test chain_limited_slices::get_u64_ne_overflow - should panic ... ok
 test chain_limited_slices::get_u8 ... ok
-test chain_limited_slices::get_u8_overflow - should panic ... ok
 test chain_limited_slices::get_uint_be ... ok
+test chain_limited_slices::get_u8_overflow - should panic ... ok
 test chain_limited_slices::get_uint_be_overflow - should panic ... ok
 test chain_limited_slices::get_uint_le ... ok
 test chain_limited_slices::get_uint_le_overflow - should panic ... ok
-test chain_limited_slices::get_uint_ne ... ok
-test chain_limited_slices::get_uint_ne_overflow - should panic ... ok
 test chain_small_big_u8_slice::advance ... ok
-test chain_small_big_u8_slice::advance_to_end ... ok
+test chain_limited_slices::get_uint_ne_overflow - should panic ... ok
+test chain_limited_slices::get_uint_ne ... ok
 test chain_small_big_u8_slice::advance_past_end - should panic ... ok
+test chain_small_big_u8_slice::advance_to_end ... ok
 test chain_small_big_u8_slice::chunks_vectored_empty ... ok
 test chain_small_big_u8_slice::chunks_vectored_is_complete ... ok
 test chain_small_big_u8_slice::copy_to_bytes ... ok
@@ -404,18 +404,18 @@ test chain_small_big_u8_slice::fresh_state ... ok
 test chain_small_big_u8_slice::get_f32_be ... ok
 test chain_small_big_u8_slice::get_f32_be_overflow - should panic ... ok
 test chain_small_big_u8_slice::get_f32_le ... ok
-test chain_small_big_u8_slice::get_f32_le_overflow - should panic ... ok
 test chain_small_big_u8_slice::get_f32_ne ... ok
-test chain_small_big_u8_slice::get_f32_ne_overflow - should panic ... ok
+test chain_small_big_u8_slice::get_f32_le_overflow - should panic ... ok
 test chain_small_big_u8_slice::get_f64_be ... ok
-test chain_small_big_u8_slice::get_f64_be_overflow - should panic ... ok
+test chain_small_big_u8_slice::get_f32_ne_overflow - should panic ... ok
 test chain_small_big_u8_slice::get_f64_le ... ok
-test chain_small_big_u8_slice::get_f64_le_overflow - should panic ... ok
+test chain_small_big_u8_slice::get_f64_be_overflow - should panic ... ok
 test chain_small_big_u8_slice::get_f64_ne ... ok
 test chain_small_big_u8_slice::get_f64_ne_overflow - should panic ... ok
 test chain_small_big_u8_slice::get_i128_be ... ok
-test chain_small_big_u8_slice::get_i128_le ... ok
 test chain_small_big_u8_slice::get_i128_be_overflow - should panic ... ok
+test chain_small_big_u8_slice::get_i128_le ... ok
+test chain_small_big_u8_slice::get_f64_le_overflow - should panic ... ok
 test chain_small_big_u8_slice::get_i128_le_overflow - should panic ... ok
 test chain_small_big_u8_slice::get_i128_ne ... ok
 test chain_small_big_u8_slice::get_i128_ne_overflow - should panic ... ok
@@ -423,11 +423,11 @@ test chain_small_big_u8_slice::get_i16_be ... ok
 test chain_small_big_u8_slice::get_i16_be_overflow - should panic ... ok
 test chain_small_big_u8_slice::get_i16_le ... ok
 test chain_small_big_u8_slice::get_i16_le_overflow - should panic ... ok
-test chain_small_big_u8_slice::get_i16_ne ... ok
 test chain_small_big_u8_slice::get_i16_ne_overflow - should panic ... ok
 test chain_small_big_u8_slice::get_i32_be ... ok
 test chain_small_big_u8_slice::get_i32_be_overflow - should panic ... ok
 test chain_small_big_u8_slice::get_i32_le ... ok
+test chain_small_big_u8_slice::get_i16_ne ... ok
 test chain_small_big_u8_slice::get_i32_le_overflow - should panic ... ok
 test chain_small_big_u8_slice::get_i32_ne ... ok
 test chain_small_big_u8_slice::get_i32_ne_overflow - should panic ... ok
@@ -435,88 +435,88 @@ test chain_small_big_u8_slice::get_i64_be ... ok
 test chain_small_big_u8_slice::get_i64_be_overflow - should panic ... ok
 test chain_small_big_u8_slice::get_i64_le ... ok
 test chain_small_big_u8_slice::get_i64_le_overflow - should panic ... ok
-test chain_small_big_u8_slice::get_i64_ne ... ok
 test chain_small_big_u8_slice::get_i64_ne_overflow - should panic ... ok
 test chain_small_big_u8_slice::get_i8 ... ok
 test chain_small_big_u8_slice::get_i8_overflow - should panic ... ok
 test chain_small_big_u8_slice::get_int_be ... ok
+test chain_small_big_u8_slice::get_i64_ne ... ok
 test chain_small_big_u8_slice::get_int_be_overflow - should panic ... ok
 test chain_small_big_u8_slice::get_int_le ... ok
 test chain_small_big_u8_slice::get_int_le_overflow - should panic ... ok
 test chain_small_big_u8_slice::get_int_ne ... ok
-test chain_small_big_u8_slice::get_int_ne_overflow - should panic ... ok
 test chain_small_big_u8_slice::get_u128_be ... ok
-test chain_small_big_u8_slice::get_u128_be_overflow - should panic ... ok
+test chain_small_big_u8_slice::get_int_ne_overflow - should panic ... ok
 test chain_small_big_u8_slice::get_u128_le ... ok
-test chain_small_big_u8_slice::get_u128_le_overflow - should panic ... ok
+test chain_small_big_u8_slice::get_u128_be_overflow - should panic ... ok
 test chain_small_big_u8_slice::get_u128_ne ... ok
-test chain_small_big_u8_slice::get_u128_ne_overflow - should panic ... ok
+test chain_small_big_u8_slice::get_u128_le_overflow - should panic ... ok
 test chain_small_big_u8_slice::get_u16_be ... ok
+test chain_small_big_u8_slice::get_u128_ne_overflow - should panic ... ok
 test chain_small_big_u8_slice::get_u16_le ... ok
-test chain_small_big_u8_slice::get_u16_ne ... ok
 test chain_small_big_u8_slice::get_u16_be_overflow - should panic ... ok
-test chain_small_big_u8_slice::get_u16_ne_overflow - should panic ... ok
-test chain_small_big_u8_slice::get_u32_be ... ok
 test chain_small_big_u8_slice::get_u16_le_overflow - should panic ... ok
-test chain_small_big_u8_slice::get_u32_le ... ok
+test chain_small_big_u8_slice::get_u16_ne ... ok
+test chain_small_big_u8_slice::get_u32_be ... ok
+test chain_small_big_u8_slice::get_u16_ne_overflow - should panic ... ok
+test chain_small_big_u8_slice::get_u32_be_overflow - should panic ... ok
 test chain_small_big_u8_slice::get_u32_le_overflow - should panic ... ok
 test chain_small_big_u8_slice::get_u32_ne ... ok
+test chain_small_big_u8_slice::get_u32_le ... ok
 test chain_small_big_u8_slice::get_u32_ne_overflow - should panic ... ok
 test chain_small_big_u8_slice::get_u64_be ... ok
 test chain_small_big_u8_slice::get_u64_be_overflow - should panic ... ok
 test chain_small_big_u8_slice::get_u64_le ... ok
-test chain_small_big_u8_slice::get_u64_le_overflow - should panic ... ok
 test chain_small_big_u8_slice::get_u64_ne ... ok
-test chain_small_big_u8_slice::get_u64_ne_overflow - should panic ... ok
+test chain_small_big_u8_slice::get_u64_le_overflow - should panic ... ok
 test chain_small_big_u8_slice::get_u8 ... ok
+test chain_small_big_u8_slice::get_u64_ne_overflow - should panic ... ok
 test chain_small_big_u8_slice::get_u8_overflow - should panic ... ok
-test chain_small_big_u8_slice::get_uint_be ... ok
-test chain_small_big_u8_slice::get_uint_be_overflow - should panic ... ok
 test chain_small_big_u8_slice::get_uint_le ... ok
+test chain_small_big_u8_slice::get_uint_be_overflow - should panic ... ok
+test chain_small_big_u8_slice::get_uint_be ... ok
 test chain_small_big_u8_slice::get_uint_le_overflow - should panic ... ok
 test chain_small_big_u8_slice::get_uint_ne ... ok
 test chain_u8_slice::advance ... ok
 test chain_small_big_u8_slice::get_uint_ne_overflow - should panic ... ok
-test chain_u8_slice::advance_past_end - should panic ... ok
 test chain_u8_slice::advance_to_end ... ok
-test chain_u8_slice::chunks_vectored_empty ... ok
+test chain_u8_slice::advance_past_end - should panic ... ok
 test chain_u8_slice::chunks_vectored_is_complete ... ok
 test chain_u8_slice::copy_to_bytes ... ok
 test chain_u8_slice::copy_to_bytes_big ... ok
-test chain_u8_slice::copy_to_bytes_overflow - should panic ... ok
 test chain_u8_slice::copy_to_bytes_to_end ... ok
+test chain_u8_slice::copy_to_bytes_overflow - should panic ... ok
+test chain_u8_slice::chunks_vectored_empty ... ok
 test chain_u8_slice::copy_to_slice ... ok
 test chain_u8_slice::copy_to_slice_big ... ok
-test chain_u8_slice::copy_to_slice_overflow - should panic ... ok
 test chain_u8_slice::copy_to_slice_to_end ... ok
+test chain_u8_slice::copy_to_slice_overflow - should panic ... ok
 test chain_u8_slice::empty_state ... ok
-test chain_u8_slice::fresh_state ... ok
 test chain_u8_slice::get_f32_be ... ok
 test chain_u8_slice::get_f32_be_overflow - should panic ... ok
 test chain_u8_slice::get_f32_le ... ok
+test chain_u8_slice::fresh_state ... ok
 test chain_u8_slice::get_f32_le_overflow - should panic ... ok
 test chain_u8_slice::get_f32_ne ... ok
-test chain_u8_slice::get_f32_ne_overflow - should panic ... ok
 test chain_u8_slice::get_f64_be ... ok
-test chain_u8_slice::get_f64_be_overflow - should panic ... ok
+test chain_u8_slice::get_f32_ne_overflow - should panic ... ok
 test chain_u8_slice::get_f64_le ... ok
+test chain_u8_slice::get_f64_be_overflow - should panic ... ok
 test chain_u8_slice::get_f64_le_overflow - should panic ... ok
-test chain_u8_slice::get_f64_ne ... ok
 test chain_u8_slice::get_f64_ne_overflow - should panic ... ok
-test chain_small_big_u8_slice::get_u32_be_overflow - should panic ... ok
 test chain_u8_slice::get_i128_be ... ok
-test chain_u8_slice::get_i128_be_overflow - should panic ... ok
 test chain_u8_slice::get_i128_le ... ok
+test chain_u8_slice::get_i128_be_overflow - should panic ... ok
+test chain_u8_slice::get_f64_ne ... ok
 test chain_u8_slice::get_i128_le_overflow - should panic ... ok
 test chain_u8_slice::get_i128_ne ... ok
 test chain_u8_slice::get_i128_ne_overflow - should panic ... ok
 test chain_u8_slice::get_i16_be ... ok
 test chain_u8_slice::get_i16_le ... ok
 test chain_u8_slice::get_i16_be_overflow - should panic ... ok
-test chain_u8_slice::get_i16_ne ... ok
-test chain_u8_slice::get_i16_ne_overflow - should panic ... ok
-test chain_u8_slice::get_i32_be ... ok
 test chain_u8_slice::get_i16_le_overflow - should panic ... ok
+test chain_u8_slice::get_i16_ne ... ok
+test chain_u8_slice::get_i32_be ... ok
+test chain_u8_slice::get_i16_ne_overflow - should panic ... ok
 test chain_u8_slice::get_i32_be_overflow - should panic ... ok
 test chain_u8_slice::get_i32_le ... ok
 test chain_u8_slice::get_i32_le_overflow - should panic ... ok
@@ -527,36 +527,36 @@ test chain_u8_slice::get_i64_be_overflow - should panic ... ok
 test chain_u8_slice::get_i64_le ... ok
 test chain_u8_slice::get_i64_ne ... ok
 test chain_u8_slice::get_i64_le_overflow - should panic ... ok
-test chain_u8_slice::get_i64_ne_overflow - should panic ... ok
 test chain_u8_slice::get_i8 ... ok
+test chain_u8_slice::get_i64_ne_overflow - should panic ... ok
 test chain_u8_slice::get_i8_overflow - should panic ... ok
 test chain_u8_slice::get_int_be ... ok
-test chain_u8_slice::get_int_le ... ok
 test chain_u8_slice::get_int_be_overflow - should panic ... ok
+test chain_u8_slice::get_int_le ... ok
 test chain_u8_slice::get_int_le_overflow - should panic ... ok
 test chain_u8_slice::get_int_ne ... ok
 test chain_u8_slice::get_int_ne_overflow - should panic ... ok
 test chain_u8_slice::get_u128_be ... ok
 test chain_u8_slice::get_u128_be_overflow - should panic ... ok
 test chain_u8_slice::get_u128_le ... ok
-test chain_u8_slice::get_u128_le_overflow - should panic ... ok
 test chain_u8_slice::get_u128_ne ... ok
-test chain_u8_slice::get_u16_be ... ok
+test chain_u8_slice::get_u128_le_overflow - should panic ... ok
 test chain_u8_slice::get_u128_ne_overflow - should panic ... ok
+test chain_u8_slice::get_u16_be ... ok
 test chain_u8_slice::get_u16_be_overflow - should panic ... ok
 test chain_u8_slice::get_u16_le ... ok
-test chain_u8_slice::get_u16_le_overflow - should panic ... ok
 test chain_u8_slice::get_u16_ne ... ok
+test chain_u8_slice::get_u16_le_overflow - should panic ... ok
 test chain_u8_slice::get_u16_ne_overflow - should panic ... ok
 test chain_u8_slice::get_u32_be ... ok
-test chain_u8_slice::get_u32_be_overflow - should panic ... ok
 test chain_u8_slice::get_u32_le ... ok
-test chain_u8_slice::get_u32_le_overflow - should panic ... ok
+test chain_u8_slice::get_u32_be_overflow - should panic ... ok
 test chain_u8_slice::get_u32_ne ... ok
+test chain_u8_slice::get_u32_le_overflow - should panic ... ok
 test chain_u8_slice::get_u32_ne_overflow - should panic ... ok
-test chain_u8_slice::get_u64_be ... ok
 test chain_u8_slice::get_u64_be_overflow - should panic ... ok
 test chain_u8_slice::get_u64_le ... ok
+test chain_u8_slice::get_u64_be ... ok
 test chain_u8_slice::get_u64_le_overflow - should panic ... ok
 test chain_u8_slice::get_u64_ne ... ok
 test chain_u8_slice::get_u64_ne_overflow - should panic ... ok
@@ -564,11 +564,11 @@ test chain_u8_slice::get_u8 ... ok
 test chain_u8_slice::get_u8_overflow - should panic ... ok
 test chain_u8_slice::get_uint_be ... ok
 test chain_u8_slice::get_uint_be_overflow - should panic ... ok
-test chain_u8_slice::get_uint_le ... ok
 test chain_u8_slice::get_uint_le_overflow - should panic ... ok
 test chain_u8_slice::get_uint_ne ... ok
-test cursor::advance ... ok
+test chain_u8_slice::get_uint_le ... ok
 test chain_u8_slice::get_uint_ne_overflow - should panic ... ok
+test cursor::advance ... ok
 test cursor::advance_past_end - should panic ... ok
 test cursor::advance_to_end ... ok
 test cursor::chunks_vectored_empty ... ok
@@ -586,46 +586,46 @@ test cursor::fresh_state ... ok
 test cursor::get_f32_be ... ok
 test cursor::get_f32_be_overflow - should panic ... ok
 test cursor::get_f32_le ... ok
-test cursor::get_f32_le_overflow - should panic ... ok
 test cursor::get_f32_ne ... ok
-test cursor::get_f32_ne_overflow - should panic ... ok
+test cursor::get_f32_le_overflow - should panic ... ok
 test cursor::get_f64_be ... ok
-test cursor::get_f64_be_overflow - should panic ... ok
+test cursor::get_f32_ne_overflow - should panic ... ok
 test cursor::get_f64_le ... ok
 test cursor::get_f64_le_overflow - should panic ... ok
+test cursor::get_f64_be_overflow - should panic ... ok
 test cursor::get_f64_ne ... ok
-test cursor::get_f64_ne_overflow - should panic ... ok
-test cursor::get_i128_be ... ok
-test cursor::get_i128_le ... ok
 test cursor::get_i128_be_overflow - should panic ... ok
-test cursor::get_i128_le_overflow - should panic ... ok
+test cursor::get_f64_ne_overflow - should panic ... ok
+test cursor::get_i128_le ... ok
+test cursor::get_i128_be ... ok
 test cursor::get_i128_ne ... ok
+test cursor::get_i128_le_overflow - should panic ... ok
 test cursor::get_i16_be ... ok
 test cursor::get_i128_ne_overflow - should panic ... ok
-test cursor::get_i16_be_overflow - should panic ... ok
 test cursor::get_i16_le ... ok
-test cursor::get_i16_le_overflow - should panic ... ok
+test cursor::get_i16_be_overflow - should panic ... ok
 test cursor::get_i16_ne ... ok
+test cursor::get_i16_le_overflow - should panic ... ok
 test cursor::get_i16_ne_overflow - should panic ... ok
 test cursor::get_i32_be ... ok
-test cursor::get_i32_be_overflow - should panic ... ok
 test cursor::get_i32_le ... ok
-test cursor::get_i32_le_overflow - should panic ... ok
+test cursor::get_i32_be_overflow - should panic ... ok
 test cursor::get_i32_ne ... ok
-test cursor::get_i64_be ... ok
+test cursor::get_i32_le_overflow - should panic ... ok
 test cursor::get_i32_ne_overflow - should panic ... ok
+test cursor::get_i64_be ... ok
 test cursor::get_i64_be_overflow - should panic ... ok
 test cursor::get_i64_le ... ok
-test cursor::get_i64_le_overflow - should panic ... ok
 test cursor::get_i64_ne ... ok
+test cursor::get_i64_le_overflow - should panic ... ok
 test cursor::get_i64_ne_overflow - should panic ... ok
-test cursor::get_i8 ... ok
 test cursor::get_i8_overflow - should panic ... ok
+test cursor::get_i8 ... ok
 test cursor::get_int_be ... ok
 test cursor::get_int_be_overflow - should panic ... ok
 test cursor::get_int_le ... ok
-test cursor::get_int_le_overflow - should panic ... ok
 test cursor::get_int_ne ... ok
+test cursor::get_int_le_overflow - should panic ... ok
 test cursor::get_int_ne_overflow - should panic ... ok
 test cursor::get_u128_be ... ok
 test cursor::get_u128_be_overflow - should panic ... ok
@@ -636,30 +636,30 @@ test cursor::get_u128_ne_overflow - should panic ... ok
 test cursor::get_u16_be ... ok
 test cursor::get_u16_be_overflow - should panic ... ok
 test cursor::get_u16_le ... ok
-test cursor::get_u16_le_overflow - should panic ... ok
 test cursor::get_u16_ne ... ok
-test cursor::get_u16_ne_overflow - should panic ... ok
+test cursor::get_u16_le_overflow - should panic ... ok
 test cursor::get_u32_be ... ok
+test cursor::get_u16_ne_overflow - should panic ... ok
 test cursor::get_u32_be_overflow - should panic ... ok
 test cursor::get_u32_le ... ok
-test cursor::get_u32_ne ... ok
 test cursor::get_u32_le_overflow - should panic ... ok
+test cursor::get_u32_ne ... ok
 test cursor::get_u32_ne_overflow - should panic ... ok
-test cursor::get_u64_be ... ok
 test cursor::get_u64_be_overflow - should panic ... ok
 test cursor::get_u64_le ... ok
+test cursor::get_u64_be ... ok
 test cursor::get_u64_le_overflow - should panic ... ok
 test cursor::get_u64_ne ... ok
 test cursor::get_u64_ne_overflow - should panic ... ok
 test cursor::get_u8 ... ok
-test cursor::get_uint_be ... ok
 test cursor::get_u8_overflow - should panic ... ok
-test cursor::get_uint_be_overflow - should panic ... ok
+test cursor::get_uint_be ... ok
 test cursor::get_uint_le ... ok
-test cursor::get_uint_le_overflow - should panic ... ok
+test cursor::get_uint_be_overflow - should panic ... ok
 test cursor::get_uint_ne ... ok
-test cursor::get_uint_ne_overflow - should panic ... ok
+test cursor::get_uint_le_overflow - should panic ... ok
 test test_deref_buf_forwards ... ok
+test cursor::get_uint_ne_overflow - should panic ... ok
 test u8_slice::advance ... ok
 test u8_slice::advance_past_end - should panic ... ok
 test u8_slice::advance_to_end ... ok
@@ -673,93 +673,92 @@ test u8_slice::copy_to_slice ... ok
 test u8_slice::copy_to_slice_big ... ok
 test u8_slice::copy_to_slice_overflow - should panic ... ok
 test u8_slice::copy_to_slice_to_end ... ok
-test u8_slice::fresh_state ... ok
 test u8_slice::empty_state ... ok
 test u8_slice::get_f32_be ... ok
+test u8_slice::fresh_state ... ok
 test u8_slice::get_f32_be_overflow - should panic ... ok
 test u8_slice::get_f32_le ... ok
 test u8_slice::get_f32_le_overflow - should panic ... ok
-test u8_slice::get_f32_ne ... ok
-test u8_slice::get_f32_ne_overflow - should panic ... ok
 test u8_slice::get_f64_be ... ok
-test u8_slice::get_f64_be_overflow - should panic ... ok
+test u8_slice::get_f32_ne_overflow - should panic ... ok
 test u8_slice::get_f64_le ... ok
+test u8_slice::get_f64_be_overflow - should panic ... ok
+test u8_slice::get_f32_ne ... ok
 test u8_slice::get_f64_le_overflow - should panic ... ok
 test u8_slice::get_f64_ne ... ok
 test u8_slice::get_f64_ne_overflow - should panic ... ok
 test u8_slice::get_i128_be ... ok
-test u8_slice::get_i128_be_overflow - should panic ... ok
 test u8_slice::get_i128_le ... ok
+test u8_slice::get_i128_be_overflow - should panic ... ok
 test u8_slice::get_i128_ne ... ok
 test u8_slice::get_i128_le_overflow - should panic ... ok
-test u8_slice::get_i128_ne_overflow - should panic ... ok
 test u8_slice::get_i16_be ... ok
+test u8_slice::get_i128_ne_overflow - should panic ... ok
 test u8_slice::get_i16_be_overflow - should panic ... ok
 test u8_slice::get_i16_le ... ok
-test u8_slice::get_i16_le_overflow - should panic ... ok
 test u8_slice::get_i16_ne ... ok
-test u8_slice::get_i16_ne_overflow - should panic ... ok
+test u8_slice::get_i16_le_overflow - should panic ... ok
 test u8_slice::get_i32_be ... ok
+test u8_slice::get_i16_ne_overflow - should panic ... ok
 test u8_slice::get_i32_be_overflow - should panic ... ok
 test u8_slice::get_i32_le ... ok
-test u8_slice::get_i32_le_overflow - should panic ... ok
 test u8_slice::get_i32_ne ... ok
+test u8_slice::get_i32_le_overflow - should panic ... ok
 test u8_slice::get_i64_be ... ok
 test u8_slice::get_i32_ne_overflow - should panic ... ok
-test u8_slice::get_i64_be_overflow - should panic ... ok
 test u8_slice::get_i64_le ... ok
-test u8_slice::get_i64_le_overflow - should panic ... ok
+test u8_slice::get_i64_be_overflow - should panic ... ok
 test u8_slice::get_i64_ne ... ok
-test u8_slice::get_i64_ne_overflow - should panic ... ok
 test u8_slice::get_i8 ... ok
+test u8_slice::get_i64_ne_overflow - should panic ... ok
+test u8_slice::get_i64_le_overflow - should panic ... ok
 test u8_slice::get_i8_overflow - should panic ... ok
 test u8_slice::get_int_be ... ok
 test u8_slice::get_int_be_overflow - should panic ... ok
-test u8_slice::get_int_le ... ok
-test u8_slice::get_int_le_overflow - should panic ... ok
 test u8_slice::get_int_ne ... ok
+test u8_slice::get_int_le ... ok
 test u8_slice::get_int_ne_overflow - should panic ... ok
-test u8_slice::get_u128_be ... ok
 test u8_slice::get_u128_be_overflow - should panic ... ok
+test u8_slice::get_u128_be ... ok
+test u8_slice::get_int_le_overflow - should panic ... ok
 test u8_slice::get_u128_le ... ok
 test u8_slice::get_u128_le_overflow - should panic ... ok
 test u8_slice::get_u128_ne ... ok
-test u8_slice::get_u128_ne_overflow - should panic ... ok
 test u8_slice::get_u16_be ... ok
-test u8_slice::get_u16_be_overflow - should panic ... ok
+test u8_slice::get_u128_ne_overflow - should panic ... ok
 test u8_slice::get_u16_le ... ok
+test u8_slice::get_u16_be_overflow - should panic ... ok
 test u8_slice::get_u16_ne ... ok
 test u8_slice::get_u16_le_overflow - should panic ... ok
-test u8_slice::get_u16_ne_overflow - should panic ... ok
 test u8_slice::get_u32_be ... ok
-test u8_slice::get_u32_be_overflow - should panic ... ok
+test u8_slice::get_u16_ne_overflow - should panic ... ok
 test u8_slice::get_u32_le ... ok
-test u8_slice::get_u32_le_overflow - should panic ... ok
+test u8_slice::get_u32_be_overflow - should panic ... ok
 test u8_slice::get_u32_ne ... ok
-test u8_slice::get_u32_ne_overflow - should panic ... ok
+test u8_slice::get_u32_le_overflow - should panic ... ok
 test u8_slice::get_u64_be ... ok
+test u8_slice::get_u32_ne_overflow - should panic ... ok
 test u8_slice::get_u64_le ... ok
 test u8_slice::get_u64_be_overflow - should panic ... ok
-test u8_slice::get_u64_le_overflow - should panic ... ok
 test u8_slice::get_u64_ne ... ok
+test u8_slice::get_u64_le_overflow - should panic ... ok
 test u8_slice::get_u8 ... ok
 test u8_slice::get_u64_ne_overflow - should panic ... ok
 test u8_slice::get_u8_overflow - should panic ... ok
 test u8_slice::get_uint_be ... ok
 test u8_slice::get_uint_be_overflow - should panic ... ok
-test u8_slice::get_uint_le ... ok
 test u8_slice::get_uint_le_overflow - should panic ... ok
 test u8_slice::get_uint_ne ... ok
+test u8_slice::get_uint_le ... ok
 test u8_slice::get_uint_ne_overflow - should panic ... ok
 test vec_deque::advance ... ok
 test vec_deque::advance_to_end ... ok
 test vec_deque::advance_past_end - should panic ... ok
 test vec_deque::chunks_vectored_empty ... ok
-test vec_deque::chunks_vectored_is_complete ... ok
 test vec_deque::copy_to_bytes ... ok
 test vec_deque::copy_to_bytes_big ... ok
-test vec_deque::copy_to_bytes_to_end ... ok
 test vec_deque::copy_to_bytes_overflow - should panic ... ok
+test vec_deque::copy_to_bytes_to_end ... ok
 test vec_deque::copy_to_slice ... ok
 test vec_deque::copy_to_slice_big ... ok
 test vec_deque::copy_to_slice_overflow - should panic ... ok
@@ -769,69 +768,69 @@ test vec_deque::fresh_state ... ok
 test vec_deque::get_f32_be ... ok
 test vec_deque::get_f32_be_overflow - should panic ... ok
 test vec_deque::get_f32_le ... ok
-test vec_deque::get_f32_le_overflow - should panic ... ok
 test vec_deque::get_f32_ne ... ok
-test vec_deque::get_f64_be ... ok
+test vec_deque::chunks_vectored_is_complete ... ok
+test vec_deque::get_f32_le_overflow - should panic ... ok
 test vec_deque::get_f32_ne_overflow - should panic ... ok
-test vec_deque::get_f64_be_overflow - should panic ... ok
+test vec_deque::get_f64_be ... ok
 test vec_deque::get_f64_le ... ok
+test vec_deque::get_f64_be_overflow - should panic ... ok
 test vec_deque::get_f64_le_overflow - should panic ... ok
 test vec_deque::get_f64_ne ... ok
 test vec_deque::get_f64_ne_overflow - should panic ... ok
 test vec_deque::get_i128_be ... ok
-test vec_deque::get_i128_le ... ok
 test vec_deque::get_i128_be_overflow - should panic ... ok
+test vec_deque::get_i128_ne ... ok
 test vec_deque::get_i128_le_overflow - should panic ... ok
+test vec_deque::get_i128_le ... ok
 test vec_deque::get_i128_ne_overflow - should panic ... ok
 test vec_deque::get_i16_be ... ok
 test vec_deque::get_i16_be_overflow - should panic ... ok
 test vec_deque::get_i16_le ... ok
-test vec_deque::get_i128_ne ... ok
-test vec_deque::get_i16_le_overflow - should panic ... ok
 test vec_deque::get_i16_ne ... ok
+test vec_deque::get_i16_le_overflow - should panic ... ok
 test vec_deque::get_i16_ne_overflow - should panic ... ok
-test vec_deque::get_i32_be ... ok
-test vec_deque::get_i32_be_overflow - should panic ... ok
 test vec_deque::get_i32_le ... ok
+test vec_deque::get_i32_be_overflow - should panic ... ok
+test vec_deque::get_i32_be ... ok
 test vec_deque::get_i32_le_overflow - should panic ... ok
 test vec_deque::get_i32_ne ... ok
 test vec_deque::get_i32_ne_overflow - should panic ... ok
 test vec_deque::get_i64_be ... ok
 test vec_deque::get_i64_be_overflow - should panic ... ok
-test vec_deque::get_i64_le ... ok
 test vec_deque::get_i64_le_overflow - should panic ... ok
+test vec_deque::get_i64_le ... ok
 test vec_deque::get_i64_ne ... ok
 test vec_deque::get_i64_ne_overflow - should panic ... ok
 test vec_deque::get_i8 ... ok
-test vec_deque::get_int_be ... ok
 test vec_deque::get_i8_overflow - should panic ... ok
+test vec_deque::get_int_be ... ok
 test vec_deque::get_int_be_overflow - should panic ... ok
-test vec_deque::get_int_le ... ok
 test vec_deque::get_int_le_overflow - should panic ... ok
 test vec_deque::get_int_ne ... ok
-test vec_deque::get_int_ne_overflow - should panic ... ok
 test vec_deque::get_u128_be ... ok
+test vec_deque::get_int_ne_overflow - should panic ... ok
 test vec_deque::get_u128_be_overflow - should panic ... ok
+test vec_deque::get_int_le ... ok
 test vec_deque::get_u128_le ... ok
 test vec_deque::get_u128_le_overflow - should panic ... ok
 test vec_deque::get_u128_ne ... ok
-test vec_deque::get_u128_ne_overflow - should panic ... ok
 test vec_deque::get_u16_be ... ok
+test vec_deque::get_u128_ne_overflow - should panic ... ok
 test vec_deque::get_u16_be_overflow - should panic ... ok
 test vec_deque::get_u16_le ... ok
 test vec_deque::get_u16_ne ... ok
 test vec_deque::get_u16_le_overflow - should panic ... ok
-test vec_deque::get_u16_ne_overflow - should panic ... ok
 test vec_deque::get_u32_be ... ok
-test vec_deque::get_u32_be_overflow - should panic ... ok
+test vec_deque::get_u16_ne_overflow - should panic ... ok
 test vec_deque::get_u32_le ... ok
+test vec_deque::get_u32_be_overflow - should panic ... ok
 test vec_deque::get_u32_le_overflow - should panic ... ok
 test vec_deque::get_u32_ne ... ok
-test vec_deque::get_u64_be ... ok
-test vec_deque::get_u32_ne_overflow - should panic ... ok
 test vec_deque::get_u64_be_overflow - should panic ... ok
+test vec_deque::get_u64_be ... ok
 test vec_deque::get_u64_le ... ok
-test vec_deque::get_u64_le_overflow - should panic ... ok
+test vec_deque::get_u32_ne_overflow - should panic ... ok
 test vec_deque::get_u64_ne ... ok
 test vec_deque::get_u64_ne_overflow - should panic ... ok
 test vec_deque::get_u8 ... ok
@@ -840,6 +839,7 @@ test vec_deque::get_uint_be ... ok
 test vec_deque::get_uint_be_overflow - should panic ... ok
 test vec_deque::get_uint_le ... ok
 test vec_deque::get_uint_le_overflow - should panic ... ok
+test vec_deque::get_u64_le_overflow - should panic ... ok
 test vec_deque::get_uint_ne ... ok
 test vec_deque::get_uint_ne_overflow - should panic ... ok
 
@@ -848,24 +848,24 @@ test result: ok. 820 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fi
      Running tests/test_buf_mut.rs (target/debug/deps/test_buf_mut-57341532c0962ccb)
 
 running 22 tests
-test copy_from_slice_panics_if_different_length_2 - should panic ... ok
-test copy_from_slice_panics_if_different_length_1 - should panic ... ok
 test test_clone ... ok
+test copy_from_slice_panics_if_different_length_1 - should panic ... ok
+test copy_from_slice_panics_if_different_length_2 - should panic ... ok
 test test_deref_bufmut_forwards ... ok
 test test_maybe_uninit_buf_mut_put_bytes_overflow - should panic ... ok
 test test_maybe_uninit_buf_mut_put_slice_overflow - should panic ... ok
+test test_maybe_uninit_buf_mut_small ... ok
 test test_put_int ... ok
 test test_put_int_le ... ok
 test test_put_int_le_nbytes_overflow - should panic ... ok
-test test_maybe_uninit_buf_mut_small ... ok
-test test_put_int_nbytes_overflow - should panic ... ok
 test test_put_u16 ... ok
+test test_put_int_nbytes_overflow - should panic ... ok
 test test_put_u8 ... ok
 test test_slice_buf_mut_put_bytes_overflow - should panic ... ok
-test test_slice_buf_mut_small ... ok
 test test_slice_buf_mut_put_slice_overflow - should panic ... ok
-test test_vec_advance_mut - should panic ... ok
+test test_slice_buf_mut_small ... ok
 test test_vec_as_mut_buf ... ok
+test test_vec_advance_mut - should panic ... ok
 test test_vec_put_bytes ... ok
 test write_byte_panics_if_out_of_bounds - should panic ... ok
 test test_maybe_uninit_buf_mut_large ... ok
@@ -880,8 +880,8 @@ test advance_bytes_mut ... ok
 test advance_static ... ok
 test advance_past_len - should panic ... ok
 test advance_vec ... ok
-test arc_is_unique ... ok
 test box_slice_empty ... ok
+test arc_is_unique ... ok
 test bytes_buf_mut_advance ... ok
 test bytes_buf_mut_reuse_when_fully_consumed ... ok
 test bytes_into_vec ... ok
@@ -896,8 +896,8 @@ test bytes_mut_unsplit_two_split_offs ... ok
 test bytes_put_bytes ... ok
 test bytes_with_capacity_but_empty ... ok
 test bytes_reserve_overflow - should panic ... ok
-test empty_slice_ref_not_an_empty_subset ... ok
 test extend_from_slice_mut ... ok
+test empty_slice_ref_not_an_empty_subset ... ok
 test extend_mut ... ok
 test extend_mut_from_bytes ... ok
 test extend_mut_without_size_hint ... ok
@@ -909,14 +909,14 @@ test freeze_after_advance ... ok
 test freeze_after_advance_arc ... ok
 test freeze_after_split_off ... ok
 test freeze_after_split_to ... ok
-test freeze_after_truncate ... ok
 test freeze_after_truncate_arc ... ok
+test freeze_after_truncate ... ok
 test freeze_clone_shared ... ok
 test freeze_clone_unique ... ok
 test from_iter_no_size_hint ... ok
 test from_slice ... ok
-test from_static ... ok
 test index ... ok
+test from_static ... ok
 test len ... ok
 test mut_shared_is_unique ... ok
 test owned_buf_sharing ... ok
@@ -924,28 +924,28 @@ test owned_buf_slicing ... ok
 test owned_dropped_exactly_once ... ok
 test owned_into_vec ... ok
 test owned_is_unique_always_false ... ok
-test owned_safe_drop_on_as_ref_panic ... ok
 test owned_to_mut ... ok
+test owned_safe_drop_on_as_ref_panic ... ok
 test owned_to_vec ... ok
 test partial_eq_bytesmut ... ok
 test reserve_convert ... ok
+test reserve_allocates_at_least_original_capacity ... ok
 test reserve_growth ... ok
 test reserve_in_arc_nonunique_does_not_overallocate ... ok
-test reserve_allocates_at_least_original_capacity ... ok
 test reserve_in_arc_unique_does_not_overallocate ... ok
 test reserve_in_arc_unique_does_not_overallocate_after_multiple_splits ... ok
 test reserve_in_arc_unique_does_not_overallocate_after_split ... ok
 test reserve_in_arc_unique_doubles ... ok
 test reserve_shared_reuse ... ok
-test reserve_vec_recycling ... ok
 test shared_is_unique ... ok
+test reserve_vec_recycling ... ok
 test slice ... ok
 test slice_oob_1 - should panic ... ok
-test slice_ref_catches_not_a_subset - should panic ... ok
 test slice_oob_2 - should panic ... ok
+test slice_ref_catches_not_a_subset - should panic ... ok
 test slice_ref_empty ... ok
-test slice_ref_not_an_empty_subset ... ok
 test slice_ref_empty_subslice ... ok
+test slice_ref_not_an_empty_subset ... ok
 test slice_ref_works ... ok
 test split_off ... ok
 test split_off_empty_addr ... ok
@@ -953,18 +953,18 @@ test split_off_empty_addr_mut ... ok
 test split_off_oob - should panic ... ok
 test split_off_to_at_gt_len ... ok
 test split_off_uninitialized ... ok
-test split_to_1 ... ok
 test split_off_to_loop ... ok
-test split_to_empty_addr ... ok
+test split_to_1 ... ok
 test split_to_2 ... ok
+test split_to_empty_addr ... ok
 test split_to_empty_addr_mut ... ok
 test split_to_oob - should panic ... ok
 test split_to_oob_mut - should panic ... ok
-test static_is_unique ... ok
 test split_to_uninitialized - should panic ... ok
+test static_is_unique ... ok
 test test_bounds ... ok
-test test_bytes_into_vec ... ok
 test test_bytes_capacity_len ... ok
+test test_bytes_into_vec ... ok
 test test_bytes_into_vec_promotable_even ... ok
 test test_bytes_mut_conversion ... ok
 test test_bytes_vec_conversion ... ok
@@ -972,8 +972,8 @@ test test_bytesmut_from_bytes_bytes_mut_offset ... ok
 test test_bytesmut_from_bytes_bytes_mut_shared ... ok
 test test_bytesmut_from_bytes_bytes_mut_vec ... ok
 test test_bytesmut_from_bytes_promotable_even_arc_1 ... ok
-test test_bytesmut_from_bytes_promotable_even_arc_offset ... ok
 test test_bytesmut_from_bytes_promotable_even_arc_2 ... ok
+test test_bytesmut_from_bytes_promotable_even_arc_offset ... ok
 test test_bytesmut_from_bytes_promotable_even_vec ... ok
 test test_bytesmut_from_bytes_static ... ok
 test test_layout ... ok
@@ -985,14 +985,14 @@ test vec_is_unique ... ok
 test reserve_max_original_capacity_value ... ok
 test advance_bytes_mut_remaining_capacity ... ok
 
-test result: ok. 108 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.08s
+test result: ok. 108 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.07s
 
      Running tests/test_bytes_odd_alloc.rs (target/debug/deps/test_bytes_odd_alloc-6801d16bd64fac10)
 
 running 8 tests
 test sanity_check_odd_allocator ... ok
-test test_bytes_from_vec_drop ... ok
 test test_bytes_clone_drop ... ok
+test test_bytes_from_vec_drop ... ok
 test test_bytes_into_vec ... ok
 test test_bytesmut_from_bytes_arc_1 ... ok
 test test_bytesmut_from_bytes_arc_2 ... ok
@@ -1006,8 +1006,8 @@ test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 running 4 tests
 test test_bytes_advance ... ok
 test test_bytes_truncate ... ok
-test test_bytes_into_vec ... ok
 test test_bytes_truncate_and_advance ... ok
+test test_bytes_into_vec ... ok
 
 test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 
@@ -1017,9 +1017,9 @@ running 7 tests
 test chain_get_bytes ... ok
 test chain_growing_buffer ... ok
 test chain_overflow_remaining_mut ... ok
-test collect_two_bufs ... ok
 test iterating_two_bufs ... ok
 test vectored_read ... ok
+test collect_two_bufs ... ok
 test writing_chained ... ok
 
 test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
