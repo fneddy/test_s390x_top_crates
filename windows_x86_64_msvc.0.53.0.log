@@ -10,7 +10,7 @@
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
    Compiling windows_x86_64_msvc v0.53.0 (/tmp/top100_artifacts/windows_x86_64_msvc-0.53.0)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.44s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.02s
      Running unittests src/lib.rs (target/debug/deps/windows_x86_64_msvc-f9666444e3ac6c58)
 
 running 0 tests

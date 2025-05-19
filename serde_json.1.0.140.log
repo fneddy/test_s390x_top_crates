@@ -12,40 +12,40 @@
    Compiling unicode-ident v1.0.17
    Compiling serde v1.0.218
    Compiling shlex v1.3.0
+   Compiling equivalent v1.0.2
+   Compiling hashbrown v0.15.2
    Compiling cc v1.2.16
    Compiling libc v0.2.170
-   Compiling hashbrown v0.15.2
-   Compiling equivalent v1.0.2
-   Compiling target-triple v0.1.4
-   Compiling quote v1.0.39
    Compiling indexmap v2.7.1
-   Compiling winnow v0.7.3
+   Compiling ryu v1.0.19
+   Compiling quote v1.0.39
    Compiling syn v2.0.99
-   Compiling itoa v1.0.14
+   Compiling target-triple v0.1.4
    Compiling memchr v2.7.4
+   Compiling serde_json v1.0.139
+   Compiling winnow v0.7.3
    Compiling psm v0.1.25
    Compiling stacker v0.1.19
-   Compiling serde_json v1.0.139
-   Compiling ryu v1.0.19
-   Compiling serde_json v1.0.140 (/tmp/top100_artifacts/serde_json-1.0.140)
-   Compiling ref-cast v1.0.24
+   Compiling itoa v1.0.14
    Compiling rustversion v1.0.19
    Compiling cfg-if v1.0.0
-   Compiling glob v0.3.2
+   Compiling serde_json v1.0.140 (/tmp/top100_artifacts/serde_json-1.0.140)
+   Compiling ref-cast v1.0.24
    Compiling dissimilar v1.0.9
+   Compiling glob v0.3.2
    Compiling termcolor v1.4.1
-   Compiling indoc v2.0.5
    Compiling serde_derive v1.0.218
    Compiling ref-cast-impl v1.0.24
    Compiling automod v1.0.14
+   Compiling indoc v2.0.5
    Compiling serde_spanned v0.6.8
    Compiling toml_datetime v0.6.8
-   Compiling serde_stacker v0.1.12
-   Compiling toml_edit v0.22.24
    Compiling serde_bytes v0.11.16
+   Compiling toml_edit v0.22.24
+   Compiling serde_stacker v0.1.12
    Compiling toml v0.8.20
    Compiling trybuild v1.0.103
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 24.38s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 23.96s
      Running unittests src/lib.rs (target/debug/deps/serde_json-b9439b500d919ddd)
 
 running 0 tests
@@ -63,26 +63,26 @@ test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; fini
 
 running 9 tests
 test error ... ok
+test number ... ok
 test indented ... ok
 test value_bool ... ok
+test value_array ... ok
 test value_null ... ok
 test value_number ... ok
 test value_object ... ok
 test value_string ... ok
-test value_array ... ok
-test number ... ok
 
 test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
 
      Running tests/lexical.rs (target/debug/deps/lexical-b8423e9de52eac4c)
 
 running 35 tests
-test exponent::mantissa_exponent_test ... ok
 test algorithm::double_fast_path_test ... ok
-test exponent::scientific_exponent_test ... ok
 test algorithm::float_fast_path_test ... ok
-test float::from_float ... ok
 test algorithm::moderate_path_test ... ok
+test exponent::mantissa_exponent_test ... ok
+test exponent::scientific_exponent_test ... ok
+test float::from_float ... ok
 test float::imul_test ... ok
 test float::mul_test ... ok
 test float::normalize_test ... ok
@@ -118,119 +118,119 @@ test result: ok. 35 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fin
      Running tests/map.rs (target/debug/deps/map-0ec0f9ce66d262b3)
 
 running 3 tests
-test test_append ... ok
 test test_preserve_order ... ok
 test test_retain ... ok
+test test_append ... ok
 
-test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
 
      Running tests/regression.rs (target/debug/deps/regression-827e5b41ec6f5edf)
 
 running 4 tests
+test regression::issue845::test ... ok
+test regression::issue953::test ... ok
 test regression::issue520::test ... ok
 test regression::issue795::test ... ok
-test regression::issue953::test ... ok
-test regression::issue845::test ... ok
 
 test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
 
      Running tests/stream.rs (target/debug/deps/stream-2d89b06173fb5127)
 
 running 11 tests
-test test_error ... ok
 test test_json_stream_empty ... ok
+test test_error ... ok
 test test_json_stream_invalid_literal ... ok
-test test_json_stream_newlines ... ok
+test test_json_stream_invalid_number ... ok
 test test_json_stream_primitive ... ok
+test test_json_stream_newlines ... ok
 test test_json_stream_trailing_whitespaces ... ok
 test test_json_stream_truncated ... ok
-test test_json_stream_truncated_decimal ... ok
 test test_json_stream_truncated_exponent ... ok
+test test_json_stream_truncated_decimal ... ok
 test test_json_stream_truncated_negative ... ok
-test test_json_stream_invalid_number ... ok
 
-test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
 
      Running tests/test.rs (target/debug/deps/test-c3149347bd4d88e4)
 
 running 75 tests
+test test_boolean_key ... ok
+test null_invalid_type ... ok
 test hash_positive_and_negative_zero ... ok
 test issue_220 ... ok
-test null_invalid_type ... ok
 test test_borrow ... ok
-test test_borrow_in_map_key ... ok
-test test_boolean_key ... ok
 test test_borrowed_key ... ok
-test test_byte_buf_de ... ok
 test test_byte_buf_de_invalid_surrogates ... ok
-test test_byte_buf_de_multiple ... ok
+test test_byte_buf_de ... ok
 test test_byte_buf_ser ... ok
 test test_bytes_ser ... ok
 test test_category ... ok
 test test_control_character_search ... ok
 test test_deny_non_finite_f32_key ... ok
 test test_deny_non_finite_f64_key ... ok
+test test_borrow_in_map_key ... ok
 test test_deserialize_number_to_untagged_enum ... ok
+test test_effectively_string_keys ... ok
 test test_encode_nonfinite_float_yields_null ... ok
 test test_float_key ... ok
-test test_integer128 ... ok
+test test_deserialize_from_stream ... ok
 test test_integer128_key ... ok
+test test_integer128 ... ok
 test test_integer128_to_value ... ok
+test test_byte_buf_de_multiple ... ok
+test test_byte_buf_de_surrogate_pair ... ok
+test test_json_macro ... ok
 test test_integer_key ... ok
 test test_into_io_error ... ok
-test test_json_macro ... ok
-test test_json_pointer ... ok
-test test_byte_buf_de_surrogate_pair ... ok
-test test_effectively_string_keys ... ok
-test test_deserialize_from_stream ... ok
-test test_json_pointer_mut ... ok
 test test_missing_nonoption_field ... ok
 test test_missing_option_field ... ok
+test test_missing_renamed_field ... ok
 test test_parse_bool ... ok
 test test_parse_char ... ok
-test test_missing_renamed_field ... ok
-test test_multiline_errors ... ok
 test test_parse_enum ... ok
-test test_parse_enum_errors ... ok
+test test_multiline_errors ... ok
 test test_parse_f64 ... ok
-test test_parse_negative_zero ... ok
-test test_parse_null ... ok
-test test_parse_number ... ok
-test test_parse_list ... ok
-test test_parse_number_errors ... ok
-test test_parse_object ... ok
-test test_parse_option ... ok
 test test_parse_i64 ... ok
+test test_parse_list ... ok
+test test_parse_negative_zero ... ok
+test test_json_pointer ... ok
+test test_parse_enum_errors ... ok
+test test_parse_number ... ok
+test test_json_pointer_mut ... ok
+test test_parse_null ... ok
+test test_parse_string ... ok
 test test_parse_struct ... ok
 test test_parse_trailing_whitespace ... ok
-test test_parse_string ... ok
-test test_parse_u64 ... ok
+test test_parse_number_errors ... ok
 test test_partialeq_bool ... ok
+test test_parse_u64 ... ok
+test test_partialeq_string ... ok
+test test_roundtrip_f32 ... ok
 test test_serialize_char ... ok
 test test_serialize_map_with_no_len ... ok
-test test_roundtrip_f32 ... ok
-test test_partialeq_string ... ok
 test test_serialize_rejects_adt_keys ... ok
-test test_partialeq_number ... ok
-test test_stack_overflow ... ok
 test test_serialize_seq_with_no_len ... ok
+test test_stack_overflow ... ok
 test test_value_as_f64 ... ok
 test test_value_into_deserializer ... ok
-test test_write_char ... ok
-test test_write_enum ... ok
+test test_partialeq_number ... ok
+test test_write_bool ... ok
+test test_parse_object ... ok
 test test_write_f64 ... ok
 test test_write_i64 ... ok
-test test_write_list ... ok
+test test_parse_option ... ok
 test test_write_newtype_struct ... ok
 test test_write_null ... ok
 test test_write_object ... ok
 test test_write_option ... ok
 test test_write_str ... ok
-test test_write_tuple ... ok
+test test_write_char ... ok
 test test_write_u64 ... ok
-test test_write_bool ... ok
+test test_write_enum ... ok
+test test_write_list ... ok
+test test_write_tuple ... ok
 
-test result: ok. 75 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+test result: ok. 75 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
 
 + RESULT=0
 + cd /tmp/top100_artifacts

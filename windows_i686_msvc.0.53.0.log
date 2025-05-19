@@ -1,14 +1,13 @@
 [windows_i686_msvc] download directory: /tmp/top100_artifacts/windows_i686_msvc-0.53.0
-+ curl -sL https://crates.io/api/v1/crates/windows_i686_msvc/0.53.0/download
 + tar xzf -
++ curl -sL https://crates.io/api/v1/crates/windows_i686_msvc/0.53.0/download
 + cd /tmp/top100_artifacts/windows_i686_msvc-0.53.0
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
     Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
    Compiling windows_i686_msvc v0.53.0 (/tmp/top100_artifacts/windows_i686_msvc-0.53.0)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.03s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.34s
      Running unittests src/lib.rs (target/debug/deps/windows_i686_msvc-be3993f940070e7f)
 
 running 0 tests

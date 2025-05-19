@@ -6,9 +6,8 @@
      Removed 0 files
 + cargo +stable test ''
 warning: no edition set: defaulting to the 2015 edition while the latest is 2024
-    Blocking waiting for file lock on package cache
    Compiling fnv v1.0.7 (/tmp/top100_artifacts/fnv-1.0.7)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.43s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.93s
      Running unittests lib.rs (target/debug/deps/fnv-7203222cd41fbeea)
 
 running 1 test

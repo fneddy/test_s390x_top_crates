@@ -5,11 +5,9 @@
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
-    Blocking waiting for file lock on package cache
     Updating crates.io index
+    Blocking waiting for file lock on package cache
      Locking 10 packages to latest compatible versions
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
    Compiling autocfg v1.4.0
    Compiling scopeguard v1.2.0
@@ -106,7 +104,7 @@ warning: field `0` is never read
     = note: `#[warn(dead_code)]` on by default
 
 warning: `lock_api` (lib test) generated 7 warnings
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.78s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.43s
      Running unittests src/lib.rs (target/debug/deps/lock_api-2627dc543a4e4465)
 
 running 0 tests

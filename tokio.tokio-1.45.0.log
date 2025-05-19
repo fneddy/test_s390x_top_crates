@@ -1,17 +1,210 @@
 [tokio] download directory: /tmp/top100_artifacts/tokio-tokio-1.45.0
-+ curl -sL https://crates.io/api/v1/crates/tokio/tokio-1.45.0/download
-+ tar xzf -
-
-gzip: stdin: not in gzip format
-tar: Child returned status 1
-tar: Error is not recoverable: exiting now
-+ cd /tmp/top100_artifacts/tokio-tokio-1.45.0
-/home/eddy/src/nebula/test_cratesio.sh: line 77: cd: /tmp/top100_artifacts/tokio-tokio-1.45.0: No such file or directory
++ git clone -c advice.detachedHead=false -q --branch tokio-1.45.0 --depth 1 https://github.com/tokio-rs/tokio/ .
 + cargo clean
-error: could not find `Cargo.toml` in `/tmp/top100_artifacts` or any parent directory
-+ cargo +stable test ''
-error: could not find `Cargo.toml` in `/tmp/top100_artifacts` or any parent directory
-+ RESULT=101
-+ cd /tmp/top100_artifacts
-+ rm -rf /tmp/top100_artifacts/tokio-tokio-1.45.0
-+ exit 101
+     Removed 0 files
++ cargo +stable test
+    Updating crates.io index
+     Locking 208 packages to latest compatible versions
+      Adding criterion v0.5.1 (available: v0.6.0)
+      Adding http v0.2.12 (available: v1.3.1)
+      Adding nix v0.29.0 (available: v0.30.1)
+      Adding rand v0.8.5 (available: v0.9.1)
+      Adding rand_chacha v0.3.1 (available: v0.9.0)
+      Adding windows-sys v0.52.0 (available: v0.59.0)
+ Downloading crates ...
+  Downloaded cfg_aliases v0.2.1
+  Downloaded cordyceps v0.3.3
+  Downloaded downcast v0.11.0
+  Downloaded fragile v2.0.1
+  Downloaded diatomic-waker v0.2.3
+  Downloaded fixedbitset v0.5.7
+  Downloaded bit-set v0.8.0
+  Downloaded clap v4.5.38
+  Downloaded parking v2.2.1
+  Downloaded bit-vec v0.8.0
+  Downloaded sharded-slab v0.1.7
+  Downloaded overload v0.1.1
+  Downloaded nu-ansi-term v0.46.0
+  Downloaded matchers v0.1.0
+  Downloaded tracing-log v0.2.0
+  Downloaded spin v0.9.8
+  Downloaded futures-buffered v0.2.11
+  Downloaded wait-timeout v0.2.1
+  Downloaded predicates-tree v1.0.12
+  Downloaded regex-automata v0.1.10
+  Downloaded predicates v3.1.3
+  Downloaded mockall v0.13.1
+  Downloaded regex-syntax v0.6.29
+  Downloaded is-terminal v0.4.16
+  Downloaded tracing-subscriber v0.3.19
+  Downloaded futures-concurrency v7.6.3
+  Downloaded half v2.6.0
+  Downloaded futures-lite v2.6.0
+  Downloaded unarray v0.1.4
+  Downloaded termtree v0.5.1
+  Downloaded predicates-core v1.0.9
+  Downloaded mockall_derive v0.13.1
+  Downloaded nix v0.29.0
+  Downloaded proptest v1.6.0
+   Compiling proc-macro2 v1.0.95
+   Compiling unicode-ident v1.0.18
+   Compiling libc v0.2.172
+   Compiling autocfg v1.4.0
+   Compiling cfg-if v1.0.0
+   Compiling pin-project-lite v0.2.16
+   Compiling futures-core v0.3.31
+   Compiling parking_lot_core v0.9.10
+   Compiling memchr v2.7.4
+   Compiling lock_api v0.4.12
+   Compiling smallvec v1.15.0
+   Compiling quote v1.0.40
+   Compiling scopeguard v1.2.0
+   Compiling syn v2.0.101
+   Compiling bytes v1.10.1
+   Compiling slab v0.4.9
+   Compiling futures-io v0.3.31
+   Compiling socket2 v0.5.9
+   Compiling parking_lot v0.12.3
+   Compiling mio v1.0.3
+   Compiling signal-hook-registry v1.4.5
+   Compiling pin-utils v0.1.0
+   Compiling futures-sink v0.3.31
+   Compiling futures-channel v0.3.31
+   Compiling futures-task v0.3.31
+   Compiling num_cpus v1.16.0
+   Compiling once_cell v1.21.3
+   Compiling getrandom v0.3.3
+   Compiling bitflags v2.9.1
+   Compiling fastrand v2.3.0
+   Compiling rustix v1.0.7
+   Compiling errno v0.3.12
+   Compiling linux-raw-sys v0.9.4
+   Compiling zerocopy v0.8.25
+   Compiling getrandom v0.2.16
+   Compiling rand_core v0.6.4
+   Compiling regex-syntax v0.8.5
+   Compiling tempfile v3.20.0
+   Compiling ppv-lite86 v0.2.21
+   Compiling lazy_static v1.5.0
+   Compiling fnv v1.0.7
+   Compiling memoffset v0.9.1
+   Compiling rand_chacha v0.3.1
+   Compiling num-traits v0.2.19
+   Compiling rand v0.8.5
+   Compiling predicates-core v1.0.9
+   Compiling mockall_derive v0.13.1
+   Compiling tokio-macros v2.5.0 (/tmp/top100_artifacts/tokio-tokio-1.45.0/tokio-macros)
+   Compiling futures-macro v0.3.31
+   Compiling async-stream-impl v0.3.6
+   Compiling pin-project-internal v1.1.10
+   Compiling tokio v1.45.0 (/tmp/top100_artifacts/tokio-tokio-1.45.0/tokio)
+   Compiling futures-util v0.3.31
+   Compiling async-stream v0.3.6
+   Compiling cfg_aliases v0.2.1
+   Compiling nix v0.29.0
+   Compiling wait-timeout v0.2.1
+   Compiling cordyceps v0.3.3
+   Compiling pin-project v1.1.10
+   Compiling quick-error v1.2.3
+   Compiling termtree v0.5.1
+   Compiling diatomic-waker v0.2.3
+   Compiling spin v0.9.8
+   Compiling anstyle v1.0.10
+   Compiling bit-vec v0.8.0
+   Compiling parking v2.2.1
+   Compiling bit-set v0.8.0
+   Compiling futures-lite v2.6.0
+   Compiling predicates v3.1.3
+   Compiling futures-buffered v0.2.11
+   Compiling predicates-tree v1.0.12
+   Compiling rusty-fork v0.3.0
+   Compiling futures-executor v0.3.31
+   Compiling futures v0.3.31
+   Compiling rand_xorshift v0.3.0
+   Compiling fixedbitset v0.5.7
+   Compiling unarray v0.1.4
+   Compiling fragile v2.0.1
+   Compiling downcast v0.11.0
+   Compiling proptest v1.6.0
+   Compiling futures-concurrency v7.6.3
+   Compiling tokio-stream v0.1.17 (/tmp/top100_artifacts/tokio-tokio-1.45.0/tokio-stream)
+   Compiling tokio-test v0.4.4 (/tmp/top100_artifacts/tokio-tokio-1.45.0/tokio-test)
+   Compiling mockall v0.13.1
+   Compiling tokio-util v0.7.15 (/tmp/top100_artifacts/tokio-tokio-1.45.0/tokio-util)
+   Compiling serde v1.0.219
+   Compiling serde_derive v1.0.219
+   Compiling futures-test v0.3.31
+   Compiling itoa v1.0.15
+   Compiling serde_json v1.0.140
+   Compiling ryu v1.0.20
+   Compiling tracing-core v0.1.33
+   Compiling regex-syntax v0.6.29
+   Compiling tracing-attributes v0.1.28
+   Compiling regex-automata v0.4.9
+   Compiling httparse v1.10.1
+   Compiling regex-automata v0.1.10
+   Compiling overload v0.1.1
+   Compiling log v0.4.27
+   Compiling tracing-log v0.2.0
+   Compiling nu-ansi-term v0.46.0
+   Compiling matchers v0.1.0
+   Compiling regex v1.11.1
+   Compiling tracing v0.1.41
+   Compiling sharded-slab v0.1.7
+   Compiling thread_local v1.1.8
+   Compiling http v0.2.12
+   Compiling tracing-subscriber v0.3.19
+   Compiling httpdate v1.0.3
+   Compiling doc-comment v0.3.3
+   Compiling hashbrown v0.15.3
+   Compiling equivalent v1.0.2
+   Compiling serde_spanned v0.6.8
+   Compiling indexmap v2.9.0
+   Compiling toml_datetime v0.6.9
+   Compiling tests-integration v0.1.0 (/tmp/top100_artifacts/tokio-tokio-1.45.0/tests-integration)
+   Compiling winnow v0.7.10
+   Compiling target-triple v0.1.4
+   Compiling toml_write v0.1.1
+   Compiling glob v0.3.2
+   Compiling termcolor v1.4.1
+   Compiling tests-build v0.1.0 (/tmp/top100_artifacts/tokio-tokio-1.45.0/tests-build)
+   Compiling examples v0.0.0 (/tmp/top100_artifacts/tokio-tokio-1.45.0/examples)
+   Compiling toml_edit v0.22.26
+   Compiling toml v0.8.22
+   Compiling trybuild v1.0.105
+error: linking with `cc` failed: exit status: 1
+  |
+  = note:  "cc" "/tmp/rustcthOPAe/symbols.o" "<154 object files omitted>" "-Wl,--as-needed" "-Wl,-Bstatic" "<sysroot>/lib/rustlib/s390x-unknown-linux-gnu/lib/{libtest-*,libgetopts-*,libunicode_width-*,librustc_std_workspace_std-*}.rlib" "/tmp/top100_artifacts/tokio-tokio-1.45.0/target/debug/deps/{libtokio_test-e18681f490a30aed.rlib,libtokio_stream-28edefb27e2bfb88.rlib,libtokio-aaf5edb0ab148736.rlib,libsignal_hook_registry-b3806d70d5ebe181.rlib,libsocket2-ad23fd1d02abd295.rlib,libbytes-b19c76f501264487.rlib,libmio-9a995c775ccaeda7.rlib,libparking_lot-82a74e1e2ebb6be8.rlib,libparking_lot_core-2ffec474c19520fc.rlib,libsmallvec-583199cefa182dc4.rlib,liblock_api-fb08e5f834e2b936.rlib,libscopeguard-9fe77f34cd100f69.rlib,libfutures-a256cc75c5550712.rlib,libfutures_executor-7abda99fecaa4a44.rlib,libnum_cpus-b56a88ab827b509e.rlib,libfutures_util-5edb9bb5ec15fd51.rlib,libmemchr-6ea3cd41e88d454b.rlib,libfutures_io-90562ec8e0b9a6e1.rlib,libslab-e9fc84c9e219b8d8.rlib,libfutures_channel-71d6a90d0799b647.rlib,libpin_project_lite-395eb487c4a3d54c.rlib,libfutures_sink-171e9935aaf2e6b8.rlib,libfutures_task-1ce408e9f2770966.rlib,libfutures_core-91ab0586b2061148.rlib,libnix-8912468e1a44ba80.rlib,libmemoffset-afac030500da615f.rlib,libpin_utils-0f6fc1808b2d670c.rlib,libbitflags-f6d01a6e22ed036d.rlib,libcfg_if-cccc26637db8d812.rlib,liblibc-d64479a47f95f89a.rlib}.rlib" "<sysroot>/lib/rustlib/s390x-unknown-linux-gnu/lib/{libstd-*,libpanic_unwind-*,libobject-*,libmemchr-*,libaddr2line-*,libgimli-*,librustc_demangle-*,libstd_detect-*,libhashbrown-*,librustc_std_workspace_alloc-*,libminiz_oxide-*,libadler2-*,libunwind-*,libcfg_if-*,liblibc-*,liballoc-*,librustc_std_workspace_core-*,libcore-*,libcompiler_builtins-*}.rlib" "-Wl,-Bdynamic" "-lgcc_s" "-lutil" "-lrt" "-lpthread" "-lm" "-ldl" "-lc" "-L" "/tmp/rustcthOPAe/raw-dylibs" "-Wl,--eh-frame-hdr" "-Wl,-z,noexecstack" "-L" "<sysroot>/lib/rustlib/s390x-unknown-linux-gnu/lib" "-o" "/tmp/top100_artifacts/tokio-tokio-1.45.0/target/debug/deps/io_async_fd-99d2621e9537672c" "-Wl,--gc-sections" "-pie" "-Wl,-z,relro,-z,now" "-nodefaultlibs"
+  = note: some arguments are omitted. use `--verbose` to show all linker arguments
+  = note: /usr/bin/ld: final link failed: No space left on device
+          collect2: error: ld returned 1 exit status
+          
+
+error: could not compile `tokio` (test "io_async_fd") due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
+error: linking with `cc` failed: exit status: 1
+  |
+  = note:  "cc" "/tmp/rustcECf9wx/symbols.o" "<42 object files omitted>" "-Wl,--as-needed" "-Wl,-Bstatic" "<sysroot>/lib/rustlib/s390x-unknown-linux-gnu/lib/{libtest-*,libgetopts-*,libunicode_width-*,librustc_std_workspace_std-*}.rlib" "/tmp/top100_artifacts/tokio-tokio-1.45.0/target/debug/deps/{libtokio_test-e18681f490a30aed.rlib,libtokio_stream-28edefb27e2bfb88.rlib,libfutures_core-91ab0586b2061148.rlib,libtokio-aaf5edb0ab148736.rlib,libsignal_hook_registry-b3806d70d5ebe181.rlib,libsocket2-ad23fd1d02abd295.rlib,libbytes-b19c76f501264487.rlib,libmio-9a995c775ccaeda7.rlib,libparking_lot-82a74e1e2ebb6be8.rlib,libparking_lot_core-2ffec474c19520fc.rlib,liblibc-d64479a47f95f89a.rlib,libcfg_if-cccc26637db8d812.rlib,libsmallvec-583199cefa182dc4.rlib,liblock_api-fb08e5f834e2b936.rlib,libscopeguard-9fe77f34cd100f69.rlib,libpin_project_lite-395eb487c4a3d54c.rlib}.rlib" "<sysroot>/lib/rustlib/s390x-unknown-linux-gnu/lib/{libstd-*,libpanic_unwind-*,libobject-*,libmemchr-*,libaddr2line-*,libgimli-*,librustc_demangle-*,libstd_detect-*,libhashbrown-*,librustc_std_workspace_alloc-*,libminiz_oxide-*,libadler2-*,libunwind-*,libcfg_if-*,liblibc-*,liballoc-*,librustc_std_workspace_core-*,libcore-*,libcompiler_builtins-*}.rlib" "-Wl,-Bdynamic" "-lgcc_s" "-lutil" "-lrt" "-lpthread" "-lm" "-ldl" "-lc" "-L" "/tmp/rustcECf9wx/raw-dylibs" "-Wl,--eh-frame-hdr" "-Wl,-z,noexecstack" "-L" "<sysroot>/lib/rustlib/s390x-unknown-linux-gnu/lib" "-o" "/tmp/top100_artifacts/tokio-tokio-1.45.0/target/debug/deps/io_write_all-767b446bf48edc82" "-Wl,--gc-sections" "-pie" "-Wl,-z,relro,-z,now" "-nodefaultlibs"
+  = note: some arguments are omitted. use `--verbose` to show all linker arguments
+  = note: /usr/bin/ld: final link failed: No space left on device
+          collect2: error: ld returned 1 exit status
+          
+
+error: linking with `cc` failed: exit status: 1
+  |
+  = note:  "cc" "/tmp/rustcRftPXu/symbols.o" "<8 object files omitted>" "-Wl,--as-needed" "-Wl,-Bstatic" "/tmp/top100_artifacts/tokio-tokio-1.45.0/target/debug/deps/{libtokio-aaf5edb0ab148736.rlib,libsignal_hook_registry-b3806d70d5ebe181.rlib,libsocket2-ad23fd1d02abd295.rlib,libbytes-b19c76f501264487.rlib,libmio-9a995c775ccaeda7.rlib,libparking_lot-82a74e1e2ebb6be8.rlib,libparking_lot_core-2ffec474c19520fc.rlib,liblibc-d64479a47f95f89a.rlib,libcfg_if-cccc26637db8d812.rlib,libsmallvec-583199cefa182dc4.rlib,liblock_api-fb08e5f834e2b936.rlib,libscopeguard-9fe77f34cd100f69.rlib,libpin_project_lite-395eb487c4a3d54c.rlib}.rlib" "<sysroot>/lib/rustlib/s390x-unknown-linux-gnu/lib/{libtest-*,libgetopts-*,libunicode_width-*,librustc_std_workspace_std-*,libstd-*,libpanic_unwind-*,libobject-*,libmemchr-*,libaddr2line-*,libgimli-*,librustc_demangle-*,libstd_detect-*,libhashbrown-*,librustc_std_workspace_alloc-*,libminiz_oxide-*,libadler2-*,libunwind-*,libcfg_if-*,liblibc-*,liballoc-*,librustc_std_workspace_core-*,libcore-*,libcompiler_builtins-*}.rlib" "-Wl,-Bdynamic" "-lgcc_s" "-lutil" "-lrt" "-lpthread" "-lm" "-ldl" "-lc" "-L" "/tmp/rustcRftPXu/raw-dylibs" "-Wl,--eh-frame-hdr" "-Wl,-z,noexecstack" "-L" "<sysroot>/lib/rustlib/s390x-unknown-linux-gnu/lib" "-o" "/tmp/top100_artifacts/tokio-tokio-1.45.0/target/debug/deps/sync_errors-7f91efe0b0797463" "-Wl,--gc-sections" "-pie" "-Wl,-z,relro,-z,now" "-nodefaultlibs"
+  = note: some arguments are omitted. use `--verbose` to show all linker arguments
+  = note: /usr/bin/ld: final link failed: No space left on device
+          collect2: error: ld returned 1 exit status
+          
+
+error: could not compile `tokio` (test "sync_errors") due to 1 previous error
+error: could not compile `tokio` (test "io_write_all") due to 1 previous error
+rustc-LLVM ERROR: IO failure on output stream: No space left on device
+error: could not compile `tokio` (test "rt_common")
+
+Caused by:
+  No space left on device (os error 28)
+
+Caused by:
+  failed to parse process output: `/home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/bin/rustc --crate-name rt_common --edition=2021 tokio/tests/rt_common.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --emit=dep-info,link -C embed-bitcode=no -C debuginfo=2 --warn=unexpected_cfgs --check-cfg 'cfg(fuzzing)' --check-cfg 'cfg(loom)' --check-cfg 'cfg(mio_unsupported_force_poll_poll)' --check-cfg 'cfg(tokio_allow_from_blocking_fd)' --check-cfg 'cfg(tokio_internal_mt_counters)' --check-cfg 'cfg(tokio_no_parking_lot)' --check-cfg 'cfg(tokio_no_tuning_tests)' --check-cfg 'cfg(tokio_taskdump)' --check-cfg 'cfg(tokio_unstable)' --test --cfg 'feature="bytes"' --cfg 'feature="default"' --cfg 'feature="fs"' --cfg 'feature="full"' --cfg 'feature="io-std"' --cfg 'feature="io-util"' --cfg 'feature="libc"' --cfg 'feature="macros"' --cfg 'feature="mio"' --cfg 'feature="net"' --cfg 'feature="parking_lot"' --cfg 'feature="process"' --cfg 'feature="rt"' --cfg 'feature="rt-multi-thread"' --cfg 'feature="signal"' --cfg 'feature="signal-hook-registry"' --cfg 'feature="socket2"' --cfg 'feature="sync"' --cfg 'feature="test-util"' --cfg 'feature="time"' --cfg 'feature="tokio-macros"' --cfg 'feature="tracing"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("bytes", "default", "fs", "full", "io-std", "io-util", "libc", "macros", "mio", "net", "parking_lot", "process", "rt", "rt-multi-thread", "signal", "signal-hook-registry", "socket2", "sync", "test-util", "time", "tokio-macros", "tracing", "windows-sys"))' -C metadata=ac7171474f2bdabf -C extra-filename=-3bef607d558f6cf7 --out-dir /tmp/top100_artifacts/tokio-tokio-1.45.0/target/debug/deps -C incremental=/tmp/top100_artifacts/tokio-tokio-1.45.0/target/debug/incremental -L dependency=/tmp/top100_artifacts/tokio-tokio-1.45.0/target/debug/deps --extern async_stream=/tmp/top100_artifacts/tokio-tokio-1.45.0/target/debug/deps/libasync_stream-33fc0b085ce8a04b.rlib --extern bytes=/tmp/top100_artifacts/tokio-tokio-1.45.0/target/debug/deps/libbytes-b19c76f501264487.rlib --extern futures=/tmp/top100_artifacts/tokio-tokio-1.45.0/target/debug/deps/libfutures-a256cc75c5550712.rlib --extern futures_concurrency=/tmp/top100_artifacts/tokio-tokio-1.45.0/target/debug/deps/libfutures_concurrency-b52e7cbdbd5a37f5.rlib --extern libc=/tmp/top100_artifacts/tokio-tokio-1.45.0/target/debug/deps/liblibc-d64479a47f95f89a.rlib --extern mio=/tmp/top100_artifacts/tokio-tokio-1.45.0/target/debug/deps/libmio-9a995c775ccaeda7.rlib --extern mockall=/tmp/top100_artifacts/tokio-tokio-1.45.0/target/debug/deps/libmockall-d34c11f6ecd768db.rlib --extern nix=/tmp/top100_artifacts/tokio-tokio-1.45.0/target/debug/deps/libnix-8912468e1a44ba80.rlib --extern parking_lot=/tmp/top100_artifacts/tokio-tokio-1.45.0/target/debug/deps/libparking_lot-82a74e1e2ebb6be8.rlib --extern pin_project_lite=/tmp/top100_artifacts/tokio-tokio-1.45.0/target/debug/deps/libpin_project_lite-395eb487c4a3d54c.rlib --extern proptest=/tmp/top100_artifacts/tokio-tokio-1.45.0/target/debug/deps/libproptest-fa19049f29c81ea3.rlib --extern rand=/tmp/top100_artifacts/tokio-tokio-1.45.0/target/debug/deps/librand-249e49ab7baa8bd1.rlib --extern signal_hook_registry=/tmp/top100_artifacts/tokio-tokio-1.45.0/target/debug/deps/libsignal_hook_registry-b3806d70d5ebe181.rlib --extern socket2=/tmp/top100_artifacts/tokio-tokio-1.45.0/target/debug/deps/libsocket2-ad23fd1d02abd295.rlib --extern tempfile=/tmp/top100_artifacts/tokio-tokio-1.45.0/target/debug/deps/libtempfile-a7174d4a9ac0c552.rlib --extern tokio=/tmp/top100_artifacts/tokio-tokio-1.45.0/target/debug/deps/libtokio-aaf5edb0ab148736.rlib --extern tokio_macros=/tmp/top100_artifacts/tokio-tokio-1.45.0/target/debug/deps/libtokio_macros-acf7fe2663009d34.so --extern tokio_stream=/tmp/top100_artifacts/tokio-tokio-1.45.0/target/debug/deps/libtokio_stream-28edefb27e2bfb88.rlib --extern toki+ exit 101

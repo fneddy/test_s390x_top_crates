@@ -7,23 +7,23 @@
 + cargo +stable test ''
    Compiling serde v1.0.218
    Compiling serde_json v1.0.140
-   Compiling itoa v1.0.15
    Compiling memchr v2.7.4
+   Compiling itoa v1.0.15
    Compiling ryu v1.0.20
    Compiling either v1.15.0 (/tmp/top100_artifacts/either-1.15.0)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 8.34s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 7.87s
      Running unittests src/lib.rs (target/debug/deps/either-a9bd712f653f1066)
 
 running 7 tests
-test error ... ok
-test iter ... ok
-test macros ... ok
 test basic ... ok
+test macros ... ok
+test error ... ok
 test deref ... ok
-test seek ... ok
+test iter ... ok
 test read_write ... ok
+test seek ... ok
 
-test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
 
 + RESULT=0
 + cd /tmp/top100_artifacts

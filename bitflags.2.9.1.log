@@ -1,82 +1,79 @@
 [bitflags] download directory: /tmp/top100_artifacts/bitflags-2.9.1
-+ curl -sL https://crates.io/api/v1/crates/bitflags/2.9.1/download
 + tar xzf -
++ curl -sL https://crates.io/api/v1/crates/bitflags/2.9.1/download
 + cd /tmp/top100_artifacts/bitflags-2.9.1
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
    Compiling proc-macro2 v1.0.95
    Compiling unicode-ident v1.0.18
    Compiling serde v1.0.219
-   Compiling hashbrown v0.15.3
    Compiling equivalent v1.0.2
-   Compiling winnow v0.7.10
+   Compiling hashbrown v0.15.3
+   Compiling toml_write v0.1.1
+   Compiling target-triple v0.1.4
    Compiling indexmap v2.9.0
+   Compiling winnow v0.7.10
    Compiling quote v1.0.40
    Compiling syn v2.0.101
-   Compiling target-triple v0.1.4
    Compiling serde_json v1.0.140
-   Compiling toml_write v0.1.1
-   Compiling itoa v1.0.15
-   Compiling zerocopy v0.8.25
    Compiling ryu v1.0.20
-   Compiling rustversion v1.0.20
+   Compiling zerocopy v0.8.25
    Compiling memchr v2.7.4
+   Compiling itoa v1.0.15
+   Compiling rustversion v1.0.20
    Compiling termcolor v1.4.1
    Compiling glob v0.3.2
-   Compiling serde_spanned v0.6.8
    Compiling toml_datetime v0.6.9
+   Compiling serde_spanned v0.6.8
    Compiling toml_edit v0.22.26
    Compiling serde_test v1.0.177
-   Compiling zerocopy-derive v0.8.25
-   Compiling serde_derive v1.0.219
-   Compiling derive_arbitrary v1.4.1
    Compiling toml v0.8.22
+   Compiling derive_arbitrary v1.4.1
+   Compiling zerocopy-derive v0.8.25
    Compiling bytemuck_derive v1.9.3
-   Compiling bytemuck v1.23.0
+   Compiling serde_derive v1.0.219
    Compiling arbitrary v1.4.1
+   Compiling bytemuck v1.23.0
    Compiling trybuild v1.0.105
    Compiling bitflags v2.9.1 (/tmp/top100_artifacts/bitflags-2.9.1)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 30.43s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 29.78s
      Running unittests src/lib.rs (target/debug/deps/bitflags-5e287c7b0f5125e0)
 
 running 48 tests
+test tests::bitflags_match::test_empty_and_full_flags ... ok
+test tests::bitflags_match::test_and_operations ... ok
 test tests::all::cases ... ok
 test tests::bitflags_match::test_complex_operations ... ok
-test tests::bitflags_match::test_and_operations ... ok
 test tests::bitflags_match::test_or_operations ... ok
-test tests::bitflags_match::test_single_flags ... ok
-test tests::bitflags_match::test_empty_and_full_flags ... ok
-test tests::complement::cases ... ok
-test tests::clear::cases ... ok
 test tests::bitflags_match::test_xor_operations ... ok
-test tests::bits::cases ... ok
-test tests::difference::cases ... ok
-test tests::eq::cases ... ok
+test tests::complement::cases ... ok
 test tests::contains::cases ... ok
+test tests::difference::cases ... ok
 test tests::empty::cases ... ok
+test tests::eq::cases ... ok
+test tests::extend::cases ... ok
 test tests::extend::external::cases ... ok
 test tests::flags::cases ... ok
-test tests::extend::cases ... ok
 test tests::flags::external::cases ... ok
-test tests::from_bits_truncate::cases ... ok
 test tests::fmt::cases ... ok
-test tests::insert::cases ... ok
-test tests::from_name::cases ... ok
 test tests::from_bits::cases ... ok
-test tests::intersection::cases ... ok
 test tests::from_bits_retain::cases ... ok
+test tests::from_bits_truncate::cases ... ok
+test tests::from_name::cases ... ok
+test tests::insert::cases ... ok
+test tests::intersection::cases ... ok
 test tests::intersects::cases ... ok
 test tests::is_all::cases ... ok
-test tests::iter::collect::cases ... ok
 test tests::is_empty::cases ... ok
+test tests::iter::collect::cases ... ok
 test tests::iter::iter::cases ... ok
 test tests::iter::iter_names::cases ... ok
-test tests::parser::from_str::valid ... ok
+test tests::bits::cases ... ok
 test tests::parser::from_str::invalid ... ok
+test tests::bitflags_match::test_single_flags ... ok
+test tests::clear::cases ... ok
+test tests::parser::from_str::valid ... ok
 test tests::parser::from_str_strict::invalid ... ok
 test tests::parser::from_str_strict::valid ... ok
 test tests::parser::from_str_truncate::valid ... ok
@@ -93,7 +90,7 @@ test tests::parser::roundtrip_strict ... ok
 test tests::parser::roundtrip_truncate ... ok
 test tests::parser::roundtrip ... ok
 
-test result: ok. 48 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.42s
+test result: ok. 48 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.45s
 
 + RESULT=0
 + cd /tmp/top100_artifacts

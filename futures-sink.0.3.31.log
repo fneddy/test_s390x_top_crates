@@ -6,9 +6,8 @@
      Removed 0 files
 + cargo +stable test ''
     Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
    Compiling futures-sink v0.3.31 (/tmp/top100_artifacts/futures-sink-0.3.31)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.45s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.59s
      Running unittests src/lib.rs (target/debug/deps/futures_sink-45151aa4ada4ab19)
 
 running 0 tests

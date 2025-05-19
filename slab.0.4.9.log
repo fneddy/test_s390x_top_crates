@@ -10,6 +10,7 @@
      Locking 9 packages to latest compatible versions
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
    Compiling proc-macro2 v1.0.95
    Compiling unicode-ident v1.0.18
    Compiling serde v1.0.219
@@ -102,7 +103,7 @@ warning: `slab` (lib) generated 6 warnings
    Compiling serde_derive v1.0.219
    Compiling serde_test v1.0.177
 warning: `slab` (lib test) generated 6 warnings (6 duplicates)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 13.88s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 11.73s
      Running unittests src/lib.rs (target/debug/deps/slab-d7970b9d32ae9509)
 
 running 0 tests
@@ -118,53 +119,53 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
      Running tests/slab.rs (target/debug/deps/slab-bfa53e4339747c31)
 
 running 45 tests
-test clone_from ... ok
-test compact_empty ... ok
-test compact_handles_closure_panic ... ok
-test clear ... ok
 test compact_doesnt_move_if_closure_errors ... ok
+test clear ... ok
+test compact_handles_closure_panic ... ok
 test compact_moves_successfully ... ok
-test const_new ... ok
-test drain_rev ... ok
+test compact_no_moves_needed ... ok
 test double_remove_panics - should panic ... ok
-test from_iterator_new_in_order ... ok
+test drain_rev ... ok
 test from_iterator_issue_100 ... ok
+test from_iterator_new_in_order ... ok
 test from_iterator_sorted ... ok
+test from_iterator_unordered ... ok
 test fully_consumed_drain ... ok
 test get_vacant_entry_without_using ... ok
-test from_iterator_unordered ... ok
 test insert_get_many ... ok
-test insert_with_vacant_entry ... ok
 test insert_get_remove_many ... ok
 test insert_get_remove_one ... ok
+test insert_with_vacant_entry ... ok
 test into_iter ... ok
 test into_iter_rev ... ok
 test invalid_get_mut_panics - should panic ... ok
+test clone_from ... ok
+test compact_empty ... ok
 test invalid_get_panics - should panic ... ok
-test invalid_remove_panics - should panic ... ok
-test iter ... ok
-test iter_mut ... ok
+test const_new ... ok
 test iter_mut_rev ... ok
 test iter_rev ... ok
-test compact_no_moves_needed ... ok
 test key_of_layout_optimizable ... ok
+test iter ... ok
 test key_of_tagged ... ok
+test iter_mut ... ok
+test invalid_remove_panics - should panic ... ok
 test key_of_zst ... ok
 test partially_consumed_drain ... ok
-test reserve_does_not_allocate_if_available ... ok
-test reserve_does_panic_with_capacity_overflow_bytes - should panic ... ok
-test reserve_exact_does_panic_with_capacity_overflow - should panic ... ok
-test reserve_does_panic_with_capacity_overflow - should panic ... ok
 test reserve_exact_does_not_allocate_if_available ... ok
+test reserve_exact_does_panic_with_capacity_overflow - should panic ... ok
+test retain ... ok
+test reserve_does_not_allocate_if_available ... ok
+test shrink_to_fit_doesnt_move ... ok
+test reserve_does_panic_with_capacity_overflow - should panic ... ok
+test reserve_does_panic_with_capacity_overflow_bytes - should panic ... ok
 test shrink_to_fit_doesnt_recreate_list_when_nothing_can_be_done ... ok
 test shrink_to_fit_empty ... ok
 test shrink_to_fit_no_vacant ... ok
 test slab_get_mut ... ok
 test try_remove ... ok
-test retain ... ok
-test shrink_to_fit_doesnt_move ... ok
 
-test result: ok. 45 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+test result: ok. 45 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
 
 + RESULT=0
 + cd /tmp/top100_artifacts

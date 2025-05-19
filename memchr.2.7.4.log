@@ -6,7 +6,9 @@
      Removed 0 files
 + cargo +stable test ''
     Updating crates.io index
+    Blocking waiting for file lock on package cache
      Locking 10 packages to latest compatible versions
+    Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
    Compiling libc v0.2.172
    Compiling cfg-if v1.0.0

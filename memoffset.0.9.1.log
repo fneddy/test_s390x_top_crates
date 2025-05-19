@@ -10,6 +10,8 @@ warning: no edition set: defaulting to the 2015 edition while the latest is 2024
     Blocking waiting for file lock on package cache
      Locking 2 packages to latest compatible versions
     Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
    Compiling autocfg v1.4.0
    Compiling doc-comment v0.3.3
    Compiling memoffset v0.9.1 (/tmp/top100_artifacts/memoffset-0.9.1)
@@ -432,14 +434,11 @@ warning: unexpected `cfg` condition name: `stable_const`
     = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
 
 warning: `memoffset` (lib test) generated 32 warnings
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.03s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.71s
      Running unittests src/lib.rs (target/debug/deps/memoffset-d1a39832846cf31a)
 
 running 17 tests
 test offset_of::tests::const_fn_offset ... ok
-test offset_of::tests::const_offset ... ok
-test offset_of::tests::const_offset_interior_mutable ... ok
-test offset_of::tests::inside_generic_method ... ok
 test offset_of::tests::offset_simple ... ok
 test offset_of::tests::offset_simple_packed ... ok
 test offset_of::tests::offset_union ... ok
@@ -453,8 +452,11 @@ test span_of::tests::ig_test ... ok
 test span_of::tests::span_forms ... ok
 test span_of::tests::span_simple ... ok
 test span_of::tests::span_simple_packed ... ok
+test offset_of::tests::const_offset ... ok
+test offset_of::tests::const_offset_interior_mutable ... ok
+test offset_of::tests::inside_generic_method ... ok
 
-test result: ok. 17 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 17 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
 
 + RESULT=0
 + cd /tmp/top100_artifacts

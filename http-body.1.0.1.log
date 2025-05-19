@@ -5,18 +5,16 @@
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
-    Blocking waiting for file lock on package cache
     Updating crates.io index
     Blocking waiting for file lock on package cache
      Locking 4 packages to latest compatible versions
     Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-   Compiling bytes v1.10.1
-   Compiling itoa v1.0.15
    Compiling fnv v1.0.7
+   Compiling itoa v1.0.15
+   Compiling bytes v1.10.1
    Compiling http v1.3.1
    Compiling http-body v1.0.1 (/tmp/top100_artifacts/http-body-1.0.1)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 4.43s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 6.24s
      Running unittests src/lib.rs (target/debug/deps/http_body-63c97172d8c067e9)
 
 running 0 tests

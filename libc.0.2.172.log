@@ -6,8 +6,10 @@
      Removed 0 files
 + cargo +stable test ''
     Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
    Compiling libc v0.2.172 (/tmp/top100_artifacts/libc-0.2.172)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.97s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 4.74s
      Running unittests src/lib.rs (target/debug/deps/libc-cd51bf36dcf27427)
 
 running 0 tests

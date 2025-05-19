@@ -5,25 +5,21 @@
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
-    Updating crates.io index
     Blocking waiting for file lock on package cache
+    Updating crates.io index
      Locking 52 packages to latest compatible versions
       Adding bincode v1.3.3 (available: v2.0.1)
       Adding rand v0.8.5 (available: v0.9.1)
     Blocking waiting for file lock on package cache
- Downloading crates ...
-  Downloaded parking_lot_core v0.9.10
-  Downloaded lock_api v0.4.12
-  Downloaded scopeguard v1.2.0
    Compiling libc v0.2.172
    Compiling cfg-if v1.0.0
    Compiling zerocopy v0.8.25
    Compiling autocfg v1.4.0
-   Compiling parking_lot_core v0.9.10
    Compiling serde v1.0.219
+   Compiling parking_lot_core v0.9.10
+   Compiling smallvec v1.15.0
    Compiling lock_api v0.4.12
    Compiling scopeguard v1.2.0
-   Compiling smallvec v1.15.0
    Compiling getrandom v0.2.16
    Compiling rand_core v0.6.4
    Compiling parking_lot v0.12.3 (/tmp/top100_artifacts/parking_lot-0.12.3)
@@ -31,7 +27,7 @@
    Compiling rand_chacha v0.3.1
    Compiling rand v0.8.5
    Compiling bincode v1.3.3
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 6.93s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 6.78s
      Running unittests src/lib.rs (target/debug/deps/parking_lot-2540c368981284e7)
 
 running 87 tests
@@ -41,27 +37,27 @@ test condvar::tests::notify_one_return_true ... ok
 test condvar::tests::smoke ... ok
 test condvar::tests::test_debug_condvar ... ok
 test condvar::tests::test_condvar_requeue ... ok
-test condvar::tests::two_mutexes - should panic ... ok
 test condvar::tests::notify_all_return ... ok
 test condvar::tests::notify_all ... ok
+test condvar::tests::two_mutexes - should panic ... ok
 test condvar::tests::two_mutexes_disjoint ... ok
 test condvar::tests::wait_for ... ok
-test condvar::tests::wait_until ... ok
 test condvar::tests::wait_while_until_internal_does_not_wait_if_initially_false ... ok
+test condvar::tests::wait_until ... ok
 test condvar::tests::wait_while_until_internal ... ok
 test condvar::tests::test_issue_129 ... ok
-test condvar::webkit_queue_test::one_producer_one_consumer_one_slot ... ok
-test condvar::tests::wait_while_until_internal_times_out_before_false ... ok
 test condvar::webkit_queue_test::one_producer_one_consumer_hundred_slots ... ok
+test condvar::tests::wait_while_until_internal_times_out_before_false ... ok
+test condvar::webkit_queue_test::one_producer_one_consumer_one_slot ... ok
 test condvar::webkit_queue_test::one_producer_ten_consumers_hundred_slots_notify_all ... ok
 test condvar::webkit_queue_test::one_producer_ten_consumers_hundred_slots_notify_one ... ok
 test condvar::webkit_queue_test::one_producer_ten_consumers_one_slot ... ok
 test condvar::webkit_queue_test::new_test_without_timeout_5 ... ok
 test condvar::webkit_queue_test::one_producer_one_consumer_one_slot_timeout ... ok
-test condvar::webkit_queue_test::sanity_check_queue ... ok
 test condvar::webkit_queue_test::ten_producers_one_consumer_hundred_slots_notify_all ... ok
 test condvar::webkit_queue_test::ten_producers_one_consumer_hundred_slots_notify_one ... ok
 test condvar::webkit_queue_test::sanity_check_queue_timeout ... ok
+test condvar::webkit_queue_test::sanity_check_queue ... ok
 test condvar::webkit_queue_test::ten_producers_ten_consumers_hundred_slots_notify_all ... ok
 test fair_mutex::tests::lots_and_lots ... ok
 test fair_mutex::tests::smoke ... ok
@@ -119,11 +115,11 @@ test rwlock::tests::test_rwlock_try_upgrade ... ok
 test rwlock::tests::test_rwlock_try_write ... ok
 test rwlock::tests::test_rwlock_unsized ... ok
 test rwlock::tests::test_rwlockguard_sync ... ok
-test condvar::webkit_queue_test::ten_producers_ten_consumers_hundred_slots_notify_one ... ok
 test condvar::webkit_queue_test::ten_producers_one_consumer_one_slot ... ok
+test condvar::webkit_queue_test::ten_producers_ten_consumers_hundred_slots_notify_one ... ok
 test condvar::webkit_queue_test::ten_producers_ten_consumers_one_slot ... ok
 
-test result: ok. 87 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 6.79s
+test result: ok. 87 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 6.90s
 
      Running tests/issue_203.rs (target/debug/deps/issue_203-b40795088898c4cb)
 

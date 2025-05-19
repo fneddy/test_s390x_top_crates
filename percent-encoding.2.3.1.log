@@ -5,6 +5,11 @@
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
    Compiling percent-encoding v2.3.1 (/tmp/top100_artifacts/percent-encoding-2.3.1)
 warning: ambiguous wide pointer comparison, the comparison includes metadata which may not be expected
    --> src/lib.rs:466:35
@@ -25,7 +30,7 @@ help: use explicit `std::ptr::eq` method to compare metadata and addresses
     |
 
 warning: `percent-encoding` (lib test) generated 1 warning
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.23s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.79s
      Running unittests src/lib.rs (target/debug/deps/percent_encoding-31bad9d23c74dc5b)
 
 running 0 tests

@@ -13,14 +13,14 @@
     Blocking waiting for file lock on package cache
    Compiling zerocopy v0.8.25
    Compiling ppv-lite86 v0.2.21 (/tmp/top100_artifacts/ppv-lite86-0.2.21)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 4.15s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.91s
      Running unittests src/lib.rs (target/debug/deps/ppv_lite86-41e8bbe113136f24)
 
 running 2 tests
-test generic::test_rotate_u128 ... ok
 test generic::test::test_bswap32 ... ok
+test generic::test_rotate_u128 ... ok
 
-test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 
 + RESULT=0
 + cd /tmp/top100_artifacts

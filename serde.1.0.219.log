@@ -14,7 +14,7 @@
    Compiling quote v1.0.39
    Compiling syn v2.0.99
    Compiling serde_derive v1.0.219
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 8.75s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 8.03s
      Running unittests src/lib.rs (target/debug/deps/serde-8f90989bb793f811)
 
 running 1 test

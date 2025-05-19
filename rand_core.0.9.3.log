@@ -9,21 +9,21 @@
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
    Compiling rand_core v0.9.3 (/tmp/top100_artifacts/rand_core-0.9.3)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.07s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.23s
      Running unittests src/lib.rs (target/debug/deps/rand_core-e1ef8c5316201f8e)
 
 running 11 tests
 test block::test::blockrng64_next_u32_vs_next_u64 ... ok
-test block::test::blockrng_next_u32_vs_next_u64 ... ok
-test impls::test::test_fill_via_u64_chunks ... ok
-test impls::test::test_fill_via_u32_chunks ... ok
 test le::test_read ... ok
 test test::dyn_cryptorng_to_trycryptorng ... ok
+test test::dyn_rngcore_to_tryrngcore ... ok
+test test::dyn_unwrap_mut_trycryptorng ... ok
 test test::dyn_unwrap_mut_tryrngcore ... ok
 test test::reborrow_unwrap_mut ... ok
 test test::test_seed_from_u64 ... ok
-test test::dyn_rngcore_to_tryrngcore ... ok
-test test::dyn_unwrap_mut_trycryptorng ... ok
+test block::test::blockrng_next_u32_vs_next_u64 ... ok
+test impls::test::test_fill_via_u32_chunks ... ok
+test impls::test::test_fill_via_u64_chunks ... ok
 
 test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
 

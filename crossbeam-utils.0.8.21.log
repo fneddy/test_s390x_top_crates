@@ -10,6 +10,7 @@
     Blocking waiting for file lock on package cache
      Locking 56 packages to latest compatible versions
       Adding rand v0.8.5 (available: v0.9.1)
+    Blocking waiting for file lock on package cache
    Compiling libc v0.2.172
    Compiling zerocopy v0.8.25
    Compiling cfg-if v1.0.0
@@ -19,7 +20,7 @@
    Compiling ppv-lite86 v0.2.21
    Compiling rand_chacha v0.3.1
    Compiling rand v0.8.5
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 5.15s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 4.76s
      Running unittests src/lib.rs (target/debug/deps/crossbeam_utils-2e1740fa0020b161)
 
 running 1 test
@@ -33,12 +34,12 @@ running 21 tests
 test arithmetic_i128 ... ok
 test arithmetic_i16 ... ok
 test arithmetic_i32 ... ok
-test arithmetic_i64 ... ok
 test arithmetic_i8 ... ok
+test arithmetic_i64 ... ok
 test arithmetic_u128 ... ok
 test arithmetic_u16 ... ok
-test arithmetic_u64 ... ok
 test arithmetic_u32 ... ok
+test arithmetic_u64 ... ok
 test arithmetic_u8 ... ok
 test const_atomic_cell_new ... ok
 test const_is_lock_free ... ok
@@ -52,7 +53,7 @@ test modular_u8 ... ok
 test modular_usize ... ok
 test issue_833 ... ok
 
-test result: ok. 21 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+test result: ok. 21 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
 
      Running tests/cache_padded.rs (target/debug/deps/cache_padded-56c4508e789a155d)
 
@@ -60,8 +61,8 @@ running 10 tests
 test clone ... ok
 test debug ... ok
 test default ... ok
-test different_sizes ... ok
 test distance ... ok
+test different_sizes ... ok
 test drops ... ok
 test large ... ok
 test runs_custom_clone ... ok
@@ -83,19 +84,19 @@ test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 
 running 15 tests
 test arc_no_poison_rr ... ok
+test arc ... ok
 test arc_access_in_unwind ... ok
 test arc_no_poison_sl ... ok
 test arc_poison_wr ... ok
-test arc_poison_ww ... ok
-test arc ... ok
 test smoke ... ok
-test test_into_inner ... ok
 test test_get_mut ... ok
-test test_into_inner_drop ... ok
+test arc_poison_ww ... ok
 test test_get_mut_poison ... ok
-test test_into_inner_poison ... ok
-test unsized_type ... ok
+test test_into_inner ... ok
+test test_into_inner_drop ... ok
 test try_write ... ok
+test unsized_type ... ok
+test test_into_inner_poison ... ok
 test frob ... ok
 
 test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
@@ -109,8 +110,8 @@ test join ... ok
 test nesting ... ok
 test panic_many ... ok
 test as_pthread_t ... ok
-test scope_returns_ok ... ok
 test counter_panic ... ok
+test scope_returns_ok ... ok
 test join_nested ... ok
 test panic_twice ... ok
 

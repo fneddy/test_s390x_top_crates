@@ -1,15 +1,11 @@
 [num_cpus] download directory: /tmp/top100_artifacts/num_cpus-1.16.0
-+ curl -sL https://crates.io/api/v1/crates/num_cpus/1.16.0/download
 + tar xzf -
++ curl -sL https://crates.io/api/v1/crates/num_cpus/1.16.0/download
 + cd /tmp/top100_artifacts/num_cpus-1.16.0
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
 warning: no edition set: defaulting to the 2015 edition while the latest is 2024
-    Blocking waiting for file lock on package cache
- Downloading crates ...
-  Downloaded libc v0.2.65
-    Blocking waiting for file lock on package cache
    Compiling libc v0.2.65
    Compiling num_cpus v1.16.0 (/tmp/top100_artifacts/num_cpus-1.16.0)
 error: unexpected `cfg` condition value: `nacl`

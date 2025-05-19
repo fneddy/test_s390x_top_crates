@@ -7,9 +7,6 @@
 + cargo +stable test ''
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
- Downloading crates ...
-  Downloaded syn v2.0.74
-  Downloaded libc v0.2.167
     Blocking waiting for file lock on package cache
    Compiling proc-macro2 v1.0.86
    Compiling unicode-ident v1.0.12
@@ -28,7 +25,7 @@
    Compiling rand_chacha v0.3.1
    Compiling rand v0.8.5
    Compiling mio v1.0.3 (/tmp/top100_artifacts/mio-1.0.3)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 7.19s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 7.23s
      Running unittests src/lib.rs (target/debug/deps/mio-1a266126ca79b220)
 
 running 0 tests

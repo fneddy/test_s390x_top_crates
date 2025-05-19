@@ -10,11 +10,10 @@
     Blocking waiting for file lock on package cache
      Locking 9 packages to latest compatible versions
       Adding windows-targets v0.52.6 (available: v0.53.0)
- Downloading crates ...
-  Downloaded windows-targets v0.52.6
+    Blocking waiting for file lock on package cache
    Compiling windows-targets v0.52.6
    Compiling windows-sys v0.59.0 (/tmp/top100_artifacts/windows-sys-0.59.0)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.88s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.73s
      Running unittests src/lib.rs (target/debug/deps/windows_sys-557f7383154fb0a7)
 
 running 0 tests

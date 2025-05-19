@@ -6,11 +6,8 @@
      Removed 0 files
 + cargo +stable test ''
     Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
    Compiling futures-task v0.3.31 (/tmp/top100_artifacts/futures-task-0.3.31)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 5.18s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.68s
      Running unittests src/lib.rs (target/debug/deps/futures_task-7517f4299dbcfbd5)
 
 running 1 test

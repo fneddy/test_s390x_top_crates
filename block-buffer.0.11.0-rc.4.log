@@ -5,15 +5,14 @@
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
-    Updating crates.io index
     Blocking waiting for file lock on package cache
- Downloading crates ...
-  Downloaded hex-literal v1.0.0
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
    Compiling typenum v1.18.0
    Compiling hex-literal v1.0.0
    Compiling hybrid-array v0.3.0
    Compiling block-buffer v0.11.0-rc.4 (/tmp/top100_artifacts/block-buffer-0.11.0-rc.4)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.22s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.70s
      Running unittests src/lib.rs (target/debug/deps/block_buffer-0c6dbfe5e9ad2923)
 
 running 0 tests
@@ -23,14 +22,14 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
      Running tests/mod.rs (target/debug/deps/mod-f20db3450d3fb427)
 
 running 8 tests
-test test_eager_digest_pad ... ok
 test test_eager_paddings ... ok
-test test_lazy_digest_pad ... ok
+test test_eager_digest_pad ... ok
 test test_eager_serialize ... ok
 test test_lazy_serialize ... ok
+test test_read ... ok
+test test_lazy_digest_pad ... ok
 test test_try_new ... ok
 test test_read_serialize ... ok
-test test_read ... ok
 
 test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 
