@@ -138,11 +138,11 @@ while read -r CRATE ; do
 		log "[${STEP}/${COUNT}] ${ID} ${VERSION} started" "${REPORT}/run.log"
 
 		if [[ -n "${GIT[${ID}]}" ]]; then
-			log "[${STEP}/${COUNT}] ${ID} ${VERSION} ${SCRIPT_DIR}/test_git.sh -n ${ID} -g ${GIT[${ID}]} -b ${VERSION} -t ${ARTIFACTS} -- ${PARAMS[${ID}]}"
+			log "[${STEP}/${COUNT}] ${ID} ${VERSION} ${SCRIPT_DIR}/test_git.sh -n ${ID} -g ${GIT[${ID}]} -b ${VERSION} -t ${ARTIFACTS} -- ${PARAMS[${ID}]}" "${REPORT}/run.log"
 			${SCRIPT_DIR}/test_git.sh -n "${ID}" -g "${GIT[${ID}]}" -b ${VERSION} -t "${ARTIFACTS}" -- "${PARAMS[${ID}]}" &> "${REPORT}/${ID}.${VERSION}.log"
 			RESULT=$?
 		else
-			log "[${STEP}/${COUNT}] ${ID} ${VERSION} ${SCRIPT_DIR}/test_cratesio.sh -n ${ID} -v ${VERSION} -t ${ARTIFACTS} -- ${PARAMS[${ID}]} "
+			log "[${STEP}/${COUNT}] ${ID} ${VERSION} ${SCRIPT_DIR}/test_cratesio.sh -n ${ID} -v ${VERSION} -t ${ARTIFACTS} -- ${PARAMS[${ID}]} " "${REPORT}/run.log"
 			${SCRIPT_DIR}/test_cratesio.sh -n "${ID}" -v "${VERSION}" -t "${ARTIFACTS}" -- "${PARAMS[${ID}]}" &> "${REPORT}/${ID}.${VERSION}.log"
 			RESULT=$?
 		fi

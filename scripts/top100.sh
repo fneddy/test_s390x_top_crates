@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-export ARTIFACTS=/tmp/top100_artifacts
+export ARTIFACTS=/var/tmp/top100_artifacts
 export TOPLIST=/tmp/top100
-export REPO=/var/tmp/top100_report
+export REPO=/tmp/top100_report
 export REPORT=${REPO}/log
 export GIT_SSH_COMMAND="ssh -o StrictHostKeyChecking=no"
 export DATE=$(date)
