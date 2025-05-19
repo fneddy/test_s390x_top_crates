@@ -3,63 +3,10 @@
 + curl -sL https://crates.io/api/v1/crates/parking_lot_core/0.9.10/download
 + cd /tmp/top100_artifacts/parking_lot_core-0.9.10
 + cargo clean
-     Removed 0 files
+/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 78: cargo: command not found
 + cargo +stable test ''
-    Updating crates.io index
-    Blocking waiting for file lock on package cache
-     Locking 31 packages to latest compatible versions
-      Adding petgraph v0.6.5 (available: v0.8.1)
-      Adding thread-id v4.2.2 (available: v5.0.0)
-      Adding windows-targets v0.52.6 (available: v0.53.0)
-    Blocking waiting for file lock on package cache
-   Compiling libc v0.2.172
-   Compiling parking_lot_core v0.9.10 (/tmp/top100_artifacts/parking_lot_core-0.9.10)
-   Compiling smallvec v1.15.0
-   Compiling cfg-if v1.0.0
-warning: unused import: `UnparkHandle`
-  --> src/thread_parker/mod.rs:85:49
-   |
-85 | pub use self::imp::{thread_yield, ThreadParker, UnparkHandle};
-   |                                                 ^^^^^^^^^^^^
-   |
-   = note: `#[warn(unused_imports)]` on by default
-
-warning: unexpected `cfg` condition name: `tsan_enabled`
-   --> src/word_lock.rs:293:13
-    |
-293 |     if cfg!(tsan_enabled) {
-    |             ^^^^^^^^^^^^
-    |
-    = help: expected names are: `docsrs`, `feature`, and `test` and 31 more
-    = help: consider using a Cargo feature instead
-    = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
-             [lints.rust]
-             unexpected_cfgs = { level = "warn", check-cfg = ['cfg(tsan_enabled)'] }
-    = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(tsan_enabled)");` to the top of the `build.rs`
-    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
-    = note: `#[warn(unexpected_cfgs)]` on by default
-
-warning: `parking_lot_core` (lib test) generated 2 warnings (run `cargo fix --lib -p parking_lot_core --tests` to apply 1 suggestion)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.89s
-     Running unittests src/lib.rs (target/debug/deps/parking_lot_core-b47c17bfde195c77)
-
-running 12 tests
-test parking_lot::tests::hundred_unpark_all_one ... ok
-test parking_lot::tests::unpark_all_one ... ok
-test parking_lot::tests::unpark_all_one_fast ... ok
-test parking_lot::tests::unpark_one_fifty ... ok
-test parking_lot::tests::unpark_all_hundred ... ok
-test parking_lot::tests::unpark_all_hundred_fast ... ok
-test parking_lot::tests::unpark_one_fifty_then_fifty_all ... ok
-test parking_lot::tests::unpark_one_one ... ok
-test parking_lot::tests::unpark_one_hundred_fast ... ok
-test parking_lot::tests::unpark_one_one_fast ... ok
-test parking_lot::tests::unpark_one_fifty_then_fifty_all_fast ... ok
-test parking_lot::tests::hundred_unpark_all_one_fast ... ok
-
-test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 23.70s
-
-+ RESULT=0
+/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 79: cargo: command not found
++ RESULT=127
 + cd /tmp/top100_artifacts
 + rm -rf /tmp/top100_artifacts/parking_lot_core-0.9.10
-+ exit 0
++ exit 127

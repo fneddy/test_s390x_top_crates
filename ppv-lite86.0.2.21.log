@@ -1,28 +1,12 @@
 [ppv-lite86] download directory: /tmp/top100_artifacts/ppv-lite86-0.2.21
-+ curl -sL https://crates.io/api/v1/crates/ppv-lite86/0.2.21/download
 + tar xzf -
++ curl -sL https://crates.io/api/v1/crates/ppv-lite86/0.2.21/download
 + cd /tmp/top100_artifacts/ppv-lite86-0.2.21
 + cargo clean
-     Removed 0 files
+/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 78: cargo: command not found
 + cargo +stable test ''
-    Blocking waiting for file lock on package cache
-    Updating crates.io index
-    Blocking waiting for file lock on package cache
-     Locking 6 packages to latest compatible versions
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-   Compiling zerocopy v0.8.25
-   Compiling ppv-lite86 v0.2.21 (/tmp/top100_artifacts/ppv-lite86-0.2.21)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.91s
-     Running unittests src/lib.rs (target/debug/deps/ppv_lite86-41e8bbe113136f24)
-
-running 2 tests
-test generic::test::test_bswap32 ... ok
-test generic::test_rotate_u128 ... ok
-
-test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
-
-+ RESULT=0
+/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 79: cargo: command not found
++ RESULT=127
 + cd /tmp/top100_artifacts
 + rm -rf /tmp/top100_artifacts/ppv-lite86-0.2.21
-+ exit 0
++ exit 127

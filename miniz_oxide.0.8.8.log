@@ -3,51 +3,10 @@
 + tar xzf -
 + cd /tmp/top100_artifacts/miniz_oxide-0.8.8
 + cargo clean
-     Removed 0 files
+/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 78: cargo: command not found
 + cargo +stable test ''
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-   Compiling adler2 v2.0.0
-   Compiling miniz_oxide v0.8.8 (/tmp/top100_artifacts/miniz_oxide-0.8.8)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.88s
-     Running unittests src/lib.rs (target/debug/deps/miniz_oxide-95af411278877ad6)
-
-running 29 tests
-test deflate::core::test::u16_from_slice ... ok
-test deflate::core::test::compress_output ... ok
-test deflate::core::test::compress_fast ... ok
-test deflate::core::test::u16_to_slice ... ok
-test deflate::stream::test::test_state ... ok
-test deflate::test::compress_raw ... ok
-test deflate::core::test::zlib_window_bits ... ok
-test deflate::test::compress_huff_only ... ok
-test deflate::test::short ... ok
-test deflate::zlib::test::zlib ... ok
-test inflate::core::test::bogus_input ... ok
-test deflate::test::compress_rle ... ok
-test deflate::test::compress_small ... ok
-test inflate::core::test::decompress_zlib ... ok
-test inflate::core::test::dist_extra_bits ... ok
-test inflate::core::test::empty_output_buffer_non_wrapping ... ok
-test inflate::core::test::empty_output_buffer_wrapping ... ok
-test inflate::core::test::fixed_table_lookup ... ok
-test inflate::core::test::raw_block ... ok
-test inflate::stream::test::test_partial_continue ... ok
-test inflate::core::test::reverse_bits_lookup ... ok
-test inflate::stream::test::test_state ... ok
-test inflate::stream::test::test_rewind_and_resume ... ok
-test inflate::test::decompress_vec_with_high_limit ... ok
-test inflate::test::fail_to_decompress_with_limit ... ok
-test inflate::test::decompress_vec ... ok
-test inflate::test::test_decompress_slice_iter_to_slice ... ok
-test deflate::zlib::test::test_header ... ok
-test inflate::core::test::check_tree ... ok
-
-test result: ok. 29 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
-
-+ RESULT=0
+/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 79: cargo: command not found
++ RESULT=127
 + cd /tmp/top100_artifacts
 + rm -rf /tmp/top100_artifacts/miniz_oxide-0.8.8
-+ exit 0
++ exit 127

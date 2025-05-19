@@ -3,27 +3,10 @@
 + tar xzf -
 + cd /tmp/top100_artifacts/pin-project-lite-0.2.16
 + cargo clean
-     Removed 0 files
+/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 78: cargo: command not found
 + cargo +stable test ''
-    Updating crates.io index
-     Locking 2 packages to latest compatible versions
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-   Compiling rustversion v1.0.20
-   Compiling static_assertions v1.1.0
-   Compiling pin-project-lite v0.2.16 (/tmp/top100_artifacts/pin-project-lite-0.2.16)
-error[E0433]: failed to resolve: use of unresolved module or unlinked crate `trybuild`
- --> tests/compiletest.rs:8:13
-  |
-8 |     let t = trybuild::TestCases::new();
-  |             ^^^^^^^^ use of unresolved module or unlinked crate `trybuild`
-  |
-  = help: if you wanted to use a crate named `trybuild`, use `cargo add trybuild` to add it to your `Cargo.toml`
-
-For more information about this error, try `rustc --explain E0433`.
-error: could not compile `pin-project-lite` (test "compiletest") due to 1 previous error
-warning: build failed, waiting for other jobs to finish...
-+ RESULT=101
+/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 79: cargo: command not found
++ RESULT=127
 + cd /tmp/top100_artifacts
 + rm -rf /tmp/top100_artifacts/pin-project-lite-0.2.16
-+ exit 101
++ exit 127

@@ -1,35 +1,12 @@
 [http-body] download directory: /tmp/top100_artifacts/http-body-1.0.1
-+ curl -sL https://crates.io/api/v1/crates/http-body/1.0.1/download
 + tar xzf -
++ curl -sL https://crates.io/api/v1/crates/http-body/1.0.1/download
 + cd /tmp/top100_artifacts/http-body-1.0.1
 + cargo clean
-     Removed 0 files
+/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 78: cargo: command not found
 + cargo +stable test ''
-    Updating crates.io index
-    Blocking waiting for file lock on package cache
-     Locking 4 packages to latest compatible versions
-    Blocking waiting for file lock on package cache
-   Compiling fnv v1.0.7
-   Compiling itoa v1.0.15
-   Compiling bytes v1.10.1
-   Compiling http v1.3.1
-   Compiling http-body v1.0.1 (/tmp/top100_artifacts/http-body-1.0.1)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 6.24s
-     Running unittests src/lib.rs (target/debug/deps/http_body-63c97172d8c067e9)
-
-running 0 tests
-
-test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
-
-     Running tests/is_end_stream.rs (target/debug/deps/is_end_stream-ba78f8651f420f75)
-
-running 2 tests
-test is_end_stream_default_false ... ok
-test is_end_stream_true ... ok
-
-test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
-
-+ RESULT=0
+/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 79: cargo: command not found
++ RESULT=127
 + cd /tmp/top100_artifacts
 + rm -rf /tmp/top100_artifacts/http-body-1.0.1
-+ exit 0
++ exit 127
