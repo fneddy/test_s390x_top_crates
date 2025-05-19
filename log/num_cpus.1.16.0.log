@@ -1,13 +1,13 @@
-[num_cpus] download directory: /tmp/top100_artifacts/num_cpus-1.16.0
+[num_cpus] download directory: /var/tmp/top100_artifacts/num_cpus-1.16.0
 + curl -sL https://crates.io/api/v1/crates/num_cpus/1.16.0/download
 + tar xzf -
-+ cd /tmp/top100_artifacts/num_cpus-1.16.0
++ cd /var/tmp/top100_artifacts/num_cpus-1.16.0
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
 warning: no edition set: defaulting to the 2015 edition while the latest is 2024
    Compiling libc v0.2.65
-   Compiling num_cpus v1.16.0 (/tmp/top100_artifacts/num_cpus-1.16.0)
+   Compiling num_cpus v1.16.0 (/var/tmp/top100_artifacts/num_cpus-1.16.0)
 error: unexpected `cfg` condition value: `nacl`
    --> src/lib.rs:355:5
     |
@@ -34,6 +34,6 @@ error: unexpected `cfg` condition value: `nacl`
 
 error: could not compile `num_cpus` (lib test) due to 2 previous errors
 + RESULT=101
-+ cd /tmp/top100_artifacts
-+ rm -rf /tmp/top100_artifacts/num_cpus-1.16.0
++ cd /var/tmp/top100_artifacts
++ rm -rf /var/tmp/top100_artifacts/num_cpus-1.16.0
 + exit 101

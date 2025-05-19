@@ -1,6 +1,6 @@
-Testresults as of Mon May 19 03:15:32 PM CEST 2025
-PASS: 82
-FAIL: 18
+Testresults as of Mon May 19 03:43:05 PM CEST 2025
+PASS: 83
+FAIL: 17
 
 FAILED_CRATES:
 [1/100] syn 2.0.0 fail
@@ -11,7 +11,6 @@ FAILED_CRATES:
 [36/100] lazy_static 1.5.0 fail
 [44/100] idna 1.0.3 fail
 [52/100] pin-project-lite 0.2.16 fail
-[59/100] tokio tokio-1.45.0 fail
 [67/100] hyper 1.6.0 fail
 [79/100] num_cpus 1.16.0 fail
 [82/100] futures-channel 0.3.31 fail

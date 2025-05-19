@@ -1,16 +1,16 @@
-[getrandom] download directory: /tmp/top100_artifacts/getrandom-0.3.3
-+ curl -sL https://crates.io/api/v1/crates/getrandom/0.3.3/download
+[getrandom] download directory: /var/tmp/top100_artifacts/getrandom-0.3.3
 + tar xzf -
-+ cd /tmp/top100_artifacts/getrandom-0.3.3
++ curl -sL https://crates.io/api/v1/crates/getrandom/0.3.3/download
++ cd /var/tmp/top100_artifacts/getrandom-0.3.3
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
    Compiling libc v0.2.171
-   Compiling getrandom v0.3.3 (/tmp/top100_artifacts/getrandom-0.3.3)
+   Compiling getrandom v0.3.3 (/var/tmp/top100_artifacts/getrandom-0.3.3)
    Compiling cfg-if v1.0.0
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.88s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.09s
      Running unittests src/lib.rs (target/debug/deps/getrandom-038ed657e38f0134)
 
 running 0 tests
@@ -20,19 +20,19 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
      Running tests/mod.rs (target/debug/deps/mod-bb36a7dfda76038f)
 
 running 9 tests
-test test_huge ... ok
-test test_diff ... ok
-test test_diff_u32 ... ok
 test test_diff_u64 ... ok
-test test_small ... ok
+test test_huge ... ok
+test test_huge_uninit ... ok
 test test_multithreading ... ok
 test test_small_uninit ... ok
+test test_diff ... ok
+test test_diff_u32 ... ok
 test test_zero ... ok
-test test_huge_uninit ... ok
+test test_small ... ok
 
-test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
 
 + RESULT=0
-+ cd /tmp/top100_artifacts
-+ rm -rf /tmp/top100_artifacts/getrandom-0.3.3
++ cd /var/tmp/top100_artifacts
++ rm -rf /var/tmp/top100_artifacts/getrandom-0.3.3
 + exit 0

@@ -1,13 +1,16 @@
-[windows_x86_64_msvc] download directory: /tmp/top100_artifacts/windows_x86_64_msvc-0.53.0
+[windows_x86_64_msvc] download directory: /var/tmp/top100_artifacts/windows_x86_64_msvc-0.53.0
 + curl -sL https://crates.io/api/v1/crates/windows_x86_64_msvc/0.53.0/download
 + tar xzf -
-+ cd /tmp/top100_artifacts/windows_x86_64_msvc-0.53.0
++ cd /var/tmp/top100_artifacts/windows_x86_64_msvc-0.53.0
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
     Blocking waiting for file lock on package cache
-   Compiling windows_x86_64_msvc v0.53.0 (/tmp/top100_artifacts/windows_x86_64_msvc-0.53.0)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.53s
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   Compiling windows_x86_64_msvc v0.53.0 (/var/tmp/top100_artifacts/windows_x86_64_msvc-0.53.0)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.20s
      Running unittests src/lib.rs (target/debug/deps/windows_x86_64_msvc-f9666444e3ac6c58)
 
 running 0 tests
@@ -15,6 +18,6 @@ running 0 tests
 test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 
 + RESULT=0
-+ cd /tmp/top100_artifacts
-+ rm -rf /tmp/top100_artifacts/windows_x86_64_msvc-0.53.0
++ cd /var/tmp/top100_artifacts
++ rm -rf /var/tmp/top100_artifacts/windows_x86_64_msvc-0.53.0
 + exit 0

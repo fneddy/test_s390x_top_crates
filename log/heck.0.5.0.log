@@ -1,11 +1,11 @@
-[heck] download directory: /tmp/top100_artifacts/heck-0.5.0
+[heck] download directory: /var/tmp/top100_artifacts/heck-0.5.0
 + curl -sL https://crates.io/api/v1/crates/heck/0.5.0/download
 + tar xzf -
-+ cd /tmp/top100_artifacts/heck-0.5.0
++ cd /var/tmp/top100_artifacts/heck-0.5.0
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
-   Compiling heck v0.5.0 (/tmp/top100_artifacts/heck-0.5.0)
+   Compiling heck v0.5.0 (/var/tmp/top100_artifacts/heck-0.5.0)
 warning: unexpected `cfg` condition value: `unicode`
   --> src/train.rs:70:11
    |
@@ -18,35 +18,36 @@ warning: unexpected `cfg` condition value: `unicode`
    = note: `#[warn(unexpected_cfgs)]` on by default
 
 warning: `heck` (lib test) generated 1 warning
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.60s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.64s
      Running unittests src/lib.rs (target/debug/deps/heck-be782a8607b7a71d)
 
 running 111 tests
+test kebab::tests::test1 ... ok
+test kebab::tests::test10 ... ok
 test kebab::tests::test11 ... ok
 test kebab::tests::test13 ... ok
-test kebab::tests::test2 ... ok
 test kebab::tests::test12 ... ok
-test kebab::tests::test1 ... ok
-test kebab::tests::test3 ... ok
-test kebab::tests::test10 ... ok
+test kebab::tests::test2 ... ok
 test kebab::tests::test4 ... ok
+test kebab::tests::test7 ... ok
 test kebab::tests::test5 ... ok
 test kebab::tests::test6 ... ok
+test kebab::tests::test3 ... ok
 test kebab::tests::test8 ... ok
-test kebab::tests::test9 ... ok
 test lower_camel::tests::test1 ... ok
-test lower_camel::tests::test2 ... ok
-test lower_camel::tests::test3 ... ok
-test lower_camel::tests::test4 ... ok
-test lower_camel::tests::test5 ... ok
-test lower_camel::tests::test6 ... ok
-test lower_camel::tests::test7 ... ok
-test lower_camel::tests::test8 ... ok
-test lower_camel::tests::test9 ... ok
-test kebab::tests::test7 ... ok
-test shouty_kebab::tests::test1 ... ok
 test lower_camel::tests::test10 ... ok
-test shouty_kebab::tests::test11 ... ok
+test lower_camel::tests::test3 ... ok
+test lower_camel::tests::test5 ... ok
+test lower_camel::tests::test2 ... ok
+test lower_camel::tests::test7 ... ok
+test lower_camel::tests::test4 ... ok
+test lower_camel::tests::test6 ... ok
+test lower_camel::tests::test9 ... ok
+test kebab::tests::test9 ... ok
+test shouty_kebab::tests::test1 ... ok
+test shouty_kebab::tests::test10 ... ok
+test shouty_kebab::tests::test2 ... ok
+test shouty_kebab::tests::test3 ... ok
 test shouty_kebab::tests::test4 ... ok
 test shouty_kebab::tests::test5 ... ok
 test shouty_kebab::tests::test6 ... ok
@@ -57,23 +58,20 @@ test shouty_snake::tests::test1 ... ok
 test shouty_snake::tests::test10 ... ok
 test shouty_snake::tests::test2 ... ok
 test shouty_snake::tests::test3 ... ok
+test shouty_kebab::tests::test11 ... ok
 test shouty_snake::tests::test4 ... ok
 test shouty_snake::tests::test5 ... ok
 test shouty_snake::tests::test6 ... ok
 test shouty_snake::tests::test7 ... ok
-test shouty_snake::tests::test8 ... ok
-test shouty_kebab::tests::test2 ... ok
-test shouty_kebab::tests::test10 ... ok
 test shouty_snake::tests::test9 ... ok
 test snake::tests::test1 ... ok
-test shouty_kebab::tests::test3 ... ok
 test snake::tests::test10 ... ok
-test snake::tests::test13 ... ok
+test snake::tests::test11 ... ok
 test snake::tests::test12 ... ok
+test snake::tests::test13 ... ok
 test snake::tests::test14 ... ok
 test snake::tests::test16 ... ok
 test snake::tests::test17 ... ok
-test snake::tests::test11 ... ok
 test snake::tests::test18 ... ok
 test snake::tests::test19 ... ok
 test snake::tests::test2 ... ok
@@ -84,31 +82,34 @@ test snake::tests::test23 ... ok
 test snake::tests::test24 ... ok
 test snake::tests::test25 ... ok
 test snake::tests::test3 ... ok
-test snake::tests::test6 ... ok
-test snake::tests::test5 ... ok
-test snake::tests::test7 ... ok
 test snake::tests::test4 ... ok
-test title::tests::test10 ... ok
-test snake::tests::test9 ... ok
+test snake::tests::test5 ... ok
+test snake::tests::test6 ... ok
+test snake::tests::test7 ... ok
 test snake::tests::test8 ... ok
+test snake::tests::test9 ... ok
 test title::tests::test1 ... ok
+test title::tests::test10 ... ok
 test title::tests::test2 ... ok
 test title::tests::test3 ... ok
+test title::tests::test4 ... ok
 test title::tests::test5 ... ok
 test title::tests::test6 ... ok
-test title::tests::test9 ... ok
 test title::tests::test7 ... ok
+test title::tests::test8 ... ok
+test title::tests::test9 ... ok
 test train::tests::test1 ... ok
 test train::tests::test10 ... ok
-test title::tests::test4 ... ok
 test train::tests::test11 ... ok
 test train::tests::test12 ... ok
-test title::tests::test8 ... ok
 test train::tests::test13 ... ok
 test train::tests::test14 ... ok
 test train::tests::test16 ... ok
 test train::tests::test17 ... ok
 test train::tests::test18 ... ok
+test train::tests::test19 ... ok
+test train::tests::test2 ... ok
+test train::tests::test20 ... ok
 test train::tests::test21 ... ok
 test train::tests::test22 ... ok
 test train::tests::test23 ... ok
@@ -130,13 +131,12 @@ test upper_camel::tests::test6 ... ok
 test upper_camel::tests::test7 ... ok
 test upper_camel::tests::test8 ... ok
 test upper_camel::tests::test9 ... ok
-test train::tests::test19 ... ok
-test train::tests::test20 ... ok
-test train::tests::test2 ... ok
+test lower_camel::tests::test8 ... ok
+test shouty_snake::tests::test8 ... ok
 
-test result: ok. 111 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+test result: ok. 111 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
 
 + RESULT=0
-+ cd /tmp/top100_artifacts
-+ rm -rf /tmp/top100_artifacts/heck-0.5.0
++ cd /var/tmp/top100_artifacts
++ rm -rf /var/tmp/top100_artifacts/heck-0.5.0
 + exit 0

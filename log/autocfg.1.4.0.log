@@ -1,23 +1,23 @@
-[autocfg] download directory: /tmp/top100_artifacts/autocfg-1.4.0
+[autocfg] download directory: /var/tmp/top100_artifacts/autocfg-1.4.0
 + curl -sL https://crates.io/api/v1/crates/autocfg/1.4.0/download
 + tar xzf -
-+ cd /tmp/top100_artifacts/autocfg-1.4.0
++ cd /var/tmp/top100_artifacts/autocfg-1.4.0
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
     Blocking waiting for file lock on package cache
-   Compiling autocfg v1.4.0 (/tmp/top100_artifacts/autocfg-1.4.0)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.91s
+   Compiling autocfg v1.4.0 (/var/tmp/top100_artifacts/autocfg-1.4.0)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.11s
      Running unittests src/lib.rs (target/debug/deps/autocfg-20c29ebf2d22951b)
 
 running 5 tests
-test tests::dir_does_contain_target_with_custom_target_dir ... ok
-test tests::dir_does_not_contain_target ... ok
 test tests::dir_does_contain_target ... ok
-test tests::dir_does_not_contain_target_with_custom_target_dir ... ok
+test tests::dir_does_not_contain_target ... ok
 test tests::version_cmp ... ok
+test tests::dir_does_contain_target_with_custom_target_dir ... ok
+test tests::dir_does_not_contain_target_with_custom_target_dir ... ok
 
-test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
 
      Running tests/no_std.rs (target/debug/deps/no_std-f6334568a83e851d)
 
@@ -38,7 +38,7 @@ error: aborting due to 1 previous error
 For more information about this error, try `rustc --explain E0432`.
 test no_std ... ok
 
-test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.57s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.56s
 
      Running tests/rustflags.rs (target/debug/deps/rustflags-58c82aa12130d455)
 
@@ -54,23 +54,13 @@ error: aborting due to 1 previous error
 For more information about this error, try `rustc --explain E0463`.
 test test_with_sysroot ... ok
 
-test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.08s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.22s
 
      Running tests/tests.rs (target/debug/deps/tests-99fe418927fa2430)
 
 running 12 tests
 test autocfg_version ... ok
 test probe_alloc ... ok
-error[E0463]: can't find crate for `doesnt_exist`
- --> <anon>:1:1
-  |
-1 | extern crate doesnt_exist as probe;
-  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ can't find crate
-
-error: aborting due to 1 previous error
-
-For more information about this error, try `rustc --explain E0463`.
-test probe_bad_sysroot_crate ... ok
 warning: trait objects without an explicit `dyn` are deprecated
  --> <anon>:1:18
   |
@@ -87,6 +77,18 @@ help: if this is a dyn-compatible trait, use `dyn`
 
 warning: 1 warning emitted
 
+error[E0463]: can't find crate for `doesnt_exist`
+ --> <anon>:1:1
+  |
+1 | extern crate doesnt_exist as probe;
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ can't find crate
+
+error: aborting due to 1 previous error
+
+For more information about this error, try `rustc --explain E0463`.
+test probe_bad_sysroot_crate ... ok
+test probe_as_ref ... ok
+test probe_add ... ok
 warning: use of deprecated method `core::str::<impl str>::trim_left`: superseded by `trim_start`
  --> <anon>:1:33
   |
@@ -102,10 +104,11 @@ help: replace the use of the deprecated method
 
 warning: 1 warning emitted
 
-test probe_add ... ok
-test probe_as_ref ... ok
 test probe_constant ... ok
+test probe_i128 ... ok
 test probe_expression ... ok
+test probe_std ... ok
+test probe_no_std ... ok
 error: function `x` is never used
  --> <anon>:1:24
   |
@@ -120,10 +123,6 @@ note: the lint level is defined here
 
 error: aborting due to 1 previous error
 
-test probe_i128 ... ok
-test probe_no_std ... ok
-test probe_std ... ok
-test probe_raw ... ok
 warning: trait objects without an explicit `dyn` are deprecated
  --> <anon>:1:18
   |
@@ -140,9 +139,10 @@ help: if this is a dyn-compatible trait, use `dyn`
 
 warning: 1 warning emitted
 
+test probe_raw ... ok
 test probe_sum ... ok
 
-test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.15s
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.97s
 
      Running tests/wrappers.rs (target/debug/deps/wrappers-f45e1dbb974a5753)
 
@@ -190,9 +190,9 @@ warning: autocfg could not probe for `std`
 warning: autocfg could not probe for `std`
 test test_wrappers ... ok
 
-test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.98s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.15s
 
 + RESULT=0
-+ cd /tmp/top100_artifacts
-+ rm -rf /tmp/top100_artifacts/autocfg-1.4.0
++ cd /var/tmp/top100_artifacts
++ rm -rf /var/tmp/top100_artifacts/autocfg-1.4.0
 + exit 0

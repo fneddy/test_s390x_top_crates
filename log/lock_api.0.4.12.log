@@ -1,17 +1,19 @@
-[lock_api] download directory: /tmp/top100_artifacts/lock_api-0.4.12
+[lock_api] download directory: /var/tmp/top100_artifacts/lock_api-0.4.12
 + curl -sL https://crates.io/api/v1/crates/lock_api/0.4.12/download
 + tar xzf -
-+ cd /tmp/top100_artifacts/lock_api-0.4.12
++ cd /var/tmp/top100_artifacts/lock_api-0.4.12
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
+    Blocking waiting for file lock on package cache
     Updating crates.io index
+    Blocking waiting for file lock on package cache
      Locking 10 packages to latest compatible versions
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
    Compiling autocfg v1.4.0
    Compiling scopeguard v1.2.0
-   Compiling lock_api v0.4.12 (/tmp/top100_artifacts/lock_api-0.4.12)
+   Compiling lock_api v0.4.12 (/var/tmp/top100_artifacts/lock_api-0.4.12)
 warning: unexpected `cfg` condition name: `has_const_fn_trait_bound`
    --> src/mutex.rs:148:11
     |
@@ -104,7 +106,7 @@ warning: field `0` is never read
     = note: `#[warn(dead_code)]` on by default
 
 warning: `lock_api` (lib test) generated 7 warnings
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.18s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.08s
      Running unittests src/lib.rs (target/debug/deps/lock_api-2627dc543a4e4465)
 
 running 0 tests
@@ -112,6 +114,6 @@ running 0 tests
 test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 
 + RESULT=0
-+ cd /tmp/top100_artifacts
-+ rm -rf /tmp/top100_artifacts/lock_api-0.4.12
++ cd /var/tmp/top100_artifacts
++ rm -rf /var/tmp/top100_artifacts/lock_api-0.4.12
 + exit 0

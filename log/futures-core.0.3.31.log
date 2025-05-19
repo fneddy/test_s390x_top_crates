@@ -1,16 +1,17 @@
-[futures-core] download directory: /tmp/top100_artifacts/futures-core-0.3.31
+[futures-core] download directory: /var/tmp/top100_artifacts/futures-core-0.3.31
 + curl -sL https://crates.io/api/v1/crates/futures-core/0.3.31/download
 + tar xzf -
-+ cd /tmp/top100_artifacts/futures-core-0.3.31
++ cd /var/tmp/top100_artifacts/futures-core-0.3.31
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
     Blocking waiting for file lock on package cache
     Updating crates.io index
-    Blocking waiting for file lock on package cache
      Locking 1 package to latest compatible version
-   Compiling futures-core v0.3.31 (/tmp/top100_artifacts/futures-core-0.3.31)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.06s
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   Compiling futures-core v0.3.31 (/var/tmp/top100_artifacts/futures-core-0.3.31)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 4.99s
      Running unittests src/lib.rs (target/debug/deps/futures_core-1196ce1d4d75d484)
 
 running 0 tests
@@ -18,6 +19,6 @@ running 0 tests
 test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 
 + RESULT=0
-+ cd /tmp/top100_artifacts
-+ rm -rf /tmp/top100_artifacts/futures-core-0.3.31
++ cd /var/tmp/top100_artifacts
++ rm -rf /var/tmp/top100_artifacts/futures-core-0.3.31
 + exit 0

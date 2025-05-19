@@ -1,7 +1,7 @@
-[http-body] download directory: /tmp/top100_artifacts/http-body-1.0.1
+[http-body] download directory: /var/tmp/top100_artifacts/http-body-1.0.1
 + curl -sL https://crates.io/api/v1/crates/http-body/1.0.1/download
 + tar xzf -
-+ cd /tmp/top100_artifacts/http-body-1.0.1
++ cd /var/tmp/top100_artifacts/http-body-1.0.1
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
@@ -10,13 +10,12 @@
      Locking 4 packages to latest compatible versions
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-   Compiling itoa v1.0.15
    Compiling bytes v1.10.1
+   Compiling itoa v1.0.15
    Compiling fnv v1.0.7
    Compiling http v1.3.1
-   Compiling http-body v1.0.1 (/tmp/top100_artifacts/http-body-1.0.1)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.84s
+   Compiling http-body v1.0.1 (/var/tmp/top100_artifacts/http-body-1.0.1)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.61s
      Running unittests src/lib.rs (target/debug/deps/http_body-63c97172d8c067e9)
 
 running 0 tests
@@ -32,6 +31,6 @@ test is_end_stream_true ... ok
 test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 
 + RESULT=0
-+ cd /tmp/top100_artifacts
-+ rm -rf /tmp/top100_artifacts/http-body-1.0.1
++ cd /var/tmp/top100_artifacts
++ rm -rf /var/tmp/top100_artifacts/http-body-1.0.1
 + exit 0

@@ -1,7 +1,7 @@
-[parking_lot_core] download directory: /tmp/top100_artifacts/parking_lot_core-0.9.10
+[parking_lot_core] download directory: /var/tmp/top100_artifacts/parking_lot_core-0.9.10
 + curl -sL https://crates.io/api/v1/crates/parking_lot_core/0.9.10/download
 + tar xzf -
-+ cd /tmp/top100_artifacts/parking_lot_core-0.9.10
++ cd /var/tmp/top100_artifacts/parking_lot_core-0.9.10
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
@@ -12,10 +12,11 @@
       Adding thread-id v4.2.2 (available: v5.0.0)
       Adding windows-targets v0.52.6 (available: v0.53.0)
     Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
    Compiling libc v0.2.172
-   Compiling parking_lot_core v0.9.10 (/tmp/top100_artifacts/parking_lot_core-0.9.10)
-   Compiling smallvec v1.15.0
+   Compiling parking_lot_core v0.9.10 (/var/tmp/top100_artifacts/parking_lot_core-0.9.10)
    Compiling cfg-if v1.0.0
+   Compiling smallvec v1.15.0
 warning: unused import: `UnparkHandle`
   --> src/thread_parker/mod.rs:85:49
    |
@@ -40,7 +41,7 @@ warning: unexpected `cfg` condition name: `tsan_enabled`
     = note: `#[warn(unexpected_cfgs)]` on by default
 
 warning: `parking_lot_core` (lib test) generated 2 warnings (run `cargo fix --lib -p parking_lot_core --tests` to apply 1 suggestion)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.88s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 4.10s
      Running unittests src/lib.rs (target/debug/deps/parking_lot_core-b47c17bfde195c77)
 
 running 12 tests
@@ -53,13 +54,13 @@ test parking_lot::tests::unpark_all_hundred_fast ... ok
 test parking_lot::tests::unpark_all_hundred ... ok
 test parking_lot::tests::unpark_one_one ... ok
 test parking_lot::tests::unpark_one_one_fast ... ok
-test parking_lot::tests::unpark_one_fifty_then_fifty_all_fast ... ok
 test parking_lot::tests::unpark_one_hundred_fast ... ok
+test parking_lot::tests::unpark_one_fifty_then_fifty_all_fast ... ok
 test parking_lot::tests::hundred_unpark_all_one_fast ... ok
 
-test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 22.53s
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 24.23s
 
 + RESULT=0
-+ cd /tmp/top100_artifacts
-+ rm -rf /tmp/top100_artifacts/parking_lot_core-0.9.10
++ cd /var/tmp/top100_artifacts
++ rm -rf /var/tmp/top100_artifacts/parking_lot_core-0.9.10
 + exit 0

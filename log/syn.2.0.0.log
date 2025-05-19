@@ -1,4 +1,4 @@
-[syn] download directory: /tmp/top100_artifacts/syn-2.0.0
+[syn] download directory: /var/tmp/top100_artifacts/syn-2.0.0
 + git clone -c advice.detachedHead=false -q --branch 2.0.0 --depth 1 https://github.com/dtolnay/syn .
 warning: refs/tags/2.0.0 31ebf3d6058d97741e99d6d358ded5eada35de78 is not a commit!
 + cargo clean
@@ -13,56 +13,56 @@ warning: refs/tags/2.0.0 31ebf3d6058d97741e99d6d358ded5eada35de78 is not a commi
    Compiling unicode-ident v1.0.18
    Compiling libc v0.2.172
    Compiling stable_deref_trait v1.2.0
-   Compiling shlex v1.3.0
    Compiling once_cell v1.21.3
+   Compiling shlex v1.3.0
    Compiling cc v1.2.23
-   Compiling pkg-config v0.3.32
-   Compiling quote v1.0.40
    Compiling pin-project-lite v0.2.16
-   Compiling vcpkg v0.2.15
-   Compiling syn v2.0.101
    Compiling cfg-if v1.0.0
+   Compiling vcpkg v0.2.15
+   Compiling quote v1.0.40
+   Compiling pkg-config v0.3.32
    Compiling bytes v1.10.1
-   Compiling autocfg v1.4.0
+   Compiling syn v2.0.101
+   Compiling bitflags v2.9.1
    Compiling openssl-sys v0.9.108
    Compiling memchr v2.7.4
-   Compiling litemap v0.8.0
-   Compiling bitflags v2.9.1
    Compiling writeable v0.6.1
+   Compiling autocfg v1.4.0
+   Compiling litemap v0.8.0
    Compiling slab v0.4.9
-   Compiling socket2 v0.5.9
    Compiling mio v1.0.3
+   Compiling socket2 v0.5.9
+   Compiling icu_normalizer_data v2.0.0
+   Compiling futures-core v0.3.31
    Compiling icu_properties_data v2.0.0
    Compiling itoa v1.0.15
-   Compiling futures-core v0.3.31
-   Compiling icu_normalizer_data v2.0.0
    Compiling tokio v1.45.0
-   Compiling crossbeam-utils v0.8.21
+   Compiling openssl v0.10.72
    Compiling fnv v1.0.7
    Compiling foreign-types-shared v0.1.1
-   Compiling openssl v0.10.72
+   Compiling crossbeam-utils v0.8.21
    Compiling foreign-types v0.3.2
    Compiling http v0.2.12
    Compiling synstructure v0.13.2
    Compiling tracing-core v0.1.33
+   Compiling pin-utils v0.1.0
+   Compiling httparse v1.10.1
    Compiling hashbrown v0.15.3
+   Compiling equivalent v1.0.2
    Compiling zerofrom-derive v0.1.6
    Compiling yoke-derive v0.8.0
    Compiling zerovec-derive v0.11.1
-   Compiling zerofrom v0.1.6
    Compiling displaydoc v0.2.5
    Compiling openssl-macros v0.1.1
+   Compiling zerofrom v0.1.6
    Compiling yoke v0.8.0
-   Compiling zerovec v0.11.2
-   Compiling native-tls v0.2.14
-   Compiling equivalent v1.0.2
-   Compiling zerotrie v0.2.2
-   Compiling httparse v1.10.1
-   Compiling smallvec v1.15.0
-   Compiling futures-sink v0.3.31
-   Compiling pin-utils v0.1.0
-   Compiling futures-task v0.3.31
    Compiling futures-io v0.3.31
+   Compiling native-tls v0.2.14
+   Compiling zerovec v0.11.2
+   Compiling futures-sink v0.3.31
+   Compiling zerotrie v0.2.2
+   Compiling futures-task v0.3.31
+   Compiling smallvec v1.15.0
    Compiling futures-util v0.3.31
    Compiling tokio-util v0.7.15
    Compiling tinystr v0.8.1
@@ -70,70 +70,70 @@ warning: refs/tags/2.0.0 31ebf3d6058d97741e99d6d358ded5eada35de78 is not a commi
    Compiling potential_utf v0.1.2
    Compiling icu_collections v2.0.0
    Compiling icu_provider v2.0.0
-   Compiling icu_normalizer v2.0.0
    Compiling icu_properties v2.0.0
+   Compiling icu_normalizer v2.0.0
    Compiling indexmap v2.9.0
    Compiling tracing v0.1.41
-   Compiling try-lock v0.2.5
-   Compiling rustix v1.0.7
    Compiling serde v1.0.219
-   Compiling openssl-probe v0.1.6
-   Compiling percent-encoding v2.3.1
    Compiling log v0.4.27
+   Compiling openssl-probe v0.1.6
+   Compiling try-lock v0.2.5
+   Compiling percent-encoding v2.3.1
+   Compiling rustix v1.0.7
    Compiling form_urlencoded v1.2.1
-   Compiling crossbeam-epoch v0.9.18
    Compiling want v0.3.1
+   Compiling crossbeam-epoch v0.9.18
    Compiling h2 v0.3.26
    Compiling idna_adapter v1.2.1
    Compiling http-body v0.4.6
    Compiling futures-channel v0.3.31
    Compiling errno v0.3.12
-   Compiling rayon-core v1.12.1
-   Compiling utf8_iter v1.0.4
    Compiling tower-service v0.3.3
    Compiling httpdate v1.0.3
    Compiling linux-raw-sys v0.9.4
-   Compiling tokio-native-tls v0.3.1
+   Compiling utf8_iter v1.0.4
+   Compiling rayon-core v1.12.1
    Compiling idna v1.0.3
    Compiling hyper v0.14.32
+   Compiling tokio-native-tls v0.3.1
    Compiling crossbeam-deque v0.8.6
    Compiling aho-corasick v1.1.3
    Compiling rustversion v1.0.20
    Compiling adler2 v2.0.0
-   Compiling base64 v0.21.7
-   Compiling syn v2.0.0 (/tmp/top100_artifacts/syn-2.0.0)
    Compiling ref-cast v1.0.24
    Compiling anyhow v1.0.98
-   Compiling termcolor v1.4.1
+   Compiling base64 v0.21.7
    Compiling regex-syntax v0.8.5
+   Compiling termcolor v1.4.1
    Compiling ryu v1.0.20
+   Compiling syn v2.0.0 (/var/tmp/top100_artifacts/syn-2.0.0)
    Compiling serde_urlencoded v0.7.1
-   Compiling syn-test-suite-feature-check v0.0.0 (/tmp/top100_artifacts/syn-2.0.0/tests/features/macro)
+   Compiling syn-test-suite-feature-check v0.0.0 (/var/tmp/top100_artifacts/syn-2.0.0/tests/features/macro)
    Compiling rustls-pemfile v1.0.4
-   Compiling miniz_oxide v0.8.8
    Compiling regex-automata v0.4.9
+   Compiling miniz_oxide v0.8.8
    Compiling hyper-tls v0.5.0
    Compiling xattr v1.5.0
    Compiling url v2.5.4
    Compiling ref-cast-impl v1.0.24
    Compiling filetime v0.2.25
+   Compiling console v0.15.11
    Compiling encoding_rs v0.8.35
    Compiling crc32fast v1.4.2
-   Compiling console v0.15.11
+   Compiling similar v2.7.0
+   Compiling mime v0.3.17
    Compiling either v1.15.0
    Compiling sync_wrapper v0.1.2
    Compiling same-file v1.0.6
    Compiling ipnet v2.11.0
-   Compiling mime v0.3.17
-   Compiling similar v2.7.0
-   Compiling insta v1.43.1
    Compiling reqwest v0.11.27
    Compiling walkdir v2.5.0
    Compiling rayon v1.10.0
+   Compiling insta v1.43.1
    Compiling flate2 v1.1.1
    Compiling tar v0.4.44
    Compiling regex v1.11.1
-   Compiling syn-test-suite v0.0.0 (/tmp/top100_artifacts/syn-2.0.0/tests/features)
+   Compiling syn-test-suite v0.0.0 (/var/tmp/top100_artifacts/syn-2.0.0/tests/features)
    Compiling automod v1.0.15
 warning: unexpected `cfg` condition name: `doc_cfg`
    --> src/lib.rs:253:13
@@ -5728,28 +5728,82 @@ warning: field `0` is never read
     |
     = help: consider removing this field
 
-warning: `syn` (lib test) generated 503 warnings (503 duplicates)
 warning: `syn` (lib) generated 503 warnings (90 duplicates) (run `cargo fix --lib -p syn` to apply 1 suggestion)
-error[E0425]: cannot find function `parse_file` in crate `syn`
-   --> tests/crates/main.rs:81:22
+error[E0432]: unresolved import `syn::Stmt`
+   --> tests/test_stmt.rs:12:5
     |
-81  |         let _ = syn::parse_file(&contents);
-    |                      ^^^^^^^^^^ not found in `syn`
+12  | use syn::Stmt;
+    |     ^^^^^^^^^ no `Stmt` in the root
     |
 note: found an item that was configured out
-   --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:952:8
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:48
     |
-952 | pub fn parse_file(mut content: &str) -> Result<File> {
-    |        ^^^^^^^^^^
-note: the item is gated here
-   --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:950:1
+475 | pub use crate::stmt::{Block, Local, LocalInit, Stmt, StmtMacro};
+    |                                                ^^^^
+note: the item is gated behind the `full` feature
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
     |
-950 | #[cfg(all(feature = "parsing", feature = "full"))]
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+474 | #[cfg(feature = "full")]
+    |       ^^^^^^^^^^^^^^^^
 
-For more information about this error, try `rustc --explain E0425`.
-error: could not compile `syn` (test "crates") due to 1 previous error
-warning: build failed, waiting for other jobs to finish...
+error[E0432]: unresolved imports `syn::Item`, `syn::Pat`, `syn::Stmt`
+   --> tests/test_pat.rs:9:11
+    |
+9   | use syn::{Item, Pat, Stmt};
+    |           ^^^^  ^^^  ^^^^ no `Stmt` in the root
+    |           |     |
+    |           |     no `Pat` in the root
+    |           |     help: a similar name exists in the module: `Path`
+    |           no `Item` in the root
+    |
+note: found an item that was configured out
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
+    |
+384 |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
+    |                                                                                        ^^^^
+note: the item is gated behind the `full` feature
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    |
+381 | #[cfg(feature = "full")]
+    |       ^^^^^^^^^^^^^^^^
+note: found an item that was configured out
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
+    |
+442 |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
+    |               ^^^
+note: the item is gated behind the `full` feature
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    |
+440 | #[cfg(feature = "full")]
+    |       ^^^^^^^^^^^^^^^^
+note: found an item that was configured out
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:48
+    |
+475 | pub use crate::stmt::{Block, Local, LocalInit, Stmt, StmtMacro};
+    |                                                ^^^^
+note: the item is gated behind the `full` feature
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
+    |
+474 | #[cfg(feature = "full")]
+    |       ^^^^^^^^^^^^^^^^
+
+error[E0432]: unresolved import `syn::TraitItemFn`
+   --> tests/test_receiver.rs:6:24
+    |
+6   | use syn::{parse_quote, TraitItemFn};
+    |                        ^^^^^^^^^^^ no `TraitItemFn` in the root
+    |
+note: found an item that was configured out
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:61
+    |
+387 |     Signature, StaticMutability, TraitItem, TraitItemConst, TraitItemFn, TraitItemMacro,
+    |                                                             ^^^^^^^^^^^
+note: the item is gated behind the `full` feature
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    |
+381 | #[cfg(feature = "full")]
+    |       ^^^^^^^^^^^^^^^^
+
 error[E0433]: failed to resolve: could not find `FnArg` in `syn`
     --> tests/macros/../debug/gen.rs:1847:18
      |
@@ -5757,12 +5811,12 @@ error[E0433]: failed to resolve: could not find `FnArg` in `syn`
      |                  ^^^^^ could not find `FnArg` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:383:5
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:383:5
      |
 383  |     FnArg, ForeignItem, ForeignItemFn, ForeignItemMacro, ForeignItemStatic, ForeignItemType,
      |     ^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -5774,12 +5828,12 @@ error[E0433]: failed to resolve: could not find `FnArg` in `syn`
      |                  ^^^^^ could not find `FnArg` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:383:5
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:383:5
      |
 383  |     FnArg, ForeignItem, ForeignItemFn, ForeignItemMacro, ForeignItemStatic, ForeignItemType,
      |     ^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -5791,12 +5845,12 @@ error[E0433]: failed to resolve: could not find `ForeignItem` in `syn`
      |                  ^^^^^^^^^^^ could not find `ForeignItem` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:383:12
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:383:12
      |
 383  |     FnArg, ForeignItem, ForeignItemFn, ForeignItemMacro, ForeignItemStatic, ForeignItemType,
      |            ^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -5808,12 +5862,12 @@ error[E0433]: failed to resolve: could not find `ForeignItem` in `syn`
      |                  ^^^^^^^^^^^ could not find `ForeignItem` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:383:12
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:383:12
      |
 383  |     FnArg, ForeignItem, ForeignItemFn, ForeignItemMacro, ForeignItemStatic, ForeignItemType,
      |            ^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -5825,12 +5879,12 @@ error[E0433]: failed to resolve: could not find `StaticMutability` in `syn`
      |                          ^^^^^^^^^^^^^^^^ could not find `StaticMutability` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:16
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:16
      |
 387  |     Signature, StaticMutability, TraitItem, TraitItemConst, TraitItemFn, TraitItemMacro,
      |                ^^^^^^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -5842,12 +5896,12 @@ error[E0433]: failed to resolve: could not find `ForeignItem` in `syn`
      |                  ^^^^^^^^^^^ could not find `ForeignItem` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:383:12
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:383:12
      |
 383  |     FnArg, ForeignItem, ForeignItemFn, ForeignItemMacro, ForeignItemStatic, ForeignItemType,
      |            ^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -5859,12 +5913,12 @@ error[E0433]: failed to resolve: could not find `ForeignItem` in `syn`
      |                  ^^^^^^^^^^^ could not find `ForeignItem` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:383:12
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:383:12
      |
 383  |     FnArg, ForeignItem, ForeignItemFn, ForeignItemMacro, ForeignItemStatic, ForeignItemType,
      |            ^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -5876,12 +5930,12 @@ error[E0433]: failed to resolve: could not find `ForeignItem` in `syn`
      |                  ^^^^^^^^^^^ could not find `ForeignItem` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:383:12
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:383:12
      |
 383  |     FnArg, ForeignItem, ForeignItemFn, ForeignItemMacro, ForeignItemStatic, ForeignItemType,
      |            ^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -5893,12 +5947,12 @@ error[E0433]: failed to resolve: could not find `StaticMutability` in `syn`
      |                  ^^^^^^^^^^^^^^^^ could not find `StaticMutability` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:16
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:16
      |
 387  |     Signature, StaticMutability, TraitItem, TraitItemConst, TraitItemFn, TraitItemMacro,
      |                ^^^^^^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -5910,12 +5964,12 @@ error[E0433]: failed to resolve: could not find `ImplItem` in `syn`
      |                  ^^^^^^^^ could not find `ImplItem` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:5
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:5
      |
 384  |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
      |     ^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -5927,12 +5981,12 @@ error[E0433]: failed to resolve: could not find `ImplItem` in `syn`
      |                  ^^^^^^^^ could not find `ImplItem` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:5
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:5
      |
 384  |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
      |     ^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -5944,12 +5998,12 @@ error[E0433]: failed to resolve: could not find `ImplItem` in `syn`
      |                  ^^^^^^^^ could not find `ImplItem` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:5
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:5
      |
 384  |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
      |     ^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -5961,12 +6015,12 @@ error[E0433]: failed to resolve: could not find `ImplItem` in `syn`
      |                  ^^^^^^^^ could not find `ImplItem` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:5
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:5
      |
 384  |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
      |     ^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -5978,12 +6032,12 @@ error[E0433]: failed to resolve: could not find `ImplItem` in `syn`
      |                  ^^^^^^^^ could not find `ImplItem` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:5
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:5
      |
 384  |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
      |     ^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -5995,12 +6049,12 @@ error[E0433]: failed to resolve: could not find `Item` in `syn`
      |                  ^^^^ could not find `Item` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
      |
 384  |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
      |                                                                                        ^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6012,12 +6066,12 @@ error[E0433]: failed to resolve: could not find `Item` in `syn`
      |                  ^^^^ could not find `Item` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
      |
 384  |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
      |                                                                                        ^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6029,12 +6083,12 @@ error[E0433]: failed to resolve: could not find `Item` in `syn`
      |                  ^^^^ could not find `Item` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
      |
 384  |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
      |                                                                                        ^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6046,12 +6100,12 @@ error[E0433]: failed to resolve: could not find `Item` in `syn`
      |                  ^^^^ could not find `Item` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
      |
 384  |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
      |                                                                                        ^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6063,12 +6117,12 @@ error[E0433]: failed to resolve: could not find `Item` in `syn`
      |                  ^^^^ could not find `Item` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
      |
 384  |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
      |                                                                                        ^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6080,12 +6134,12 @@ error[E0433]: failed to resolve: could not find `Item` in `syn`
      |                  ^^^^ could not find `Item` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
      |
 384  |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
      |                                                                                        ^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6097,12 +6151,12 @@ error[E0433]: failed to resolve: could not find `Item` in `syn`
      |                  ^^^^ could not find `Item` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
      |
 384  |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
      |                                                                                        ^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6114,15 +6168,32 @@ error[E0433]: failed to resolve: could not find `Item` in `syn`
      |                  ^^^^ could not find `Item` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
      |
 384  |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
      |                                                                                        ^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
+
+error[E0425]: cannot find function `parse_file` in crate `syn`
+   --> tests/crates/main.rs:81:22
+    |
+81  |         let _ = syn::parse_file(&contents);
+    |                      ^^^^^^^^^^ not found in `syn`
+    |
+note: found an item that was configured out
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:952:8
+    |
+952 | pub fn parse_file(mut content: &str) -> Result<File> {
+    |        ^^^^^^^^^^
+note: the item is gated here
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:950:1
+    |
+950 | #[cfg(all(feature = "parsing", feature = "full"))]
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 error[E0433]: failed to resolve: could not find `Item` in `syn`
     --> tests/macros/../debug/gen.rs:2392:18
@@ -6131,12 +6202,12 @@ error[E0433]: failed to resolve: could not find `Item` in `syn`
      |                  ^^^^ could not find `Item` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
      |
 384  |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
      |                                                                                        ^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6148,12 +6219,12 @@ error[E0433]: failed to resolve: could not find `StaticMutability` in `syn`
      |                          ^^^^^^^^^^^^^^^^ could not find `StaticMutability` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:16
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:16
      |
 387  |     Signature, StaticMutability, TraitItem, TraitItemConst, TraitItemFn, TraitItemMacro,
      |                ^^^^^^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6165,12 +6236,12 @@ error[E0433]: failed to resolve: could not find `Item` in `syn`
      |                  ^^^^ could not find `Item` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
      |
 384  |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
      |                                                                                        ^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6182,12 +6253,12 @@ error[E0433]: failed to resolve: could not find `Item` in `syn`
      |                  ^^^^ could not find `Item` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
      |
 384  |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
      |                                                                                        ^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6199,12 +6270,12 @@ error[E0433]: failed to resolve: could not find `Item` in `syn`
      |                  ^^^^ could not find `Item` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
      |
 384  |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
      |                                                                                        ^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6216,12 +6287,12 @@ error[E0433]: failed to resolve: could not find `Item` in `syn`
      |                  ^^^^ could not find `Item` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
      |
 384  |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
      |                                                                                        ^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6233,12 +6304,12 @@ error[E0433]: failed to resolve: could not find `Item` in `syn`
      |                  ^^^^ could not find `Item` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
      |
 384  |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
      |                                                                                        ^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6250,12 +6321,12 @@ error[E0433]: failed to resolve: could not find `Item` in `syn`
      |                  ^^^^ could not find `Item` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
      |
 384  |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
      |                                                                                        ^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6267,16 +6338,19 @@ error[E0433]: failed to resolve: could not find `Item` in `syn`
      |                  ^^^^ could not find `Item` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
      |
 384  |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
      |                                                                                        ^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
 
+For more information about this error, try `rustc --explain E0425`.
+error: could not compile `syn` (test "crates") due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
 error[E0433]: failed to resolve: could not find `StaticMutability` in `syn`
     --> tests/macros/../debug/gen.rs:2710:18
      |
@@ -6284,12 +6358,12 @@ error[E0433]: failed to resolve: could not find `StaticMutability` in `syn`
      |                  ^^^^^^^^^^^^^^^^ could not find `StaticMutability` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:16
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:16
      |
 387  |     Signature, StaticMutability, TraitItem, TraitItemConst, TraitItemFn, TraitItemMacro,
      |                ^^^^^^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6304,12 +6378,12 @@ error[E0433]: failed to resolve: could not find `Pat` in `syn`
      |                  help: a struct with a similar name exists: `Path`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
      |
 442  |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
      |               ^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6324,12 +6398,12 @@ error[E0433]: failed to resolve: could not find `Pat` in `syn`
      |                  help: a struct with a similar name exists: `Path`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
      |
 442  |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
      |               ^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6344,12 +6418,12 @@ error[E0433]: failed to resolve: could not find `Pat` in `syn`
      |                  help: a struct with a similar name exists: `Path`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
      |
 442  |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
      |               ^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6364,12 +6438,12 @@ error[E0433]: failed to resolve: could not find `Pat` in `syn`
      |                  help: a struct with a similar name exists: `Path`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
      |
 442  |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
      |               ^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6384,12 +6458,12 @@ error[E0433]: failed to resolve: could not find `Pat` in `syn`
      |                  help: a struct with a similar name exists: `Path`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
      |
 442  |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
      |               ^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6404,12 +6478,12 @@ error[E0433]: failed to resolve: could not find `Pat` in `syn`
      |                  help: a struct with a similar name exists: `Path`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
      |
 442  |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
      |               ^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6421,12 +6495,12 @@ error[E0433]: failed to resolve: could not find `Pat` in `syn`
      |                  ^^^ could not find `Pat` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
      |
 442  |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
      |               ^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6441,12 +6515,12 @@ error[E0433]: failed to resolve: could not find `Pat` in `syn`
      |                  help: a struct with a similar name exists: `Path`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
      |
 442  |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
      |               ^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6461,12 +6535,12 @@ error[E0433]: failed to resolve: could not find `Pat` in `syn`
      |                  help: a struct with a similar name exists: `Path`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
      |
 442  |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
      |               ^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6481,12 +6555,12 @@ error[E0433]: failed to resolve: could not find `Pat` in `syn`
      |                  help: a struct with a similar name exists: `Path`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
      |
 442  |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
      |               ^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6501,12 +6575,12 @@ error[E0433]: failed to resolve: could not find `Pat` in `syn`
      |                  help: a struct with a similar name exists: `Path`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
      |
 442  |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
      |               ^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6521,12 +6595,12 @@ error[E0433]: failed to resolve: could not find `Pat` in `syn`
      |                  help: a struct with a similar name exists: `Path`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
      |
 442  |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
      |               ^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6541,12 +6615,12 @@ error[E0433]: failed to resolve: could not find `Pat` in `syn`
      |                  help: a struct with a similar name exists: `Path`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
      |
 442  |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
      |               ^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6561,12 +6635,12 @@ error[E0433]: failed to resolve: could not find `Pat` in `syn`
      |                  help: a struct with a similar name exists: `Path`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
      |
 442  |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
      |               ^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6581,12 +6655,12 @@ error[E0433]: failed to resolve: could not find `Pat` in `syn`
      |                  help: a struct with a similar name exists: `Path`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
      |
 442  |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
      |               ^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6601,12 +6675,12 @@ error[E0433]: failed to resolve: could not find `Pat` in `syn`
      |                  help: a struct with a similar name exists: `Path`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
      |
 442  |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
      |               ^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6621,12 +6695,12 @@ error[E0433]: failed to resolve: could not find `Pat` in `syn`
      |                  help: a struct with a similar name exists: `Path`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
      |
 442  |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
      |               ^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6638,12 +6712,12 @@ error[E0433]: failed to resolve: could not find `RangeLimits` in `syn`
      |                  ^^^^^^^^^^^ could not find `RangeLimits` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:346:47
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:346:47
      |
 346  | pub use crate::expr::{Arm, FieldValue, Label, RangeLimits};
      |                                               ^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:345:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:345:7
      |
 345  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6655,12 +6729,12 @@ error[E0433]: failed to resolve: could not find `RangeLimits` in `syn`
      |                  ^^^^^^^^^^^ could not find `RangeLimits` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:346:47
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:346:47
      |
 346  | pub use crate::expr::{Arm, FieldValue, Label, RangeLimits};
      |                                               ^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:345:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:345:7
      |
 345  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6672,12 +6746,12 @@ error[E0433]: failed to resolve: could not find `StaticMutability` in `syn`
      |                  ^^^^^^^^^^^^^^^^ could not find `StaticMutability` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:16
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:16
      |
 387  |     Signature, StaticMutability, TraitItem, TraitItemConst, TraitItemFn, TraitItemMacro,
      |                ^^^^^^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6689,12 +6763,12 @@ error[E0433]: failed to resolve: could not find `StaticMutability` in `syn`
      |                  ^^^^^^^^^^^^^^^^ could not find `StaticMutability` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:16
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:16
      |
 387  |     Signature, StaticMutability, TraitItem, TraitItemConst, TraitItemFn, TraitItemMacro,
      |                ^^^^^^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6706,12 +6780,12 @@ error[E0433]: failed to resolve: could not find `Stmt` in `syn`
      |                  ^^^^ could not find `Stmt` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:48
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:48
      |
 475  | pub use crate::stmt::{Block, Local, LocalInit, Stmt, StmtMacro};
      |                                                ^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
      |
 474  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6723,12 +6797,12 @@ error[E0433]: failed to resolve: could not find `Stmt` in `syn`
      |                  ^^^^ could not find `Stmt` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:48
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:48
      |
 475  | pub use crate::stmt::{Block, Local, LocalInit, Stmt, StmtMacro};
      |                                                ^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
      |
 474  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6740,12 +6814,12 @@ error[E0433]: failed to resolve: could not find `Stmt` in `syn`
      |                  ^^^^ could not find `Stmt` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:48
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:48
      |
 475  | pub use crate::stmt::{Block, Local, LocalInit, Stmt, StmtMacro};
      |                                                ^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
      |
 474  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6757,12 +6831,12 @@ error[E0433]: failed to resolve: could not find `Stmt` in `syn`
      |                  ^^^^ could not find `Stmt` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:48
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:48
      |
 475  | pub use crate::stmt::{Block, Local, LocalInit, Stmt, StmtMacro};
      |                                                ^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
      |
 474  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6774,12 +6848,12 @@ error[E0433]: failed to resolve: could not find `TraitItem` in `syn`
      |                  ^^^^^^^^^ could not find `TraitItem` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:34
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:34
      |
 387  |     Signature, StaticMutability, TraitItem, TraitItemConst, TraitItemFn, TraitItemMacro,
      |                                  ^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6791,12 +6865,12 @@ error[E0433]: failed to resolve: could not find `TraitItem` in `syn`
      |                  ^^^^^^^^^ could not find `TraitItem` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:34
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:34
      |
 387  |     Signature, StaticMutability, TraitItem, TraitItemConst, TraitItemFn, TraitItemMacro,
      |                                  ^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6808,12 +6882,12 @@ error[E0433]: failed to resolve: could not find `TraitItem` in `syn`
      |                  ^^^^^^^^^ could not find `TraitItem` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:34
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:34
      |
 387  |     Signature, StaticMutability, TraitItem, TraitItemConst, TraitItemFn, TraitItemMacro,
      |                                  ^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6825,12 +6899,12 @@ error[E0433]: failed to resolve: could not find `TraitItem` in `syn`
      |                  ^^^^^^^^^ could not find `TraitItem` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:34
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:34
      |
 387  |     Signature, StaticMutability, TraitItem, TraitItemConst, TraitItemFn, TraitItemMacro,
      |                                  ^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6842,12 +6916,12 @@ error[E0433]: failed to resolve: could not find `TraitItem` in `syn`
      |                  ^^^^^^^^^ could not find `TraitItem` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:34
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:34
      |
 387  |     Signature, StaticMutability, TraitItem, TraitItemConst, TraitItemFn, TraitItemMacro,
      |                                  ^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6859,12 +6933,12 @@ error[E0433]: failed to resolve: could not find `UseTree` in `syn`
      |                  ^^^^^^^ could not find `UseTree` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:388:68
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:388:68
      |
 388  |     TraitItemType, UseGlob, UseGroup, UseName, UsePath, UseRename, UseTree, Variadic,
      |                                                                    ^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6876,12 +6950,12 @@ error[E0433]: failed to resolve: could not find `UseTree` in `syn`
      |                  ^^^^^^^ could not find `UseTree` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:388:68
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:388:68
      |
 388  |     TraitItemType, UseGlob, UseGroup, UseName, UsePath, UseRename, UseTree, Variadic,
      |                                                                    ^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6893,12 +6967,12 @@ error[E0433]: failed to resolve: could not find `UseTree` in `syn`
      |                  ^^^^^^^ could not find `UseTree` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:388:68
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:388:68
      |
 388  |     TraitItemType, UseGlob, UseGroup, UseName, UsePath, UseRename, UseTree, Variadic,
      |                                                                    ^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6910,12 +6984,12 @@ error[E0433]: failed to resolve: could not find `UseTree` in `syn`
      |                  ^^^^^^^ could not find `UseTree` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:388:68
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:388:68
      |
 388  |     TraitItemType, UseGlob, UseGroup, UseName, UsePath, UseRename, UseTree, Variadic,
      |                                                                    ^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6927,12 +7001,12 @@ error[E0433]: failed to resolve: could not find `UseTree` in `syn`
      |                  ^^^^^^^ could not find `UseTree` in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:388:68
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:388:68
      |
 388  |     TraitItemType, UseGlob, UseGroup, UseName, UsePath, UseRename, UseTree, Variadic,
      |                                                                    ^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -6944,12 +7018,12 @@ error[E0412]: cannot find type `Arm` in crate `syn`
     |                          ^^^ not found in `syn`
     |
 note: found an item that was configured out
-   --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:346:23
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:346:23
     |
 346 | pub use crate::expr::{Arm, FieldValue, Label, RangeLimits};
     |                       ^^^
 note: the item is gated behind the `full` feature
-   --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:345:7
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:345:7
     |
 345 | #[cfg(feature = "full")]
     |       ^^^^^^^^^^^^^^^^
@@ -6961,12 +7035,12 @@ error[E0412]: cannot find type `Block` in crate `syn`
     |                          ^^^^^ not found in `syn`
     |
 note: found an item that was configured out
-   --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:23
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:23
     |
 475 | pub use crate::stmt::{Block, Local, LocalInit, Stmt, StmtMacro};
     |                       ^^^^^
 note: the item is gated behind the `full` feature
-   --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
     |
 474 | #[cfg(feature = "full")]
     |       ^^^^^^^^^^^^^^^^
@@ -6986,12 +7060,12 @@ error[E0412]: cannot find type `Label` in crate `syn`
     |                                       ^^^^^ not found in `syn`
     |
 note: found an item that was configured out
-   --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:346:40
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:346:40
     |
 346 | pub use crate::expr::{Arm, FieldValue, Label, RangeLimits};
     |                                        ^^^^^
 note: the item is gated behind the `full` feature
-   --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:345:7
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:345:7
     |
 345 | #[cfg(feature = "full")]
     |       ^^^^^^^^^^^^^^^^
@@ -7003,12 +7077,12 @@ error[E0412]: cannot find type `Label` in crate `syn`
     |                                       ^^^^^ not found in `syn`
     |
 note: found an item that was configured out
-   --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:346:40
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:346:40
     |
 346 | pub use crate::expr::{Arm, FieldValue, Label, RangeLimits};
     |                                        ^^^^^
 note: the item is gated behind the `full` feature
-   --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:345:7
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:345:7
     |
 345 | #[cfg(feature = "full")]
     |       ^^^^^^^^^^^^^^^^
@@ -7020,12 +7094,12 @@ error[E0412]: cannot find type `Label` in crate `syn`
     |                                       ^^^^^ not found in `syn`
     |
 note: found an item that was configured out
-   --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:346:40
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:346:40
     |
 346 | pub use crate::expr::{Arm, FieldValue, Label, RangeLimits};
     |                                        ^^^^^
 note: the item is gated behind the `full` feature
-   --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:345:7
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:345:7
     |
 345 | #[cfg(feature = "full")]
     |       ^^^^^^^^^^^^^^^^
@@ -7037,12 +7111,12 @@ error[E0412]: cannot find type `Label` in crate `syn`
      |                                       ^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:346:40
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:346:40
      |
 346  | pub use crate::expr::{Arm, FieldValue, Label, RangeLimits};
      |                                        ^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:345:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:345:7
      |
 345  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7054,12 +7128,12 @@ error[E0412]: cannot find type `Label` in crate `syn`
      |                               ^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:346:40
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:346:40
      |
 346  | pub use crate::expr::{Arm, FieldValue, Label, RangeLimits};
      |                                        ^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:345:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:345:7
      |
 345  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7071,12 +7145,12 @@ error[E0412]: cannot find type `Label` in crate `syn`
      |                               ^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:346:40
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:346:40
      |
 346  | pub use crate::expr::{Arm, FieldValue, Label, RangeLimits};
      |                                        ^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:345:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:345:7
      |
 345  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7088,12 +7162,12 @@ error[E0412]: cannot find type `Label` in crate `syn`
      |                               ^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:346:40
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:346:40
      |
 346  | pub use crate::expr::{Arm, FieldValue, Label, RangeLimits};
      |                                        ^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:345:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:345:7
      |
 345  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7105,12 +7179,12 @@ error[E0412]: cannot find type `Label` in crate `syn`
      |                               ^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:346:40
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:346:40
      |
 346  | pub use crate::expr::{Arm, FieldValue, Label, RangeLimits};
      |                                        ^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:345:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:345:7
      |
 345  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7122,12 +7196,12 @@ error[E0412]: cannot find type `FieldPat` in crate `syn`
      |                          ^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:5
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:5
      |
 442  |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
      |     ^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7139,12 +7213,12 @@ error[E0412]: cannot find type `FieldValue` in crate `syn`
      |                          ^^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:346:28
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:346:28
      |
 346  | pub use crate::expr::{Arm, FieldValue, Label, RangeLimits};
      |                            ^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:345:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:345:7
      |
 345  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7156,12 +7230,12 @@ error[E0412]: cannot find type `File` in crate `syn`
      |                          ^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:363:22
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:363:22
      |
 363  | pub use crate::file::File;
      |                      ^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:362:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:362:7
      |
 362  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7182,12 +7256,12 @@ error[E0412]: cannot find type `FnArg` in crate `syn`
      |                          ^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:383:5
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:383:5
      |
 383  |     FnArg, ForeignItem, ForeignItemFn, ForeignItemMacro, ForeignItemStatic, ForeignItemType,
      |     ^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7199,12 +7273,12 @@ error[E0412]: cannot find type `ForeignItem` in crate `syn`
      |                          ^^^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:383:12
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:383:12
      |
 383  |     FnArg, ForeignItem, ForeignItemFn, ForeignItemMacro, ForeignItemStatic, ForeignItemType,
      |            ^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7216,12 +7290,12 @@ error[E0412]: cannot find type `ForeignItemFn` in crate `syn`
      |                          ^^^^^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:383:25
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:383:25
      |
 383  |     FnArg, ForeignItem, ForeignItemFn, ForeignItemMacro, ForeignItemStatic, ForeignItemType,
      |                         ^^^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7233,12 +7307,12 @@ error[E0412]: cannot find type `ForeignItemMacro` in crate `syn`
      |                          ^^^^^^^^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:383:40
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:383:40
      |
 383  |     FnArg, ForeignItem, ForeignItemFn, ForeignItemMacro, ForeignItemStatic, ForeignItemType,
      |                                        ^^^^^^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7250,12 +7324,12 @@ error[E0412]: cannot find type `ForeignItemStatic` in crate `syn`
      |                          ^^^^^^^^^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:383:58
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:383:58
      |
 383  |     FnArg, ForeignItem, ForeignItemFn, ForeignItemMacro, ForeignItemStatic, ForeignItemType,
      |                                                          ^^^^^^^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7267,12 +7341,12 @@ error[E0412]: cannot find type `ForeignItemType` in crate `syn`
      |                          ^^^^^^^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:383:77
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:383:77
      |
 383  |     FnArg, ForeignItem, ForeignItemFn, ForeignItemMacro, ForeignItemStatic, ForeignItemType,
      |                                                                             ^^^^^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7284,12 +7358,12 @@ error[E0412]: cannot find type `ImplItem` in crate `syn`
      |                          ^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:5
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:5
      |
 384  |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
      |     ^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7301,12 +7375,12 @@ error[E0412]: cannot find type `ImplItemConst` in crate `syn`
      |                          ^^^^^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:15
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:15
      |
 384  |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
      |               ^^^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7318,12 +7392,12 @@ error[E0412]: cannot find type `ImplItemFn` in crate `syn`
      |                          ^^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:30
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:30
      |
 384  |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
      |                              ^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7335,12 +7409,12 @@ error[E0412]: cannot find type `ImplItemMacro` in crate `syn`
      |                          ^^^^^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:42
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:42
      |
 384  |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
      |                                          ^^^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7352,12 +7426,12 @@ error[E0412]: cannot find type `ImplItemType` in crate `syn`
      |                          ^^^^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:57
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:57
      |
 384  |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
      |                                                         ^^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7369,12 +7443,12 @@ error[E0412]: cannot find type `ImplRestriction` in crate `syn`
      |                          ^^^^^^^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:71
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:71
      |
 384  |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
      |                                                                       ^^^^^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7386,12 +7460,12 @@ error[E0412]: cannot find type `Item` in crate `syn`
      |                          ^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
      |
 384  |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
      |                                                                                        ^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7403,12 +7477,12 @@ error[E0412]: cannot find type `Item` in crate `syn`
      |                                                               ^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
      |
 384  |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
      |                                                                                        ^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7420,12 +7494,12 @@ error[E0412]: cannot find type `ImplRestriction` in crate `syn`
      |                                       ^^^^^^^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:71
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:71
      |
 384  |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
      |                                                                       ^^^^^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7437,12 +7511,12 @@ error[E0412]: cannot find type `ItemConst` in crate `syn`
      |                          ^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:385:5
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:385:5
      |
 385  |     ItemConst, ItemEnum, ItemExternCrate, ItemFn, ItemForeignMod, ItemImpl, ItemMacro, ItemMod,
      |     ^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7454,12 +7528,12 @@ error[E0412]: cannot find type `ItemEnum` in crate `syn`
      |                          ^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:385:16
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:385:16
      |
 385  |     ItemConst, ItemEnum, ItemExternCrate, ItemFn, ItemForeignMod, ItemImpl, ItemMacro, ItemMod,
      |                ^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7471,12 +7545,12 @@ error[E0412]: cannot find type `ItemExternCrate` in crate `syn`
      |                          ^^^^^^^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:385:26
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:385:26
      |
 385  |     ItemConst, ItemEnum, ItemExternCrate, ItemFn, ItemForeignMod, ItemImpl, ItemMacro, ItemMod,
      |                          ^^^^^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7488,12 +7562,12 @@ error[E0412]: cannot find type `ItemFn` in crate `syn`
      |                          ^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:385:43
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:385:43
      |
 385  |     ItemConst, ItemEnum, ItemExternCrate, ItemFn, ItemForeignMod, ItemImpl, ItemMacro, ItemMod,
      |                                           ^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7505,12 +7579,12 @@ error[E0412]: cannot find type `ItemForeignMod` in crate `syn`
      |                          ^^^^^^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:385:51
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:385:51
      |
 385  |     ItemConst, ItemEnum, ItemExternCrate, ItemFn, ItemForeignMod, ItemImpl, ItemMacro, ItemMod,
      |                                                   ^^^^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7522,12 +7596,12 @@ error[E0412]: cannot find type `ItemImpl` in crate `syn`
      |                          ^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:385:67
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:385:67
      |
 385  |     ItemConst, ItemEnum, ItemExternCrate, ItemFn, ItemForeignMod, ItemImpl, ItemMacro, ItemMod,
      |                                                                   ^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7539,12 +7613,12 @@ error[E0412]: cannot find type `ItemMacro` in crate `syn`
      |                          ^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:385:77
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:385:77
      |
 385  |     ItemConst, ItemEnum, ItemExternCrate, ItemFn, ItemForeignMod, ItemImpl, ItemMacro, ItemMod,
      |                                                                             ^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7556,12 +7630,12 @@ error[E0412]: cannot find type `ItemMod` in crate `syn`
      |                          ^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:385:88
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:385:88
      |
 385  |     ItemConst, ItemEnum, ItemExternCrate, ItemFn, ItemForeignMod, ItemImpl, ItemMacro, ItemMod,
      |                                                                                        ^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7573,12 +7647,12 @@ error[E0412]: cannot find type `Item` in crate `syn`
      |                                                       ^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
      |
 384  |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
      |                                                                                        ^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7590,12 +7664,12 @@ error[E0412]: cannot find type `ItemStatic` in crate `syn`
      |                          ^^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:386:5
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:386:5
      |
 386  |     ItemStatic, ItemStruct, ItemTrait, ItemTraitAlias, ItemType, ItemUnion, ItemUse, Receiver,
      |     ^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7607,12 +7681,12 @@ error[E0412]: cannot find type `ItemStruct` in crate `syn`
      |                          ^^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:386:17
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:386:17
      |
 386  |     ItemStatic, ItemStruct, ItemTrait, ItemTraitAlias, ItemType, ItemUnion, ItemUse, Receiver,
      |                 ^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7624,12 +7698,12 @@ error[E0412]: cannot find type `ItemTrait` in crate `syn`
      |                          ^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:386:29
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:386:29
      |
 386  |     ItemStatic, ItemStruct, ItemTrait, ItemTraitAlias, ItemType, ItemUnion, ItemUse, Receiver,
      |                             ^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7641,12 +7715,12 @@ error[E0412]: cannot find type `ImplRestriction` in crate `syn`
      |                               ^^^^^^^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:71
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:71
      |
 384  |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
      |                                                                       ^^^^^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7658,12 +7732,12 @@ error[E0412]: cannot find type `ItemTraitAlias` in crate `syn`
      |                          ^^^^^^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:386:40
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:386:40
      |
 386  |     ItemStatic, ItemStruct, ItemTrait, ItemTraitAlias, ItemType, ItemUnion, ItemUse, Receiver,
      |                                        ^^^^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7675,12 +7749,12 @@ error[E0412]: cannot find type `ItemType` in crate `syn`
      |                          ^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:386:56
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:386:56
      |
 386  |     ItemStatic, ItemStruct, ItemTrait, ItemTraitAlias, ItemType, ItemUnion, ItemUse, Receiver,
      |                                                        ^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7692,12 +7766,12 @@ error[E0412]: cannot find type `ItemUnion` in crate `syn`
      |                          ^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:386:66
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:386:66
      |
 386  |     ItemStatic, ItemStruct, ItemTrait, ItemTraitAlias, ItemType, ItemUnion, ItemUse, Receiver,
      |                                                                  ^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7709,12 +7783,12 @@ error[E0412]: cannot find type `ItemUse` in crate `syn`
      |                          ^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:386:77
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:386:77
      |
 386  |     ItemStatic, ItemStruct, ItemTrait, ItemTraitAlias, ItemType, ItemUnion, ItemUse, Receiver,
      |                                                                             ^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7726,12 +7800,12 @@ error[E0412]: cannot find type `Label` in crate `syn`
      |                          ^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:346:40
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:346:40
      |
 346  | pub use crate::expr::{Arm, FieldValue, Label, RangeLimits};
      |                                        ^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:345:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:345:7
      |
 345  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7743,12 +7817,12 @@ error[E0412]: cannot find type `Local` in crate `syn`
      |                          ^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:30
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:30
      |
 475  | pub use crate::stmt::{Block, Local, LocalInit, Stmt, StmtMacro};
      |                              ^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
      |
 474  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7760,12 +7834,12 @@ error[E0412]: cannot find type `LocalInit` in crate `syn`
      |                               ^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:37
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:37
      |
 475  | pub use crate::stmt::{Block, Local, LocalInit, Stmt, StmtMacro};
      |                                     ^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
      |
 474  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7777,12 +7851,12 @@ error[E0412]: cannot find type `LocalInit` in crate `syn`
      |                          ^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:37
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:37
      |
 475  | pub use crate::stmt::{Block, Local, LocalInit, Stmt, StmtMacro};
      |                                     ^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
      |
 474  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7793,7 +7867,7 @@ error[E0412]: cannot find type `Pat` in crate `syn`
 3073 |   impl Debug for Lite<syn::Pat> {
      |                            ^^^ help: a struct with a similar name exists: `Path`
      |
-    ::: /tmp/top100_artifacts/syn-2.0.0/src/path.rs:4:1
+    ::: /var/tmp/top100_artifacts/syn-2.0.0/src/path.rs:4:1
      |
 4    | / ast_struct! {
 5    | |     /// A path at which a named item is exported (e.g. `std::collections::HashMap`).
@@ -7804,12 +7878,12 @@ error[E0412]: cannot find type `Pat` in crate `syn`
      | |_- similarly named struct `Path` defined here
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
      |
 442  |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
      |               ^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7820,7 +7894,7 @@ error[E0412]: cannot find type `Pat` in crate `syn`
 3098 |                       struct Print((syn::token::At, Box<syn::Pat>));
      |                                                              ^^^ help: a struct with a similar name exists: `Path`
      |
-    ::: /tmp/top100_artifacts/syn-2.0.0/src/path.rs:4:1
+    ::: /var/tmp/top100_artifacts/syn-2.0.0/src/path.rs:4:1
      |
 4    | / ast_struct! {
 5    | |     /// A path at which a named item is exported (e.g. `std::collections::HashMap`).
@@ -7831,12 +7905,12 @@ error[E0412]: cannot find type `Pat` in crate `syn`
      | |_- similarly named struct `Path` defined here
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
      |
 442  |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
      |               ^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7848,12 +7922,12 @@ error[E0412]: cannot find type `PatRest` in crate `syn`
      |                                       ^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:61
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:61
      |
 442  |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
      |                                                             ^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7865,12 +7939,12 @@ error[E0412]: cannot find type `PatIdent` in crate `syn`
      |                          ^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:20
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:20
      |
 442  |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
      |                    ^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7881,7 +7955,7 @@ error[E0412]: cannot find type `Pat` in crate `syn`
 3305 |               struct Print((syn::token::At, Box<syn::Pat>));
      |                                                      ^^^ help: a struct with a similar name exists: `Path`
      |
-    ::: /tmp/top100_artifacts/syn-2.0.0/src/path.rs:4:1
+    ::: /var/tmp/top100_artifacts/syn-2.0.0/src/path.rs:4:1
      |
 4    | / ast_struct! {
 5    | |     /// A path at which a named item is exported (e.g. `std::collections::HashMap`).
@@ -7892,12 +7966,12 @@ error[E0412]: cannot find type `Pat` in crate `syn`
      | |_- similarly named struct `Path` defined here
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
      |
 442  |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
      |               ^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7909,12 +7983,12 @@ error[E0412]: cannot find type `PatOr` in crate `syn`
      |                          ^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:30
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:30
      |
 442  |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
      |                              ^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7926,12 +8000,12 @@ error[E0412]: cannot find type `PatParen` in crate `syn`
      |                          ^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:37
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:37
      |
 442  |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
      |                                     ^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7942,7 +8016,7 @@ error[E0412]: cannot find type `PatReference` in crate `syn`
 3344 |   impl Debug for Lite<syn::PatReference> {
      |                            ^^^^^^^^^^^^ help: a struct with a similar name exists: `ExprReference`
      |
-    ::: /tmp/top100_artifacts/syn-2.0.0/src/expr.rs:553:1
+    ::: /var/tmp/top100_artifacts/syn-2.0.0/src/expr.rs:553:1
      |
 553  | / ast_struct! {
 554  | |     /// A referencing operation: `&a` or `&mut a`.
@@ -7953,12 +8027,12 @@ error[E0412]: cannot find type `PatReference` in crate `syn`
      | |_- similarly named struct `ExprReference` defined here
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:47
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:47
      |
 442  |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
      |                                               ^^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7970,12 +8044,12 @@ error[E0412]: cannot find type `PatRest` in crate `syn`
      |                          ^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:61
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:61
      |
 442  |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
      |                                                             ^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -7987,12 +8061,12 @@ error[E0412]: cannot find type `PatSlice` in crate `syn`
      |                          ^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:70
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:70
      |
 442  |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
      |                                                                      ^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -8003,7 +8077,7 @@ error[E0412]: cannot find type `PatStruct` in crate `syn`
 3378 |   impl Debug for Lite<syn::PatStruct> {
      |                            ^^^^^^^^^ help: a struct with a similar name exists: `DataStruct`
      |
-    ::: /tmp/top100_artifacts/syn-2.0.0/src/derive.rs:32:1
+    ::: /var/tmp/top100_artifacts/syn-2.0.0/src/derive.rs:32:1
      |
 32   | / ast_struct! {
 33   | |     /// A struct input to a `proc_macro_derive` macro.
@@ -8014,12 +8088,12 @@ error[E0412]: cannot find type `PatStruct` in crate `syn`
      | |_- similarly named struct `DataStruct` defined here
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:80
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:80
      |
 442  |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
      |                                                                                ^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -8031,12 +8105,12 @@ error[E0412]: cannot find type `PatRest` in crate `syn`
      |                               ^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:61
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:61
      |
 442  |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
      |                                                             ^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -8048,12 +8122,12 @@ error[E0412]: cannot find type `PatTuple` in crate `syn`
      |                          ^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:91
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:91
      |
 442  |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
      |                                                                                           ^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -8065,12 +8139,12 @@ error[E0412]: cannot find type `PatTupleStruct` in crate `syn`
      |                          ^^^^^^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:443:5
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:443:5
      |
 443  |     PatTupleStruct, PatType, PatWild,
      |     ^^^^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -8082,12 +8156,12 @@ error[E0412]: cannot find type `PatType` in crate `syn`
      |                          ^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:443:21
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:443:21
      |
 443  |     PatTupleStruct, PatType, PatWild,
      |                     ^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -8099,12 +8173,12 @@ error[E0412]: cannot find type `PatWild` in crate `syn`
      |                          ^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:443:30
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:443:30
      |
 443  |     PatTupleStruct, PatType, PatWild,
      |                              ^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -8116,12 +8190,12 @@ error[E0412]: cannot find type `RangeLimits` in crate `syn`
      |                          ^^^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:346:47
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:346:47
      |
 346  | pub use crate::expr::{Arm, FieldValue, Label, RangeLimits};
      |                                               ^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:345:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:345:7
      |
 345  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -8133,12 +8207,12 @@ error[E0412]: cannot find type `Receiver` in crate `syn`
      |                          ^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:386:86
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:386:86
      |
 386  |     ItemStatic, ItemStruct, ItemTrait, ItemTraitAlias, ItemType, ItemUnion, ItemUse, Receiver,
      |                                                                                      ^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -8165,12 +8239,12 @@ error[E0412]: cannot find type `Signature` in crate `syn`
      |                          ^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:5
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:5
      |
 387  |     Signature, StaticMutability, TraitItem, TraitItemConst, TraitItemFn, TraitItemMacro,
      |     ^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -8182,12 +8256,12 @@ error[E0412]: cannot find type `Variadic` in crate `syn`
      |                               ^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:388:77
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:388:77
      |
 388  |     TraitItemType, UseGlob, UseGroup, UseName, UsePath, UseRename, UseTree, Variadic,
      |                                                                             ^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -8199,12 +8273,12 @@ error[E0412]: cannot find type `StaticMutability` in crate `syn`
      |                          ^^^^^^^^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:16
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:16
      |
 387  |     Signature, StaticMutability, TraitItem, TraitItemConst, TraitItemFn, TraitItemMacro,
      |                ^^^^^^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -8216,12 +8290,12 @@ error[E0412]: cannot find type `Stmt` in crate `syn`
      |                          ^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:48
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:48
      |
 475  | pub use crate::stmt::{Block, Local, LocalInit, Stmt, StmtMacro};
      |                                                ^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
      |
 474  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -8233,12 +8307,12 @@ error[E0412]: cannot find type `LocalInit` in crate `syn`
      |                                       ^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:37
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:37
      |
 475  | pub use crate::stmt::{Block, Local, LocalInit, Stmt, StmtMacro};
      |                                     ^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
      |
 474  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -8250,12 +8324,12 @@ error[E0412]: cannot find type `StmtMacro` in crate `syn`
      |                          ^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:54
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:54
      |
 475  | pub use crate::stmt::{Block, Local, LocalInit, Stmt, StmtMacro};
      |                                                      ^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
      |
 474  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -8267,12 +8341,12 @@ error[E0412]: cannot find type `TraitItem` in crate `syn`
      |                          ^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:34
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:34
      |
 387  |     Signature, StaticMutability, TraitItem, TraitItemConst, TraitItemFn, TraitItemMacro,
      |                                  ^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -8284,12 +8358,12 @@ error[E0412]: cannot find type `Block` in crate `syn`
      |                                       ^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:23
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:23
      |
 475  | pub use crate::stmt::{Block, Local, LocalInit, Stmt, StmtMacro};
      |                       ^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
      |
 474  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -8309,12 +8383,12 @@ error[E0412]: cannot find type `TraitItemConst` in crate `syn`
      |                          ^^^^^^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:45
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:45
      |
 387  |     Signature, StaticMutability, TraitItem, TraitItemConst, TraitItemFn, TraitItemMacro,
      |                                             ^^^^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -8326,12 +8400,12 @@ error[E0412]: cannot find type `TraitItemFn` in crate `syn`
      |                          ^^^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:61
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:61
      |
 387  |     Signature, StaticMutability, TraitItem, TraitItemConst, TraitItemFn, TraitItemMacro,
      |                                                             ^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -8343,12 +8417,12 @@ error[E0412]: cannot find type `Block` in crate `syn`
      |                               ^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:23
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:23
      |
 475  | pub use crate::stmt::{Block, Local, LocalInit, Stmt, StmtMacro};
      |                       ^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
      |
 474  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -8368,12 +8442,12 @@ error[E0412]: cannot find type `TraitItemMacro` in crate `syn`
      |                          ^^^^^^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:74
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:387:74
      |
 387  |     Signature, StaticMutability, TraitItem, TraitItemConst, TraitItemFn, TraitItemMacro,
      |                                                                          ^^^^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -8385,12 +8459,12 @@ error[E0412]: cannot find type `TraitItemType` in crate `syn`
      |                          ^^^^^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:388:5
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:388:5
      |
 388  |     TraitItemType, UseGlob, UseGroup, UseName, UsePath, UseRename, UseTree, Variadic,
      |     ^^^^^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -8402,43 +8476,15 @@ error[E0412]: cannot find type `UseGlob` in crate `syn`
      |                          ^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:388:20
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:388:20
      |
 388  |     TraitItemType, UseGlob, UseGroup, UseName, UsePath, UseRename, UseTree, Variadic,
      |                    ^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
-
-error[E0412]: cannot find type `Block` in crate `syn`
-   --> tests/macros/../debug/gen.rs:300:26
-    |
-300 | impl Debug for Lite<syn::Block> {
-    |                          ^^^^^ not found in `syn`
-    |
-note: found an item that was configured out
-   --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:23
-    |
-475 | pub use crate::stmt::{Block, Local, LocalInit, Stmt, StmtMacro};
-    |                       ^^^^^
-note: the item is gated behind the `full` feature
-   --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
-    |
-474 | #[cfg(feature = "full")]
-    |       ^^^^^^^^^^^^^^^^
-help: there is an enum variant `crate::Expr::Block` and 3 others; try using the variant's enum
-    |
-300 - impl Debug for Lite<syn::Block> {
-300 + impl Debug for Lite<crate::Expr> {
-    |
-300 - impl Debug for Lite<syn::Block> {
-300 + impl Debug for Lite<syn::Expr> {
-    |
-300 - impl Debug for Lite<syn::Block> {
-300 + impl Debug for Lite<tar::EntryType> {
-    |
 
 error[E0412]: cannot find type `UseGroup` in crate `syn`
     --> tests/macros/../debug/gen.rs:4481:26
@@ -8447,12 +8493,12 @@ error[E0412]: cannot find type `UseGroup` in crate `syn`
      |                          ^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:388:29
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:388:29
      |
 388  |     TraitItemType, UseGlob, UseGroup, UseName, UsePath, UseRename, UseTree, Variadic,
      |                             ^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -8464,12 +8510,12 @@ error[E0412]: cannot find type `UseName` in crate `syn`
      |                          ^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:388:39
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:388:39
      |
 388  |     TraitItemType, UseGlob, UseGroup, UseName, UsePath, UseRename, UseTree, Variadic,
      |                                       ^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -8481,12 +8527,12 @@ error[E0412]: cannot find type `UsePath` in crate `syn`
      |                          ^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:388:48
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:388:48
      |
 388  |     TraitItemType, UseGlob, UseGroup, UseName, UsePath, UseRename, UseTree, Variadic,
      |                                                ^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -8498,12 +8544,12 @@ error[E0412]: cannot find type `UseRename` in crate `syn`
      |                          ^^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:388:57
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:388:57
      |
 388  |     TraitItemType, UseGlob, UseGroup, UseName, UsePath, UseRename, UseTree, Variadic,
      |                                                         ^^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -8515,12 +8561,12 @@ error[E0412]: cannot find type `UseTree` in crate `syn`
      |                          ^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:388:68
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:388:68
      |
 388  |     TraitItemType, UseGlob, UseGroup, UseName, UsePath, UseRename, UseTree, Variadic,
      |                                                                    ^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -8532,12 +8578,12 @@ error[E0412]: cannot find type `Variadic` in crate `syn`
      |                          ^^^^^^^^ not found in `syn`
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:388:77
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:388:77
      |
 388  |     TraitItemType, UseGlob, UseGroup, UseName, UsePath, UseRename, UseTree, Variadic,
      |                                                                             ^^^^^^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
@@ -8548,7 +8594,7 @@ error[E0412]: cannot find type `Pat` in crate `syn`
 4563 |               struct Print((Box<syn::Pat>, syn::token::Colon));
      |                                      ^^^ help: a struct with a similar name exists: `Path`
      |
-    ::: /tmp/top100_artifacts/syn-2.0.0/src/path.rs:4:1
+    ::: /var/tmp/top100_artifacts/syn-2.0.0/src/path.rs:4:1
      |
 4    | / ast_struct! {
 5    | |     /// A path at which a named item is exported (e.g. `std::collections::HashMap`).
@@ -8559,71 +8605,15 @@ error[E0412]: cannot find type `Pat` in crate `syn`
      | |_- similarly named struct `Path` defined here
      |
 note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
      |
 442  |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
      |               ^^^
 note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
      |
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
-
-error[E0412]: cannot find type `Block` in crate `syn`
-    --> tests/macros/../debug/gen.rs:3865:39
-     |
-3865 |                     struct Print(syn::Block);
-     |                                       ^^^^^ not found in `syn`
-     |
-note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:23
-     |
-475  | pub use crate::stmt::{Block, Local, LocalInit, Stmt, StmtMacro};
-     |                       ^^^^^
-note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
-     |
-474  | #[cfg(feature = "full")]
-     |       ^^^^^^^^^^^^^^^^
-help: there is an enum variant `crate::Expr::Block` and 3 others; try using the variant's enum
-     |
-3865 -                     struct Print(syn::Block);
-3865 +                     struct Print(crate::Expr);
-     |
-3865 -                     struct Print(syn::Block);
-3865 +                     struct Print(syn::Expr);
-     |
-3865 -                     struct Print(syn::Block);
-3865 +                     struct Print(tar::EntryType);
-     |
-
-error[E0412]: cannot find type `Block` in crate `syn`
-    --> tests/macros/../debug/gen.rs:3968:31
-     |
-3968 |             struct Print(syn::Block);
-     |                               ^^^^^ not found in `syn`
-     |
-note: found an item that was configured out
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:23
-     |
-475  | pub use crate::stmt::{Block, Local, LocalInit, Stmt, StmtMacro};
-     |                       ^^^^^
-note: the item is gated behind the `full` feature
-    --> /tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
-     |
-474  | #[cfg(feature = "full")]
-     |       ^^^^^^^^^^^^^^^^
-help: there is an enum variant `crate::Expr::Block` and 3 others; try using the variant's enum
-     |
-3968 -             struct Print(syn::Block);
-3968 +             struct Print(crate::Expr);
-     |
-3968 -             struct Print(syn::Block);
-3968 +             struct Print(syn::Expr);
-     |
-3968 -             struct Print(syn::Block);
-3968 +             struct Print(tar::EntryType);
-     |
 
 error[E0609]: no field `attrs` on type `&ExprArray`
    --> tests/macros/../debug/gen.rs:440:26
@@ -10113,174 +10103,12 @@ error[E0609]: no field `expr` on type `ExprYield`
 1692 |         if let Some(val) = &self.value.expr {
      |                                        ^^^^ unknown field
 
-error[E0277]: `syn::Lit` doesn't implement `Debug`
-  --> tests/test_lit.rs:38:37
-   |
-38 |             wrong => panic!("{:?}", wrong),
-   |                                     ^^^^^ `syn::Lit` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-   |
-   = help: the trait `Debug` is not implemented for `syn::Lit`
-
-error[E0277]: `syn::Type` doesn't implement `Debug`
-    --> tests/test_ty.rs:15:49
-     |
-15   |     syn::parse_str::<Type>("fn(mut self: ...)").unwrap_err();
-     |                                                 ^^^^^^^^^^ `syn::Type` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-     |
-     = help: the trait `Debug` is not implemented for `syn::Type`
-note: required by a bound in `Result::<T, E>::unwrap_err`
-    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
-     |
-1198 |     pub fn unwrap_err(self) -> E
-     |            ---------- required by a bound in this associated function
-1199 |     where
-1200 |         T: fmt::Debug,
-     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
-
-error[E0277]: `syn::Type` doesn't implement `Debug`
-    --> tests/test_ty.rs:16:54
-     |
-16   |     syn::parse_str::<Type>("fn(mut self: mut self)").unwrap_err();
-     |                                                      ^^^^^^^^^^ `syn::Type` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-     |
-     = help: the trait `Debug` is not implemented for `syn::Type`
-note: required by a bound in `Result::<T, E>::unwrap_err`
-    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
-     |
-1198 |     pub fn unwrap_err(self) -> E
-     |            ---------- required by a bound in this associated function
-1199 |     where
-1200 |         T: fmt::Debug,
-     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
-
-error[E0277]: `syn::Lit` doesn't implement `Debug`
-  --> tests/test_lit.rs:77:37
-   |
-77 |             wrong => panic!("{:?}", wrong),
-   |                                     ^^^^^ `syn::Lit` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-   |
-   = help: the trait `Debug` is not implemented for `syn::Lit`
-
-error[E0277]: `syn::Type` doesn't implement `Debug`
-    --> tests/test_ty.rs:17:47
-     |
-17   |     syn::parse_str::<Type>("fn(mut self::T)").unwrap_err();
-     |                                               ^^^^^^^^^^ `syn::Type` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-     |
-     = help: the trait `Debug` is not implemented for `syn::Type`
-note: required by a bound in `Result::<T, E>::unwrap_err`
-    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
-     |
-1198 |     pub fn unwrap_err(self) -> E
-     |            ---------- required by a bound in this associated function
-1199 |     where
-1200 |         T: fmt::Debug,
-     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
-
-error[E0277]: `syn::Lit` doesn't implement `Debug`
-   --> tests/test_lit.rs:107:37
-    |
-107 |             wrong => panic!("{:?}", wrong),
-    |                                     ^^^^^ `syn::Lit` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-    |
-    = help: the trait `Debug` is not implemented for `syn::Lit`
-
-error[E0277]: `syn::Lit` doesn't implement `Debug`
-   --> tests/test_lit.rs:131:37
-    |
-131 |             wrong => panic!("{:?}", wrong),
-    |                                     ^^^^^ `syn::Lit` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-    |
-    = help: the trait `Debug` is not implemented for `syn::Lit`
-
-error[E0277]: `syn::Lit` doesn't implement `Debug`
-   --> tests/test_lit.rs:158:37
-    |
-158 |             wrong => panic!("{:?}", wrong),
-    |                                     ^^^^^ `syn::Lit` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-    |
-    = help: the trait `Debug` is not implemented for `syn::Lit`
-
-error[E0277]: `syn::Lit` doesn't implement `Debug`
-   --> tests/test_lit.rs:198:37
-    |
-198 |             wrong => panic!("{:?}", wrong),
-    |                                     ^^^^^ `syn::Lit` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-    |
-    = help: the trait `Debug` is not implemented for `syn::Lit`
-
-error[E0277]: `syn::Type` doesn't implement `Debug`
-    --> tests/test_ty.rs:277:53
-     |
-277  |     syn::parse_str::<Type>("for<'a> dyn Trait<'a>").unwrap_err();
-     |                                                     ^^^^^^^^^^ `syn::Type` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-     |
-     = help: the trait `Debug` is not implemented for `syn::Type`
-note: required by a bound in `Result::<T, E>::unwrap_err`
-    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
-     |
-1198 |     pub fn unwrap_err(self) -> E
-     |            ---------- required by a bound in this associated function
-1199 |     where
-1200 |         T: fmt::Debug,
-     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
-
-error[E0277]: `syn::Type` doesn't implement `Debug`
-    --> tests/test_ty.rs:278:54
-     |
-278  |     syn::parse_str::<Type>("dyn for<'a> 'a + Trait").unwrap_err();
-     |                                                      ^^^^^^^^^^ `syn::Type` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-     |
-     = help: the trait `Debug` is not implemented for `syn::Type`
-note: required by a bound in `Result::<T, E>::unwrap_err`
-    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
-     |
-1198 |     pub fn unwrap_err(self) -> E
-     |            ---------- required by a bound in this associated function
-1199 |     where
-1200 |         T: fmt::Debug,
-     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
-
-error[E0277]: `LitStr` doesn't implement `Debug`
-    --> tests/test_lit.rs:268:47
-     |
-268  |     let err = syn::parse_str::<LitStr>("...").unwrap_err();
-     |                                               ^^^^^^^^^^ `LitStr` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-     |
-     = help: the trait `Debug` is not implemented for `LitStr`
-note: required by a bound in `Result::<T, E>::unwrap_err`
-    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
-     |
-1198 |     pub fn unwrap_err(self) -> E
-     |            ---------- required by a bound in this associated function
-1199 |     where
-1200 |         T: fmt::Debug,
-     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
-
-error[E0277]: `LitStr` doesn't implement `Debug`
-    --> tests/test_lit.rs:271:45
-     |
-271  |     let err = syn::parse_str::<LitStr>("5").unwrap_err();
-     |                                             ^^^^^^^^^^ `LitStr` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-     |
-     = help: the trait `Debug` is not implemented for `LitStr`
-note: required by a bound in `Result::<T, E>::unwrap_err`
-    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
-     |
-1198 |     pub fn unwrap_err(self) -> E
-     |            ---------- required by a bound in this associated function
-1199 |     where
-1200 |         T: fmt::Debug,
-     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
-
-Some errors have detailed explanations: E0412, E0433, E0609.
+Some errors have detailed explanations: E0412, E0432, E0433, E0609.
 For more information about an error, try `rustc --explain E0412`.
-error: could not compile `syn` (test "test_grouping") due to 403 previous errors
-Some errors have detailed explanations: E0277, E0412, E0433, E0609.
-For more information about an error, try `rustc --explain E0277`.
-error: could not compile `syn` (test "test_ty") due to 408 previous errors
-error: could not compile `syn` (test "test_lit") due to 411 previous errors
+error: could not compile `syn` (test "test_stmt") due to 404 previous errors
+error: could not compile `syn` (test "test_receiver") due to 404 previous errors
+error: could not compile `syn` (test "test_pat") due to 404 previous errors
 + RESULT=101
-+ cd /tmp/top100_artifacts
-+ rm -rf /tmp/top100_artifacts/syn-2.0.0
++ cd /var/tmp/top100_artifacts
++ rm -rf /var/tmp/top100_artifacts/syn-2.0.0
 + exit 101

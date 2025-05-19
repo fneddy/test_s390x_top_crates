@@ -1,15 +1,13 @@
-[percent-encoding] download directory: /tmp/top100_artifacts/percent-encoding-2.3.1
+[percent-encoding] download directory: /var/tmp/top100_artifacts/percent-encoding-2.3.1
 + curl -sL https://crates.io/api/v1/crates/percent-encoding/2.3.1/download
 + tar xzf -
-+ cd /tmp/top100_artifacts/percent-encoding-2.3.1
++ cd /var/tmp/top100_artifacts/percent-encoding-2.3.1
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-   Compiling percent-encoding v2.3.1 (/tmp/top100_artifacts/percent-encoding-2.3.1)
+   Compiling percent-encoding v2.3.1 (/var/tmp/top100_artifacts/percent-encoding-2.3.1)
 warning: ambiguous wide pointer comparison, the comparison includes metadata which may not be expected
    --> src/lib.rs:466:35
     |
@@ -29,7 +27,7 @@ help: use explicit `std::ptr::eq` method to compare metadata and addresses
     |
 
 warning: `percent-encoding` (lib test) generated 1 warning
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.65s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.38s
      Running unittests src/lib.rs (target/debug/deps/percent_encoding-31bad9d23c74dc5b)
 
 running 0 tests
@@ -37,6 +35,6 @@ running 0 tests
 test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 
 + RESULT=0
-+ cd /tmp/top100_artifacts
-+ rm -rf /tmp/top100_artifacts/percent-encoding-2.3.1
++ cd /var/tmp/top100_artifacts
++ rm -rf /var/tmp/top100_artifacts/percent-encoding-2.3.1
 + exit 0

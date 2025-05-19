@@ -1,51 +1,49 @@
-[http] download directory: /tmp/top100_artifacts/http-1.3.1
+[http] download directory: /var/tmp/top100_artifacts/http-1.3.1
 + curl -sL https://crates.io/api/v1/crates/http/1.3.1/download
 + tar xzf -
-+ cd /tmp/top100_artifacts/http-1.3.1
++ cd /var/tmp/top100_artifacts/http-1.3.1
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
    Compiling libc v0.2.153
-   Compiling cfg-if v1.0.0
    Compiling memchr v2.7.1
+   Compiling cfg-if v1.0.0
    Compiling regex-syntax v0.8.2
-   Compiling serde v1.0.197
    Compiling ppv-lite86 v0.2.17
+   Compiling serde v1.0.197
    Compiling aho-corasick v1.1.2
-   Compiling doc-comment v0.3.3
+   Compiling itoa v1.0.10
+   Compiling log v0.4.21
    Compiling serde_json v1.0.114
    Compiling getrandom v0.2.12
+   Compiling doc-comment v0.3.3
    Compiling rand_core v0.6.4
-   Compiling itoa v1.0.10
-   Compiling regex-automata v0.4.5
    Compiling rand_chacha v0.3.1
-   Compiling log v0.4.21
+   Compiling regex-automata v0.4.5
    Compiling rand v0.8.5
-   Compiling fnv v1.0.7
-   Compiling ryu v1.0.17
-   Compiling regex v1.10.3
    Compiling bytes v1.5.0
+   Compiling ryu v1.0.17
+   Compiling fnv v1.0.7
+   Compiling http v1.3.1 (/var/tmp/top100_artifacts/http-1.3.1)
+   Compiling regex v1.10.3
    Compiling env_logger v0.8.4
    Compiling quickcheck v1.0.3
-   Compiling http v1.3.1 (/tmp/top100_artifacts/http-1.3.1)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 11.21s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 13.39s
      Running unittests src/lib.rs (target/debug/deps/http-5a8b39b6cf55a036)
 
 running 127 tests
-test extensions::test_extensions ... ok
 test error::tests::inner_error_is_invalid_status_code ... ok
-test header::map::test_bounds ... ok
 test header::map::skip_duplicates_during_key_iteration ... ok
+test header::map::test_bounds ... ok
 test header::name::test_parse_standard_headers ... ok
+test header::name::tests::test_bounds ... ok
 test header::name::test_standard_headers_into_bytes ... ok
 test header::name::tests::test_all_tokens ... ok
 test header::name::tests::test_eq_hdr_name ... ok
 test header::name::tests::test_from_hdr_name ... ok
-test header::name::tests::test_from_lowercase ... ok
 test header::name::tests::test_from_static_custom_long ... ok
 test header::name::tests::test_from_static_custom_long_symbol - should panic ... ok
 test header::name::tests::test_from_static_custom_long_uppercase - should panic ... ok
@@ -57,27 +55,28 @@ test header::name::tests::test_from_static_empty - should panic ... ok
 test header::name::tests::test_from_static_std ... ok
 test header::name::tests::test_from_static_std_symbol - should panic ... ok
 test header::name::tests::test_from_static_std_uppercase - should panic ... ok
-test header::name::tests::test_bounds ... ok
-test header::value::from_header_name_tests::it_can_insert_header_name_as_header_value ... ok
-test header::name::tests::test_invalid_name_lengths ... ok
-test header::value::from_i32 ... ok
+test header::name::tests::test_from_lowercase ... ok
 test header::name::tests::test_parse_invalid_headers ... ok
+test header::name::tests::test_invalid_name_lengths ... ok
+test header::value::from_i16 ... ok
+test header::value::from_i32 ... ok
+test extensions::test_extensions ... ok
+test header::value::from_i64 ... ok
 test header::name::tests::test_static_invalid_name_lengths - should panic ... ok
+test header::value::from_header_name_tests::it_can_insert_header_name_as_header_value ... ok
 test header::value::from_isize ... ok
 test header::value::from_u16 ... ok
-test header::value::from_u32 ... ok
-test header::value::from_u64 ... ok
 test header::value::from_usize ... ok
-test header::value::from_i16 ... ok
 test header::value::test_debug ... ok
 test header::value::test_try_from ... ok
 test header::value::try_from_header_name_tests::it_converts_using_try_from ... ok
-test header::value::from_i64 ... ok
+test method::test::test_extension_method ... ok
 test method::test::test_extension_method_chars ... ok
 test method::test::test_invalid_method ... ok
-test method::test::test_extension_method ... ok
 test method::test::test_is_idempotent ... ok
 test method::test::test_method_eq ... ok
+test request::tests::it_can_map_a_body_from_one_type_to_another ... ok
+test response::tests::it_can_map_a_body_from_one_type_to_another ... ok
 test tests::request_satisfies_send_sync ... ok
 test tests::response_satisfies_send_sync ... ok
 test uri::authority::tests::allows_percent_in_ipv6_address ... ok
@@ -85,8 +84,8 @@ test uri::authority::tests::allows_percent_in_userinfo ... ok
 test uri::authority::tests::compares_to_self ... ok
 test uri::authority::tests::compares_with_a_str ... ok
 test uri::authority::tests::compares_with_a_string ... ok
-test request::tests::it_can_map_a_body_from_one_type_to_another ... ok
 test uri::authority::tests::equal_to_self_of_same_authority ... ok
+test uri::authority::tests::equates_with_a_str ... ok
 test uri::authority::tests::equates_with_a_string ... ok
 test uri::authority::tests::equates_with_a_string_of_a_different_authority ... ok
 test uri::authority::tests::from_static_equates_with_a_str ... ok
@@ -104,13 +103,13 @@ test uri::builder::tests::build_from_string_ref ... ok
 test uri::builder::tests::build_from_uri ... ok
 test uri::path::tests::allow_utf8_in_path ... ok
 test uri::path::tests::allow_utf8_in_query ... ok
+test header::value::from_u32 ... ok
+test header::value::from_u64 ... ok
 test uri::path::tests::compares_to_self ... ok
 test uri::path::tests::compares_with_a_str ... ok
 test uri::path::tests::compares_with_a_string ... ok
-test uri::path::tests::equal_to_self_of_same_path ... ok
 test uri::path::tests::equates_with_a_str ... ok
 test uri::path::tests::equates_with_a_string ... ok
-test uri::path::tests::ignores_invalid_percent_encodings ... ok
 test uri::path::tests::ignores_valid_percent_encodings ... ok
 test uri::path::tests::json_is_fine ... ok
 test uri::path::tests::not_equal_to_self_of_different_path ... ok
@@ -161,70 +160,70 @@ test uri::tests::test_userinfo2 ... ok
 test uri::tests::test_userinfo3 ... ok
 test uri::tests::test_userinfo_pass_with_port ... ok
 test uri::tests::test_userinfo_with_port ... ok
-test response::tests::it_can_map_a_body_from_one_type_to_another ... ok
-test uri::authority::tests::equates_with_a_str ... ok
+test uri::path::tests::equal_to_self_of_same_path ... ok
+test uri::path::tests::ignores_invalid_percent_encodings ... ok
 
-test result: ok. 127 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+test result: ok. 127 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
 
      Running tests/header_map.rs (target/debug/deps/header_map-9df62ae3758fb844)
 
 running 31 tests
-test drain_drop_immediately ... ok
 test append_multiple_values ... ok
-test drain_forget ... ok
+test drain_drop_immediately ... ok
 test as_header_name ... ok
 test drain ... ok
-test drain_entry ... ok
+test drain_forget ... ok
+test ensure_miri_sharedreadonly_not_violated ... ok
 test get_invalid ... ok
-test insert_all_std_headers ... ok
+test drain_entry ... ok
+test eq ... ok
 test insert_invalid - should panic ... ok
 test into_header_name ... ok
 test remove_entry_3_others_a ... ok
 test remove_entry_3_others_b ... ok
-test ensure_miri_sharedreadonly_not_violated ... ok
-test eq ... ok
 test remove_entry_multi_0 ... ok
 test remove_entry_multi_1 ... ok
-test remove_entry_multi_2 ... ok
-test insert_79_custom_std_headers ... ok
+test insert_all_std_headers ... ok
 test remove_entry_multi_0_others ... ok
 test remove_entry_multi_1_other ... ok
-test remove_multiple_b ... ok
-test reserve ... ok
+test remove_entry_multi_2 ... ok
 test remove_entry_multi_3 ... ok
+test insert_79_custom_std_headers ... ok
+test reserve ... ok
 test remove_entry_multi_3_others ... ok
-test reserve_over_capacity - should panic ... ok
-test remove_multiple_a ... ok
+test reserve_overflow - should panic ... ok
+test smoke ... ok
+test value_htab ... ok
 test with_capacity_max ... ok
 test with_capacity_overflow - should panic ... ok
-test smoke ... ok
-test reserve_overflow - should panic ... ok
-test value_htab ... ok
+test remove_multiple_a ... ok
+test reserve_over_capacity - should panic ... ok
+test remove_multiple_b ... ok
 
-test result: ok. 31 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+test result: ok. 31 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
 
      Running tests/header_map_fuzz.rs (target/debug/deps/header_map_fuzz-d0b203ac589f25c5)
 
 running 1 test
 test header_map_fuzz ... ok
 
-test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.60s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.82s
 
      Running tests/status_code.rs (target/debug/deps/status_code-1c0742ddac6b9c2e)
 
 running 8 tests
-test is_client_error ... ok
-test is_informational ... ok
-test equates_with_u16 ... ok
 test from_bytes ... ok
 test is_redirection ... ok
-test is_success ... ok
+test is_client_error ... ok
+test equates_with_u16 ... ok
+test is_informational ... ok
 test is_server_error ... ok
+test is_success ... ok
 test roundtrip ... ok
 
-test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
 
 + RESULT=0
-+ cd /tmp/top100_artifacts
-+ rm -rf /tmp/top100_artifacts/http-1.3.1
++ cd /var/tmp/top100_artifacts
++ rm -rf /var/tmp/top100_artifacts/http-1.3.1
 + exit 0

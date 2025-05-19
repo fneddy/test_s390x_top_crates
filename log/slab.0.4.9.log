@@ -1,11 +1,10 @@
-[slab] download directory: /tmp/top100_artifacts/slab-0.4.9
+[slab] download directory: /var/tmp/top100_artifacts/slab-0.4.9
 + curl -sL https://crates.io/api/v1/crates/slab/0.4.9/download
 + tar xzf -
-+ cd /tmp/top100_artifacts/slab-0.4.9
++ cd /var/tmp/top100_artifacts/slab-0.4.9
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
-    Blocking waiting for file lock on package cache
     Updating crates.io index
     Blocking waiting for file lock on package cache
      Locking 9 packages to latest compatible versions
@@ -16,8 +15,7 @@
    Compiling serde v1.0.219
    Compiling autocfg v1.4.0
    Compiling rustversion v1.0.20
-   Compiling slab v0.4.9 (/tmp/top100_artifacts/slab-0.4.9)
-   Compiling quote v1.0.40
+   Compiling slab v0.4.9 (/var/tmp/top100_artifacts/slab-0.4.9)
 warning: unexpected `cfg` condition name: `slab_no_const_vec_new`
    --> src/lib.rs:250:15
     |
@@ -98,12 +96,13 @@ warning: unexpected `cfg` condition name: `slab_no_track_caller`
      = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(slab_no_track_caller)");` to the top of the `build.rs`
      = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
 
-   Compiling syn v2.0.101
+   Compiling quote v1.0.40
 warning: `slab` (lib) generated 6 warnings
+   Compiling syn v2.0.101
    Compiling serde_derive v1.0.219
    Compiling serde_test v1.0.177
 warning: `slab` (lib test) generated 6 warnings (6 duplicates)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 11.09s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 14.33s
      Running unittests src/lib.rs (target/debug/deps/slab-d7970b9d32ae9509)
 
 running 0 tests
@@ -119,12 +118,12 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
      Running tests/slab.rs (target/debug/deps/slab-bfa53e4339747c31)
 
 running 45 tests
+test compact_doesnt_move_if_closure_errors ... ok
 test clear ... ok
+test compact_empty ... ok
 test clone_from ... ok
-test compact_moves_successfully ... ok
 test compact_handles_closure_panic ... ok
-test compact_no_moves_needed ... ok
-test const_new ... ok
+test compact_moves_successfully ... ok
 test double_remove_panics - should panic ... ok
 test drain_rev ... ok
 test from_iterator_issue_100 ... ok
@@ -162,12 +161,12 @@ test shrink_to_fit_empty ... ok
 test shrink_to_fit_no_vacant ... ok
 test slab_get_mut ... ok
 test try_remove ... ok
-test compact_empty ... ok
-test compact_doesnt_move_if_closure_errors ... ok
+test compact_no_moves_needed ... ok
+test const_new ... ok
 
 test result: ok. 45 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
 
 + RESULT=0
-+ cd /tmp/top100_artifacts
-+ rm -rf /tmp/top100_artifacts/slab-0.4.9
++ cd /var/tmp/top100_artifacts
++ rm -rf /var/tmp/top100_artifacts/slab-0.4.9
 + exit 0

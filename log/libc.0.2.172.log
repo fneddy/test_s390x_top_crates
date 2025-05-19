@@ -1,13 +1,13 @@
-[libc] download directory: /tmp/top100_artifacts/libc-0.2.172
+[libc] download directory: /var/tmp/top100_artifacts/libc-0.2.172
 + curl -sL https://crates.io/api/v1/crates/libc/0.2.172/download
 + tar xzf -
-+ cd /tmp/top100_artifacts/libc-0.2.172
++ cd /var/tmp/top100_artifacts/libc-0.2.172
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
     Blocking waiting for file lock on package cache
-   Compiling libc v0.2.172 (/tmp/top100_artifacts/libc-0.2.172)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.16s
+   Compiling libc v0.2.172 (/var/tmp/top100_artifacts/libc-0.2.172)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.29s
      Running unittests src/lib.rs (target/debug/deps/libc-cd51bf36dcf27427)
 
 running 0 tests
@@ -21,6 +21,6 @@ running 0 tests
 test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 
 + RESULT=0
-+ cd /tmp/top100_artifacts
-+ rm -rf /tmp/top100_artifacts/libc-0.2.172
++ cd /var/tmp/top100_artifacts
++ rm -rf /var/tmp/top100_artifacts/libc-0.2.172
 + exit 0

@@ -1,66 +1,67 @@
-[chrono] download directory: /tmp/top100_artifacts/chrono-0.4.41
-+ curl -sL https://crates.io/api/v1/crates/chrono/0.4.41/download
+[chrono] download directory: /var/tmp/top100_artifacts/chrono-0.4.41
 + tar xzf -
-+ cd /tmp/top100_artifacts/chrono-0.4.41
++ curl -sL https://crates.io/api/v1/crates/chrono/0.4.41/download
++ cd /var/tmp/top100_artifacts/chrono-0.4.41
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
+    Blocking waiting for file lock on package cache
    Compiling proc-macro2 v1.0.93
    Compiling autocfg v1.4.0
    Compiling serde v1.0.218
    Compiling unicode-ident v1.0.17
    Compiling libc v0.2.170
    Compiling num-traits v0.2.19
-   Compiling unicode-segmentation v1.12.0
    Compiling quote v1.0.38
-   Compiling once_cell v1.20.3
+   Compiling unicode-segmentation v1.12.0
    Compiling serde_json v1.0.139
-   Compiling console v0.15.10
+   Compiling once_cell v1.20.3
    Compiling syn v2.0.98
+   Compiling console v0.15.10
    Compiling similar v2.7.0
-   Compiling memchr v2.7.4
    Compiling iana-time-zone v0.1.61
-   Compiling itoa v1.0.14
    Compiling ryu v1.0.19
+   Compiling memchr v2.7.4
+   Compiling itoa v1.0.14
    Compiling bincode v1.3.3
    Compiling similar-asserts v1.7.0
-   Compiling chrono v0.4.41 (/tmp/top100_artifacts/chrono-0.4.41)
+   Compiling chrono v0.4.41 (/var/tmp/top100_artifacts/chrono-0.4.41)
    Compiling serde_derive v1.0.218
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 9.29s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 11.73s
      Running unittests src/lib.rs (target/debug/deps/chrono-7145c7c9531598d9)
 
 running 274 tests
 test date::tests::test_date_add_assign ... ok
 test date::tests::test_date_sub_assign ... ok
-test date::tests::test_date_add_assign_local ... ok
 test date::tests::test_years_elapsed ... ok
+test date::tests::test_date_add_assign_local ... ok
 test datetime::tests::nano_roundrip ... ok
+test date::tests::test_date_sub_assign_local ... ok
 test datetime::tests::signed_duration_since_autoref ... ok
 test datetime::tests::test_add_sub_months ... ok
-test date::tests::test_date_sub_assign_local ... ok
 test datetime::tests::test_auto_conversion ... ok
 test datetime::tests::test_core_duration_ops ... ok
-test datetime::tests::test_datetime_add_assign ... ok
 test datetime::tests::test_core_duration_max - should panic ... ok
-test datetime::tests::test_datetime_add_months ... ok
+test datetime::tests::test_datetime_add_assign ... ok
 test datetime::tests::test_datetime_add_days ... ok
+test datetime::tests::test_datetime_add_months ... ok
 test datetime::tests::test_datetime_date_and_time ... ok
-test datetime::tests::test_datetime_fixed_offset ... ok
 test datetime::tests::test_datetime_before_windows_api_limits ... ok
+test datetime::tests::test_datetime_fixed_offset ... ok
+test datetime::tests::test_datetime_format_with_local ... ok
 test datetime::tests::test_datetime_from_local ... ok
 test datetime::tests::test_datetime_from_timestamp ... ok
-test datetime::tests::test_datetime_format_with_local ... ok
 test datetime::tests::test_datetime_from_str ... ok
 test datetime::tests::test_datetime_from_timestamp_micros ... ok
 test datetime::tests::test_datetime_from_timestamp_millis ... ok
-test datetime::tests::test_datetime_is_send_and_copy ... ok
 test datetime::tests::test_datetime_from_timestamp_nanos ... ok
-test datetime::tests::test_datetime_offset ... ok
-test datetime::tests::test_datetime_local_from_preserves_offset ... ok
+test datetime::tests::test_datetime_is_send_and_copy ... ok
 test datetime::tests::test_datetime_add_assign_local ... ok
+test datetime::tests::test_datetime_local_from_preserves_offset ... ok
+test datetime::tests::test_datetime_offset ... ok
 test datetime::tests::test_datetime_sub_assign ... ok
-test datetime::tests::test_datetime_rfc2822 ... ok
 test datetime::tests::test_datetime_rfc3339 ... ok
+test datetime::tests::test_datetime_rfc2822 ... ok
 test datetime::tests::test_datetime_sub_days ... ok
 test datetime::tests::test_datetime_sub_months ... ok
 test datetime::tests::test_datetime_timestamp ... ok
@@ -71,87 +72,87 @@ test datetime::tests::test_from_system_time ... ok
 test datetime::tests::test_local_beyond_min_datetime - should panic ... ok
 test datetime::tests::test_min_max_add_days ... ok
 test datetime::tests::test_min_max_add_months ... ok
-test datetime::tests::test_min_max_setters ... ok
-test datetime::tests::test_min_max_getters ... ok
-test datetime::tests::test_nanosecond_range ... ok
 test datetime::tests::test_datetime_sub_assign_local ... ok
 test datetime::tests::test_datetime_parse_from_str ... ok
-test datetime::tests::test_parse_from_str ... ok
+test datetime::tests::test_min_max_setters ... ok
+test datetime::tests::test_nanosecond_range ... ok
 test datetime::tests::test_rfc3339_opts ... ok
-test datetime::tests::test_subsecond_part ... ok
+test datetime::tests::test_min_max_getters ... ok
+test datetime::tests::test_parse_from_str ... ok
 test datetime::tests::test_rfc3339_opts_nonexhaustive - should panic ... ok
-test datetime::tests::test_to_string_round_trip ... ok
+test datetime::tests::test_subsecond_part ... ok
 test datetime::tests::test_test_deprecated_from_offset ... ok
+test datetime::tests::test_to_string_round_trip ... ok
+test datetime::tests::test_parse_datetime_utc ... ok
 test datetime::tests::test_years_elapsed ... ok
 test datetime::tests::test_to_string_round_trip_with_local ... ok
-test format::formatting::tests::test_date_format ... ok
-test datetime::tests::test_parse_datetime_utc ... ok
 test format::formatting::tests::test_datetime_format ... ok
-test format::formatting::tests::test_delayed_write_to ... ok
+test format::formatting::tests::test_date_format ... ok
 test format::formatting::tests::test_datetime_format_alignment ... ok
+test format::formatting::tests::test_delayed_write_to ... ok
 test format::formatting::tests::test_time_format ... ok
 test format::parse::tests::test_issue_1010 ... ok
-test format::parse::tests::test_parse_fixed ... ok
 test format::parse::tests::parse_rfc850 ... ok
-test format::parse::tests::test_parse_fixed_nanosecond ... ok
+test format::parse::tests::test_parse_fixed ... ok
 test format::formatting::tests::test_offset_formatting ... ok
+test format::parse::tests::test_parse_fixed_nanosecond ... ok
 test format::parse::tests::test_parse_practical_examples ... ok
-test format::parse::tests::test_parse_numeric ... ok
 test format::parse::tests::test_parse_whitespace_and_literal ... ok
-test format::parse::tests::test_parse_fixed_timezone_offset ... ok
+test format::parse::tests::test_parse_numeric ... ok
 test format::parsed::tests::issue_551 ... ok
 test format::parsed::tests::test_parsed_set_fields ... ok
 test format::parsed::tests::test_parsed_set_range ... ok
+test format::parse::tests::test_rfc3339 ... ok
+test format::parse::tests::test_rfc2822 ... ok
 test format::parsed::tests::test_parsed_to_datetime ... ok
 test format::parsed::tests::test_parsed_to_datetime_with_timezone ... ok
-test format::parse::tests::test_rfc3339 ... ok
+test format::parse::tests::test_parse_fixed_timezone_offset ... ok
 test format::parsed::tests::test_parsed_to_naive_time ... ok
+test format::parsed::tests::test_parsed_to_naive_datetime_with_offset ... ok
 test format::parsed::tests::test_parsed_to_naive_date ... ok
 test format::scan::tests::test_nanosecond ... ok
 test format::scan::tests::test_nanosecond_fixed ... ok
 test format::scan::tests::test_rfc2822_comments ... ok
-test format::parsed::tests::test_parsed_to_naive_datetime_with_offset ... ok
 test format::scan::tests::test_short_or_long_month0 ... ok
-test format::parse::tests::test_rfc2822 ... ok
 test format::scan::tests::test_short_or_long_weekday ... ok
 test format::scan::tests::test_timezone_offset_2822 ... ok
 test format::strftime::tests::test_parse_only_timezone_offset_permissive_no_panic ... ok
 test format::strftime::tests::test_strftime_parse ... ok
 test format::strftime::tests::test_strftime_parse_lenient ... ok
-test month::tests::num_days ... ok
 test format::strftime::tests::test_strftime_docs ... ok
+test month::tests::num_days ... ok
 test month::tests::test_month_enum_primitive_parse ... ok
 test month::tests::test_month_enum_succ_pred ... ok
 test month::tests::test_month_enum_try_from ... ok
 test month::tests::test_month_partial_ord ... ok
-test naive::date::tests::diff_months ... ok
 test month::tests::test_months_as_u32 ... ok
+test format::strftime::tests::test_strftime_items ... ok
+test naive::date::tests::diff_months ... ok
 test naive::date::tests::test_date_add_days ... ok
 test naive::date::tests::test_date_addassignment ... ok
 test naive::date::tests::test_date_bounds ... ok
-test format::strftime::tests::test_strftime_items ... ok
 test naive::date::tests::test_date_checked_add_signed ... ok
 test naive::date::tests::test_date_fields ... ok
-test naive::date::tests::test_date_from_isoywd ... ok
 test naive::date::tests::test_date_fmt ... ok
+test naive::date::tests::test_date_from_isoywd ... ok
 test naive::date::tests::test_date_from_weekday_of_month_opt ... ok
-test naive::date::tests::test_date_from_str ... ok
-test naive::date::tests::test_date_from_num_days_from_ce ... ok
 test naive::date::tests::test_date_from_ymd ... ok
+test naive::date::tests::test_date_from_str ... ok
 test naive::date::tests::test_date_from_yo ... ok
+test naive::date::tests::test_date_parse_from_str ... ok
 test naive::date::tests::test_date_pred ... ok
 test naive::date::tests::test_date_signed_duration_since ... ok
-test naive::date::tests::test_date_parse_from_str ... ok
 test naive::date::tests::test_date_sub_days ... ok
 test naive::date::tests::test_date_subassignment ... ok
 test naive::date::tests::test_date_succ ... ok
+test naive::date::tests::test_date_to_mdf_to_date ... ok
 test naive::date::tests::test_date_weekday ... ok
 test naive::date::tests::test_date_with_fields ... ok
 test naive::date::tests::test_date_with_ordinal ... ok
 test naive::date::tests::test_date_yearflags ... ok
 test naive::date::tests::test_day_iterator_limit ... ok
 test naive::date::tests::test_isoweekdate_with_yearflags ... ok
-test naive::date::tests::test_date_to_mdf_to_date ... ok
+test naive::date::tests::test_date_from_num_days_from_ce ... ok
 test naive::date::tests::test_date_num_days_from_ce ... ok
 test naive::date::tests::test_week_iterator_limit ... ok
 test naive::date::tests::test_weekday_with_yearflags ... ok
@@ -305,7 +306,7 @@ test naive::date::tests::test_weeks_from ... ok
 test traits::tests::test_num_days_from_ce_against_alternative_impl ... ok
 test naive::date::tests::test_readme_doomsday ... ok
 
-test result: ok. 274 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.34s
+test result: ok. 274 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.36s
 
      Running tests/dateutils.rs (target/debug/deps/dateutils-39c0f6b875a3239a)
 
@@ -313,7 +314,7 @@ running 2 tests
 test try_verify_against_date_command_format ... ok
 test try_verify_against_date_command ... ok
 
-test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 12.88s
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 17.07s
 
      Running tests/wasm.rs (target/debug/deps/wasm-24c73bfebc522416)
 
@@ -328,6 +329,6 @@ running 0 tests
 test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 
 + RESULT=0
-+ cd /tmp/top100_artifacts
-+ rm -rf /tmp/top100_artifacts/chrono-0.4.41
++ cd /var/tmp/top100_artifacts
++ rm -rf /var/tmp/top100_artifacts/chrono-0.4.41
 + exit 0
