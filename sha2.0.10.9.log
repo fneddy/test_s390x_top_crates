@@ -1,0 +1,57 @@
+[sha2] download directory: /tmp/top100_artifacts/sha2-0.10.9
++ curl -sL https://crates.io/api/v1/crates/sha2/0.10.9/download
++ tar xzf -
++ cd /tmp/top100_artifacts/sha2-0.10.9
++ cargo clean
+     Removed 0 files
++ cargo +stable test ''
+    Blocking waiting for file lock on package cache
+    Updating crates.io index
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+ Downloading crates ...
+  Downloaded hex-literal-impl v0.2.3
+  Downloaded digest v0.10.7
+  Downloaded hex-literal v0.2.2
+  Downloaded crypto-common v0.1.6
+  Downloaded block-buffer v0.10.4
+  Downloaded generic-array v0.14.7
+  Downloaded proc-macro-hack v0.5.20+deprecated
+  Downloaded blobby v0.3.1
+   Compiling typenum v1.17.0
+   Compiling version_check v0.9.4
+   Compiling proc-macro-hack v0.5.20+deprecated
+   Compiling blobby v0.3.1
+   Compiling cfg-if v1.0.0
+   Compiling generic-array v0.14.7
+   Compiling hex-literal-impl v0.2.3
+   Compiling hex-literal v0.2.2
+   Compiling block-buffer v0.10.4
+   Compiling crypto-common v0.1.6
+   Compiling digest v0.10.7
+   Compiling sha2 v0.10.9 (/tmp/top100_artifacts/sha2-0.10.9)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 7.59s
+     Running unittests src/lib.rs (target/debug/deps/sha2-72068c9b8ebbf88d)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/mod.rs (target/debug/deps/mod-27d37e328f0ccc25)
+
+running 8 tests
+test sha224_main ... ok
+test sha256_main ... ok
+test sha384_main ... ok
+test sha512_224_main ... ok
+test sha512_256_main ... ok
+test sha512_main ... ok
+test sha512_rand ... ok
+test sha256_rand ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.63s
+
++ RESULT=0
++ cd /tmp/top100_artifacts
++ rm -rf /tmp/top100_artifacts/sha2-0.10.9
++ exit 0

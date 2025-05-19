@@ -1,0 +1,23 @@
+[windows_i686_gnu] download directory: /tmp/top100_artifacts/windows_i686_gnu-0.53.0
++ curl -sL https://crates.io/api/v1/crates/windows_i686_gnu/0.53.0/download
++ tar xzf -
++ cd /tmp/top100_artifacts/windows_i686_gnu-0.53.0
++ cargo clean
+     Removed 0 files
++ cargo +stable test ''
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   Compiling windows_i686_gnu v0.53.0 (/tmp/top100_artifacts/windows_i686_gnu-0.53.0)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.84s
+     Running unittests src/lib.rs (target/debug/deps/windows_i686_gnu-2f3ebcd9a9d5f5b4)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
++ RESULT=0
++ cd /tmp/top100_artifacts
++ rm -rf /tmp/top100_artifacts/windows_i686_gnu-0.53.0
++ exit 0

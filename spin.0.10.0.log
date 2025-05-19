@@ -1,0 +1,160 @@
+[spin] download directory: /tmp/top100_artifacts/spin-0.10.0
++ curl -sL https://crates.io/api/v1/crates/spin/0.10.0/download
++ tar xzf -
++ cd /tmp/top100_artifacts/spin-0.10.0
++ cargo clean
+     Removed 0 files
++ cargo +stable test ''
+warning: no edition set: defaulting to the 2015 edition while 2021 is compatible with `rust-version`
+    Updating crates.io index
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+ Downloading crates ...
+  Downloaded ciborium-io v0.2.0
+  Downloaded crossbeam-utils v0.8.11
+  Downloaded crossbeam-epoch v0.9.10
+  Downloaded memoffset v0.6.5
+  Downloaded plotters-svg v0.3.3
+  Downloaded crossbeam-deque v0.8.2
+  Downloaded ciborium-ll v0.2.0
+  Downloaded itoa v1.0.3
+  Downloaded plotters-backend v0.3.4
+  Downloaded scopeguard v1.1.0
+  Downloaded either v1.8.0
+  Downloaded num_cpus v1.13.1
+  Downloaded lock_api v0.4.1
+  Downloaded os_str_bytes v6.3.0
+  Downloaded walkdir v2.3.2
+  Downloaded quote v1.0.21
+  Downloaded crossbeam-channel v0.5.6
+  Downloaded unicode-ident v1.0.4
+  Downloaded once_cell v1.14.0
+  Downloaded ryu v1.0.11
+  Downloaded textwrap v0.15.1
+  Downloaded indexmap v1.9.1
+  Downloaded serde_derive v1.0.144
+  Downloaded serde v1.0.144
+  Downloaded rayon-core v1.9.3
+  Downloaded ciborium v0.2.0
+  Downloaded plotters v0.3.4
+  Downloaded serde_json v1.0.85
+  Downloaded rayon v1.5.3
+  Downloaded proc-macro2 v1.0.43
+  Downloaded half v1.8.2
+  Downloaded clap v3.2.22
+  Downloaded syn v1.0.100
+  Downloaded regex v1.6.0
+  Downloaded regex-syntax v0.6.27
+  Downloaded libc v0.2.133
+    Blocking waiting for file lock on package cache
+   Compiling autocfg v1.1.0
+   Compiling proc-macro2 v1.0.43
+   Compiling quote v1.0.21
+   Compiling unicode-ident v1.0.4
+   Compiling syn v1.0.100
+   Compiling crossbeam-utils v0.8.11
+   Compiling serde_derive v1.0.144
+   Compiling memoffset v0.6.5
+   Compiling once_cell v1.14.0
+   Compiling cfg-if v1.0.0
+   Compiling libc v0.2.133
+   Compiling crossbeam-epoch v0.9.10
+   Compiling serde v1.0.144
+   Compiling scopeguard v1.1.0
+   Compiling rayon-core v1.9.3
+   Compiling indexmap v1.9.1
+   Compiling num-traits v0.2.15
+   Compiling serde_json v1.0.85
+   Compiling either v1.8.0
+   Compiling num_cpus v1.13.1
+   Compiling crossbeam-deque v0.8.2
+   Compiling crossbeam-channel v0.5.6
+   Compiling rayon v1.5.3
+   Compiling itoa v1.0.3
+   Compiling plotters-backend v0.3.4
+   Compiling os_str_bytes v6.3.0
+   Compiling hashbrown v0.12.3
+   Compiling ciborium-io v0.2.0
+   Compiling half v1.8.2
+   Compiling ryu v1.0.11
+   Compiling ciborium-ll v0.2.0
+   Compiling clap_lex v0.2.4
+   Compiling plotters-svg v0.3.3
+   Compiling itertools v0.10.5
+   Compiling textwrap v0.15.1
+   Compiling cast v0.3.0
+   Compiling regex-syntax v0.6.27
+   Compiling same-file v1.0.6
+   Compiling bitflags v1.3.2
+   Compiling walkdir v2.3.2
+   Compiling clap v3.2.22
+   Compiling criterion-plot v0.5.0
+   Compiling regex v1.6.0
+   Compiling plotters v0.3.4
+   Compiling atty v0.2.14
+   Compiling oorandom v11.1.3
+   Compiling lazy_static v1.4.0
+   Compiling anes v0.1.6
+   Compiling lock_api v0.4.1
+   Compiling ciborium v0.2.0
+   Compiling tinytemplate v1.2.1
+   Compiling criterion v0.4.0
+   Compiling spin v0.10.0 (/tmp/top100_artifacts/spin-0.10.0)
+warning: unexpected `cfg` condition value: `lock_api1`
+   --> src/rwlock.rs:934:7
+    |
+934 | #[cfg(feature = "lock_api1")]
+    |       ^^^^^^^^^^-----------
+    |                 |
+    |                 help: there is a expected value with a similar name: `"lock_api"`
+    |
+    = note: expected values for `feature` are: `barrier`, `default`, `fair_mutex`, `lazy`, `lock_api`, `mutex`, `once`, `portable-atomic`, `portable_atomic`, `rwlock`, `spin_mutex`, `std`, `ticket_mutex`, and `use_ticket_mutex`
+    = help: consider adding `lock_api1` as a feature in `Cargo.toml`
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+    = note: `#[warn(unexpected_cfgs)]` on by default
+
+warning: `spin` (lib test) generated 1 warning
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 22.27s
+     Running unittests src/lib.rs (target/debug/deps/spin-e17d832dbb4d92cb)
+
+running 33 tests
+test mutex::spin::tests::smoke ... ok
+test mutex::spin::tests::test_into_inner ... ok
+test mutex::spin::tests::test_into_inner_drop ... ok
+test mutex::spin::tests::lots_and_lots ... ok
+test mutex::spin::tests::test_mutex_arc_nested ... ok
+test mutex::spin::tests::test_mutex_force_lock ... ok
+test mutex::spin::tests::test_mutex_unsized ... ok
+test mutex::spin::tests::test_mutex_arc_access_in_unwind ... ok
+test mutex::spin::tests::try_lock ... ok
+test once::tests::drop_occurs_and_skip_uninit_drop ... ok
+test once::tests::get ... ok
+test once::tests::init_constant ... ok
+test once::tests::panic ... ok
+test once::tests::poll ... ok
+test once::tests::smoke_once ... ok
+test once::tests::smoke_once_value ... ok
+test once::tests::stampede_once ... ok
+test once::tests::try_call_once_err ... ok
+test once::tests::wait ... ok
+test rwlock::tests::smoke ... ok
+test rwlock::tests::test_force_read_decrement ... ok
+test rwlock::tests::test_force_write_unlock ... ok
+test rwlock::tests::test_into_inner ... ok
+test rwlock::tests::test_into_inner_drop ... ok
+test rwlock::tests::test_rw_access_in_unwind ... ok
+test barrier::tests::test_barrier ... ok
+test rwlock::tests::test_rw_try_read ... ok
+test rwlock::tests::test_rwlock_try_write ... ok
+test rwlock::tests::test_rwlock_unsized ... ok
+test rwlock::tests::test_rw_arc ... ok
+test rwlock::tests::test_upgrade_downgrade ... ok
+test once::tests::call_once_test ... ok
+test once::tests::get_no_wait ... ok
+
+test result: ok. 33 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 3.06s
+
++ RESULT=0
++ cd /tmp/top100_artifacts
++ rm -rf /tmp/top100_artifacts/spin-0.10.0
++ exit 0

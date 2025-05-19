@@ -1,0 +1,170 @@
+[aho-corasick] download directory: /tmp/top100_artifacts/aho-corasick-1.1.3
++ curl -sL https://crates.io/api/v1/crates/aho-corasick/1.1.3/download
++ tar xzf -
++ cd /tmp/top100_artifacts/aho-corasick-1.1.3
++ cargo clean
+     Removed 0 files
++ cargo +stable test ''
+    Blocking waiting for file lock on package cache
+    Updating crates.io index
+    Blocking waiting for file lock on package cache
+     Locking 3 packages to latest compatible versions
+   Compiling doc-comment v0.3.3
+   Compiling memchr v2.7.4
+   Compiling aho-corasick v1.1.3 (/tmp/top100_artifacts/aho-corasick-1.1.3)
+warning: method `cmpeq` is never used
+  --> src/packed/vector.rs:74:15
+   |
+28 | pub(crate) trait Vector:
+   |                  ------ method in this trait
+...
+74 |     unsafe fn cmpeq(self, vector2: Self) -> Self;
+   |               ^^^^^
+   |
+   = note: `#[warn(dead_code)]` on by default
+
+warning: `aho-corasick` (lib test) generated 1 warning
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 9.09s
+     Running unittests src/lib.rs (target/debug/deps/aho_corasick-3402953f2c7ad010)
+
+running 133 tests
+test packed::pattern::tests::equals_different_lengths ... ok
+test packed::pattern::tests::equals_yes ... ok
+test packed::pattern::tests::prefix ... ok
+test packed::pattern::tests::equals_mismatch ... ok
+test packed::tests::search_default_leftmost_longest ... ok
+test packed::tests::search_default_leftmost_first ... ok
+test packed::tests::search_rabinkarp_leftmost_first ... ok
+test packed::tests::search_teddy_avx2_leftmost_longest ... ok
+test packed::tests::search_rabinkarp_leftmost_longest ... ok
+test packed::tests::search_teddy_avx2_leftmost_first ... ok
+test packed::tests::search_teddy_leftmost_first ... ok
+test packed::tests::search_teddy_fat_leftmost_first ... ok
+test packed::tests::search_teddy_leftmost_longest ... ok
+test packed::tests::search_tests_have_unique_names ... ok
+test testoibits::oibits_automaton ... ok
+test testoibits::oibits_main ... ok
+test testoibits::oibits_packed ... ok
+test tests::acasei_leftmost_first_default ... ok
+test tests::acasei_leftmost_first_dfa_default ... ok
+test tests::acasei_leftmost_first_nfa_contig_default ... ok
+test tests::acasei_leftmost_first_nfa_noncontig_default ... ok
+test tests::acasei_leftmost_longest_default ... ok
+test packed::tests::search_teddy_fat_leftmost_longest ... ok
+test tests::acasei_leftmost_longest_dfa_default ... ok
+test tests::acasei_leftmost_longest_nfa_noncontig_default ... ok
+test tests::acasei_standard_default ... ok
+test tests::acasei_standard_dfa_default ... ok
+test tests::acasei_standard_nfa_contig_default ... ok
+test tests::acasei_leftmost_longest_nfa_contig_default ... ok
+test tests::acasei_standard_nfa_noncontig_default ... ok
+test tests::acasei_standard_overlapping_default ... ok
+test tests::acasei_standard_overlapping_dfa_default ... ok
+test tests::acasei_standard_overlapping_nfa_noncontig_default ... ok
+test tests::acasei_standard_overlapping_nfa_contig_default ... ok
+test tests::anchored_not_allowed_even_if_technically_available ... ok
+test tests::overlapping_not_allowed_leftmost_first - should panic ... ok
+test tests::overlapping_not_allowed_leftmost_longest - should panic ... ok
+test tests::prefilter_stays_in_bounds ... ok
+test tests::regression_ascii_case_insensitive_no_exponential ... ok
+test tests::regression_rare_byte_prefilter ... ok
+test tests::regression_stream_rare_byte_prefilter ... ok
+test tests::search_leftmost_first::default ... ok
+test tests::search_leftmost_first::dfa_default ... ok
+test tests::search_leftmost_first::dfa_no_byte_class ... ok
+test tests::search_leftmost_first::dfa_no_prefilter ... ok
+test packed::tests::search_teddy_ssse3_leftmost_first ... ok
+test tests::regression_case_insensitive_prefilter ... ok
+test tests::search_leftmost_first::dfa_start_both ... ok
+test packed::tests::search_teddy_ssse3_leftmost_longest ... ok
+test tests::search_leftmost_first::dfa_start_both_no_prefilter ... ok
+test tests::search_leftmost_first::dfa_start_both_no_byte_class ... ok
+test tests::search_leftmost_first::nfa_contig_all_sparse ... ok
+test tests::search_leftmost_first::nfa_contig_all_dense ... ok
+test tests::search_leftmost_first::nfa_contig_default ... ok
+test tests::search_leftmost_first::nfa_contig_no_prefilter ... ok
+test tests::search_leftmost_first::nfa_noncontig_all_dense ... ok
+test tests::search_leftmost_first::nfa_default ... ok
+test tests::search_leftmost_first::nfa_contig_no_byte_class ... ok
+test tests::search_leftmost_first::nfa_noncontig_all_sparse ... ok
+test tests::search_leftmost_first_anchored_default ... ok
+test tests::search_leftmost_first_anchored_nfa_contig_default ... ok
+test tests::search_leftmost_first_anchored_dfa_default ... ok
+test tests::search_leftmost_first::nfa_noncontig_no_prefilter ... ok
+test tests::search_leftmost_first_anchored_dfa_start_both ... ok
+test tests::search_leftmost_first_anchored_nfa_noncontig_default ... ok
+test tests::search_leftmost_longest::dfa_no_prefilter ... ok
+test tests::search_leftmost_longest::default ... ok
+test tests::search_leftmost_longest::dfa_default ... ok
+test tests::search_leftmost_longest::dfa_start_both ... ok
+test tests::search_leftmost_longest::dfa_no_byte_class ... ok
+test tests::search_leftmost_longest::dfa_start_both_no_prefilter ... ok
+test tests::search_leftmost_longest::nfa_contig_all_dense ... ok
+test tests::search_leftmost_longest::dfa_start_both_no_byte_class ... ok
+test tests::search_leftmost_longest::nfa_contig_all_sparse ... ok
+test tests::search_leftmost_longest::nfa_contig_default ... ok
+test tests::search_leftmost_longest::nfa_contig_no_prefilter ... ok
+test tests::search_leftmost_longest::nfa_default ... ok
+test tests::search_leftmost_longest::nfa_contig_no_byte_class ... ok
+test tests::search_leftmost_longest::nfa_noncontig_all_dense ... ok
+test tests::search_leftmost_longest_anchored_default ... ok
+test tests::search_leftmost_longest_anchored_dfa_default ... ok
+test tests::search_leftmost_longest::nfa_noncontig_no_prefilter ... ok
+test tests::search_leftmost_longest::nfa_noncontig_all_sparse ... ok
+test tests::search_leftmost_longest_anchored_nfa_noncontig_default ... ok
+test tests::search_leftmost_longest_anchored_dfa_start_both ... ok
+test tests::search_leftmost_longest_anchored_nfa_contig_default ... ok
+test tests::search_standard_anchored_default ... ok
+test tests::search_standard_anchored_dfa_default ... ok
+test tests::search_standard_anchored_nfa_noncontig_default ... ok
+test tests::search_standard_anchored_dfa_start_both ... ok
+test tests::search_standard_anchored_nfa_contig_default ... ok
+test tests::search_standard_nonoverlapping::dfa_default ... ok
+test tests::search_standard_nonoverlapping::default ... ok
+test tests::search_standard_nonoverlapping::dfa_no_byte_class ... ok
+test tests::search_standard_nonoverlapping::dfa_no_prefilter ... ok
+test tests::search_standard_nonoverlapping::dfa_start_both ... ok
+test tests::search_standard_nonoverlapping::dfa_start_both_no_prefilter ... ok
+test tests::search_standard_nonoverlapping::nfa_contig_all_dense ... ok
+test tests::search_standard_nonoverlapping::dfa_start_both_no_byte_class ... ok
+test tests::search_standard_nonoverlapping::nfa_contig_all_sparse ... ok
+test tests::search_standard_nonoverlapping::nfa_contig_default ... ok
+test tests::search_standard_nonoverlapping::nfa_contig_no_prefilter ... ok
+test tests::search_standard_nonoverlapping::nfa_contig_no_byte_class ... ok
+test tests::search_standard_nonoverlapping::nfa_default ... ok
+test tests::search_standard_nonoverlapping::nfa_noncontig_all_dense ... ok
+test tests::search_standard_nonoverlapping::nfa_noncontig_all_sparse ... ok
+test tests::search_standard_nonoverlapping::nfa_noncontig_no_prefilter ... ok
+test tests::search_standard_overlapping_default ... ok
+test tests::search_standard_overlapping_dfa_default ... ok
+test tests::search_standard_overlapping_dfa_no_prefilter ... ok
+test tests::search_standard_overlapping_dfa_start_both ... ok
+test tests::search_standard_overlapping_dfa_no_byte_class ... ok
+test tests::search_standard_overlapping_nfa_contig_all_dense ... ok
+test tests::search_standard_overlapping_dfa_start_both_no_byte_class ... ok
+test tests::search_standard_overlapping_dfa_start_both_no_prefilter ... ok
+test tests::search_standard_overlapping_nfa_contig_all_sparse ... ok
+test tests::search_standard_overlapping_nfa_contig_default ... ok
+test tests::search_standard_overlapping_nfa_noncontig_no_prefilter ... ok
+test tests::search_standard_overlapping_nfa_noncontig_default ... ok
+test tests::search_standard_overlapping_nfa_contig_no_prefilter ... ok
+test tests::search_standard_stream_default ... ok
+test tests::search_tests_have_unique_names ... ok
+test tests::search_standard_stream_nfa_noncontig_default ... ok
+test tests::stream_not_allowed_leftmost_longest - should panic ... ok
+test tests::unanchored_not_allowed_even_if_technically_available ... ok
+test util::alphabet::tests::byte_classes ... ok
+test util::alphabet::tests::elements_empty ... ok
+test util::alphabet::tests::elements_singletons ... ok
+test util::alphabet::tests::elements_typical ... ok
+test util::alphabet::tests::full_byte_classes ... ok
+test tests::stream_not_allowed_leftmost_first - should panic ... ok
+test tests::search_standard_stream_nfa_contig_default ... ok
+test tests::search_standard_stream_dfa_default ... ok
+
+test result: ok. 133 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 8.54s
+
++ RESULT=0
++ cd /tmp/top100_artifacts
++ rm -rf /tmp/top100_artifacts/aho-corasick-1.1.3
++ exit 0

@@ -1,0 +1,171 @@
+[regex-syntax] download directory: /tmp/top100_artifacts/regex-syntax-0.8.5
++ curl -sL https://crates.io/api/v1/crates/regex-syntax/0.8.5/download
++ tar xzf -
++ cd /tmp/top100_artifacts/regex-syntax-0.8.5
++ cargo clean
+     Removed 0 files
++ cargo +stable test ''
+    Blocking waiting for file lock on package cache
+    Updating crates.io index
+    Blocking waiting for file lock on package cache
+     Locking 6 packages to latest compatible versions
+    Blocking waiting for file lock on package cache
+   Compiling regex-syntax v0.8.5 (/tmp/top100_artifacts/regex-syntax-0.8.5)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 10.88s
+     Running unittests src/lib.rs (target/debug/deps/regex_syntax-12a8e065020563a7)
+
+running 147 tests
+test ast::parse::tests::maybe_parse_ascii_class ... ok
+test ast::parse::tests::parse_alternate ... ok
+test ast::parse::tests::parse_comments ... ok
+test ast::parse::tests::parse_counted_repetition ... ok
+test ast::parse::tests::parse_escape ... ok
+test ast::parse::tests::parse_decimal ... ok
+test ast::parse::tests::parse_flag ... ok
+test ast::parse::tests::parse_group ... ok
+test ast::parse::tests::parse_flags ... ok
+test ast::parse::tests::parse_hex_brace ... ok
+test ast::parse::tests::parse_capture_name ... ok
+test ast::parse::tests::parse_hex_two ... ok
+test ast::parse::tests::parse_holistic ... ok
+test ast::parse::tests::parse_ignore_whitespace ... ok
+test ast::parse::tests::parse_newlines ... ok
+test ast::parse::tests::parse_nest_limit ... ok
+test ast::parse::tests::parse_octal ... ok
+test ast::parse::tests::parse_perl_class ... ok
+test ast::parse::tests::parse_primitive_non_escape ... ok
+test ast::parse::tests::parse_set_class ... ok
+test ast::parse::tests::parse_set_class_open ... ok
+test ast::parse::tests::parse_unicode_class ... ok
+test ast::parse::tests::parse_unsupported_backreference ... ok
+test ast::parse::tests::parse_unsupported_lookaround ... ok
+test ast::parse::tests::parse_uncounted_repetition ... ok
+test ast::parse::tests::regression_455_trailing_dash_ignore_whitespace ... ok
+test ast::print::tests::print_alternation ... ok
+test ast::print::tests::print_assertion ... ok
+test ast::print::tests::print_class ... ok
+test ast::print::tests::print_concat ... ok
+test ast::print::tests::print_dot ... ok
+test ast::print::tests::print_flags ... ok
+test ast::print::tests::print_group ... ok
+test ast::print::tests::print_literal ... ok
+test ast::print::tests::print_repetition ... ok
+test ast::tests::ast_size ... ok
+test ast::parse::tests::regression_454_nest_too_big ... ok
+test ast::tests::no_stack_overflow_on_drop ... ok
+test error::tests::repetition_quantifier_expects_a_valid_decimal ... ok
+test error::tests::regression_464 ... ok
+test hir::literal::tests::anything ... ok
+test hir::literal::tests::anything_small_limits ... ok
+test hir::literal::tests::alternation ... ok
+test hir::literal::tests::concat ... ok
+test hir::literal::tests::crazy_repeats ... ok
+test hir::literal::tests::empty ... ok
+test hir::literal::tests::holmes ... ok
+test hir::literal::tests::holmes_alt ... ok
+test hir::literal::tests::class ... ok
+test hir::literal::tests::impossible ... ok
+test hir::literal::tests::literal ... ok
+test hir::literal::tests::look ... ok
+test hir::literal::tests::odds_and_ends ... ok
+test hir::literal::tests::optimize ... ok
+test hir::literal::tests::repetition ... ok
+test hir::print::tests::print_alternation ... ok
+test hir::literal::tests::huge ... ok
+test hir::print::tests::print_anchor ... ok
+test hir::print::tests::print_class ... ok
+test hir::print::tests::print_group ... ok
+test hir::print::tests::print_literal ... ok
+test hir::print::tests::print_word_boundary ... ok
+test hir::print::tests::regression_alternation_concat ... ok
+test hir::print::tests::regression_repetition_alternation ... ok
+test hir::print::tests::regression_repetition_concat ... ok
+test hir::tests::class_canonicalize_bytes ... ok
+test hir::tests::class_canonicalize_unicode ... ok
+test hir::tests::class_case_fold_bytes ... ok
+test hir::tests::class_case_fold_unicode ... ok
+test hir::tests::class_difference_bytes ... ok
+test hir::tests::class_difference_unicode ... ok
+test hir::tests::class_intersect_bytes ... ok
+test hir::tests::class_intersect_unicode ... ok
+test hir::tests::class_negate_bytes ... ok
+test hir::tests::class_negate_unicode ... ok
+test hir::tests::class_range_canonical_bytes ... ok
+test hir::tests::class_range_canonical_unicode ... ok
+test hir::tests::class_symmetric_difference_bytes ... ok
+test hir::tests::class_symmetric_difference_unicode ... ok
+test hir::tests::class_union_bytes ... ok
+test hir::tests::class_union_unicode ... ok
+test hir::tests::look_set_debug ... ok
+test hir::tests::look_set_iter ... ok
+test hir::tests::no_stack_overflow_on_drop ... ok
+test hir::print::tests::print_repetition ... ok
+test hir::translate::tests::analysis_can_empty ... ok
+test hir::translate::tests::analysis_captures_len ... ok
+test hir::translate::tests::analysis_is_all_assertions ... ok
+test hir::translate::tests::analysis_is_alternation_literal ... ok
+test hir::translate::tests::analysis_is_anchored ... ok
+test hir::translate::tests::analysis_is_any_anchored ... ok
+test hir::translate::tests::analysis_is_literal ... ok
+test hir::translate::tests::analysis_is_utf8 ... ok
+test hir::translate::tests::analysis_look_set_prefix_any ... ok
+test hir::translate::tests::analysis_static_captures_len ... ok
+test hir::translate::tests::assertions ... ok
+test hir::translate::tests::cat_class_flattened ... ok
+test hir::translate::tests::cat_alt ... ok
+test hir::translate::tests::class_ascii_multiple ... ok
+test hir::translate::tests::class_ascii ... ok
+test hir::translate::tests::class_bracketed_difference ... ok
+test hir::translate::tests::class_bracketed_intersect ... ok
+test hir::translate::tests::class_bracketed_intersect_negate ... ok
+test hir::translate::tests::class_bracketed ... ok
+test hir::translate::tests::class_bracketed_symmetric_difference ... ok
+test hir::translate::tests::class_bracketed_union ... ok
+test hir::translate::tests::class_perl_ascii ... ok
+test hir::translate::tests::class_perl_unicode ... ok
+test hir::translate::tests::class_unicode_age ... ok
+test hir::translate::tests::class_unicode_any_empty ... ok
+test hir::translate::tests::class_unicode_gencat ... ok
+test hir::translate::tests::class_unicode_script ... ok
+test hir::translate::tests::dot ... ok
+test hir::translate::tests::empty ... ok
+test hir::translate::tests::escape ... ok
+test hir::translate::tests::flags ... ok
+test hir::translate::tests::group ... ok
+test hir::translate::tests::ignore_whitespace ... ok
+test hir::translate::tests::line_anchors ... ok
+test ast::parse::tests::parse_hex_four ... ok
+test hir::translate::tests::literal ... ok
+test hir::translate::tests::regression_alt_empty_concat ... ok
+test hir::translate::tests::literal_case_insensitive ... ok
+test hir::translate::tests::regression_empty_alt ... ok
+test hir::translate::tests::regression_fuzz_char_decrement1 ... ok
+test hir::translate::tests::regression_fuzz_difference1 ... ok
+test hir::translate::tests::regression_fuzz_match ... ok
+test hir::translate::tests::regression_singleton_alt ... ok
+test hir::translate::tests::repetition ... ok
+test hir::translate::tests::smart_alternation ... ok
+test hir::translate::tests::smart_concat ... ok
+test tests::escape_meta ... ok
+test tests::word_byte ... ok
+test tests::word_char ... ok
+test unicode::tests::range_contains ... ok
+test unicode::tests::regression_466 ... ok
+test unicode::tests::simple_fold_a ... ok
+test unicode::tests::simple_fold_k ... ok
+test unicode::tests::sym_normalize ... ok
+test unicode::tests::valid_utf8_symbolic ... ok
+test utf8::tests::bmp ... ok
+test hir::translate::tests::smart_repetition ... ok
+test utf8::tests::reverse ... ok
+test utf8::tests::codepoints_no_surrogates ... ok
+test ast::parse::tests::parse_hex_eight ... ok
+test hir::translate::tests::class_bracketed_nested ... ok
+test utf8::tests::single_codepoint_one_sequence ... ok
+
+test result: ok. 147 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.56s
+
++ RESULT=0
++ cd /tmp/top100_artifacts
++ rm -rf /tmp/top100_artifacts/regex-syntax-0.8.5
++ exit 0

@@ -1,0 +1,1197 @@
+[num-integer] download directory: /tmp/top100_artifacts/num-integer-0.1.46
++ curl -sL https://crates.io/api/v1/crates/num-integer/0.1.46/download
++ tar xzf -
++ cd /tmp/top100_artifacts/num-integer-0.1.46
++ cargo clean
+     Removed 0 files
++ cargo +stable test ''
+    Updating crates.io index
+    Blocking waiting for file lock on package cache
+     Locking 2 packages to latest compatible versions
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   Compiling autocfg v1.4.0
+   Compiling num-traits v0.2.19
+   Compiling num-integer v0.1.46 (/tmp/top100_artifacts/num-integer-0.1.46)
+error[E0308]: mismatched types
+    --> src/lib.rs:1021:50
+     |
+1021 |                 assert!((0 as $T).is_multiple_of(&(0 as $T)));
+     |                                   -------------- ^^^^^^^^^^ expected `u8`, found `&u8`
+     |                                   |
+     |                                   arguments to this method are incorrect
+...
+1052 | impl_integer_for_usize!(u8, test_integer_u8);
+     | -------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:436:5
+     |
+436  | /     uint_impl! {
+437  | |         Self = u8,
+438  | |         ActualT = u8,
+439  | |         SignedT = i8,
+...    |
+453  | |         bound_condition = "",
+454  | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1021 |                 assert!((0 as $T).is_multiple_of(&(0 as $T).clone()));
+     |                                                            ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1022:50
+     |
+1022 |                 assert!((6 as $T).is_multiple_of(&(6 as $T)));
+     |                                   -------------- ^^^^^^^^^^ expected `u8`, found `&u8`
+     |                                   |
+     |                                   arguments to this method are incorrect
+...
+1052 | impl_integer_for_usize!(u8, test_integer_u8);
+     | -------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:436:5
+     |
+436  | /     uint_impl! {
+437  | |         Self = u8,
+438  | |         ActualT = u8,
+439  | |         SignedT = i8,
+...    |
+453  | |         bound_condition = "",
+454  | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1022 |                 assert!((6 as $T).is_multiple_of(&(6 as $T).clone()));
+     |                                                            ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1023:50
+     |
+1023 |                 assert!((6 as $T).is_multiple_of(&(3 as $T)));
+     |                                   -------------- ^^^^^^^^^^ expected `u8`, found `&u8`
+     |                                   |
+     |                                   arguments to this method are incorrect
+...
+1052 | impl_integer_for_usize!(u8, test_integer_u8);
+     | -------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:436:5
+     |
+436  | /     uint_impl! {
+437  | |         Self = u8,
+438  | |         ActualT = u8,
+439  | |         SignedT = i8,
+...    |
+453  | |         bound_condition = "",
+454  | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1023 |                 assert!((6 as $T).is_multiple_of(&(3 as $T).clone()));
+     |                                                            ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1024:50
+     |
+1024 |                 assert!((6 as $T).is_multiple_of(&(1 as $T)));
+     |                                   -------------- ^^^^^^^^^^ expected `u8`, found `&u8`
+     |                                   |
+     |                                   arguments to this method are incorrect
+...
+1052 | impl_integer_for_usize!(u8, test_integer_u8);
+     | -------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:436:5
+     |
+436  | /     uint_impl! {
+437  | |         Self = u8,
+438  | |         ActualT = u8,
+439  | |         SignedT = i8,
+...    |
+453  | |         bound_condition = "",
+454  | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1024 |                 assert!((6 as $T).is_multiple_of(&(1 as $T).clone()));
+     |                                                            ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1026:52
+     |
+1026 |                 assert!(!(42 as $T).is_multiple_of(&(5 as $T)));
+     |                                     -------------- ^^^^^^^^^^ expected `u8`, found `&u8`
+     |                                     |
+     |                                     arguments to this method are incorrect
+...
+1052 | impl_integer_for_usize!(u8, test_integer_u8);
+     | -------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:436:5
+     |
+436  | /     uint_impl! {
+437  | |         Self = u8,
+438  | |         ActualT = u8,
+439  | |         SignedT = i8,
+...    |
+453  | |         bound_condition = "",
+454  | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1026 |                 assert!(!(42 as $T).is_multiple_of(&(5 as $T).clone()));
+     |                                                              ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1027:51
+     |
+1027 |                 assert!(!(5 as $T).is_multiple_of(&(3 as $T)));
+     |                                    -------------- ^^^^^^^^^^ expected `u8`, found `&u8`
+     |                                    |
+     |                                    arguments to this method are incorrect
+...
+1052 | impl_integer_for_usize!(u8, test_integer_u8);
+     | -------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:436:5
+     |
+436  | /     uint_impl! {
+437  | |         Self = u8,
+438  | |         ActualT = u8,
+439  | |         SignedT = i8,
+...    |
+453  | |         bound_condition = "",
+454  | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1027 |                 assert!(!(5 as $T).is_multiple_of(&(3 as $T).clone()));
+     |                                                             ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1028:52
+     |
+1028 |                 assert!(!(42 as $T).is_multiple_of(&(0 as $T)));
+     |                                     -------------- ^^^^^^^^^^ expected `u8`, found `&u8`
+     |                                     |
+     |                                     arguments to this method are incorrect
+...
+1052 | impl_integer_for_usize!(u8, test_integer_u8);
+     | -------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:436:5
+     |
+436  | /     uint_impl! {
+437  | |         Self = u8,
+438  | |         ActualT = u8,
+439  | |         SignedT = i8,
+...    |
+453  | |         bound_condition = "",
+454  | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1028 |                 assert!(!(42 as $T).is_multiple_of(&(0 as $T).clone()));
+     |                                                              ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1021:50
+     |
+1021 |                 assert!((0 as $T).is_multiple_of(&(0 as $T)));
+     |                                   -------------- ^^^^^^^^^^ expected `u16`, found `&u16`
+     |                                   |
+     |                                   arguments to this method are incorrect
+...
+1053 | impl_integer_for_usize!(u16, test_integer_u16);
+     | ---------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1051:5
+     |
+1051 | /     uint_impl! {
+1052 | |         Self = u16,
+1053 | |         ActualT = u16,
+1054 | |         SignedT = i16,
+...    |
+1068 | |         bound_condition = "",
+1069 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1021 |                 assert!((0 as $T).is_multiple_of(&(0 as $T).clone()));
+     |                                                            ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1022:50
+     |
+1022 |                 assert!((6 as $T).is_multiple_of(&(6 as $T)));
+     |                                   -------------- ^^^^^^^^^^ expected `u16`, found `&u16`
+     |                                   |
+     |                                   arguments to this method are incorrect
+...
+1053 | impl_integer_for_usize!(u16, test_integer_u16);
+     | ---------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1051:5
+     |
+1051 | /     uint_impl! {
+1052 | |         Self = u16,
+1053 | |         ActualT = u16,
+1054 | |         SignedT = i16,
+...    |
+1068 | |         bound_condition = "",
+1069 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1022 |                 assert!((6 as $T).is_multiple_of(&(6 as $T).clone()));
+     |                                                            ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1023:50
+     |
+1023 |                 assert!((6 as $T).is_multiple_of(&(3 as $T)));
+     |                                   -------------- ^^^^^^^^^^ expected `u16`, found `&u16`
+     |                                   |
+     |                                   arguments to this method are incorrect
+...
+1053 | impl_integer_for_usize!(u16, test_integer_u16);
+     | ---------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1051:5
+     |
+1051 | /     uint_impl! {
+1052 | |         Self = u16,
+1053 | |         ActualT = u16,
+1054 | |         SignedT = i16,
+...    |
+1068 | |         bound_condition = "",
+1069 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1023 |                 assert!((6 as $T).is_multiple_of(&(3 as $T).clone()));
+     |                                                            ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1024:50
+     |
+1024 |                 assert!((6 as $T).is_multiple_of(&(1 as $T)));
+     |                                   -------------- ^^^^^^^^^^ expected `u16`, found `&u16`
+     |                                   |
+     |                                   arguments to this method are incorrect
+...
+1053 | impl_integer_for_usize!(u16, test_integer_u16);
+     | ---------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1051:5
+     |
+1051 | /     uint_impl! {
+1052 | |         Self = u16,
+1053 | |         ActualT = u16,
+1054 | |         SignedT = i16,
+...    |
+1068 | |         bound_condition = "",
+1069 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1024 |                 assert!((6 as $T).is_multiple_of(&(1 as $T).clone()));
+     |                                                            ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1026:52
+     |
+1026 |                 assert!(!(42 as $T).is_multiple_of(&(5 as $T)));
+     |                                     -------------- ^^^^^^^^^^ expected `u16`, found `&u16`
+     |                                     |
+     |                                     arguments to this method are incorrect
+...
+1053 | impl_integer_for_usize!(u16, test_integer_u16);
+     | ---------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1051:5
+     |
+1051 | /     uint_impl! {
+1052 | |         Self = u16,
+1053 | |         ActualT = u16,
+1054 | |         SignedT = i16,
+...    |
+1068 | |         bound_condition = "",
+1069 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1026 |                 assert!(!(42 as $T).is_multiple_of(&(5 as $T).clone()));
+     |                                                              ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1027:51
+     |
+1027 |                 assert!(!(5 as $T).is_multiple_of(&(3 as $T)));
+     |                                    -------------- ^^^^^^^^^^ expected `u16`, found `&u16`
+     |                                    |
+     |                                    arguments to this method are incorrect
+...
+1053 | impl_integer_for_usize!(u16, test_integer_u16);
+     | ---------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1051:5
+     |
+1051 | /     uint_impl! {
+1052 | |         Self = u16,
+1053 | |         ActualT = u16,
+1054 | |         SignedT = i16,
+...    |
+1068 | |         bound_condition = "",
+1069 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1027 |                 assert!(!(5 as $T).is_multiple_of(&(3 as $T).clone()));
+     |                                                             ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1028:52
+     |
+1028 |                 assert!(!(42 as $T).is_multiple_of(&(0 as $T)));
+     |                                     -------------- ^^^^^^^^^^ expected `u16`, found `&u16`
+     |                                     |
+     |                                     arguments to this method are incorrect
+...
+1053 | impl_integer_for_usize!(u16, test_integer_u16);
+     | ---------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1051:5
+     |
+1051 | /     uint_impl! {
+1052 | |         Self = u16,
+1053 | |         ActualT = u16,
+1054 | |         SignedT = i16,
+...    |
+1068 | |         bound_condition = "",
+1069 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1028 |                 assert!(!(42 as $T).is_multiple_of(&(0 as $T).clone()));
+     |                                                              ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1021:50
+     |
+1021 |                 assert!((0 as $T).is_multiple_of(&(0 as $T)));
+     |                                   -------------- ^^^^^^^^^^ expected `u32`, found `&u32`
+     |                                   |
+     |                                   arguments to this method are incorrect
+...
+1054 | impl_integer_for_usize!(u32, test_integer_u32);
+     | ---------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1098:5
+     |
+1098 | /     uint_impl! {
+1099 | |         Self = u32,
+1100 | |         ActualT = u32,
+1101 | |         SignedT = i32,
+...    |
+1115 | |         bound_condition = "",
+1116 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1021 |                 assert!((0 as $T).is_multiple_of(&(0 as $T).clone()));
+     |                                                            ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1022:50
+     |
+1022 |                 assert!((6 as $T).is_multiple_of(&(6 as $T)));
+     |                                   -------------- ^^^^^^^^^^ expected `u32`, found `&u32`
+     |                                   |
+     |                                   arguments to this method are incorrect
+...
+1054 | impl_integer_for_usize!(u32, test_integer_u32);
+     | ---------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1098:5
+     |
+1098 | /     uint_impl! {
+1099 | |         Self = u32,
+1100 | |         ActualT = u32,
+1101 | |         SignedT = i32,
+...    |
+1115 | |         bound_condition = "",
+1116 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1022 |                 assert!((6 as $T).is_multiple_of(&(6 as $T).clone()));
+     |                                                            ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1023:50
+     |
+1023 |                 assert!((6 as $T).is_multiple_of(&(3 as $T)));
+     |                                   -------------- ^^^^^^^^^^ expected `u32`, found `&u32`
+     |                                   |
+     |                                   arguments to this method are incorrect
+...
+1054 | impl_integer_for_usize!(u32, test_integer_u32);
+     | ---------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1098:5
+     |
+1098 | /     uint_impl! {
+1099 | |         Self = u32,
+1100 | |         ActualT = u32,
+1101 | |         SignedT = i32,
+...    |
+1115 | |         bound_condition = "",
+1116 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1023 |                 assert!((6 as $T).is_multiple_of(&(3 as $T).clone()));
+     |                                                            ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1024:50
+     |
+1024 |                 assert!((6 as $T).is_multiple_of(&(1 as $T)));
+     |                                   -------------- ^^^^^^^^^^ expected `u32`, found `&u32`
+     |                                   |
+     |                                   arguments to this method are incorrect
+...
+1054 | impl_integer_for_usize!(u32, test_integer_u32);
+     | ---------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1098:5
+     |
+1098 | /     uint_impl! {
+1099 | |         Self = u32,
+1100 | |         ActualT = u32,
+1101 | |         SignedT = i32,
+...    |
+1115 | |         bound_condition = "",
+1116 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1024 |                 assert!((6 as $T).is_multiple_of(&(1 as $T).clone()));
+     |                                                            ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1026:52
+     |
+1026 |                 assert!(!(42 as $T).is_multiple_of(&(5 as $T)));
+     |                                     -------------- ^^^^^^^^^^ expected `u32`, found `&u32`
+     |                                     |
+     |                                     arguments to this method are incorrect
+...
+1054 | impl_integer_for_usize!(u32, test_integer_u32);
+     | ---------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1098:5
+     |
+1098 | /     uint_impl! {
+1099 | |         Self = u32,
+1100 | |         ActualT = u32,
+1101 | |         SignedT = i32,
+...    |
+1115 | |         bound_condition = "",
+1116 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1026 |                 assert!(!(42 as $T).is_multiple_of(&(5 as $T).clone()));
+     |                                                              ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1027:51
+     |
+1027 |                 assert!(!(5 as $T).is_multiple_of(&(3 as $T)));
+     |                                    -------------- ^^^^^^^^^^ expected `u32`, found `&u32`
+     |                                    |
+     |                                    arguments to this method are incorrect
+...
+1054 | impl_integer_for_usize!(u32, test_integer_u32);
+     | ---------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1098:5
+     |
+1098 | /     uint_impl! {
+1099 | |         Self = u32,
+1100 | |         ActualT = u32,
+1101 | |         SignedT = i32,
+...    |
+1115 | |         bound_condition = "",
+1116 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1027 |                 assert!(!(5 as $T).is_multiple_of(&(3 as $T).clone()));
+     |                                                             ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1028:52
+     |
+1028 |                 assert!(!(42 as $T).is_multiple_of(&(0 as $T)));
+     |                                     -------------- ^^^^^^^^^^ expected `u32`, found `&u32`
+     |                                     |
+     |                                     arguments to this method are incorrect
+...
+1054 | impl_integer_for_usize!(u32, test_integer_u32);
+     | ---------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1098:5
+     |
+1098 | /     uint_impl! {
+1099 | |         Self = u32,
+1100 | |         ActualT = u32,
+1101 | |         SignedT = i32,
+...    |
+1115 | |         bound_condition = "",
+1116 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1028 |                 assert!(!(42 as $T).is_multiple_of(&(0 as $T).clone()));
+     |                                                              ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1021:50
+     |
+1021 |                 assert!((0 as $T).is_multiple_of(&(0 as $T)));
+     |                                   -------------- ^^^^^^^^^^ expected `u64`, found `&u64`
+     |                                   |
+     |                                   arguments to this method are incorrect
+...
+1055 | impl_integer_for_usize!(u64, test_integer_u64);
+     | ---------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1121:5
+     |
+1121 | /     uint_impl! {
+1122 | |         Self = u64,
+1123 | |         ActualT = u64,
+1124 | |         SignedT = i64,
+...    |
+1138 | |         bound_condition = "",
+1139 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1021 |                 assert!((0 as $T).is_multiple_of(&(0 as $T).clone()));
+     |                                                            ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1022:50
+     |
+1022 |                 assert!((6 as $T).is_multiple_of(&(6 as $T)));
+     |                                   -------------- ^^^^^^^^^^ expected `u64`, found `&u64`
+     |                                   |
+     |                                   arguments to this method are incorrect
+...
+1055 | impl_integer_for_usize!(u64, test_integer_u64);
+     | ---------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1121:5
+     |
+1121 | /     uint_impl! {
+1122 | |         Self = u64,
+1123 | |         ActualT = u64,
+1124 | |         SignedT = i64,
+...    |
+1138 | |         bound_condition = "",
+1139 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1022 |                 assert!((6 as $T).is_multiple_of(&(6 as $T).clone()));
+     |                                                            ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1023:50
+     |
+1023 |                 assert!((6 as $T).is_multiple_of(&(3 as $T)));
+     |                                   -------------- ^^^^^^^^^^ expected `u64`, found `&u64`
+     |                                   |
+     |                                   arguments to this method are incorrect
+...
+1055 | impl_integer_for_usize!(u64, test_integer_u64);
+     | ---------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1121:5
+     |
+1121 | /     uint_impl! {
+1122 | |         Self = u64,
+1123 | |         ActualT = u64,
+1124 | |         SignedT = i64,
+...    |
+1138 | |         bound_condition = "",
+1139 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1023 |                 assert!((6 as $T).is_multiple_of(&(3 as $T).clone()));
+     |                                                            ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1024:50
+     |
+1024 |                 assert!((6 as $T).is_multiple_of(&(1 as $T)));
+     |                                   -------------- ^^^^^^^^^^ expected `u64`, found `&u64`
+     |                                   |
+     |                                   arguments to this method are incorrect
+...
+1055 | impl_integer_for_usize!(u64, test_integer_u64);
+     | ---------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1121:5
+     |
+1121 | /     uint_impl! {
+1122 | |         Self = u64,
+1123 | |         ActualT = u64,
+1124 | |         SignedT = i64,
+...    |
+1138 | |         bound_condition = "",
+1139 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1024 |                 assert!((6 as $T).is_multiple_of(&(1 as $T).clone()));
+     |                                                            ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1026:52
+     |
+1026 |                 assert!(!(42 as $T).is_multiple_of(&(5 as $T)));
+     |                                     -------------- ^^^^^^^^^^ expected `u64`, found `&u64`
+     |                                     |
+     |                                     arguments to this method are incorrect
+...
+1055 | impl_integer_for_usize!(u64, test_integer_u64);
+     | ---------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1121:5
+     |
+1121 | /     uint_impl! {
+1122 | |         Self = u64,
+1123 | |         ActualT = u64,
+1124 | |         SignedT = i64,
+...    |
+1138 | |         bound_condition = "",
+1139 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1026 |                 assert!(!(42 as $T).is_multiple_of(&(5 as $T).clone()));
+     |                                                              ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1027:51
+     |
+1027 |                 assert!(!(5 as $T).is_multiple_of(&(3 as $T)));
+     |                                    -------------- ^^^^^^^^^^ expected `u64`, found `&u64`
+     |                                    |
+     |                                    arguments to this method are incorrect
+...
+1055 | impl_integer_for_usize!(u64, test_integer_u64);
+     | ---------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1121:5
+     |
+1121 | /     uint_impl! {
+1122 | |         Self = u64,
+1123 | |         ActualT = u64,
+1124 | |         SignedT = i64,
+...    |
+1138 | |         bound_condition = "",
+1139 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1027 |                 assert!(!(5 as $T).is_multiple_of(&(3 as $T).clone()));
+     |                                                             ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1028:52
+     |
+1028 |                 assert!(!(42 as $T).is_multiple_of(&(0 as $T)));
+     |                                     -------------- ^^^^^^^^^^ expected `u64`, found `&u64`
+     |                                     |
+     |                                     arguments to this method are incorrect
+...
+1055 | impl_integer_for_usize!(u64, test_integer_u64);
+     | ---------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1121:5
+     |
+1121 | /     uint_impl! {
+1122 | |         Self = u64,
+1123 | |         ActualT = u64,
+1124 | |         SignedT = i64,
+...    |
+1138 | |         bound_condition = "",
+1139 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1028 |                 assert!(!(42 as $T).is_multiple_of(&(0 as $T).clone()));
+     |                                                              ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1021:50
+     |
+1021 |                 assert!((0 as $T).is_multiple_of(&(0 as $T)));
+     |                                   -------------- ^^^^^^^^^^ expected `u128`, found `&u128`
+     |                                   |
+     |                                   arguments to this method are incorrect
+...
+1056 | impl_integer_for_usize!(u128, test_integer_u128);
+     | ------------------------------------------------ in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1144:5
+     |
+1144 | /     uint_impl! {
+1145 | |         Self = u128,
+1146 | |         ActualT = u128,
+1147 | |         SignedT = i128,
+...    |
+1163 | |         bound_condition = "",
+1164 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1021 |                 assert!((0 as $T).is_multiple_of(&(0 as $T).clone()));
+     |                                                            ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1022:50
+     |
+1022 |                 assert!((6 as $T).is_multiple_of(&(6 as $T)));
+     |                                   -------------- ^^^^^^^^^^ expected `u128`, found `&u128`
+     |                                   |
+     |                                   arguments to this method are incorrect
+...
+1056 | impl_integer_for_usize!(u128, test_integer_u128);
+     | ------------------------------------------------ in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1144:5
+     |
+1144 | /     uint_impl! {
+1145 | |         Self = u128,
+1146 | |         ActualT = u128,
+1147 | |         SignedT = i128,
+...    |
+1163 | |         bound_condition = "",
+1164 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1022 |                 assert!((6 as $T).is_multiple_of(&(6 as $T).clone()));
+     |                                                            ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1023:50
+     |
+1023 |                 assert!((6 as $T).is_multiple_of(&(3 as $T)));
+     |                                   -------------- ^^^^^^^^^^ expected `u128`, found `&u128`
+     |                                   |
+     |                                   arguments to this method are incorrect
+...
+1056 | impl_integer_for_usize!(u128, test_integer_u128);
+     | ------------------------------------------------ in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1144:5
+     |
+1144 | /     uint_impl! {
+1145 | |         Self = u128,
+1146 | |         ActualT = u128,
+1147 | |         SignedT = i128,
+...    |
+1163 | |         bound_condition = "",
+1164 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1023 |                 assert!((6 as $T).is_multiple_of(&(3 as $T).clone()));
+     |                                                            ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1024:50
+     |
+1024 |                 assert!((6 as $T).is_multiple_of(&(1 as $T)));
+     |                                   -------------- ^^^^^^^^^^ expected `u128`, found `&u128`
+     |                                   |
+     |                                   arguments to this method are incorrect
+...
+1056 | impl_integer_for_usize!(u128, test_integer_u128);
+     | ------------------------------------------------ in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1144:5
+     |
+1144 | /     uint_impl! {
+1145 | |         Self = u128,
+1146 | |         ActualT = u128,
+1147 | |         SignedT = i128,
+...    |
+1163 | |         bound_condition = "",
+1164 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1024 |                 assert!((6 as $T).is_multiple_of(&(1 as $T).clone()));
+     |                                                            ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1026:52
+     |
+1026 |                 assert!(!(42 as $T).is_multiple_of(&(5 as $T)));
+     |                                     -------------- ^^^^^^^^^^ expected `u128`, found `&u128`
+     |                                     |
+     |                                     arguments to this method are incorrect
+...
+1056 | impl_integer_for_usize!(u128, test_integer_u128);
+     | ------------------------------------------------ in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1144:5
+     |
+1144 | /     uint_impl! {
+1145 | |         Self = u128,
+1146 | |         ActualT = u128,
+1147 | |         SignedT = i128,
+...    |
+1163 | |         bound_condition = "",
+1164 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1026 |                 assert!(!(42 as $T).is_multiple_of(&(5 as $T).clone()));
+     |                                                              ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1027:51
+     |
+1027 |                 assert!(!(5 as $T).is_multiple_of(&(3 as $T)));
+     |                                    -------------- ^^^^^^^^^^ expected `u128`, found `&u128`
+     |                                    |
+     |                                    arguments to this method are incorrect
+...
+1056 | impl_integer_for_usize!(u128, test_integer_u128);
+     | ------------------------------------------------ in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1144:5
+     |
+1144 | /     uint_impl! {
+1145 | |         Self = u128,
+1146 | |         ActualT = u128,
+1147 | |         SignedT = i128,
+...    |
+1163 | |         bound_condition = "",
+1164 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1027 |                 assert!(!(5 as $T).is_multiple_of(&(3 as $T).clone()));
+     |                                                             ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1028:52
+     |
+1028 |                 assert!(!(42 as $T).is_multiple_of(&(0 as $T)));
+     |                                     -------------- ^^^^^^^^^^ expected `u128`, found `&u128`
+     |                                     |
+     |                                     arguments to this method are incorrect
+...
+1056 | impl_integer_for_usize!(u128, test_integer_u128);
+     | ------------------------------------------------ in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1144:5
+     |
+1144 | /     uint_impl! {
+1145 | |         Self = u128,
+1146 | |         ActualT = u128,
+1147 | |         SignedT = i128,
+...    |
+1163 | |         bound_condition = "",
+1164 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1028 |                 assert!(!(42 as $T).is_multiple_of(&(0 as $T).clone()));
+     |                                                              ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1021:50
+     |
+1021 |                 assert!((0 as $T).is_multiple_of(&(0 as $T)));
+     |                                   -------------- ^^^^^^^^^^ expected `usize`, found `&usize`
+     |                                   |
+     |                                   arguments to this method are incorrect
+...
+1057 | impl_integer_for_usize!(usize, test_integer_usize);
+     | -------------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1218:5
+     |
+1218 | /     uint_impl! {
+1219 | |         Self = usize,
+1220 | |         ActualT = u64,
+1221 | |         SignedT = isize,
+...    |
+1235 | |         bound_condition = " on 64-bit targets",
+1236 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1021 |                 assert!((0 as $T).is_multiple_of(&(0 as $T).clone()));
+     |                                                            ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1022:50
+     |
+1022 |                 assert!((6 as $T).is_multiple_of(&(6 as $T)));
+     |                                   -------------- ^^^^^^^^^^ expected `usize`, found `&usize`
+     |                                   |
+     |                                   arguments to this method are incorrect
+...
+1057 | impl_integer_for_usize!(usize, test_integer_usize);
+     | -------------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1218:5
+     |
+1218 | /     uint_impl! {
+1219 | |         Self = usize,
+1220 | |         ActualT = u64,
+1221 | |         SignedT = isize,
+...    |
+1235 | |         bound_condition = " on 64-bit targets",
+1236 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1022 |                 assert!((6 as $T).is_multiple_of(&(6 as $T).clone()));
+     |                                                            ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1023:50
+     |
+1023 |                 assert!((6 as $T).is_multiple_of(&(3 as $T)));
+     |                                   -------------- ^^^^^^^^^^ expected `usize`, found `&usize`
+     |                                   |
+     |                                   arguments to this method are incorrect
+...
+1057 | impl_integer_for_usize!(usize, test_integer_usize);
+     | -------------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1218:5
+     |
+1218 | /     uint_impl! {
+1219 | |         Self = usize,
+1220 | |         ActualT = u64,
+1221 | |         SignedT = isize,
+...    |
+1235 | |         bound_condition = " on 64-bit targets",
+1236 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1023 |                 assert!((6 as $T).is_multiple_of(&(3 as $T).clone()));
+     |                                                            ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1024:50
+     |
+1024 |                 assert!((6 as $T).is_multiple_of(&(1 as $T)));
+     |                                   -------------- ^^^^^^^^^^ expected `usize`, found `&usize`
+     |                                   |
+     |                                   arguments to this method are incorrect
+...
+1057 | impl_integer_for_usize!(usize, test_integer_usize);
+     | -------------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1218:5
+     |
+1218 | /     uint_impl! {
+1219 | |         Self = usize,
+1220 | |         ActualT = u64,
+1221 | |         SignedT = isize,
+...    |
+1235 | |         bound_condition = " on 64-bit targets",
+1236 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1024 |                 assert!((6 as $T).is_multiple_of(&(1 as $T).clone()));
+     |                                                            ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1026:52
+     |
+1026 |                 assert!(!(42 as $T).is_multiple_of(&(5 as $T)));
+     |                                     -------------- ^^^^^^^^^^ expected `usize`, found `&usize`
+     |                                     |
+     |                                     arguments to this method are incorrect
+...
+1057 | impl_integer_for_usize!(usize, test_integer_usize);
+     | -------------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1218:5
+     |
+1218 | /     uint_impl! {
+1219 | |         Self = usize,
+1220 | |         ActualT = u64,
+1221 | |         SignedT = isize,
+...    |
+1235 | |         bound_condition = " on 64-bit targets",
+1236 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1026 |                 assert!(!(42 as $T).is_multiple_of(&(5 as $T).clone()));
+     |                                                              ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1027:51
+     |
+1027 |                 assert!(!(5 as $T).is_multiple_of(&(3 as $T)));
+     |                                    -------------- ^^^^^^^^^^ expected `usize`, found `&usize`
+     |                                    |
+     |                                    arguments to this method are incorrect
+...
+1057 | impl_integer_for_usize!(usize, test_integer_usize);
+     | -------------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1218:5
+     |
+1218 | /     uint_impl! {
+1219 | |         Self = usize,
+1220 | |         ActualT = u64,
+1221 | |         SignedT = isize,
+...    |
+1235 | |         bound_condition = " on 64-bit targets",
+1236 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1027 |                 assert!(!(5 as $T).is_multiple_of(&(3 as $T).clone()));
+     |                                                             ++++++++
+
+error[E0308]: mismatched types
+    --> src/lib.rs:1028:52
+     |
+1028 |                 assert!(!(42 as $T).is_multiple_of(&(0 as $T)));
+     |                                     -------------- ^^^^^^^^^^ expected `usize`, found `&usize`
+     |                                     |
+     |                                     arguments to this method are incorrect
+...
+1057 | impl_integer_for_usize!(usize, test_integer_usize);
+     | -------------------------------------------------- in this macro invocation
+     |
+note: method defined here
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/num/mod.rs:1218:5
+     |
+1218 | /     uint_impl! {
+1219 | |         Self = usize,
+1220 | |         ActualT = u64,
+1221 | |         SignedT = isize,
+...    |
+1235 | |         bound_condition = " on 64-bit targets",
+1236 | |     }
+     | |_____^
+     = note: this error originates in the macro `impl_integer_for_usize` which comes from the expansion of the macro `uint_impl` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider using clone here
+     |
+1028 |                 assert!(!(42 as $T).is_multiple_of(&(0 as $T).clone()));
+     |                                                              ++++++++
+
+For more information about this error, try `rustc --explain E0308`.
+error: could not compile `num-integer` (lib test) due to 42 previous errors
++ RESULT=101
++ cd /tmp/top100_artifacts
++ rm -rf /tmp/top100_artifacts/num-integer-0.1.46
++ exit 101

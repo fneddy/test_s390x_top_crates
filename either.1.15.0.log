@@ -1,0 +1,31 @@
+[either] download directory: /tmp/top100_artifacts/either-1.15.0
++ curl -sL https://crates.io/api/v1/crates/either/1.15.0/download
++ tar xzf -
++ cd /tmp/top100_artifacts/either-1.15.0
++ cargo clean
+     Removed 0 files
++ cargo +stable test ''
+   Compiling serde v1.0.218
+   Compiling serde_json v1.0.140
+   Compiling itoa v1.0.15
+   Compiling memchr v2.7.4
+   Compiling ryu v1.0.20
+   Compiling either v1.15.0 (/tmp/top100_artifacts/either-1.15.0)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 8.34s
+     Running unittests src/lib.rs (target/debug/deps/either-a9bd712f653f1066)
+
+running 7 tests
+test error ... ok
+test iter ... ok
+test macros ... ok
+test basic ... ok
+test deref ... ok
+test seek ... ok
+test read_write ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
++ RESULT=0
++ cd /tmp/top100_artifacts
++ rm -rf /tmp/top100_artifacts/either-1.15.0
++ exit 0

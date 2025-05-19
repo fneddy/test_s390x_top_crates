@@ -1,0 +1,41 @@
+[mio] download directory: /tmp/top100_artifacts/mio-1.0.3
++ curl -sL https://crates.io/api/v1/crates/mio/1.0.3/download
++ tar xzf -
++ cd /tmp/top100_artifacts/mio-1.0.3
++ cargo clean
+     Removed 0 files
++ cargo +stable test ''
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+ Downloading crates ...
+  Downloaded syn v2.0.74
+  Downloaded libc v0.2.167
+    Blocking waiting for file lock on package cache
+   Compiling proc-macro2 v1.0.86
+   Compiling unicode-ident v1.0.12
+   Compiling libc v0.2.167
+   Compiling cfg-if v1.0.0
+   Compiling byteorder v1.5.0
+   Compiling log v0.4.22
+   Compiling env_logger v0.9.3
+   Compiling quote v1.0.36
+   Compiling syn v2.0.74
+   Compiling getrandom v0.2.15
+   Compiling rand_core v0.6.4
+   Compiling zerocopy-derive v0.7.35
+   Compiling zerocopy v0.7.35
+   Compiling ppv-lite86 v0.2.20
+   Compiling rand_chacha v0.3.1
+   Compiling rand v0.8.5
+   Compiling mio v1.0.3 (/tmp/top100_artifacts/mio-1.0.3)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 7.19s
+     Running unittests src/lib.rs (target/debug/deps/mio-1a266126ca79b220)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
++ RESULT=0
++ cd /tmp/top100_artifacts
++ rm -rf /tmp/top100_artifacts/mio-1.0.3
++ exit 0

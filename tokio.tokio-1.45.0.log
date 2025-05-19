@@ -1,0 +1,17 @@
+[tokio] download directory: /tmp/top100_artifacts/tokio-tokio-1.45.0
++ curl -sL https://crates.io/api/v1/crates/tokio/tokio-1.45.0/download
++ tar xzf -
+
+gzip: stdin: not in gzip format
+tar: Child returned status 1
+tar: Error is not recoverable: exiting now
++ cd /tmp/top100_artifacts/tokio-tokio-1.45.0
+/home/eddy/src/nebula/test_cratesio.sh: line 77: cd: /tmp/top100_artifacts/tokio-tokio-1.45.0: No such file or directory
++ cargo clean
+error: could not find `Cargo.toml` in `/tmp/top100_artifacts` or any parent directory
++ cargo +stable test ''
+error: could not find `Cargo.toml` in `/tmp/top100_artifacts` or any parent directory
++ RESULT=101
++ cd /tmp/top100_artifacts
++ rm -rf /tmp/top100_artifacts/tokio-tokio-1.45.0
++ exit 101

@@ -1,0 +1,58 @@
+[pkg-config] download directory: /tmp/top100_artifacts/pkg-config-0.3.32
++ curl -sL https://crates.io/api/v1/crates/pkg-config/0.3.32/download
++ tar xzf -
++ cd /tmp/top100_artifacts/pkg-config-0.3.32
++ cargo clean
+     Removed 0 files
++ cargo +stable test ''
+    Blocking waiting for file lock on package cache
+   Compiling lazy_static v1.5.0
+   Compiling pkg-config v0.3.32 (/tmp/top100_artifacts/pkg-config-0.3.32)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.39s
+     Running unittests src/lib.rs (target/debug/deps/pkg_config-5718603f48a0044b)
+
+running 5 tests
+test tests::link_filename_apple ... ok
+test tests::link_filename_mingw ... ok
+test tests::link_filename_linux ... ok
+test tests::link_filename_msvc ... ok
+test tests::system_library_linux_test ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/test.rs (target/debug/deps/test-76d1dfd08aeef589)
+
+running 26 tests
+test atleast_version_ng - should panic ... ok
+test atleast_version_ok ... ok
+test cross_disabled ... ok
+test cross_disabled_if_customized ... ok
+test cross_enabled ... ok
+test cross_enabled_if_customized ... ok
+test framework ... ok
+test exactly_version_ng - should panic ... ok
+test exactly_version_ok ... ok
+test package_disabled ... ok
+test range_version_full ... ok
+test range_version_range_from_ng - should panic ... ok
+test range_version_range_from_ok ... ok
+test range_version_range_inclusive_ng - should panic ... ok
+test get_variable ... ok
+test output_ok ... ok
+test escapes ... ok
+test range_version_range_inclusive_ok ... ok
+test range_version_range_ng - should panic ... ok
+test range_version_range_ok ... ok
+test range_version_range_to_inclusive_ng - should panic ... ok
+test range_version_range_to_inclusive_ok ... ok
+test version ... ok
+test range_version_range_to_ok ... ok
+test rpath ... ok
+test range_version_range_to_ng - should panic ... ok
+
+test result: ok. 26 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.84s
+
++ RESULT=0
++ cd /tmp/top100_artifacts
++ rm -rf /tmp/top100_artifacts/pkg-config-0.3.32
++ exit 0

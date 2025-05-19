@@ -1,0 +1,120 @@
+[tempfile] download directory: /tmp/top100_artifacts/tempfile-3.20.0
++ tar xzf -
++ curl -sL https://crates.io/api/v1/crates/tempfile/3.20.0/download
++ cd /tmp/top100_artifacts/tempfile-3.20.0
++ cargo clean
+     Removed 0 files
++ cargo +stable test ''
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+ Downloading crates ...
+  Downloaded errno v0.3.10
+  Downloaded rustix v1.0.2
+  Downloaded linux-raw-sys v0.9.2
+    Blocking waiting for file lock on package cache
+   Compiling libc v0.2.171
+   Compiling getrandom v0.3.1
+   Compiling rustix v1.0.2
+   Compiling doc-comment v0.3.3
+   Compiling cfg-if v1.0.0
+   Compiling linux-raw-sys v0.9.2
+   Compiling bitflags v2.9.0
+   Compiling fastrand v2.3.0
+   Compiling once_cell v1.21.3
+   Compiling errno v0.3.10
+   Compiling tempfile v3.20.0 (/tmp/top100_artifacts/tempfile-3.20.0)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 8.95s
+     Running unittests src/lib.rs (target/debug/deps/tempfile-9c6d0743db96fb7f)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/env.rs (target/debug/deps/env-55078f6f810dd067)
+
+running 1 test
+test test_override_temp_dir ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/namedtempfile.rs (target/debug/deps/namedtempfile-e5285b8960aa9aae)
+
+running 30 tests
+test temp_path_from_argument_types ... ok
+test test_basic ... ok
+test test_change_dir ... ok
+test test_change_dir_make ... ok
+test test_customnamed ... ok
+test temp_path_from_existing ... ok
+test test_deleted ... ok
+test test_disable_cleanup ... ok
+test test_from_parts ... ok
+test test_into_file ... ok
+test test_into_parts ... ok
+test test_keep ... ok
+test test_make ... ok
+test test_make_fnmut ... ok
+test test_make_in ... ok
+test test_make_uds ... ok
+test test_overly_generic_bounds ... ok
+test test_persist ... ok
+test test_persist_noclobber ... ok
+test test_prefix ... ok
+test test_reopen ... ok
+test test_reseed ... ok
+test test_suffix ... ok
+test test_temppath ... ok
+test test_temppath_persist ... ok
+test test_temppath_persist_noclobber ... ok
+test test_write_after_close ... ok
+test test_append ... ok
+test test_immut ... ok
+test test_make_uds_conflict ... ok
+
+test result: ok. 30 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.44s
+
+     Running tests/spooled.rs (target/debug/deps/spooled-37e359d8eba77048)
+
+running 18 tests
+test test_automatic_rollover ... ok
+test test_custom_dir ... ok
+test test_explicit_rollover ... ok
+test test_overwrite_middle_of_buffer ... ok
+test test_overwrite_middle_of_file ... ok
+test test_seek_buffer ... ok
+test test_seek_file ... ok
+test test_seek_read_buffer ... ok
+test test_seek_read_file ... ok
+test test_set_len_buffer ... ok
+test test_set_len_file ... ok
+test test_set_len_rollover ... ok
+test test_sparse_buffer ... ok
+test test_sparse_file ... ok
+test test_sparse_write_rollover ... ok
+test test_write_overflow ... ok
+test test_overwrite_and_extend_buffer ... ok
+test test_overwrite_and_extend_rollover ... ok
+
+test result: ok. 18 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/tempdir.rs (target/debug/deps/tempdir-ecff63a9c9c121dc)
+
+running 1 test
+test main ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/tempfile.rs (target/debug/deps/tempfile-517305d7e0a0b374)
+
+running 3 tests
+test test_basic ... ok
+test test_cleanup ... ok
+test test_pathological_cleaner ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.11s
+
++ RESULT=0
++ cd /tmp/top100_artifacts
++ rm -rf /tmp/top100_artifacts/tempfile-3.20.0
++ exit 0

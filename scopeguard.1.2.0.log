@@ -1,0 +1,29 @@
+[scopeguard] download directory: /tmp/top100_artifacts/scopeguard-1.2.0
++ curl -sL https://crates.io/api/v1/crates/scopeguard/1.2.0/download
++ tar xzf -
++ cd /tmp/top100_artifacts/scopeguard-1.2.0
++ cargo clean
+     Removed 0 files
++ cargo +stable test ''
+warning: no edition set: defaulting to the 2015 edition while the latest is 2024
+    Blocking waiting for file lock on package cache
+   Compiling scopeguard v1.2.0 (/tmp/top100_artifacts/scopeguard-1.2.0)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.45s
+     Running unittests src/lib.rs (target/debug/deps/scopeguard-31138599791072f3)
+
+running 8 tests
+test tests::test_defer ... ok
+test tests::test_defer_success_1 ... ok
+test tests::test_defer_success_2 ... ok
+test tests::test_defer_unwind_1 ... ok
+test tests::test_into_inner ... ok
+test tests::test_dropped_once_when_not_run ... ok
+test tests::test_only_dropped_by_closure_when_run ... ok
+test tests::test_defer_unwind_2 ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
++ RESULT=0
++ cd /tmp/top100_artifacts
++ rm -rf /tmp/top100_artifacts/scopeguard-1.2.0
++ exit 0

@@ -1,0 +1,98 @@
+[num-traits] download directory: /tmp/top100_artifacts/num-traits-0.2.19
++ curl -sL https://crates.io/api/v1/crates/num-traits/0.2.19/download
++ tar xzf -
++ cd /tmp/top100_artifacts/num-traits-0.2.19
++ cargo clean
+     Removed 0 files
++ cargo +stable test ''
+    Blocking waiting for file lock on package cache
+    Updating crates.io index
+     Locking 2 packages to latest compatible versions
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   Compiling autocfg v1.4.0
+   Compiling num-traits v0.2.19 (/tmp/top100_artifacts/num-traits-0.2.19)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 5.47s
+     Running unittests src/lib.rs (target/debug/deps/num_traits-b2e85c8c54ac562c)
+
+running 51 tests
+test bounds::wrapping_bounded ... ok
+test bounds::wrapping_bounded_i128 ... ok
+test bounds::wrapping_is_bounded ... ok
+test check_numassign_ops ... ok
+test check_num_ops ... ok
+test check_numassignref_ops ... ok
+test check_numref_ops ... ok
+test check_refnum_ops ... ok
+test check_refref_ops ... ok
+test clamp_max_nan_max - should panic ... ok
+test clamp_min_nan_min - should panic ... ok
+test clamp_nan_max - should panic ... ok
+test clamp_nan_min - should panic ... ok
+test clamp_nan_min_max - should panic ... ok
+test clamp_test ... ok
+test float::tests::convert_deg_rad ... ok
+test float::tests::convert_deg_rad_std ... ok
+test float::tests::copysign ... ok
+test float::tests::subnormal ... ok
+test float::tests::extra_logs ... ok
+test float::tests::to_degrees_rounding ... ok
+test float::tests::total_cmp ... ok
+test from_str_radix_ignore_case ... ok
+test from_str_radix_multi_byte_fail ... ok
+test from_str_radix_unwrap ... ok
+test identities::wrapping_identities ... ok
+test identities::wrapping_is_one ... ok
+test identities::wrapping_is_zero ... ok
+test int::tests::reverse_bits ... ok
+test int::tests::reverse_bits_i128 ... ok
+test ops::bytes::tests::convert_between_float_and_bytes ... ok
+test ops::bytes::tests::convert_between_int_and_bytes ... ok
+test ops::euclid::tests::euclid_checked ... ok
+test ops::euclid::tests::euclid_float ... ok
+test ops::euclid::tests::euclid_signed ... ok
+test ops::euclid::tests::euclid_unsigned ... ok
+test ops::mul_add::tests::mul_add_float ... ok
+test ops::mul_add::tests::mul_add_integer ... ok
+test ops::overflowing::test_overflowing_traits ... ok
+test ops::saturating::test_saturating_traits ... ok
+test ops::wrapping::test_wrapping_traits ... ok
+test ops::wrapping::wrapping_is_wrappingadd ... ok
+test ops::wrapping::wrapping_is_wrappingmul ... ok
+test ops::wrapping::wrapping_is_wrappingneg ... ok
+test ops::wrapping::wrapping_is_wrappingshl ... ok
+test ops::wrapping::wrapping_is_wrappingshr ... ok
+test ops::wrapping::wrapping_is_wrappingsub ... ok
+test sign::signed_wrapping_is_signed ... ok
+test sign::unsigned_wrapping_is_unsigned ... ok
+test wrapping_is_num ... ok
+test wrapping_from_str_radix ... ok
+
+test result: ok. 51 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/cast.rs (target/debug/deps/cast-50292812c8aa9963)
+
+running 16 tests
+test as_primitive ... ok
+test cast_int_to_128_edge_cases ... ok
+test cast_int_to_int_edge_cases ... ok
+test cast_to_i128_checks_overflow ... ok
+test cast_float_to_int_edge_cases ... ok
+test cast_float_to_i128_edge_cases ... ok
+test float_to_integer_checks_overflow ... ok
+test cast_to_int_checks_overflow ... ok
+test cast_to_unsigned_int_checks_overflow ... ok
+test to_primitive_float ... ok
+test newtype_from_primitive ... ok
+test wrapping_is_fromprimitive ... ok
+test wrapping_is_numcast ... ok
+test newtype_to_primitive ... ok
+test wrapping_is_toprimitive ... ok
+test wrapping_to_primitive ... ok
+
+test result: ok. 16 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
++ RESULT=0
++ cd /tmp/top100_artifacts
++ rm -rf /tmp/top100_artifacts/num-traits-0.2.19
++ exit 0
