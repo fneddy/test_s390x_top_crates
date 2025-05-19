@@ -14,7 +14,7 @@
     Blocking waiting for file lock on package cache
    Compiling windows-targets v0.52.6
    Compiling windows-sys v0.59.0 (/var/tmp/top100_artifacts/windows-sys-0.59.0)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.65s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.30s
      Running unittests src/lib.rs (target/debug/deps/windows_sys-557f7383154fb0a7)
 
 running 0 tests

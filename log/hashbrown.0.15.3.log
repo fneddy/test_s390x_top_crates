@@ -1,45 +1,44 @@
 [hashbrown] download directory: /var/tmp/top100_artifacts/hashbrown-0.15.3
-+ curl -sL https://crates.io/api/v1/crates/hashbrown/0.15.3/download
 + tar xzf -
++ curl -sL https://crates.io/api/v1/crates/hashbrown/0.15.3/download
 + cd /var/tmp/top100_artifacts/hashbrown-0.15.3
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
     Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
    Compiling crossbeam-utils v0.8.21
    Compiling libc v0.2.172
-   Compiling getrandom v0.3.2
    Compiling zerocopy v0.8.25
+   Compiling getrandom v0.3.2
    Compiling cfg-if v1.0.0
    Compiling rayon-core v1.12.1
    Compiling serde v1.0.219
-   Compiling allocator-api2 v0.2.21
    Compiling crossbeam-epoch v0.9.18
    Compiling doc-comment v0.3.3
    Compiling crossbeam-deque v0.8.6
    Compiling rand_core v0.9.3
-   Compiling either v1.15.0
-   Compiling ppv-lite86 v0.2.21
-   Compiling equivalent v1.0.2
+   Compiling allocator-api2 v0.2.21
    Compiling foldhash v0.1.5
-   Compiling rand_chacha v0.9.0
+   Compiling either v1.15.0
+   Compiling equivalent v1.0.2
    Compiling rayon v1.10.0
-   Compiling rand v0.9.1
    Compiling bumpalo v3.17.0
-   Compiling fnv v1.0.7
+   Compiling ppv-lite86 v0.2.21
    Compiling lazy_static v1.5.0
+   Compiling fnv v1.0.7
    Compiling hashbrown v0.15.3 (/var/tmp/top100_artifacts/hashbrown-0.15.3)
+   Compiling rand_chacha v0.9.0
+   Compiling rand v0.9.1
    Compiling serde_test v1.0.177
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 19.99s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 17.99s
      Running unittests src/lib.rs (target/debug/deps/hashbrown-67aa4cb6408b2dba)
 
 running 102 tests
+test map::test_map::test_capacity_not_less_than_len ... ok
 test map::test_map::test_allocation_info ... ok
 test map::test_map::test_behavior_resize_policy ... ok
 test map::test_map::test_clone ... ok
-test map::test_map::test_catch_panic_clone_from_when_len_is_equal ... ok
+test map::test_map::test_clone_from ... ok
 test map::test_map::test_clone_from_double_drop - should panic ... ok
 test map::test_map::test_clone_from_memory_leaks - should panic ... ok
 test map::test_map::test_clone_memory_leaks_and_double_drop_one - should panic ... ok
@@ -48,98 +47,97 @@ test map::test_map::test_conflict_remove ... ok
 test map::test_map::test_const_with_hasher ... ok
 test map::test_map::test_create_capacity_zero ... ok
 test map::test_map::test_drops ... ok
+test map::test_map::test_catch_panic_clone_from_when_len_is_equal ... ok
 test map::test_map::test_empty_entry ... ok
 test map::test_map::test_empty_entry_ref ... ok
-test map::test_map::test_empty_iter ... ok
 test map::test_map::test_empty_remove ... ok
 test map::test_map::test_entry ... ok
 test map::test_map::test_entry_and_replace_entry_with ... ok
 test map::test_map::test_entry_ref ... ok
 test map::test_map::test_entry_ref_take_doesnt_corrupt ... ok
 test map::test_map::test_entry_take_doesnt_corrupt ... ok
-test map::test_map::test_eq ... ok
 test map::test_map::test_expand ... ok
 test map::test_map::test_extend_ref_k_ref_v ... ok
-test map::test_map::test_extend_ref_kv_tuple ... ok
+test map::test_map::test_eq ... ok
 test map::test_map::test_extract_if ... ok
+test map::test_map::test_catch_panic_clone_from_when_len_is_not_equal ... ok
 test map::test_map::test_find ... ok
 test map::test_map::test_find_mut ... ok
 test map::test_map::test_from_iter ... ok
-test map::test_map::test_get_many_mut ... ok
 test map::test_map::test_get_many_mut_duplicate - should panic ... ok
-test map::test_map::test_hashmap_into_iter_bug ... ok
+test map::test_map::test_get_many_mut ... ok
 test map::test_map::test_index ... ok
+test map::test_map::test_hashmap_into_iter_bug ... ok
+test map::test_map::test_empty_iter ... ok
 test map::test_map::test_index_nonexistent - should panic ... ok
 test map::test_map::test_insert ... ok
+test map::test_map::test_extend_ref_kv_tuple ... ok
 test map::test_map::test_insert_conflicts ... ok
-test map::test_map::test_capacity_not_less_than_len ... ok
-test map::test_map::test_insert_unique_unchecked ... ok
-test map::test_map::test_clone_from ... ok
-test map::test_map::test_insert_overwrite ... ok
-test map::test_map::test_catch_panic_clone_from_when_len_is_not_equal ... ok
 test map::test_map::test_into_iter_drops ... ok
-test map::test_map::test_into_keys ... ok
 test map::test_map::test_into_values ... ok
-test map::test_map::test_iterate ... ok
-test map::test_map::test_keys ... ok
 test map::test_map::test_is_empty ... ok
+test map::test_map::test_into_keys ... ok
 test map::test_map::test_iter_len ... ok
 test map::test_map::test_iter_mut_len ... ok
-test map::test_map::test_occupied_entry_key ... ok
+test map::test_map::test_iterate ... ok
+test map::test_map::test_keys ... ok
+test map::test_map::test_insert_overwrite ... ok
 test map::test_map::test_mut_size_hint ... ok
+test map::test_map::test_occupied_entry_key ... ok
+test map::test_map::test_insert_unique_unchecked ... ok
 test map::test_map::test_occupied_entry_ref_key ... ok
 test map::test_map::test_occupied_entry_replace_entry_with ... ok
 test map::test_map::test_remove ... ok
 test map::test_map::test_remove_entry ... ok
 test map::test_map::test_reserve_shrink_to_fit ... ok
 test map::test_map::test_replace_entry_with_doesnt_corrupt ... ok
-test map::test_map::test_retain ... ok
 test map::test_map::test_show ... ok
-test map::test_map::test_size_hint ... ok
+test map::test_map::test_retain ... ok
 test map::test_map::test_vacant_entry_key ... ok
+test map::test_map::test_size_hint ... ok
+test map::test_map::test_try_reserve ... ok
 test map::test_map::test_vacant_entry_ref_key ... ok
-test map::test_map::test_values_mut ... ok
-test map::test_map::test_zero_capacities ... ok
+test map::test_map::test_values ... ok
 test raw::test_map::rehash ... ok
 test raw::test_map::test_catch_panic_clone_from ... ok
 test raw::test_map::test_drop_uninitialized ... ok
 test raw::test_map::test_drop_zero_items ... ok
 test raw::test_map::test_minimum_capacity_for_small_types ... ok
+test map::test_map::test_values_mut ... ok
+test map::test_map::test_zero_capacities ... ok
 test raw_entry::test_map::test_key_without_hash_impl ... ok
 test raw_entry::test_map::test_raw_entry ... ok
-test raw_entry::test_map::test_raw_entry_and_replace_entry_with ... ok
 test raw_entry::test_map::test_raw_occupied_entry_replace_entry_with ... ok
-test map::test_map::test_try_reserve ... ok
-test map::test_map::test_values ... ok
-test set::test_set::duplicate_insert ... ok
 test set::test_set::collect ... ok
+test set::test_set::duplicate_insert ... ok
 test set::test_set::rehash_in_place ... ok
 test set::test_set::some_invalid_equivalent - should panic ... ok
+test set::test_set::test_const_with_hasher ... ok
 test set::test_set::test_difference ... ok
 test set::test_set::test_disjoint ... ok
 test set::test_set::test_drain ... ok
-test set::test_set::test_const_with_hasher ... ok
-test set::test_set::test_extend_ref ... ok
-test set::test_set::test_eq ... ok
 test set::test_set::test_allocation_info ... ok
+test set::test_set::test_extend_ref ... ok
 test set::test_set::test_extract_if ... ok
 test set::test_set::test_from_iter ... ok
 test set::test_set::test_from_map ... ok
 test set::test_set::test_intersection ... ok
-test set::test_set::test_move_iter ... ok
 test set::test_set::test_iterate ... ok
+test set::test_set::test_move_iter ... ok
+test set::test_set::test_replace ... ok
 test set::test_set::test_retain ... ok
 test set::test_set::test_show ... ok
+test set::test_set::test_subset_and_superset ... ok
 test set::test_set::test_symmetric_difference ... ok
 test set::test_set::test_trivial_drain ... ok
 test set::test_set::test_union ... ok
 test set::test_set::test_zero_capacities ... ok
 test table::tests::test_allocation_info ... ok
-test set::test_set::test_replace ... ok
-test set::test_set::test_subset_and_superset ... ok
+test set::test_set::test_eq ... ok
+test raw_entry::test_map::test_raw_entry_and_replace_entry_with ... ok
 test map::test_map::test_lots_of_insertions ... ok
 
-test result: ok. 102 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 8.46s
+test result: ok. 102 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 7.63s
 
      Running tests/equivalent_trait.rs (target/debug/deps/equivalent_trait-eaa5e45d9289f645)
 
@@ -147,7 +145,7 @@ running 2 tests
 test test_lookup ... ok
 test test_string_str ... ok
 
-test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
 
      Running tests/hasher.rs (target/debug/deps/hasher-68f19f0c0fc1291f)
 
@@ -157,7 +155,7 @@ test random_state ... ok
 test max ... ok
 test zero ... ok
 
-test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.15s
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.16s
 
      Running tests/rayon.rs (target/debug/deps/rayon-3ab2786e56be25bc)
 
@@ -176,7 +174,7 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 running 1 test
 test test_hashset_insert_remove ... ok
 
-test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.74s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.79s
 
 + RESULT=0
 + cd /var/tmp/top100_artifacts

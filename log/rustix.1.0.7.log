@@ -8,68 +8,67 @@
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
    Compiling autocfg v1.4.0
    Compiling libc v0.2.172
    Compiling cfg-if v1.0.0
    Compiling proc-macro2 v1.0.95
    Compiling futures-core v0.3.31
-   Compiling unicode-ident v1.0.18
-   Compiling futures-sink v0.3.31
    Compiling parking_lot_core v0.9.10
-   Compiling futures-channel v0.3.31
+   Compiling unicode-ident v1.0.18
    Compiling slab v0.4.9
    Compiling lock_api v0.4.12
-   Compiling memchr v2.7.4
-   Compiling futures-task v0.3.31
+   Compiling futures-sink v0.3.31
+   Compiling futures-channel v0.3.31
+   Compiling smallvec v1.15.0
    Compiling futures-io v0.3.31
+   Compiling futures-task v0.3.31
+   Compiling memchr v2.7.4
+   Compiling scopeguard v1.2.0
    Compiling pin-project-lite v0.2.16
    Compiling pin-utils v0.1.0
-   Compiling smallvec v1.15.0
-   Compiling scopeguard v1.2.0
-   Compiling futures-util v0.3.31
    Compiling quote v1.0.40
+   Compiling futures-util v0.3.31
+   Compiling once_cell v1.20.3
    Compiling rustix v1.0.6
    Compiling getrandom v0.3.2
-   Compiling once_cell v1.20.3
    Compiling syn v2.0.101
    Compiling errno v0.3.11
    Compiling memoffset v0.9.1
-   Compiling hashbrown v0.12.3
-   Compiling adler2 v2.0.0
-   Compiling bitflags v2.9.0
    Compiling linux-raw-sys v0.9.4
-   Compiling dashmap v5.4.0
+   Compiling bitflags v2.9.0
+   Compiling adler2 v2.0.0
+   Compiling hashbrown v0.12.3
    Compiling miniz_oxide v0.8.8
+   Compiling dashmap v5.4.0
    Compiling parking_lot v0.12.3
+   Compiling crc32fast v1.4.2
+   Compiling rustix v1.0.7 (/var/tmp/top100_artifacts/rustix-1.0.7)
    Compiling futures-executor v0.3.31
    Compiling futures v0.3.31
-   Compiling crc32fast v1.4.2
+   Compiling log v0.4.27
    Compiling fastrand v2.3.0
    Compiling lazy_static v1.5.0
-   Compiling log v0.4.27
-   Compiling rustix v1.0.7 (/var/tmp/top100_artifacts/rustix-1.0.7)
-   Compiling tempfile v3.19.1
    Compiling flate2 v1.0.35
    Compiling static_assertions v1.1.0
+   Compiling tempfile v3.19.1
    Compiling serial_test_derive v2.0.0
    Compiling serial_test v2.0.0
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 11.70s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 11.53s
      Running unittests src/lib.rs (target/debug/deps/rustix-547a825d9bbeb264)
 
 running 10 tests
-test buffer::tests::test_slice ... ok
 test backend::c::tests::test_flags ... ok
+test buffer::tests::test_compilation ... ok
 test buffer::tests::test_slice_uninit ... ok
 test buffer::tests::test_spare_capacity ... ok
 test cstr::tests::test_cstr ... ok
 test cstr::tests::test_invalid_cstr - should panic ... ok
-test buffer::tests::test_compilation ... ok
 test cstr::tests::test_invalid_empty_cstr - should panic ... ok
 test ioctl::linux::tests::check_known_opcodes ... ok
 test ioctl::tests::test_opcode_funcs ... ok
+test buffer::tests::test_slice ... ok
 
-test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 
 + RESULT=0
 + cd /var/tmp/top100_artifacts

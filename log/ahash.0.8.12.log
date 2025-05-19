@@ -23,68 +23,68 @@ warning: file `/var/tmp/top100_artifacts/ahash-0.8.12/tests/bench.rs` found to b
    Compiling libc v0.2.172
    Compiling cfg-if v1.0.0
    Compiling zerocopy v0.8.25
+   Compiling proc-macro2 v1.0.95
    Compiling version_check v0.9.5
    Compiling crossbeam-utils v0.8.21
    Compiling serde v1.0.219
-   Compiling proc-macro2 v1.0.95
    Compiling unicode-ident v1.0.18
-   Compiling memchr v2.7.4
    Compiling autocfg v1.4.0
-   Compiling crossbeam-epoch v0.9.18
+   Compiling memchr v2.7.4
    Compiling num-traits v0.2.19
-   Compiling quote v1.0.40
+   Compiling crossbeam-epoch v0.9.18
    Compiling getrandom v0.2.16
-   Compiling ryu v1.0.20
+   Compiling quote v1.0.40
+   Compiling rayon-core v1.12.1
    Compiling either v1.15.0
+   Compiling ryu v1.0.20
    Compiling itoa v1.0.15
    Compiling serde_json v1.0.140
-   Compiling rayon-core v1.12.1
    Compiling syn v2.0.101
    Compiling rand_core v0.6.4
    Compiling crossbeam-deque v0.8.6
    Compiling ahash v0.8.12
-   Compiling getrandom v0.3.3
-   Compiling plotters-backend v0.3.7
-   Compiling regex-syntax v0.8.5
    Compiling unicode-width v0.1.14
+   Compiling regex-syntax v0.8.5
+   Compiling plotters-backend v0.3.7
    Compiling once_cell v1.21.3
+   Compiling getrandom v0.3.3
+   Compiling plotters-svg v0.3.7
    Compiling textwrap v0.11.0
    Compiling regex-automata v0.4.9
-   Compiling plotters-svg v0.3.7
    Compiling itertools v0.10.5
-   Compiling ppv-lite86 v0.2.21
    Compiling csv-core v0.1.12
+   Compiling ppv-lite86 v0.2.21
    Compiling ahash v0.8.12 (/var/tmp/top100_artifacts/ahash-0.8.12)
-   Compiling half v1.8.3
-   Compiling no-panic v0.1.35
    Compiling same-file v1.0.6
    Compiling cast v0.3.0
+   Compiling half v1.8.3
+   Compiling no-panic v0.1.35
    Compiling bitflags v1.3.2
    Compiling clap v2.34.0
-   Compiling walkdir v2.5.0
-   Compiling criterion-plot v0.4.5
    Compiling serde_cbor v0.11.2
-   Compiling csv v1.3.1
+   Compiling criterion-plot v0.4.5
+   Compiling walkdir v2.5.0
    Compiling rand_chacha v0.3.1
-   Compiling plotters v0.3.7
-   Compiling rayon v1.10.0
+   Compiling csv v1.3.1
    Compiling serde_derive v1.0.219
+   Compiling rayon v1.10.0
    Compiling regex v1.11.1
    Compiling tinytemplate v1.2.1
+   Compiling plotters v0.3.7
    Compiling atty v0.2.14
-   Compiling byteorder v1.5.0
-   Compiling oorandom v11.1.5
-   Compiling lazy_static v1.5.0
    Compiling allocator-api2 v0.2.21
+   Compiling oorandom v11.1.5
+   Compiling byteorder v1.5.0
+   Compiling lazy_static v1.5.0
    Compiling hashbrown v0.14.5
-   Compiling criterion v0.3.6
    Compiling fxhash v0.2.1
    Compiling rand v0.8.5
+   Compiling criterion v0.3.6
    Compiling pcg-mwc v0.2.1
    Compiling fnv v1.0.7
    Compiling seahash v4.1.0
-   Compiling hex v0.4.3
    Compiling smallvec v1.15.0
+   Compiling hex v0.4.3
 warning: unexpected `cfg` condition value: `128`
    --> src/fallback_hash.rs:164:11
     |
@@ -153,21 +153,21 @@ warning: unused import: `RngCore`
 
 warning: `ahash` (lib test) generated 4 warnings (4 duplicates)
 warning: `ahash` (test "map_tests") generated 1 warning (run `cargo fix --test "map_tests"` to apply 1 suggestion)
-    Finished `test` profile [optimized + debuginfo] target(s) in 48.97s
+    Finished `test` profile [optimized + debuginfo] target(s) in 39.82s
      Running unittests src/lib.rs (target/debug/deps/ahash-02959fc29754387e)
 
 running 32 tests
 test fallback_hash::tests::test_hash ... ok
+test hash_map::test::test_borrow ... ok
 test hash_quality_test::fallback_tests::fallback_finish_is_consistant ... ok
 test hash_quality_test::fallback_tests::fallback_all_bytes_matter ... ok
 test hash_quality_test::fallback_tests::fallback_keys_change_output ... ok
-test hash_quality_test::fallback_tests::fallback_input_affect_every_byte ... ok
 test hash_quality_test::fallback_tests::fallback_length_extension ... ok
-test hash_quality_test::fallback_tests::fallback_keys_affect_every_byte ... ok
+test hash_quality_test::fallback_tests::fallback_input_affect_every_byte ... ok
 test hash_quality_test::fallback_tests::fallback_single_bit_flip ... ok
+test hash_quality_test::fallback_tests::fallback_keys_affect_every_byte ... ok
 test hash_quality_test::fallback_tests::fallback_single_key_bit_flip ... ok
 test hash_quality_test::fallback_tests::fallback_test_no_pair_collisions ... ok
-test hash_map::test::test_borrow ... ok
 test operations::test::test_add_length ... ok
 test operations::test::test_shuffle_contains_each_value ... ok
 test operations::test::test_shuffle_moves_every_value ... ok
@@ -180,17 +180,17 @@ test specialize::test::test_ref_independent ... ok
 test test::test_ahash_alias_map_construction ... ok
 test test::test_ahash_alias_set_construction ... ok
 test test::test_ahasher_construction ... ok
-test hash_quality_test::fallback_tests::fallback_padding_doesnot_collide ... ok
+test test::test_builder ... ok
 test test::test_conversion ... ok
 test test::test_default_builder ... ok
 test test::test_non_zero ... ok
 test test::test_non_zero_specialized ... ok
 test test::test_specialize_reference_hash ... ok
-test test::test_builder ... ok
+test hash_quality_test::fallback_tests::fallback_padding_doesnot_collide ... ok
 test hash_quality_test::fallback_tests::test_no_sparse_collisions ... ok
 test hash_quality_test::fallback_tests::fallback_test_no_full_collisions ... ok
 
-test result: ok. 32 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 18.93s
+test result: ok. 32 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 15.65s
 
      Running tests/bench.rs (target/debug/deps/bench-046552eff27c9fb1)
 
@@ -201,13 +201,13 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
      Running tests/map_tests.rs (target/debug/deps/map_tests-658d4b95fca10e85)
 
 running 5 tests
-test test_ahash_alias_set_construction ... ok
 test test_ahash_alias_map_construction ... ok
+test test_ahash_alias_set_construction ... ok
 test test_key_ref ... ok
 test test_byte_dist ... ok
 test test_bucket_distribution ... ok
 
-test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.17s
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.16s
 
      Running tests/nopanic.rs (target/debug/deps/nopanic-8f1034b7f3ca5d10)
 

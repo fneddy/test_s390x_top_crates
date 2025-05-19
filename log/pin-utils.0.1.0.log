@@ -1,12 +1,14 @@
 [pin-utils] download directory: /var/tmp/top100_artifacts/pin-utils-0.1.0
-+ tar xzf -
 + curl -sL https://crates.io/api/v1/crates/pin-utils/0.1.0/download
++ tar xzf -
 + cd /var/tmp/top100_artifacts/pin-utils-0.1.0
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
    Compiling pin-utils v0.1.0 (/var/tmp/top100_artifacts/pin-utils-0.1.0)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.47s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.61s
      Running unittests src/lib.rs (target/debug/deps/pin_utils-9096e987f28aa9cf)
 
 running 0 tests

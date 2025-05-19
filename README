@@ -1,22 +1,19 @@
-Testresults as of Mon May 19 03:43:05 PM CEST 2025
-PASS: 83
-FAIL: 17
+Testresults as of Mon May 19 08:10:12 PM CEST 2025
+PASS: 85
+FAIL: 14
 
 FAILED_CRATES:
 [1/100] syn 2.0.0 fail
 [12/100] cfg-if 1.0.0 fail
-[19/100] memchr 2.7.4 fail
-[21/100] once_cell 1.21.3 fail
-[28/100] regex-automata 0.4.9 fail
-[36/100] lazy_static 1.5.0 fail
-[44/100] idna 1.0.3 fail
-[52/100] pin-project-lite 0.2.16 fail
-[67/100] hyper 1.6.0 fail
-[79/100] num_cpus 1.16.0 fail
-[82/100] futures-channel 0.3.31 fail
-[83/100] rustls 0.23.27 fail
-[85/100] tracing 0.1.41 fail
-[90/100] futures 0.3.31 fail
-[94/100] num-integer 0.1.46 fail
-[95/100] tokio-util 0.7.15 fail
-[100/100] h2 0.4.10 fail
+[20/100] once_cell 1.21.3 fail
+[35/100] lazy_static 1.5.0 fail
+[43/100] idna 1.0.3 fail
+[51/100] pin-project-lite 0.2.16 fail
+[66/100] hyper 1.6.0 fail
+[78/100] num_cpus 1.16.0 fail
+[81/100] rustls 0.23.27 fail
+[84/100] tracing 0.1.41 fail
+[89/100] futures 0.3.31 fail
+[93/100] num-integer 0.1.46 fail
+[94/100] tokio-util 0.7.15 fail
+[99/100] h2 0.4.10 fail

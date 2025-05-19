@@ -1,0 +1,106 @@
+[regex-automata] download directory: /var/tmp/top100_artifacts/regex-automata-regex-automata-0.4.9
++ git clone -c advice.detachedHead=false -q --branch regex-automata-0.4.9 --depth 1 https://github.com/rust-lang/regex.git .
+warning: refs/tags/regex-automata-0.4.9 5bdf344f6d08ff4e4e1b3315c8873a18fb87435a is not a commit!
++ cargo clean
+     Removed 0 files
++ cargo +stable test --manifest-path regex-automata/Cargo.toml --test integration
+    Updating crates.io index
+     Locking 54 packages to latest compatible versions
+      Adding env_logger v0.9.3 (available: v0.11.8)
+   Compiling proc-macro2 v1.0.95
+   Compiling unicode-ident v1.0.18
+   Compiling serde v1.0.219
+   Compiling libc v0.2.172
+   Compiling hashbrown v0.15.3
+   Compiling equivalent v1.0.2
+   Compiling memchr v2.7.4
+   Compiling quote v1.0.40
+   Compiling syn v2.0.101
+   Compiling cfg-if v1.0.0
+   Compiling indexmap v2.9.0
+   Compiling getrandom v0.2.16
+   Compiling anyhow v1.0.98
+   Compiling winnow v0.7.10
+   Compiling rand_core v0.6.4
+   Compiling doc-comment v0.3.3
+   Compiling rand v0.8.5
+   Compiling atty v0.2.14
+   Compiling aho-corasick v1.1.3
+   Compiling regex-syntax v0.8.5 (/var/tmp/top100_artifacts/regex-automata-regex-automata-0.4.9/regex-syntax)
+   Compiling serde_derive v1.0.219
+   Compiling log v0.4.27
+   Compiling termcolor v1.4.1
+   Compiling humantime v2.2.0
+   Compiling regex-automata v0.4.9 (/var/tmp/top100_artifacts/regex-automata-regex-automata-0.4.9/regex-automata)
+   Compiling toml_datetime v0.6.9
+   Compiling serde_spanned v0.6.8
+   Compiling toml_edit v0.22.26
+   Compiling bstr v1.12.0
+   Compiling env_logger v0.9.3
+   Compiling toml v0.8.22
+   Compiling regex-test v0.1.1 (/var/tmp/top100_artifacts/regex-automata-regex-automata-0.4.9/regex-test)
+   Compiling quickcheck v1.0.3
+    Finished `test` profile [optimized + debuginfo] target(s) in 49.30s
+     Running tests/lib.rs (target/debug/deps/integration-32b9d119632683c2)
+
+running 53 tests
+test dfa::api::quit_panics - should panic ... ok
+test dfa::api::quit_rev ... ok
+test dfa::api::quit_fwd ... ok
+test dfa::api::unicode_word_implicitly_works ... ok
+test dfa::onepass::suite::default ... ok
+test dfa::onepass::suite::starts_for_each_pattern ... ok
+test dfa::onepass::suite::no_byte_classes ... ok
+test dfa::regression::minimize_sets_correct_match_states ... ok
+test dfa::suite::serialization_unminimized_default ... ok
+test dfa::suite::sparse_serialization_unminimized_default ... ok
+test dfa::suite::minimized_default ... ok
+test dfa::suite::sparse_unminimized_default ... ok
+test dfa::suite::sparse_unminimized_prefilter ... ok
+test dfa::suite::unminimized_default ... ok
+test dfa::suite::unminimized_nfa_shrink ... ok
+test dfa::suite::unminimized_prefilter ... ok
+test fuzz::dense::invalid_byte_classes ... ok
+test fuzz::dense::invalid_byte_classes_min ... ok
+test fuzz::sparse::eoi_transition_to_quit_state ... ok
+test fuzz::sparse::invalid_accelerators ... ok
+test fuzz::sparse::invalid_special_state ... ok
+test fuzz::sparse::match_state_inconsistency ... ok
+test fuzz::sparse::start_state_has_valid_transitions ... ok
+test fuzz::sparse::start_state_is_not_match_state ... ok
+test fuzz::sparse::transition_to_invalid_but_valid_state ... ok
+test gen::dense::multi_pattern_v2 ... ok
+test gen::sparse::multi_pattern_v2 ... ok
+test hybrid::api::quit_fwd ... ok
+test hybrid::api::quit_panics - should panic ... ok
+test hybrid::api::quit_rev ... ok
+test hybrid::api::too_many_cache_resets_cause_quit ... ok
+test hybrid::api::unicode_word_implicitly_works ... ok
+test dfa::suite::unminimized_specialized_start_states ... ok
+test hybrid::suite::default ... ok
+test hybrid::suite::min_cache_capacity ... ok
+test hybrid::suite::no_byte_classes ... ok
+test hybrid::suite::no_cache_clearing ... ok
+test hybrid::suite::prefilter ... ok
+test hybrid::suite::specialize_start_states ... ok
+test hybrid::suite::starts_for_each_pattern ... ok
+test meta::suite::default ... ok
+test dfa::suite::unminimized_no_byte_class ... ok
+test meta::suite::no_dfa ... ok
+test meta::suite::no_dfa_hybrid ... ok
+test meta::suite::no_dfa_hybrid_onepass ... ok
+test dfa::suite::minimized_no_byte_class ... ok
+test nfa::thompson::backtrack::suite::default ... ok
+test meta::suite::no_dfa_hybrid_onepass_backtrack ... ok
+test nfa::thompson::backtrack::suite::min_visited_capacity ... ok
+test nfa::thompson::pikevm::suite::default ... ok
+test nfa::thompson::backtrack::suite::prefilter ... ok
+test hybrid::suite::nfa_shrink ... ok
+test nfa::thompson::pikevm::suite::prefilter ... ok
+
+test result: ok. 53 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 15.09s
+
++ RESULT=0
++ cd /var/tmp/top100_artifacts
++ rm -rf /var/tmp/top100_artifacts/regex-automata-regex-automata-0.4.9
++ exit 0

@@ -60,8 +60,8 @@ test result: ok. 21 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fin
 running 10 tests
 test clone ... ok
 test debug ... ok
-test different_sizes ... ok
 test default ... ok
+test different_sizes ... ok
 test distance ... ok
 test drops ... ok
 test large ... ok
@@ -84,19 +84,19 @@ test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 
 running 15 tests
 test arc_no_poison_rr ... ok
+test arc ... ok
 test arc_access_in_unwind ... ok
 test arc_no_poison_sl ... ok
-test arc ... ok
-test smoke ... ok
 test arc_poison_wr ... ok
+test smoke ... ok
 test test_get_mut ... ok
 test test_into_inner ... ok
+test test_get_mut_poison ... ok
 test test_into_inner_drop ... ok
 test test_into_inner_poison ... ok
-test try_write ... ok
-test unsized_type ... ok
 test arc_poison_ww ... ok
-test test_get_mut_poison ... ok
+test unsized_type ... ok
+test try_write ... ok
 test frob ... ok
 
 test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
@@ -105,8 +105,8 @@ test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fin
 
 running 10 tests
 test counter ... ok
-test counter_builder ... ok
 test join ... ok
+test counter_builder ... ok
 test nesting ... ok
 test panic_many ... ok
 test as_pthread_t ... ok
@@ -123,7 +123,7 @@ running 2 tests
 test wait_and_drop ... ok
 test wait ... ok
 
-test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.11s
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
 
 + RESULT=0
 + cd /var/tmp/top100_artifacts

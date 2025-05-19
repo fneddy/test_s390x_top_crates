@@ -5,6 +5,7 @@
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
+    Blocking waiting for file lock on package cache
     Updating crates.io index
     Blocking waiting for file lock on package cache
      Locking 31 packages to latest compatible versions
@@ -41,24 +42,24 @@ warning: unexpected `cfg` condition name: `tsan_enabled`
     = note: `#[warn(unexpected_cfgs)]` on by default
 
 warning: `parking_lot_core` (lib test) generated 2 warnings (run `cargo fix --lib -p parking_lot_core --tests` to apply 1 suggestion)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 4.10s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.17s
      Running unittests src/lib.rs (target/debug/deps/parking_lot_core-b47c17bfde195c77)
 
 running 12 tests
 test parking_lot::tests::hundred_unpark_all_one ... ok
 test parking_lot::tests::unpark_all_one ... ok
 test parking_lot::tests::unpark_all_one_fast ... ok
-test parking_lot::tests::unpark_one_fifty ... ok
-test parking_lot::tests::unpark_one_fifty_then_fifty_all ... ok
-test parking_lot::tests::unpark_all_hundred_fast ... ok
 test parking_lot::tests::unpark_all_hundred ... ok
+test parking_lot::tests::unpark_all_hundred_fast ... ok
+test parking_lot::tests::unpark_one_fifty ... ok
+test parking_lot::tests::unpark_one_hundred_fast ... ok
+test parking_lot::tests::unpark_one_fifty_then_fifty_all ... ok
 test parking_lot::tests::unpark_one_one ... ok
 test parking_lot::tests::unpark_one_one_fast ... ok
-test parking_lot::tests::unpark_one_hundred_fast ... ok
 test parking_lot::tests::unpark_one_fifty_then_fifty_all_fast ... ok
 test parking_lot::tests::hundred_unpark_all_one_fast ... ok
 
-test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 24.23s
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 14.51s
 
 + RESULT=0
 + cd /var/tmp/top100_artifacts

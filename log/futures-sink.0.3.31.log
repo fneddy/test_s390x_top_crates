@@ -1,13 +1,12 @@
 [futures-sink] download directory: /var/tmp/top100_artifacts/futures-sink-0.3.31
-+ curl -sL https://crates.io/api/v1/crates/futures-sink/0.3.31/download
 + tar xzf -
++ curl -sL https://crates.io/api/v1/crates/futures-sink/0.3.31/download
 + cd /var/tmp/top100_artifacts/futures-sink-0.3.31
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
-    Blocking waiting for file lock on package cache
    Compiling futures-sink v0.3.31 (/var/tmp/top100_artifacts/futures-sink-0.3.31)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.30s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.21s
      Running unittests src/lib.rs (target/debug/deps/futures_sink-45151aa4ada4ab19)
 
 running 0 tests

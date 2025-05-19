@@ -1,13 +1,15 @@
 [windows_x86_64_gnu] download directory: /var/tmp/top100_artifacts/windows_x86_64_gnu-0.53.0
-+ curl -sL https://crates.io/api/v1/crates/windows_x86_64_gnu/0.53.0/download
 + tar xzf -
++ curl -sL https://crates.io/api/v1/crates/windows_x86_64_gnu/0.53.0/download
 + cd /var/tmp/top100_artifacts/windows_x86_64_gnu-0.53.0
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
     Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
    Compiling windows_x86_64_gnu v0.53.0 (/var/tmp/top100_artifacts/windows_x86_64_gnu-0.53.0)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.90s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.09s
      Running unittests src/lib.rs (target/debug/deps/windows_x86_64_gnu-fa49a0f55e633564)
 
 running 0 tests

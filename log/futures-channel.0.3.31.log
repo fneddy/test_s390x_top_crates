@@ -1,201 +1,126 @@
 [futures-channel] download directory: /var/tmp/top100_artifacts/futures-channel-0.3.31
-+ curl -sL https://crates.io/api/v1/crates/futures-channel/0.3.31/download
-+ tar xzf -
-+ cd /var/tmp/top100_artifacts/futures-channel-0.3.31
++ git clone -c advice.detachedHead=false -q --branch 0.3.31 --depth 1 https://github.com/rust-lang/futures-rs.git .
 + cargo clean
      Removed 0 files
-+ cargo +stable test ''
++ cargo +stable test --manifest-path futures-channel/Cargo.toml
+    Blocking waiting for file lock on package cache
     Updating crates.io index
     Blocking waiting for file lock on package cache
-     Locking 2 packages to latest compatible versions
+     Locking 68 packages to latest compatible versions
+      Adding futures v0.1.31 (available: v0.3.31)
+      Adding tokio v0.1.22 (available: v1.45.0)
     Blocking waiting for file lock on package cache
-   Compiling futures-core v0.3.31
-   Compiling futures-channel v0.3.31 (/var/tmp/top100_artifacts/futures-channel-0.3.31)
-error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures`
- --> tests/mpsc.rs:1:5
-  |
-1 | use futures::channel::{mpsc, oneshot};
-  |     ^^^^^^^ use of unresolved module or unlinked crate `futures`
-  |
-  = help: if you wanted to use a crate named `futures`, use `cargo add futures` to add it to your `Cargo.toml`
+   Compiling proc-macro2 v1.0.95
+   Compiling unicode-ident v1.0.18
+   Compiling autocfg v1.4.0
+   Compiling futures-core v0.3.31 (/var/tmp/top100_artifacts/futures-channel-0.3.31/futures-core)
+   Compiling futures-sink v0.3.31 (/var/tmp/top100_artifacts/futures-channel-0.3.31/futures-sink)
+   Compiling pin-utils v0.1.0
+   Compiling futures-channel v0.3.31 (/var/tmp/top100_artifacts/futures-channel-0.3.31/futures-channel)
+   Compiling futures-task v0.3.31 (/var/tmp/top100_artifacts/futures-channel-0.3.31/futures-task)
+   Compiling pin-project-lite v0.2.16
+   Compiling memchr v2.7.4
+   Compiling slab v0.4.9
+   Compiling futures-io v0.3.31 (/var/tmp/top100_artifacts/futures-channel-0.3.31/futures-io)
+   Compiling quote v1.0.40
+   Compiling syn v2.0.101
+   Compiling futures-macro v0.3.31 (/var/tmp/top100_artifacts/futures-channel-0.3.31/futures-macro)
+   Compiling pin-project-internal v1.1.10
+   Compiling futures-util v0.3.31 (/var/tmp/top100_artifacts/futures-channel-0.3.31/futures-util)
+   Compiling pin-project v1.1.10
+   Compiling futures-executor v0.3.31 (/var/tmp/top100_artifacts/futures-channel-0.3.31/futures-executor)
+   Compiling futures v0.3.31 (/var/tmp/top100_artifacts/futures-channel-0.3.31/futures)
+   Compiling futures-test v0.3.31 (/var/tmp/top100_artifacts/futures-channel-0.3.31/futures-test)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 19.53s
+     Running unittests src/lib.rs (target/debug/deps/futures_channel-32437f923b0bad4d)
 
-error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures`
- --> tests/mpsc.rs:2:5
-  |
-2 | use futures::executor::{block_on, block_on_stream};
-  |     ^^^^^^^ use of unresolved module or unlinked crate `futures`
-  |
-  = help: if you wanted to use a crate named `futures`, use `cargo add futures` to add it to your `Cargo.toml`
+running 1 test
+test lock::tests::smoke ... ok
 
-error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures`
- --> tests/mpsc.rs:3:5
-  |
-3 | use futures::future::{poll_fn, FutureExt};
-  |     ^^^^^^^ use of unresolved module or unlinked crate `futures`
-  |
-  = help: if you wanted to use a crate named `futures`, use `cargo add futures` to add it to your `Cargo.toml`
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 
-error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures`
- --> tests/mpsc.rs:5:5
-  |
-5 | use futures::sink::{Sink, SinkExt};
-  |     ^^^^^^^ use of unresolved module or unlinked crate `futures`
-  |
-  = help: if you wanted to use a crate named `futures`, use `cargo add futures` to add it to your `Cargo.toml`
+     Running tests/channel.rs (target/debug/deps/channel-718287e10fccd4f8)
 
-error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures`
- --> tests/mpsc.rs:6:5
-  |
-6 | use futures::stream::{Stream, StreamExt};
-  |     ^^^^^^^ use of unresolved module or unlinked crate `futures`
-  |
-  = help: if you wanted to use a crate named `futures`, use `cargo add futures` to add it to your `Cargo.toml`
+running 4 tests
+test drop_order ... ok
+test drop_rx ... ok
+test drop_sender ... ok
+test sequence ... ok
 
-error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures`
- --> tests/mpsc.rs:7:5
-  |
-7 | use futures::task::{Context, Poll};
-  |     ^^^^^^^ use of unresolved module or unlinked crate `futures`
-  |
-  = help: if you wanted to use a crate named `futures`, use `cargo add futures` to add it to your `Cargo.toml`
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
 
-error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures_test`
- --> tests/mpsc.rs:8:5
-  |
-8 | use futures_test::task::{new_count_waker, noop_context};
-  |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `futures_test`
-  |
-help: there is a crate or module with a similar name
-  |
-8 - use futures_test::task::{new_count_waker, noop_context};
-8 + use futures_core::task::{new_count_waker, noop_context};
-  |
+     Running tests/mpsc.rs (target/debug/deps/mpsc-03a0413207364fde)
 
-error[E0432]: unresolved import `futures`
- --> tests/mpsc.rs:4:5
-  |
-4 | use futures::pin_mut;
-  |     ^^^^^^^ use of unresolved module or unlinked crate `futures`
-  |
-  = help: if you wanted to use a crate named `futures`, use `cargo add futures` to add it to your `Cargo.toml`
+running 23 tests
+test is_connected_to ... ok
+test recv_close_gets_none ... ok
+test send_backpressure_multi_senders ... ok
+test send_recv ... ok
+test send_recv_no_buffer ... ok
+test send_backpressure ... ok
+test hash_receiver ... ok
+test same_receiver ... ok
+test send_recv_threads ... ok
+test send_shared_recv ... ok
+test send_recv_threads_no_capacity ... ok
+test stress_poll_ready ... ok
+test stress_receiver_multi_task_bounded_hard ... ok
+test stress_shared_unbounded ... ok
+test try_send_1 ... ok
+test try_send_2 ... ok
+test try_send_fail ... ok
+test try_send_recv ... ok
+test tx_close_gets_none ... ok
+test unbounded_len ... ok
+test stress_shared_bounded_hard ... ok
+test stress_drop_sender ... ok
+test stress_close_receiver ... ok
 
-error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures`
- --> tests/oneshot.rs:1:5
-  |
-1 | use futures::channel::oneshot::{self, Sender};
-  |     ^^^^^^^ use of unresolved module or unlinked crate `futures`
-  |
-  = help: if you wanted to use a crate named `futures`, use `cargo add futures` to add it to your `Cargo.toml`
+test result: ok. 23 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 11.63s
 
-error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures`
- --> tests/oneshot.rs:2:5
-  |
-2 | use futures::executor::block_on;
-  |     ^^^^^^^ use of unresolved module or unlinked crate `futures`
-  |
-  = help: if you wanted to use a crate named `futures`, use `cargo add futures` to add it to your `Cargo.toml`
+     Running tests/mpsc-close.rs (target/debug/deps/mpsc_close-3e67cc3e330aa0e8)
 
-error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures`
- --> tests/oneshot.rs:3:5
-  |
-3 | use futures::future::{poll_fn, FutureExt};
-  |     ^^^^^^^ use of unresolved module or unlinked crate `futures`
-  |
-  = help: if you wanted to use a crate named `futures`, use `cargo add futures` to add it to your `Cargo.toml`
+running 7 tests
+test bounded_try_next_after_none ... ok
+test multiple_senders_close_channel ... ok
+test multiple_senders_disconnect ... ok
+test single_receiver_drop_closes_channel_and_drains ... ok
+test smoke ... ok
+test unbounded_try_next_after_none ... ok
+test stress_try_send_as_receiver_closes ... ok
 
-error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures`
- --> tests/oneshot.rs:4:5
-  |
-4 | use futures::task::{Context, Poll};
-  |     ^^^^^^^ use of unresolved module or unlinked crate `futures`
-  |
-  = help: if you wanted to use a crate named `futures`, use `cargo add futures` to add it to your `Cargo.toml`
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.17s
 
-error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures_test`
- --> tests/oneshot.rs:5:5
-  |
-5 | use futures_test::task::panic_waker_ref;
-  |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `futures_test`
-  |
-help: there is a crate or module with a similar name
-  |
-5 - use futures_test::task::panic_waker_ref;
-5 + use futures_core::task::panic_waker_ref;
-  |
+     Running tests/mpsc-size_hint.rs (target/debug/deps/mpsc_size_hint-25bea3a05928556d)
 
-error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures`
- --> tests/mpsc-close.rs:1:5
-  |
-1 | use futures::channel::mpsc;
-  |     ^^^^^^^ use of unresolved module or unlinked crate `futures`
-  |
-  = help: if you wanted to use a crate named `futures`, use `cargo add futures` to add it to your `Cargo.toml`
+running 2 tests
+test channel_size_hint ... ok
+test unbounded_size_hint ... ok
 
-error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures`
- --> tests/mpsc-close.rs:2:5
-  |
-2 | use futures::executor::block_on;
-  |     ^^^^^^^ use of unresolved module or unlinked crate `futures`
-  |
-  = help: if you wanted to use a crate named `futures`, use `cargo add futures` to add it to your `Cargo.toml`
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 
-error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures`
- --> tests/mpsc-close.rs:3:5
-  |
-3 | use futures::future::Future;
-  |     ^^^^^^^ use of unresolved module or unlinked crate `futures`
-  |
-  = help: if you wanted to use a crate named `futures`, use `cargo add futures` to add it to your `Cargo.toml`
+     Running tests/oneshot.rs (target/debug/deps/oneshot-6c79a47b70fa08b6)
 
-error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures`
- --> tests/mpsc-close.rs:4:5
-  |
-4 | use futures::sink::SinkExt;
-  |     ^^^^^^^ use of unresolved module or unlinked crate `futures`
-  |
-  = help: if you wanted to use a crate named `futures`, use `cargo add futures` to add it to your `Cargo.toml`
+running 8 tests
+test cancel_after_sender_drop_doesnt_notify ... ok
+test close ... ok
+test cancel_notifies ... ok
+test is_canceled ... ok
+test close_wakes ... ok
+test smoke_poll ... ok
+test cancel_sends ... ok
+test cancel_lots ... ok
 
-error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures`
- --> tests/mpsc-close.rs:5:5
-  |
-5 | use futures::stream::StreamExt;
-  |     ^^^^^^^ use of unresolved module or unlinked crate `futures`
-  |
-  = help: if you wanted to use a crate named `futures`, use `cargo add futures` to add it to your `Cargo.toml`
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.32s
 
-error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures`
- --> tests/mpsc-close.rs:6:5
-  |
-6 | use futures::task::{Context, Poll};
-  |     ^^^^^^^ use of unresolved module or unlinked crate `futures`
-  |
-  = help: if you wanted to use a crate named `futures`, use `cargo add futures` to add it to your `Cargo.toml`
+   Doc-tests futures_channel
 
-Some errors have detailed explanations: E0432, E0433.
-For more information about an error, try `rustc --explain E0432`.
-error: could not compile `futures-channel` (test "mpsc") due to 8 previous errors
-warning: build failed, waiting for other jobs to finish...
-error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures`
-  --> tests/mpsc-close.rs:19:44
-   |
-19 |     block_on(receiver.take(3).for_each(|_| futures::future::ready(())));
-   |                                            ^^^^^^^ use of unresolved module or unlinked crate `futures`
-   |
-   = help: if you wanted to use a crate named `futures`, use `cargo add futures` to add it to your `Cargo.toml`
-help: consider importing this module
-   |
-1  + use std::future;
-   |
-help: if you import `future`, refer to it directly
-   |
-19 -     block_on(receiver.take(3).for_each(|_| futures::future::ready(())));
-19 +     block_on(receiver.take(3).for_each(|_| future::ready(())));
-   |
+running 1 test
+test futures-channel/src/oneshot.rs - oneshot::channel (line 84) ... ok
 
-For more information about this error, try `rustc --explain E0433`.
-error: could not compile `futures-channel` (test "mpsc-close") due to 7 previous errors
-error: could not compile `futures-channel` (test "oneshot") due to 5 previous errors
-+ RESULT=101
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.28s
+
++ RESULT=0
 + cd /var/tmp/top100_artifacts
 + rm -rf /var/tmp/top100_artifacts/futures-channel-0.3.31
-+ exit 101
++ exit 0

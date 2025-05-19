@@ -11,7 +11,7 @@
    Compiling libc v0.2.170
    Compiling static_assertions v1.1.0
    Compiling linux-raw-sys v0.9.4 (/var/tmp/top100_artifacts/linux-raw-sys-0.9.4)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 4.39s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.95s
      Running unittests src/lib.rs (target/debug/deps/linux_raw_sys-54689bcf9aee0a4b)
 
 running 0 tests

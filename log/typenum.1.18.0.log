@@ -1,21 +1,21 @@
 [typenum] download directory: /var/tmp/top100_artifacts/typenum-1.18.0
-+ tar xzf -
 + curl -sL https://crates.io/api/v1/crates/typenum/1.18.0/download
++ tar xzf -
 + cd /var/tmp/top100_artifacts/typenum-1.18.0
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
    Compiling typenum v1.18.0 (/var/tmp/top100_artifacts/typenum-1.18.0)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 8.13s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 4.84s
      Running unittests src/lib.rs (target/debug/deps/typenum-f8620598da067a8f)
 
 running 15 tests
-test int::tests::int_toint_test ... ok
 test bit::bit_creation_tests::bit_creation ... ok
 test bit::bit_op_tests::bit_operations ... ok
+test int::tests::to_ix_min ... ok
+test int::tests::int_toint_test ... ok
+test private::test_double_inversion ... ok
+test private::test_inversion ... ok
 test type_operators::fold_test ... ok
 test type_operators::pow_test ... ok
 test uint::div_tests::test_div ... ok
@@ -25,17 +25,16 @@ test uint::test_get_bit ... ok
 test uint::test_set_bit ... ok
 test uint::tests::log2_test ... ok
 test uint::tests::uint_toint_test ... ok
-test int::tests::to_ix_min ... ok
-test private::test_inversion ... ok
-test private::test_double_inversion ... ok
 
-test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+test result: ok. 15 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 
      Running tests/test.rs (target/debug/deps/test-412b73268a49c2bd)
 
 running 1743 tests
 test test_0_Add_0 ... ok
+test test_0_Add_1 ... ok
 test test_0_Add_2 ... ok
+test test_0_Add_3 ... ok
 test test_0_Add_4 ... ok
 test test_0_Add_5 ... ok
 test test_0_BitAnd_0 ... ok
@@ -390,7 +389,6 @@ test test_4_BitAnd_0 ... ok
 test test_4_BitAnd_1 ... ok
 test test_4_BitAnd_2 ... ok
 test test_4_BitAnd_3 ... ok
-test test_0_Add_1 ... ok
 test test_4_BitAnd_4 ... ok
 test test_4_BitAnd_5 ... ok
 test test_4_BitOr_0 ... ok
@@ -421,7 +419,6 @@ test test_4_Gcd_1 ... ok
 test test_4_Gcd_2 ... ok
 test test_4_Gcd_3 ... ok
 test test_4_Gcd_4 ... ok
-test test_0_Add_3 ... ok
 test test_4_Gcd_5 ... ok
 test test_4_Max_0 ... ok
 test test_4_Max_1 ... ok
@@ -540,8 +537,8 @@ test test_5_Pow_3 ... ok
 test test_5_Pow_4 ... ok
 test test_5_Pow_5 ... ok
 test test_5_Rem_1 ... ok
-test test_5_Rem_2 ... ok
 test test_5_Rem_3 ... ok
+test test_5_Rem_2 ... ok
 test test_5_Rem_4 ... ok
 test test_5_Rem_5 ... ok
 test test_5_Shl_0 ... ok
@@ -624,13 +621,14 @@ test test_N1_Min_N4 ... ok
 test test_N1_Min_N5 ... ok
 test test_N1_Min_P1 ... ok
 test test_N1_Min_P2 ... ok
-test test_N1_Min_P5 ... ok
-test test_N1_Min_P4 ... ok
 test test_N1_Min_P3 ... ok
+test test_N1_Min_P4 ... ok
+test test_N1_Min_P5 ... ok
 test test_N1_Min__0 ... ok
 test test_N1_Mul_N1 ... ok
 test test_N1_Mul_N2 ... ok
 test test_N1_Mul_N3 ... ok
+test test_N1_Mul_N4 ... ok
 test test_N1_Mul_N5 ... ok
 test test_N1_Mul_P1 ... ok
 test test_N1_Mul_P2 ... ok
@@ -945,12 +943,14 @@ test test_N4_Max_P2 ... ok
 test test_N4_Max_P3 ... ok
 test test_N4_Max_P4 ... ok
 test test_N4_Max_P5 ... ok
-test test_N1_Mul_N4 ... ok
 test test_N4_Max__0 ... ok
-test test_N4_Min_N2 ... ok
 test test_N4_Min_N1 ... ok
+test test_N4_Min_N2 ... ok
 test test_N4_Min_N3 ... ok
+test test_N4_Min_N4 ... ok
+test test_N4_Min_N5 ... ok
 test test_N4_Min_P1 ... ok
+test test_N4_Min_P2 ... ok
 test test_N4_Min_P3 ... ok
 test test_N4_Min_P4 ... ok
 test test_N4_Min_P5 ... ok
@@ -1320,7 +1320,6 @@ test test_P2_Rem_P3 ... ok
 test test_P2_Rem_P4 ... ok
 test test_P2_Rem_P5 ... ok
 test test_P2_Sub_N1 ... ok
-test test_N4_Min_N4 ... ok
 test test_P2_Sub_N2 ... ok
 test test_P2_Sub_N3 ... ok
 test test_P2_Sub_N4 ... ok
@@ -1386,12 +1385,12 @@ test test_P3_Max_P3 ... ok
 test test_P3_Max_P4 ... ok
 test test_P3_Max_P5 ... ok
 test test_P3_Max__0 ... ok
-test test_N4_Min_P2 ... ok
+test test_P3_Min_N1 ... ok
 test test_P3_Min_N2 ... ok
-test test_N4_Min_N5 ... ok
 test test_P3_Min_N3 ... ok
 test test_P3_Min_N4 ... ok
-test test_P3_Min_N1 ... ok
+test test_P3_Min_N5 ... ok
+test test_P3_Min_P1 ... ok
 test test_P3_Min_P2 ... ok
 test test_P3_Min_P3 ... ok
 test test_P3_Min_P4 ... ok
@@ -1635,10 +1634,10 @@ test test_P5_PartialDiv_P1 ... ok
 test test_P5_PartialDiv_P5 ... ok
 test test_P5_Pow_P1 ... ok
 test test_P5_Pow_P2 ... ok
-test test_P3_Min_P1 ... ok
 test test_P5_Pow_P3 ... ok
 test test_P5_Pow_P4 ... ok
 test test_P5_Pow_P5 ... ok
+test test_P5_Pow__0 ... ok
 test test_P5_Rem_N1 ... ok
 test test_P5_Rem_N2 ... ok
 test test_P5_Rem_N3 ... ok
@@ -1775,10 +1774,8 @@ test test__0_Sub_P3 ... ok
 test test__0_Sub_P4 ... ok
 test test__0_Sub_P5 ... ok
 test test__0_Sub__0 ... ok
-test test_P5_Pow__0 ... ok
-test test_P3_Min_N5 ... ok
 
-test result: ok. 1743 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+test result: ok. 1743 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
 
 + RESULT=0
 + cd /var/tmp/top100_artifacts

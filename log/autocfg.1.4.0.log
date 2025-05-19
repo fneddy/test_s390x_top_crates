@@ -5,19 +5,18 @@
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
-    Blocking waiting for file lock on package cache
    Compiling autocfg v1.4.0 (/var/tmp/top100_artifacts/autocfg-1.4.0)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.11s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.68s
      Running unittests src/lib.rs (target/debug/deps/autocfg-20c29ebf2d22951b)
 
 running 5 tests
 test tests::dir_does_contain_target ... ok
+test tests::dir_does_contain_target_with_custom_target_dir ... ok
 test tests::dir_does_not_contain_target ... ok
 test tests::version_cmp ... ok
-test tests::dir_does_contain_target_with_custom_target_dir ... ok
 test tests::dir_does_not_contain_target_with_custom_target_dir ... ok
 
-test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 
      Running tests/no_std.rs (target/debug/deps/no_std-f6334568a83e851d)
 
@@ -38,7 +37,7 @@ error: aborting due to 1 previous error
 For more information about this error, try `rustc --explain E0432`.
 test no_std ... ok
 
-test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.56s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.33s
 
      Running tests/rustflags.rs (target/debug/deps/rustflags-58c82aa12130d455)
 
@@ -54,7 +53,7 @@ error: aborting due to 1 previous error
 For more information about this error, try `rustc --explain E0463`.
 test test_with_sysroot ... ok
 
-test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.22s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.17s
 
      Running tests/tests.rs (target/debug/deps/tests-99fe418927fa2430)
 
@@ -107,8 +106,6 @@ warning: 1 warning emitted
 test probe_constant ... ok
 test probe_i128 ... ok
 test probe_expression ... ok
-test probe_std ... ok
-test probe_no_std ... ok
 error: function `x` is never used
  --> <anon>:1:24
   |
@@ -123,6 +120,9 @@ note: the lint level is defined here
 
 error: aborting due to 1 previous error
 
+test probe_no_std ... ok
+test probe_std ... ok
+test probe_raw ... ok
 warning: trait objects without an explicit `dyn` are deprecated
  --> <anon>:1:18
   |
@@ -139,10 +139,9 @@ help: if this is a dyn-compatible trait, use `dyn`
 
 warning: 1 warning emitted
 
-test probe_raw ... ok
 test probe_sum ... ok
 
-test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.97s
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.15s
 
      Running tests/wrappers.rs (target/debug/deps/wrappers-f45e1dbb974a5753)
 
@@ -190,7 +189,7 @@ warning: autocfg could not probe for `std`
 warning: autocfg could not probe for `std`
 test test_wrappers ... ok
 
-test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.15s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.30s
 
 + RESULT=0
 + cd /var/tmp/top100_artifacts

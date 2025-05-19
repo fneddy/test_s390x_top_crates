@@ -5,41 +5,44 @@
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
    Compiling lazy_static v1.5.0
    Compiling pkg-config v0.3.32 (/var/tmp/top100_artifacts/pkg-config-0.3.32)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.91s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.02s
      Running unittests src/lib.rs (target/debug/deps/pkg_config-5718603f48a0044b)
 
 running 5 tests
-test tests::link_filename_apple ... ok
 test tests::link_filename_mingw ... ok
 test tests::link_filename_msvc ... ok
+test tests::link_filename_apple ... ok
 test tests::link_filename_linux ... ok
 test tests::system_library_linux_test ... ok
 
-test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 
      Running tests/test.rs (target/debug/deps/test-76d1dfd08aeef589)
 
 running 26 tests
 test atleast_version_ng - should panic ... ok
-test atleast_version_ok ... ok
+test cross_enabled ... ok
 test cross_disabled ... ok
 test cross_disabled_if_customized ... ok
-test cross_enabled ... ok
-test exactly_version_ok ... ok
-test escapes ... ok
-test exactly_version_ng - should panic ... ok
 test cross_enabled_if_customized ... ok
+test exactly_version_ok ... ok
 test framework ... ok
 test get_variable ... ok
 test output_ok ... ok
-test range_version_range_from_ok ... ok
-test range_version_full ... ok
-test range_version_range_from_ng - should panic ... ok
+test exactly_version_ng - should panic ... ok
+test atleast_version_ok ... ok
+test escapes ... ok
 test package_disabled ... ok
-test range_version_range_inclusive_ng - should panic ... ok
+test range_version_full ... ok
 test range_version_range_inclusive_ok ... ok
+test range_version_range_from_ok ... ok
+test range_version_range_inclusive_ng - should panic ... ok
+test range_version_range_from_ng - should panic ... ok
 test range_version_range_ng - should panic ... ok
 test range_version_range_ok ... ok
 test range_version_range_to_inclusive_ng - should panic ... ok
@@ -49,7 +52,7 @@ test range_version_range_to_ok ... ok
 test rpath ... ok
 test version ... ok
 
-test result: ok. 26 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.64s
+test result: ok. 26 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.61s
 
 + RESULT=0
 + cd /var/tmp/top100_artifacts

@@ -8,12 +8,12 @@
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
-   Compiling serde v1.0.219
+    Blocking waiting for file lock on package cache
    Compiling proc-macro2 v1.0.94
+   Compiling serde v1.0.219
    Compiling unicode-ident v1.0.18
-   Compiling equivalent v1.0.2
    Compiling hashbrown v0.15.2
-   Compiling target-triple v0.1.4
+   Compiling equivalent v1.0.2
    Compiling winnow v0.7.6
    Compiling indexmap v2.9.0
    Compiling quote v1.0.40
@@ -21,35 +21,36 @@
    Compiling futures-core v0.3.31
    Compiling futures-sink v0.3.31
    Compiling serde_json v1.0.140
-   Compiling itoa v1.0.15
-   Compiling thiserror v2.0.12
-   Compiling futures-task v0.3.31
-   Compiling rustversion v1.0.20
-   Compiling anyhow v1.0.98 (/var/tmp/top100_artifacts/anyhow-1.0.98)
-   Compiling pin-project-lite v0.2.16
+   Compiling target-triple v0.1.4
    Compiling ryu v1.0.20
+   Compiling pin-project-lite v0.2.16
+   Compiling memchr v2.7.4
+   Compiling anyhow v1.0.98 (/var/tmp/top100_artifacts/anyhow-1.0.98)
+   Compiling rustversion v1.0.20
+   Compiling pin-utils v0.1.0
+   Compiling itoa v1.0.15
+   Compiling futures-task v0.3.31
+   Compiling thiserror v2.0.12
+   Compiling futures-util v0.3.31
    Compiling serde_spanned v0.6.8
    Compiling toml_datetime v0.6.8
-   Compiling pin-utils v0.1.0
-   Compiling memchr v2.7.4
-   Compiling futures-util v0.3.31
    Compiling toml_edit v0.22.24
-   Compiling toml v0.8.20
    Compiling futures-channel v0.3.31
-   Compiling dissimilar v1.0.10
    Compiling futures-io v0.3.31
-   Compiling termcolor v1.4.1
    Compiling glob v0.3.2
+   Compiling dissimilar v1.0.10
+   Compiling termcolor v1.4.1
+   Compiling toml v0.8.20
    Compiling futures v0.3.31
    Compiling thiserror-impl v2.0.12
    Compiling serde_derive v1.0.219
    Compiling trybuild v1.0.104
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 13.36s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 17.16s
      Running unittests src/lib.rs (target/debug/deps/anyhow-04bc9d7e01aed357)
 
 running 3 tests
-test fmt::tests::no_digits ... ok
 test fmt::tests::one_digit ... ok
+test fmt::tests::no_digits ... ok
 test fmt::tests::two_digits ... ok
 
 test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
@@ -127,9 +128,9 @@ test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 running 7 tests
 test test_as_ref ... ok
 test test_downcast ... ok
-test test_downcast_ref ... ok
 test test_downcast_mut ... ok
 test test_drop ... ok
+test test_downcast_ref ... ok
 test test_large_alignment ... ok
 test test_unsuccessful_downcast ... ok
 
@@ -140,8 +141,8 @@ test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 running 18 tests
 test test_atom ... ok
 test test_closure ... ok
-test test_high_precedence_binary_operator ... ok
 test test_as ... ok
+test test_high_precedence_binary_operator ... ok
 test test_if ... ok
 test test_loop ... ok
 test test_low_precedence_binary_operator ... ok
@@ -152,8 +153,8 @@ test test_pat ... ok
 test test_raw_addr ... ok
 test test_path ... ok
 test test_recursion ... ok
-test test_trailer ... ok
 test test_too_long ... ok
+test test_trailer ... ok
 test test_unary ... ok
 test test_whitespace ... ok
 
@@ -168,10 +169,10 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
      Running tests/test_fmt.rs (target/debug/deps/test_fmt-9ecea7f290dbfe18)
 
 running 4 tests
-test test_altdisplay ... ok
 test test_altdebug ... ok
-test test_display ... ok
+test test_altdisplay ... ok
 test test_debug ... ok
+test test_display ... ok
 
 test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 
@@ -199,8 +200,8 @@ test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
      Running tests/test_source.rs (target/debug/deps/test_source-d204f763dc59dc91)
 
 running 5 tests
-test test_anyhow_from_anyhow ... ok
 test test_fmt_source ... ok
+test test_anyhow_from_anyhow ... ok
 test test_io_source ... ok
 test test_literal_source ... ok
 test test_variable_source ... ok

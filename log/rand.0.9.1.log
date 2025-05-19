@@ -7,45 +7,46 @@
 + cargo +stable test ''
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
-   Compiling crossbeam-utils v0.8.19
+    Blocking waiting for file lock on package cache
    Compiling libc v0.2.169
+   Compiling crossbeam-utils v0.8.19
    Compiling getrandom v0.3.2
    Compiling cfg-if v1.0.0
-   Compiling serde v1.0.197
    Compiling rayon-core v1.12.1
-   Compiling ppv-lite86 v0.2.17
+   Compiling serde v1.0.197
    Compiling either v1.10.0
+   Compiling ppv-lite86 v0.2.17
    Compiling crossbeam-epoch v0.9.18
-   Compiling crossbeam-deque v0.8.5
    Compiling rand_core v0.9.3
+   Compiling crossbeam-deque v0.8.5
    Compiling rand_chacha v0.9.0
    Compiling rand_pcg v0.9.0
    Compiling rayon v1.9.0
    Compiling bincode v1.3.3
    Compiling rand v0.9.1 (/var/tmp/top100_artifacts/rand-0.9.1)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 6.22s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 6.19s
      Running unittests src/lib.rs (target/debug/deps/rand-768b4456f52d9564)
 
 running 90 tests
 test distr::bernoulli::test::bernoulli_distributions_can_be_compared ... ok
 test distr::bernoulli::test::test_trivial ... ok
 test distr::bernoulli::test::value_stability ... ok
+test distr::distribution::tests::test_distributions_map ... ok
 test distr::distribution::tests::test_dist_string ... ok
 test distr::distribution::tests::test_distributions_iter ... ok
 test distr::distribution::tests::test_make_an_iter ... ok
 test distr::float::tests::f64_edge_cases ... ok
-test distr::distribution::tests::test_distributions_map ... ok
 test distr::float::tests::f32_edge_cases ... ok
+test distr::integer::tests::test_integers ... ok
 test distr::float::tests::value_stability ... ok
 test distr::integer::tests::value_stability ... ok
 test distr::other::tests::test_alphanumeric ... ok
-test distr::integer::tests::test_integers ... ok
 test distr::other::tests::test_alphabetic ... ok
-test distr::other::tests::test_misc ... ok
-test distr::other::tests::value_stability ... ok
-test distr::slice::test::value_stability ... ok
-test distr::uniform::float::tests::test_float_assertions ... ok
 test distr::other::tests::test_chars ... ok
+test distr::other::tests::test_misc ... ok
+test distr::slice::test::value_stability ... ok
+test distr::other::tests::value_stability ... ok
+test distr::uniform::float::tests::test_float_assertions ... ok
 test distr::uniform::float::tests::test_float_overflow ... ok
 test distr::uniform::float::tests::test_float_overflow_single - should panic ... ok
 test distr::uniform::float::tests::test_uniform_from_std_range ... ok
@@ -57,68 +58,68 @@ test distr::uniform::int::tests::test_uniform_bad_limits_equal_int ... ok
 test distr::uniform::int::tests::test_uniform_bad_limits_flipped_int ... ok
 test distr::uniform::int::tests::test_uniform_from_std_range ... ok
 test distr::uniform::int::tests::test_uniform_from_std_range_bad_limits ... ok
-test distr::uniform::int::tests::test_uniform_from_std_range_inclusive_bad_limits ... ok
 test distr::uniform::int::tests::test_uniform_from_std_range_inclusive ... ok
+test distr::uniform::int::tests::test_uniform_from_std_range_inclusive_bad_limits ... ok
 test distr::uniform::int::tests::test_uniform_good_limits_equal_int ... ok
 test distr::uniform::int::tests::value_stability ... ok
 test distr::uniform::other::tests::test_char ... ok
+test distr::bernoulli::test::test_average ... ok
 test distr::uniform::tests::test_custom_uniform ... ok
 test distr::uniform::tests::uniform_distributions_can_be_compared ... ok
 test distr::uniform::tests::value_stability ... ok
 test distr::weighted::weighted_index::test::overflow ... ok
+test distr::uniform::other::tests::test_durations ... ok
+test distr::uniform::int::tests::test_integers ... ok
 test distr::weighted::weighted_index::test::test_accepting_nan ... ok
 test distr::weighted::weighted_index::test::test_update_weights ... ok
-test distr::uniform::other::tests::test_durations ... ok
 test distr::weighted::weighted_index::test::test_update_weights_errors ... ok
 test distr::weighted::weighted_index::test::test_weight_at ... ok
 test distr::weighted::weighted_index::test::test_weights ... ok
-test distr::weighted::weighted_index::test::value_stability ... ok
 test distr::weighted::weighted_index::test::weighted_index_distributions_can_be_compared ... ok
+test distr::weighted::weighted_index::test::value_stability ... ok
 test rng::test::test_fill ... ok
 test rng::test::test_fill_bytes_default ... ok
 test rng::test::test_fill_empty ... ok
-test distr::weighted::weighted_index::test::test_weightedindex ... ok
 test rng::test::test_random_bool ... ok
-test distr::bernoulli::test::test_average ... ok
 test rng::test::test_random_range_float ... ok
+test rng::test::test_random_range_int ... ok
 test rng::test::test_random_range_panic_int - should panic ... ok
 test rng::test::test_random_range_panic_usize - should panic ... ok
 test rng::test::test_rng_boxed_trait ... ok
 test rng::test::test_rng_mut_ref ... ok
 test rng::test::test_rng_trait_object ... ok
 test rngs::mock::tests::test_bool ... ok
-test rng::test::test_random_range_int ... ok
 test rngs::reseeding::test::test_clone_reseeding ... ok
+test rngs::reseeding::test::test_reseeding ... ok
 test rngs::std::test::test_stdrng_construction ... ok
 test rngs::thread::test::test_debug_output ... ok
 test rngs::thread::test::test_thread_rng ... ok
 test rngs::xoshiro256plusplus::tests::reference ... ok
 test rngs::xoshiro256plusplus::tests::stable_seed_from_u64 ... ok
+test distr::weighted::weighted_index::test::test_weightedindex ... ok
 test seq::index_::test::test_sample_alg ... ok
 test seq::index_::test::test_sample_boundaries ... ok
 test seq::index_::test::test_sample_weighted ... ok
 test seq::index_::test::value_stability_sample ... ok
-test distr::uniform::int::tests::test_integers ... ok
 test rng::test::test_gen_ratio_average ... ok
-test rngs::reseeding::test::test_reseeding ... ok
 test seq::iterator::test::test_sample_iter ... ok
 test seq::iterator::test::value_stability_choose ... ok
 test seq::iterator::test::value_stability_choose_multiple ... ok
 test seq::iterator::test::value_stability_choose_stable ... ok
-test seq::iterator::test::test_iterator_choose ... ok
-test seq::slice::test::test_multiple_weighted_edge_cases ... ok
-test seq::slice::test::test_partial_shuffle ... ok
-test seq::slice::test::test_multiple_weighted_distributions ... ok
 test seq::iterator::test::test_iterator_choose_stable ... ok
+test seq::iterator::test::test_iterator_choose ... ok
+test seq::slice::test::test_partial_shuffle ... ok
+test seq::slice::test::test_multiple_weighted_edge_cases ... ok
 test seq::slice::test::test_slice_choose ... ok
+test seq::iterator::test::test_iterator_choose_stable_stability ... ok
 test seq::slice::test::value_stability_slice ... ok
 test test::test_random ... ok
 test test::test_range ... ok
-test seq::iterator::test::test_iterator_choose_stable_stability ... ok
+test seq::slice::test::test_multiple_weighted_distributions ... ok
 test seq::slice::test::test_weighted ... ok
 test seq::slice::test::test_shuffle ... ok
 
-test result: ok. 90 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+test result: ok. 90 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
 
 + RESULT=0
 + cd /var/tmp/top100_artifacts

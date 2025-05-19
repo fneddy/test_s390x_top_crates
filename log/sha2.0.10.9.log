@@ -15,12 +15,12 @@
    Compiling cfg-if v1.0.0
    Compiling generic-array v0.14.7
    Compiling hex-literal-impl v0.2.3
-   Compiling hex-literal v0.2.2
-   Compiling block-buffer v0.10.4
    Compiling crypto-common v0.1.6
+   Compiling block-buffer v0.10.4
+   Compiling hex-literal v0.2.2
    Compiling digest v0.10.7
    Compiling sha2 v0.10.9 (/var/tmp/top100_artifacts/sha2-0.10.9)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 8.10s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 7.37s
      Running unittests src/lib.rs (target/debug/deps/sha2-72068c9b8ebbf88d)
 
 running 0 tests
@@ -31,15 +31,15 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 
 running 8 tests
 test sha224_main ... ok
-test sha256_main ... ok
-test sha512_224_main ... ok
+test sha384_main ... ok
 test sha512_256_main ... ok
 test sha512_main ... ok
-test sha384_main ... ok
+test sha512_224_main ... ok
+test sha256_main ... ok
 test sha512_rand ... ok
 test sha256_rand ... ok
 
-test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.41s
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.52s
 
 + RESULT=0
 + cd /var/tmp/top100_artifacts

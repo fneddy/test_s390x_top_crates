@@ -7,14 +7,15 @@
 + cargo +stable test ''
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
    Compiling futures-task v0.3.31 (/var/tmp/top100_artifacts/futures-task-0.3.31)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 5.10s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.33s
      Running unittests src/lib.rs (target/debug/deps/futures_task-7517f4299dbcfbd5)
 
 running 1 test
 test noop_waker::tests::issue_2091_cross_thread_segfault ... ok
 
-test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
 
 + RESULT=0
 + cd /var/tmp/top100_artifacts

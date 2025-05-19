@@ -11,20 +11,20 @@
     Blocking waiting for file lock on package cache
    Compiling libc v0.2.171
    Compiling socket2 v0.5.9 (/var/tmp/top100_artifacts/socket2-0.5.9)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.54s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.68s
      Running unittests src/lib.rs (target/debug/deps/socket2-7f3ee02b4b18e852)
 
 running 10 tests
 test sockaddr::tests::ipv4 ... ok
 test sockaddr::tests::ipv4_eq ... ok
-test sockaddr::tests::ipv4_ipv6_hash ... ok
-test sockaddr::tests::ipv6 ... ok
-test sockaddr::tests::ipv6_eq ... ok
-test sockaddr::tests::ipv6_hash ... ok
-test sys::in6_addr_convertion ... ok
-test sys::in_addr_convertion ... ok
 test sockaddr::tests::ipv4_hash ... ok
+test sockaddr::tests::ipv4_ipv6_hash ... ok
 test sockaddr::tests::ipv4_ipv6_eq ... ok
+test sockaddr::tests::ipv6_eq ... ok
+test sockaddr::tests::ipv6 ... ok
+test sys::in6_addr_convertion ... ok
+test sockaddr::tests::ipv6_hash ... ok
+test sys::in_addr_convertion ... ok
 
 test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 
