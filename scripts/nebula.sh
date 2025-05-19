@@ -15,6 +15,8 @@ declare -A VERSIONS
 SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
 cd ${SCRIPT_DIR}
 
+source $HOME/.cargo/env
+
 # Exit if the parsing fails
 if [ $? != 0 ]; then
 	echo "Failed to parse options." >&2
