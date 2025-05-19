@@ -13,6 +13,7 @@ declare -A PARAMS
 declare -A GIT
 declare -A VERSIONS
 SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
+cd ${SCRIPT_DIR}
 
 # Exit if the parsing fails
 if [ $? != 0 ]; then
