@@ -1,12 +1,565 @@
 [itertools] download directory: /tmp/top100_artifacts/itertools-0.14.0
-+ tar xzf -
 + curl -sL https://crates.io/api/v1/crates/itertools/0.14.0/download
++ tar xzf -
 + cd /tmp/top100_artifacts/itertools-0.14.0
 + cargo clean
-/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 78: cargo: command not found
+     Removed 0 files
 + cargo +stable test ''
-/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 79: cargo: command not found
-+ RESULT=127
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   Compiling proc-macro2 v1.0.82
+   Compiling cfg-if v1.0.0
+   Compiling libc v0.2.154
+   Compiling unicode-ident v1.0.12
+   Compiling autocfg v1.3.0
+   Compiling crossbeam-utils v0.8.19
+   Compiling getrandom v0.1.16
+   Compiling serde v1.0.202
+   Compiling quote v1.0.36
+   Compiling syn v2.0.63
+   Compiling either v1.11.0
+   Compiling crossbeam-epoch v0.9.18
+   Compiling indexmap v1.9.3
+   Compiling num-traits v0.2.19
+   Compiling serde_json v1.0.117
+   Compiling rayon-core v1.12.1
+   Compiling crossbeam-deque v0.8.5
+   Compiling rand_core v0.5.1
+   Compiling half v2.4.1
+   Compiling ppv-lite86 v0.2.17
+   Compiling ryu v1.0.18
+   Compiling regex-syntax v0.8.3
+   Compiling os_str_bytes v6.6.1
+   Compiling ciborium-io v0.2.2
+   Compiling plotters-backend v0.3.5
+   Compiling itoa v1.0.11
+   Compiling hashbrown v0.12.3
+   Compiling plotters-svg v0.3.5
+   Compiling clap_lex v0.2.4
+   Compiling regex-automata v0.4.6
+   Compiling ciborium-ll v0.2.2
+   Compiling rand_chacha v0.2.2
+   Compiling itertools v0.10.5
+   Compiling textwrap v0.16.1
+   Compiling serde_derive v1.0.202
+   Compiling paste v1.0.15
+   Compiling cast v0.3.0
+   Compiling bitflags v1.3.2
+   Compiling same-file v1.0.6
+   Compiling criterion-plot v0.5.0
+   Compiling walkdir v2.5.0
+   Compiling clap v3.2.25
+   Compiling plotters v0.3.5
+   Compiling regex v1.10.4
+   Compiling rayon v1.10.0
+   Compiling rand v0.7.3
+   Compiling atty v0.2.14
+   Compiling oorandom v11.1.3
+   Compiling anes v0.1.6
+   Compiling lazy_static v1.4.0
+   Compiling quickcheck v0.9.2
+   Compiling permutohedron v0.2.4
+   Compiling itertools v0.14.0 (/tmp/top100_artifacts/itertools-0.14.0)
+   Compiling ciborium v0.2.2
+   Compiling tinytemplate v1.2.1
+   Compiling criterion v0.4.0
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 32.98s
+     Running unittests src/lib.rs (target/debug/deps/itertools-aa68a2069d8f0ce1)
+
+running 6 tests
+test next_array::test::zero_len_push - should panic ... ok
+test next_array::test::tracked_drop ... ok
+test next_array::test::zero_len_take ... ok
+test size_hint::mul_size_hints ... ok
+test next_array::test::push_4 ... ok
+test adaptors::test_checked_binomial ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.09s
+
+     Running tests/adaptors_no_collect.rs (target/debug/deps/adaptors_no_collect-c46a5e821e1412f1)
+
+running 3 tests
+test permutations_no_collect ... ok
+test combinations_with_replacement_no_collect ... ok
+test combinations_no_collect ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/flatten_ok.rs (target/debug/deps/flatten_ok-b85c6871c9418eef)
+
+running 6 tests
+test flatten_ok_collect_ok_forward ... ok
+test flatten_ok_collect_ok_reverse ... ok
+test flatten_ok_mixed_expected_forward ... ok
+test flatten_ok_mixed_expected_reverse ... ok
+test flatten_ok_collect_mixed_forward ... ok
+test flatten_ok_collect_mixed_reverse ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/laziness.rs (target/debug/deps/laziness-5c0e2916864760fe)
+
+running 61 tests
+test chain ... ok
+test chunk_by ... ok
+test chunks ... ok
+test circular_tuple_windows ... ok
+test coalesce ... ok
+test combinations ... ok
+test combinations_with_replacement ... ok
+test dedup ... ok
+test dedup_by ... ok
+test dedup_by_with_count ... ok
+test dedup_with_count ... ok
+test duplicates ... ok
+test duplicates_by ... ok
+test filter_map_ok ... ok
+test filter_ok ... ok
+test flatten_ok ... ok
+test get ... ok
+test interleave ... ok
+test interleave_shortest ... ok
+test intersperse ... ok
+test intersperse_with ... ok
+test into_grouping_map ... ok
+test into_grouping_map_by ... ok
+test iproduct ... ok
+test izip ... ok
+test kmerge - should panic ... ok
+test kmerge_by - should panic ... ok
+test map_into ... ok
+test map_ok ... ok
+test merge ... ok
+test merge_by ... ok
+test merge_join_by ... ok
+test multi_cartesian_product ... ok
+test multipeek ... ok
+test multizip ... ok
+test pad_using ... ok
+test peek_nth ... ok
+test peeking_take_while ... ok
+test permutations ... ok
+test positions ... ok
+test powerset ... ok
+test put_back ... ok
+test put_back_n ... ok
+test rciter ... ok
+test take_while_inclusive ... ok
+test take_while_ref ... ok
+test tee ... ok
+test tuple_combinations1 ... ok
+test tuple_combinations2 - should panic ... ok
+test tuple_combinations3 - should panic ... ok
+test tuple_windows ... ok
+test tuples ... ok
+test unique ... ok
+test unique_by ... ok
+test update ... ok
+test while_some ... ok
+test with_position ... ok
+test zip_eq ... ok
+test zip_longest ... ok
+test batching ... ok
+test cartesian_product ... ok
+
+test result: ok. 61 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/macros_hygiene.rs (target/debug/deps/macros_hygiene-fa510d64a7224ca9)
+
+running 3 tests
+test chain_hygiene ... ok
+test izip_hygiene ... ok
+test iproduct_hygiene ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/merge_join.rs (target/debug/deps/merge_join-0ea66f09e1210a2e)
+
+running 7 tests
+test empty ... ok
+test first_left_then_right ... ok
+test first_right_then_left ... ok
+test interspersed_left_and_right ... ok
+test left_only ... ok
+test overlapping_left_and_right ... ok
+test right_only ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/peeking_take_while.rs (target/debug/deps/peeking_take_while-4c25f521c3453321)
+
+running 6 tests
+test peeking_take_while_nested ... ok
+test peeking_take_while_peekable ... ok
+test peeking_take_while_put_back ... ok
+test peeking_take_while_slice_iter ... ok
+test peeking_take_while_put_back_n ... ok
+test peeking_take_while_slice_iter_rev ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/quick.rs (target/debug/deps/quick-70f8d617fb35ccea)
+
+running 142 tests
+test collect_tuple_matches_size ... ok
+test chunk_clone_equal ... ok
+test circular_tuple_windows_exact_size ... ok
+test correct_empty_multi_product ... ok
+test at_most_one_i32 ... ok
+test consistent_grouping_map_with_by ... ok
+test correct_group_map_modulo_key ... ok
+test correct_grouping_map_by_collect_modulo_key ... ok
+test correct_grouping_map_by_aggregate_modulo_key ... ok
+test correct_grouping_map_by_fold_modulo_key ... ok
+test correct_grouping_map_by_fold_with_modulo_key ... ok
+test correct_grouping_map_by_max_by_key_modulo_key ... ok
+test correct_grouping_map_by_max_by_modulo_key ... ok
+test correct_grouping_map_by_max_modulo_key ... ok
+test correct_grouping_map_by_min_max_minmax_order_modulo_key ... ok
+test correct_grouping_map_by_min_by_key_modulo_key ... ok
+test correct_grouping_map_by_min_modulo_key ... ok
+test correct_grouping_map_by_min_by_modulo_key ... ok
+test correct_grouping_map_by_minmax_by_key_modulo_key ... ok
+test correct_cartesian_product3 ... ok
+test correct_grouping_map_by_minmax_modulo_key ... ok
+test correct_grouping_map_by_minmax_by_modulo_key ... ok
+test correct_grouping_map_by_reduce_modulo_key ... ok
+test correct_grouping_map_by_product_modulo_key ... ok
+test correct_grouping_map_by_sum_modulo_key ... ok
+test correct_permutations ... ok
+test count_unique ... ok
+test dedup_via_coalesce ... ok
+test equal_chunks_lazy ... ok
+test equal_circular_tuple_windows_1 ... ok
+test equal_circular_tuple_windows_2 ... ok
+test counts ... ok
+test equal_circular_tuple_windows_3 ... ok
+test equal_circular_tuple_windows_4 ... ok
+test correct_peek_nth ... ok
+test equal_cloned_circular_tuple_windows ... ok
+test equal_cloned_circular_tuple_windows_complete ... ok
+test equal_cloned_circular_tuple_windows_noninitial ... ok
+test equal_dedup ... ok
+test equal_combinations_2 ... ok
+test equal_combinations ... ok
+test equal_dedup_by ... ok
+test equal_intersperse ... ok
+test equal_kmerge ... ok
+test correct_multi_product3 ... ok
+test equal_kmerge_2 ... ok
+test equal_merge ... ok
+test equal_partition ... ok
+test equal_positions ... ok
+test equal_tuple_windows_1 ... ok
+test equal_tuple_windows_2 ... ok
+test equal_tuple_windows_3 ... ok
+test equal_tuple_windows_4 ... ok
+test equal_tuples_1 ... ok
+test equal_tuples_2 ... ok
+test equal_kmerge_by_le ... ok
+test equal_tuples_4 ... ok
+test equal_tuples_3 ... ok
+test exact_interleave ... ok
+test exact_interleave_shortest ... ok
+test exact_repeatn ... ok
+test exact_size_combinations_1 ... ok
+test equal_zip_eq ... ok
+test equal_kmerge_by_ge ... ok
+test exact_tuple_buffer ... ok
+test exact_size_combinations_3 ... ok
+test exactly_one_i32 ... ok
+test exact_size_combinations_2 ... ok
+test fused_filter_map_ok ... ok
+test fused_filter_ok ... ok
+test fused_interleave_shortest ... ok
+test fused_merge ... ok
+test fused_pad_using ... ok
+test fused_positions ... ok
+test fused_product ... ok
+test equal_kmerge_by_lt ... ok
+test fused_tuple_windows ... ok
+test fused_unique ... ok
+test fused_unique_by ... ok
+test fused_update ... ok
+test fuzz_chunk_by_lazy_1 ... ok
+test fuzz_chunk_by_lazy_2 ... ok
+test fuzz_chunk_by_lazy_3 ... ok
+test fuzz_chunk_by_lazy_duo ... ok
+test max_set_by_contains_max ... ok
+test max_set_by_key_contains_max ... ok
+test max_set_contains_max ... ok
+test merge_join_by_bool_unwrapped_is_merge_by ... ok
+test merge_join_by_ordering_vs_bool ... ok
+test min_set_by_contains_min ... ok
+test min_set_by_key_contains_min ... ok
+test min_set_contains_min ... ok
+test minmax ... ok
+test minmax_f64 ... ok
+test peek_nth_mut_replace ... ok
+test peek_nth_next_if ... ok
+test permutations_count ... ok
+test permutations_k0_yields_once ... ok
+test permutations_lexic_order ... ok
+test permutations_size ... ok
+test size_2_zip_longest ... ok
+test fused_tuple_combination ... ok
+test size_combinations ... ok
+test size_dedup ... ok
+test size_duplicates ... ok
+test size_dedup_by ... ok
+test size_interleave ... ok
+test size_interleave_shortest ... ok
+test size_intersperse ... ok
+test size_merge ... ok
+test size_kmerge ... ok
+test size_multipeek ... ok
+test size_pad_tail ... ok
+test size_pad_tail2 ... ok
+test size_peek_nth ... ok
+test size_multi_product ... ok
+test size_product ... ok
+test size_product3 ... ok
+test size_put_back ... ok
+test size_put_backn ... ok
+test size_take_while_ref ... ok
+test size_tee ... ok
+test size_tee_2 ... ok
+test size_unique ... ok
+test size_zip ... ok
+test size_zip_longest ... ok
+test size_zip_macro ... ok
+test size_zip_rc ... ok
+test tail ... ok
+test test_double_ended_zip_2 ... ok
+test test_double_ended_zip_3 ... ok
+test tree_reduce_f64 ... ok
+test tuple_windows_exact_size_1 ... ok
+test tuple_windows_exact_size_4 ... ok
+test tuples_size_hint_exact ... ok
+test tuples_size_hint_inexact ... ok
+test with_position_exact_size_1 ... ok
+test with_position_exact_size_2 ... ok
+test zip_eq_panics - should panic ... ok
+test size_powerset ... ok
+test fused_combination ... ok
+test fused_combination_with_replacement ... ok
+
+test result: ok. 142 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.83s
+
+     Running tests/specializations.rs (target/debug/deps/specializations-7ebead3701fa7cd7)
+
+running 57 tests
+test batching ... ok
+test coalesce ... ok
+test cartesian_product ... ok
+test circular_tuple_windows ... ok
+test dedup ... ok
+test dedup_by ... ok
+test dedup_by_with_count ... ok
+test array_combinations ... ok
+test dedup_with_count ... ok
+test combinations ... ok
+test combinations_with_replacement ... ok
+test exactly_one_error ... ok
+test filter_ok ... ok
+test duplicates_by ... ok
+test filter_map_ok ... ok
+test interleave_shortest ... ok
+test duplicates ... ok
+test interleave ... ok
+test intersperse ... ok
+test intersperse_with ... ok
+test izip ... ok
+test flatten_ok ... ok
+test map_into ... ok
+test iproduct ... ok
+test map_ok ... ok
+test merge ... ok
+test merge_by ... ok
+test merge_join_by_bool ... ok
+test multi_cartesian_product ... ok
+test merge_join_by_ordering ... ok
+test multipeek ... ok
+test pad_using ... ok
+test kmerge ... ok
+test peek_nth_with_peek ... ok
+test multizip ... ok
+test peek_nth_with_peek_mut ... ok
+test peek_nth_with_peek_nth ... ok
+test positions ... ok
+test kmerge_by ... ok
+test peek_nth_with_peek_nth_mut ... ok
+test process_results ... ok
+test put_back_qc ... ok
+test put_back_n ... ok
+test take_while_inclusive ... ok
+test repeat_n ... ok
+test powerset ... ok
+test tuples ... ok
+test permutations ... ok
+test tuple_combinations ... ok
+test tuple_windows ... ok
+test while_some ... ok
+test update ... ok
+test zip_eq ... ok
+test with_position ... ok
+test zip_longest ... ok
+test unique_by ... ok
+test unique ... ok
+
+test result: ok. 57 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 6.20s
+
+     Running tests/test_core.rs (target/debug/deps/test_core-6a0b666ac174b8d7)
+
+running 30 tests
+test batching ... ok
+test at_most_one ... ok
+test chain2 ... ok
+test chain_macro ... ok
+test count_clones ... ok
+test collect_array ... ok
+test exactly_one ... ok
+test dropping ... ok
+test get_1_max ... ok
+test izip2 ... ok
+test get_full_range_inclusive - should panic ... ok
+test izip3 ... ok
+test iproduct1 ... ok
+test izip_macro ... ok
+test merge ... ok
+test multizip3 ... ok
+test next_array ... ok
+test part ... ok
+test product0 ... ok
+test product1 ... ok
+test product2 ... ok
+test product_temporary ... ok
+test sum1 ... ok
+test repeatn ... ok
+test test_interleave ... ok
+test test_intersperse ... ok
+test test_intersperse_with ... ok
+test test_put_back ... ok
+test write_to ... ok
+test tree_reduce ... ok
+
+test result: ok. 30 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/test_std.rs (target/debug/deps/test_std-e271e9e66ac3b282)
+
+running 86 tests
+test all_equal ... ok
+test all_unique ... ok
+test chunk_by_lazy_2 ... ok
+test chunk_by_lazy_3 ... ok
+test chunks ... ok
+test chunk_by ... ok
+test coalesce ... ok
+test combinations ... ok
+test combinations_of_too_short ... ok
+test combinations_range_count ... ok
+test combinations_with_replacement ... ok
+test combinations_with_replacement_range_count ... ok
+test combinations_zero ... ok
+test concat_empty ... ok
+test concat_non_empty ... ok
+test dedup ... ok
+test dedup_by ... ok
+test dedup_by_with_count ... ok
+test dedup_with_count ... ok
+test diff_longer ... ok
+test combinations_inexact_size_hints ... ok
+test diff_shorter ... ok
+test duplicates ... ok
+test duplicates_by ... ok
+test exactly_one_question_mark_syntax_works ... ok
+test diff_mismatch ... ok
+test extrema_set ... ok
+test fold_while ... ok
+test format ... ok
+test interleave_shortest ... ok
+test intersperse ... ok
+test join ... ok
+test all_equal_value ... ok
+test k_smallest_by_sort_i16 ... ok
+test k_smallest_by_sort_i8 ... ok
+test k_smallest_by_sort_i32 ... ok
+test k_smallest_by_sort_i64 ... ok
+test k_smallest_by_sort_u16 ... ok
+test k_smallest_by_sort_u32 ... ok
+test k_smallest_range ... ok
+test k_smallest_relaxed_range ... ok
+test k_smallest_by_sort_u8 ... ok
+test k_smallest_by_sort_u64 ... ok
+test k_smallest_sort_i16 ... ok
+test k_smallest_sort_i32 ... ok
+test k_smallest_sort_i8 ... ok
+test k_smallest_sort_i64 ... ok
+test k_smallest_sort_u16 ... ok
+test kmerge ... ok
+test kmerge_2 ... ok
+test kmerge_empty ... ok
+test kmerge_empty_size_hint ... ok
+test kmerge_size_hint ... ok
+test merge_by ... ok
+test merge_by_btree ... ok
+test minmax ... ok
+test multiunzip ... ok
+test pad_using ... ok
+test permutations_overflowed_size_hints ... ok
+test permutations_range_count ... ok
+test permutations_zero ... ok
+test powerset ... ok
+test product3 ... ok
+test sorted_by ... ok
+test sorted_by_cached_key ... ok
+test sorted_by_key ... ok
+test sorted_unstable_by ... ok
+test sorted_unstable_by_key ... ok
+test tee ... ok
+test test_multipeek ... ok
+test test_multipeek_peeking_next ... ok
+test test_multipeek_reset ... ok
+test test_peek_nth ... ok
+test test_peek_nth_next_if ... ok
+test test_peek_nth_peeking_next ... ok
+test test_put_back_n ... ok
+test test_rciter ... ok
+test test_repeat_n_peeking_next ... ok
+test trait_pointers ... ok
+test tree_reduce ... ok
+test unique ... ok
+test unique_by ... ok
+test while_some ... ok
+test k_smallest_sort_u32 ... ok
+test k_smallest_sort_u8 ... ok
+test k_smallest_sort_u64 ... ok
+
+test result: ok. 86 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.32s
+
+     Running tests/tuples.rs (target/debug/deps/tuples-ebb9ab10e491126e)
+
+running 4 tests
+test tuples ... ok
+test next_tuple ... ok
+test collect_tuple ... ok
+test tuple_windows ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/zip.rs (target/debug/deps/zip-42674675fa4202d7)
+
+running 4 tests
+test zip_longest_fused ... ok
+test test_double_ended_zip ... ok
+test test_zip_longest_size_hint ... ok
+test test_double_ended_zip_longest ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
++ RESULT=0
 + cd /tmp/top100_artifacts
 + rm -rf /tmp/top100_artifacts/itertools-0.14.0
-+ exit 127
++ exit 0

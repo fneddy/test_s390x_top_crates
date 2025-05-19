@@ -1,12 +1,78 @@
 [futures-util] download directory: /tmp/top100_artifacts/futures-util-0.3.31
-+ tar xzf -
 + curl -sL https://crates.io/api/v1/crates/futures-util/0.3.31/download
++ tar xzf -
 + cd /tmp/top100_artifacts/futures-util-0.3.31
 + cargo clean
-/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 78: cargo: command not found
+     Removed 0 files
 + cargo +stable test ''
-/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 79: cargo: command not found
-+ RESULT=127
+    Blocking waiting for file lock on package cache
+    Updating crates.io index
+    Blocking waiting for file lock on package cache
+     Locking 70 packages to latest compatible versions
+      Adding futures v0.1.31 (available: v0.3.31)
+      Adding tokio v0.1.22 (available: v1.45.0)
+    Blocking waiting for file lock on package cache
+   Compiling autocfg v1.4.0
+   Compiling libc v0.2.172
+   Compiling cfg-if v0.1.10
+   Compiling maybe-uninit v2.0.0
+   Compiling lazy_static v1.5.0
+   Compiling semver-parser v0.7.0
+   Compiling futures v0.1.31
+   Compiling semver v0.9.0
+   Compiling crossbeam-utils v0.7.2
+   Compiling slab v0.4.9
+   Compiling iovec v0.1.4
+   Compiling rustc_version v0.2.3
+   Compiling log v0.4.27
+   Compiling scopeguard v1.2.0
+   Compiling byteorder v1.5.0
+   Compiling tokio-executor v0.1.10
+   Compiling bytes v0.4.12
+   Compiling parking_lot_core v0.6.3
+   Compiling parking_lot v0.9.0
+   Compiling num_cpus v1.16.0
+   Compiling net2 v0.2.39
+   Compiling tokio-io v0.1.13
+   Compiling memoffset v0.5.6
+   Compiling smallvec v0.6.14
+   Compiling mio v0.6.23
+   Compiling lock_api v0.3.4
+   Compiling crossbeam-epoch v0.8.2
+   Compiling fnv v1.0.7
+   Compiling tokio-sync v0.1.8
+   Compiling proc-macro2 v1.0.95
+   Compiling tokio-reactor v0.1.12
+   Compiling unicode-ident v1.0.18
+   Compiling tokio-codec v0.1.2
+   Compiling crossbeam-deque v0.7.4
+   Compiling crossbeam-queue v0.2.3
+   Compiling mio-uds v0.6.8
+   Compiling tokio-udp v0.1.6
+   Compiling tokio-threadpool v0.1.18
+   Compiling quote v1.0.40
+   Compiling tokio-uds v0.2.7
+   Compiling syn v2.0.101
+   Compiling tokio-fs v0.1.7
+   Compiling tokio-tcp v0.1.4
+   Compiling tokio-timer v0.2.13
+   Compiling tokio-current-thread v0.1.7
+   Compiling tokio v0.1.22
+   Compiling pin-project-lite v0.2.16
+   Compiling futures-task v0.3.31
+   Compiling pin-utils v0.1.0
+   Compiling futures-core v0.3.31
+   Compiling futures-macro v0.3.31
+   Compiling futures-util v0.3.31 (/tmp/top100_artifacts/futures-util-0.3.31)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 11.67s
+     Running unittests src/lib.rs (target/debug/deps/futures_util-7a1bb2a53722158f)
+
+running 1 test
+test lock::mutex::tests::test_mutex_guard_debug_not_recurse ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
++ RESULT=0
 + cd /tmp/top100_artifacts
 + rm -rf /tmp/top100_artifacts/futures-util-0.3.31
-+ exit 127
++ exit 0

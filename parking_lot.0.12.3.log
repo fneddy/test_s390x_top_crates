@@ -1,12 +1,141 @@
 [parking_lot] download directory: /tmp/top100_artifacts/parking_lot-0.12.3
-+ curl -sL https://crates.io/api/v1/crates/parking_lot/0.12.3/download
 + tar xzf -
++ curl -sL https://crates.io/api/v1/crates/parking_lot/0.12.3/download
 + cd /tmp/top100_artifacts/parking_lot-0.12.3
 + cargo clean
-/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 78: cargo: command not found
+     Removed 0 files
 + cargo +stable test ''
-/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 79: cargo: command not found
-+ RESULT=127
+    Updating crates.io index
+     Locking 52 packages to latest compatible versions
+      Adding bincode v1.3.3 (available: v2.0.1)
+      Adding rand v0.8.5 (available: v0.9.1)
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   Compiling libc v0.2.172
+   Compiling cfg-if v1.0.0
+   Compiling zerocopy v0.8.25
+   Compiling autocfg v1.4.0
+   Compiling parking_lot_core v0.9.10
+   Compiling serde v1.0.219
+   Compiling lock_api v0.4.12
+   Compiling smallvec v1.15.0
+   Compiling scopeguard v1.2.0
+   Compiling getrandom v0.2.16
+   Compiling rand_core v0.6.4
+   Compiling parking_lot v0.12.3 (/tmp/top100_artifacts/parking_lot-0.12.3)
+   Compiling ppv-lite86 v0.2.21
+   Compiling rand_chacha v0.3.1
+   Compiling rand v0.8.5
+   Compiling bincode v1.3.3
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 5.69s
+     Running unittests src/lib.rs (target/debug/deps/parking_lot-2540c368981284e7)
+
+running 87 tests
+test condvar::tests::notify_one_return_false ... ok
+test condvar::tests::notify_one ... ok
+test condvar::tests::smoke ... ok
+test condvar::tests::notify_one_return_true ... ok
+test condvar::tests::test_debug_condvar ... ok
+test condvar::tests::notify_all ... ok
+test condvar::tests::test_condvar_requeue ... ok
+test condvar::tests::two_mutexes - should panic ... ok
+test condvar::tests::notify_all_return ... ok
+test condvar::tests::two_mutexes_disjoint ... ok
+test condvar::tests::wait_for ... ok
+test condvar::tests::wait_while_until_internal_does_not_wait_if_initially_false ... ok
+test condvar::tests::wait_until ... ok
+test condvar::tests::wait_while_until_internal ... ok
+test condvar::tests::test_issue_129 ... ok
+test condvar::webkit_queue_test::one_producer_one_consumer_hundred_slots ... ok
+test condvar::tests::wait_while_until_internal_times_out_before_false ... ok
+test condvar::webkit_queue_test::one_producer_ten_consumers_hundred_slots_notify_all ... ok
+test condvar::webkit_queue_test::new_test_without_timeout_5 ... ok
+test condvar::webkit_queue_test::one_producer_ten_consumers_hundred_slots_notify_one ... ok
+test condvar::webkit_queue_test::one_producer_one_consumer_one_slot ... ok
+test condvar::webkit_queue_test::one_producer_ten_consumers_one_slot ... ok
+test condvar::webkit_queue_test::sanity_check_queue_timeout ... ok
+test condvar::webkit_queue_test::ten_producers_one_consumer_hundred_slots_notify_all ... ok
+test condvar::webkit_queue_test::ten_producers_one_consumer_hundred_slots_notify_one ... ok
+test condvar::webkit_queue_test::one_producer_one_consumer_one_slot_timeout ... ok
+test condvar::webkit_queue_test::ten_producers_ten_consumers_hundred_slots_notify_all ... ok
+test condvar::webkit_queue_test::sanity_check_queue ... ok
+test fair_mutex::tests::lots_and_lots ... ok
+test fair_mutex::tests::smoke ... ok
+test fair_mutex::tests::test_get_mut ... ok
+test fair_mutex::tests::test_into_inner ... ok
+test fair_mutex::tests::test_into_inner_drop ... ok
+test fair_mutex::tests::test_mutex_arc_access_in_unwind ... ok
+test fair_mutex::tests::test_mutex_arc_nested ... ok
+test fair_mutex::tests::test_mutex_debug ... ok
+test fair_mutex::tests::test_mutex_unsized ... ok
+test fair_mutex::tests::test_mutexguard_sync ... ok
+test fair_mutex::tests::try_lock ... ok
+test mutex::tests::lots_and_lots ... ok
+test mutex::tests::smoke ... ok
+test mutex::tests::test_get_mut ... ok
+test mutex::tests::test_into_inner ... ok
+test mutex::tests::test_into_inner_drop ... ok
+test mutex::tests::test_mutex_arc_access_in_unwind ... ok
+test mutex::tests::test_mutex_arc_condvar ... ok
+test mutex::tests::test_mutex_arc_nested ... ok
+test mutex::tests::test_mutex_debug ... ok
+test mutex::tests::test_mutex_unsized ... ok
+test mutex::tests::test_mutexguard_sync ... ok
+test mutex::tests::try_lock ... ok
+test once::tests::poison_bad ... ok
+test once::tests::smoke_once ... ok
+test once::tests::stampede_once ... ok
+test once::tests::test_once_debug ... ok
+test once::tests::wait_for_force_to_finish ... ok
+test remutex::tests::is_mutex ... ok
+test remutex::tests::smoke ... ok
+test remutex::tests::test_reentrant_mutex_bump ... ok
+test remutex::tests::test_reentrant_mutex_debug ... ok
+test remutex::tests::trylock_works ... ok
+test rwlock::tests::frob ... ok
+test rwlock::tests::smoke ... ok
+test rwlock::tests::test_clone ... ok
+test rwlock::tests::test_get_mut ... ok
+test rwlock::tests::test_into_inner ... ok
+test rwlock::tests::test_into_inner_drop ... ok
+test rwlock::tests::test_issue_203 ... ok
+test rwlock::tests::test_ruw_arc ... ok
+test rwlock::tests::test_rw_arc ... ok
+test rwlock::tests::test_rw_arc_access_in_unwind ... ok
+test rwlock::tests::test_rw_arc_no_poison_rr ... ok
+test rwlock::tests::test_rw_arc_no_poison_rw ... ok
+test rwlock::tests::test_rw_arc_no_poison_wr ... ok
+test rwlock::tests::test_rw_arc_no_poison_ww ... ok
+test rwlock::tests::test_rw_write_is_locked ... ok
+test rwlock::tests::test_rwlock_debug ... ok
+test rwlock::tests::test_rwlock_downgrade ... ok
+test condvar::webkit_queue_test::ten_producers_ten_consumers_hundred_slots_notify_one ... ok
+test rwlock::tests::test_rwlock_try_read ... ok
+test rwlock::tests::test_rwlock_try_upgrade ... ok
+test rwlock::tests::test_rwlock_try_write ... ok
+test rwlock::tests::test_rwlock_unsized ... ok
+test rwlock::tests::test_rwlockguard_sync ... ok
+test rwlock::tests::test_rwlock_recursive ... ok
+test condvar::webkit_queue_test::ten_producers_one_consumer_one_slot ... ok
+test condvar::webkit_queue_test::ten_producers_ten_consumers_one_slot ... ok
+
+test result: ok. 87 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 6.73s
+
+     Running tests/issue_203.rs (target/debug/deps/issue_203-b40795088898c4cb)
+
+running 1 test
+test main ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/issue_392.rs (target/debug/deps/issue_392-d6f3be74b67577e6)
+
+running 1 test
+test issue_392 ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
++ RESULT=0
 + cd /tmp/top100_artifacts
 + rm -rf /tmp/top100_artifacts/parking_lot-0.12.3
-+ exit 127
++ exit 0

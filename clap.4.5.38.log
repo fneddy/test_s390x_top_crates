@@ -1,12 +1,88 @@
 [clap] download directory: /tmp/top100_artifacts/clap-4.5.38
-+ curl -sL https://crates.io/api/v1/crates/clap/4.5.38/download
 + tar xzf -
++ curl -sL https://crates.io/api/v1/crates/clap/4.5.38/download
 + cd /tmp/top100_artifacts/clap-4.5.38
 + cargo clean
-/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 78: cargo: command not found
+     Removed 0 files
 + cargo +stable test ''
-/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 79: cargo: command not found
-+ RESULT=127
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   Compiling proc-macro2 v1.0.94
+   Compiling unicode-ident v1.0.12
+   Compiling serde v1.0.204
+   Compiling anstyle v1.0.10
+   Compiling utf8parse v0.2.2
+   Compiling anstyle-parse v0.2.4
+   Compiling crossbeam-utils v0.8.20
+   Compiling is_terminal_polyfill v1.70.0
+   Compiling colorchoice v1.0.1
+   Compiling anstyle-query v1.1.0
+   Compiling anstream v0.6.14
+   Compiling serde_json v1.0.120
+   Compiling libc v0.2.155
+   Compiling quote v1.0.39
+   Compiling syn v2.0.99
+   Compiling hashbrown v0.14.5
+   Compiling itoa v1.0.11
+   Compiling ryu v1.0.18
+   Compiling equivalent v1.0.1
+   Compiling crossbeam-epoch v0.9.18
+   Compiling indexmap v2.2.6
+   Compiling winnow v0.6.13
+   Compiling utf8-width v0.1.7
+   Compiling escargot v0.5.13
+   Compiling rayon-core v1.12.1
+   Compiling html-escape v0.2.13
+   Compiling crossbeam-deque v0.8.5
+   Compiling anstyle-lossy v1.1.3
+   Compiling once_cell v1.19.0
+   Compiling target-triple v0.1.3
+   Compiling log v0.4.22
+   Compiling unicode-width v0.2.0
+   Compiling anstyle-svg v0.1.7
+   Compiling serde_derive v1.0.204
+   Compiling wait-timeout v0.2.0
+   Compiling os_pipe v1.2.0
+   Compiling snapbox-macros v0.3.10
+   Compiling strsim v0.11.1
+   Compiling normalize-line-endings v0.3.0
+   Compiling humantime v2.1.0
+   Compiling rustversion v1.0.20
+   Compiling similar v2.5.0
+   Compiling clap_lex v0.7.4
+   Compiling either v1.13.0
+   Compiling glob v0.3.1
+   Compiling rayon v1.10.0
+   Compiling clap_builder v4.5.38
+   Compiling automod v1.0.15
+   Compiling termcolor v1.4.1
+   Compiling toml_datetime v0.6.6
+   Compiling serde_spanned v0.6.6
+   Compiling toml_edit v0.22.15
+   Compiling humantime-serde v1.1.1
+   Compiling shlex v1.3.0
+   Compiling snapbox v0.6.21
+   Compiling toml v0.8.14
+   Compiling trybuild v1.0.104
+   Compiling trycmd v0.15.9
+   Compiling clap-cargo v0.15.2
+   Compiling jiff v0.2.11
+   Compiling clap v4.5.38 (/tmp/top100_artifacts/clap-4.5.38)
+    Finished `test` profile [optimized + debuginfo] target(s) in 49.03s
+     Running unittests src/lib.rs (target/debug/deps/clap-a6c222a4bd718f66)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/stdio-fixture.rs (target/debug/deps/stdio_fixture-70f6ef5804673d1f)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
++ RESULT=0
 + cd /tmp/top100_artifacts
 + rm -rf /tmp/top100_artifacts/clap-4.5.38
-+ exit 127
++ exit 0

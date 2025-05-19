@@ -1,12 +1,36 @@
 [memchr] download directory: /tmp/top100_artifacts/memchr-2.7.4
-+ tar xzf -
 + curl -sL https://crates.io/api/v1/crates/memchr/2.7.4/download
++ tar xzf -
 + cd /tmp/top100_artifacts/memchr-2.7.4
 + cargo clean
-/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 78: cargo: command not found
+     Removed 0 files
 + cargo +stable test ''
-/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 79: cargo: command not found
-+ RESULT=127
+    Updating crates.io index
+    Blocking waiting for file lock on package cache
+     Locking 10 packages to latest compatible versions
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   Compiling libc v0.2.172
+   Compiling cfg-if v1.0.0
+   Compiling getrandom v0.2.16
+   Compiling rand_core v0.6.4
+   Compiling rand v0.8.5
+   Compiling quickcheck v1.0.3
+   Compiling memchr v2.7.4 (/tmp/top100_artifacts/memchr-2.7.4)
+error: missing documentation for a macro
+   --> src/tests/memchr/prop.rs:9:1
+    |
+9   | macro_rules! define_memchr_quickcheck {
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+note: the lint level is defined here
+   --> src/lib.rs:172:9
+    |
+172 | #![deny(missing_docs)]
+    |         ^^^^^^^^^^^^
+
+error: could not compile `memchr` (lib test) due to 1 previous error
++ RESULT=101
 + cd /tmp/top100_artifacts
 + rm -rf /tmp/top100_artifacts/memchr-2.7.4
-+ exit 127
++ exit 101

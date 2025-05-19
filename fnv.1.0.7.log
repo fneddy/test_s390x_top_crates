@@ -3,10 +3,22 @@
 + tar xzf -
 + cd /tmp/top100_artifacts/fnv-1.0.7
 + cargo clean
-/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 78: cargo: command not found
+     Removed 0 files
 + cargo +stable test ''
-/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 79: cargo: command not found
-+ RESULT=127
+warning: no edition set: defaulting to the 2015 edition while the latest is 2024
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   Compiling fnv v1.0.7 (/tmp/top100_artifacts/fnv-1.0.7)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.44s
+     Running unittests lib.rs (target/debug/deps/fnv-7203222cd41fbeea)
+
+running 1 test
+test test::basic_tests ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
++ RESULT=0
 + cd /tmp/top100_artifacts
 + rm -rf /tmp/top100_artifacts/fnv-1.0.7
-+ exit 127
++ exit 0

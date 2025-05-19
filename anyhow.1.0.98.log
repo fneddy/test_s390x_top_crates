@@ -3,10 +3,212 @@
 + tar xzf -
 + cd /tmp/top100_artifacts/anyhow-1.0.98
 + cargo clean
-/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 78: cargo: command not found
+     Removed 0 files
 + cargo +stable test ''
-/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 79: cargo: command not found
-+ RESULT=127
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   Compiling proc-macro2 v1.0.94
+   Compiling serde v1.0.219
+   Compiling unicode-ident v1.0.18
+   Compiling hashbrown v0.15.2
+   Compiling equivalent v1.0.2
+   Compiling futures-sink v0.3.31
+   Compiling futures-core v0.3.31
+   Compiling serde_json v1.0.140
+   Compiling winnow v0.7.6
+   Compiling indexmap v2.9.0
+   Compiling quote v1.0.40
+   Compiling target-triple v0.1.4
+   Compiling syn v2.0.100
+   Compiling pin-utils v0.1.0
+   Compiling rustversion v1.0.20
+   Compiling itoa v1.0.15
+   Compiling anyhow v1.0.98 (/tmp/top100_artifacts/anyhow-1.0.98)
+   Compiling pin-project-lite v0.2.16
+   Compiling thiserror v2.0.12
+   Compiling ryu v1.0.20
+   Compiling futures-task v0.3.31
+   Compiling memchr v2.7.4
+   Compiling serde_spanned v0.6.8
+   Compiling toml_datetime v0.6.8
+   Compiling futures-util v0.3.31
+   Compiling toml_edit v0.22.24
+   Compiling futures-channel v0.3.31
+   Compiling futures-io v0.3.31
+   Compiling toml v0.8.20
+   Compiling glob v0.3.2
+   Compiling dissimilar v1.0.10
+   Compiling termcolor v1.4.1
+   Compiling futures v0.3.31
+   Compiling thiserror-impl v2.0.12
+   Compiling serde_derive v1.0.219
+   Compiling trybuild v1.0.104
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 13.11s
+     Running unittests src/lib.rs (target/debug/deps/anyhow-04bc9d7e01aed357)
+
+running 3 tests
+test fmt::tests::one_digit ... ok
+test fmt::tests::no_digits ... ok
+test fmt::tests::two_digits ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/compiletest.rs (target/debug/deps/compiletest-5156b7431110dcc2)
+
+running 1 test
+test ui ... ignored, requires nightly
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/test_autotrait.rs (target/debug/deps/test_autotrait-c460360692be77fa)
+
+running 5 tests
+test test_ref_unwind_safe ... ok
+test test_send ... ok
+test test_sync ... ok
+test test_unpin ... ok
+test test_unwind_safe ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/test_backtrace.rs (target/debug/deps/test_backtrace-1ec97a8e2a810bc2)
+
+running 1 test
+test test_backtrace ... ignored, requires nightly
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/test_boxed.rs (target/debug/deps/test_boxed-e23ac3048f4149a7)
+
+running 3 tests
+test test_boxed_anyhow ... ok
+test test_boxed_str ... ok
+test test_boxed_thiserror ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/test_chain.rs (target/debug/deps/test_chain-d48d5c8edd252ae7)
+
+running 5 tests
+test test_clone ... ok
+test test_default ... ok
+test test_iter ... ok
+test test_rev ... ok
+test test_len ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/test_context.rs (target/debug/deps/test_context-e6c184c318d74943)
+
+running 7 tests
+test test_downcast_high ... ok
+test test_downcast_low ... ok
+test test_downcast_mid ... ok
+test test_downcast_ref ... ok
+test test_inference ... ok
+test test_root_cause ... ok
+test test_unsuccessful_downcast ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/test_convert.rs (target/debug/deps/test_convert-8fe1448c7ff07e83)
+
+running 4 tests
+test test_convert ... ok
+test test_convert_send ... ok
+test test_question_mark ... ok
+test test_convert_send_sync ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/test_downcast.rs (target/debug/deps/test_downcast-abc7e6ee72175784)
+
+running 7 tests
+test test_as_ref ... ok
+test test_downcast ... ok
+test test_downcast_mut ... ok
+test test_downcast_ref ... ok
+test test_drop ... ok
+test test_large_alignment ... ok
+test test_unsuccessful_downcast ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/test_ensure.rs (target/debug/deps/test_ensure-22e62e9b55dac4bb)
+
+running 18 tests
+test test_atom ... ok
+test test_as ... ok
+test test_closure ... ok
+test test_high_precedence_binary_operator ... ok
+test test_if ... ok
+test test_loop ... ok
+test test_low_precedence_binary_operator ... ok
+test test_low_precedence_control_flow ... ok
+test test_macro ... ok
+test test_match ... ok
+test test_pat ... ok
+test test_raw_addr ... ok
+test test_path ... ok
+test test_recursion ... ok
+test test_too_long ... ok
+test test_trailer ... ok
+test test_unary ... ok
+test test_whitespace ... ok
+
+test result: ok. 18 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/test_ffi.rs (target/debug/deps/test_ffi-4069f92c42f9e51b)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/test_fmt.rs (target/debug/deps/test_fmt-9ecea7f290dbfe18)
+
+running 4 tests
+test test_altdebug ... ok
+test test_altdisplay ... ok
+test test_debug ... ok
+test test_display ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/test_macros.rs (target/debug/deps/test_macros-06ebc1b66d7bdb65)
+
+running 5 tests
+test test_ensure_nonbool ... ok
+test test_ensure ... ok
+test test_brace_escape ... ok
+test test_messages ... ok
+test test_temporaries ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/test_repr.rs (target/debug/deps/test_repr-1e647b9a8178f511)
+
+running 4 tests
+test test_autotraits ... ok
+test test_error_size ... ok
+test test_drop ... ok
+test test_null_pointer_optimization ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/test_source.rs (target/debug/deps/test_source-d204f763dc59dc91)
+
+running 5 tests
+test test_anyhow_from_anyhow ... ok
+test test_fmt_source ... ok
+test test_io_source ... ok
+test test_literal_source ... ok
+test test_variable_source ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
++ RESULT=0
 + cd /tmp/top100_artifacts
 + rm -rf /tmp/top100_artifacts/anyhow-1.0.98
-+ exit 127
++ exit 0

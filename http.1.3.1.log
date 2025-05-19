@@ -3,10 +3,228 @@
 + tar xzf -
 + cd /tmp/top100_artifacts/http-1.3.1
 + cargo clean
-/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 78: cargo: command not found
+     Removed 0 files
 + cargo +stable test ''
-/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 79: cargo: command not found
-+ RESULT=127
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   Compiling libc v0.2.153
+   Compiling memchr v2.7.1
+   Compiling cfg-if v1.0.0
+   Compiling regex-syntax v0.8.2
+   Compiling ppv-lite86 v0.2.17
+   Compiling serde v1.0.197
+   Compiling aho-corasick v1.1.2
+   Compiling serde_json v1.0.114
+   Compiling doc-comment v0.3.3
+   Compiling getrandom v0.2.12
+   Compiling log v0.4.21
+   Compiling rand_core v0.6.4
+   Compiling itoa v1.0.10
+   Compiling rand_chacha v0.3.1
+   Compiling rand v0.8.5
+   Compiling regex-automata v0.4.5
+   Compiling bytes v1.5.0
+   Compiling ryu v1.0.17
+   Compiling fnv v1.0.7
+   Compiling http v1.3.1 (/tmp/top100_artifacts/http-1.3.1)
+   Compiling regex v1.10.3
+   Compiling env_logger v0.8.4
+   Compiling quickcheck v1.0.3
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 11.36s
+     Running unittests src/lib.rs (target/debug/deps/http-5a8b39b6cf55a036)
+
+running 127 tests
+test error::tests::inner_error_is_invalid_status_code ... ok
+test header::map::skip_duplicates_during_key_iteration ... ok
+test extensions::test_extensions ... ok
+test header::name::test_parse_standard_headers ... ok
+test header::name::test_standard_headers_into_bytes ... ok
+test header::name::tests::test_all_tokens ... ok
+test header::name::tests::test_eq_hdr_name ... ok
+test header::name::tests::test_from_hdr_name ... ok
+test header::name::tests::test_from_lowercase ... ok
+test header::name::tests::test_from_static_custom_long ... ok
+test header::name::tests::test_from_static_custom_long_symbol - should panic ... ok
+test header::name::tests::test_from_static_custom_long_uppercase - should panic ... ok
+test header::name::tests::test_from_static_custom_short ... ok
+test header::name::tests::test_from_static_custom_short_symbol - should panic ... ok
+test header::name::tests::test_from_static_custom_short_uppercase - should panic ... ok
+test header::name::tests::test_from_static_custom_single_char ... ok
+test header::name::tests::test_from_static_empty - should panic ... ok
+test header::name::tests::test_from_static_std ... ok
+test header::name::tests::test_from_static_std_symbol - should panic ... ok
+test header::name::tests::test_from_static_std_uppercase - should panic ... ok
+test header::name::tests::test_bounds ... ok
+test header::map::test_bounds ... ok
+test header::name::tests::test_parse_invalid_headers ... ok
+test header::name::tests::test_static_invalid_name_lengths - should panic ... ok
+test header::value::from_header_name_tests::it_can_insert_header_name_as_header_value ... ok
+test header::value::from_i32 ... ok
+test header::value::from_i64 ... ok
+test header::value::from_isize ... ok
+test header::value::from_u16 ... ok
+test header::value::from_u32 ... ok
+test header::value::from_u64 ... ok
+test header::value::from_usize ... ok
+test header::value::test_debug ... ok
+test header::value::test_try_from ... ok
+test header::value::try_from_header_name_tests::it_converts_using_try_from ... ok
+test method::test::test_extension_method ... ok
+test method::test::test_extension_method_chars ... ok
+test method::test::test_invalid_method ... ok
+test method::test::test_is_idempotent ... ok
+test method::test::test_method_eq ... ok
+test request::tests::it_can_map_a_body_from_one_type_to_another ... ok
+test response::tests::it_can_map_a_body_from_one_type_to_another ... ok
+test tests::request_satisfies_send_sync ... ok
+test tests::response_satisfies_send_sync ... ok
+test uri::authority::tests::allows_percent_in_ipv6_address ... ok
+test uri::authority::tests::allows_percent_in_userinfo ... ok
+test uri::authority::tests::compares_to_self ... ok
+test uri::authority::tests::compares_with_a_str ... ok
+test uri::authority::tests::compares_with_a_string ... ok
+test uri::authority::tests::equal_to_self_of_same_authority ... ok
+test uri::authority::tests::equates_with_a_str ... ok
+test uri::authority::tests::equates_with_a_string ... ok
+test uri::authority::tests::equates_with_a_string_of_a_different_authority ... ok
+test uri::authority::tests::from_static_equates_with_a_str ... ok
+test uri::authority::tests::not_equal_to_self_of_different_authority ... ok
+test uri::authority::tests::not_equal_with_a_str_of_a_different_authority ... ok
+test uri::authority::tests::parse_empty_string_is_error ... ok
+test uri::authority::tests::reject_obviously_invalid_ipv6_address ... ok
+test uri::authority::tests::rejects_invalid_use_of_brackets ... ok
+test uri::authority::tests::rejects_invalid_utf8 ... ok
+test uri::authority::tests::rejects_percent_in_hostname ... ok
+test uri::authority::tests::rejects_percent_outside_ipv6_address ... ok
+test uri::builder::tests::build_from_str ... ok
+test uri::builder::tests::build_from_string ... ok
+test uri::builder::tests::build_from_string_ref ... ok
+test uri::builder::tests::build_from_uri ... ok
+test uri::path::tests::allow_utf8_in_path ... ok
+test uri::path::tests::allow_utf8_in_query ... ok
+test uri::path::tests::compares_to_self ... ok
+test uri::path::tests::compares_with_a_str ... ok
+test uri::path::tests::compares_with_a_string ... ok
+test uri::path::tests::equal_to_self_of_same_path ... ok
+test uri::path::tests::equates_with_a_str ... ok
+test uri::path::tests::equates_with_a_string ... ok
+test uri::path::tests::ignores_invalid_percent_encodings ... ok
+test uri::path::tests::ignores_valid_percent_encodings ... ok
+test uri::path::tests::json_is_fine ... ok
+test uri::path::tests::not_equal_to_self_of_different_path ... ok
+test uri::path::tests::not_equal_with_a_str_of_a_different_path ... ok
+test uri::path::tests::not_equal_with_a_string_of_a_different_path ... ok
+test uri::path::tests::rejects_invalid_utf8_in_path ... ok
+test uri::path::tests::rejects_invalid_utf8_in_query ... ok
+test uri::port::tests::partialeq_port ... ok
+test uri::port::tests::partialeq_port_different_reprs ... ok
+test uri::port::tests::partialeq_u16 ... ok
+test uri::port::tests::u16_from_port ... ok
+test uri::scheme::test::invalid_scheme_is_error ... ok
+test uri::scheme::test::scheme_eq_to_str ... ok
+test uri::tests::test_authority_uri_parts_round_trip ... ok
+test uri::tests::test_char_table ... ok
+test uri::tests::test_ipv6 ... ok
+test uri::tests::test_ipv6_shorthand ... ok
+test uri::tests::test_ipv6_shorthand2 ... ok
+test uri::tests::test_ipv6_shorthand3 ... ok
+test uri::tests::test_ipv6_with_port ... ok
+test uri::tests::test_max_length_scheme ... ok
+test uri::tests::test_max_uri_len ... ok
+test uri::tests::test_overflowing_scheme ... ok
+test uri::tests::test_partial_eq_path_with_terminating_questionmark ... ok
+test uri::tests::test_path_permissive ... ok
+test uri::tests::test_percentage_encoded_path ... ok
+test uri::tests::test_query_permissive ... ok
+test uri::tests::test_uri_authority_only_one_character_issue_197 ... ok
+test uri::tests::test_uri_parse_absolute_form ... ok
+test uri::tests::test_uri_parse_absolute_form_with_empty_path_and_fragment_with_questionmark ... ok
+test uri::tests::test_uri_parse_absolute_form_with_empty_path_and_fragment_with_slash ... ok
+test uri::tests::test_uri_parse_absolute_form_with_empty_path_and_nonempty_query ... ok
+test uri::tests::test_uri_parse_absolute_form_without_path ... ok
+test uri::tests::test_uri_parse_absolute_with_default_port_http ... ok
+test uri::tests::test_uri_parse_absolute_with_default_port_https ... ok
+test uri::tests::test_uri_parse_asterisk_form ... ok
+test uri::tests::test_uri_parse_authority_form ... ok
+test uri::tests::test_uri_parse_authority_no_port ... ok
+test uri::tests::test_uri_parse_error ... ok
+test uri::tests::test_uri_parse_fragment_questionmark ... ok
+test uri::tests::test_uri_parse_long_host_with_no_scheme ... ok
+test uri::tests::test_uri_parse_long_host_with_port_and_no_scheme ... ok
+test uri::tests::test_uri_parse_path_and_query ... ok
+test uri::tests::test_uri_parse_path_with_terminating_questionmark ... ok
+test uri::tests::test_uri_to_path_and_query ... ok
+test uri::tests::test_userinfo1 ... ok
+test uri::tests::test_userinfo2 ... ok
+test uri::tests::test_userinfo3 ... ok
+test uri::tests::test_userinfo_pass_with_port ... ok
+test uri::tests::test_userinfo_with_port ... ok
+test header::name::tests::test_invalid_name_lengths ... ok
+test header::value::from_i16 ... ok
+
+test result: ok. 127 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/header_map.rs (target/debug/deps/header_map-9df62ae3758fb844)
+
+running 31 tests
+test append_multiple_values ... ok
+test as_header_name ... ok
+test drain ... ok
+test drain_drop_immediately ... ok
+test drain_entry ... ok
+test drain_forget ... ok
+test ensure_miri_sharedreadonly_not_violated ... ok
+test eq ... ok
+test get_invalid ... ok
+test insert_all_std_headers ... ok
+test insert_invalid - should panic ... ok
+test into_header_name ... ok
+test remove_entry_3_others_a ... ok
+test remove_entry_3_others_b ... ok
+test remove_entry_multi_0 ... ok
+test remove_entry_multi_0_others ... ok
+test remove_entry_multi_1 ... ok
+test remove_entry_multi_1_other ... ok
+test remove_entry_multi_2 ... ok
+test remove_entry_multi_3 ... ok
+test remove_entry_multi_3_others ... ok
+test remove_multiple_a ... ok
+test remove_multiple_b ... ok
+test reserve ... ok
+test reserve_over_capacity - should panic ... ok
+test reserve_overflow - should panic ... ok
+test smoke ... ok
+test value_htab ... ok
+test with_capacity_max ... ok
+test with_capacity_overflow - should panic ... ok
+test insert_79_custom_std_headers ... ok
+
+test result: ok. 31 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/header_map_fuzz.rs (target/debug/deps/header_map_fuzz-d0b203ac589f25c5)
+
+running 1 test
+test header_map_fuzz ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.85s
+
+     Running tests/status_code.rs (target/debug/deps/status_code-1c0742ddac6b9c2e)
+
+running 8 tests
+test equates_with_u16 ... ok
+test is_informational ... ok
+test from_bytes ... ok
+test is_client_error ... ok
+test is_redirection ... ok
+test is_server_error ... ok
+test is_success ... ok
+test roundtrip ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
++ RESULT=0
 + cd /tmp/top100_artifacts
 + rm -rf /tmp/top100_artifacts/http-1.3.1
-+ exit 127
++ exit 0

@@ -3,10 +3,129 @@
 + tar xzf -
 + cd /tmp/top100_artifacts/ryu-1.0.20
 + cargo clean
-/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 78: cargo: command not found
+     Removed 0 files
 + cargo +stable test ''
-/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 79: cargo: command not found
-+ RESULT=127
+   Compiling proc-macro2 v1.0.94
+   Compiling libc v0.2.170
+   Compiling unicode-ident v1.0.17
+   Compiling getrandom v0.3.1
+   Compiling cfg-if v1.0.0
+   Compiling byteorder v1.5.0
+   Compiling zerocopy v0.8.21
+   Compiling ryu v1.0.20 (/tmp/top100_artifacts/ryu-1.0.20)
+   Compiling quote v1.0.39
+   Compiling syn v2.0.99
+   Compiling num_cpus v1.16.0
+   Compiling rand_core v0.9.3
+   Compiling rand_xorshift v0.4.0
+   Compiling zerocopy-derive v0.7.35
+   Compiling zerocopy v0.7.35
+   Compiling ppv-lite86 v0.2.20
+   Compiling rand_chacha v0.9.0
+   Compiling rand v0.9.0
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 12.87s
+     Running unittests src/lib.rs (target/debug/deps/ryu-47b84185642488bb)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/common_test.rs (target/debug/deps/common_test-934be213ed894907)
+
+running 6 tests
+test test_float_to_bits ... ok
+test test_decimal_length9 ... ok
+test test_double_to_bits ... ok
+test test_log10_pow2 ... ok
+test test_log10_pow5 ... ok
+test test_ceil_log2_pow5 ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/d2s_intrinsics_test.rs (target/debug/deps/d2s_intrinsics_test-826fcc13609570e1)
+
+running 1 test
+test test_pow5_factor ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/d2s_table_test.rs (target/debug/deps/d2s_table_test-8947dcedf90bdeb7)
+
+running 2 tests
+test test_compute_inv_pow5 ... ok
+test test_compute_pow5 ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/d2s_test.rs (target/debug/deps/d2s_test-815badfd6bc512ea)
+
+running 12 tests
+test test_basic ... ok
+test test_looks_like_pow5 ... ok
+test test_min_max_shift ... ok
+test test_lots_of_trailing_zeros ... ok
+test test_min_and_max ... ok
+test test_output_length ... ok
+test test_ryu ... ok
+test test_small_integers ... ok
+test test_switch_to_subnormal ... ok
+test test_regression ... ok
+test test_random ... ok
+test test_non_finite ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 7.38s
+
+     Running tests/exhaustive.rs (target/debug/deps/exhaustive-fa5b0fad03f61066)
+
+running 1 test
+test test_exhaustive ... ignored, requires cfg(exhaustive)
+
+test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/f2s_test.rs (target/debug/deps/f2s_test-905765d628da28d2)
+
+running 12 tests
+test test_basic ... ok
+test test_looks_like_pow5 ... ok
+test test_lots_of_trailing_zeros ... ok
+test test_min_and_max ... ok
+test test_boundary_round_even ... ok
+test test_exact_value_round_even ... ok
+test test_output_length ... ok
+test test_regression ... ok
+test test_ryu ... ok
+test test_switch_to_subnormal ... ok
+test test_random ... ok
+test test_non_finite ... ok
+
+test result: ok. 12 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 4.47s
+
+     Running tests/s2d_test.rs (target/debug/deps/s2d_test-8cbcc64f7aa7aefc)
+
+running 9 tests
+test test_basic ... ok
+test test_mantissa_rounding_overflow ... ok
+test test_issue173 ... ok
+test test_min_max ... ok
+test test_table_size_denormal ... ok
+test test_overflow ... ok
+test test_underflow ... ok
+test test_bad_input ... ok
+test test_issue157 ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/s2f_test.rs (target/debug/deps/s2f_test-bbabe162790e34f8)
+
+running 4 tests
+test test_basic ... ok
+test test_trailing_zeros ... ok
+test test_min_max ... ok
+test test_mantissa_rounding_overflow ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
++ RESULT=0
 + cd /tmp/top100_artifacts
 + rm -rf /tmp/top100_artifacts/ryu-1.0.20
-+ exit 127
++ exit 0

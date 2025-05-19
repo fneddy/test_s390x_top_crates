@@ -1,12 +1,41 @@
 [num_cpus] download directory: /tmp/top100_artifacts/num_cpus-1.16.0
-+ tar xzf -
 + curl -sL https://crates.io/api/v1/crates/num_cpus/1.16.0/download
++ tar xzf -
 + cd /tmp/top100_artifacts/num_cpus-1.16.0
 + cargo clean
-/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 78: cargo: command not found
+     Removed 0 files
 + cargo +stable test ''
-/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 79: cargo: command not found
-+ RESULT=127
+warning: no edition set: defaulting to the 2015 edition while the latest is 2024
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+   Compiling libc v0.2.65
+   Compiling num_cpus v1.16.0 (/tmp/top100_artifacts/num_cpus-1.16.0)
+error: unexpected `cfg` condition value: `nacl`
+   --> src/lib.rs:355:5
+    |
+355 |     target_os = "nacl",
+    |     ^^^^^^^^^^^^^^^^^^
+    |
+    = note: expected values for `target_os` are: `aix`, `amdhsa`, `android`, `cuda`, `cygwin`, `dragonfly`, `emscripten`, `espidf`, `freebsd`, `fuchsia`, `haiku`, `hermit`, `horizon`, `hurd`, `illumos`, `ios`, `l4re`, `linux`, `macos`, `netbsd`, `none`, `nto`, `nuttx`, `openbsd`, `psp`, `psx`, `redox`, `rtems`, `solaris`, `solid_asp3`, `teeos`, `trusty`, `tvos`, `uefi`, and `unknown` and 8 more
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+note: the lint level is defined here
+   --> src/lib.rs:29:24
+    |
+29  | #![cfg_attr(test, deny(warnings))]
+    |                        ^^^^^^^^
+    = note: `#[deny(unexpected_cfgs)]` implied by `#[deny(warnings)]`
+
+error: unexpected `cfg` condition value: `nacl`
+   --> src/lib.rs:437:5
+    |
+437 |     target_os = "nacl",
+    |     ^^^^^^^^^^^^^^^^^^
+    |
+    = note: expected values for `target_os` are: `aix`, `amdhsa`, `android`, `cuda`, `cygwin`, `dragonfly`, `emscripten`, `espidf`, `freebsd`, `fuchsia`, `haiku`, `hermit`, `horizon`, `hurd`, `illumos`, `ios`, `l4re`, `linux`, `macos`, `netbsd`, `none`, `nto`, `nuttx`, `openbsd`, `psp`, `psx`, `redox`, `rtems`, `solaris`, `solid_asp3`, `teeos`, `trusty`, `tvos`, `uefi`, and `unknown` and 8 more
+    = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+
+error: could not compile `num_cpus` (lib test) due to 2 previous errors
++ RESULT=101
 + cd /tmp/top100_artifacts
 + rm -rf /tmp/top100_artifacts/num_cpus-1.16.0
-+ exit 127
++ exit 101

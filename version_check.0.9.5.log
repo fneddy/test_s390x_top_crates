@@ -3,10 +3,28 @@
 + tar xzf -
 + cd /tmp/top100_artifacts/version_check-0.9.5
 + cargo clean
-/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 78: cargo: command not found
+     Removed 0 files
 + cargo +stable test ''
-/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 79: cargo: command not found
-+ RESULT=127
+warning: no edition set: defaulting to the 2015 edition while the latest is 2024
+   Compiling version_check v0.9.5 (/tmp/top100_artifacts/version_check-0.9.5)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.56s
+     Running unittests src/lib.rs (target/debug/deps/version_check-bee1fc4ed8265a58)
+
+running 10 tests
+test tests::test_stable_compatibility ... ok
+test date::tests::display ... ok
+test tests::test_verbose_version_parse ... ok
+test version::tests::display ... ok
+test version::tests::test_comparisons ... ok
+test version::tests::test_from_mmp ... ok
+test version::tests::test_malformed ... ok
+test version::tests::test_str_to_mmp ... ok
+test tests::test_version_parse ... ok
+test tests::test_parse_current ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.17s
+
++ RESULT=0
 + cd /tmp/top100_artifacts
 + rm -rf /tmp/top100_artifacts/version_check-0.9.5
-+ exit 127
++ exit 0

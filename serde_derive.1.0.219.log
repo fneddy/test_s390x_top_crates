@@ -3,10 +3,25 @@
 + tar xzf -
 + cd /tmp/top100_artifacts/serde_derive-1.0.219
 + cargo clean
-/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 78: cargo: command not found
+     Removed 0 files
 + cargo +stable test ''
-/home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh: line 79: cargo: command not found
-+ RESULT=127
+    Blocking waiting for file lock on package cache
+   Compiling proc-macro2 v1.0.94
+   Compiling unicode-ident v1.0.18
+   Compiling serde v1.0.218
+   Compiling quote v1.0.39
+   Compiling syn v2.0.99
+   Compiling serde_derive v1.0.219 (/tmp/top100_artifacts/serde_derive-1.0.219)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 6.96s
+     Running unittests src/lib.rs (target/debug/deps/serde_derive-0f150e331965853b)
+
+running 2 tests
+test internals::case::rename_fields ... ok
+test internals::case::rename_variants ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
++ RESULT=0
 + cd /tmp/top100_artifacts
 + rm -rf /tmp/top100_artifacts/serde_derive-1.0.219
-+ exit 127
++ exit 0
