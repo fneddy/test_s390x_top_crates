@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #set -x
-OPTIONS=$(getopt -o c:s:k:r:p:g:v:h -l count:,sortby:,skipp:,report:,param:,git:,version:,help -n "$0" -- "$@")
+OPTIONS=$(getopt -o c:s:k:r:p:g:v:h -l count:,sortby:,skip:,report:,param:,git:,version:,help -n "$0" -- "$@")
 COUNT="${COUNT:-100}"
 SORTBY="${SORTBY:-downloads}"
 TOPLIST="${TOPLIST:-$(mktemp)}"
@@ -49,7 +49,7 @@ eval set -- "$OPTIONS"
 
 while true; do
 	case "$1" in
-		-k | --SKIPPED_IDS)
+		-k | --skip)
 			SKIPPED_IDS+=("$2")
 			shift 2
 		;;
@@ -148,6 +148,7 @@ while read -r CRATE ; do
 		fi
 		if [ "${RESULT}" -eq "0" ]; then
 			log "[${STEP}/${COUNT}] ${ID} ${VERSION} pass" "${REPORT}/run.log"
+			rm ${REPORT}/${ID}.*.log
 		else
 			log "[${STEP}/${COUNT}] ${ID} ${VERSION} fail" "${REPORT}/run.log"
 		fi

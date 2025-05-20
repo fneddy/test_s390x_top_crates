@@ -12,7 +12,12 @@ git clone git@github.com:fneddy/test_s390x_top_crates.git ${REPO}
 
 ${SCRIPT_DIR}/nebula.sh -c 100 \
 	-g syn=https://github.com/dtolnay/syn -p syn="--release --features test" -v syn=2.0.0 \
-	-g tokio=https://github.com/tokio-rs/tokio/ -v tokio=tokio-1.45.0
+	-g tokio=https://github.com/tokio-rs/tokio/ -v tokio=tokio-1.45.0 \
+	-g regex-automata=https://github.com/rust-lang/regex.git -v regex-automata=regex-automata-0.4.9 -p regex-automata="--manifest-path regex-automata/Cargo.toml --test integration" \
+	-g futures-channel=https://github.com/rust-lang/futures-rs.git -v futures-channel=0.3.31 -p futures-channel="--manifest-path futures-channel/Cargo.toml" \
+	-p lazy_static=" -- --skip ui" \
+	-k memchr
+
 
 cd ${REPO}
 git config user.name "cronjob (Eduard Stefes)"
