@@ -1,6 +1,7 @@
-Testresults as of Tue May 20 09:25:45 AM CEST 2025
+Testresults as of Tue May 20 02:53:00 PM CEST 2025
 PASS: 86
 FAIL: 13
+SKIPPED: 2
 
 FAILED_CRATES:
 [1/100] syn 2.0.0 fail

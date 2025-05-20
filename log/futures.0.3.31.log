@@ -5,11 +5,11 @@
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
+    Blocking waiting for file lock on package cache
     Updating crates.io index
     Blocking waiting for file lock on package cache
      Locking 75 packages to latest compatible versions
       Adding tokio v0.1.22 (available: v1.45.0)
-    Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
    Compiling autocfg v1.4.0
    Compiling cfg-if v0.1.10
@@ -22,20 +22,20 @@
    Compiling slab v0.4.9
    Compiling semver v0.9.0
    Compiling rustc_version v0.2.3
+   Compiling iovec v0.1.4
    Compiling scopeguard v1.2.0
    Compiling log v0.4.27
    Compiling proc-macro2 v1.0.95
-   Compiling iovec v0.1.4
    Compiling tokio-executor v0.1.10
    Compiling byteorder v1.5.0
    Compiling unicode-ident v1.0.18
    Compiling parking_lot_core v0.6.3
-   Compiling bytes v0.4.12
-   Compiling net2 v0.2.39
-   Compiling num_cpus v1.16.0
-   Compiling tokio-io v0.1.13
-   Compiling quote v1.0.40
    Compiling parking_lot v0.9.0
+   Compiling bytes v0.4.12
+   Compiling num_cpus v1.16.0
+   Compiling net2 v0.2.39
+   Compiling quote v1.0.40
+   Compiling tokio-io v0.1.13
    Compiling memoffset v0.5.6
    Compiling smallvec v0.6.14
    Compiling syn v2.0.101
@@ -51,22 +51,22 @@
    Compiling crossbeam-deque v0.7.4
    Compiling tokio-codec v0.1.2
    Compiling crossbeam-queue v0.2.3
-   Compiling pin-utils v0.1.0
-   Compiling futures-task v0.3.31
    Compiling memchr v2.7.4
    Compiling futures-io v0.3.31
    Compiling pin-project-lite v0.2.16
+   Compiling pin-utils v0.1.0
+   Compiling futures-task v0.3.31
    Compiling tokio-threadpool v0.1.18
    Compiling mio-uds v0.6.8
    Compiling tokio-uds v0.2.7
    Compiling tokio-udp v0.1.6
    Compiling tokio-fs v0.1.7
    Compiling tokio-tcp v0.1.4
-   Compiling tokio-timer v0.2.13
    Compiling tokio-current-thread v0.1.7
-   Compiling tokio v0.1.22
-   Compiling assert_matches v1.5.0
+   Compiling tokio-timer v0.2.13
    Compiling static_assertions v1.1.0
+   Compiling assert_matches v1.5.0
+   Compiling tokio v0.1.22
    Compiling futures-macro v0.3.31
    Compiling pin-project-internal v1.1.10
    Compiling futures-util v0.3.31
@@ -74,28 +74,16 @@
    Compiling futures-executor v0.3.31
    Compiling futures v0.3.31 (/var/tmp/top100_artifacts/futures-0.3.31)
 error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures_test`
- --> tests/stream_into_async_read.rs:5:5
+ --> tests/eager_drop.rs:4:5
   |
-5 | use futures_test::{stream::StreamTestExt, task::noop_context};
+4 | use futures_test::future::FutureTestExt;
   |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `futures_test`
   |
 help: there is a crate or module with a similar name
   |
-5 - use futures_test::{stream::StreamTestExt, task::noop_context};
-5 + use futures_task::{stream::StreamTestExt, task::noop_context};
+4 - use futures_test::future::FutureTestExt;
+4 + use futures_task::future::FutureTestExt;
   |
-
-error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures_test`
-  --> tests/stream_try_stream.rs:11:5
-   |
-11 | use futures_test::task::noop_context;
-   |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `futures_test`
-   |
-help: there is a crate or module with a similar name
-   |
-11 - use futures_test::task::noop_context;
-11 + use futures_task::task::noop_context;
-   |
 
 error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures_test`
  --> tests/lock_mutex.rs:7:5
@@ -138,33 +126,89 @@ note: the item is gated behind the `thread-pool` feature
 195 |     #[cfg(feature = "thread-pool")]
     |           ^^^^^^^^^^^^^^^^^^^^^^^
 
-error[E0599]: no method named `interleave_pending` found for struct `Iter` in the current scope
-  --> tests/stream_into_async_read.rs:50:29
+error[E0599]: no method named `run_in_background` found for struct `Map` in the current scope
+  --> tests/eager_drop.rs:25:10
    |
-50 |     let mut reader = stream.interleave_pending().into_async_read();
-   |                             ^^^^^^^^^^^^^^^^^^ method not found in `Iter<FlatMap<RangeInclusive<{integer}>, Vec<Result<..., _>>, ...>>`
+16 | /     future::ready::<Result<i32, i32>>(Err(1))
+17 | |         .map_ok(move |_| {
+18 | |             let _tx1 = tx1;
+19 | |             panic!("should not run");
+...  |
+24 | |         })
+25 | |         .run_in_background();
+   | |         -^^^^^^^^^^^^^^^^^ method not found in `Map<MapOk<Ready<Result<i32, i32>>, {closure@...}>, ...>`
+   | |_________|
+   |
 
-error[E0599]: no method named `interleave_pending` found for struct `Iter` in the current scope
-  --> tests/stream_into_async_read.rs:77:29
+error[E0599]: no method named `run_in_background` found for struct `Map` in the current scope
+  --> tests/eager_drop.rs:46:10
    |
-77 |     let mut reader = stream.interleave_pending().into_async_read();
-   |                             ^^^^^^^^^^^^^^^^^^ method not found in `Iter<FlatMap<RangeInclusive<{integer}>, Vec<Result<..., _>>, ...>>`
+37 | /     future::ready::<Result<i32, i32>>(Ok(1))
+38 | |         .map_err(move |_| {
+39 | |             let _tx1 = tx1;
+40 | |             panic!("should not run");
+...  |
+45 | |         })
+46 | |         .run_in_background();
+   | |         -^^^^^^^^^^^^^^^^^ method not found in `Map<MapErr<Ready<Result<i32, i32>>, {closure@...}>, ...>`
+   | |_________|
+   |
+
+error[E0599]: no method named `run_in_background` found for struct `Then` in the current scope
+  --> tests/eager_drop.rs:78:10
+   |
+72 | /     FutureData { _data: tx1, future: rx0.unwrap_or_else(|_| panic!()) }
+73 | |         .then(move |_| {
+74 | |             assert!(rx1.recv().is_err()); // tx1 should have been dropped
+75 | |             tx2.send(()).unwrap();
+76 | |             future::ready(())
+77 | |         })
+78 | |         .run_in_background();
+   | |         -^^^^^^^^^^^^^^^^^ method not found in `Then<FutureData<UnwrapOrElse<Receiver<()>, ...>, ...>, ..., ...>`
+   | |_________|
+   |
+
+error[E0599]: no method named `run_in_background` found for struct `AndThen` in the current scope
+  --> tests/eager_drop.rs:97:10
+   |
+91 | /     FutureData { _data: tx1, future: rx0.unwrap_or_else(|_| panic!()) }
+92 | |         .and_then(move |_| {
+93 | |             assert!(rx1.recv().is_err()); // tx1 should have been dropped
+94 | |             tx2.send(()).unwrap();
+95 | |             future::ready(Ok(()))
+96 | |         })
+97 | |         .run_in_background();
+   | |         -^^^^^^^^^^^^^^^^^ method not found in `AndThen<FutureData<UnwrapOrElse<Receiver<...>, ...>, ...>, ..., ...>`
+   | |_________|
+   |
+
+error[E0599]: no method named `run_in_background` found for struct `OrElse` in the current scope
+   --> tests/eager_drop.rs:116:10
+    |
+110 | /     FutureData { _data: tx1, future: rx0.unwrap_or_else(|_| panic!()) }
+111 | |         .or_else(move |_| {
+112 | |             assert!(rx1.recv().is_err()); // tx1 should have been dropped
+113 | |             tx2.send(()).unwrap();
+114 | |             future::ready::<Result<(), ()>>(Ok(()))
+115 | |         })
+116 | |         .run_in_background();
+    | |         -^^^^^^^^^^^^^^^^^ method not found in `OrElse<FutureData<UnwrapOrElse<Receiver<...>, ...>, ...>, ..., ...>`
+    | |_________|
+    |
 
 Some errors have detailed explanations: E0433, E0599.
 For more information about an error, try `rustc --explain E0433`.
+error: could not compile `futures` (test "eager_drop") due to 6 previous errors
+warning: build failed, waiting for other jobs to finish...
 error[E0599]: no method named `pending_once` found for struct `futures::future::Ready` in the current scope
   --> tests/lock_mutex.rs:52:27
    |
 52 |                 ready(()).pending_once().await;
    |                           ^^^^^^^^^^^^ method not found in `Ready<()>`
 
-error: could not compile `futures` (test "stream_into_async_read") due to 3 previous errors
-warning: build failed, waiting for other jobs to finish...
 Some errors have detailed explanations: E0432, E0433, E0599.
 For more information about an error, try `rustc --explain E0432`.
 error: could not compile `futures` (test "lock_mutex") due to 4 previous errors
-For more information about this error, try `rustc --explain E0433`.
-error: could not compile `futures` (test "stream_try_stream") due to 1 previous error
 + RESULT=101
 + cd /var/tmp/top100_artifacts
 + rm -rf /var/tmp/top100_artifacts/futures-0.3.31
