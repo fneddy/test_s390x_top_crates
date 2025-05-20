@@ -5,14 +5,13 @@
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
-    Blocking waiting for file lock on package cache
    Compiling proc-macro2 v1.0.94
    Compiling unicode-ident v1.0.18
    Compiling serde v1.0.218
    Compiling quote v1.0.39
    Compiling syn v2.0.99
    Compiling serde_derive v1.0.219 (/var/tmp/top100_artifacts/serde_derive-1.0.219)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 7.07s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 8.21s
      Running unittests src/lib.rs (target/debug/deps/serde_derive-0f150e331965853b)
 
 running 2 tests

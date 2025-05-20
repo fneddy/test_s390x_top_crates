@@ -75,8 +75,6 @@ error: trait `Trait` is never used
     |
     = note: `#[deny(dead_code)]` implied by `#[deny(warnings)]`
 
-error: could not compile `cfg-if` (lib test) due to 5 previous errors
-warning: build failed, waiting for other jobs to finish...
 warning: unexpected `cfg` condition name: `foo`
  --> tests/xcrate.rs:2:14
   |
@@ -92,6 +90,8 @@ warning: unexpected `cfg` condition name: `foo`
   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
   = note: `#[warn(unexpected_cfgs)]` on by default
 
+error: could not compile `cfg-if` (lib test) due to 5 previous errors
+warning: build failed, waiting for other jobs to finish...
 warning: `cfg-if` (test "xcrate") generated 1 warning
 + RESULT=101
 + cd /var/tmp/top100_artifacts

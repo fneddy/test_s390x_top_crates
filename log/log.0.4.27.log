@@ -6,46 +6,48 @@
      Removed 0 files
 + cargo +stable test ''
     Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
    Compiling proc-macro2 v1.0.94
    Compiling unicode-ident v1.0.18
    Compiling serde v1.0.219
    Compiling serde_json v1.0.140
-   Compiling memchr v2.7.4
    Compiling itoa v1.0.15
+   Compiling memchr v2.7.4
    Compiling ryu v1.0.20
    Compiling sval v2.14.1
-   Compiling value-bag v1.10.0
    Compiling quote v1.0.40
+   Compiling value-bag v1.10.0
    Compiling syn v2.0.100
    Compiling serde_derive v1.0.219
    Compiling sval_derive_macros v2.14.1
    Compiling sval_derive v2.14.1
    Compiling serde_test v1.0.177
    Compiling log v0.4.27 (/var/tmp/top100_artifacts/log-0.4.27)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 11.95s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 14.19s
      Running unittests src/lib.rs (target/debug/deps/log-024e340b006704fb)
 
 running 18 tests
 test tests::test_foreign_impl ... ok
 test tests::test_level_as_str ... ok
-test tests::test_cross_eq ... ok
-test tests::test_level_filter_as_str ... ok
-test tests::test_level_from_str ... ok
 test tests::test_cross_cmp ... ok
+test tests::test_cross_eq ... ok
+test tests::test_levelfilter_from_str ... ok
 test tests::test_level_show ... ok
 test tests::test_levelfilter_show ... ok
-test tests::test_levelfilter_from_str ... ok
+test tests::test_level_filter_as_str ... ok
+test tests::test_level_from_str ... ok
 test tests::test_record_builder ... ok
 test tests::test_record_complete_builder ... ok
+test tests::test_metadata_builder ... ok
 test tests::test_record_convenience_builder ... ok
+test tests::test_metadata_convenience_builder ... ok
 test tests::test_static_max_level_release ... ignored
 test tests::test_static_max_level_debug ... ok
-test tests::test_to_level ... ok
 test tests::test_to_level_filter ... ok
-test tests::test_metadata_convenience_builder ... ok
-test tests::test_metadata_builder ... ok
+test tests::test_to_level ... ok
 
-test result: ok. 17 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.04s
+test result: ok. 17 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.02s
 
 + RESULT=0
 + cd /var/tmp/top100_artifacts

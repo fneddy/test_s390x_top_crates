@@ -6,8 +6,10 @@
      Removed 0 files
 + cargo +stable test ''
     Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
    Compiling windows_x86_64_msvc v0.53.0 (/var/tmp/top100_artifacts/windows_x86_64_msvc-0.53.0)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.13s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.90s
      Running unittests src/lib.rs (target/debug/deps/windows_x86_64_msvc-f9666444e3ac6c58)
 
 running 0 tests

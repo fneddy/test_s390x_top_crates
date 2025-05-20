@@ -9,14 +9,12 @@
     Blocking waiting for file lock on package cache
      Locking 4 packages to latest compatible versions
     Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-   Compiling fnv v1.0.7
    Compiling itoa v1.0.15
    Compiling bytes v1.10.1
+   Compiling fnv v1.0.7
    Compiling http v1.3.1
    Compiling http-body v1.0.1 (/var/tmp/top100_artifacts/http-body-1.0.1)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 4.23s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 4.93s
      Running unittests src/lib.rs (target/debug/deps/http_body-63c97172d8c067e9)
 
 running 0 tests
@@ -29,7 +27,7 @@ running 2 tests
 test is_end_stream_default_false ... ok
 test is_end_stream_true ... ok
 
-test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 
 + RESULT=0
 + cd /var/tmp/top100_artifacts

@@ -7,8 +7,11 @@
 + cargo +stable test ''
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
    Compiling pin-utils v0.1.0 (/var/tmp/top100_artifacts/pin-utils-0.1.0)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.61s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.35s
      Running unittests src/lib.rs (target/debug/deps/pin_utils-9096e987f28aa9cf)
 
 running 0 tests

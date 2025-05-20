@@ -7,23 +7,25 @@
 + cargo +stable test ''
 warning: no edition set: defaulting to the 2015 edition while the latest is 2024
     Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
    Compiling version_check v0.9.5 (/var/tmp/top100_artifacts/version_check-0.9.5)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.00s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.85s
      Running unittests src/lib.rs (target/debug/deps/version_check-bee1fc4ed8265a58)
 
 running 10 tests
 test date::tests::display ... ok
-test tests::test_version_parse ... ok
-test tests::test_verbose_version_parse ... ok
+test tests::test_stable_compatibility ... ok
+test version::tests::display ... ok
 test version::tests::test_comparisons ... ok
 test version::tests::test_from_mmp ... ok
 test version::tests::test_malformed ... ok
+test tests::test_version_parse ... ok
 test version::tests::test_str_to_mmp ... ok
-test tests::test_stable_compatibility ... ok
-test version::tests::display ... ok
+test tests::test_verbose_version_parse ... ok
 test tests::test_parse_current ... ok
 
-test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.17s
 
 + RESULT=0
 + cd /var/tmp/top100_artifacts

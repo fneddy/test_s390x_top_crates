@@ -7,13 +7,12 @@
 + cargo +stable test ''
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
    Compiling proc-macro2 v1.0.93
    Compiling unicode-ident v1.0.17
    Compiling quote v1.0.38
    Compiling syn v2.0.98
    Compiling thiserror-impl v2.0.12 (/var/tmp/top100_artifacts/thiserror-impl-2.0.12)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 5.55s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 6.79s
      Running unittests src/lib.rs (target/debug/deps/thiserror_impl-fdceb6bcc4b9eb98)
 
 running 0 tests

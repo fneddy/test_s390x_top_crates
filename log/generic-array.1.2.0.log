@@ -16,56 +16,56 @@
    Compiling crossbeam-utils v0.8.20
    Compiling serde v1.0.215
    Compiling autocfg v1.4.0
-   Compiling quote v1.0.37
    Compiling num-traits v0.2.19
-   Compiling crossbeam-epoch v0.9.18
+   Compiling quote v1.0.37
    Compiling syn v2.0.89
-   Compiling byteorder v1.5.0
+   Compiling crossbeam-epoch v0.9.18
    Compiling serde_json v1.0.133
    Compiling either v1.13.0
    Compiling rayon-core v1.12.1
+   Compiling byteorder v1.5.0
    Compiling crossbeam-deque v0.8.5
    Compiling getrandom v0.2.15
    Compiling half v2.4.1
+   Compiling itoa v1.0.13
+   Compiling memchr v2.7.4
+   Compiling clap_lex v0.7.3
    Compiling anstyle v1.0.10
+   Compiling ryu v1.0.18
+   Compiling plotters-backend v0.3.7
    Compiling ciborium-io v0.2.2
    Compiling regex-syntax v0.8.5
-   Compiling plotters-backend v0.3.7
-   Compiling memchr v2.7.4
-   Compiling ryu v1.0.18
-   Compiling clap_lex v0.7.3
-   Compiling itoa v1.0.13
-   Compiling clap_builder v4.5.21
-   Compiling plotters-svg v0.3.7
    Compiling ciborium-ll v0.2.2
-   Compiling rand_core v0.6.4
+   Compiling plotters-svg v0.3.7
+   Compiling clap_builder v4.5.21
    Compiling regex-automata v0.4.9
    Compiling serde_derive v1.0.215
    Compiling zerocopy-derive v0.7.35
    Compiling zerocopy v0.7.35
-   Compiling ppv-lite86 v0.2.20
+   Compiling rand_core v0.6.4
    Compiling itertools v0.10.5
-   Compiling cast v0.3.0
-   Compiling same-file v1.0.6
+   Compiling ppv-lite86 v0.2.20
    Compiling typenum v1.17.0
+   Compiling same-file v1.0.6
+   Compiling cast v0.3.0
    Compiling walkdir v2.5.0
-   Compiling rayon v1.10.0
    Compiling rand_chacha v0.3.1
    Compiling criterion-plot v0.5.0
+   Compiling rayon v1.10.0
    Compiling regex v1.11.1
    Compiling clap v4.5.21
    Compiling plotters v0.3.7
    Compiling is-terminal v0.4.13
-   Compiling once_cell v1.20.2
-   Compiling anes v0.1.6
    Compiling oorandom v11.1.4
+   Compiling anes v0.1.6
+   Compiling once_cell v1.20.2
    Compiling rand v0.8.5
    Compiling ciborium v0.2.2
    Compiling bincode v1.3.3
    Compiling tinytemplate v1.2.1
    Compiling criterion v0.5.1
    Compiling generic-array v1.2.0 (/var/tmp/top100_artifacts/generic-array-1.2.0)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 23.99s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 26.30s
      Running unittests src/lib.rs (target/debug/deps/generic_array-65542cd8ef29e8a4)
 
 running 3 tests

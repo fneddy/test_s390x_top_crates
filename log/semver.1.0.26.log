@@ -7,9 +7,8 @@
 + cargo +stable test ''
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
    Compiling semver v1.0.26 (/var/tmp/top100_artifacts/semver-1.0.26)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.24s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.70s
      Running unittests src/lib.rs (target/debug/deps/semver-4d6745f9f44b32fb)
 
 running 0 tests
@@ -21,58 +20,58 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 running 1 test
 test test ... ok
 
-test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 
      Running tests/test_identifier.rs (target/debug/deps/test_identifier-18cdf731ca40b471)
 
 running 3 tests
-test test_prerelease ... ok
 test test_eq ... ok
+test test_prerelease ... ok
 test test_new ... ok
 
-test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.11s
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
 
      Running tests/test_version.rs (target/debug/deps/test_version-081ceb4a4a0cf1b6)
 
 running 10 tests
-test test_eq ... ok
-test test_align ... ok
-test test_ge ... ok
 test test_display ... ok
+test test_gt ... ok
+test test_eq ... ok
 test test_le ... ok
-test test_ne ... ok
 test test_lt ... ok
+test test_ne ... ok
 test test_parse ... ok
 test test_spec_order ... ok
-test test_gt ... ok
+test test_align ... ok
+test test_ge ... ok
 
-test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
 
      Running tests/test_version_req.rs (target/debug/deps/test_version_req-943003d122c7fd15)
 
 running 20 tests
 test test_basic ... ok
 test test_any ... ok
-test test_cargo3202 ... ok
 test test_caret ... ok
-test test_comparator_parse ... ok
-test test_default ... ok
 test test_digit_after_wildcard ... ok
 test test_eq_hash ... ok
+test test_cargo3202 ... ok
 test test_exact ... ok
-test test_less_than ... ok
 test test_greater_than ... ok
+test test_default ... ok
+test test_comparator_parse ... ok
 test test_logical_or ... ok
-test test_parse ... ok
 test test_multiple ... ok
-test test_pre ... ok
-test test_whitespace_delimited_comparator_sets ... ok
+test test_less_than ... ok
+test test_parse ... ok
 test test_tilde ... ok
-test test_wildcard ... ok
-test test_wildcard_and_another ... ok
+test test_whitespace_delimited_comparator_sets ... ok
 test test_leading_digit_in_pre_and_build ... ok
+test test_pre ... ok
+test test_wildcard_and_another ... ok
+test test_wildcard ... ok
 
-test result: ok. 20 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+test result: ok. 20 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
 
 + RESULT=0
 + cd /var/tmp/top100_artifacts

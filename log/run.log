@@ -4,15 +4,15 @@ ID VERSION RESULT
 [2/100] hashbrown 0.15.3 started
 [2/100] hashbrown 0.15.3 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n hashbrown -v 0.15.3 -t /var/tmp/top100_artifacts --
 [3/100] bitflags 2.9.1 started
-[4/100] proc-macro2 1.0.95 started
 [3/100] bitflags 2.9.1 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n bitflags -v 2.9.1 -t /var/tmp/top100_artifacts --
+[4/100] proc-macro2 1.0.95 started
 [4/100] proc-macro2 1.0.95 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n proc-macro2 -v 1.0.95 -t /var/tmp/top100_artifacts --
 [4/100] proc-macro2 1.0.95 pass
 [4/100] proc-macro2 1.0.95 finished
-[3/100] bitflags 2.9.1 pass
-[3/100] bitflags 2.9.1 finished
 [2/100] hashbrown 0.15.3 pass
 [2/100] hashbrown 0.15.3 finished
+[3/100] bitflags 2.9.1 pass
+[3/100] bitflags 2.9.1 finished
 [1/100] syn 2.0.0 fail
 [1/100] syn 2.0.0 finished
 [5/100] quote 1.0.40 started
@@ -74,10 +74,10 @@ ID VERSION RESULT
 [20/100] once_cell 1.21.3 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n once_cell -v 1.21.3 -t /var/tmp/top100_artifacts --
 [18/100] itoa 1.0.15 pass
 [18/100] itoa 1.0.15 finished
-[20/100] once_cell 1.21.3 fail
-[20/100] once_cell 1.21.3 finished
 [19/100] serde_json 1.0.140 pass
 [19/100] serde_json 1.0.140 finished
+[20/100] once_cell 1.21.3 fail
+[20/100] once_cell 1.21.3 finished
 [17/100] itertools 0.14.0 pass
 [17/100] itertools 0.14.0 finished
 [21/100] log 0.4.27 started
@@ -138,12 +138,12 @@ ID VERSION RESULT
 [36/100] parking_lot 0.12.3 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n parking_lot -v 0.12.3 -t /var/tmp/top100_artifacts --
 [34/100] smallvec 1.15.0 pass
 [34/100] smallvec 1.15.0 finished
+[33/100] thiserror 2.0.12 pass
+[33/100] thiserror 2.0.12 finished
 [35/100] lazy_static 1.5.0 fail
 [35/100] lazy_static 1.5.0 finished
 [36/100] parking_lot 0.12.3 pass
 [36/100] parking_lot 0.12.3 finished
-[33/100] thiserror 2.0.12 pass
-[33/100] thiserror 2.0.12 finished
 [37/100] strsim 0.11.1 started
 [37/100] strsim 0.11.1 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n strsim -v 0.11.1 -t /var/tmp/top100_artifacts --
 [38/100] num-traits 0.2.19 started
@@ -179,10 +179,10 @@ ID VERSION RESULT
 [45/100] lock_api 0.4.12 started
 [45/100] lock_api 0.4.12 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n lock_api -v 0.4.12 -t /var/tmp/top100_artifacts --
 [46/100] bytes 1.10.1 started
-[46/100] bytes 1.10.1 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n bytes -v 1.10.1 -t /var/tmp/top100_artifacts --
 [47/100] scopeguard 1.2.0 started
-[47/100] scopeguard 1.2.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n scopeguard -v 1.2.0 -t /var/tmp/top100_artifacts --
+[46/100] bytes 1.10.1 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n bytes -v 1.10.1 -t /var/tmp/top100_artifacts --
 [48/100] socket2 0.5.9 started
+[47/100] scopeguard 1.2.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n scopeguard -v 1.2.0 -t /var/tmp/top100_artifacts --
 [48/100] socket2 0.5.9 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n socket2 -v 0.5.9 -t /var/tmp/top100_artifacts --
 [47/100] scopeguard 1.2.0 pass
 [47/100] scopeguard 1.2.0 finished
@@ -280,10 +280,10 @@ ID VERSION RESULT
 [71/100] slab 0.4.9 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n slab -v 0.4.9 -t /var/tmp/top100_artifacts --
 [72/100] futures-core 0.3.31 started
 [72/100] futures-core 0.3.31 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n futures-core -v 0.3.31 -t /var/tmp/top100_artifacts --
-[69/100] windows_x86_64_msvc 0.53.0 pass
-[69/100] windows_x86_64_msvc 0.53.0 finished
 [72/100] futures-core 0.3.31 pass
 [72/100] futures-core 0.3.31 finished
+[69/100] windows_x86_64_msvc 0.53.0 pass
+[69/100] windows_x86_64_msvc 0.53.0 finished
 [71/100] slab 0.4.9 pass
 [71/100] slab 0.4.9 finished
 [70/100] ahash 0.8.12 pass
@@ -330,12 +330,12 @@ ID VERSION RESULT
 [84/100] tracing 0.1.41 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n tracing -v 0.1.41 -t /var/tmp/top100_artifacts --
 [83/100] windows_x86_64_gnu 0.53.0 pass
 [83/100] windows_x86_64_gnu 0.53.0 finished
+[84/100] tracing 0.1.41 fail
+[84/100] tracing 0.1.41 finished
 [81/100] rustls 0.23.27 fail
 [81/100] rustls 0.23.27 finished
 [82/100] futures-channel 0.3.31 pass
 [82/100] futures-channel 0.3.31 finished
-[84/100] tracing 0.1.41 fail
-[84/100] tracing 0.1.41 finished
 [85/100] tracing-core 0.1.33 started
 [85/100] tracing-core 0.1.33 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n tracing-core -v 0.1.33 -t /var/tmp/top100_artifacts --
 [86/100] windows_i686_msvc 0.53.0 started
@@ -344,10 +344,10 @@ ID VERSION RESULT
 [87/100] windows_aarch64_msvc 0.53.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n windows_aarch64_msvc -v 0.53.0 -t /var/tmp/top100_artifacts --
 [88/100] windows_i686_gnu 0.53.0 started
 [88/100] windows_i686_gnu 0.53.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n windows_i686_gnu -v 0.53.0 -t /var/tmp/top100_artifacts --
-[88/100] windows_i686_gnu 0.53.0 pass
-[88/100] windows_i686_gnu 0.53.0 finished
 [86/100] windows_i686_msvc 0.53.0 pass
 [86/100] windows_i686_msvc 0.53.0 finished
+[88/100] windows_i686_gnu 0.53.0 pass
+[88/100] windows_i686_gnu 0.53.0 finished
 [87/100] windows_aarch64_msvc 0.53.0 pass
 [87/100] windows_aarch64_msvc 0.53.0 finished
 [85/100] tracing-core 0.1.33 pass
@@ -378,10 +378,10 @@ ID VERSION RESULT
 [96/100] pkg-config 0.3.32 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n pkg-config -v 0.3.32 -t /var/tmp/top100_artifacts --
 [96/100] pkg-config 0.3.32 pass
 [96/100] pkg-config 0.3.32 finished
-[93/100] num-integer 0.1.46 fail
-[93/100] num-integer 0.1.46 finished
 [95/100] unicode-normalization 0.1.24 pass
 [95/100] unicode-normalization 0.1.24 finished
+[93/100] num-integer 0.1.46 fail
+[93/100] num-integer 0.1.46 finished
 [94/100] tokio-util 0.7.15 fail
 [94/100] tokio-util 0.7.15 finished
 [97/100] pin-utils 0.1.0 started

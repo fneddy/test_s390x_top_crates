@@ -1,6 +1,6 @@
 [lazy_static] download directory: /var/tmp/top100_artifacts/lazy_static-1.5.0
-+ curl -sL https://crates.io/api/v1/crates/lazy_static/1.5.0/download
 + tar xzf -
++ curl -sL https://crates.io/api/v1/crates/lazy_static/1.5.0/download
 + cd /var/tmp/top100_artifacts/lazy_static-1.5.0
 + cargo clean
      Removed 0 files
@@ -8,23 +8,22 @@
 warning: no edition set: defaulting to the 2015 edition while the latest is 2024
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
    Compiling serde v1.0.203
    Compiling proc-macro2 v1.0.86
    Compiling unicode-ident v1.0.12
    Compiling hashbrown v0.14.5
    Compiling equivalent v1.0.1
+   Compiling serde_json v1.0.117
    Compiling winnow v0.6.13
    Compiling indexmap v2.2.6
    Compiling quote v1.0.36
-   Compiling serde_json v1.0.117
    Compiling syn v2.0.67
    Compiling doc-comment v0.3.3
-   Compiling trybuild v1.0.96
    Compiling ryu v1.0.18
+   Compiling trybuild v1.0.96
    Compiling itoa v1.0.11
-   Compiling glob v0.3.1
    Compiling termcolor v1.4.1
+   Compiling glob v0.3.1
    Compiling lazy_static v1.5.0 (/var/tmp/top100_artifacts/lazy_static-1.5.0)
 warning: elided lifetime has a name
   --> src/inline_lazy.rs:26:43
@@ -45,7 +44,7 @@ warning: `lazy_static` (lib) generated 1 warning (run `cargo fix --lib -p lazy_s
    Compiling serde_derive v1.0.203
    Compiling toml v0.8.14
 warning: `lazy_static` (lib test) generated 1 warning (1 duplicate)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 21.81s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 33.33s
      Running unittests src/lib.rs (target/debug/deps/lazy_static-988ab985184c1842)
 
 running 0 tests
@@ -61,15 +60,15 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
      Running tests/test.rs (target/debug/deps/test-c05519e3b165b4a2)
 
 running 9 tests
-test pre_init ... ok
+test item_name_shadowing ... ok
 test lifetime_name ... ok
-test s3 ... ok
-test test_repeat ... ok
+test pre_init ... ok
 test test_basic ... ok
+test test_meta ... ok
+test test_repeat ... ok
 test test_visibility ... ok
 test visibility::sub_test ... ok
-test item_name_shadowing ... ok
-test test_meta ... ok
+test s3 ... ok
 
 test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 
@@ -93,7 +92,7 @@ help: consider specifying it explicitly
 
 warning: `lazy_static` (lib) generated 1 warning (run `cargo fix --lib -p lazy_static` to apply 1 suggestion)
     Checking lazy_static-tests v0.0.0 (/var/tmp/top100_artifacts/lazy_static-1.5.0/target/tests/trybuild/lazy_static)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.58s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.74s
 
 
 test [0m[1mtests/compile_fail/incorrect_visibility_restriction.rs[0m ... [0m[1m[31mmismatch
@@ -289,7 +288,7 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 failures:
     ui
 
-test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.79s
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.01s
 
 error: test failed, to rerun pass `--test ui`
 + RESULT=101

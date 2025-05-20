@@ -6,9 +6,8 @@
      Removed 0 files
 + cargo +stable test ''
     Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
    Compiling windows_i686_gnu v0.53.0 (/var/tmp/top100_artifacts/windows_i686_gnu-0.53.0)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.48s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.52s
      Running unittests src/lib.rs (target/debug/deps/windows_i686_gnu-2f3ebcd9a9d5f5b4)
 
 running 0 tests

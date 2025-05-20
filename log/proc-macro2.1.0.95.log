@@ -5,34 +5,31 @@
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
    Compiling libc v0.2.172
    Compiling crossbeam-utils v0.8.21
-   Compiling cfg-if v1.0.0
    Compiling rustix v1.0.5
-   Compiling rayon-core v1.12.1
+   Compiling cfg-if v1.0.0
    Compiling proc-macro2 v1.0.94
    Compiling bitflags v2.9.0
-   Compiling unicode-ident v1.0.18
    Compiling linux-raw-sys v0.9.4
-   Compiling proc-macro2 v1.0.95 (/var/tmp/top100_artifacts/proc-macro2-1.0.95)
+   Compiling rayon-core v1.12.1
    Compiling crossbeam-epoch v0.9.18
-   Compiling adler2 v2.0.0
+   Compiling unicode-ident v1.0.18
+   Compiling crossbeam-deque v0.8.6
+   Compiling proc-macro2 v1.0.95 (/var/tmp/top100_artifacts/proc-macro2-1.0.95)
    Compiling rustversion v1.0.20
+   Compiling adler2 v2.0.0
    Compiling miniz_oxide v0.8.8
    Compiling errno v0.3.11
-   Compiling crossbeam-deque v0.8.6
    Compiling filetime v0.2.25
    Compiling crc32fast v1.4.2
    Compiling either v1.15.0
+   Compiling rayon v1.10.0
    Compiling flate2 v1.1.1
    Compiling quote v1.0.40
-   Compiling rayon v1.10.0
    Compiling xattr v1.5.0
    Compiling tar v0.4.44
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 14.82s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 21.52s
      Running unittests src/lib.rs (target/debug/deps/proc_macro2-b63c5c31699e34cc)
 
 running 0 tests
@@ -44,10 +41,10 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 running 4 tests
 test carriage_return ... ok
 test closed_immediately ... ok
-test lit ... ok
 test incomplete ... ok
+test lit ... ok
 
-test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
 
      Running tests/features.rs (target/debug/deps/features-e06c01d526a0adf2)
 
@@ -59,44 +56,43 @@ test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; fini
      Running tests/marker.rs (target/debug/deps/marker-72a7f89be169199d)
 
 running 20 tests
-test Group ... ok
 test Delimiter ... ok
+test Group ... ok
 test Ident ... ok
+test Spacing ... ok
+test Span ... ok
 test LexError ... ok
 test Literal ... ok
-test Punct ... ok
-test Spacing ... ok
-test TokenTree ... ok
-test Span ... ok
-test unwind_safe::Delimiter ... ok
 test TokenStream ... ok
-test unwind_safe::Literal ... ok
-test unwind_safe::Punct ... ok
-test unwind_safe::Spacing ... ok
-test unwind_safe::Span ... ok
-test unwind_safe::TokenStream ... ok
-test unwind_safe::TokenTree ... ok
 test unwind_safe::Group ... ok
+test TokenTree ... ok
+test unwind_safe::Delimiter ... ok
 test unwind_safe::Ident ... ok
+test Punct ... ok
+test unwind_safe::Spacing ... ok
 test unwind_safe::LexError ... ok
+test unwind_safe::Literal ... ok
+test unwind_safe::TokenStream ... ok
+test unwind_safe::Punct ... ok
+test unwind_safe::TokenTree ... ok
+test unwind_safe::Span ... ok
 
-test result: ok. 20 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+test result: ok. 20 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
 
      Running tests/test.rs (target/debug/deps/test-bdaf4f86585f71fe)
 
 running 38 tests
+test default_tokenstream_is_empty ... ok
 test byte_order_mark ... ok
 test fail ... ok
-test ident_invalid - should panic ... ok
+test ident_empty - should panic ... ok
 test ident_number - should panic ... ok
-test ident_raw_reserved - should panic ... ok
 test ident_raw_underscore - should panic ... ok
 test idents ... ok
 test joint_last_token ... ok
 test lifetime_empty - should panic ... ok
 test lifetime_invalid - should panic ... ok
 test lifetime_number - should panic ... ok
-test literal_byte_character ... ok
 test literal_byte_string ... ok
 test literal_c_string ... ok
 test literal_character ... ok
@@ -106,23 +102,24 @@ test literal_iter_negative ... ok
 test literal_parse ... ok
 test literal_raw_string ... ok
 test literal_span ... ok
-test literal_suffix ... ok
 test literal_string ... ok
-test punct_before_comment ... ok
+test literal_suffix ... ok
 test no_panic ... ok
+test punct_before_comment ... ok
+test literal_byte_character ... ok
 test raw_ident_empty - should panic ... ok
+test ident_invalid - should panic ... ok
 test raw_ident_invalid - should panic ... ok
+test ident_raw_reserved - should panic ... ok
 test raw_ident_number - should panic ... ok
 test raw_identifier ... ok
 test raw_idents ... ok
 test roundtrip ... ok
 test test_debug_ident ... ok
 test tokenstream_size_hint ... ok
+test whitespace ... ok
 test tuple_indexing ... ok
 test test_debug_tokenstream ... ok
-test whitespace ... ok
-test default_tokenstream_is_empty ... ok
-test ident_empty - should panic ... ok
 
 test result: ok. 38 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
 
@@ -139,10 +136,10 @@ running 5 tests
 test test_proc_macro2_fallback_size_with_locations ... ignored, wrapper mode
 test test_proc_macro2_fallback_size_without_locations ... ignored, wrapper mode
 test test_proc_macro2_wrapper_size_with_locations ... ignored, span locations are off
-test test_proc_macro2_wrapper_size_without_locations ... ok
 test test_proc_macro_size ... ok
+test test_proc_macro2_wrapper_size_without_locations ... ok
 
-test result: ok. 2 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 0.01s
+test result: ok. 2 passed; 0 failed; 3 ignored; 0 measured; 0 filtered out; finished in 0.00s
 
 + RESULT=0
 + cd /var/tmp/top100_artifacts

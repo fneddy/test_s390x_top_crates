@@ -13,25 +13,25 @@
    Compiling tinyvec_macros v0.1.1
    Compiling tinyvec v1.9.0
    Compiling unicode-normalization v0.1.24 (/var/tmp/top100_artifacts/unicode-normalization-0.1.24)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 4.15s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 4.14s
      Running unittests src/lib.rs (target/debug/deps/unicode_normalization-e441103b9714b7fa)
 
 running 13 tests
-test stream_safe::tests::test_all_nonstarters ... ok
-test quick_check::tests::test_stream_safe_nfd ... ok
 test normalize::tests::test_hangul_composition ... ok
+test stream_safe::tests::test_all_nonstarters ... ok
 test quick_check::tests::test_stream_safe_nfc ... ok
+test quick_check::tests::test_stream_safe_nfd ... ok
 test test::test_is_combining_mark_ascii ... ok
-test test::test_is_combining_mark_misc ... ok
 test stream_safe::tests::test_simple ... ok
+test test::test_is_combining_mark_misc ... ok
+test test::test_nfc ... ok
 test test::test_nfd ... ok
 test test::test_nfkc ... ok
-test test::test_nfc ... ok
 test test::test_nfkd ... ok
 test test::test_normalize_char ... ok
 test stream_safe::tests::test_classify_nonstarters ... ok
 
-test result: ok. 13 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
+test result: ok. 13 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.23s
 
 + RESULT=0
 + cd /var/tmp/top100_artifacts

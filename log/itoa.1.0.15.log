@@ -1,13 +1,13 @@
 [itoa] download directory: /var/tmp/top100_artifacts/itoa-1.0.15
-+ curl -sL https://crates.io/api/v1/crates/itoa/1.0.15/download
 + tar xzf -
++ curl -sL https://crates.io/api/v1/crates/itoa/1.0.15/download
 + cd /var/tmp/top100_artifacts/itoa-1.0.15
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
     Blocking waiting for file lock on package cache
    Compiling itoa v1.0.15 (/var/tmp/top100_artifacts/itoa-1.0.15)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.71s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.88s
      Running unittests src/lib.rs (target/debug/deps/itoa-c62f00d301594b00)
 
 running 0 tests
@@ -18,15 +18,15 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 
 running 10 tests
 test test_i128_max ... ok
-test test_i128_min ... ok
+test test_i16_0 ... ok
 test test_i16_min ... ok
 test test_i64_min ... ok
+test test_u128_max ... ok
 test test_u64_0 ... ok
 test test_u64_half ... ok
 test test_u64_max ... ok
-test test_i16_0 ... ok
+test test_i128_min ... ok
 test test_u128_0 ... ok
-test test_u128_max ... ok
 
 test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
 

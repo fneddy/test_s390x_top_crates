@@ -1,42 +1,43 @@
 [thiserror] download directory: /var/tmp/top100_artifacts/thiserror-2.0.12
-+ curl -sL https://crates.io/api/v1/crates/thiserror/2.0.12/download
 + tar xzf -
++ curl -sL https://crates.io/api/v1/crates/thiserror/2.0.12/download
 + cd /var/tmp/top100_artifacts/thiserror-2.0.12
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
    Compiling proc-macro2 v1.0.93
    Compiling unicode-ident v1.0.17
    Compiling serde v1.0.218
-   Compiling hashbrown v0.15.2
    Compiling equivalent v1.0.2
+   Compiling hashbrown v0.15.2
    Compiling winnow v0.7.3
    Compiling indexmap v2.7.1
    Compiling quote v1.0.38
-   Compiling target-triple v0.1.4
    Compiling syn v2.0.98
    Compiling serde_json v1.0.139
+   Compiling target-triple v0.1.4
+   Compiling thiserror v2.0.12 (/var/tmp/top100_artifacts/thiserror-2.0.12)
+   Compiling ref-cast v1.0.23
    Compiling itoa v1.0.14
    Compiling rustversion v1.0.19
-   Compiling anyhow v1.0.96
-   Compiling thiserror v2.0.12 (/var/tmp/top100_artifacts/thiserror-2.0.12)
    Compiling memchr v2.7.4
+   Compiling anyhow v1.0.96
    Compiling ryu v1.0.19
-   Compiling ref-cast v1.0.23
-   Compiling termcolor v1.4.1
    Compiling dissimilar v1.0.9
+   Compiling glob v0.3.2
    Compiling serde_spanned v0.6.8
    Compiling toml_datetime v0.6.8
    Compiling toml_edit v0.22.24
-   Compiling glob v0.3.2
+   Compiling termcolor v1.4.1
+   Compiling serde_derive v1.0.218
    Compiling thiserror-impl v2.0.12
    Compiling ref-cast-impl v1.0.23
-   Compiling serde_derive v1.0.218
    Compiling toml v0.8.20
    Compiling trybuild v1.0.103
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 23.83s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 34.14s
      Running unittests src/lib.rs (target/debug/deps/thiserror-3c5006750a288fbd)
 
 running 0 tests
@@ -62,25 +63,25 @@ test result: ok. 0 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; fini
 running 29 tests
 test test_brace_escape ... ok
 test test_braced ... ok
-test test_braced_unused ... ok
 test test_constants ... ok
+test test_braced_unused ... ok
 test test_enum ... ok
 test test_expr ... ok
 test test_field ... ok
 test test_fmt_path ... ok
-test test_fmt_path_inherited ... ok
-test test_inherit ... ok
 test test_ints ... ok
+test test_inherit ... ok
+test test_fmt_path_inherited ... ok
 test test_keyword ... ok
 test test_macro_rules_message_from_call_site ... ok
 test test_macro_rules_variant_from_call_site ... ok
 test test_match ... ok
 test test_mixed ... ok
 test test_nested ... ok
-test test_nested_display ... ok
-test test_nested_tuple_field ... ok
 test test_pointer ... ok
+test test_nested_display ... ok
 test test_raw ... ok
+test test_nested_tuple_field ... ok
 test test_raw_enum ... ok
 test test_raw_str ... ok
 test test_self ... ok
@@ -101,9 +102,9 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
      Running tests/test_expr.rs (target/debug/deps/test_expr-bdcd107c885549cb)
 
 running 3 tests
-test test_assoc_type_equality_constraint ... ok
 test test_rcc ... ok
 test test_rustup ... ok
+test test_assoc_type_equality_constraint ... ok
 
 test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 
@@ -162,9 +163,9 @@ test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
 running 5 tests
 test test_anyhow ... ok
 test test_non_static ... ok
-test test_transparent_struct ... ok
 test test_transparent_enum_with_default_message ... ok
 test test_transparent_enum ... ok
+test test_transparent_struct ... ok
 
 test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
 

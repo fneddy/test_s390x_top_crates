@@ -6,14 +6,11 @@
      Removed 0 files
 + cargo +stable test ''
     Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
    Compiling typenum v1.18.0
    Compiling hex-literal v1.0.0
    Compiling hybrid-array v0.3.0
    Compiling block-buffer v0.11.0-rc.4 (/var/tmp/top100_artifacts/block-buffer-0.11.0-rc.4)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.32s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.46s
      Running unittests src/lib.rs (target/debug/deps/block_buffer-0c6dbfe5e9ad2923)
 
 running 0 tests

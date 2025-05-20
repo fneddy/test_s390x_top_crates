@@ -5,15 +5,16 @@
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
-    Blocking waiting for file lock on package cache
     Updating crates.io index
+    Blocking waiting for file lock on package cache
      Locking 2 packages to latest compatible versions
+    Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
    Compiling semver v1.0.26
    Compiling doc-comment v0.3.3
    Compiling rustc_version v0.4.1 (/var/tmp/top100_artifacts/rustc_version-0.4.1)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.69s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.37s
      Running unittests src/lib.rs (target/debug/deps/rustc_version-36d7cff7b86146d4)
 
 running 0 tests
@@ -23,36 +24,36 @@ test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; fini
      Running tests/all.rs (target/debug/deps/all-f04e2e2a50917df7)
 
 running 28 tests
-test parse_1_0_0 ... ok
-test parse_debian_buster ... ok
-test parse_1_47_0_stable ... ok
 test parse_1_16_0_nightly ... ok
+test parse_1_47_0_stable ... ok
+test parse_llvm_micro ... ok
+test parse_llvm_version_11 ... ok
+test parse_llvm_version_11_0 ... ok
 test parse_llvm_version_3 ... ok
-test parse_llvm_version_3_0 ... ok
 test parse_llvm_version_3_9 ... ok
+test parse_llvm_version_3_0 ... ok
 test parse_llvm_version_4_0 ... ok
 test parse_llvm_version_4_components ... ok
-test parse_llvm_version_5 ... ok
 test parse_llvm_version_5_0 ... ok
+test parse_llvm_version_5 ... ok
 test parse_llvm_version_component_sign_minus ... ok
 test parse_llvm_version_component_sign_plus ... ok
-test parse_llvm_version_empty ... ok
 test parse_llvm_version_invalid_char ... ok
+test parse_llvm_version_empty ... ok
 test parse_llvm_version_leading_zero_on_nonzero ... ok
 test parse_llvm_version_leading_zero_on_zero ... ok
-test parse_llvm_version_overflow ... ok
 test parse_nightly ... ok
 test parse_stable ... ok
 test parse_termux ... ok
 test parse_unknown ... ok
-test parse_llvm_version_11_0 ... ok
-test parse_llvm_micro ... ok
-test parse_llvm_version_11 ... ok
+test parse_1_0_0 ... ok
+test parse_debian_buster ... ok
+test parse_llvm_version_overflow ... ok
 test test_llvm_version_comparison ... ok
 test rustc_error ... ok
 test smoketest ... ok
 
-test result: ok. 28 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.17s
+test result: ok. 28 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.16s
 
 + RESULT=0
 + cd /var/tmp/top100_artifacts

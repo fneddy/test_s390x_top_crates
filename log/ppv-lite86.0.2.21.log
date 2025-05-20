@@ -1,6 +1,6 @@
 [ppv-lite86] download directory: /var/tmp/top100_artifacts/ppv-lite86-0.2.21
-+ curl -sL https://crates.io/api/v1/crates/ppv-lite86/0.2.21/download
 + tar xzf -
++ curl -sL https://crates.io/api/v1/crates/ppv-lite86/0.2.21/download
 + cd /var/tmp/top100_artifacts/ppv-lite86-0.2.21
 + cargo clean
      Removed 0 files
@@ -9,9 +9,11 @@
     Blocking waiting for file lock on package cache
      Locking 6 packages to latest compatible versions
     Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
    Compiling zerocopy v0.8.25
    Compiling ppv-lite86 v0.2.21 (/var/tmp/top100_artifacts/ppv-lite86-0.2.21)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.55s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 5.51s
      Running unittests src/lib.rs (target/debug/deps/ppv_lite86-41e8bbe113136f24)
 
 running 2 tests

@@ -5,14 +5,13 @@
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
+    Blocking waiting for file lock on package cache
     Updating crates.io index
     Blocking waiting for file lock on package cache
      Locking 1 package to latest compatible version
     Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
    Compiling futures-core v0.3.31 (/var/tmp/top100_artifacts/futures-core-0.3.31)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.38s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.87s
      Running unittests src/lib.rs (target/debug/deps/futures_core-1196ce1d4d75d484)
 
 running 0 tests
