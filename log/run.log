@@ -140,10 +140,10 @@ ID VERSION RESULT
 [34/100] smallvec 1.15.0 finished
 [35/100] lazy_static 1.5.0 pass
 [35/100] lazy_static 1.5.0 finished
-[36/100] parking_lot 0.12.3 pass
-[36/100] parking_lot 0.12.3 finished
 [33/100] thiserror 2.0.12 pass
 [33/100] thiserror 2.0.12 finished
+[36/100] parking_lot 0.12.3 pass
+[36/100] parking_lot 0.12.3 finished
 [37/100] strsim 0.11.1 started
 [37/100] strsim 0.11.1 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n strsim -v 0.11.1 -t /var/tmp/top100_artifacts --
 [38/100] num-traits 0.2.19 started
@@ -200,10 +200,10 @@ ID VERSION RESULT
 [51/100] pin-project-lite 0.2.16 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n pin-project-lite -v 0.2.16 -t /var/tmp/top100_artifacts --
 [52/100] miniz_oxide 0.8.8 started
 [52/100] miniz_oxide 0.8.8 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n miniz_oxide -v 0.8.8 -t /var/tmp/top100_artifacts --
-[52/100] miniz_oxide 0.8.8 pass
-[52/100] miniz_oxide 0.8.8 finished
 [51/100] pin-project-lite 0.2.16 fail
 [51/100] pin-project-lite 0.2.16 finished
+[52/100] miniz_oxide 0.8.8 pass
+[52/100] miniz_oxide 0.8.8 finished
 [49/100] block-buffer 0.11.0-rc.4 pass
 [49/100] block-buffer 0.11.0-rc.4 finished
 [50/100] crossbeam-utils 0.8.21 pass
@@ -321,8 +321,8 @@ ID VERSION RESULT
 [80/100] typenum 1.18.0 pass
 [80/100] typenum 1.18.0 finished
 [81/100] rustls 0.23.27 started
-[82/100] futures-channel 0.3.31 started
 [81/100] rustls 0.23.27 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n rustls -v 0.23.27 -t /var/tmp/top100_artifacts --
+[82/100] futures-channel 0.3.31 started
 [82/100] futures-channel 0.3.31 /home/eddy/src/test_s390x_top_crates/scripts/test_git.sh -n futures-channel -g https://github.com/rust-lang/futures-rs.git -b 0.3.31 -t /var/tmp/top100_artifacts -- --manifest-path futures-channel/Cargo.toml
 [83/100] windows_x86_64_gnu 0.53.0 started
 [83/100] windows_x86_64_gnu 0.53.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n windows_x86_64_gnu -v 0.53.0 -t /var/tmp/top100_artifacts --
@@ -330,10 +330,10 @@ ID VERSION RESULT
 [84/100] tracing 0.1.41 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n tracing -v 0.1.41 -t /var/tmp/top100_artifacts --
 [83/100] windows_x86_64_gnu 0.53.0 pass
 [83/100] windows_x86_64_gnu 0.53.0 finished
-[84/100] tracing 0.1.41 fail
-[84/100] tracing 0.1.41 finished
 [81/100] rustls 0.23.27 fail
 [81/100] rustls 0.23.27 finished
+[84/100] tracing 0.1.41 fail
+[84/100] tracing 0.1.41 finished
 [82/100] futures-channel 0.3.31 pass
 [82/100] futures-channel 0.3.31 finished
 [85/100] tracing-core 0.1.33 started
@@ -345,11 +345,11 @@ ID VERSION RESULT
 [88/100] windows_i686_gnu 0.53.0 started
 [88/100] windows_i686_gnu 0.53.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n windows_i686_gnu -v 0.53.0 -t /var/tmp/top100_artifacts --
 [88/100] windows_i686_gnu 0.53.0 pass
-[86/100] windows_i686_msvc 0.53.0 pass
 [88/100] windows_i686_gnu 0.53.0 finished
-[86/100] windows_i686_msvc 0.53.0 finished
 [87/100] windows_aarch64_msvc 0.53.0 pass
 [87/100] windows_aarch64_msvc 0.53.0 finished
+[86/100] windows_i686_msvc 0.53.0 pass
+[86/100] windows_i686_msvc 0.53.0 finished
 [85/100] tracing-core 0.1.33 pass
 [85/100] tracing-core 0.1.33 finished
 [89/100] futures 0.3.31 started
@@ -371,8 +371,8 @@ ID VERSION RESULT
 [93/100] num-integer 0.1.46 started
 [93/100] num-integer 0.1.46 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n num-integer -v 0.1.46 -t /var/tmp/top100_artifacts --
 [94/100] tokio-util 0.7.15 started
-[94/100] tokio-util 0.7.15 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n tokio-util -v 0.7.15 -t /var/tmp/top100_artifacts --
 [95/100] unicode-normalization 0.1.24 started
+[94/100] tokio-util 0.7.15 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n tokio-util -v 0.7.15 -t /var/tmp/top100_artifacts --
 [95/100] unicode-normalization 0.1.24 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n unicode-normalization -v 0.1.24 -t /var/tmp/top100_artifacts --
 [96/100] pkg-config 0.3.32 started
 [96/100] pkg-config 0.3.32 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n pkg-config -v 0.3.32 -t /var/tmp/top100_artifacts --

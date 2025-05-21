@@ -9,19 +9,20 @@
     Updating crates.io index
     Blocking waiting for file lock on package cache
      Locking 2 packages to latest compatible versions
+    Blocking waiting for file lock on package cache
    Compiling rustversion v1.0.20
    Compiling static_assertions v1.1.0
    Compiling pin-project-lite v0.2.16 (/var/tmp/top100_artifacts/pin-project-lite-0.2.16)
-error[E0433]: failed to resolve: use of unresolved module or unlinked crate `macrotest`
- --> tests/expandtest.rs:9:5
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `trybuild`
+ --> tests/compiletest.rs:8:13
   |
-9 |     macrotest::expand_args("tests/expand/**/*.rs", args);
-  |     ^^^^^^^^^ use of unresolved module or unlinked crate `macrotest`
+8 |     let t = trybuild::TestCases::new();
+  |             ^^^^^^^^ use of unresolved module or unlinked crate `trybuild`
   |
-  = help: if you wanted to use a crate named `macrotest`, use `cargo add macrotest` to add it to your `Cargo.toml`
+  = help: if you wanted to use a crate named `trybuild`, use `cargo add trybuild` to add it to your `Cargo.toml`
 
 For more information about this error, try `rustc --explain E0433`.
-error: could not compile `pin-project-lite` (test "expandtest") due to 1 previous error
+error: could not compile `pin-project-lite` (test "compiletest") due to 1 previous error
 warning: build failed, waiting for other jobs to finish...
 + RESULT=101
 + cd /var/tmp/top100_artifacts
