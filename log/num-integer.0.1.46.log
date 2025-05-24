@@ -1191,6 +1191,7 @@ help: consider using clone here
 
 For more information about this error, try `rustc --explain E0308`.
 error: could not compile `num-integer` (lib test) due to 42 previous errors
+warning: build failed, waiting for other jobs to finish...
 + RESULT=101
 + cd /var/tmp/top100_artifacts
 + rm -rf /var/tmp/top100_artifacts/num-integer-0.1.46
