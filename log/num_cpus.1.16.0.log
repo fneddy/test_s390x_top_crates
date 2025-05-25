@@ -1,6 +1,6 @@
 [num_cpus] download directory: /var/tmp/top100_artifacts/num_cpus-1.16.0
-+ curl -sL https://crates.io/api/v1/crates/num_cpus/1.16.0/download
 + tar xzf -
++ curl -sL https://crates.io/api/v1/crates/num_cpus/1.16.0/download
 + cd /var/tmp/top100_artifacts/num_cpus-1.16.0
 + cargo clean
      Removed 0 files
