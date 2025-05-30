@@ -1,4 +1,4 @@
-Testresults as of Thu May 29 02:53:00 PM CEST 2025
+Testresults as of Fri May 30 02:53:01 PM CEST 2025
 PASS: 86
 FAIL: 13
 SKIPPED: 2
@@ -10,8 +10,8 @@ FAILED_CRATES:
 [43/100] idna 1.0.3 fail
 [51/100] pin-project-lite 0.2.16 fail
 [66/100] hyper 1.6.0 fail
-[80/100] num_cpus 1.16.0 fail
 [79/100] rustls 0.23.27 fail
+[81/100] num_cpus 1.16.0 fail
 [84/100] tracing 0.1.41 fail
 [90/100] futures 0.3.31 fail
 [92/100] tokio-util 0.7.15 fail
