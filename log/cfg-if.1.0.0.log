@@ -5,12 +5,9 @@
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
-    Blocking waiting for file lock on package cache
     Updating crates.io index
     Blocking waiting for file lock on package cache
      Locking 2 packages to latest compatible versions
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
    Compiling cfg-if v1.0.0 (/var/tmp/top100_artifacts/cfg-if-1.0.0)
 error: unexpected `cfg` condition name: `foo`
    --> src/lib.rs:101:18
@@ -68,6 +65,16 @@ error: unexpected `cfg` condition value: `blah`
     = help: consider adding `blah` as a feature in `Cargo.toml`
     = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
 
+error: trait `Trait` is never used
+   --> src/lib.rs:156:11
+    |
+156 |     trait Trait {
+    |           ^^^^^
+    |
+    = note: `#[deny(dead_code)]` implied by `#[deny(warnings)]`
+
+error: could not compile `cfg-if` (lib test) due to 5 previous errors
+warning: build failed, waiting for other jobs to finish...
 warning: unexpected `cfg` condition name: `foo`
  --> tests/xcrate.rs:2:14
   |
@@ -83,16 +90,6 @@ warning: unexpected `cfg` condition name: `foo`
   = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
   = note: `#[warn(unexpected_cfgs)]` on by default
 
-error: trait `Trait` is never used
-   --> src/lib.rs:156:11
-    |
-156 |     trait Trait {
-    |           ^^^^^
-    |
-    = note: `#[deny(dead_code)]` implied by `#[deny(warnings)]`
-
-error: could not compile `cfg-if` (lib test) due to 5 previous errors
-warning: build failed, waiting for other jobs to finish...
 warning: `cfg-if` (test "xcrate") generated 1 warning
 + RESULT=101
 + cd /var/tmp/top100_artifacts
