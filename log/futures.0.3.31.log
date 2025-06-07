@@ -1,6 +1,6 @@
 [futures] download directory: /var/tmp/top100_artifacts/futures-0.3.31
-+ curl -sL https://crates.io/api/v1/crates/futures/0.3.31/download
 + tar xzf -
++ curl -sL https://crates.io/api/v1/crates/futures/0.3.31/download
 + cd /var/tmp/top100_artifacts/futures-0.3.31
 + cargo clean
      Removed 0 files
@@ -21,52 +21,52 @@
    Compiling crossbeam-utils v0.7.2
    Compiling slab v0.4.9
    Compiling semver v0.9.0
+   Compiling scopeguard v1.2.0
+   Compiling rustc_version v0.2.3
    Compiling iovec v0.1.4
    Compiling log v0.4.27
-   Compiling rustc_version v0.2.3
-   Compiling scopeguard v1.2.0
    Compiling proc-macro2 v1.0.95
    Compiling tokio-executor v0.1.10
    Compiling unicode-ident v1.0.18
    Compiling byteorder v1.5.0
    Compiling parking_lot_core v0.6.3
    Compiling parking_lot v0.9.0
+   Compiling num_cpus v1.17.0
    Compiling net2 v0.2.39
    Compiling bytes v0.4.12
-   Compiling num_cpus v1.17.0
-   Compiling tokio-io v0.1.13
-   Compiling memoffset v0.5.6
-   Compiling smallvec v0.6.14
    Compiling quote v1.0.40
-   Compiling mio v0.6.23
+   Compiling memoffset v0.5.6
+   Compiling tokio-io v0.1.13
+   Compiling smallvec v0.6.14
    Compiling syn v2.0.101
+   Compiling mio v0.6.23
    Compiling lock_api v0.3.4
    Compiling crossbeam-epoch v0.8.2
    Compiling fnv v1.0.7
    Compiling tokio-sync v0.1.8
    Compiling tokio-reactor v0.1.12
-   Compiling futures-core v0.3.31
    Compiling futures-sink v0.3.31
+   Compiling futures-core v0.3.31
    Compiling futures-channel v0.3.31
    Compiling crossbeam-deque v0.7.4
    Compiling tokio-codec v0.1.2
    Compiling crossbeam-queue v0.2.3
-   Compiling futures-task v0.3.31
-   Compiling pin-utils v0.1.0
-   Compiling memchr v2.7.4
    Compiling pin-project-lite v0.2.16
    Compiling futures-io v0.3.31
+   Compiling pin-utils v0.1.0
+   Compiling memchr v2.7.4
+   Compiling futures-task v0.3.31
    Compiling tokio-threadpool v0.1.18
    Compiling mio-uds v0.6.8
    Compiling tokio-uds v0.2.7
    Compiling tokio-udp v0.1.6
    Compiling tokio-fs v0.1.7
    Compiling tokio-tcp v0.1.4
-   Compiling tokio-current-thread v0.1.7
    Compiling tokio-timer v0.2.13
+   Compiling tokio-current-thread v0.1.7
    Compiling static_assertions v1.1.0
-   Compiling assert_matches v1.5.0
    Compiling tokio v0.1.22
+   Compiling assert_matches v1.5.0
    Compiling futures-macro v0.3.31
    Compiling pin-project-internal v1.1.10
    Compiling futures-util v0.3.31
@@ -74,15 +74,27 @@
    Compiling futures-executor v0.3.31
    Compiling futures v0.3.31 (/var/tmp/top100_artifacts/futures-0.3.31)
 error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures_test`
- --> tests/future_fuse.rs:3:5
+ --> tests/io_lines.rs:6:5
   |
-3 | use futures_test::task::panic_waker;
+6 | use futures_test::io::AsyncReadTestExt;
   |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `futures_test`
   |
 help: there is a crate or module with a similar name
   |
-3 - use futures_test::task::panic_waker;
-3 + use futures_task::task::panic_waker;
+6 - use futures_test::io::AsyncReadTestExt;
+6 + use futures_task::io::AsyncReadTestExt;
+  |
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures_test`
+ --> tests/io_lines.rs:7:5
+  |
+7 | use futures_test::task::noop_context;
+  |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `futures_test`
+  |
+help: there is a crate or module with a similar name
+  |
+7 - use futures_test::task::noop_context;
+7 + use futures_task::task::noop_context;
   |
 
 error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures_test`
@@ -97,37 +109,23 @@ help: there is a crate or module with a similar name
 3 + use futures_task::future::FutureTestExt;
   |
 
-For more information about this error, try `rustc --explain E0433`.
-error: could not compile `futures` (test "future_fuse") due to 1 previous error
-warning: build failed, waiting for other jobs to finish...
-error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures_test`
-  --> tests/stream.rs:18:5
+error[E0599]: no method named `interleave_pending` found for struct `IntoAsyncRead` in the current scope
+  --> tests/io_lines.rs:65:78
    |
-18 | use futures_test::task::noop_context;
-   |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `futures_test`
-   |
-help: there is a crate or module with a similar name
-   |
-18 - use futures_test::task::noop_context;
-18 + use futures_task::task::noop_context;
-   |
+65 |         stream::iter(vec![&b"12"[..], &b"\r"[..]]).map(Ok).into_async_read().interleave_pending();
+   |                                                                              ^^^^^^^^^^^^^^^^^^ method not found in `IntoAsyncRead<Map<Iter<IntoIter<&[u8]>>, ...>>`
 
-error[E0432]: unresolved import `futures_executor::ThreadPool`
-  --> tests/stream.rs:17:5
+error[E0599]: no method named `interleave_pending` found for struct `IntoAsyncRead` in the current scope
+  --> tests/io_lines.rs:73:10
    |
-17 | use futures_executor::ThreadPool;
-   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ no `ThreadPool` in the root
+70 |       let buf = stream::iter(vec![&b"12"[..], &b"\r\n"[..], &b"\n"[..]])
+   |  _______________-
+71 | |         .map(Ok)
+72 | |         .into_async_read()
+73 | |         .interleave_pending();
+   | |         -^^^^^^^^^^^^^^^^^^ method not found in `IntoAsyncRead<Map<Iter<IntoIter<&[u8]>>, ...>>`
+   | |_________|
    |
-note: found an item that was configured out
-  --> /home/eddy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-executor-0.3.31/src/lib.rs:68:30
-   |
-68 | pub use crate::thread_pool::{ThreadPool, ThreadPoolBuilder};
-   |                              ^^^^^^^^^^
-note: the item is gated behind the `thread-pool` feature
-  --> /home/eddy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-executor-0.3.31/src/lib.rs:65:7
-   |
-65 | #[cfg(feature = "thread-pool")]
-   |       ^^^^^^^^^^^^^^^^^^^^^^^
 
 error[E0599]: no method named `run_in_background` found for struct `MapOk` in the current scope
   --> tests/oneshot.rs:13:38
@@ -135,6 +133,22 @@ error[E0599]: no method named `run_in_background` found for struct `MapOk` in th
 13 |     rx1.map_ok(move |x| tx2.send(x)).run_in_background();
    |                                      ^^^^^^^^^^^^^^^^^ method not found in `MapOk<Receiver<i32>, {closure@oneshot.rs:13:16}>`
 
+Some errors have detailed explanations: E0433, E0599.
+For more information about an error, try `rustc --explain E0433`.
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures_test`
+ --> tests/sink.rs:9:5
+  |
+9 | use futures_test::task::panic_context;
+  |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `futures_test`
+  |
+help: there is a crate or module with a similar name
+  |
+9 - use futures_test::task::panic_context;
+9 + use futures_task::task::panic_context;
+  |
+
+error: could not compile `futures` (test "io_lines") due to 4 previous errors
+warning: build failed, waiting for other jobs to finish...
 error[E0599]: no method named `run_in_background` found for struct `MapOk` in the current scope
   --> tests/oneshot.rs:24:47
    |
@@ -159,12 +173,9 @@ error[E0599]: no method named `run_in_background` found for struct `Map` in the 
 55 |     rx1.map(move |result| tx2.send(result).unwrap()).run_in_background();
    |                                                      ^^^^^^^^^^^^^^^^^ method not found in `Map<Receiver<i32>, {closure@oneshot.rs:55:13}>`
 
-Some errors have detailed explanations: E0433, E0599.
-For more information about an error, try `rustc --explain E0433`.
 error: could not compile `futures` (test "oneshot") due to 6 previous errors
-Some errors have detailed explanations: E0432, E0433.
-For more information about an error, try `rustc --explain E0432`.
-error: could not compile `futures` (test "stream") due to 2 previous errors
+For more information about this error, try `rustc --explain E0433`.
+error: could not compile `futures` (test "sink") due to 1 previous error
 + RESULT=101
 + cd /var/tmp/top100_artifacts
 + rm -rf /var/tmp/top100_artifacts/futures-0.3.31
