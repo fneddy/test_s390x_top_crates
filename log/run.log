@@ -39,10 +39,10 @@ ID VERSION RESULT
 [11/100] serde 1.0.219 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n serde -v 1.0.219 -t /var/tmp/top100_artifacts --
 [12/100] cfg-if 1.0.0 started
 [12/100] cfg-if 1.0.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n cfg-if -v 1.0.0 -t /var/tmp/top100_artifacts --
-[12/100] cfg-if 1.0.0 fail
-[12/100] cfg-if 1.0.0 finished
 [9/100] rand_core 0.9.3 pass
 [9/100] rand_core 0.9.3 finished
+[12/100] cfg-if 1.0.0 fail
+[12/100] cfg-if 1.0.0 finished
 [10/100] rand 0.9.1 pass
 [10/100] rand 0.9.1 finished
 [11/100] serde 1.0.219 pass
@@ -232,10 +232,10 @@ ID VERSION RESULT
 [59/100] tokio tokio-1.45.0 /home/eddy/src/test_s390x_top_crates/scripts/test_git.sh -n tokio -g https://github.com/tokio-rs/tokio/ -b tokio-1.45.0 -t /var/tmp/top100_artifacts --
 [60/100] byteorder 1.5.0 started
 [60/100] byteorder 1.5.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n byteorder -v 1.5.0 -t /var/tmp/top100_artifacts --
-[58/100] windows-sys 0.59.0 pass
-[58/100] windows-sys 0.59.0 finished
 [57/100] ppv-lite86 0.2.21 pass
 [57/100] ppv-lite86 0.2.21 finished
+[58/100] windows-sys 0.59.0 pass
+[58/100] windows-sys 0.59.0 finished
 [60/100] byteorder 1.5.0 pass
 [60/100] byteorder 1.5.0 finished
 [59/100] tokio tokio-1.45.0 pass
@@ -344,12 +344,12 @@ ID VERSION RESULT
 [87/100] windows_aarch64_msvc 0.53.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n windows_aarch64_msvc -v 0.53.0 -t /var/tmp/top100_artifacts --
 [88/100] windows_i686_gnu 0.53.0 started
 [88/100] windows_i686_gnu 0.53.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n windows_i686_gnu -v 0.53.0 -t /var/tmp/top100_artifacts --
+[86/100] tracing-core 0.1.34 pass
+[86/100] tracing-core 0.1.34 finished
 [88/100] windows_i686_gnu 0.53.0 pass
 [88/100] windows_i686_gnu 0.53.0 finished
 [87/100] windows_aarch64_msvc 0.53.0 pass
 [87/100] windows_aarch64_msvc 0.53.0 finished
-[86/100] tracing-core 0.1.34 pass
-[86/100] tracing-core 0.1.34 finished
 [85/100] tracing 0.1.41 fail
 [85/100] tracing 0.1.41 finished
 [89/100] http-body 1.0.1 started
@@ -368,22 +368,22 @@ ID VERSION RESULT
 [90/100] futures 0.3.31 finished
 [92/100] tokio-util 0.7.15 fail
 [92/100] tokio-util 0.7.15 finished
-[93/100] spin 0.10.0 started
-[93/100] spin 0.10.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n spin -v 0.10.0 -t /var/tmp/top100_artifacts --
-[94/100] num-integer 0.1.46 started
-[94/100] num-integer 0.1.46 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n num-integer -v 0.1.46 -t /var/tmp/top100_artifacts --
+[93/100] num-integer 0.1.46 started
+[93/100] num-integer 0.1.46 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n num-integer -v 0.1.46 -t /var/tmp/top100_artifacts --
+[94/100] spin 0.10.0 started
+[94/100] spin 0.10.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n spin -v 0.10.0 -t /var/tmp/top100_artifacts --
 [95/100] h2 0.4.10 started
 [95/100] h2 0.4.10 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n h2 -v 0.4.10 -t /var/tmp/top100_artifacts --
 [96/100] unicode-width 0.2.0 started
 [96/100] unicode-width 0.2.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n unicode-width -v 0.2.0 -t /var/tmp/top100_artifacts --
-[94/100] num-integer 0.1.46 fail
-[94/100] num-integer 0.1.46 finished
+[93/100] num-integer 0.1.46 fail
+[93/100] num-integer 0.1.46 finished
 [96/100] unicode-width 0.2.0 pass
 [96/100] unicode-width 0.2.0 finished
 [95/100] h2 0.4.10 fail
 [95/100] h2 0.4.10 finished
-[93/100] spin 0.10.0 pass
-[93/100] spin 0.10.0 finished
+[94/100] spin 0.10.0 pass
+[94/100] spin 0.10.0 finished
 [97/100] pin-utils 0.1.0 started
 [97/100] pin-utils 0.1.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n pin-utils -v 0.1.0 -t /var/tmp/top100_artifacts --
 [98/100] pkg-config 0.3.32 started
