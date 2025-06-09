@@ -39,10 +39,10 @@ ID VERSION RESULT
 [11/100] serde 1.0.219 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n serde -v 1.0.219 -t /var/tmp/top100_artifacts --
 [12/100] cfg-if 1.0.0 started
 [12/100] cfg-if 1.0.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n cfg-if -v 1.0.0 -t /var/tmp/top100_artifacts --
-[9/100] rand_core 0.9.3 pass
-[9/100] rand_core 0.9.3 finished
 [12/100] cfg-if 1.0.0 fail
 [12/100] cfg-if 1.0.0 finished
+[9/100] rand_core 0.9.3 pass
+[9/100] rand_core 0.9.3 finished
 [10/100] rand 0.9.1 pass
 [10/100] rand 0.9.1 finished
 [11/100] serde 1.0.219 pass
@@ -76,10 +76,10 @@ ID VERSION RESULT
 [18/100] itoa 1.0.15 finished
 [17/100] autocfg 1.4.0 pass
 [17/100] autocfg 1.4.0 finished
-[20/100] once_cell 1.21.3 fail
-[20/100] once_cell 1.21.3 finished
 [19/100] serde_json 1.0.140 pass
 [19/100] serde_json 1.0.140 finished
+[20/100] once_cell 1.21.3 fail
+[20/100] once_cell 1.21.3 finished
 [21/100] log 0.4.27 started
 [21/100] log 0.4.27 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n log -v 0.4.27 -t /var/tmp/top100_artifacts --
 [22/100] rand_chacha 0.9.0 started
@@ -210,32 +210,32 @@ ID VERSION RESULT
 [50/100] crossbeam-utils 0.8.21 finished
 [53/100] anyhow 1.0.98 started
 [53/100] anyhow 1.0.98 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n anyhow -v 1.0.98 -t /var/tmp/top100_artifacts --
-[54/100] mio 1.0.4 started
-[54/100] mio 1.0.4 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n mio -v 1.0.4 -t /var/tmp/top100_artifacts --
-[55/100] rustix 1.0.7 started
-[55/100] rustix 1.0.7 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n rustix -v 1.0.7 -t /var/tmp/top100_artifacts --
+[54/100] rustix 1.0.7 started
+[54/100] rustix 1.0.7 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n rustix -v 1.0.7 -t /var/tmp/top100_artifacts --
+[55/100] mio 1.0.4 started
+[55/100] mio 1.0.4 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n mio -v 1.0.4 -t /var/tmp/top100_artifacts --
 [56/100] memoffset 0.9.1 started
 [56/100] memoffset 0.9.1 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n memoffset -v 0.9.1 -t /var/tmp/top100_artifacts --
 [56/100] memoffset 0.9.1 pass
 [56/100] memoffset 0.9.1 finished
-[54/100] mio 1.0.4 pass
-[54/100] mio 1.0.4 finished
-[55/100] rustix 1.0.7 pass
-[55/100] rustix 1.0.7 finished
+[55/100] mio 1.0.4 pass
+[55/100] mio 1.0.4 finished
+[54/100] rustix 1.0.7 pass
+[54/100] rustix 1.0.7 finished
 [53/100] anyhow 1.0.98 pass
 [53/100] anyhow 1.0.98 finished
 [57/100] ppv-lite86 0.2.21 started
 [57/100] ppv-lite86 0.2.21 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n ppv-lite86 -v 0.2.21 -t /var/tmp/top100_artifacts --
 [58/100] windows-sys 0.59.0 started
-[58/100] windows-sys 0.59.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n windows-sys -v 0.59.0 -t /var/tmp/top100_artifacts --
 [59/100] tokio tokio-1.45.0 started
+[58/100] windows-sys 0.59.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n windows-sys -v 0.59.0 -t /var/tmp/top100_artifacts --
 [59/100] tokio tokio-1.45.0 /home/eddy/src/test_s390x_top_crates/scripts/test_git.sh -n tokio -g https://github.com/tokio-rs/tokio/ -b tokio-1.45.0 -t /var/tmp/top100_artifacts --
 [60/100] byteorder 1.5.0 started
 [60/100] byteorder 1.5.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n byteorder -v 1.5.0 -t /var/tmp/top100_artifacts --
-[57/100] ppv-lite86 0.2.21 pass
-[57/100] ppv-lite86 0.2.21 finished
 [58/100] windows-sys 0.59.0 pass
 [58/100] windows-sys 0.59.0 finished
+[57/100] ppv-lite86 0.2.21 pass
+[57/100] ppv-lite86 0.2.21 finished
 [60/100] byteorder 1.5.0 pass
 [60/100] byteorder 1.5.0 finished
 [59/100] tokio tokio-1.45.0 pass
@@ -314,10 +314,10 @@ ID VERSION RESULT
 [80/100] windows_x86_64_gnu 0.53.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n windows_x86_64_gnu -v 0.53.0 -t /var/tmp/top100_artifacts --
 [79/100] futures-sink 0.3.31 pass
 [79/100] futures-sink 0.3.31 finished
-[77/100] fnv 1.0.7 pass
-[77/100] fnv 1.0.7 finished
 [80/100] windows_x86_64_gnu 0.53.0 pass
+[77/100] fnv 1.0.7 pass
 [80/100] windows_x86_64_gnu 0.53.0 finished
+[77/100] fnv 1.0.7 finished
 [78/100] rustls 0.23.27 fail
 [78/100] rustls 0.23.27 finished
 [81/100] typenum 1.18.0 started
@@ -344,12 +344,12 @@ ID VERSION RESULT
 [87/100] windows_aarch64_msvc 0.53.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n windows_aarch64_msvc -v 0.53.0 -t /var/tmp/top100_artifacts --
 [88/100] windows_i686_gnu 0.53.0 started
 [88/100] windows_i686_gnu 0.53.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n windows_i686_gnu -v 0.53.0 -t /var/tmp/top100_artifacts --
-[86/100] tracing-core 0.1.34 pass
-[86/100] tracing-core 0.1.34 finished
-[88/100] windows_i686_gnu 0.53.0 pass
-[88/100] windows_i686_gnu 0.53.0 finished
 [87/100] windows_aarch64_msvc 0.53.0 pass
 [87/100] windows_aarch64_msvc 0.53.0 finished
+[88/100] windows_i686_gnu 0.53.0 pass
+[88/100] windows_i686_gnu 0.53.0 finished
+[86/100] tracing-core 0.1.34 pass
+[86/100] tracing-core 0.1.34 finished
 [85/100] tracing 0.1.41 fail
 [85/100] tracing 0.1.41 finished
 [89/100] http-body 1.0.1 started
