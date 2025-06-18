@@ -1,4 +1,4 @@
-Testresults as of Tue Jun 17 02:53:00 PM CEST 2025
+Testresults as of Wed Jun 18 02:53:00 PM CEST 2025
 PASS: 88
 FAIL: 11
 SKIPPED: 2
@@ -11,7 +11,7 @@ FAILED_CRATES:
 [66/100] hyper 1.6.0 fail
 [77/100] rustls 0.23.28 fail
 [88/100] tracing 0.1.41 fail
-[91/100] futures 0.3.31 fail
 [92/100] tokio-util 0.7.15 fail
+[91/100] futures 0.3.31 fail
 [96/100] num-integer 0.1.46 fail
 [94/100] h2 0.4.10 fail
