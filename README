@@ -1,4 +1,4 @@
-Testresults as of Wed Jun 18 02:53:00 PM CEST 2025
+Testresults as of Thu Jun 19 02:53:01 PM CEST 2025
 PASS: 88
 FAIL: 11
 SKIPPED: 2
@@ -10,8 +10,8 @@ FAILED_CRATES:
 [51/100] pin-project-lite 0.2.16 fail
 [66/100] hyper 1.6.0 fail
 [77/100] rustls 0.23.28 fail
-[88/100] tracing 0.1.41 fail
-[92/100] tokio-util 0.7.15 fail
+[87/100] tracing 0.1.41 fail
 [91/100] futures 0.3.31 fail
+[92/100] tokio-util 0.7.15 fail
 [96/100] num-integer 0.1.46 fail
 [94/100] h2 0.4.10 fail

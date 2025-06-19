@@ -11,6 +11,7 @@
      Locking 2 packages to latest compatible versions
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
    Compiling rustversion v1.0.21
    Compiling static_assertions v1.1.0
    Compiling pin-project-lite v0.2.16 (/var/tmp/top100_artifacts/pin-project-lite-0.2.16)
