@@ -13,34 +13,34 @@
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
    Compiling autocfg v1.5.0
-   Compiling cfg-if v0.1.10
    Compiling libc v0.2.174
+   Compiling cfg-if v0.1.10
    Compiling maybe-uninit v2.0.0
    Compiling lazy_static v1.5.0
    Compiling semver-parser v0.7.0
-   Compiling slab v0.4.10
    Compiling futures v0.1.31
-   Compiling semver v0.9.0
+   Compiling slab v0.4.10
    Compiling crossbeam-utils v0.7.2
+   Compiling semver v0.9.0
    Compiling rustc_version v0.2.3
-   Compiling log v0.4.27
-   Compiling scopeguard v1.2.0
-   Compiling proc-macro2 v1.0.95
    Compiling iovec v0.1.4
+   Compiling scopeguard v1.2.0
+   Compiling log v0.4.27
+   Compiling proc-macro2 v1.0.95
    Compiling byteorder v1.5.0
    Compiling unicode-ident v1.0.18
-   Compiling parking_lot_core v0.6.3
    Compiling bytes v0.4.12
+   Compiling parking_lot_core v0.6.3
    Compiling tokio-executor v0.1.10
    Compiling tokio-io v0.1.13
+   Compiling parking_lot v0.9.0
    Compiling quote v1.0.40
    Compiling num_cpus v1.17.0
    Compiling net2 v0.2.39
-   Compiling parking_lot v0.9.0
    Compiling memoffset v0.5.6
    Compiling smallvec v0.6.14
    Compiling mio v0.6.23
-   Compiling syn v2.0.103
+   Compiling syn v2.0.104
    Compiling lock_api v0.3.4
    Compiling crossbeam-epoch v0.8.2
    Compiling fnv v1.0.7
@@ -53,20 +53,20 @@
    Compiling tokio-codec v0.1.2
    Compiling crossbeam-queue v0.2.3
    Compiling futures-task v0.3.31
-   Compiling futures-io v0.3.31
+   Compiling pin-project-lite v0.2.16
    Compiling pin-utils v0.1.0
    Compiling memchr v2.7.5
-   Compiling pin-project-lite v0.2.16
+   Compiling futures-io v0.3.31
    Compiling tokio-threadpool v0.1.18
    Compiling mio-uds v0.6.8
    Compiling tokio-uds v0.2.7
    Compiling tokio-fs v0.1.7
    Compiling tokio-udp v0.1.6
    Compiling tokio-tcp v0.1.4
-   Compiling tokio-timer v0.2.13
    Compiling tokio-current-thread v0.1.7
-   Compiling assert_matches v1.5.0
+   Compiling tokio-timer v0.2.13
    Compiling static_assertions v1.1.0
+   Compiling assert_matches v1.5.0
    Compiling tokio v0.1.22
    Compiling futures-macro v0.3.31
    Compiling pin-project-internal v1.1.10
@@ -75,20 +75,142 @@
    Compiling futures-executor v0.3.31
    Compiling futures v0.3.31 (/var/tmp/top100_artifacts/futures-0.3.31)
 error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures_test`
- --> tests/io_write.rs:2:5
+ --> tests/eager_drop.rs:4:5
   |
-2 | use futures_test::task::panic_context;
+4 | use futures_test::future::FutureTestExt;
   |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `futures_test`
   |
 help: there is a crate or module with a similar name
   |
-2 - use futures_test::task::panic_context;
-2 + use futures_task::task::panic_context;
+4 - use futures_test::future::FutureTestExt;
+4 + use futures_task::future::FutureTestExt;
   |
 
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures_test`
+ --> tests/io_read_to_string.rs:6:5
+  |
+6 | use futures_test::io::AsyncReadTestExt;
+  |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `futures_test`
+  |
+help: there is a crate or module with a similar name
+  |
+6 - use futures_test::io::AsyncReadTestExt;
+6 + use futures_task::io::AsyncReadTestExt;
+  |
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures_test`
+ --> tests/io_read_to_string.rs:7:5
+  |
+7 | use futures_test::task::noop_context;
+  |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `futures_test`
+  |
+help: there is a crate or module with a similar name
+  |
+7 - use futures_test::task::noop_context;
+7 + use futures_task::task::noop_context;
+  |
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures_test`
+ --> tests/stream_abortable.rs:6:5
+  |
+6 | use futures_test::task::new_count_waker;
+  |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `futures_test`
+  |
+help: there is a crate or module with a similar name
+  |
+6 - use futures_test::task::new_count_waker;
+6 + use futures_task::task::new_count_waker;
+  |
+
+error[E0599]: no method named `run_in_background` found for struct `Map` in the current scope
+  --> tests/eager_drop.rs:25:10
+   |
+16 | /     future::ready::<Result<i32, i32>>(Err(1))
+17 | |         .map_ok(move |_| {
+18 | |             let _tx1 = tx1;
+19 | |             panic!("should not run");
+...  |
+24 | |         })
+25 | |         .run_in_background();
+   | |         -^^^^^^^^^^^^^^^^^ method not found in `Map<MapOk<Ready<Result<i32, i32>>, {closure@...}>, ...>`
+   | |_________|
+   |
+
+error[E0599]: no method named `run_in_background` found for struct `Map` in the current scope
+  --> tests/eager_drop.rs:46:10
+   |
+37 | /     future::ready::<Result<i32, i32>>(Ok(1))
+38 | |         .map_err(move |_| {
+39 | |             let _tx1 = tx1;
+40 | |             panic!("should not run");
+...  |
+45 | |         })
+46 | |         .run_in_background();
+   | |         -^^^^^^^^^^^^^^^^^ method not found in `Map<MapErr<Ready<Result<i32, i32>>, {closure@...}>, ...>`
+   | |_________|
+   |
+
 For more information about this error, try `rustc --explain E0433`.
-error: could not compile `futures` (test "io_write") due to 1 previous error
+error[E0599]: no method named `interleave_pending` found for struct `IntoAsyncRead` in the current scope
+  --> tests/io_read_to_string.rs:39:10
+   |
+36 |       let mut buf = stream::iter(vec![&b"12"[..], &b"33"[..], &b"3"[..]])
+   |  ___________________-
+37 | |         .map(Ok)
+38 | |         .into_async_read()
+39 | |         .interleave_pending();
+   | |         -^^^^^^^^^^^^^^^^^^ method not found in `IntoAsyncRead<Map<Iter<IntoIter<&[u8]>>, ...>>`
+   | |_________|
+   |
+
+error: could not compile `futures` (test "stream_abortable") due to 1 previous error
 warning: build failed, waiting for other jobs to finish...
+error[E0599]: no method named `run_in_background` found for struct `Then` in the current scope
+  --> tests/eager_drop.rs:78:10
+   |
+72 | /     FutureData { _data: tx1, future: rx0.unwrap_or_else(|_| panic!()) }
+73 | |         .then(move |_| {
+74 | |             assert!(rx1.recv().is_err()); // tx1 should have been dropped
+75 | |             tx2.send(()).unwrap();
+76 | |             future::ready(())
+77 | |         })
+78 | |         .run_in_background();
+   | |         -^^^^^^^^^^^^^^^^^ method not found in `Then<FutureData<UnwrapOrElse<Receiver<()>, ...>, ...>, ..., ...>`
+   | |_________|
+   |
+
+Some errors have detailed explanations: E0433, E0599.
+For more information about an error, try `rustc --explain E0433`.
+error: could not compile `futures` (test "io_read_to_string") due to 3 previous errors
+error[E0599]: no method named `run_in_background` found for struct `AndThen` in the current scope
+  --> tests/eager_drop.rs:97:10
+   |
+91 | /     FutureData { _data: tx1, future: rx0.unwrap_or_else(|_| panic!()) }
+92 | |         .and_then(move |_| {
+93 | |             assert!(rx1.recv().is_err()); // tx1 should have been dropped
+94 | |             tx2.send(()).unwrap();
+95 | |             future::ready(Ok(()))
+96 | |         })
+97 | |         .run_in_background();
+   | |         -^^^^^^^^^^^^^^^^^ method not found in `AndThen<FutureData<UnwrapOrElse<Receiver<...>, ...>, ...>, ..., ...>`
+   | |_________|
+   |
+
+error[E0599]: no method named `run_in_background` found for struct `OrElse` in the current scope
+   --> tests/eager_drop.rs:116:10
+    |
+110 | /     FutureData { _data: tx1, future: rx0.unwrap_or_else(|_| panic!()) }
+111 | |         .or_else(move |_| {
+112 | |             assert!(rx1.recv().is_err()); // tx1 should have been dropped
+113 | |             tx2.send(()).unwrap();
+114 | |             future::ready::<Result<(), ()>>(Ok(()))
+115 | |         })
+116 | |         .run_in_background();
+    | |         -^^^^^^^^^^^^^^^^^ method not found in `OrElse<FutureData<UnwrapOrElse<Receiver<...>, ...>, ...>, ..., ...>`
+    | |_________|
+    |
+
+error: could not compile `futures` (test "eager_drop") due to 6 previous errors
 + RESULT=101
 + cd /var/tmp/top100_artifacts
 + rm -rf /var/tmp/top100_artifacts/futures-0.3.31
