@@ -154,10 +154,10 @@ ID VERSION RESULT
 [40/100] either 1.15.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n either -v 1.15.0 -t /var/tmp/top100_artifacts --
 [39/100] semver 1.0.26 pass
 [39/100] semver 1.0.26 finished
-[40/100] either 1.15.0 pass
-[40/100] either 1.15.0 finished
 [38/100] num-traits 0.2.19 pass
 [38/100] num-traits 0.2.19 finished
+[40/100] either 1.15.0 pass
+[40/100] either 1.15.0 finished
 [37/100] parking_lot 0.12.4 pass
 [37/100] parking_lot 0.12.4 finished
 [41/100] version_check 0.9.5 started
@@ -314,10 +314,10 @@ ID VERSION RESULT
 [80/100] futures-sink 0.3.31 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n futures-sink -v 0.3.31 -t /var/tmp/top100_artifacts --
 [80/100] futures-sink 0.3.31 pass
 [80/100] futures-sink 0.3.31 finished
-[79/100] windows_x86_64_gnu 0.53.0 pass
-[79/100] windows_x86_64_gnu 0.53.0 finished
 [78/100] fnv 1.0.7 pass
 [78/100] fnv 1.0.7 finished
+[79/100] windows_x86_64_gnu 0.53.0 pass
+[79/100] windows_x86_64_gnu 0.53.0 finished
 [77/100] rustls 0.23.28 fail
 [77/100] rustls 0.23.28 finished
 [81/100] typenum 1.18.0 started
@@ -384,15 +384,15 @@ ID VERSION RESULT
 [93/100] tokio-util 0.7.15 finished
 [94/100] h2 0.4.10 fail
 [94/100] h2 0.4.10 finished
-[97/100] num-integer 0.1.46 started
-[97/100] num-integer 0.1.46 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n num-integer -v 0.1.46 -t /var/tmp/top100_artifacts --
-[98/100] futures-io 0.3.31 started
-[98/100] futures-io 0.3.31 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n futures-io -v 0.3.31 -t /var/tmp/top100_artifacts --
+[97/100] futures-io 0.3.31 started
+[97/100] futures-io 0.3.31 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n futures-io -v 0.3.31 -t /var/tmp/top100_artifacts --
+[98/100] num-integer 0.1.46 started
+[98/100] num-integer 0.1.46 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n num-integer -v 0.1.46 -t /var/tmp/top100_artifacts --
 [99/100] uuid 1.17.0 started
 [99/100] uuid 1.17.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n uuid -v 1.17.0 -t /var/tmp/top100_artifacts --
-[98/100] futures-io 0.3.31 pass
-[98/100] futures-io 0.3.31 finished
-[97/100] num-integer 0.1.46 fail
-[97/100] num-integer 0.1.46 finished
+[97/100] futures-io 0.3.31 pass
+[97/100] futures-io 0.3.31 finished
+[98/100] num-integer 0.1.46 fail
+[98/100] num-integer 0.1.46 finished
 [99/100] uuid 1.17.0 pass
 [99/100] uuid 1.17.0 finished
