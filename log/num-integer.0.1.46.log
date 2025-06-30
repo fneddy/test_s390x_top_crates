@@ -5,12 +5,10 @@
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
+    Blocking waiting for file lock on package cache
     Updating crates.io index
     Blocking waiting for file lock on package cache
      Locking 2 packages to latest compatible versions
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
    Compiling autocfg v1.5.0
    Compiling num-traits v0.2.19
    Compiling num-integer v0.1.46 (/var/tmp/top100_artifacts/num-integer-0.1.46)

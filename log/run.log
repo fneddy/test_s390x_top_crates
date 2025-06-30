@@ -76,10 +76,10 @@ ID VERSION RESULT
 [18/100] itoa 1.0.15 finished
 [17/100] autocfg 1.5.0 pass
 [17/100] autocfg 1.5.0 finished
-[19/100] serde_json 1.0.140 pass
-[19/100] serde_json 1.0.140 finished
 [20/100] once_cell 1.21.3 fail
 [20/100] once_cell 1.21.3 finished
+[19/100] serde_json 1.0.140 pass
+[19/100] serde_json 1.0.140 finished
 [21/100] log 0.4.27 started
 [21/100] log 0.4.27 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n log -v 0.4.27 -t /var/tmp/top100_artifacts --
 [22/100] rand_chacha 0.9.0 started
@@ -200,10 +200,10 @@ ID VERSION RESULT
 [51/100] pin-project-lite 0.2.16 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n pin-project-lite -v 0.2.16 -t /var/tmp/top100_artifacts --
 [52/100] miniz_oxide 0.8.9 started
 [52/100] miniz_oxide 0.8.9 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n miniz_oxide -v 0.8.9 -t /var/tmp/top100_artifacts --
-[51/100] pin-project-lite 0.2.16 fail
-[51/100] pin-project-lite 0.2.16 finished
 [52/100] miniz_oxide 0.8.9 pass
 [52/100] miniz_oxide 0.8.9 finished
+[51/100] pin-project-lite 0.2.16 fail
+[51/100] pin-project-lite 0.2.16 finished
 [49/100] block-buffer 0.11.0-rc.4 pass
 [49/100] block-buffer 0.11.0-rc.4 finished
 [50/100] crossbeam-utils 0.8.21 pass
@@ -262,30 +262,30 @@ ID VERSION RESULT
 [66/100] hyper 1.6.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n hyper -v 1.6.0 -t /var/tmp/top100_artifacts --
 [67/100] linux-raw-sys 0.10.0 started
 [67/100] linux-raw-sys 0.10.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n linux-raw-sys -v 0.10.0 -t /var/tmp/top100_artifacts --
-[68/100] toml 0.8.23 started
-[68/100] toml 0.8.23 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n toml -v 0.8.23 -t /var/tmp/top100_artifacts --
+[68/100] windows_x86_64_msvc 0.53.0 started
+[68/100] windows_x86_64_msvc 0.53.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n windows_x86_64_msvc -v 0.53.0 -t /var/tmp/top100_artifacts --
+[68/100] windows_x86_64_msvc 0.53.0 pass
+[68/100] windows_x86_64_msvc 0.53.0 finished
 [67/100] linux-raw-sys 0.10.0 pass
 [67/100] linux-raw-sys 0.10.0 finished
 [66/100] hyper 1.6.0 fail
 [66/100] hyper 1.6.0 finished
 [65/100] generic-array 1.2.0 pass
 [65/100] generic-array 1.2.0 finished
-[68/100] toml 0.8.23 pass
-[68/100] toml 0.8.23 finished
-[69/100] windows_x86_64_msvc 0.53.0 started
-[69/100] windows_x86_64_msvc 0.53.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n windows_x86_64_msvc -v 0.53.0 -t /var/tmp/top100_artifacts --
+[69/100] toml 0.8.23 started
+[69/100] toml 0.8.23 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n toml -v 0.8.23 -t /var/tmp/top100_artifacts --
 [70/100] futures-core 0.3.31 started
 [70/100] futures-core 0.3.31 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n futures-core -v 0.3.31 -t /var/tmp/top100_artifacts --
 [71/100] slab 0.4.10 started
-[72/100] ahash 0.8.12 started
 [71/100] slab 0.4.10 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n slab -v 0.4.10 -t /var/tmp/top100_artifacts --
+[72/100] ahash 0.8.12 started
 [72/100] ahash 0.8.12 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n ahash -v 0.8.12 -t /var/tmp/top100_artifacts --
 [70/100] futures-core 0.3.31 pass
 [70/100] futures-core 0.3.31 finished
-[69/100] windows_x86_64_msvc 0.53.0 pass
-[69/100] windows_x86_64_msvc 0.53.0 finished
 [71/100] slab 0.4.10 pass
 [71/100] slab 0.4.10 finished
+[69/100] toml 0.8.23 pass
+[69/100] toml 0.8.23 finished
 [72/100] ahash 0.8.12 pass
 [72/100] ahash 0.8.12 finished
 [73/100] futures-util 0.3.31 started
@@ -314,10 +314,10 @@ ID VERSION RESULT
 [80/100] futures-sink 0.3.31 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n futures-sink -v 0.3.31 -t /var/tmp/top100_artifacts --
 [80/100] futures-sink 0.3.31 pass
 [80/100] futures-sink 0.3.31 finished
-[78/100] windows_x86_64_gnu 0.53.0 pass
-[78/100] windows_x86_64_gnu 0.53.0 finished
 [79/100] fnv 1.0.7 pass
 [79/100] fnv 1.0.7 finished
+[78/100] windows_x86_64_gnu 0.53.0 pass
+[78/100] windows_x86_64_gnu 0.53.0 finished
 [77/100] rustls 0.23.28 fail
 [77/100] rustls 0.23.28 finished
 [81/100] typenum 1.18.0 started
