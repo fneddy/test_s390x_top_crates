@@ -6,31 +6,32 @@
      Removed 0 files
 + cargo +stable test ''
     Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
    Compiling proc-macro2 v1.0.95
    Compiling unicode-ident v1.0.18
    Compiling libc v0.2.172
    Compiling autocfg v1.4.0
-   Compiling futures-core v0.3.31
    Compiling pin-project-lite v0.2.16
+   Compiling futures-core v0.3.31
    Compiling cfg-if v1.0.0
    Compiling parking_lot_core v0.9.10
    Compiling futures-sink v0.3.31
    Compiling lock_api v0.4.12
    Compiling slab v0.4.9
-   Compiling scopeguard v1.2.0
    Compiling smallvec v1.15.0
    Compiling quote v1.0.40
+   Compiling scopeguard v1.2.0
    Compiling syn v2.0.100
    Compiling futures-channel v0.3.31
    Compiling signal-hook-registry v1.4.5
-   Compiling socket2 v0.5.9
-   Compiling parking_lot v0.12.3
    Compiling mio v1.0.3
-   Compiling futures-task v0.3.31
+   Compiling parking_lot v0.12.3
+   Compiling socket2 v0.5.9
    Compiling pin-utils v0.1.0
-   Compiling memchr v2.7.4
-   Compiling bytes v1.10.1
    Compiling futures-io v0.3.31
+   Compiling bytes v1.10.1
+   Compiling futures-task v0.3.31
+   Compiling memchr v2.7.4
    Compiling getrandom v0.3.2
    Compiling rustix v1.0.5
    Compiling errno v0.3.11
@@ -41,8 +42,8 @@
    Compiling futures-macro v0.3.31
    Compiling tokio-macros v2.5.0
    Compiling async-stream-impl v0.3.6
-   Compiling tokio v1.44.2
    Compiling pin-project-internal v1.1.10
+   Compiling tokio v1.44.2
    Compiling futures-util v0.3.31
    Compiling async-stream v0.3.6
    Compiling tempfile v3.19.1
@@ -53,30 +54,10 @@
    Compiling tokio-stream v0.1.17
    Compiling tokio-util v0.7.15 (/var/tmp/top100_artifacts/tokio-util-0.7.15)
    Compiling tokio-test v0.4.4
-error[E0433]: failed to resolve: could not find `io` in `tokio_util`
-  --> tests/io_reader_stream.rs:40:34
-   |
-40 |     let mut stream = tokio_util::io::ReaderStream::new(reader);
-   |                                  ^^ could not find `io` in `tokio_util`
-   |
-note: found an item that was configured out
-  --> /var/tmp/top100_artifacts/tokio-util-0.7.15/src/lib.rs:45:13
-   |
-45 |     pub mod io;
-   |             ^^
-note: the item is gated behind the `io` feature
-  --> /var/tmp/top100_artifacts/tokio-util-0.7.15/src/lib.rs:44:1
-   |
-44 | / cfg_io! {
-45 | |     pub mod io;
-46 | | }
-   | |_^
-   = note: this error originates in the macro `cfg_io` (in Nightly builds, run with -Z macro-backtrace for more info)
-
 error[E0432]: unresolved import `tokio_util::codec`
-  --> tests/framed_read.rs:6:17
+  --> tests/framed.rs:5:17
    |
-6  | use tokio_util::codec::{Decoder, FramedRead};
+5  | use tokio_util::codec::{Decoder, Encoder, Framed, FramedParts};
    |                 ^^^^^ could not find `codec` in `tokio_util`
    |
 note: found an item that was configured out
@@ -95,11 +76,30 @@ note: the item is gated behind the `codec` feature
    | |_^
    = note: this error originates in the macro `cfg_codec` (in Nightly builds, run with -Z macro-backtrace for more info)
 
+error[E0432]: unresolved import `tokio_util::io`
+  --> tests/io_inspect.rs:8:17
+   |
+8  | use tokio_util::io::{InspectReader, InspectWriter};
+   |                 ^^ could not find `io` in `tokio_util`
+   |
+note: found an item that was configured out
+  --> /var/tmp/top100_artifacts/tokio-util-0.7.15/src/lib.rs:45:13
+   |
+45 |     pub mod io;
+   |             ^^
+note: the item is gated behind the `io` feature
+  --> /var/tmp/top100_artifacts/tokio-util-0.7.15/src/lib.rs:44:1
+   |
+44 | / cfg_io! {
+45 | |     pub mod io;
+46 | | }
+   | |_^
+   = note: this error originates in the macro `cfg_io` (in Nightly builds, run with -Z macro-backtrace for more info)
+
 For more information about this error, try `rustc --explain E0432`.
-error: could not compile `tokio-util` (test "framed_read") due to 1 previous error
+error: could not compile `tokio-util` (test "framed") due to 1 previous error
 warning: build failed, waiting for other jobs to finish...
-For more information about this error, try `rustc --explain E0433`.
-error: could not compile `tokio-util` (test "io_reader_stream") due to 1 previous error
+error: could not compile `tokio-util` (test "io_inspect") due to 1 previous error
 + RESULT=101
 + cd /var/tmp/top100_artifacts
 + rm -rf /var/tmp/top100_artifacts/tokio-util-0.7.15
