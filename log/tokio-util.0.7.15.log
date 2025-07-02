@@ -9,31 +9,31 @@
     Blocking waiting for file lock on package cache
    Compiling proc-macro2 v1.0.95
    Compiling unicode-ident v1.0.18
-   Compiling libc v0.2.172
    Compiling autocfg v1.4.0
+   Compiling libc v0.2.172
    Compiling pin-project-lite v0.2.16
    Compiling futures-core v0.3.31
    Compiling cfg-if v1.0.0
    Compiling parking_lot_core v0.9.10
-   Compiling futures-sink v0.3.31
    Compiling lock_api v0.4.12
    Compiling slab v0.4.9
-   Compiling smallvec v1.15.0
    Compiling quote v1.0.40
+   Compiling futures-sink v0.3.31
    Compiling scopeguard v1.2.0
+   Compiling smallvec v1.15.0
    Compiling syn v2.0.100
-   Compiling futures-channel v0.3.31
    Compiling signal-hook-registry v1.4.5
-   Compiling mio v1.0.3
-   Compiling parking_lot v0.12.3
    Compiling socket2 v0.5.9
+   Compiling parking_lot v0.12.3
+   Compiling mio v1.0.3
+   Compiling futures-channel v0.3.31
    Compiling pin-utils v0.1.0
-   Compiling futures-io v0.3.31
-   Compiling bytes v1.10.1
    Compiling futures-task v0.3.31
+   Compiling futures-io v0.3.31
    Compiling memchr v2.7.4
-   Compiling getrandom v0.3.2
+   Compiling bytes v1.10.1
    Compiling rustix v1.0.5
+   Compiling getrandom v0.3.2
    Compiling errno v0.3.11
    Compiling linux-raw-sys v0.9.4
    Compiling bitflags v2.9.0
@@ -49,33 +49,11 @@
    Compiling tempfile v3.19.1
    Compiling pin-project v1.1.10
    Compiling futures-executor v0.3.31
-   Compiling futures v0.3.31
    Compiling futures-test v0.3.31
+   Compiling futures v0.3.31
    Compiling tokio-stream v0.1.17
    Compiling tokio-util v0.7.15 (/var/tmp/top100_artifacts/tokio-util-0.7.15)
    Compiling tokio-test v0.4.4
-error[E0432]: unresolved import `tokio_util::codec`
-  --> tests/framed.rs:5:17
-   |
-5  | use tokio_util::codec::{Decoder, Encoder, Framed, FramedParts};
-   |                 ^^^^^ could not find `codec` in `tokio_util`
-   |
-note: found an item that was configured out
-  --> /var/tmp/top100_artifacts/tokio-util-0.7.15/src/lib.rs:31:13
-   |
-31 |     pub mod codec;
-   |             ^^^^^
-note: the item is gated behind the `codec` feature
-  --> /var/tmp/top100_artifacts/tokio-util-0.7.15/src/lib.rs:27:1
-   |
-27 | / cfg_codec! {
-28 | |     #[macro_use]
-29 | |     mod tracing;
-...  |
-32 | | }
-   | |_^
-   = note: this error originates in the macro `cfg_codec` (in Nightly builds, run with -Z macro-backtrace for more info)
-
 error[E0432]: unresolved import `tokio_util::io`
   --> tests/io_inspect.rs:8:17
    |
@@ -96,10 +74,53 @@ note: the item is gated behind the `io` feature
    | |_^
    = note: this error originates in the macro `cfg_io` (in Nightly builds, run with -Z macro-backtrace for more info)
 
-For more information about this error, try `rustc --explain E0432`.
-error: could not compile `tokio-util` (test "framed") due to 1 previous error
+error: run tokio-util tests with `--features full`
+ --> tests/_require_full.rs:2:1
+  |
+2 | compile_error!("run tokio-util tests with `--features full`");
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: could not compile `tokio-util` (test "_require_full") due to 1 previous error
 warning: build failed, waiting for other jobs to finish...
+error[E0432]: unresolved import `tokio_util::task`
+  --> tests/spawn_pinned.rs:7:5
+   |
+7  | use tokio_util::task;
+   |     ^^^^^^^^^^^^^^^^ no `task` in the root
+   |
+note: found an item that was configured out
+  --> /var/tmp/top100_artifacts/tokio-util-0.7.15/src/lib.rs:50:13
+   |
+50 |     pub mod task;
+   |             ^^^^
+note: the item is gated behind the `rt` feature
+  --> /var/tmp/top100_artifacts/tokio-util-0.7.15/src/lib.rs:48:1
+   |
+48 | / cfg_rt! {
+49 | |     pub mod context;
+50 | |     pub mod task;
+51 | | }
+   | |_^
+   = note: this error originates in the macro `cfg_rt` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider importing one of these modules instead
+   |
+7  - use tokio_util::task;
+7  + use std::task;
+   |
+7  - use tokio_util::task;
+7  + use futures::task;
+   |
+7  - use tokio_util::task;
+7  + use futures_core::task;
+   |
+7  - use tokio_util::task;
+7  + use futures_test::task;
+   |
+     and 2 other candidates
+
+For more information about this error, try `rustc --explain E0432`.
 error: could not compile `tokio-util` (test "io_inspect") due to 1 previous error
+error: could not compile `tokio-util` (test "spawn_pinned") due to 1 previous error
 + RESULT=101
 + cd /var/tmp/top100_artifacts
 + rm -rf /var/tmp/top100_artifacts/tokio-util-0.7.15
