@@ -1,4 +1,4 @@
-Testresults as of Wed Jul  2 02:53:00 PM CEST 2025
+Testresults as of Thu Jul  3 02:53:00 PM CEST 2025
 PASS: 88
 FAIL: 11
 SKIPPED: 2
@@ -14,4 +14,4 @@ FAILED_CRATES:
 [91/100] futures 0.3.31 fail
 [94/100] tokio-util 0.7.15 fail
 [93/100] h2 0.4.11 fail
-[98/100] num-integer 0.1.46 fail
+[99/100] num-integer 0.1.46 fail
