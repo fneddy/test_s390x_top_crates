@@ -6,48 +6,46 @@
      Removed 0 files
 + cargo +stable test ''
     Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
    Compiling proc-macro2 v1.0.95
    Compiling unicode-ident v1.0.18
    Compiling libc v0.2.172
    Compiling autocfg v1.4.0
-   Compiling futures-core v0.3.31
    Compiling pin-project-lite v0.2.16
+   Compiling futures-core v0.3.31
    Compiling cfg-if v1.0.0
    Compiling parking_lot_core v0.9.10
-   Compiling smallvec v1.15.0
    Compiling lock_api v0.4.12
    Compiling slab v0.4.9
    Compiling quote v1.0.40
-   Compiling futures-sink v0.3.31
+   Compiling smallvec v1.15.0
    Compiling syn v2.0.100
    Compiling scopeguard v1.2.0
-   Compiling mio v1.0.3
-   Compiling parking_lot v0.12.3
-   Compiling socket2 v0.5.9
+   Compiling futures-sink v0.3.31
    Compiling signal-hook-registry v1.4.5
+   Compiling parking_lot v0.12.3
+   Compiling mio v1.0.3
+   Compiling socket2 v0.5.9
    Compiling futures-channel v0.3.31
-   Compiling bytes v1.10.1
    Compiling futures-task v0.3.31
    Compiling futures-io v0.3.31
-   Compiling pin-utils v0.1.0
    Compiling memchr v2.7.4
+   Compiling bytes v1.10.1
+   Compiling pin-utils v0.1.0
    Compiling rustix v1.0.5
    Compiling getrandom v0.3.2
    Compiling errno v0.3.11
    Compiling linux-raw-sys v0.9.4
    Compiling bitflags v2.9.0
-   Compiling once_cell v1.21.3
    Compiling fastrand v2.3.0
-   Compiling futures-macro v0.3.31
+   Compiling once_cell v1.21.3
+   Compiling tempfile v3.19.1
    Compiling tokio-macros v2.5.0
+   Compiling futures-macro v0.3.31
    Compiling async-stream-impl v0.3.6
    Compiling pin-project-internal v1.1.10
    Compiling tokio v1.44.2
-   Compiling futures-util v0.3.31
    Compiling async-stream v0.3.6
-   Compiling tempfile v3.19.1
+   Compiling futures-util v0.3.31
    Compiling pin-project v1.1.10
    Compiling futures-executor v0.3.31
    Compiling futures v0.3.31
@@ -77,11 +75,14 @@ note: the item is gated behind the `codec` feature
    | |_^
    = note: this error originates in the macro `cfg_codec` (in Nightly builds, run with -Z macro-backtrace for more info)
 
+For more information about this error, try `rustc --explain E0432`.
+error: could not compile `tokio-util` (test "framed_write") due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
 error[E0432]: unresolved import `tokio_util::task`
-  --> tests/task_tracker.rs:4:17
+  --> tests/spawn_pinned.rs:7:5
    |
-4  | use tokio_util::task::TaskTracker;
-   |                 ^^^^ could not find `task` in `tokio_util`
+7  | use tokio_util::task;
+   |     ^^^^^^^^^^^^^^^^ no `task` in the root
    |
 note: found an item that was configured out
   --> /var/tmp/top100_artifacts/tokio-util-0.7.15/src/lib.rs:50:13
@@ -97,11 +98,23 @@ note: the item is gated behind the `rt` feature
 51 | | }
    | |_^
    = note: this error originates in the macro `cfg_rt` (in Nightly builds, run with -Z macro-backtrace for more info)
+help: consider importing one of these modules instead
+   |
+7  - use tokio_util::task;
+7  + use std::task;
+   |
+7  - use tokio_util::task;
+7  + use futures::task;
+   |
+7  - use tokio_util::task;
+7  + use futures_core::task;
+   |
+7  - use tokio_util::task;
+7  + use futures_test::task;
+   |
+     and 2 other candidates
 
-For more information about this error, try `rustc --explain E0432`.
-error: could not compile `tokio-util` (test "framed_write") due to 1 previous error
-warning: build failed, waiting for other jobs to finish...
-error: could not compile `tokio-util` (test "task_tracker") due to 1 previous error
+error: could not compile `tokio-util` (test "spawn_pinned") due to 1 previous error
 + RESULT=101
 + cd /var/tmp/top100_artifacts
 + rm -rf /var/tmp/top100_artifacts/tokio-util-0.7.15
