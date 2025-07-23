@@ -37,26 +37,26 @@ ID VERSION RESULT
 [10/100] rand 0.9.2 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n rand -v 0.9.2 -t /var/tmp/top100_artifacts --
 [11/100] serde 1.0.219 started
 [11/100] serde 1.0.219 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n serde -v 1.0.219 -t /var/tmp/top100_artifacts --
-[12/100] cfg-if 1.0.1 started
-[12/100] cfg-if 1.0.1 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n cfg-if -v 1.0.1 -t /var/tmp/top100_artifacts --
-[12/100] cfg-if 1.0.1 pass
-[12/100] cfg-if 1.0.1 finished
+[12/100] getrandom 0.3.3 started
+[12/100] getrandom 0.3.3 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n getrandom -v 0.3.3 -t /var/tmp/top100_artifacts --
 [9/100] rand_core 0.9.3 pass
 [9/100] rand_core 0.9.3 finished
+[12/100] getrandom 0.3.3 pass
+[12/100] getrandom 0.3.3 finished
 [10/100] rand 0.9.2 pass
 [10/100] rand 0.9.2 finished
 [11/100] serde 1.0.219 pass
 [11/100] serde 1.0.219 finished
-[13/100] getrandom 0.3.3 started
-[13/100] getrandom 0.3.3 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n getrandom -v 0.3.3 -t /var/tmp/top100_artifacts --
+[13/100] cfg-if 1.0.1 started
+[13/100] cfg-if 1.0.1 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n cfg-if -v 1.0.1 -t /var/tmp/top100_artifacts --
 [14/100] indexmap 2.10.0 started
 [14/100] indexmap 2.10.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n indexmap -v 2.10.0 -t /var/tmp/top100_artifacts --
 [15/100] itertools 0.14.0 started
 [15/100] itertools 0.14.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n itertools -v 0.14.0 -t /var/tmp/top100_artifacts --
 [16/100] autocfg 1.5.0 started
 [16/100] autocfg 1.5.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n autocfg -v 1.5.0 -t /var/tmp/top100_artifacts --
-[13/100] getrandom 0.3.3 pass
-[13/100] getrandom 0.3.3 finished
+[13/100] cfg-if 1.0.1 pass
+[13/100] cfg-if 1.0.1 finished
 [16/100] autocfg 1.5.0 pass
 [16/100] autocfg 1.5.0 finished
 [14/100] indexmap 2.10.0 pass
@@ -74,10 +74,10 @@ ID VERSION RESULT
 [20/100] rand_chacha 0.9.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n rand_chacha -v 0.9.0 -t /var/tmp/top100_artifacts --
 [18/100] itoa 1.0.15 pass
 [18/100] itoa 1.0.15 finished
-[17/100] serde_derive 1.0.219 pass
-[17/100] serde_derive 1.0.219 finished
 [20/100] rand_chacha 0.9.0 pass
 [20/100] rand_chacha 0.9.0 finished
+[17/100] serde_derive 1.0.219 pass
+[17/100] serde_derive 1.0.219 finished
 [19/100] serde_json 1.0.141 pass
 [19/100] serde_json 1.0.141 finished
 [21/100] once_cell 1.21.3 started
@@ -85,8 +85,8 @@ ID VERSION RESULT
 [22/100] log 0.4.27 started
 [22/100] log 0.4.27 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n log -v 0.4.27 -t /var/tmp/top100_artifacts --
 [23/100] heck 0.5.0 started
-[24/100] regex-automata regex-automata-0.4.9 started
 [23/100] heck 0.5.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n heck -v 0.5.0 -t /var/tmp/top100_artifacts --
+[24/100] regex-automata regex-automata-0.4.9 started
 [24/100] regex-automata regex-automata-0.4.9 /home/eddy/src/test_s390x_top_crates/scripts/test_git.sh -n regex-automata -g https://github.com/rust-lang/regex.git -b regex-automata-0.4.9 -t /var/tmp/top100_artifacts -- --manifest-path regex-automata/Cargo.toml --test integration
 [23/100] heck 0.5.0 pass
 [23/100] heck 0.5.0 finished
@@ -310,18 +310,18 @@ ID VERSION RESULT
 [78/100] windows_i686_msvc 0.53.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n windows_i686_msvc -v 0.53.0 -t /var/tmp/top100_artifacts --
 [79/100] windows_aarch64_msvc 0.53.0 started
 [79/100] windows_aarch64_msvc 0.53.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n windows_aarch64_msvc -v 0.53.0 -t /var/tmp/top100_artifacts --
-[80/100] chrono 0.4.41 started
-[80/100] chrono 0.4.41 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n chrono -v 0.4.41 -t /var/tmp/top100_artifacts --
+[80/100] windows_i686_gnu 0.53.0 started
+[80/100] windows_i686_gnu 0.53.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n windows_i686_gnu -v 0.53.0 -t /var/tmp/top100_artifacts --
 [79/100] windows_aarch64_msvc 0.53.0 pass
 [79/100] windows_aarch64_msvc 0.53.0 finished
 [78/100] windows_i686_msvc 0.53.0 pass
+[80/100] windows_i686_gnu 0.53.0 pass
 [78/100] windows_i686_msvc 0.53.0 finished
+[80/100] windows_i686_gnu 0.53.0 finished
 [77/100] sha2 0.11.0-rc.0 pass
 [77/100] sha2 0.11.0-rc.0 finished
-[80/100] chrono 0.4.41 pass
-[80/100] chrono 0.4.41 finished
-[81/100] windows_i686_gnu 0.53.0 started
-[81/100] windows_i686_gnu 0.53.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n windows_i686_gnu -v 0.53.0 -t /var/tmp/top100_artifacts --
+[81/100] chrono 0.4.41 started
+[81/100] chrono 0.4.41 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n chrono -v 0.4.41 -t /var/tmp/top100_artifacts --
 [82/100] fnv 1.0.7 started
 [82/100] fnv 1.0.7 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n fnv -v 1.0.7 -t /var/tmp/top100_artifacts --
 [83/100] futures-sink 0.3.31 started
@@ -330,12 +330,12 @@ ID VERSION RESULT
 [84/100] typenum 1.18.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n typenum -v 1.18.0 -t /var/tmp/top100_artifacts --
 [83/100] futures-sink 0.3.31 pass
 [83/100] futures-sink 0.3.31 finished
-[81/100] windows_i686_gnu 0.53.0 pass
-[81/100] windows_i686_gnu 0.53.0 finished
 [82/100] fnv 1.0.7 pass
 [82/100] fnv 1.0.7 finished
 [84/100] typenum 1.18.0 pass
 [84/100] typenum 1.18.0 finished
+[81/100] chrono 0.4.41 pass
+[81/100] chrono 0.4.41 finished
 [85/100] futures-channel 0.3.31 started
 [85/100] futures-channel 0.3.31 /home/eddy/src/test_s390x_top_crates/scripts/test_git.sh -n futures-channel -g https://github.com/rust-lang/futures-rs.git -b 0.3.31 -t /var/tmp/top100_artifacts -- --manifest-path futures-channel/Cargo.toml
 [86/100] tracing-core 0.1.34 started
@@ -352,20 +352,20 @@ ID VERSION RESULT
 [87/100] tracing 0.1.41 finished
 [85/100] futures-channel 0.3.31 pass
 [85/100] futures-channel 0.3.31 finished
-[89/100] num_cpus 1.17.0 started
-[89/100] num_cpus 1.17.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n num_cpus -v 1.17.0 -t /var/tmp/top100_artifacts --
-[90/100] unicode-width 0.2.1 started
-[90/100] unicode-width 0.2.1 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n unicode-width -v 0.2.1 -t /var/tmp/top100_artifacts --
+[89/100] unicode-width 0.2.1 started
+[89/100] unicode-width 0.2.1 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n unicode-width -v 0.2.1 -t /var/tmp/top100_artifacts --
+[90/100] num_cpus 1.17.0 started
+[90/100] num_cpus 1.17.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n num_cpus -v 1.17.0 -t /var/tmp/top100_artifacts --
 [91/100] tempfile 3.20.0 started
 [91/100] tempfile 3.20.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n tempfile -v 3.20.0 -t /var/tmp/top100_artifacts --
 [92/100] h2 0.3.27 started
 [92/100] h2 0.3.27 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n h2 -v 0.3.27 -t /var/tmp/top100_artifacts --
-[89/100] num_cpus 1.17.0 pass
-[89/100] num_cpus 1.17.0 finished
+[90/100] num_cpus 1.17.0 pass
+[90/100] num_cpus 1.17.0 finished
 [91/100] tempfile 3.20.0 pass
 [91/100] tempfile 3.20.0 finished
-[90/100] unicode-width 0.2.1 pass
-[90/100] unicode-width 0.2.1 finished
+[89/100] unicode-width 0.2.1 pass
+[89/100] unicode-width 0.2.1 finished
 [92/100] h2 0.3.27 fail
 [92/100] h2 0.3.27 finished
 [93/100] futures 0.3.31 started
@@ -390,9 +390,9 @@ ID VERSION RESULT
 [98/100] pkg-config 0.3.32 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n pkg-config -v 0.3.32 -t /var/tmp/top100_artifacts --
 [99/100] windows-targets 0.53.2 started
 [99/100] windows-targets 0.53.2 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n windows-targets -v 0.53.2 -t /var/tmp/top100_artifacts --
-[97/100] futures-io 0.3.31 pass
 [99/100] windows-targets 0.53.2 pass
-[97/100] futures-io 0.3.31 finished
 [99/100] windows-targets 0.53.2 finished
+[97/100] futures-io 0.3.31 pass
+[97/100] futures-io 0.3.31 finished
 [98/100] pkg-config 0.3.32 pass
 [98/100] pkg-config 0.3.32 finished
