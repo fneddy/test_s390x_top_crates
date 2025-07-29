@@ -1,4 +1,4 @@
-Testresults as of Mon Jul 28 02:53:00 PM CEST 2025
+Testresults as of Tue Jul 29 02:53:01 PM CEST 2025
 PASS: 89
 FAIL: 10
 SKIPPED: 2
@@ -9,7 +9,7 @@ FAILED_CRATES:
 [42/100] idna 1.0.3 fail
 [51/100] pin-project-lite 0.2.16 fail
 [67/100] hyper 1.6.0 fail
-[74/100] rustls 0.23.30 fail
+[74/100] rustls 0.23.29 fail
 [88/100] tracing 0.1.41 fail
 [90/100] h2 0.3.27 fail
 [93/100] futures 0.3.31 fail
