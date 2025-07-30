@@ -1,0 +1,109 @@
+[rustls] download directory: /var/tmp/top100_artifacts/rustls-0.23.31
++ curl -sL https://crates.io/api/v1/crates/rustls/0.23.31/download
++ tar xzf -
++ cd /var/tmp/top100_artifacts/rustls-0.23.31
++ cargo clean
+     Removed 0 files
++ cargo +stable test ''
+   Compiling proc-macro2 v1.0.95
+   Compiling unicode-ident v1.0.18
+   Compiling memchr v2.7.4
+   Compiling libc v0.2.172
+   Compiling minimal-lexical v0.2.1
+   Compiling glob v0.3.2
+   Compiling prettyplease v0.2.33
+   Compiling rustix v0.38.44
+   Compiling quote v1.0.40
+   Compiling clang-sys v1.8.1
+   Compiling syn v2.0.101
+   Compiling linux-raw-sys v0.4.15
+   Compiling bitflags v2.9.1
+   Compiling cfg-if v1.0.0
+   Compiling regex-syntax v0.8.5
+   Compiling shlex v1.3.0
+   Compiling either v1.15.0
+   Compiling errno v0.3.12
+   Compiling jobserver v0.1.33
+   Compiling libloading v0.8.8
+   Compiling nom v7.1.3
+   Compiling regex-automata v0.4.9
+   Compiling bindgen v0.69.5
+   Compiling home v0.5.11
+   Compiling lazy_static v1.5.0
+   Compiling cexpr v0.6.0
+   Compiling which v4.4.2
+   Compiling regex v1.11.1
+   Compiling cc v1.2.26
+   Compiling itertools v0.10.5
+   Compiling lazycell v1.3.0
+   Compiling log v0.4.27
+   Compiling rustc-hash v1.1.0
+   Compiling autocfg v1.4.0
+   Compiling cmake v0.1.54
+   Compiling num-traits v0.2.19
+   Compiling num-conv v0.1.0
+   Compiling powerfmt v0.2.0
+   Compiling fs_extra v1.3.0
+   Compiling time-core v0.1.4
+   Compiling dunce v1.0.5
+   Compiling itoa v1.0.15
+   Compiling time-macros v0.2.22
+   Compiling deranged v0.4.0
+   Compiling thiserror v2.0.12
+   Compiling time v0.3.41
+   Compiling thiserror-impl v2.0.12
+   Compiling synstructure v0.13.2
+   Compiling zeroize v1.8.1
+   Compiling aws-lc-rs v1.13.1
+   Compiling asn1-rs-derive v0.6.0
+   Compiling rusticata-macros v4.1.0
+   Compiling asn1-rs-impl v0.2.0
+   Compiling displaydoc v0.2.5
+   Compiling aho-corasick v1.1.3
+   Compiling asn1-rs v0.7.1
+   Compiling aws-lc-sys v0.29.0
+error: failed to run custom build command for `aws-lc-sys v0.29.0`
+
+Caused by:
+  process didn't exit successfully: `/var/tmp/top100_artifacts/rustls-0.23.31/target/debug/build/aws-lc-sys-e6ad58999dfd903e/build-script-main` (exit status: 101)
+  --- stdout
+  cargo:rerun-if-env-changed=AWS_LC_SYS_NO_PREFIX_s390x_unknown_linux_gnu
+  cargo:rerun-if-env-changed=AWS_LC_SYS_NO_PREFIX
+  cargo:rerun-if-env-changed=AWS_LC_SYS_PREGENERATING_BINDINGS_s390x_unknown_linux_gnu
+  cargo:rerun-if-env-changed=AWS_LC_SYS_PREGENERATING_BINDINGS
+  cargo:rerun-if-env-changed=AWS_LC_SYS_EXTERNAL_BINDGEN_s390x_unknown_linux_gnu
+  cargo:rerun-if-env-changed=AWS_LC_SYS_EXTERNAL_BINDGEN
+  cargo:rerun-if-env-changed=AWS_LC_SYS_NO_ASM_s390x_unknown_linux_gnu
+  cargo:rerun-if-env-changed=AWS_LC_SYS_NO_ASM
+  cargo:rerun-if-env-changed=AWS_LC_SYS_CFLAGS_s390x_unknown_linux_gnu
+  cargo:rerun-if-env-changed=AWS_LC_SYS_CFLAGS
+  cargo:rerun-if-env-changed=CFLAGS_s390x-unknown-linux-gnu
+  cargo:rerun-if-env-changed=CFLAGS
+  cargo:rerun-if-env-changed=AWS_LC_SYS_PREBUILT_NASM_s390x_unknown_linux_gnu
+  cargo:rerun-if-env-changed=AWS_LC_SYS_PREBUILT_NASM
+  cargo:rerun-if-env-changed=AWS_LC_SYS_C_STD_s390x_unknown_linux_gnu
+  cargo:rerun-if-env-changed=AWS_LC_SYS_C_STD
+  cargo:rerun-if-env-changed=AWS_LC_SYS_CMAKE_BUILDER_s390x_unknown_linux_gnu
+  cargo:rerun-if-env-changed=AWS_LC_SYS_CMAKE_BUILDER
+  cargo:rerun-if-env-changed=AWS_LC_SYS_NO_PREGENERATED_SRC_s390x_unknown_linux_gnu
+  cargo:rerun-if-env-changed=AWS_LC_SYS_NO_PREGENERATED_SRC
+  cargo:rerun-if-env-changed=AWS_LC_SYS_EFFECTIVE_TARGET_s390x_unknown_linux_gnu
+  cargo:rerun-if-env-changed=AWS_LC_SYS_EFFECTIVE_TARGET
+  cargo:rerun-if-env-changed=AWS_LC_SYS_STATIC_s390x_unknown_linux_gnu
+  cargo:rerun-if-env-changed=AWS_LC_SYS_STATIC
+  cargo:rerun-if-env-changed=AWS_LC_SYS_CMAKE_s390x_unknown_linux_gnu
+  cargo:rerun-if-env-changed=AWS_LC_SYS_CMAKE
+  cargo:rerun-if-env-changed=CMAKE_s390x-unknown-linux-gnu
+  cargo:rerun-if-env-changed=CMAKE
+
+  --- stderr
+  Missing dependency: cmake
+
+  thread 'main' panicked at /home/eddy/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aws-lc-sys-0.29.0/builder/main.rs:462:40:
+  called `Result::unwrap()` on an `Err` value: "Required build dependency is missing. Halting build."
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+warning: build failed, waiting for other jobs to finish...
++ RESULT=101
++ cd /var/tmp/top100_artifacts
++ rm -rf /var/tmp/top100_artifacts/rustls-0.23.31
++ exit 101
