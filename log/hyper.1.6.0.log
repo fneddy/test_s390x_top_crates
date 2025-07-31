@@ -16,36 +16,36 @@
    Compiling pin-project-lite v0.2.15
    Compiling futures-core v0.3.31
    Compiling memchr v2.7.4
+   Compiling futures-sink v0.3.31
+   Compiling itoa v1.0.11
    Compiling quote v1.0.37
    Compiling aho-corasick v1.1.3
    Compiling syn v2.0.87
    Compiling socket2 v0.5.7
    Compiling mio v1.0.2
-   Compiling itoa v1.0.11
    Compiling regex-syntax v0.8.5
-   Compiling futures-sink v0.3.31
-   Compiling fnv v1.0.7
    Compiling serde v1.0.215
+   Compiling fnv v1.0.7
    Compiling http v1.2.0
-   Compiling is-terminal v0.4.13
-   Compiling log v0.4.22
-   Compiling humantime v2.1.0
-   Compiling termcolor v1.4.1
    Compiling regex-automata v0.4.9
+   Compiling is-terminal v0.4.13
+   Compiling termcolor v1.4.1
+   Compiling log v0.4.22
    Compiling pin-utils v0.1.0
    Compiling futures-task v0.3.31
    Compiling serde_json v1.0.133
-   Compiling futures-util v0.3.31
+   Compiling humantime v2.1.0
    Compiling regex v1.11.1
+   Compiling futures-util v0.3.31
    Compiling env_logger v0.10.2
-   Compiling http-body v1.0.1
-   Compiling percent-encoding v2.3.1
    Compiling tokio-macros v2.4.0
    Compiling serde_derive v1.0.215
-   Compiling async-stream-impl v0.3.6
    Compiling tokio v1.41.1
+   Compiling async-stream-impl v0.3.6
    Compiling async-stream v0.3.6
+   Compiling http-body v1.0.1
    Compiling ryu v1.0.18
+   Compiling percent-encoding v2.3.1
    Compiling form_urlencoded v1.2.1
    Compiling http-body-util v0.1.2
    Compiling pretty_env_logger v0.5.0
