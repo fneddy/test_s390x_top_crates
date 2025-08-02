@@ -204,10 +204,10 @@ ID VERSION RESULT
 [51/100] pin-project-lite 0.2.16 finished
 [50/100] block-buffer 0.11.0-rc.4 pass
 [50/100] block-buffer 0.11.0-rc.4 finished
-[49/100] rustix 1.0.8 pass
-[49/100] rustix 1.0.8 finished
 [52/100] crossbeam-utils 0.8.21 pass
 [52/100] crossbeam-utils 0.8.21 finished
+[49/100] rustix 1.0.8 pass
+[49/100] rustix 1.0.8 finished
 [53/100] windows-sys 0.60.2 started
 [53/100] windows-sys 0.60.2 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n windows-sys -v 0.60.2 -t /var/tmp/top100_artifacts --
 [54/100] miniz_oxide 0.8.9 started
@@ -296,11 +296,11 @@ ID VERSION RESULT
 [75/100] windows_i686_msvc 0.53.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n windows_i686_msvc -v 0.53.0 -t /var/tmp/top100_artifacts --
 [76/100] windows_aarch64_msvc 0.53.0 started
 [76/100] windows_aarch64_msvc 0.53.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n windows_aarch64_msvc -v 0.53.0 -t /var/tmp/top100_artifacts --
+[73/100] windows_x86_64_gnu 0.53.0 pass
 [76/100] windows_aarch64_msvc 0.53.0 pass
-[76/100] windows_aarch64_msvc 0.53.0 finished
 [75/100] windows_i686_msvc 0.53.0 pass
 [75/100] windows_i686_msvc 0.53.0 finished
-[73/100] windows_x86_64_gnu 0.53.0 pass
+[76/100] windows_aarch64_msvc 0.53.0 finished
 [73/100] windows_x86_64_gnu 0.53.0 finished
 [74/100] rustls 0.23.31 fail
 [74/100] rustls 0.23.31 finished
