@@ -4,131 +4,134 @@ warning: refs/tags/2.0.0 31ebf3d6058d97741e99d6d358ded5eada35de78 is not a commi
 + cargo clean
      Removed 0 files
 + cargo +stable test --release --features test
+    Blocking waiting for file lock on package cache
     Updating crates.io index
      Locking 197 packages to latest compatible versions
       Adding colored v2.2.0 (available: v3.0.0)
       Adding indexmap v1.9.3 (available: v2.10.0)
       Adding reqwest v0.11.27 (available: v0.12.22)
+ Downloading crates ...
+  Downloaded tokio-util v0.7.16
    Compiling proc-macro2 v1.0.95
    Compiling unicode-ident v1.0.18
    Compiling libc v0.2.174
    Compiling stable_deref_trait v1.2.0
-   Compiling shlex v1.3.0
    Compiling once_cell v1.21.3
+   Compiling shlex v1.3.0
    Compiling cc v1.2.31
-   Compiling cfg-if v1.0.1
-   Compiling pin-project-lite v0.2.16
-   Compiling vcpkg v0.2.15
-   Compiling quote v1.0.40
    Compiling pkg-config v0.3.32
+   Compiling quote v1.0.40
+   Compiling pin-project-lite v0.2.16
+   Compiling cfg-if v1.0.1
+   Compiling vcpkg v0.2.15
    Compiling bytes v1.10.1
    Compiling syn v2.0.104
-   Compiling litemap v0.8.0
+   Compiling bitflags v2.9.1
    Compiling openssl-sys v0.9.109
    Compiling memchr v2.7.5
+   Compiling litemap v0.8.0
    Compiling writeable v0.6.1
-   Compiling bitflags v2.9.1
    Compiling mio v1.0.4
    Compiling socket2 v0.6.0
-   Compiling itoa v1.0.15
    Compiling futures-core v0.3.31
-   Compiling icu_normalizer_data v2.0.0
+   Compiling itoa v1.0.15
    Compiling icu_properties_data v2.0.1
+   Compiling icu_normalizer_data v2.0.0
    Compiling tokio v1.47.1
+   Compiling openssl v0.10.73
    Compiling fnv v1.0.7
    Compiling foreign-types-shared v0.1.1
-   Compiling openssl v0.10.73
    Compiling crossbeam-utils v0.8.21
    Compiling foreign-types v0.3.2
    Compiling http v0.2.12
    Compiling synstructure v0.13.2
    Compiling tracing-core v0.1.34
-   Compiling futures-sink v0.3.31
-   Compiling futures-io v0.3.31
    Compiling smallvec v1.15.1
-   Compiling equivalent v1.0.2
-   Compiling httparse v1.10.1
    Compiling pin-utils v0.1.0
-   Compiling hashbrown v0.15.4
-   Compiling slab v0.4.10
+   Compiling httparse v1.10.1
+   Compiling equivalent v1.0.2
+   Compiling native-tls v0.2.14
    Compiling zerofrom-derive v0.1.6
    Compiling yoke-derive v0.8.0
    Compiling zerovec-derive v0.11.1
    Compiling displaydoc v0.2.5
+   Compiling openssl-macros v0.1.1
    Compiling zerofrom v0.1.6
    Compiling yoke v0.8.0
-   Compiling openssl-macros v0.1.1
    Compiling zerovec v0.11.2
+   Compiling futures-io v0.3.31
+   Compiling hashbrown v0.15.4
    Compiling zerotrie v0.2.2
+   Compiling futures-sink v0.3.31
+   Compiling slab v0.4.10
    Compiling futures-task v0.3.31
-   Compiling native-tls v0.2.14
    Compiling futures-util v0.3.31
    Compiling tinystr v0.8.1
-   Compiling icu_locale_core v2.0.0
    Compiling potential_utf v0.1.2
    Compiling icu_collections v2.0.0
+   Compiling icu_locale_core v2.0.0
    Compiling icu_provider v2.0.0
-   Compiling icu_properties v2.0.1
    Compiling icu_normalizer v2.0.0
+   Compiling icu_properties v2.0.1
+   Compiling tokio-util v0.7.16
    Compiling indexmap v2.10.0
-   Compiling tokio-util v0.7.15
    Compiling tracing v0.1.41
-   Compiling try-lock v0.2.5
-   Compiling rustix v1.0.8
-   Compiling percent-encoding v2.3.1
    Compiling serde v1.0.219
    Compiling openssl-probe v0.1.6
    Compiling log v0.4.27
+   Compiling try-lock v0.2.5
+   Compiling rustix v1.0.8
+   Compiling percent-encoding v2.3.1
    Compiling form_urlencoded v1.2.1
+   Compiling want v0.3.1
    Compiling crossbeam-epoch v0.9.18
    Compiling h2 v0.3.27
-   Compiling want v0.3.1
    Compiling idna_adapter v1.2.1
    Compiling http-body v0.4.6
    Compiling futures-channel v0.3.31
-   Compiling socket2 v0.5.10
    Compiling errno v0.3.13
-   Compiling utf8_iter v1.0.4
+   Compiling socket2 v0.5.10
    Compiling tower-service v0.3.3
+   Compiling linux-raw-sys v0.9.4
+   Compiling rayon-core v1.12.1
    Compiling httpdate v1.0.3
    Compiling crc32fast v1.5.0
-   Compiling rayon-core v1.12.1
-   Compiling linux-raw-sys v0.9.4
+   Compiling utf8_iter v1.0.4
    Compiling idna v1.0.3
    Compiling hyper v0.14.32
-   Compiling crossbeam-deque v0.8.6
    Compiling tokio-native-tls v0.3.1
+   Compiling crossbeam-deque v0.8.6
    Compiling aho-corasick v1.1.3
-   Compiling anyhow v1.0.98
-   Compiling rustversion v1.0.21
-   Compiling termcolor v1.4.1
-   Compiling regex-syntax v0.8.5
-   Compiling ryu v1.0.20
-   Compiling syn v2.0.0 (/var/tmp/top100_artifacts/syn-2.0.0)
-   Compiling base64 v0.21.7
-   Compiling ref-cast v1.0.24
    Compiling adler2 v2.0.1
-   Compiling miniz_oxide v0.8.9
-   Compiling rustls-pemfile v1.0.4
+   Compiling termcolor v1.4.1
+   Compiling base64 v0.21.7
+   Compiling anyhow v1.0.98
+   Compiling regex-syntax v0.8.5
+   Compiling ref-cast v1.0.24
+   Compiling syn v2.0.0 (/var/tmp/top100_artifacts/syn-2.0.0)
+   Compiling ryu v1.0.20
+   Compiling rustversion v1.0.21
    Compiling serde_urlencoded v0.7.1
+   Compiling rustls-pemfile v1.0.4
    Compiling regex-automata v0.4.9
    Compiling syn-test-suite-feature-check v0.0.0 (/var/tmp/top100_artifacts/syn-2.0.0/tests/features/macro)
+   Compiling miniz_oxide v0.8.9
    Compiling hyper-tls v0.5.0
    Compiling xattr v1.5.1
    Compiling url v2.5.4
    Compiling ref-cast-impl v1.0.24
    Compiling filetime v0.2.25
-   Compiling console v0.15.11
    Compiling encoding_rs v0.8.35
+   Compiling console v0.15.11
+   Compiling ipnet v2.11.0
    Compiling same-file v1.0.6
    Compiling mime v0.3.17
-   Compiling ipnet v2.11.0
-   Compiling sync_wrapper v0.1.2
    Compiling either v1.15.0
    Compiling similar v2.7.0
-   Compiling rayon v1.10.0
-   Compiling insta v1.43.1
+   Compiling sync_wrapper v0.1.2
    Compiling reqwest v0.11.27
+   Compiling insta v1.43.1
+   Compiling rayon v1.10.0
    Compiling walkdir v2.5.0
    Compiling tar v0.4.44
    Compiling flate2 v1.1.2
@@ -5728,57 +5731,8 @@ warning: field `0` is never read
     |
     = help: consider removing this field
 
+warning: `syn` (lib test) generated 503 warnings (503 duplicates)
 warning: `syn` (lib) generated 503 warnings (90 duplicates) (run `cargo fix --lib -p syn` to apply 1 suggestion)
-warning: unexpected `cfg` condition name: `syn_disable_nightly_tests`
- --> tests/test_precedence.rs:1:12
-  |
-1 | #![cfg(not(syn_disable_nightly_tests))]
-  |            ^^^^^^^^^^^^^^^^^^^^^^^^^
-  |
-  = help: expected names are: `docsrs`, `feature`, and `test` and 31 more
-  = help: consider using a Cargo feature instead
-  = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
-           [lints.rust]
-           unexpected_cfgs = { level = "warn", check-cfg = ['cfg(syn_disable_nightly_tests)'] }
-  = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(syn_disable_nightly_tests)");` to the top of the `build.rs`
-  = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
-  = note: `#[warn(unexpected_cfgs)]` on by default
-
-error[E0432]: unresolved imports `syn::Item`, `syn::Pat`
-   --> tests/test_size.rs:6:17
-    |
-6   | use syn::{Expr, Item, Lit, Pat, Type};
-    |                 ^^^^       ^^^
-    |                 |          |
-    |                 |          no `Pat` in the root
-    |                 |          help: a similar name exists in the module: `Path`
-    |                 no `Item` in the root
-    |
-note: found an item that was configured out
-   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
-    |
-384 |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
-    |                                                                                        ^^^^
-note: the item is gated behind the `full` feature
-   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
-    |
-381 | #[cfg(feature = "full")]
-    |       ^^^^^^^^^^^^^^^^
-note: found an item that was configured out
-   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
-    |
-442 |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
-    |               ^^^
-note: the item is gated behind the `full` feature
-   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
-    |
-440 | #[cfg(feature = "full")]
-    |       ^^^^^^^^^^^^^^^^
-
-For more information about this error, try `rustc --explain E0432`.
-error: could not compile `syn` (test "test_size") due to 1 previous error
-warning: build failed, waiting for other jobs to finish...
-warning: `syn` (test "test_precedence") generated 1 warning
 error[E0433]: failed to resolve: could not find `FnArg` in `syn`
     --> tests/macros/../debug/gen.rs:1847:18
      |
@@ -8570,39 +8524,89 @@ note: the item is gated behind the `full` feature
 440  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
 
-error[E0425]: cannot find function `parse_file` in crate `syn`
-   --> tests/test_shebang.rs:9:21
+error[E0412]: cannot find type `Block` in crate `syn`
+   --> tests/macros/../debug/gen.rs:300:26
     |
-9   |     let file = syn::parse_file(content).unwrap();
-    |                     ^^^^^^^^^^ not found in `syn`
+300 | impl Debug for Lite<syn::Block> {
+    |                          ^^^^^ not found in `syn`
     |
 note: found an item that was configured out
-   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:952:8
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:23
     |
-952 | pub fn parse_file(mut content: &str) -> Result<File> {
-    |        ^^^^^^^^^^
-note: the item is gated here
-   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:950:1
+475 | pub use crate::stmt::{Block, Local, LocalInit, Stmt, StmtMacro};
+    |                       ^^^^^
+note: the item is gated behind the `full` feature
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
     |
-950 | #[cfg(all(feature = "parsing", feature = "full"))]
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+474 | #[cfg(feature = "full")]
+    |       ^^^^^^^^^^^^^^^^
+help: there is an enum variant `crate::Expr::Block` and 3 others; try using the variant's enum
+    |
+300 - impl Debug for Lite<syn::Block> {
+300 + impl Debug for Lite<crate::Expr> {
+    |
+300 - impl Debug for Lite<syn::Block> {
+300 + impl Debug for Lite<syn::Expr> {
+    |
+300 - impl Debug for Lite<syn::Block> {
+300 + impl Debug for Lite<tar::EntryType> {
+    |
 
-error[E0425]: cannot find function `parse_file` in crate `syn`
-   --> tests/test_shebang.rs:31:21
-    |
-31  |     let file = syn::parse_file(content).unwrap();
-    |                     ^^^^^^^^^^ not found in `syn`
-    |
+error[E0412]: cannot find type `Block` in crate `syn`
+    --> tests/macros/../debug/gen.rs:3865:39
+     |
+3865 |                     struct Print(syn::Block);
+     |                                       ^^^^^ not found in `syn`
+     |
 note: found an item that was configured out
-   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:952:8
-    |
-952 | pub fn parse_file(mut content: &str) -> Result<File> {
-    |        ^^^^^^^^^^
-note: the item is gated here
-   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:950:1
-    |
-950 | #[cfg(all(feature = "parsing", feature = "full"))]
-    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:23
+     |
+475  | pub use crate::stmt::{Block, Local, LocalInit, Stmt, StmtMacro};
+     |                       ^^^^^
+note: the item is gated behind the `full` feature
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
+     |
+474  | #[cfg(feature = "full")]
+     |       ^^^^^^^^^^^^^^^^
+help: there is an enum variant `crate::Expr::Block` and 3 others; try using the variant's enum
+     |
+3865 -                     struct Print(syn::Block);
+3865 +                     struct Print(crate::Expr);
+     |
+3865 -                     struct Print(syn::Block);
+3865 +                     struct Print(syn::Expr);
+     |
+3865 -                     struct Print(syn::Block);
+3865 +                     struct Print(tar::EntryType);
+     |
+
+error[E0412]: cannot find type `Block` in crate `syn`
+    --> tests/macros/../debug/gen.rs:3968:31
+     |
+3968 |             struct Print(syn::Block);
+     |                               ^^^^^ not found in `syn`
+     |
+note: found an item that was configured out
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:23
+     |
+475  | pub use crate::stmt::{Block, Local, LocalInit, Stmt, StmtMacro};
+     |                       ^^^^^
+note: the item is gated behind the `full` feature
+    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
+     |
+474  | #[cfg(feature = "full")]
+     |       ^^^^^^^^^^^^^^^^
+help: there is an enum variant `crate::Expr::Block` and 3 others; try using the variant's enum
+     |
+3968 -             struct Print(syn::Block);
+3968 +             struct Print(crate::Expr);
+     |
+3968 -             struct Print(syn::Block);
+3968 +             struct Print(syn::Expr);
+     |
+3968 -             struct Print(syn::Block);
+3968 +             struct Print(tar::EntryType);
+     |
 
 error[E0609]: no field `attrs` on type `&ExprArray`
    --> tests/macros/../debug/gen.rs:440:26
@@ -10092,10 +10096,430 @@ error[E0609]: no field `expr` on type `ExprYield`
 1692 |         if let Some(val) = &self.value.expr {
      |                                        ^^^^ unknown field
 
-Some errors have detailed explanations: E0412, E0425, E0433, E0609.
-For more information about an error, try `rustc --explain E0412`.
-error: could not compile `syn` (test "test_shebang") due to 405 previous errors
-warning: `syn` (lib test) generated 503 warnings (503 duplicates)
+error[E0277]: `syn::Type` doesn't implement `Debug`
+    --> tests/test_ty.rs:15:49
+     |
+15   |     syn::parse_str::<Type>("fn(mut self: ...)").unwrap_err();
+     |                                                 ^^^^^^^^^^ `syn::Type` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+     |
+     = help: the trait `Debug` is not implemented for `syn::Type`
+note: required by a bound in `Result::<T, E>::unwrap_err`
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
+     |
+1198 |     pub fn unwrap_err(self) -> E
+     |            ---------- required by a bound in this associated function
+1199 |     where
+1200 |         T: fmt::Debug,
+     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
+
+error[E0277]: `syn::Type` doesn't implement `Debug`
+    --> tests/test_ty.rs:16:54
+     |
+16   |     syn::parse_str::<Type>("fn(mut self: mut self)").unwrap_err();
+     |                                                      ^^^^^^^^^^ `syn::Type` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+     |
+     = help: the trait `Debug` is not implemented for `syn::Type`
+note: required by a bound in `Result::<T, E>::unwrap_err`
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
+     |
+1198 |     pub fn unwrap_err(self) -> E
+     |            ---------- required by a bound in this associated function
+1199 |     where
+1200 |         T: fmt::Debug,
+     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
+
+error[E0277]: `syn::Type` doesn't implement `Debug`
+    --> tests/test_ty.rs:17:47
+     |
+17   |     syn::parse_str::<Type>("fn(mut self::T)").unwrap_err();
+     |                                               ^^^^^^^^^^ `syn::Type` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+     |
+     = help: the trait `Debug` is not implemented for `syn::Type`
+note: required by a bound in `Result::<T, E>::unwrap_err`
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
+     |
+1198 |     pub fn unwrap_err(self) -> E
+     |            ---------- required by a bound in this associated function
+1199 |     where
+1200 |         T: fmt::Debug,
+     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
+
+error[E0277]: `Visibility` doesn't implement `Debug`
+  --> tests/test_visibility.rs:12:5
+   |
+10 | #[derive(Debug)]
+   |          ----- in this derive macro expansion
+11 | struct VisRest {
+12 |     vis: Visibility,
+   |     ^^^^^^^^^^^^^^^ `Visibility` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+   |
+   = help: the trait `Debug` is not implemented for `Visibility`
+
+error[E0277]: `Visibility` doesn't implement `Debug`
+  --> tests/test_visibility.rs:36:66
+   |
+36 |             _ => panic!("Expected {}, got {:?}", stringify!($p), parse.vis),
+   |                                                                  ^^^^^^^^^ `Visibility` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+...
+51 |     assert_vis_parse!("pub", Ok(Visibility::Public(_)));
+   |     --------------------------------------------------- in this macro invocation
+   |
+   = help: the trait `Debug` is not implemented for `Visibility`
+   = note: this error originates in the macro `$crate::const_format_args` which comes from the expansion of the macro `assert_vis_parse` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: `syn::Type` doesn't implement `Debug`
+    --> tests/test_ty.rs:277:53
+     |
+277  |     syn::parse_str::<Type>("for<'a> dyn Trait<'a>").unwrap_err();
+     |                                                     ^^^^^^^^^^ `syn::Type` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+     |
+     = help: the trait `Debug` is not implemented for `syn::Type`
+note: required by a bound in `Result::<T, E>::unwrap_err`
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
+     |
+1198 |     pub fn unwrap_err(self) -> E
+     |            ---------- required by a bound in this associated function
+1199 |     where
+1200 |         T: fmt::Debug,
+     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
+
+error[E0277]: `Visibility` doesn't implement `Debug`
+  --> tests/test_visibility.rs:36:66
+   |
+36 |             _ => panic!("Expected {}, got {:?}", stringify!($p), parse.vis),
+   |                                                                  ^^^^^^^^^ `Visibility` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+...
+56 |     assert_vis_parse!("", Ok(Visibility::Inherited));
+   |     ------------------------------------------------ in this macro invocation
+   |
+   = help: the trait `Debug` is not implemented for `Visibility`
+   = note: this error originates in the macro `$crate::const_format_args` which comes from the expansion of the macro `assert_vis_parse` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: `DeriveInput` doesn't implement `Debug`
+    --> tests/test_derive_input.rs:346:39
+     |
+346  |     syn::parse2::<DeriveInput>(input).unwrap_err();
+     |                                       ^^^^^^^^^^ `DeriveInput` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+     |
+     = help: the trait `Debug` is not implemented for `DeriveInput`
+note: required by a bound in `Result::<T, E>::unwrap_err`
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
+     |
+1198 |     pub fn unwrap_err(self) -> E
+     |            ---------- required by a bound in this associated function
+1199 |     where
+1200 |         T: fmt::Debug,
+     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
+
+error[E0277]: `syn::Type` doesn't implement `Debug`
+    --> tests/test_ty.rs:278:54
+     |
+278  |     syn::parse_str::<Type>("dyn for<'a> 'a + Trait").unwrap_err();
+     |                                                      ^^^^^^^^^^ `syn::Type` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+     |
+     = help: the trait `Debug` is not implemented for `syn::Type`
+note: required by a bound in `Result::<T, E>::unwrap_err`
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
+     |
+1198 |     pub fn unwrap_err(self) -> E
+     |            ---------- required by a bound in this associated function
+1199 |     where
+1200 |         T: fmt::Debug,
+     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
+
+error[E0277]: `Visibility` doesn't implement `Debug`
+  --> tests/test_visibility.rs:36:66
+   |
+36 |             _ => panic!("Expected {}, got {:?}", stringify!($p), parse.vis),
+   |                                                                  ^^^^^^^^^ `Visibility` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+...
+61 |     assert_vis_parse!("pub(in foo::bar)", Ok(Visibility::Restricted(_)));
+   |     -------------------------------------------------------------------- in this macro invocation
+   |
+   = help: the trait `Debug` is not implemented for `Visibility`
+   = note: this error originates in the macro `$crate::const_format_args` which comes from the expansion of the macro `assert_vis_parse` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: `Visibility` doesn't implement `Debug`
+  --> tests/test_visibility.rs:36:66
+   |
+36 |             _ => panic!("Expected {}, got {:?}", stringify!($p), parse.vis),
+   |                                                                  ^^^^^^^^^ `Visibility` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+...
+66 |     assert_vis_parse!("pub(crate)", Ok(Visibility::Restricted(_)));
+   |     -------------------------------------------------------------- in this macro invocation
+   |
+   = help: the trait `Debug` is not implemented for `Visibility`
+   = note: this error originates in the macro `$crate::const_format_args` which comes from the expansion of the macro `assert_vis_parse` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: `Visibility` doesn't implement `Debug`
+  --> tests/test_visibility.rs:36:66
+   |
+36 |             _ => panic!("Expected {}, got {:?}", stringify!($p), parse.vis),
+   |                                                                  ^^^^^^^^^ `Visibility` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+...
+71 |     assert_vis_parse!("pub(self)", Ok(Visibility::Restricted(_)));
+   |     ------------------------------------------------------------- in this macro invocation
+   |
+   = help: the trait `Debug` is not implemented for `Visibility`
+   = note: this error originates in the macro `$crate::const_format_args` which comes from the expansion of the macro `assert_vis_parse` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: `Visibility` doesn't implement `Debug`
+  --> tests/test_visibility.rs:36:66
+   |
+36 |             _ => panic!("Expected {}, got {:?}", stringify!($p), parse.vis),
+   |                                                                  ^^^^^^^^^ `Visibility` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+...
+76 |     assert_vis_parse!("pub(super)", Ok(Visibility::Restricted(_)));
+   |     -------------------------------------------------------------- in this macro invocation
+   |
+   = help: the trait `Debug` is not implemented for `Visibility`
+   = note: this error originates in the macro `$crate::const_format_args` which comes from the expansion of the macro `assert_vis_parse` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: `Visibility` doesn't implement `Debug`
+  --> tests/test_visibility.rs:36:66
+   |
+36 |             _ => panic!("Expected {}, got {:?}", stringify!($p), parse.vis),
+   |                                                                  ^^^^^^^^^ `Visibility` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+...
+81 |     assert_vis_parse!("pub(foo::bar)", Ok(Visibility::Public(_)) + "(foo::bar)");
+   |     ---------------------------------------------------------------------------- in this macro invocation
+   |
+   = help: the trait `Debug` is not implemented for `Visibility`
+   = note: this error originates in the macro `$crate::const_format_args` which comes from the expansion of the macro `assert_vis_parse` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: `Visibility` doesn't implement `Debug`
+  --> tests/test_visibility.rs:36:66
+   |
+36 |               _ => panic!("Expected {}, got {:?}", stringify!($p), parse.vis),
+   |                                                                    ^^^^^^^^^ `Visibility` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+...
+91 | /     assert_vis_parse!(
+92 | |         "pub(crate::A, crate::B)",
+93 | |         Ok(Visibility::Public(_)) + "(crate::A, crate::B)"
+94 | |     );
+   | |_____- in this macro invocation
+   |
+   = help: the trait `Debug` is not implemented for `Visibility`
+   = note: this error originates in the macro `$crate::const_format_args` which comes from the expansion of the macro `assert_vis_parse` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: the trait bound `ExprRange: Parse` is not satisfied
+  --> tests/test_expr.rs:23:25
+   |
+23 |     snapshot!(tokens as ExprRange, @r###"
+   |                         ^^^^^^^^^ the trait `Parse` is not implemented for `ExprRange`
+   |
+   = help: the following other types implement trait `Parse`:
+             Abstract
+             AndAnd
+             AndEq
+             AngleBracketedGenericArguments
+             As
+             At
+             Auto
+             BareFnArg
+           and 163 others
+note: required by a bound in `Tokens::parse`
+  --> tests/macros/mod.rs:66:17
+   |
+66 |     fn parse<T: Parse>(self) -> Result<T>;
+   |                 ^^^^^ required by this bound in `Tokens::parse`
+
+error[E0369]: binary operation `==` cannot be applied to type `Expr`
+   --> tests/test_expr.rs:85:9
+    |
+85  |         assert_eq!(expected, syn::parse_str(input).unwrap());
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |         |
+    |         Expr
+    |         _
+    |
+note: the foreign item type `Expr` doesn't implement `PartialEq<_>`
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/expr.rs:12:1
+    |
+12  | / ast_enum_of_structs! {
+13  | |     /// A Rust expression.
+14  | |     ///
+15  | |     /// *This type is available only if Syn is built with the `"derive"` or `"full"`
+...   |
+240 | | }
+    | |_^ not implement `PartialEq<_>`
+    = note: this error originates in the macro `assert_eq` which comes from the expansion of the macro `ast_enum_of_structs` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: `Expr` doesn't implement `Debug`
+  --> tests/test_expr.rs:85:9
+   |
+85 |         assert_eq!(expected, syn::parse_str(input).unwrap());
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `Expr` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+   |
+   = help: the trait `Debug` is not implemented for `Expr`
+   = note: this error originates in the macro `assert_eq` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0369]: binary operation `==` cannot be applied to type `Expr`
+   --> tests/test_expr.rs:96:9
+    |
+96  |         assert_eq!(expected, syn::parse2(tokens).unwrap());
+    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |         |
+    |         Expr
+    |         _
+    |
+note: the foreign item type `Expr` doesn't implement `PartialEq<_>`
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/expr.rs:12:1
+    |
+12  | / ast_enum_of_structs! {
+13  | |     /// A Rust expression.
+14  | |     ///
+15  | |     /// *This type is available only if Syn is built with the `"derive"` or `"full"`
+...   |
+240 | | }
+    | |_^ not implement `PartialEq<_>`
+    = note: this error originates in the macro `assert_eq` which comes from the expansion of the macro `ast_enum_of_structs` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: `Expr` doesn't implement `Debug`
+  --> tests/test_expr.rs:96:9
+   |
+96 |         assert_eq!(expected, syn::parse2(tokens).unwrap());
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `Expr` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+   |
+   = help: the trait `Debug` is not implemented for `Expr`
+   = note: this error originates in the macro `assert_eq` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: `Expr` doesn't implement `Debug`
+    --> tests/test_expr.rs:292:45
+     |
+292  |     syn::parse_str::<Expr>("|| &x as T[0]").unwrap_err();
+     |                                             ^^^^^^^^^^ `Expr` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+     |
+     = help: the trait `Debug` is not implemented for `Expr`
+note: required by a bound in `Result::<T, E>::unwrap_err`
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
+     |
+1198 |     pub fn unwrap_err(self) -> E
+     |            ---------- required by a bound in this associated function
+1199 |     where
+1200 |         T: fmt::Debug,
+     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
+
+error[E0277]: `Expr` doesn't implement `Debug`
+    --> tests/test_expr.rs:293:45
+     |
+293  |     syn::parse_str::<Expr>("|| () as ()()").unwrap_err();
+     |                                             ^^^^^^^^^^ `Expr` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+     |
+     = help: the trait `Debug` is not implemented for `Expr`
+note: required by a bound in `Result::<T, E>::unwrap_err`
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
+     |
+1198 |     pub fn unwrap_err(self) -> E
+     |            ---------- required by a bound in this associated function
+1199 |     where
+1200 |         T: fmt::Debug,
+     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
+
+error[E0277]: `Expr` doesn't implement `Debug`
+    --> tests/test_expr.rs:303:35
+     |
+303  |     syn::parse_str::<Expr>("..=").unwrap_err();
+     |                                   ^^^^^^^^^^ `Expr` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+     |
+     = help: the trait `Debug` is not implemented for `Expr`
+note: required by a bound in `Result::<T, E>::unwrap_err`
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
+     |
+1198 |     pub fn unwrap_err(self) -> E
+     |            ---------- required by a bound in this associated function
+1199 |     where
+1200 |         T: fmt::Debug,
+     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
+
+error[E0277]: `Expr` doesn't implement `Debug`
+    --> tests/test_expr.rs:305:37
+     |
+305  |     syn::parse_str::<Expr>("lo..=").unwrap_err();
+     |                                     ^^^^^^^^^^ `Expr` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+     |
+     = help: the trait `Debug` is not implemented for `Expr`
+note: required by a bound in `Result::<T, E>::unwrap_err`
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
+     |
+1198 |     pub fn unwrap_err(self) -> E
+     |            ---------- required by a bound in this associated function
+1199 |     where
+1200 |         T: fmt::Debug,
+     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
+
+error[E0277]: `Expr` doesn't implement `Debug`
+    --> tests/test_expr.rs:308:35
+     |
+308  |     syn::parse_str::<Expr>("...").unwrap_err();
+     |                                   ^^^^^^^^^^ `Expr` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+     |
+     = help: the trait `Debug` is not implemented for `Expr`
+note: required by a bound in `Result::<T, E>::unwrap_err`
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
+     |
+1198 |     pub fn unwrap_err(self) -> E
+     |            ---------- required by a bound in this associated function
+1199 |     where
+1200 |         T: fmt::Debug,
+     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
+
+error[E0277]: `Expr` doesn't implement `Debug`
+    --> tests/test_expr.rs:309:37
+     |
+309  |     syn::parse_str::<Expr>("...hi").unwrap_err();
+     |                                     ^^^^^^^^^^ `Expr` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+     |
+     = help: the trait `Debug` is not implemented for `Expr`
+note: required by a bound in `Result::<T, E>::unwrap_err`
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
+     |
+1198 |     pub fn unwrap_err(self) -> E
+     |            ---------- required by a bound in this associated function
+1199 |     where
+1200 |         T: fmt::Debug,
+     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
+
+error[E0277]: `Expr` doesn't implement `Debug`
+    --> tests/test_expr.rs:310:37
+     |
+310  |     syn::parse_str::<Expr>("lo...").unwrap_err();
+     |                                     ^^^^^^^^^^ `Expr` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+     |
+     = help: the trait `Debug` is not implemented for `Expr`
+note: required by a bound in `Result::<T, E>::unwrap_err`
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
+     |
+1198 |     pub fn unwrap_err(self) -> E
+     |            ---------- required by a bound in this associated function
+1199 |     where
+1200 |         T: fmt::Debug,
+     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
+
+error[E0277]: `Expr` doesn't implement `Debug`
+    --> tests/test_expr.rs:311:39
+     |
+311  |     syn::parse_str::<Expr>("lo...hi").unwrap_err();
+     |                                       ^^^^^^^^^^ `Expr` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+     |
+     = help: the trait `Debug` is not implemented for `Expr`
+note: required by a bound in `Result::<T, E>::unwrap_err`
+    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
+     |
+1198 |     pub fn unwrap_err(self) -> E
+     |            ---------- required by a bound in this associated function
+1199 |     where
+1200 |         T: fmt::Debug,
+     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
+
+Some errors have detailed explanations: E0277, E0412, E0433, E0609.
+For more information about an error, try `rustc --explain E0277`.
+error: could not compile `syn` (test "test_visibility") due to 412 previous errors
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `syn` (test "test_ty") due to 408 previous errors
+error: could not compile `syn` (test "test_derive_input") due to 404 previous errors
+Some errors have detailed explanations: E0277, E0369, E0412, E0433, E0609.
+error: could not compile `syn` (test "test_expr") due to 416 previous errors
 + RESULT=101
 + cd /var/tmp/top100_artifacts
 + rm -rf /var/tmp/top100_artifacts/syn-2.0.0

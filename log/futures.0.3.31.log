@@ -7,32 +7,30 @@
 + cargo +stable test ''
     Blocking waiting for file lock on package cache
     Updating crates.io index
-    Blocking waiting for file lock on package cache
      Locking 75 packages to latest compatible versions
       Adding tokio v0.1.22 (available: v1.47.1)
-    Blocking waiting for file lock on package cache
    Compiling autocfg v1.5.0
-   Compiling libc v0.2.174
    Compiling cfg-if v0.1.10
+   Compiling libc v0.2.174
    Compiling maybe-uninit v2.0.0
    Compiling lazy_static v1.5.0
-   Compiling futures v0.1.31
    Compiling semver-parser v0.7.0
    Compiling slab v0.4.10
-   Compiling crossbeam-utils v0.7.2
+   Compiling futures v0.1.31
    Compiling semver v0.9.0
+   Compiling crossbeam-utils v0.7.2
    Compiling rustc_version v0.2.3
    Compiling scopeguard v1.2.0
    Compiling log v0.4.27
    Compiling iovec v0.1.4
    Compiling proc-macro2 v1.0.95
-   Compiling tokio-executor v0.1.10
-   Compiling byteorder v1.5.0
    Compiling unicode-ident v1.0.18
-   Compiling parking_lot_core v0.6.3
-   Compiling net2 v0.2.39
+   Compiling byteorder v1.5.0
+   Compiling tokio-executor v0.1.10
    Compiling bytes v0.4.12
+   Compiling parking_lot_core v0.6.3
    Compiling num_cpus v1.17.0
+   Compiling net2 v0.2.39
    Compiling tokio-io v0.1.13
    Compiling quote v1.0.40
    Compiling parking_lot v0.9.0
@@ -47,52 +45,99 @@
    Compiling tokio-reactor v0.1.12
    Compiling futures-core v0.3.31
    Compiling futures-sink v0.3.31
-   Compiling futures-channel v0.3.31
    Compiling crossbeam-deque v0.7.4
+   Compiling futures-channel v0.3.31
    Compiling tokio-codec v0.1.2
    Compiling crossbeam-queue v0.2.3
-   Compiling memchr v2.7.5
-   Compiling pin-project-lite v0.2.16
+   Compiling pin-utils v0.1.0
    Compiling futures-task v0.3.31
    Compiling futures-io v0.3.31
-   Compiling pin-utils v0.1.0
+   Compiling pin-project-lite v0.2.16
+   Compiling memchr v2.7.5
    Compiling tokio-threadpool v0.1.18
    Compiling mio-uds v0.6.8
    Compiling tokio-uds v0.2.7
-   Compiling tokio-udp v0.1.6
    Compiling tokio-fs v0.1.7
+   Compiling tokio-udp v0.1.6
    Compiling tokio-tcp v0.1.4
-   Compiling tokio-timer v0.2.13
    Compiling tokio-current-thread v0.1.7
-   Compiling tokio v0.1.22
-   Compiling static_assertions v1.1.0
+   Compiling tokio-timer v0.2.13
    Compiling assert_matches v1.5.0
+   Compiling static_assertions v1.1.0
+   Compiling tokio v0.1.22
    Compiling futures-macro v0.3.31
    Compiling pin-project-internal v1.1.10
    Compiling futures-util v0.3.31
    Compiling pin-project v1.1.10
    Compiling futures-executor v0.3.31
    Compiling futures v0.3.31 (/var/tmp/top100_artifacts/futures-0.3.31)
-error[E0432]: unresolved import `futures::executor::ThreadPool`
-   --> tests/eventual.rs:2:5
-    |
-2   | use futures::executor::ThreadPool;
-    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ no `ThreadPool` in `executor`
-    |
-note: found an item that was configured out
-   --> /var/tmp/top100_artifacts/futures-0.3.31/src/lib.rs:197:32
-    |
-197 |     pub use futures_executor::{ThreadPool, ThreadPoolBuilder};
-    |                                ^^^^^^^^^^
-note: the item is gated behind the `thread-pool` feature
-   --> /var/tmp/top100_artifacts/futures-0.3.31/src/lib.rs:195:11
-    |
-195 |     #[cfg(feature = "thread-pool")]
-    |           ^^^^^^^^^^^^^^^^^^^^^^^
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures_test`
+ --> tests/io_buf_writer.rs:7:5
+  |
+7 | use futures_test::task::noop_context;
+  |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `futures_test`
+  |
+help: there is a crate or module with a similar name
+  |
+7 - use futures_test::task::noop_context;
+7 + use futures_task::task::noop_context;
+  |
 
-For more information about this error, try `rustc --explain E0432`.
-error: could not compile `futures` (test "eventual") due to 1 previous error
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures_test`
+ --> tests/io_read_to_string.rs:6:5
+  |
+6 | use futures_test::io::AsyncReadTestExt;
+  |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `futures_test`
+  |
+help: there is a crate or module with a similar name
+  |
+6 - use futures_test::io::AsyncReadTestExt;
+6 + use futures_task::io::AsyncReadTestExt;
+  |
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures_test`
+ --> tests/io_read_to_string.rs:7:5
+  |
+7 | use futures_test::task::noop_context;
+  |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `futures_test`
+  |
+help: there is a crate or module with a similar name
+  |
+7 - use futures_test::task::noop_context;
+7 + use futures_task::task::noop_context;
+  |
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures_test`
+ --> tests/io_read.rs:2:5
+  |
+2 | use futures_test::task::panic_context;
+  |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `futures_test`
+  |
+help: there is a crate or module with a similar name
+  |
+2 - use futures_test::task::panic_context;
+2 + use futures_task::task::panic_context;
+  |
+
+For more information about this error, try `rustc --explain E0433`.
+error: could not compile `futures` (test "io_read") due to 1 previous error
 warning: build failed, waiting for other jobs to finish...
+error[E0599]: no method named `interleave_pending` found for struct `IntoAsyncRead` in the current scope
+  --> tests/io_read_to_string.rs:39:10
+   |
+36 |       let mut buf = stream::iter(vec![&b"12"[..], &b"33"[..], &b"3"[..]])
+   |  ___________________-
+37 | |         .map(Ok)
+38 | |         .into_async_read()
+39 | |         .interleave_pending();
+   | |         -^^^^^^^^^^^^^^^^^^ method not found in `IntoAsyncRead<Map<Iter<IntoIter<&[u8]>>, ...>>`
+   | |_________|
+   |
+
+Some errors have detailed explanations: E0433, E0599.
+For more information about an error, try `rustc --explain E0433`.
+error: could not compile `futures` (test "io_read_to_string") due to 3 previous errors
+error: could not compile `futures` (test "io_buf_writer") due to 1 previous error
 + RESULT=101
 + cd /var/tmp/top100_artifacts
 + rm -rf /var/tmp/top100_artifacts/futures-0.3.31
