@@ -13,129 +13,129 @@
    Compiling unicode-ident v1.0.18
    Compiling cc v1.2.25
    Compiling zerocopy v0.8.25
-   Compiling untrusted v0.9.0
    Compiling pin-project-lite v0.2.16
+   Compiling untrusted v0.9.0
    Compiling getrandom v0.2.16
    Compiling quote v1.0.40
    Compiling bytes v1.10.1
    Compiling syn v2.0.104
-   Compiling rand_core v0.6.4
    Compiling ring v0.17.14
+   Compiling rand_core v0.6.4
+   Compiling mio v1.0.4
    Compiling ppv-lite86 v0.2.21
    Compiling socket2 v0.5.10
-   Compiling mio v1.0.4
-   Compiling serde v1.0.219
-   Compiling autocfg v1.4.0
    Compiling rustls v0.21.12
+   Compiling serde v1.0.219
    Compiling log v0.4.27
+   Compiling autocfg v1.4.0
    Compiling rand_chacha v0.3.1
    Compiling slab v0.4.9
-   Compiling futures-core v0.3.31
-   Compiling itoa v1.0.15
-   Compiling serde_json v1.0.140
    Compiling once_cell v1.21.3
+   Compiling futures-core v0.3.31
+   Compiling serde_json v1.0.140
+   Compiling itoa v1.0.15
    Compiling tracing-core v0.1.33
    Compiling rand v0.8.5
    Compiling sct v0.7.1
    Compiling rustls-webpki v0.101.7
-   Compiling pin-utils v0.1.0
-   Compiling futures-task v0.3.31
    Compiling tokio-macros v2.5.0
-   Compiling memchr v2.7.4
-   Compiling tokio v1.45.1
-   Compiling futures-sink v0.3.31
-   Compiling ryu v1.0.20
-   Compiling equivalent v1.0.2
    Compiling fnv v1.0.7
-   Compiling hashbrown v0.15.3
    Compiling same-file v1.0.6
-   Compiling walkdir v2.5.0
-   Compiling indexmap v2.9.0
-   Compiling http v0.2.12
+   Compiling tokio v1.45.1
+   Compiling memchr v2.7.4
+   Compiling hashbrown v0.15.3
+   Compiling equivalent v1.0.2
+   Compiling pin-utils v0.1.0
+   Compiling ryu v1.0.20
+   Compiling futures-task v0.3.31
+   Compiling futures-sink v0.3.31
    Compiling futures-util v0.3.31
+   Compiling indexmap v2.9.0
+   Compiling walkdir v2.5.0
+   Compiling http v0.2.12
+   Compiling quickcheck v1.0.3
    Compiling tokio-rustls v0.24.1
    Compiling tokio-util v0.7.15
-   Compiling quickcheck v1.0.3
    Compiling tracing v0.1.41
    Compiling env_logger v0.10.2
-   Compiling webpki-roots v0.25.4
    Compiling hex v0.4.3
+   Compiling webpki-roots v0.25.4
    Compiling h2 v0.3.27 (/var/tmp/top100_artifacts/h2-0.3.27)
-    Finished `test` profile [unoptimized + debuginfo] target(s) in 17.19s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 18.10s
      Running unittests src/lib.rs (target/debug/deps/h2-66685a06753f09d0)
 
 running 416 tests
 test error::tests::error_from_reason ... ok
 test frame::tests::test_unpack_octets_4 ... ok
-test hpack::decoder::test::test_decode_continuation_header_with_non_huff_encoded_name ... ok
-test frame::headers::test::test_nameless_header_at_resume ... ok
 test hpack::decoder::test::test_decode_empty ... ok
+test frame::headers::test::test_nameless_header_at_resume ... ok
+test hpack::decoder::test::test_decode_continuation_header_with_non_huff_encoded_name ... ok
+test hpack::decoder::test::test_decode_indexed_larger_than_table ... ok
 test hpack::decoder::test::test_decode_string_empty ... ok
 test hpack::decoder::test::test_peek_u8 ... ok
 test hpack::encoder::test::test_decreasing_table_size_without_eviction ... ok
-test hpack::decoder::test::test_decode_indexed_larger_than_table ... ok
 test hpack::encoder::test::test_content_length_value_not_indexed ... ok
 test hpack::encoder::test::test_encode_method_get ... ok
 test hpack::encoder::test::test_encode_method_post ... ok
 test hpack::encoder::test::test_encode_indexed_name_literal_value ... ok
-test hpack::encoder::test::test_encode_method_patch ... ok
 test hpack::encoder::test::test_evicted_overflow ... ignored
+test hpack::encoder::test::test_encode_method_patch ... ok
 test hpack::encoder::test::test_encoding_headers_with_same_name ... ok
 test hpack::encoder::test::test_evicting_headers_when_multiple_of_same_name_are_in_table ... ok
 test hpack::encoder::test::test_large_headers_are_not_indexed ... ok
 test hpack::encoder::test::test_large_size_update ... ok
-test hpack::encoder::test::test_repeated_headers_are_indexed ... ok
 test hpack::encoder::test::test_max_size_zero ... ok
-test hpack::encoder::test::test_resizing_table ... ok
 test hpack::encoder::test::test_nameless_header ... ok
+test hpack::encoder::test::test_repeated_headers_are_indexed ... ok
+test hpack::encoder::test::test_resizing_table ... ok
 test hpack::encoder::test::test_update_max_size_combos ... ok
 test hpack::huffman::test::decode_single_byte ... ok
 test hpack::encoder::test::test_sensitive_headers_are_never_indexed ... ok
+test hpack::huffman::test::encode_decode_u8 ... ok
 test hpack::huffman::test::encode_single_byte ... ok
 test hpack::huffman::test::multi_char ... ok
-test hpack::huffman::test::encode_decode_u8 ... ok
 test hpack::huffman::test::single_char_multi_byte ... ok
 test hpack::test::fixture::go_hpack::story_00 ... FAILED
-test hpack::test::fixture::go_hpack::story_01 ... FAILED
 test hpack::test::fixture::go_hpack::story_02 ... FAILED
+test hpack::test::fixture::go_hpack::story_01 ... FAILED
 test hpack::test::fixture::go_hpack::story_03 ... FAILED
 test hpack::test::fixture::go_hpack::story_04 ... FAILED
-test hpack::huffman::test::encode_decode_str ... ok
 test hpack::test::fixture::go_hpack::story_05 ... FAILED
-test hpack::test::fixture::go_hpack::story_06 ... FAILED
 test hpack::test::fixture::go_hpack::story_07 ... FAILED
+test hpack::test::fixture::go_hpack::story_06 ... FAILED
 test hpack::test::fixture::go_hpack::story_08 ... FAILED
 test hpack::test::fixture::go_hpack::story_09 ... FAILED
-test hpack::test::fixture::go_hpack::story_11 ... FAILED
 test hpack::test::fixture::go_hpack::story_10 ... FAILED
+test hpack::test::fixture::go_hpack::story_11 ... FAILED
 test hpack::test::fixture::go_hpack::story_12 ... FAILED
 test hpack::test::fixture::go_hpack::story_13 ... FAILED
 test hpack::test::fixture::go_hpack::story_14 ... FAILED
 test hpack::test::fixture::go_hpack::story_15 ... FAILED
-test hpack::test::fixture::go_hpack::story_17 ... FAILED
 test hpack::test::fixture::go_hpack::story_16 ... FAILED
+test hpack::test::fixture::go_hpack::story_17 ... FAILED
 test hpack::test::fixture::go_hpack::story_18 ... FAILED
 test hpack::test::fixture::go_hpack::story_19 ... FAILED
 test hpack::test::fixture::go_hpack::story_20 ... FAILED
 test hpack::test::fixture::go_hpack::story_21 ... FAILED
-test hpack::test::fixture::go_hpack::story_24 ... FAILED
+test hpack::huffman::test::encode_decode_str ... ok
 test hpack::test::fixture::go_hpack::story_22 ... FAILED
 test hpack::test::fixture::go_hpack::story_23 ... FAILED
+test hpack::test::fixture::go_hpack::story_24 ... FAILED
 test hpack::test::fixture::go_hpack::story_25 ... FAILED
 test hpack::test::fixture::go_hpack::story_26 ... FAILED
-test hpack::test::fixture::go_hpack::story_27 ... FAILED
 test hpack::test::fixture::go_hpack::story_28 ... FAILED
+test hpack::test::fixture::go_hpack::story_27 ... FAILED
 test hpack::test::fixture::go_hpack::story_29 ... FAILED
-test hpack::test::fixture::go_hpack::story_31 ... FAILED
 test hpack::test::fixture::go_hpack::story_30 ... FAILED
+test hpack::test::fixture::go_hpack::story_31 ... FAILED
 test hpack::test::fixture::haskell_http2_linear::story_00 ... FAILED
 test hpack::test::fixture::haskell_http2_linear::story_01 ... FAILED
 test hpack::test::fixture::haskell_http2_linear::story_02 ... FAILED
 test hpack::test::fixture::haskell_http2_linear::story_03 ... FAILED
-test hpack::test::fixture::haskell_http2_linear::story_04 ... FAILED
 test hpack::test::fixture::haskell_http2_linear::story_05 ... FAILED
-test hpack::test::fixture::haskell_http2_linear::story_07 ... FAILED
+test hpack::test::fixture::haskell_http2_linear::story_04 ... FAILED
 test hpack::test::fixture::haskell_http2_linear::story_06 ... FAILED
+test hpack::test::fixture::haskell_http2_linear::story_07 ... FAILED
 test hpack::test::fixture::haskell_http2_linear::story_08 ... FAILED
 test hpack::test::fixture::haskell_http2_linear::story_09 ... FAILED
 test hpack::test::fixture::haskell_http2_linear::story_10 ... FAILED
@@ -158,26 +158,26 @@ test hpack::test::fixture::haskell_http2_linear::story_26 ... FAILED
 test hpack::test::fixture::haskell_http2_linear::story_27 ... FAILED
 test hpack::test::fixture::haskell_http2_linear::story_28 ... FAILED
 test hpack::test::fixture::haskell_http2_linear::story_29 ... FAILED
-test hpack::test::fixture::haskell_http2_linear::story_30 ... FAILED
 test hpack::test::fixture::haskell_http2_linear::story_31 ... FAILED
-test hpack::test::fixture::haskell_http2_linear_huffman::story_00 ... FAILED
+test hpack::test::fixture::haskell_http2_linear::story_30 ... FAILED
 test hpack::test::fixture::haskell_http2_linear_huffman::story_01 ... FAILED
+test hpack::test::fixture::haskell_http2_linear_huffman::story_00 ... FAILED
 test hpack::test::fixture::haskell_http2_linear_huffman::story_02 ... FAILED
 test hpack::test::fixture::haskell_http2_linear_huffman::story_03 ... FAILED
 test hpack::test::fixture::haskell_http2_linear_huffman::story_04 ... FAILED
-test hpack::test::fixture::haskell_http2_linear_huffman::story_06 ... FAILED
 test hpack::test::fixture::haskell_http2_linear_huffman::story_05 ... FAILED
+test hpack::test::fixture::haskell_http2_linear_huffman::story_06 ... FAILED
 test hpack::test::fixture::haskell_http2_linear_huffman::story_07 ... FAILED
 test hpack::test::fixture::haskell_http2_linear_huffman::story_08 ... FAILED
-test hpack::test::fixture::haskell_http2_linear_huffman::story_09 ... FAILED
 test hpack::test::fixture::haskell_http2_linear_huffman::story_10 ... FAILED
+test hpack::test::fixture::haskell_http2_linear_huffman::story_09 ... FAILED
 test hpack::test::fixture::haskell_http2_linear_huffman::story_11 ... FAILED
 test hpack::test::fixture::haskell_http2_linear_huffman::story_12 ... FAILED
 test hpack::test::fixture::haskell_http2_linear_huffman::story_13 ... FAILED
 test hpack::test::fixture::haskell_http2_linear_huffman::story_14 ... FAILED
 test hpack::test::fixture::haskell_http2_linear_huffman::story_15 ... FAILED
-test hpack::test::fixture::haskell_http2_linear_huffman::story_16 ... FAILED
 test hpack::test::fixture::haskell_http2_linear_huffman::story_17 ... FAILED
+test hpack::test::fixture::haskell_http2_linear_huffman::story_16 ... FAILED
 test hpack::test::fixture::haskell_http2_linear_huffman::story_18 ... FAILED
 test hpack::test::fixture::haskell_http2_linear_huffman::story_19 ... FAILED
 test hpack::test::fixture::haskell_http2_linear_huffman::story_20 ... FAILED
@@ -187,17 +187,17 @@ test hpack::test::fixture::haskell_http2_linear_huffman::story_23 ... FAILED
 test hpack::test::fixture::haskell_http2_linear_huffman::story_24 ... FAILED
 test hpack::test::fixture::haskell_http2_linear_huffman::story_25 ... FAILED
 test hpack::test::fixture::haskell_http2_linear_huffman::story_26 ... FAILED
-test hpack::test::fixture::haskell_http2_linear_huffman::story_29 ... FAILED
-test hpack::test::fixture::haskell_http2_linear_huffman::story_28 ... FAILED
 test hpack::test::fixture::haskell_http2_linear_huffman::story_27 ... FAILED
+test hpack::test::fixture::haskell_http2_linear_huffman::story_28 ... FAILED
+test hpack::test::fixture::haskell_http2_linear_huffman::story_29 ... FAILED
 test hpack::test::fixture::haskell_http2_linear_huffman::story_30 ... FAILED
-test hpack::test::fixture::haskell_http2_naive::story_00 ... FAILED
 test hpack::test::fixture::haskell_http2_linear_huffman::story_31 ... FAILED
+test hpack::test::fixture::haskell_http2_naive::story_00 ... FAILED
 test hpack::test::fixture::haskell_http2_naive::story_01 ... FAILED
 test hpack::test::fixture::haskell_http2_naive::story_02 ... FAILED
+test hpack::test::fixture::haskell_http2_naive::story_04 ... FAILED
 test hpack::test::fixture::haskell_http2_naive::story_03 ... FAILED
 test hpack::test::fixture::haskell_http2_naive::story_05 ... FAILED
-test hpack::test::fixture::haskell_http2_naive::story_04 ... FAILED
 test hpack::test::fixture::haskell_http2_naive::story_06 ... FAILED
 test hpack::test::fixture::haskell_http2_naive::story_07 ... FAILED
 test hpack::test::fixture::haskell_http2_naive::story_08 ... FAILED
@@ -205,8 +205,8 @@ test hpack::test::fixture::haskell_http2_naive::story_09 ... FAILED
 test hpack::test::fixture::haskell_http2_naive::story_10 ... FAILED
 test hpack::test::fixture::haskell_http2_naive::story_11 ... FAILED
 test hpack::test::fixture::haskell_http2_naive::story_12 ... FAILED
-test hpack::test::fixture::haskell_http2_naive::story_14 ... FAILED
 test hpack::test::fixture::haskell_http2_naive::story_13 ... FAILED
+test hpack::test::fixture::haskell_http2_naive::story_14 ... FAILED
 test hpack::test::fixture::haskell_http2_naive::story_15 ... FAILED
 test hpack::test::fixture::haskell_http2_naive::story_16 ... FAILED
 test hpack::test::fixture::haskell_http2_naive::story_17 ... FAILED
@@ -216,8 +216,8 @@ test hpack::test::fixture::haskell_http2_naive::story_20 ... FAILED
 test hpack::test::fixture::haskell_http2_naive::story_21 ... FAILED
 test hpack::test::fixture::haskell_http2_naive::story_22 ... FAILED
 test hpack::test::fixture::haskell_http2_naive::story_23 ... FAILED
-test hpack::test::fixture::haskell_http2_naive::story_24 ... FAILED
 test hpack::test::fixture::haskell_http2_naive::story_25 ... FAILED
+test hpack::test::fixture::haskell_http2_naive::story_24 ... FAILED
 test hpack::test::fixture::haskell_http2_naive::story_26 ... FAILED
 test hpack::test::fixture::haskell_http2_naive::story_27 ... FAILED
 test hpack::test::fixture::haskell_http2_naive::story_28 ... FAILED
@@ -228,57 +228,57 @@ test hpack::test::fixture::haskell_http2_naive_huffman::story_00 ... FAILED
 test hpack::test::fixture::haskell_http2_naive_huffman::story_01 ... FAILED
 test hpack::test::fixture::haskell_http2_naive_huffman::story_02 ... FAILED
 test hpack::test::fixture::haskell_http2_naive_huffman::story_03 ... FAILED
-test hpack::test::fixture::haskell_http2_naive_huffman::story_05 ... FAILED
 test hpack::test::fixture::haskell_http2_naive_huffman::story_04 ... FAILED
-test hpack::test::fixture::haskell_http2_naive_huffman::story_08 ... FAILED
+test hpack::test::fixture::haskell_http2_naive_huffman::story_05 ... FAILED
 test hpack::test::fixture::haskell_http2_naive_huffman::story_06 ... FAILED
 test hpack::test::fixture::haskell_http2_naive_huffman::story_07 ... FAILED
+test hpack::test::fixture::haskell_http2_naive_huffman::story_08 ... FAILED
 test hpack::test::fixture::haskell_http2_naive_huffman::story_09 ... FAILED
-test hpack::test::fixture::haskell_http2_naive_huffman::story_11 ... FAILED
 test hpack::test::fixture::haskell_http2_naive_huffman::story_10 ... FAILED
+test hpack::test::fixture::haskell_http2_naive_huffman::story_11 ... FAILED
 test hpack::test::fixture::haskell_http2_naive_huffman::story_12 ... FAILED
 test hpack::test::fixture::haskell_http2_naive_huffman::story_13 ... FAILED
-test hpack::test::fixture::haskell_http2_naive_huffman::story_15 ... FAILED
 test hpack::test::fixture::haskell_http2_naive_huffman::story_14 ... FAILED
+test hpack::test::fixture::haskell_http2_naive_huffman::story_15 ... FAILED
 test hpack::test::fixture::haskell_http2_naive_huffman::story_16 ... FAILED
 test hpack::test::fixture::haskell_http2_naive_huffman::story_17 ... FAILED
 test hpack::test::fixture::haskell_http2_naive_huffman::story_18 ... FAILED
 test hpack::test::fixture::haskell_http2_naive_huffman::story_19 ... FAILED
 test hpack::test::fixture::haskell_http2_naive_huffman::story_20 ... FAILED
 test hpack::test::fixture::haskell_http2_naive_huffman::story_21 ... FAILED
-test hpack::test::fixture::haskell_http2_naive_huffman::story_23 ... FAILED
 test hpack::test::fixture::haskell_http2_naive_huffman::story_22 ... FAILED
 test hpack::test::fixture::haskell_http2_naive_huffman::story_24 ... FAILED
+test hpack::test::fixture::haskell_http2_naive_huffman::story_23 ... FAILED
 test hpack::test::fixture::haskell_http2_naive_huffman::story_25 ... FAILED
 test hpack::test::fixture::haskell_http2_naive_huffman::story_26 ... FAILED
 test hpack::test::fixture::haskell_http2_naive_huffman::story_27 ... FAILED
 test hpack::test::fixture::haskell_http2_naive_huffman::story_28 ... FAILED
 test hpack::test::fixture::haskell_http2_naive_huffman::story_29 ... FAILED
-test hpack::test::fixture::haskell_http2_naive_huffman::story_31 ... FAILED
 test hpack::test::fixture::haskell_http2_naive_huffman::story_30 ... FAILED
 test hpack::test::fixture::haskell_http2_static::story_00 ... FAILED
+test hpack::test::fixture::haskell_http2_naive_huffman::story_31 ... FAILED
 test hpack::test::fixture::haskell_http2_static::story_01 ... FAILED
 test hpack::test::fixture::haskell_http2_static::story_02 ... FAILED
 test hpack::test::fixture::haskell_http2_static::story_03 ... FAILED
 test hpack::test::fixture::haskell_http2_static::story_04 ... FAILED
 test hpack::test::fixture::haskell_http2_static::story_05 ... FAILED
-test hpack::test::fixture::haskell_http2_static::story_06 ... FAILED
 test hpack::test::fixture::haskell_http2_static::story_07 ... FAILED
+test hpack::test::fixture::haskell_http2_static::story_06 ... FAILED
 test hpack::test::fixture::haskell_http2_static::story_08 ... FAILED
 test hpack::test::fixture::haskell_http2_static::story_09 ... FAILED
 test hpack::test::fixture::haskell_http2_static::story_10 ... FAILED
 test hpack::test::fixture::haskell_http2_static::story_11 ... FAILED
 test hpack::test::fixture::haskell_http2_static::story_12 ... FAILED
-test hpack::test::fixture::haskell_http2_static::story_13 ... FAILED
 test hpack::test::fixture::haskell_http2_static::story_14 ... FAILED
+test hpack::test::fixture::haskell_http2_static::story_13 ... FAILED
 test hpack::test::fixture::haskell_http2_static::story_15 ... FAILED
 test hpack::test::fixture::haskell_http2_static::story_16 ... FAILED
 test hpack::test::fixture::haskell_http2_static::story_17 ... FAILED
 test hpack::test::fixture::haskell_http2_static::story_18 ... FAILED
 test hpack::test::fixture::haskell_http2_static::story_19 ... FAILED
-test hpack::test::fixture::haskell_http2_static::story_22 ... FAILED
 test hpack::test::fixture::haskell_http2_static::story_20 ... FAILED
 test hpack::test::fixture::haskell_http2_static::story_21 ... FAILED
+test hpack::test::fixture::haskell_http2_static::story_22 ... FAILED
 test hpack::test::fixture::haskell_http2_static::story_23 ... FAILED
 test hpack::test::fixture::haskell_http2_static::story_24 ... FAILED
 test hpack::test::fixture::haskell_http2_static::story_25 ... FAILED
@@ -288,16 +288,16 @@ test hpack::test::fixture::haskell_http2_static::story_28 ... FAILED
 test hpack::test::fixture::haskell_http2_static::story_29 ... FAILED
 test hpack::test::fixture::haskell_http2_static::story_30 ... FAILED
 test hpack::test::fixture::haskell_http2_static::story_31 ... FAILED
-test hpack::test::fixture::haskell_http2_static_huffman::story_01 ... FAILED
 test hpack::test::fixture::haskell_http2_static_huffman::story_00 ... FAILED
+test hpack::test::fixture::haskell_http2_static_huffman::story_01 ... FAILED
 test hpack::test::fixture::haskell_http2_static_huffman::story_02 ... FAILED
 test hpack::test::fixture::haskell_http2_static_huffman::story_03 ... FAILED
 test hpack::test::fixture::haskell_http2_static_huffman::story_04 ... FAILED
 test hpack::test::fixture::haskell_http2_static_huffman::story_05 ... FAILED
 test hpack::test::fixture::haskell_http2_static_huffman::story_06 ... FAILED
 test hpack::test::fixture::haskell_http2_static_huffman::story_07 ... FAILED
-test hpack::test::fixture::haskell_http2_static_huffman::story_09 ... FAILED
 test hpack::test::fixture::haskell_http2_static_huffman::story_08 ... FAILED
+test hpack::test::fixture::haskell_http2_static_huffman::story_09 ... FAILED
 test hpack::test::fixture::haskell_http2_static_huffman::story_10 ... FAILED
 test hpack::test::fixture::haskell_http2_static_huffman::story_11 ... FAILED
 test hpack::test::fixture::haskell_http2_static_huffman::story_12 ... FAILED
@@ -306,24 +306,24 @@ test hpack::test::fixture::haskell_http2_static_huffman::story_14 ... FAILED
 test hpack::test::fixture::haskell_http2_static_huffman::story_15 ... FAILED
 test hpack::test::fixture::haskell_http2_static_huffman::story_16 ... FAILED
 test hpack::test::fixture::haskell_http2_static_huffman::story_17 ... FAILED
+test hpack::encoder::test::test_evicting_headers ... ok
 test hpack::test::fixture::haskell_http2_static_huffman::story_18 ... FAILED
-test hpack::test::fixture::haskell_http2_static_huffman::story_20 ... FAILED
 test hpack::test::fixture::haskell_http2_static_huffman::story_19 ... FAILED
+test hpack::test::fixture::haskell_http2_static_huffman::story_20 ... FAILED
 test hpack::test::fixture::haskell_http2_static_huffman::story_21 ... FAILED
 test hpack::test::fixture::haskell_http2_static_huffman::story_22 ... FAILED
 test hpack::test::fixture::haskell_http2_static_huffman::story_23 ... FAILED
-test hpack::encoder::test::test_evicting_headers ... ok
 test hpack::test::fixture::haskell_http2_static_huffman::story_24 ... FAILED
 test hpack::test::fixture::haskell_http2_static_huffman::story_25 ... FAILED
 test hpack::test::fixture::haskell_http2_static_huffman::story_26 ... FAILED
-test hpack::test::fixture::haskell_http2_static_huffman::story_28 ... FAILED
 test hpack::test::fixture::haskell_http2_static_huffman::story_27 ... FAILED
+test hpack::test::fixture::haskell_http2_static_huffman::story_28 ... FAILED
 test hpack::test::fixture::haskell_http2_static_huffman::story_29 ... FAILED
+test hpack::test::fixture::haskell_http2_static_huffman::story_30 ... FAILED
 test hpack::test::fixture::haskell_http2_static_huffman::story_31 ... FAILED
 test hpack::test::fixture::nghttp2::story_00 ... FAILED
 test hpack::test::fixture::nghttp2::story_01 ... FAILED
 test hpack::test::fixture::nghttp2::story_02 ... FAILED
-test hpack::test::fixture::haskell_http2_static_huffman::story_30 ... FAILED
 test hpack::test::fixture::nghttp2::story_03 ... FAILED
 test hpack::test::fixture::nghttp2::story_04 ... FAILED
 test hpack::test::fixture::nghttp2::story_05 ... FAILED
@@ -333,57 +333,57 @@ test hpack::test::fixture::nghttp2::story_08 ... FAILED
 test hpack::test::fixture::nghttp2::story_09 ... FAILED
 test hpack::test::fixture::nghttp2::story_10 ... FAILED
 test hpack::test::fixture::nghttp2::story_11 ... FAILED
+test hpack::test::fixture::nghttp2::story_12 ... FAILED
 test hpack::test::fixture::nghttp2::story_13 ... FAILED
 test hpack::test::fixture::nghttp2::story_14 ... FAILED
 test hpack::test::fixture::nghttp2::story_15 ... FAILED
-test hpack::test::fixture::nghttp2::story_12 ... FAILED
 test hpack::test::fixture::nghttp2::story_16 ... FAILED
 test hpack::test::fixture::nghttp2::story_17 ... FAILED
 test hpack::test::fixture::nghttp2::story_18 ... FAILED
 test hpack::test::fixture::nghttp2::story_19 ... FAILED
 test hpack::test::fixture::nghttp2::story_20 ... FAILED
 test hpack::test::fixture::nghttp2::story_21 ... FAILED
-test hpack::test::fixture::nghttp2::story_23 ... FAILED
 test hpack::test::fixture::nghttp2::story_22 ... FAILED
-test hpack::test::fixture::nghttp2::story_24 ... FAILED
+test hpack::test::fixture::nghttp2::story_23 ... FAILED
 test hpack::test::fixture::nghttp2::story_25 ... FAILED
+test hpack::test::fixture::nghttp2::story_24 ... FAILED
 test hpack::test::fixture::nghttp2::story_27 ... FAILED
-test hpack::test::fixture::nghttp2::story_28 ... FAILED
 test hpack::test::fixture::nghttp2::story_26 ... FAILED
+test hpack::test::fixture::nghttp2::story_28 ... FAILED
 test hpack::test::fixture::nghttp2::story_29 ... FAILED
 test hpack::test::fixture::nghttp2::story_30 ... FAILED
 test hpack::test::fixture::nghttp2::story_31 ... FAILED
 test hpack::test::fixture::nghttp2_16384_4096::story_00 ... FAILED
 test hpack::test::fixture::nghttp2_16384_4096::story_01 ... FAILED
+test hpack::test::fixture::nghttp2_16384_4096::story_05 ... FAILED
 test hpack::test::fixture::nghttp2_16384_4096::story_02 ... FAILED
 test hpack::test::fixture::nghttp2_16384_4096::story_03 ... FAILED
-test hpack::test::fixture::nghttp2_16384_4096::story_04 ... FAILED
-test hpack::test::fixture::nghttp2_16384_4096::story_05 ... FAILED
 test hpack::test::fixture::nghttp2_16384_4096::story_06 ... FAILED
+test hpack::test::fixture::nghttp2_16384_4096::story_04 ... FAILED
 test hpack::test::fixture::nghttp2_16384_4096::story_07 ... FAILED
 test hpack::test::fixture::nghttp2_16384_4096::story_08 ... FAILED
 test hpack::test::fixture::nghttp2_16384_4096::story_09 ... FAILED
 test hpack::test::fixture::nghttp2_16384_4096::story_10 ... FAILED
+test hpack::test::fixture::nghttp2_16384_4096::story_11 ... FAILED
 test hpack::test::fixture::nghttp2_16384_4096::story_12 ... FAILED
 test hpack::test::fixture::nghttp2_16384_4096::story_13 ... FAILED
 test hpack::test::fixture::nghttp2_16384_4096::story_14 ... FAILED
-test hpack::test::fixture::nghttp2_16384_4096::story_11 ... FAILED
 test hpack::test::fixture::nghttp2_16384_4096::story_15 ... FAILED
 test hpack::test::fixture::nghttp2_16384_4096::story_16 ... FAILED
 test hpack::test::fixture::nghttp2_16384_4096::story_17 ... FAILED
 test hpack::test::fixture::nghttp2_16384_4096::story_18 ... FAILED
 test hpack::test::fixture::nghttp2_16384_4096::story_19 ... FAILED
-test hpack::test::fixture::nghttp2_16384_4096::story_23 ... FAILED
-test hpack::test::fixture::nghttp2_16384_4096::story_22 ... FAILED
-test hpack::test::fixture::nghttp2_16384_4096::story_21 ... FAILED
 test hpack::test::fixture::nghttp2_16384_4096::story_20 ... FAILED
+test hpack::test::fixture::nghttp2_16384_4096::story_21 ... FAILED
+test hpack::test::fixture::nghttp2_16384_4096::story_22 ... FAILED
+test hpack::test::fixture::nghttp2_16384_4096::story_23 ... FAILED
 test hpack::test::fixture::nghttp2_16384_4096::story_24 ... FAILED
 test hpack::test::fixture::nghttp2_16384_4096::story_25 ... FAILED
 test hpack::test::fixture::nghttp2_16384_4096::story_26 ... FAILED
 test hpack::test::fixture::nghttp2_16384_4096::story_27 ... FAILED
 test hpack::test::fixture::nghttp2_16384_4096::story_28 ... FAILED
-test hpack::test::fixture::nghttp2_16384_4096::story_30 ... FAILED
 test hpack::test::fixture::nghttp2_16384_4096::story_29 ... FAILED
+test hpack::test::fixture::nghttp2_16384_4096::story_30 ... FAILED
 test hpack::test::fixture::nghttp2_change_table_size::story_00 ... FAILED
 test hpack::test::fixture::nghttp2_change_table_size::story_01 ... FAILED
 test hpack::test::fixture::nghttp2_change_table_size::story_02 ... FAILED
@@ -393,26 +393,25 @@ test hpack::test::fixture::nghttp2_change_table_size::story_05 ... FAILED
 test hpack::test::fixture::nghttp2_change_table_size::story_06 ... FAILED
 test hpack::test::fixture::nghttp2_change_table_size::story_07 ... FAILED
 test hpack::test::fixture::nghttp2_change_table_size::story_08 ... FAILED
-test hpack::test::fixture::nghttp2_change_table_size::story_12 ... FAILED
 test hpack::test::fixture::nghttp2_change_table_size::story_09 ... FAILED
 test hpack::test::fixture::nghttp2_change_table_size::story_10 ... FAILED
 test hpack::test::fixture::nghttp2_change_table_size::story_11 ... FAILED
-test hpack::test::fixture::nghttp2_change_table_size::story_14 ... FAILED
+test hpack::test::fixture::nghttp2_change_table_size::story_12 ... FAILED
 test hpack::test::fixture::nghttp2_change_table_size::story_13 ... FAILED
+test hpack::test::fixture::nghttp2_change_table_size::story_14 ... FAILED
 test hpack::test::fixture::nghttp2_change_table_size::story_15 ... FAILED
 test hpack::test::fixture::nghttp2_change_table_size::story_16 ... FAILED
 test hpack::test::fixture::nghttp2_change_table_size::story_17 ... FAILED
 test hpack::test::fixture::nghttp2_change_table_size::story_18 ... FAILED
 test hpack::test::fixture::nghttp2_change_table_size::story_19 ... FAILED
 test hpack::test::fixture::nghttp2_change_table_size::story_20 ... FAILED
+test hpack::test::fixture::nghttp2_change_table_size::story_21 ... FAILED
 test hpack::test::fixture::nghttp2_change_table_size::story_22 ... FAILED
 test hpack::test::fixture::nghttp2_change_table_size::story_23 ... FAILED
-test hpack::test::fixture::nghttp2_change_table_size::story_21 ... FAILED
 test hpack::test::fixture::nghttp2_change_table_size::story_24 ... FAILED
+test hpack::test::fixture::nghttp2_change_table_size::story_25 ... FAILED
 test hpack::test::fixture::nghttp2_change_table_size::story_26 ... FAILED
 test hpack::test::fixture::nghttp2_change_table_size::story_27 ... FAILED
-test hpack::test::fixture::nghttp2_change_table_size::story_25 ... FAILED
-test hpack::test::fixture::nghttp2_change_table_size::story_28 ... FAILED
 test hpack::test::fixture::nghttp2_change_table_size::story_29 ... FAILED
 test hpack::test::fixture::nghttp2_change_table_size::story_30 ... FAILED
 test hpack::test::fixture::node_http2_hpack::story_00 ... FAILED
@@ -420,30 +419,31 @@ test hpack::test::fixture::node_http2_hpack::story_01 ... FAILED
 test hpack::test::fixture::node_http2_hpack::story_02 ... FAILED
 test hpack::test::fixture::node_http2_hpack::story_03 ... FAILED
 test hpack::test::fixture::node_http2_hpack::story_04 ... FAILED
+test hpack::test::fixture::nghttp2_change_table_size::story_28 ... FAILED
 test hpack::test::fixture::node_http2_hpack::story_05 ... FAILED
 test hpack::test::fixture::node_http2_hpack::story_06 ... FAILED
 test hpack::test::fixture::node_http2_hpack::story_07 ... FAILED
 test hpack::test::fixture::node_http2_hpack::story_08 ... FAILED
 test hpack::test::fixture::node_http2_hpack::story_09 ... FAILED
 test hpack::test::fixture::node_http2_hpack::story_10 ... FAILED
-test hpack::test::fixture::node_http2_hpack::story_12 ... FAILED
 test hpack::test::fixture::node_http2_hpack::story_11 ... FAILED
+test hpack::test::fixture::node_http2_hpack::story_12 ... FAILED
 test hpack::test::fixture::node_http2_hpack::story_13 ... FAILED
-test hpack::test::fixture::node_http2_hpack::story_15 ... FAILED
 test hpack::test::fixture::node_http2_hpack::story_14 ... FAILED
+test hpack::test::fixture::node_http2_hpack::story_15 ... FAILED
 test hpack::test::fixture::node_http2_hpack::story_16 ... FAILED
 test hpack::test::fixture::node_http2_hpack::story_17 ... FAILED
+test hpack::test::fixture::node_http2_hpack::story_18 ... FAILED
 test hpack::test::fixture::node_http2_hpack::story_19 ... FAILED
 test hpack::test::fixture::node_http2_hpack::story_20 ... FAILED
-test hpack::test::fixture::node_http2_hpack::story_18 ... FAILED
-test hpack::test::fixture::node_http2_hpack::story_22 ... FAILED
 test hpack::test::fixture::node_http2_hpack::story_21 ... FAILED
+test hpack::test::fixture::node_http2_hpack::story_22 ... FAILED
 test hpack::test::fixture::node_http2_hpack::story_23 ... FAILED
 test hpack::test::fixture::node_http2_hpack::story_24 ... FAILED
 test hpack::test::fixture::node_http2_hpack::story_25 ... FAILED
 test hpack::test::fixture::node_http2_hpack::story_26 ... FAILED
-test hpack::test::fixture::node_http2_hpack::story_28 ... FAILED
 test hpack::test::fixture::node_http2_hpack::story_27 ... FAILED
+test hpack::test::fixture::node_http2_hpack::story_28 ... FAILED
 test hpack::test::fixture::node_http2_hpack::story_29 ... FAILED
 test hpack::test::fixture::node_http2_hpack::story_30 ... FAILED
 test hpack::test::fixture::node_http2_hpack::story_31 ... FAILED
@@ -467,17 +467,17 @@ test hpack::test::fixture::python_hpack::story_16 ... FAILED
 test hpack::test::fixture::python_hpack::story_17 ... FAILED
 test hpack::test::fixture::python_hpack::story_18 ... FAILED
 test hpack::test::fixture::python_hpack::story_19 ... FAILED
-test hpack::test::fixture::python_hpack::story_23 ... FAILED
 test hpack::test::fixture::python_hpack::story_20 ... FAILED
 test hpack::test::fixture::python_hpack::story_21 ... FAILED
 test hpack::test::fixture::python_hpack::story_22 ... FAILED
+test hpack::test::fixture::python_hpack::story_23 ... FAILED
 test hpack::test::fixture::python_hpack::story_24 ... FAILED
 test hpack::test::fixture::python_hpack::story_25 ... FAILED
 test hpack::test::fixture::python_hpack::story_26 ... FAILED
 test hpack::test::fixture::python_hpack::story_27 ... FAILED
 test hpack::test::fixture::python_hpack::story_28 ... FAILED
-test hpack::test::fixture::python_hpack::story_30 ... FAILED
 test hpack::test::fixture::python_hpack::story_31 ... FAILED
+test hpack::test::fixture::python_hpack::story_30 ... FAILED
 test hpack::test::fixture::python_hpack::story_29 ... FAILED
 test proto::streams::flow_control::sanity_unclaimed_ratio ... ok
 test hpack::test::fuzz::hpack_fuzz ... ok
@@ -490,14 +490,14 @@ thread 'hpack::test::fixture::go_hpack::story_00' panicked at src/hpack/test/fix
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
----- hpack::test::fixture::go_hpack::story_01 stdout ----
-
-thread 'hpack::test::fixture::go_hpack::story_01' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::go_hpack::story_02 stdout ----
 
 thread 'hpack::test::fixture::go_hpack::story_02' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::go_hpack::story_01 stdout ----
+
+thread 'hpack::test::fixture::go_hpack::story_01' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::go_hpack::story_03 stdout ----
@@ -515,14 +515,14 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::go_hpack::story_05' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::go_hpack::story_06 stdout ----
-
-thread 'hpack::test::fixture::go_hpack::story_06' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::go_hpack::story_07 stdout ----
 
 thread 'hpack::test::fixture::go_hpack::story_07' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::go_hpack::story_06 stdout ----
+
+thread 'hpack::test::fixture::go_hpack::story_06' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::go_hpack::story_08 stdout ----
@@ -535,14 +535,14 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::go_hpack::story_09' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::go_hpack::story_11 stdout ----
-
-thread 'hpack::test::fixture::go_hpack::story_11' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::go_hpack::story_10 stdout ----
 
 thread 'hpack::test::fixture::go_hpack::story_10' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::go_hpack::story_11 stdout ----
+
+thread 'hpack::test::fixture::go_hpack::story_11' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::go_hpack::story_12 stdout ----
@@ -565,14 +565,14 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::go_hpack::story_15' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::go_hpack::story_17 stdout ----
-
-thread 'hpack::test::fixture::go_hpack::story_17' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::go_hpack::story_16 stdout ----
 
 thread 'hpack::test::fixture::go_hpack::story_16' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::go_hpack::story_17 stdout ----
+
+thread 'hpack::test::fixture::go_hpack::story_17' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::go_hpack::story_18 stdout ----
@@ -595,11 +595,6 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::go_hpack::story_21' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::go_hpack::story_24 stdout ----
-
-thread 'hpack::test::fixture::go_hpack::story_24' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::go_hpack::story_22 stdout ----
 
 thread 'hpack::test::fixture::go_hpack::story_22' panicked at src/hpack/test/fixture.rs:14:37:
@@ -608,6 +603,11 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 ---- hpack::test::fixture::go_hpack::story_23 stdout ----
 
 thread 'hpack::test::fixture::go_hpack::story_23' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::go_hpack::story_24 stdout ----
+
+thread 'hpack::test::fixture::go_hpack::story_24' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::go_hpack::story_25 stdout ----
@@ -620,14 +620,14 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::go_hpack::story_26' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::go_hpack::story_27 stdout ----
-
-thread 'hpack::test::fixture::go_hpack::story_27' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::go_hpack::story_28 stdout ----
 
 thread 'hpack::test::fixture::go_hpack::story_28' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::go_hpack::story_27 stdout ----
+
+thread 'hpack::test::fixture::go_hpack::story_27' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::go_hpack::story_29 stdout ----
@@ -635,14 +635,14 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::go_hpack::story_29' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::go_hpack::story_31 stdout ----
-
-thread 'hpack::test::fixture::go_hpack::story_31' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::go_hpack::story_30 stdout ----
 
 thread 'hpack::test::fixture::go_hpack::story_30' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::go_hpack::story_31 stdout ----
+
+thread 'hpack::test::fixture::go_hpack::story_31' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::haskell_http2_linear::story_00 stdout ----
@@ -665,24 +665,24 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::haskell_http2_linear::story_03' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::haskell_http2_linear::story_04 stdout ----
-
-thread 'hpack::test::fixture::haskell_http2_linear::story_04' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::haskell_http2_linear::story_05 stdout ----
 
 thread 'hpack::test::fixture::haskell_http2_linear::story_05' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::haskell_http2_linear::story_07 stdout ----
+---- hpack::test::fixture::haskell_http2_linear::story_04 stdout ----
 
-thread 'hpack::test::fixture::haskell_http2_linear::story_07' panicked at src/hpack/test/fixture.rs:14:37:
+thread 'hpack::test::fixture::haskell_http2_linear::story_04' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::haskell_http2_linear::story_06 stdout ----
 
 thread 'hpack::test::fixture::haskell_http2_linear::story_06' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::haskell_http2_linear::story_07 stdout ----
+
+thread 'hpack::test::fixture::haskell_http2_linear::story_07' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::haskell_http2_linear::story_08 stdout ----
@@ -795,24 +795,24 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::haskell_http2_linear::story_29' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::haskell_http2_linear::story_30 stdout ----
-
-thread 'hpack::test::fixture::haskell_http2_linear::story_30' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::haskell_http2_linear::story_31 stdout ----
 
 thread 'hpack::test::fixture::haskell_http2_linear::story_31' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::haskell_http2_linear_huffman::story_00 stdout ----
+---- hpack::test::fixture::haskell_http2_linear::story_30 stdout ----
 
-thread 'hpack::test::fixture::haskell_http2_linear_huffman::story_00' panicked at src/hpack/test/fixture.rs:14:37:
+thread 'hpack::test::fixture::haskell_http2_linear::story_30' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::haskell_http2_linear_huffman::story_01 stdout ----
 
 thread 'hpack::test::fixture::haskell_http2_linear_huffman::story_01' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::haskell_http2_linear_huffman::story_00 stdout ----
+
+thread 'hpack::test::fixture::haskell_http2_linear_huffman::story_00' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::haskell_http2_linear_huffman::story_02 stdout ----
@@ -830,14 +830,14 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::haskell_http2_linear_huffman::story_04' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::haskell_http2_linear_huffman::story_06 stdout ----
-
-thread 'hpack::test::fixture::haskell_http2_linear_huffman::story_06' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::haskell_http2_linear_huffman::story_05 stdout ----
 
 thread 'hpack::test::fixture::haskell_http2_linear_huffman::story_05' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::haskell_http2_linear_huffman::story_06 stdout ----
+
+thread 'hpack::test::fixture::haskell_http2_linear_huffman::story_06' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::haskell_http2_linear_huffman::story_07 stdout ----
@@ -850,14 +850,14 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::haskell_http2_linear_huffman::story_08' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::haskell_http2_linear_huffman::story_09 stdout ----
-
-thread 'hpack::test::fixture::haskell_http2_linear_huffman::story_09' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::haskell_http2_linear_huffman::story_10 stdout ----
 
 thread 'hpack::test::fixture::haskell_http2_linear_huffman::story_10' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::haskell_http2_linear_huffman::story_09 stdout ----
+
+thread 'hpack::test::fixture::haskell_http2_linear_huffman::story_09' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::haskell_http2_linear_huffman::story_11 stdout ----
@@ -885,14 +885,14 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::haskell_http2_linear_huffman::story_15' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::haskell_http2_linear_huffman::story_16 stdout ----
-
-thread 'hpack::test::fixture::haskell_http2_linear_huffman::story_16' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::haskell_http2_linear_huffman::story_17 stdout ----
 
 thread 'hpack::test::fixture::haskell_http2_linear_huffman::story_17' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::haskell_http2_linear_huffman::story_16 stdout ----
+
+thread 'hpack::test::fixture::haskell_http2_linear_huffman::story_16' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::haskell_http2_linear_huffman::story_18 stdout ----
@@ -940,9 +940,9 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::haskell_http2_linear_huffman::story_26' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::haskell_http2_linear_huffman::story_29 stdout ----
+---- hpack::test::fixture::haskell_http2_linear_huffman::story_27 stdout ----
 
-thread 'hpack::test::fixture::haskell_http2_linear_huffman::story_29' panicked at src/hpack/test/fixture.rs:14:37:
+thread 'hpack::test::fixture::haskell_http2_linear_huffman::story_27' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::haskell_http2_linear_huffman::story_28 stdout ----
@@ -950,9 +950,9 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::haskell_http2_linear_huffman::story_28' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::haskell_http2_linear_huffman::story_27 stdout ----
+---- hpack::test::fixture::haskell_http2_linear_huffman::story_29 stdout ----
 
-thread 'hpack::test::fixture::haskell_http2_linear_huffman::story_27' panicked at src/hpack/test/fixture.rs:14:37:
+thread 'hpack::test::fixture::haskell_http2_linear_huffman::story_29' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::haskell_http2_linear_huffman::story_30 stdout ----
@@ -960,14 +960,14 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::haskell_http2_linear_huffman::story_30' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::haskell_http2_naive::story_00 stdout ----
-
-thread 'hpack::test::fixture::haskell_http2_naive::story_00' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::haskell_http2_linear_huffman::story_31 stdout ----
 
 thread 'hpack::test::fixture::haskell_http2_linear_huffman::story_31' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::haskell_http2_naive::story_00 stdout ----
+
+thread 'hpack::test::fixture::haskell_http2_naive::story_00' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::haskell_http2_naive::story_01 stdout ----
@@ -980,6 +980,11 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::haskell_http2_naive::story_02' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
+---- hpack::test::fixture::haskell_http2_naive::story_04 stdout ----
+
+thread 'hpack::test::fixture::haskell_http2_naive::story_04' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
 ---- hpack::test::fixture::haskell_http2_naive::story_03 stdout ----
 
 thread 'hpack::test::fixture::haskell_http2_naive::story_03' panicked at src/hpack/test/fixture.rs:14:37:
@@ -988,11 +993,6 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 ---- hpack::test::fixture::haskell_http2_naive::story_05 stdout ----
 
 thread 'hpack::test::fixture::haskell_http2_naive::story_05' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
----- hpack::test::fixture::haskell_http2_naive::story_04 stdout ----
-
-thread 'hpack::test::fixture::haskell_http2_naive::story_04' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::haskell_http2_naive::story_06 stdout ----
@@ -1030,14 +1030,14 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::haskell_http2_naive::story_12' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::haskell_http2_naive::story_14 stdout ----
-
-thread 'hpack::test::fixture::haskell_http2_naive::story_14' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::haskell_http2_naive::story_13 stdout ----
 
 thread 'hpack::test::fixture::haskell_http2_naive::story_13' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::haskell_http2_naive::story_14 stdout ----
+
+thread 'hpack::test::fixture::haskell_http2_naive::story_14' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::haskell_http2_naive::story_15 stdout ----
@@ -1085,14 +1085,14 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::haskell_http2_naive::story_23' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::haskell_http2_naive::story_24 stdout ----
-
-thread 'hpack::test::fixture::haskell_http2_naive::story_24' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::haskell_http2_naive::story_25 stdout ----
 
 thread 'hpack::test::fixture::haskell_http2_naive::story_25' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::haskell_http2_naive::story_24 stdout ----
+
+thread 'hpack::test::fixture::haskell_http2_naive::story_24' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::haskell_http2_naive::story_26 stdout ----
@@ -1145,19 +1145,14 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::haskell_http2_naive_huffman::story_03' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::haskell_http2_naive_huffman::story_05 stdout ----
-
-thread 'hpack::test::fixture::haskell_http2_naive_huffman::story_05' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::haskell_http2_naive_huffman::story_04 stdout ----
 
 thread 'hpack::test::fixture::haskell_http2_naive_huffman::story_04' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::haskell_http2_naive_huffman::story_08 stdout ----
+---- hpack::test::fixture::haskell_http2_naive_huffman::story_05 stdout ----
 
-thread 'hpack::test::fixture::haskell_http2_naive_huffman::story_08' panicked at src/hpack/test/fixture.rs:14:37:
+thread 'hpack::test::fixture::haskell_http2_naive_huffman::story_05' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::haskell_http2_naive_huffman::story_06 stdout ----
@@ -1170,19 +1165,24 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::haskell_http2_naive_huffman::story_07' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
+---- hpack::test::fixture::haskell_http2_naive_huffman::story_08 stdout ----
+
+thread 'hpack::test::fixture::haskell_http2_naive_huffman::story_08' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
 ---- hpack::test::fixture::haskell_http2_naive_huffman::story_09 stdout ----
 
 thread 'hpack::test::fixture::haskell_http2_naive_huffman::story_09' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::haskell_http2_naive_huffman::story_11 stdout ----
-
-thread 'hpack::test::fixture::haskell_http2_naive_huffman::story_11' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::haskell_http2_naive_huffman::story_10 stdout ----
 
 thread 'hpack::test::fixture::haskell_http2_naive_huffman::story_10' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::haskell_http2_naive_huffman::story_11 stdout ----
+
+thread 'hpack::test::fixture::haskell_http2_naive_huffman::story_11' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::haskell_http2_naive_huffman::story_12 stdout ----
@@ -1195,14 +1195,14 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::haskell_http2_naive_huffman::story_13' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::haskell_http2_naive_huffman::story_15 stdout ----
-
-thread 'hpack::test::fixture::haskell_http2_naive_huffman::story_15' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::haskell_http2_naive_huffman::story_14 stdout ----
 
 thread 'hpack::test::fixture::haskell_http2_naive_huffman::story_14' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::haskell_http2_naive_huffman::story_15 stdout ----
+
+thread 'hpack::test::fixture::haskell_http2_naive_huffman::story_15' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::haskell_http2_naive_huffman::story_16 stdout ----
@@ -1235,11 +1235,6 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::haskell_http2_naive_huffman::story_21' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::haskell_http2_naive_huffman::story_23 stdout ----
-
-thread 'hpack::test::fixture::haskell_http2_naive_huffman::story_23' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::haskell_http2_naive_huffman::story_22 stdout ----
 
 thread 'hpack::test::fixture::haskell_http2_naive_huffman::story_22' panicked at src/hpack/test/fixture.rs:14:37:
@@ -1248,6 +1243,11 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 ---- hpack::test::fixture::haskell_http2_naive_huffman::story_24 stdout ----
 
 thread 'hpack::test::fixture::haskell_http2_naive_huffman::story_24' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::haskell_http2_naive_huffman::story_23 stdout ----
+
+thread 'hpack::test::fixture::haskell_http2_naive_huffman::story_23' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::haskell_http2_naive_huffman::story_25 stdout ----
@@ -1275,11 +1275,6 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::haskell_http2_naive_huffman::story_29' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::haskell_http2_naive_huffman::story_31 stdout ----
-
-thread 'hpack::test::fixture::haskell_http2_naive_huffman::story_31' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::haskell_http2_naive_huffman::story_30 stdout ----
 
 thread 'hpack::test::fixture::haskell_http2_naive_huffman::story_30' panicked at src/hpack/test/fixture.rs:14:37:
@@ -1288,6 +1283,11 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 ---- hpack::test::fixture::haskell_http2_static::story_00 stdout ----
 
 thread 'hpack::test::fixture::haskell_http2_static::story_00' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::haskell_http2_naive_huffman::story_31 stdout ----
+
+thread 'hpack::test::fixture::haskell_http2_naive_huffman::story_31' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::haskell_http2_static::story_01 stdout ----
@@ -1315,14 +1315,14 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::haskell_http2_static::story_05' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::haskell_http2_static::story_06 stdout ----
-
-thread 'hpack::test::fixture::haskell_http2_static::story_06' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::haskell_http2_static::story_07 stdout ----
 
 thread 'hpack::test::fixture::haskell_http2_static::story_07' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::haskell_http2_static::story_06 stdout ----
+
+thread 'hpack::test::fixture::haskell_http2_static::story_06' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::haskell_http2_static::story_08 stdout ----
@@ -1350,14 +1350,14 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::haskell_http2_static::story_12' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::haskell_http2_static::story_13 stdout ----
-
-thread 'hpack::test::fixture::haskell_http2_static::story_13' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::haskell_http2_static::story_14 stdout ----
 
 thread 'hpack::test::fixture::haskell_http2_static::story_14' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::haskell_http2_static::story_13 stdout ----
+
+thread 'hpack::test::fixture::haskell_http2_static::story_13' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::haskell_http2_static::story_15 stdout ----
@@ -1385,11 +1385,6 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::haskell_http2_static::story_19' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::haskell_http2_static::story_22 stdout ----
-
-thread 'hpack::test::fixture::haskell_http2_static::story_22' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::haskell_http2_static::story_20 stdout ----
 
 thread 'hpack::test::fixture::haskell_http2_static::story_20' panicked at src/hpack/test/fixture.rs:14:37:
@@ -1398,6 +1393,11 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 ---- hpack::test::fixture::haskell_http2_static::story_21 stdout ----
 
 thread 'hpack::test::fixture::haskell_http2_static::story_21' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::haskell_http2_static::story_22 stdout ----
+
+thread 'hpack::test::fixture::haskell_http2_static::story_22' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::haskell_http2_static::story_23 stdout ----
@@ -1445,14 +1445,14 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::haskell_http2_static::story_31' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::haskell_http2_static_huffman::story_01 stdout ----
-
-thread 'hpack::test::fixture::haskell_http2_static_huffman::story_01' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::haskell_http2_static_huffman::story_00 stdout ----
 
 thread 'hpack::test::fixture::haskell_http2_static_huffman::story_00' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::haskell_http2_static_huffman::story_01 stdout ----
+
+thread 'hpack::test::fixture::haskell_http2_static_huffman::story_01' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::haskell_http2_static_huffman::story_02 stdout ----
@@ -1485,14 +1485,14 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::haskell_http2_static_huffman::story_07' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::haskell_http2_static_huffman::story_09 stdout ----
-
-thread 'hpack::test::fixture::haskell_http2_static_huffman::story_09' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::haskell_http2_static_huffman::story_08 stdout ----
 
 thread 'hpack::test::fixture::haskell_http2_static_huffman::story_08' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::haskell_http2_static_huffman::story_09 stdout ----
+
+thread 'hpack::test::fixture::haskell_http2_static_huffman::story_09' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::haskell_http2_static_huffman::story_10 stdout ----
@@ -1540,14 +1540,14 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::haskell_http2_static_huffman::story_18' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::haskell_http2_static_huffman::story_20 stdout ----
-
-thread 'hpack::test::fixture::haskell_http2_static_huffman::story_20' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::haskell_http2_static_huffman::story_19 stdout ----
 
 thread 'hpack::test::fixture::haskell_http2_static_huffman::story_19' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::haskell_http2_static_huffman::story_20 stdout ----
+
+thread 'hpack::test::fixture::haskell_http2_static_huffman::story_20' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::haskell_http2_static_huffman::story_21 stdout ----
@@ -1580,19 +1580,24 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::haskell_http2_static_huffman::story_26' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::haskell_http2_static_huffman::story_28 stdout ----
-
-thread 'hpack::test::fixture::haskell_http2_static_huffman::story_28' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::haskell_http2_static_huffman::story_27 stdout ----
 
 thread 'hpack::test::fixture::haskell_http2_static_huffman::story_27' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
+---- hpack::test::fixture::haskell_http2_static_huffman::story_28 stdout ----
+
+thread 'hpack::test::fixture::haskell_http2_static_huffman::story_28' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
 ---- hpack::test::fixture::haskell_http2_static_huffman::story_29 stdout ----
 
 thread 'hpack::test::fixture::haskell_http2_static_huffman::story_29' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::haskell_http2_static_huffman::story_30 stdout ----
+
+thread 'hpack::test::fixture::haskell_http2_static_huffman::story_30' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::haskell_http2_static_huffman::story_31 stdout ----
@@ -1613,11 +1618,6 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 ---- hpack::test::fixture::nghttp2::story_02 stdout ----
 
 thread 'hpack::test::fixture::nghttp2::story_02' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
----- hpack::test::fixture::haskell_http2_static_huffman::story_30 stdout ----
-
-thread 'hpack::test::fixture::haskell_http2_static_huffman::story_30' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::nghttp2::story_03 stdout ----
@@ -1665,6 +1665,11 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::nghttp2::story_11' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
+---- hpack::test::fixture::nghttp2::story_12 stdout ----
+
+thread 'hpack::test::fixture::nghttp2::story_12' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
 ---- hpack::test::fixture::nghttp2::story_13 stdout ----
 
 thread 'hpack::test::fixture::nghttp2::story_13' panicked at src/hpack/test/fixture.rs:14:37:
@@ -1678,11 +1683,6 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 ---- hpack::test::fixture::nghttp2::story_15 stdout ----
 
 thread 'hpack::test::fixture::nghttp2::story_15' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
----- hpack::test::fixture::nghttp2::story_12 stdout ----
-
-thread 'hpack::test::fixture::nghttp2::story_12' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::nghttp2::story_16 stdout ----
@@ -1715,19 +1715,14 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::nghttp2::story_21' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::nghttp2::story_23 stdout ----
-
-thread 'hpack::test::fixture::nghttp2::story_23' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::nghttp2::story_22 stdout ----
 
 thread 'hpack::test::fixture::nghttp2::story_22' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::nghttp2::story_24 stdout ----
+---- hpack::test::fixture::nghttp2::story_23 stdout ----
 
-thread 'hpack::test::fixture::nghttp2::story_24' panicked at src/hpack/test/fixture.rs:14:37:
+thread 'hpack::test::fixture::nghttp2::story_23' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::nghttp2::story_25 stdout ----
@@ -1735,19 +1730,24 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::nghttp2::story_25' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
+---- hpack::test::fixture::nghttp2::story_24 stdout ----
+
+thread 'hpack::test::fixture::nghttp2::story_24' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
 ---- hpack::test::fixture::nghttp2::story_27 stdout ----
 
 thread 'hpack::test::fixture::nghttp2::story_27' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::nghttp2::story_28 stdout ----
-
-thread 'hpack::test::fixture::nghttp2::story_28' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::nghttp2::story_26 stdout ----
 
 thread 'hpack::test::fixture::nghttp2::story_26' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::nghttp2::story_28 stdout ----
+
+thread 'hpack::test::fixture::nghttp2::story_28' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::nghttp2::story_29 stdout ----
@@ -1775,6 +1775,11 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::nghttp2_16384_4096::story_01' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
+---- hpack::test::fixture::nghttp2_16384_4096::story_05 stdout ----
+
+thread 'hpack::test::fixture::nghttp2_16384_4096::story_05' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
 ---- hpack::test::fixture::nghttp2_16384_4096::story_02 stdout ----
 
 thread 'hpack::test::fixture::nghttp2_16384_4096::story_02' panicked at src/hpack/test/fixture.rs:14:37:
@@ -1785,19 +1790,14 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::nghttp2_16384_4096::story_03' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::nghttp2_16384_4096::story_04 stdout ----
-
-thread 'hpack::test::fixture::nghttp2_16384_4096::story_04' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
----- hpack::test::fixture::nghttp2_16384_4096::story_05 stdout ----
-
-thread 'hpack::test::fixture::nghttp2_16384_4096::story_05' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::nghttp2_16384_4096::story_06 stdout ----
 
 thread 'hpack::test::fixture::nghttp2_16384_4096::story_06' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::nghttp2_16384_4096::story_04 stdout ----
+
+thread 'hpack::test::fixture::nghttp2_16384_4096::story_04' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::nghttp2_16384_4096::story_07 stdout ----
@@ -1820,6 +1820,11 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::nghttp2_16384_4096::story_10' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
+---- hpack::test::fixture::nghttp2_16384_4096::story_11 stdout ----
+
+thread 'hpack::test::fixture::nghttp2_16384_4096::story_11' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
 ---- hpack::test::fixture::nghttp2_16384_4096::story_12 stdout ----
 
 thread 'hpack::test::fixture::nghttp2_16384_4096::story_12' panicked at src/hpack/test/fixture.rs:14:37:
@@ -1833,11 +1838,6 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 ---- hpack::test::fixture::nghttp2_16384_4096::story_14 stdout ----
 
 thread 'hpack::test::fixture::nghttp2_16384_4096::story_14' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
----- hpack::test::fixture::nghttp2_16384_4096::story_11 stdout ----
-
-thread 'hpack::test::fixture::nghttp2_16384_4096::story_11' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::nghttp2_16384_4096::story_15 stdout ----
@@ -1865,14 +1865,9 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::nghttp2_16384_4096::story_19' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::nghttp2_16384_4096::story_23 stdout ----
+---- hpack::test::fixture::nghttp2_16384_4096::story_20 stdout ----
 
-thread 'hpack::test::fixture::nghttp2_16384_4096::story_23' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
----- hpack::test::fixture::nghttp2_16384_4096::story_22 stdout ----
-
-thread 'hpack::test::fixture::nghttp2_16384_4096::story_22' panicked at src/hpack/test/fixture.rs:14:37:
+thread 'hpack::test::fixture::nghttp2_16384_4096::story_20' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::nghttp2_16384_4096::story_21 stdout ----
@@ -1880,9 +1875,14 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::nghttp2_16384_4096::story_21' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::nghttp2_16384_4096::story_20 stdout ----
+---- hpack::test::fixture::nghttp2_16384_4096::story_22 stdout ----
 
-thread 'hpack::test::fixture::nghttp2_16384_4096::story_20' panicked at src/hpack/test/fixture.rs:14:37:
+thread 'hpack::test::fixture::nghttp2_16384_4096::story_22' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::nghttp2_16384_4096::story_23 stdout ----
+
+thread 'hpack::test::fixture::nghttp2_16384_4096::story_23' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::nghttp2_16384_4096::story_24 stdout ----
@@ -1910,14 +1910,14 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::nghttp2_16384_4096::story_28' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::nghttp2_16384_4096::story_30 stdout ----
-
-thread 'hpack::test::fixture::nghttp2_16384_4096::story_30' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::nghttp2_16384_4096::story_29 stdout ----
 
 thread 'hpack::test::fixture::nghttp2_16384_4096::story_29' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::nghttp2_16384_4096::story_30 stdout ----
+
+thread 'hpack::test::fixture::nghttp2_16384_4096::story_30' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::nghttp2_change_table_size::story_00 stdout ----
@@ -1965,11 +1965,6 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::nghttp2_change_table_size::story_08' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::nghttp2_change_table_size::story_12 stdout ----
-
-thread 'hpack::test::fixture::nghttp2_change_table_size::story_12' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::nghttp2_change_table_size::story_09 stdout ----
 
 thread 'hpack::test::fixture::nghttp2_change_table_size::story_09' panicked at src/hpack/test/fixture.rs:14:37:
@@ -1985,14 +1980,19 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::nghttp2_change_table_size::story_11' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::nghttp2_change_table_size::story_14 stdout ----
+---- hpack::test::fixture::nghttp2_change_table_size::story_12 stdout ----
 
-thread 'hpack::test::fixture::nghttp2_change_table_size::story_14' panicked at src/hpack/test/fixture.rs:14:37:
+thread 'hpack::test::fixture::nghttp2_change_table_size::story_12' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::nghttp2_change_table_size::story_13 stdout ----
 
 thread 'hpack::test::fixture::nghttp2_change_table_size::story_13' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::nghttp2_change_table_size::story_14 stdout ----
+
+thread 'hpack::test::fixture::nghttp2_change_table_size::story_14' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::nghttp2_change_table_size::story_15 stdout ----
@@ -2025,6 +2025,11 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::nghttp2_change_table_size::story_20' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
+---- hpack::test::fixture::nghttp2_change_table_size::story_21 stdout ----
+
+thread 'hpack::test::fixture::nghttp2_change_table_size::story_21' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
 ---- hpack::test::fixture::nghttp2_change_table_size::story_22 stdout ----
 
 thread 'hpack::test::fixture::nghttp2_change_table_size::story_22' panicked at src/hpack/test/fixture.rs:14:37:
@@ -2035,14 +2040,14 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::nghttp2_change_table_size::story_23' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::nghttp2_change_table_size::story_21 stdout ----
-
-thread 'hpack::test::fixture::nghttp2_change_table_size::story_21' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::nghttp2_change_table_size::story_24 stdout ----
 
 thread 'hpack::test::fixture::nghttp2_change_table_size::story_24' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::nghttp2_change_table_size::story_25 stdout ----
+
+thread 'hpack::test::fixture::nghttp2_change_table_size::story_25' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::nghttp2_change_table_size::story_26 stdout ----
@@ -2053,16 +2058,6 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 ---- hpack::test::fixture::nghttp2_change_table_size::story_27 stdout ----
 
 thread 'hpack::test::fixture::nghttp2_change_table_size::story_27' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
----- hpack::test::fixture::nghttp2_change_table_size::story_25 stdout ----
-
-thread 'hpack::test::fixture::nghttp2_change_table_size::story_25' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
----- hpack::test::fixture::nghttp2_change_table_size::story_28 stdout ----
-
-thread 'hpack::test::fixture::nghttp2_change_table_size::story_28' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::nghttp2_change_table_size::story_29 stdout ----
@@ -2100,6 +2095,11 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::node_http2_hpack::story_04' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
+---- hpack::test::fixture::nghttp2_change_table_size::story_28 stdout ----
+
+thread 'hpack::test::fixture::nghttp2_change_table_size::story_28' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
 ---- hpack::test::fixture::node_http2_hpack::story_05 stdout ----
 
 thread 'hpack::test::fixture::node_http2_hpack::story_05' panicked at src/hpack/test/fixture.rs:14:37:
@@ -2130,14 +2130,14 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::node_http2_hpack::story_10' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::node_http2_hpack::story_12 stdout ----
-
-thread 'hpack::test::fixture::node_http2_hpack::story_12' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::node_http2_hpack::story_11 stdout ----
 
 thread 'hpack::test::fixture::node_http2_hpack::story_11' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::node_http2_hpack::story_12 stdout ----
+
+thread 'hpack::test::fixture::node_http2_hpack::story_12' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::node_http2_hpack::story_13 stdout ----
@@ -2145,14 +2145,14 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::node_http2_hpack::story_13' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::node_http2_hpack::story_15 stdout ----
-
-thread 'hpack::test::fixture::node_http2_hpack::story_15' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::node_http2_hpack::story_14 stdout ----
 
 thread 'hpack::test::fixture::node_http2_hpack::story_14' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::node_http2_hpack::story_15 stdout ----
+
+thread 'hpack::test::fixture::node_http2_hpack::story_15' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::node_http2_hpack::story_16 stdout ----
@@ -2165,6 +2165,11 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::node_http2_hpack::story_17' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
+---- hpack::test::fixture::node_http2_hpack::story_18 stdout ----
+
+thread 'hpack::test::fixture::node_http2_hpack::story_18' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
 ---- hpack::test::fixture::node_http2_hpack::story_19 stdout ----
 
 thread 'hpack::test::fixture::node_http2_hpack::story_19' panicked at src/hpack/test/fixture.rs:14:37:
@@ -2175,19 +2180,14 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::node_http2_hpack::story_20' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::node_http2_hpack::story_18 stdout ----
+---- hpack::test::fixture::node_http2_hpack::story_21 stdout ----
 
-thread 'hpack::test::fixture::node_http2_hpack::story_18' panicked at src/hpack/test/fixture.rs:14:37:
+thread 'hpack::test::fixture::node_http2_hpack::story_21' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::node_http2_hpack::story_22 stdout ----
 
 thread 'hpack::test::fixture::node_http2_hpack::story_22' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
----- hpack::test::fixture::node_http2_hpack::story_21 stdout ----
-
-thread 'hpack::test::fixture::node_http2_hpack::story_21' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::node_http2_hpack::story_23 stdout ----
@@ -2210,14 +2210,14 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::node_http2_hpack::story_26' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::node_http2_hpack::story_28 stdout ----
-
-thread 'hpack::test::fixture::node_http2_hpack::story_28' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::node_http2_hpack::story_27 stdout ----
 
 thread 'hpack::test::fixture::node_http2_hpack::story_27' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::node_http2_hpack::story_28 stdout ----
+
+thread 'hpack::test::fixture::node_http2_hpack::story_28' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::node_http2_hpack::story_29 stdout ----
@@ -2335,11 +2335,6 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::python_hpack::story_19' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::python_hpack::story_23 stdout ----
-
-thread 'hpack::test::fixture::python_hpack::story_23' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::python_hpack::story_20 stdout ----
 
 thread 'hpack::test::fixture::python_hpack::story_20' panicked at src/hpack/test/fixture.rs:14:37:
@@ -2353,6 +2348,11 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 ---- hpack::test::fixture::python_hpack::story_22 stdout ----
 
 thread 'hpack::test::fixture::python_hpack::story_22' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::python_hpack::story_23 stdout ----
+
+thread 'hpack::test::fixture::python_hpack::story_23' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::python_hpack::story_24 stdout ----
@@ -2380,14 +2380,14 @@ called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, messa
 thread 'hpack::test::fixture::python_hpack::story_28' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
----- hpack::test::fixture::python_hpack::story_30 stdout ----
-
-thread 'hpack::test::fixture::python_hpack::story_30' panicked at src/hpack/test/fixture.rs:14:37:
-called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
-
 ---- hpack::test::fixture::python_hpack::story_31 stdout ----
 
 thread 'hpack::test::fixture::python_hpack::story_31' panicked at src/hpack/test/fixture.rs:14:37:
+called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
+
+---- hpack::test::fixture::python_hpack::story_30 stdout ----
+
+thread 'hpack::test::fixture::python_hpack::story_30' panicked at src/hpack/test/fixture.rs:14:37:
 called `Result::unwrap()` on an `Err` value: Os { code: 2, kind: NotFound, message: "No such file or directory" }
 
 ---- hpack::test::fixture::python_hpack::story_29 stdout ----
@@ -2780,7 +2780,7 @@ failures:
     hpack::test::fixture::python_hpack::story_30
     hpack::test::fixture::python_hpack::story_31
 
-test result: FAILED. 33 passed; 382 failed; 1 ignored; 0 measured; 0 filtered out; finished in 21.90s
+test result: FAILED. 33 passed; 382 failed; 1 ignored; 0 measured; 0 filtered out; finished in 22.23s
 
 error: test failed, to rerun pass `--lib`
 + RESULT=101

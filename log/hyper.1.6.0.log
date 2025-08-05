@@ -8,20 +8,19 @@
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
    Compiling proc-macro2 v1.0.89
    Compiling unicode-ident v1.0.13
    Compiling libc v0.2.164
-   Compiling pin-project-lite v0.2.15
    Compiling bytes v1.8.0
+   Compiling pin-project-lite v0.2.15
    Compiling futures-core v0.3.31
    Compiling memchr v2.7.4
-   Compiling aho-corasick v1.1.3
    Compiling quote v1.0.37
-   Compiling socket2 v0.5.7
+   Compiling aho-corasick v1.1.3
    Compiling syn v2.0.87
-   Compiling mio v1.0.2
    Compiling futures-sink v0.3.31
+   Compiling socket2 v0.5.7
+   Compiling mio v1.0.2
    Compiling regex-syntax v0.8.5
    Compiling itoa v1.0.11
    Compiling fnv v1.0.7
@@ -29,10 +28,10 @@
    Compiling http v1.2.0
    Compiling regex-automata v0.4.9
    Compiling is-terminal v0.4.13
-   Compiling termcolor v1.4.1
-   Compiling pin-utils v0.1.0
-   Compiling log v0.4.22
    Compiling futures-task v0.3.31
+   Compiling termcolor v1.4.1
+   Compiling log v0.4.22
+   Compiling pin-utils v0.1.0
    Compiling humantime v2.1.0
    Compiling serde_json v1.0.133
    Compiling futures-util v0.3.31
