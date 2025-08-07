@@ -5,7 +5,6 @@
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
-    Blocking waiting for file lock on package cache
     Updating crates.io index
     Blocking waiting for file lock on package cache
      Locking 2 packages to latest compatible versions
