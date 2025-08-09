@@ -5,10 +5,12 @@
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
+    Blocking waiting for file lock on package cache
     Updating crates.io index
     Blocking waiting for file lock on package cache
      Locking 75 packages to latest compatible versions
       Adding tokio v0.1.22 (available: v1.47.1)
+    Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
    Compiling autocfg v1.5.0
    Compiling libc v0.2.174
@@ -16,51 +18,51 @@
    Compiling maybe-uninit v2.0.0
    Compiling lazy_static v1.5.0
    Compiling semver-parser v0.7.0
-   Compiling slab v0.4.11
    Compiling futures v0.1.31
    Compiling crossbeam-utils v0.7.2
+   Compiling slab v0.4.11
    Compiling semver v0.9.0
    Compiling rustc_version v0.2.3
-   Compiling log v0.4.27
    Compiling scopeguard v1.2.0
-   Compiling proc-macro2 v1.0.95
+   Compiling log v0.4.27
    Compiling iovec v0.1.4
+   Compiling proc-macro2 v1.0.95
    Compiling unicode-ident v1.0.18
    Compiling byteorder v1.5.0
-   Compiling tokio-executor v0.1.10
-   Compiling bytes v0.4.12
    Compiling parking_lot_core v0.6.3
-   Compiling net2 v0.2.39
+   Compiling bytes v0.4.12
+   Compiling num_cpus v1.17.0
+   Compiling tokio-executor v0.1.10
    Compiling tokio-io v0.1.13
    Compiling quote v1.0.40
-   Compiling num_cpus v1.17.0
+   Compiling net2 v0.2.39
    Compiling parking_lot v0.9.0
    Compiling memoffset v0.5.6
    Compiling smallvec v0.6.14
-   Compiling syn v2.0.104
    Compiling mio v0.6.23
+   Compiling syn v2.0.104
    Compiling lock_api v0.3.4
    Compiling crossbeam-epoch v0.8.2
    Compiling fnv v1.0.7
    Compiling tokio-sync v0.1.8
    Compiling tokio-reactor v0.1.12
-   Compiling futures-core v0.3.31
    Compiling futures-sink v0.3.31
-   Compiling futures-channel v0.3.31
+   Compiling futures-core v0.3.31
    Compiling crossbeam-deque v0.7.4
+   Compiling futures-channel v0.3.31
    Compiling tokio-codec v0.1.2
    Compiling crossbeam-queue v0.2.3
-   Compiling memchr v2.7.5
-   Compiling futures-io v0.3.31
    Compiling pin-project-lite v0.2.16
-   Compiling pin-utils v0.1.0
+   Compiling futures-io v0.3.31
    Compiling futures-task v0.3.31
+   Compiling memchr v2.7.5
+   Compiling pin-utils v0.1.0
    Compiling tokio-threadpool v0.1.18
    Compiling mio-uds v0.6.8
-   Compiling tokio-udp v0.1.6
    Compiling tokio-uds v0.2.7
-   Compiling tokio-tcp v0.1.4
    Compiling tokio-fs v0.1.7
+   Compiling tokio-udp v0.1.6
+   Compiling tokio-tcp v0.1.4
    Compiling tokio-timer v0.2.13
    Compiling tokio-current-thread v0.1.7
    Compiling static_assertions v1.1.0
@@ -73,105 +75,52 @@
    Compiling futures-executor v0.3.31
    Compiling futures v0.3.31 (/var/tmp/top100_artifacts/futures-0.3.31)
 error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures_test`
- --> tests/eager_drop.rs:4:5
-  |
-4 | use futures_test::future::FutureTestExt;
-  |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `futures_test`
-  |
-help: there is a crate or module with a similar name
-  |
-4 - use futures_test::future::FutureTestExt;
-4 + use futures_task::future::FutureTestExt;
-  |
+  --> tests/test_macro.rs:17:3
+   |
+17 | #[futures_test::test]
+   |   ^^^^^^^^^^^^ use of unresolved module or unlinked crate `futures_test`
 
 error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures_test`
- --> tests/io_buf_writer.rs:7:5
+  --> tests/test_macro.rs:11:3
+   |
+11 | #[futures_test::test]
+   |   ^^^^^^^^^^^^ use of unresolved module or unlinked crate `futures_test`
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures_test`
+ --> tests/test_macro.rs:1:3
   |
-7 | use futures_test::task::noop_context;
+1 | #[futures_test::test]
+  |   ^^^^^^^^^^^^ use of unresolved module or unlinked crate `futures_test`
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures_test`
+ --> tests/stream_abortable.rs:6:5
+  |
+6 | use futures_test::task::new_count_waker;
   |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `futures_test`
   |
 help: there is a crate or module with a similar name
   |
-7 - use futures_test::task::noop_context;
-7 + use futures_task::task::noop_context;
+6 - use futures_test::task::new_count_waker;
+6 + use futures_task::task::new_count_waker;
   |
 
 For more information about this error, try `rustc --explain E0433`.
-error[E0599]: no method named `run_in_background` found for struct `Map` in the current scope
-  --> tests/eager_drop.rs:25:10
-   |
-16 | /     future::ready::<Result<i32, i32>>(Err(1))
-17 | |         .map_ok(move |_| {
-18 | |             let _tx1 = tx1;
-19 | |             panic!("should not run");
-...  |
-24 | |         })
-25 | |         .run_in_background();
-   | |         -^^^^^^^^^^^^^^^^^ method not found in `Map<MapOk<Ready<Result<i32, i32>>, {closure@...}>, ...>`
-   | |_________|
-   |
-
-error: could not compile `futures` (test "io_buf_writer") due to 1 previous error
+error: could not compile `futures` (test "test_macro") due to 3 previous errors
 warning: build failed, waiting for other jobs to finish...
-error[E0599]: no method named `run_in_background` found for struct `Map` in the current scope
-  --> tests/eager_drop.rs:46:10
-   |
-37 | /     future::ready::<Result<i32, i32>>(Ok(1))
-38 | |         .map_err(move |_| {
-39 | |             let _tx1 = tx1;
-40 | |             panic!("should not run");
-...  |
-45 | |         })
-46 | |         .run_in_background();
-   | |         -^^^^^^^^^^^^^^^^^ method not found in `Map<MapErr<Ready<Result<i32, i32>>, {closure@...}>, ...>`
-   | |_________|
-   |
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures_test`
+ --> tests/future_abortable.rs:5:5
+  |
+5 | use futures_test::task::new_count_waker;
+  |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `futures_test`
+  |
+help: there is a crate or module with a similar name
+  |
+5 - use futures_test::task::new_count_waker;
+5 + use futures_task::task::new_count_waker;
+  |
 
-error[E0599]: no method named `run_in_background` found for struct `Then` in the current scope
-  --> tests/eager_drop.rs:78:10
-   |
-72 | /     FutureData { _data: tx1, future: rx0.unwrap_or_else(|_| panic!()) }
-73 | |         .then(move |_| {
-74 | |             assert!(rx1.recv().is_err()); // tx1 should have been dropped
-75 | |             tx2.send(()).unwrap();
-76 | |             future::ready(())
-77 | |         })
-78 | |         .run_in_background();
-   | |         -^^^^^^^^^^^^^^^^^ method not found in `Then<FutureData<UnwrapOrElse<Receiver<()>, ...>, ...>, ..., ...>`
-   | |_________|
-   |
-
-error[E0599]: no method named `run_in_background` found for struct `AndThen` in the current scope
-  --> tests/eager_drop.rs:97:10
-   |
-91 | /     FutureData { _data: tx1, future: rx0.unwrap_or_else(|_| panic!()) }
-92 | |         .and_then(move |_| {
-93 | |             assert!(rx1.recv().is_err()); // tx1 should have been dropped
-94 | |             tx2.send(()).unwrap();
-95 | |             future::ready(Ok(()))
-96 | |         })
-97 | |         .run_in_background();
-   | |         -^^^^^^^^^^^^^^^^^ method not found in `AndThen<FutureData<UnwrapOrElse<Receiver<...>, ...>, ...>, ..., ...>`
-   | |_________|
-   |
-
-error[E0599]: no method named `run_in_background` found for struct `OrElse` in the current scope
-   --> tests/eager_drop.rs:116:10
-    |
-110 | /     FutureData { _data: tx1, future: rx0.unwrap_or_else(|_| panic!()) }
-111 | |         .or_else(move |_| {
-112 | |             assert!(rx1.recv().is_err()); // tx1 should have been dropped
-113 | |             tx2.send(()).unwrap();
-114 | |             future::ready::<Result<(), ()>>(Ok(()))
-115 | |         })
-116 | |         .run_in_background();
-    | |         -^^^^^^^^^^^^^^^^^ method not found in `OrElse<FutureData<UnwrapOrElse<Receiver<...>, ...>, ...>, ..., ...>`
-    | |_________|
-    |
-
-Some errors have detailed explanations: E0433, E0599.
-For more information about an error, try `rustc --explain E0433`.
-error: could not compile `futures` (test "eager_drop") due to 6 previous errors
+error: could not compile `futures` (test "future_abortable") due to 1 previous error
+error: could not compile `futures` (test "stream_abortable") due to 1 previous error
 + RESULT=101
 + cd /var/tmp/top100_artifacts
 + rm -rf /var/tmp/top100_artifacts/futures-0.3.31
