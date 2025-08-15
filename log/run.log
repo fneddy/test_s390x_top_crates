@@ -242,20 +242,20 @@ ID VERSION RESULT
 [60/100] tokio tokio-1.45.0 finished
 [61/100] linux-raw-sys 0.10.0 started
 [61/100] linux-raw-sys 0.10.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n linux-raw-sys -v 0.10.0 -t /var/tmp/top100_artifacts --
-[62/100] byteorder 1.5.0 started
-[62/100] byteorder 1.5.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n byteorder -v 1.5.0 -t /var/tmp/top100_artifacts --
-[63/100] windows_x86_64_msvc 0.53.0 started
-[63/100] windows_x86_64_msvc 0.53.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n windows_x86_64_msvc -v 0.53.0 -t /var/tmp/top100_artifacts --
+[62/100] windows_x86_64_msvc 0.53.0 started
+[62/100] windows_x86_64_msvc 0.53.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n windows_x86_64_msvc -v 0.53.0 -t /var/tmp/top100_artifacts --
+[63/100] byteorder 1.5.0 started
+[63/100] byteorder 1.5.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n byteorder -v 1.5.0 -t /var/tmp/top100_artifacts --
 [64/100] percent-encoding 2.3.1 started
 [64/100] percent-encoding 2.3.1 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n percent-encoding -v 2.3.1 -t /var/tmp/top100_artifacts --
 [64/100] percent-encoding 2.3.1 pass
 [64/100] percent-encoding 2.3.1 finished
-[63/100] windows_x86_64_msvc 0.53.0 pass
-[63/100] windows_x86_64_msvc 0.53.0 finished
+[62/100] windows_x86_64_msvc 0.53.0 pass
+[62/100] windows_x86_64_msvc 0.53.0 finished
 [61/100] linux-raw-sys 0.10.0 pass
 [61/100] linux-raw-sys 0.10.0 finished
-[62/100] byteorder 1.5.0 pass
-[62/100] byteorder 1.5.0 finished
+[63/100] byteorder 1.5.0 pass
+[63/100] byteorder 1.5.0 finished
 [65/100] fastrand 2.3.0 started
 [65/100] fastrand 2.3.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n fastrand -v 2.3.0 -t /var/tmp/top100_artifacts --
 [66/100] hyper 1.6.0 started
@@ -294,32 +294,32 @@ ID VERSION RESULT
 [74/100] windows_i686_msvc 0.53.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n windows_i686_msvc -v 0.53.0 -t /var/tmp/top100_artifacts --
 [75/100] windows_aarch64_msvc 0.53.0 started
 [75/100] windows_aarch64_msvc 0.53.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n windows_aarch64_msvc -v 0.53.0 -t /var/tmp/top100_artifacts --
-[76/100] rustls 0.23.31 started
-[76/100] rustls 0.23.31 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n rustls -v 0.23.31 -t /var/tmp/top100_artifacts --
-[75/100] windows_aarch64_msvc 0.53.0 pass
+[76/100] windows_i686_gnu 0.53.0 started
+[76/100] windows_i686_gnu 0.53.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n windows_i686_gnu -v 0.53.0 -t /var/tmp/top100_artifacts --
 [74/100] windows_i686_msvc 0.53.0 pass
+[75/100] windows_aarch64_msvc 0.53.0 pass
 [74/100] windows_i686_msvc 0.53.0 finished
 [75/100] windows_aarch64_msvc 0.53.0 finished
-[76/100] rustls 0.23.31 fail
-[76/100] rustls 0.23.31 finished
+[76/100] windows_i686_gnu 0.53.0 pass
+[76/100] windows_i686_gnu 0.53.0 finished
 [73/100] ahash 0.8.12 pass
 [73/100] ahash 0.8.12 finished
-[77/100] windows_i686_gnu 0.53.0 started
-[77/100] windows_i686_gnu 0.53.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n windows_i686_gnu -v 0.53.0 -t /var/tmp/top100_artifacts --
+[77/100] rustls 0.23.31 started
+[77/100] rustls 0.23.31 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n rustls -v 0.23.31 -t /var/tmp/top100_artifacts --
 [78/100] futures-util 0.3.31 started
 [78/100] futures-util 0.3.31 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n futures-util -v 0.3.31 -t /var/tmp/top100_artifacts --
 [79/100] sha2 0.11.0-rc.0 started
 [79/100] sha2 0.11.0-rc.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n sha2 -v 0.11.0-rc.0 -t /var/tmp/top100_artifacts --
 [80/100] futures-task 0.3.31 started
 [80/100] futures-task 0.3.31 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n futures-task -v 0.3.31 -t /var/tmp/top100_artifacts --
-[77/100] windows_i686_gnu 0.53.0 pass
-[77/100] windows_i686_gnu 0.53.0 finished
 [80/100] futures-task 0.3.31 pass
 [80/100] futures-task 0.3.31 finished
 [79/100] sha2 0.11.0-rc.0 pass
 [79/100] sha2 0.11.0-rc.0 finished
 [78/100] futures-util 0.3.31 pass
 [78/100] futures-util 0.3.31 finished
+[77/100] rustls 0.23.31 fail
+[77/100] rustls 0.23.31 finished
 [81/100] chrono 0.4.41 started
 [81/100] chrono 0.4.41 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n chrono -v 0.4.41 -t /var/tmp/top100_artifacts --
 [82/100] fnv 1.0.7 started
@@ -328,10 +328,10 @@ ID VERSION RESULT
 [83/100] futures-sink 0.3.31 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n futures-sink -v 0.3.31 -t /var/tmp/top100_artifacts --
 [84/100] http-body 1.0.1 started
 [84/100] http-body 1.0.1 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n http-body -v 1.0.1 -t /var/tmp/top100_artifacts --
-[83/100] futures-sink 0.3.31 pass
-[83/100] futures-sink 0.3.31 finished
 [82/100] fnv 1.0.7 pass
 [82/100] fnv 1.0.7 finished
+[83/100] futures-sink 0.3.31 pass
+[83/100] futures-sink 0.3.31 finished
 [84/100] http-body 1.0.1 pass
 [84/100] http-body 1.0.1 finished
 [81/100] chrono 0.4.41 pass
@@ -348,22 +348,22 @@ ID VERSION RESULT
 [86/100] tracing-core 0.1.34 finished
 [85/100] typenum 1.18.0 pass
 [85/100] typenum 1.18.0 finished
-[87/100] futures-channel 0.3.31 pass
-[87/100] futures-channel 0.3.31 finished
 [88/100] tracing 0.1.41 fail
 [88/100] tracing 0.1.41 finished
+[87/100] futures-channel 0.3.31 pass
+[87/100] futures-channel 0.3.31 finished
 [89/100] unicode-width 0.2.1 started
 [89/100] unicode-width 0.2.1 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n unicode-width -v 0.2.1 -t /var/tmp/top100_artifacts --
 [90/100] h2 0.4.12 started
 [90/100] h2 0.4.12 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n h2 -v 0.4.12 -t /var/tmp/top100_artifacts --
-[91/100] tempfile 3.20.0 started
-[91/100] tempfile 3.20.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n tempfile -v 3.20.0 -t /var/tmp/top100_artifacts --
-[92/100] windows-targets 0.53.3 started
-[92/100] windows-targets 0.53.3 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n windows-targets -v 0.53.3 -t /var/tmp/top100_artifacts --
-[92/100] windows-targets 0.53.3 pass
-[92/100] windows-targets 0.53.3 finished
-[91/100] tempfile 3.20.0 pass
-[91/100] tempfile 3.20.0 finished
+[91/100] windows-targets 0.53.3 started
+[91/100] windows-targets 0.53.3 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n windows-targets -v 0.53.3 -t /var/tmp/top100_artifacts --
+[92/100] tempfile 3.20.0 started
+[92/100] tempfile 3.20.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n tempfile -v 3.20.0 -t /var/tmp/top100_artifacts --
+[91/100] windows-targets 0.53.3 pass
+[91/100] windows-targets 0.53.3 finished
+[92/100] tempfile 3.20.0 pass
+[92/100] tempfile 3.20.0 finished
 [89/100] unicode-width 0.2.1 pass
 [89/100] unicode-width 0.2.1 finished
 [90/100] h2 0.4.12 fail
