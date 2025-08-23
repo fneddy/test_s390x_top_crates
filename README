@@ -1,4 +1,4 @@
-Testresults as of Fri Aug 22 02:53:00 PM CEST 2025
+Testresults as of Sat Aug 23 02:53:00 PM CEST 2025
 PASS: 90
 FAIL: 9
 SKIPPED: 2
@@ -11,5 +11,5 @@ FAILED_CRATES:
 [77/100] rustls 0.23.31 fail
 [88/100] tracing 0.1.41 fail
 [89/100] h2 0.4.12 fail
-[95/100] futures 0.3.31 fail
+[96/100] futures 0.3.31 fail
 [93/100] tokio-util 0.7.16 fail
