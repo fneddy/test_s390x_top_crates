@@ -1,6 +1,6 @@
-Testresults as of Tue Sep  2 02:53:00 PM CEST 2025
-PASS: 90
-FAIL: 9
+Testresults as of Wed Sep  3 02:53:01 PM CEST 2025
+PASS: 89
+FAIL: 10
 SKIPPED: 2
 
 FAILED_CRATES:
@@ -8,7 +8,8 @@ FAILED_CRATES:
 [21/100] once_cell 1.21.3 fail
 [43/100] idna 1.1.0 fail
 [51/100] pin-project-lite 0.2.16 fail
-[77/100] rustls 0.23.31 fail
+[76/100] rustls 0.23.31 fail
+[81/100] sha2 0.11.0-rc.2 fail
 [88/100] tracing 0.1.41 fail
 [89/100] h2 0.4.12 fail
 [95/100] futures 0.3.31 fail

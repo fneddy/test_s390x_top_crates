@@ -1,0 +1,128 @@
+[sha2] download directory: /var/tmp/top100_artifacts/sha2-0.11.0-rc.2
++ curl -sL https://crates.io/api/v1/crates/sha2/0.11.0-rc.2/download
++ tar xzf -
++ cd /var/tmp/top100_artifacts/sha2-0.11.0-rc.2
++ cargo clean
+     Removed 0 files
++ cargo +stable test ''
+    Updating crates.io index
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
+ Downloading crates ...
+  Downloaded digest v0.11.0-rc.1
+  Downloaded base16ct v0.3.0
+    Blocking waiting for file lock on package cache
+   Compiling typenum v1.18.0
+   Compiling blobby v0.4.0-pre.0
+   Compiling const-oid v0.10.1
+   Compiling cfg-if v1.0.3
+   Compiling hex-literal v1.0.0
+   Compiling base16ct v0.3.0
+   Compiling hybrid-array v0.4.0
+   Compiling block-buffer v0.11.0-rc.5
+   Compiling crypto-common v0.2.0-rc.4
+   Compiling digest v0.11.0-rc.1
+   Compiling sha2 v0.11.0-rc.2 (/var/tmp/top100_artifacts/sha2-0.11.0-rc.2)
+error[E0433]: failed to resolve: could not find `parse_into_structs` in `blobby`
+ --> tests/mod.rs:8:1
+  |
+8 | new_test!(sha224_kat, Sha224, fixed_reset_test);
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ could not find `parse_into_structs` in `blobby`
+  |
+  = note: this error originates in the macro `new_test` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0433]: failed to resolve: could not find `parse_into_structs` in `blobby`
+ --> tests/mod.rs:9:1
+  |
+9 | new_test!(sha256_kat, Sha256, fixed_reset_test);
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ could not find `parse_into_structs` in `blobby`
+  |
+  = note: this error originates in the macro `new_test` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0433]: failed to resolve: could not find `parse_into_structs` in `blobby`
+  --> tests/mod.rs:10:1
+   |
+10 | new_test!(sha384_kat, Sha384, fixed_reset_test);
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ could not find `parse_into_structs` in `blobby`
+   |
+   = note: this error originates in the macro `new_test` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0433]: failed to resolve: could not find `parse_into_structs` in `blobby`
+  --> tests/mod.rs:11:1
+   |
+11 | new_test!(sha512_kat, Sha512, fixed_reset_test);
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ could not find `parse_into_structs` in `blobby`
+   |
+   = note: this error originates in the macro `new_test` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0433]: failed to resolve: could not find `parse_into_structs` in `blobby`
+  --> tests/mod.rs:12:1
+   |
+12 | new_test!(sha512_224_kat, Sha512_224, fixed_reset_test);
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ could not find `parse_into_structs` in `blobby`
+   |
+   = note: this error originates in the macro `new_test` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0433]: failed to resolve: could not find `parse_into_structs` in `blobby`
+  --> tests/mod.rs:13:1
+   |
+13 | new_test!(sha512_256_kat, Sha512_256, fixed_reset_test);
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ could not find `parse_into_structs` in `blobby`
+   |
+   = note: this error originates in the macro `new_test` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0425]: cannot find value `TEST_VECTORS` in this scope
+ --> tests/mod.rs:8:1
+  |
+8 | new_test!(sha224_kat, Sha224, fixed_reset_test);
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ not found in this scope
+  |
+  = note: this error originates in the macro `new_test` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0425]: cannot find value `TEST_VECTORS` in this scope
+ --> tests/mod.rs:9:1
+  |
+9 | new_test!(sha256_kat, Sha256, fixed_reset_test);
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ not found in this scope
+  |
+  = note: this error originates in the macro `new_test` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0425]: cannot find value `TEST_VECTORS` in this scope
+  --> tests/mod.rs:10:1
+   |
+10 | new_test!(sha384_kat, Sha384, fixed_reset_test);
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ not found in this scope
+   |
+   = note: this error originates in the macro `new_test` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0425]: cannot find value `TEST_VECTORS` in this scope
+  --> tests/mod.rs:11:1
+   |
+11 | new_test!(sha512_kat, Sha512, fixed_reset_test);
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ not found in this scope
+   |
+   = note: this error originates in the macro `new_test` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0425]: cannot find value `TEST_VECTORS` in this scope
+  --> tests/mod.rs:12:1
+   |
+12 | new_test!(sha512_224_kat, Sha512_224, fixed_reset_test);
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ not found in this scope
+   |
+   = note: this error originates in the macro `new_test` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0425]: cannot find value `TEST_VECTORS` in this scope
+  --> tests/mod.rs:13:1
+   |
+13 | new_test!(sha512_256_kat, Sha512_256, fixed_reset_test);
+   | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ not found in this scope
+   |
+   = note: this error originates in the macro `new_test` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+Some errors have detailed explanations: E0425, E0433.
+For more information about an error, try `rustc --explain E0425`.
+error: could not compile `sha2` (test "mod") due to 12 previous errors
++ RESULT=101
++ cd /var/tmp/top100_artifacts
++ rm -rf /var/tmp/top100_artifacts/sha2-0.11.0-rc.2
++ exit 101
