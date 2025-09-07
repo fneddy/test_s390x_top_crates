@@ -312,10 +312,10 @@ ID VERSION RESULT
 [79/100] futures-task 0.3.31 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n futures-task -v 0.3.31 -t /var/tmp/top100_artifacts --
 [80/100] fnv 1.0.7 started
 [80/100] fnv 1.0.7 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n fnv -v 1.0.7 -t /var/tmp/top100_artifacts --
-[80/100] fnv 1.0.7 pass
 [79/100] futures-task 0.3.31 pass
-[80/100] fnv 1.0.7 finished
 [79/100] futures-task 0.3.31 finished
+[80/100] fnv 1.0.7 pass
+[80/100] fnv 1.0.7 finished
 [78/100] futures-util 0.3.31 pass
 [78/100] futures-util 0.3.31 finished
 [77/100] ahash 0.8.12 pass
