@@ -33,8 +33,8 @@ ID VERSION RESULT
 [6/100] base64 0.22.1 finished
 [9/100] rand_core 0.9.3 started
 [9/100] rand_core 0.9.3 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n rand_core -v 0.9.3 -t /var/tmp/top100_artifacts --
-[10/100] rand 0.9.2 started
-[10/100] rand 0.9.2 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n rand -v 0.9.2 -t /var/tmp/top100_artifacts --
+[10/100] rand 0.10.0-rc.0 started
+[10/100] rand 0.10.0-rc.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n rand -v 0.10.0-rc.0 -t /var/tmp/top100_artifacts --
 [11/100] getrandom 0.3.3 started
 [11/100] getrandom 0.3.3 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n getrandom -v 0.3.3 -t /var/tmp/top100_artifacts --
 [12/100] cfg-if 1.0.3 started
@@ -45,8 +45,8 @@ ID VERSION RESULT
 [9/100] rand_core 0.9.3 finished
 [11/100] getrandom 0.3.3 pass
 [11/100] getrandom 0.3.3 finished
-[10/100] rand 0.9.2 pass
-[10/100] rand 0.9.2 finished
+[10/100] rand 0.10.0-rc.0 pass
+[10/100] rand 0.10.0-rc.0 finished
 [13/100] serde 1.0.219 started
 [13/100] serde 1.0.219 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n serde -v 1.0.219 -t /var/tmp/top100_artifacts --
 [14/100] indexmap 2.11.1 started
@@ -200,10 +200,10 @@ ID VERSION RESULT
 [51/100] pin-project-lite 0.2.16 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n pin-project-lite -v 0.2.16 -t /var/tmp/top100_artifacts --
 [52/100] block-buffer 0.11.0-rc.5 started
 [52/100] block-buffer 0.11.0-rc.5 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n block-buffer -v 0.11.0-rc.5 -t /var/tmp/top100_artifacts --
-[50/100] scopeguard 1.2.0 pass
-[50/100] scopeguard 1.2.0 finished
 [49/100] windows-sys 0.61.0 pass
 [49/100] windows-sys 0.61.0 finished
+[50/100] scopeguard 1.2.0 pass
+[50/100] scopeguard 1.2.0 finished
 [51/100] pin-project-lite 0.2.16 fail
 [51/100] pin-project-lite 0.2.16 finished
 [52/100] block-buffer 0.11.0-rc.5 pass
@@ -224,20 +224,20 @@ ID VERSION RESULT
 [55/100] crossbeam-utils 0.8.21 finished
 [56/100] anyhow 1.0.99 pass
 [56/100] anyhow 1.0.99 finished
-[57/100] ppv-lite86 0.2.21 started
-[57/100] ppv-lite86 0.2.21 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n ppv-lite86 -v 0.2.21 -t /var/tmp/top100_artifacts --
-[58/100] http 1.3.1 started
-[58/100] http 1.3.1 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n http -v 1.3.1 -t /var/tmp/top100_artifacts --
+[57/100] http 1.3.1 started
+[57/100] http 1.3.1 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n http -v 1.3.1 -t /var/tmp/top100_artifacts --
+[58/100] ppv-lite86 0.2.21 started
+[58/100] ppv-lite86 0.2.21 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n ppv-lite86 -v 0.2.21 -t /var/tmp/top100_artifacts --
 [59/100] tokio tokio-1.45.0 started
 [59/100] tokio tokio-1.45.0 /home/eddy/src/test_s390x_top_crates/scripts/test_git.sh -n tokio -g https://github.com/tokio-rs/tokio/ -b tokio-1.45.0 -t /var/tmp/top100_artifacts --
 [60/100] linux-raw-sys 0.11.0 started
 [60/100] linux-raw-sys 0.11.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n linux-raw-sys -v 0.11.0 -t /var/tmp/top100_artifacts --
 [60/100] linux-raw-sys 0.11.0 pass
 [60/100] linux-raw-sys 0.11.0 finished
-[57/100] ppv-lite86 0.2.21 pass
-[57/100] ppv-lite86 0.2.21 finished
-[58/100] http 1.3.1 pass
-[58/100] http 1.3.1 finished
+[58/100] ppv-lite86 0.2.21 pass
+[58/100] ppv-lite86 0.2.21 finished
+[57/100] http 1.3.1 pass
+[57/100] http 1.3.1 finished
 [59/100] tokio tokio-1.45.0 pass
 [59/100] tokio tokio-1.45.0 finished
 [61/100] windows_x86_64_msvc 0.53.0 started
@@ -297,9 +297,9 @@ ID VERSION RESULT
 [76/100] rustls 0.23.31 started
 [76/100] rustls 0.23.31 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n rustls -v 0.23.31 -t /var/tmp/top100_artifacts --
 [75/100] windows_i686_gnu 0.53.0 pass
+[75/100] windows_i686_gnu 0.53.0 finished
 [74/100] windows_aarch64_msvc 0.53.0 pass
 [74/100] windows_aarch64_msvc 0.53.0 finished
-[75/100] windows_i686_gnu 0.53.0 finished
 [73/100] windows_i686_msvc 0.53.0 pass
 [73/100] windows_i686_msvc 0.53.0 finished
 [76/100] rustls 0.23.31 fail
@@ -326,28 +326,28 @@ ID VERSION RESULT
 [82/100] tracing-core 0.1.34 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n tracing-core -v 0.1.34 -t /var/tmp/top100_artifacts --
 [83/100] futures-sink 0.3.31 started
 [83/100] futures-sink 0.3.31 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n futures-sink -v 0.3.31 -t /var/tmp/top100_artifacts --
-[84/100] chrono 0.4.42 started
-[84/100] chrono 0.4.42 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n chrono -v 0.4.42 -t /var/tmp/top100_artifacts --
+[84/100] http-body 1.0.1 started
+[84/100] http-body 1.0.1 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n http-body -v 1.0.1 -t /var/tmp/top100_artifacts --
 [83/100] futures-sink 0.3.31 pass
 [83/100] futures-sink 0.3.31 finished
 [82/100] tracing-core 0.1.34 pass
+[84/100] http-body 1.0.1 pass
 [82/100] tracing-core 0.1.34 finished
+[84/100] http-body 1.0.1 finished
 [81/100] sha2 0.11.0-rc.2 fail
 [81/100] sha2 0.11.0-rc.2 finished
-[84/100] chrono 0.4.42 fail
-[84/100] chrono 0.4.42 finished
-[85/100] http-body 1.0.1 started
-[85/100] http-body 1.0.1 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n http-body -v 1.0.1 -t /var/tmp/top100_artifacts --
+[85/100] chrono 0.4.42 started
+[85/100] chrono 0.4.42 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n chrono -v 0.4.42 -t /var/tmp/top100_artifacts --
 [86/100] typenum 1.18.0 started
 [86/100] typenum 1.18.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n typenum -v 1.18.0 -t /var/tmp/top100_artifacts --
 [87/100] futures-channel 0.3.31 started
 [87/100] futures-channel 0.3.31 /home/eddy/src/test_s390x_top_crates/scripts/test_git.sh -n futures-channel -g https://github.com/rust-lang/futures-rs.git -b 0.3.31 -t /var/tmp/top100_artifacts -- --manifest-path futures-channel/Cargo.toml
 [88/100] tracing 0.1.41 started
 [88/100] tracing 0.1.41 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n tracing -v 0.1.41 -t /var/tmp/top100_artifacts --
-[85/100] http-body 1.0.1 pass
-[85/100] http-body 1.0.1 finished
 [86/100] typenum 1.18.0 pass
 [86/100] typenum 1.18.0 finished
+[85/100] chrono 0.4.42 fail
+[85/100] chrono 0.4.42 finished
 [88/100] tracing 0.1.41 fail
 [88/100] tracing 0.1.41 finished
 [87/100] futures-channel 0.3.31 pass
@@ -380,10 +380,10 @@ ID VERSION RESULT
 [93/100] pin-utils 0.1.0 finished
 [96/100] futures 0.3.31 fail
 [96/100] futures 0.3.31 finished
-[95/100] uuid 1.18.1 pass
-[95/100] uuid 1.18.1 finished
 [94/100] tokio-util 0.7.16 fail
 [94/100] tokio-util 0.7.16 finished
+[95/100] uuid 1.18.1 pass
+[95/100] uuid 1.18.1 finished
 [97/100] pkg-config 0.3.32 started
 [97/100] pkg-config 0.3.32 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n pkg-config -v 0.3.32 -t /var/tmp/top100_artifacts --
 [98/100] futures-io 0.3.31 started

@@ -5,9 +5,11 @@
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
+    Blocking waiting for file lock on package cache
+    Blocking waiting for file lock on package cache
    Compiling typenum v1.18.0
-   Compiling blobby v0.4.0-pre.0
    Compiling const-oid v0.10.1
+   Compiling blobby v0.4.0-pre.0
    Compiling cfg-if v1.0.3
    Compiling base16ct v0.3.0
    Compiling hex-literal v1.0.0
