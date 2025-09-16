@@ -119,6 +119,7 @@ error[E0425]: cannot find value `TEST_VECTORS` in this scope
 Some errors have detailed explanations: E0425, E0433.
 For more information about an error, try `rustc --explain E0425`.
 error: could not compile `sha2` (test "mod") due to 12 previous errors
+warning: build failed, waiting for other jobs to finish...
 + RESULT=101
 + cd /var/tmp/top100_artifacts
 + rm -rf /var/tmp/top100_artifacts/sha2-0.11.0-rc.2

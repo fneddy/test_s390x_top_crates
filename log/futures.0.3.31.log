@@ -22,20 +22,20 @@
    Compiling crossbeam-utils v0.7.2
    Compiling semver v0.9.0
    Compiling rustc_version v0.2.3
-   Compiling scopeguard v1.2.0
-   Compiling iovec v0.1.4
    Compiling log v0.4.28
+   Compiling scopeguard v1.2.0
    Compiling proc-macro2 v1.0.101
-   Compiling byteorder v1.5.0
    Compiling unicode-ident v1.0.19
-   Compiling parking_lot_core v0.6.3
    Compiling tokio-executor v0.1.10
-   Compiling bytes v0.4.12
+   Compiling iovec v0.1.4
+   Compiling byteorder v1.5.0
+   Compiling parking_lot_core v0.6.3
    Compiling net2 v0.2.39
+   Compiling bytes v0.4.12
    Compiling num_cpus v1.17.0
-   Compiling quote v1.0.40
-   Compiling tokio-io v0.1.13
    Compiling parking_lot v0.9.0
+   Compiling tokio-io v0.1.13
+   Compiling quote v1.0.40
    Compiling memoffset v0.5.6
    Compiling smallvec v0.6.14
    Compiling syn v2.0.106
@@ -51,53 +51,56 @@
    Compiling crossbeam-deque v0.7.4
    Compiling tokio-codec v0.1.2
    Compiling crossbeam-queue v0.2.3
+   Compiling pin-project-lite v0.2.16
+   Compiling futures-task v0.3.31
+   Compiling pin-utils v0.1.0
    Compiling futures-io v0.3.31
    Compiling memchr v2.7.5
-   Compiling pin-project-lite v0.2.16
-   Compiling pin-utils v0.1.0
-   Compiling futures-task v0.3.31
    Compiling tokio-threadpool v0.1.18
    Compiling mio-uds v0.6.8
    Compiling tokio-uds v0.2.7
-   Compiling tokio-udp v0.1.6
    Compiling tokio-fs v0.1.7
+   Compiling tokio-udp v0.1.6
    Compiling tokio-tcp v0.1.4
-   Compiling tokio-timer v0.2.13
    Compiling tokio-current-thread v0.1.7
-   Compiling tokio v0.1.22
-   Compiling assert_matches v1.5.0
+   Compiling tokio-timer v0.2.13
    Compiling static_assertions v1.1.0
+   Compiling assert_matches v1.5.0
+   Compiling tokio v0.1.22
    Compiling futures-macro v0.3.31
    Compiling pin-project-internal v1.1.10
-   Compiling pin-project v1.1.10
    Compiling futures-util v0.3.31
+   Compiling pin-project v1.1.10
    Compiling futures-executor v0.3.31
    Compiling futures v0.3.31 (/var/tmp/top100_artifacts/futures-0.3.31)
-error: `futures` tests must have all stable features activated: use `--all-features` or `--features default,thread-pool,io-compat`
-  --> tests/_require_features.rs:10:1
-   |
-10 | / compile_error!(
-11 | |     "`futures` tests must have all stable features activated: \
-12 | |     use `--all-features` or `--features default,thread-pool,io-compat`"
-13 | | );
-   | |_^
-
-error: could not compile `futures` (test "_require_features") due to 1 previous error
-warning: build failed, waiting for other jobs to finish...
 error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures_test`
-  --> tests/stream_try_stream.rs:11:5
-   |
-11 | use futures_test::task::noop_context;
-   |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `futures_test`
-   |
+ --> tests/future_fuse.rs:3:5
+  |
+3 | use futures_test::task::panic_waker;
+  |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `futures_test`
+  |
 help: there is a crate or module with a similar name
-   |
-11 - use futures_test::task::noop_context;
-11 + use futures_task::task::noop_context;
-   |
+  |
+3 - use futures_test::task::panic_waker;
+3 + use futures_task::task::panic_waker;
+  |
+
+error[E0433]: failed to resolve: use of unresolved module or unlinked crate `futures_test`
+ --> tests/stream_futures_ordered.rs:6:5
+  |
+6 | use futures_test::task::noop_context;
+  |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `futures_test`
+  |
+help: there is a crate or module with a similar name
+  |
+6 - use futures_test::task::noop_context;
+6 + use futures_task::task::noop_context;
+  |
 
 For more information about this error, try `rustc --explain E0433`.
-error: could not compile `futures` (test "stream_try_stream") due to 1 previous error
+error: could not compile `futures` (test "future_fuse") due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `futures` (test "stream_futures_ordered") due to 1 previous error
 + RESULT=101
 + cd /var/tmp/top100_artifacts
 + rm -rf /var/tmp/top100_artifacts/futures-0.3.31
