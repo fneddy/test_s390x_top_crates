@@ -47,24 +47,24 @@ ID VERSION RESULT
 [9/100] regex-syntax 0.8.6 finished
 [10/100] rand 0.10.0-rc.0 pass
 [10/100] rand 0.10.0-rc.0 finished
-[13/100] serde 1.0.225 started
-[13/100] serde 1.0.225 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n serde -v 1.0.225 -t /var/tmp/top100_artifacts --
+[13/100] serde 1.0.226 started
+[13/100] serde 1.0.226 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n serde -v 1.0.226 -t /var/tmp/top100_artifacts --
 [14/100] indexmap 2.11.4 started
 [14/100] indexmap 2.11.4 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n indexmap -v 2.11.4 -t /var/tmp/top100_artifacts --
 [15/100] itertools 0.14.0 started
 [15/100] itertools 0.14.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n itertools -v 0.14.0 -t /var/tmp/top100_artifacts --
 [16/100] autocfg 1.5.0 started
 [16/100] autocfg 1.5.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n autocfg -v 1.5.0 -t /var/tmp/top100_artifacts --
-[13/100] serde 1.0.225 pass
-[13/100] serde 1.0.225 finished
+[13/100] serde 1.0.226 pass
+[13/100] serde 1.0.226 finished
 [16/100] autocfg 1.5.0 pass
 [16/100] autocfg 1.5.0 finished
 [14/100] indexmap 2.11.4 pass
 [14/100] indexmap 2.11.4 finished
 [15/100] itertools 0.14.0 pass
 [15/100] itertools 0.14.0 finished
-[17/100] serde_derive 1.0.225 started
-[17/100] serde_derive 1.0.225 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n serde_derive -v 1.0.225 -t /var/tmp/top100_artifacts --
+[17/100] serde_derive 1.0.226 started
+[17/100] serde_derive 1.0.226 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n serde_derive -v 1.0.226 -t /var/tmp/top100_artifacts --
 [18/100] itoa 1.0.15 started
 [18/100] itoa 1.0.15 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n itoa -v 1.0.15 -t /var/tmp/top100_artifacts --
 [19/100] memchr 2.7.5 skip
@@ -74,17 +74,17 @@ ID VERSION RESULT
 [20/100] serde_json 1.0.145 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n serde_json -v 1.0.145 -t /var/tmp/top100_artifacts --
 [18/100] itoa 1.0.15 pass
 [18/100] itoa 1.0.15 finished
+[17/100] serde_derive 1.0.226 pass
+[17/100] serde_derive 1.0.226 finished
 [19/100] rand_chacha 0.9.0 pass
 [19/100] rand_chacha 0.9.0 finished
-[17/100] serde_derive 1.0.225 pass
-[17/100] serde_derive 1.0.225 finished
 [20/100] serde_json 1.0.145 pass
 [20/100] serde_json 1.0.145 finished
 [21/100] once_cell 1.21.3 started
 [21/100] once_cell 1.21.3 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n once_cell -v 1.21.3 -t /var/tmp/top100_artifacts --
 [22/100] log 0.4.28 started
-[22/100] log 0.4.28 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n log -v 0.4.28 -t /var/tmp/top100_artifacts --
 [23/100] regex-automata regex-automata-0.4.9 started
+[22/100] log 0.4.28 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n log -v 0.4.28 -t /var/tmp/top100_artifacts --
 [23/100] regex-automata regex-automata-0.4.9 /home/eddy/src/test_s390x_top_crates/scripts/test_git.sh -n regex-automata -g https://github.com/rust-lang/regex.git -b regex-automata-0.4.9 -t /var/tmp/top100_artifacts -- --manifest-path regex-automata/Cargo.toml --test integration
 [24/100] unicode-ident 1.0.19 started
 [24/100] unicode-ident 1.0.19 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n unicode-ident -v 1.0.19 -t /var/tmp/top100_artifacts --
@@ -280,10 +280,10 @@ ID VERSION RESULT
 [71/100] slab 0.4.11 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n slab -v 0.4.11 -t /var/tmp/top100_artifacts --
 [72/100] futures-core 0.3.31 started
 [72/100] futures-core 0.3.31 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n futures-core -v 0.3.31 -t /var/tmp/top100_artifacts --
-[72/100] futures-core 0.3.31 pass
-[72/100] futures-core 0.3.31 finished
 [70/100] windows_x86_64_gnu 0.53.0 pass
 [70/100] windows_x86_64_gnu 0.53.0 finished
+[72/100] futures-core 0.3.31 pass
+[72/100] futures-core 0.3.31 finished
 [71/100] slab 0.4.11 pass
 [71/100] slab 0.4.11 finished
 [69/100] generic-array 1.2.0 pass
@@ -332,10 +332,10 @@ ID VERSION RESULT
 [84/100] futures-sink 0.3.31 finished
 [81/100] fnv 1.0.7 pass
 [81/100] fnv 1.0.7 finished
-[82/100] http-body 1.0.1 pass
-[82/100] http-body 1.0.1 finished
 [83/100] tracing-core 0.1.34 pass
 [83/100] tracing-core 0.1.34 finished
+[82/100] http-body 1.0.1 pass
+[82/100] http-body 1.0.1 finished
 [85/100] chrono 0.4.42 started
 [85/100] chrono 0.4.42 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n chrono -v 0.4.42 -t /var/tmp/top100_artifacts --
 [86/100] typenum 1.18.0 started
