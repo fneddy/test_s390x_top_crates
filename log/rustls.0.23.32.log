@@ -14,35 +14,35 @@
    Compiling libc v0.2.175
    Compiling glob v0.3.3
    Compiling prettyplease v0.2.37
-   Compiling quote v1.0.40
-   Compiling clang-sys v1.8.1
-   Compiling syn v2.0.106
    Compiling regex-syntax v0.8.6
-   Compiling cfg-if v1.0.3
+   Compiling clang-sys v1.8.1
+   Compiling quote v1.0.40
    Compiling shlex v1.3.0
-   Compiling jobserver v0.1.34
+   Compiling cfg-if v1.0.3
    Compiling libloading v0.8.8
+   Compiling syn v2.0.106
+   Compiling jobserver v0.1.34
    Compiling nom v7.1.3
-   Compiling bindgen v0.72.1
    Compiling either v1.15.0
-   Compiling find-msvc-tools v0.1.2
-   Compiling cc v1.2.38
    Compiling regex-automata v0.4.10
-   Compiling cexpr v0.6.0
-   Compiling itertools v0.13.0
+   Compiling find-msvc-tools v0.1.2
+   Compiling bindgen v0.72.1
    Compiling regex v1.11.2
-   Compiling log v0.4.28
-   Compiling bitflags v2.9.4
-   Compiling autocfg v1.5.0
+   Compiling cexpr v0.6.0
+   Compiling cc v1.2.38
+   Compiling itertools v0.13.0
    Compiling rustc-hash v2.1.1
+   Compiling log v0.4.28
+   Compiling autocfg v1.5.0
+   Compiling bitflags v2.9.4
    Compiling num-traits v0.2.19
    Compiling cmake v0.1.54
-   Compiling fs_extra v1.3.0
-   Compiling itoa v1.0.15
-   Compiling dunce v1.0.5
    Compiling num-conv v0.1.0
-   Compiling powerfmt v0.2.0
    Compiling time-core v0.1.6
+   Compiling fs_extra v1.3.0
+   Compiling powerfmt v0.2.0
+   Compiling dunce v1.0.5
+   Compiling itoa v1.0.15
    Compiling deranged v0.5.3
    Compiling time-macros v0.2.24
    Compiling time v0.3.44
@@ -60,7 +60,6 @@
    Compiling asn1-rs v0.7.1
    Compiling aws-lc-sys v0.31.0
    Compiling rustls-pki-types v1.12.0
-   Compiling num-integer v0.1.46
 error: failed to run custom build command for `aws-lc-sys v0.31.0`
 
 Caused by:
