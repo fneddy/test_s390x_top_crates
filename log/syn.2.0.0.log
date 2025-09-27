@@ -4,143 +4,139 @@ warning: refs/tags/2.0.0 31ebf3d6058d97741e99d6d358ded5eada35de78 is not a commi
 + cargo clean
      Removed 0 files
 + cargo +stable test --release --features test
+    Blocking waiting for file lock on package cache
     Updating crates.io index
      Locking 201 packages to latest compatible versions
       Adding colored v2.2.0 (available: v3.0.0)
       Adding indexmap v1.9.3 (available: v2.11.4)
       Adding reqwest v0.11.27 (available: v0.12.23)
- Downloading crates ...
-  Downloaded serde_derive v1.0.227
-  Downloaded serde v1.0.227
-  Downloaded serde_core v1.0.227
-  Downloaded cc v1.2.39
    Compiling proc-macro2 v1.0.101
    Compiling unicode-ident v1.0.19
    Compiling libc v0.2.176
    Compiling stable_deref_trait v1.2.0
-   Compiling find-msvc-tools v0.1.2
    Compiling once_cell v1.21.3
+   Compiling find-msvc-tools v0.1.2
    Compiling shlex v1.3.0
-   Compiling pin-project-lite v0.2.16
    Compiling cfg-if v1.0.3
+   Compiling pkg-config v0.3.32
    Compiling cc v1.2.39
-   Compiling vcpkg v0.2.15
    Compiling quote v1.0.40
    Compiling syn v2.0.106
-   Compiling pkg-config v0.3.32
+   Compiling vcpkg v0.2.15
+   Compiling pin-project-lite v0.2.16
    Compiling bytes v1.10.1
-   Compiling bitflags v2.9.4
+   Compiling litemap v0.8.0
    Compiling openssl-sys v0.9.109
    Compiling writeable v0.6.1
    Compiling memchr v2.7.6
-   Compiling litemap v0.8.0
-   Compiling socket2 v0.6.0
+   Compiling bitflags v2.9.4
    Compiling mio v1.0.4
+   Compiling socket2 v0.6.0
    Compiling icu_properties_data v2.0.1
+   Compiling icu_normalizer_data v2.0.0
    Compiling itoa v1.0.15
    Compiling futures-core v0.3.31
-   Compiling icu_normalizer_data v2.0.0
    Compiling tokio v1.47.1
    Compiling foreign-types-shared v0.1.1
+   Compiling serde_core v1.0.227
+   Compiling crossbeam-utils v0.8.21
    Compiling fnv v1.0.7
    Compiling openssl v0.10.73
-   Compiling crossbeam-utils v0.8.21
-   Compiling serde_core v1.0.227
    Compiling http v0.2.12
    Compiling foreign-types v0.3.2
    Compiling synstructure v0.13.2
    Compiling tracing-core v0.1.34
-   Compiling futures-sink v0.3.31
-   Compiling smallvec v1.15.1
-   Compiling equivalent v1.0.2
-   Compiling futures-io v0.3.31
-   Compiling futures-task v0.3.31
-   Compiling hashbrown v0.16.0
+   Compiling httparse v1.10.1
    Compiling zerofrom-derive v0.1.6
    Compiling yoke-derive v0.8.0
    Compiling zerovec-derive v0.11.1
-   Compiling displaydoc v0.2.5
    Compiling zerofrom v0.1.6
-   Compiling yoke v0.8.0
+   Compiling displaydoc v0.2.5
    Compiling openssl-macros v0.1.1
-   Compiling zerotrie v0.2.2
+   Compiling yoke v0.8.0
    Compiling zerovec v0.11.4
-   Compiling httparse v1.10.1
-   Compiling pin-utils v0.1.0
+   Compiling equivalent v1.0.2
+   Compiling futures-io v0.3.31
+   Compiling futures-sink v0.3.31
+   Compiling zerotrie v0.2.2
    Compiling serde v1.0.227
-   Compiling slab v0.4.11
    Compiling native-tls v0.2.14
-   Compiling futures-util v0.3.31
+   Compiling smallvec v1.15.1
+   Compiling slab v0.4.11
+   Compiling hashbrown v0.16.0
+   Compiling pin-utils v0.1.0
    Compiling tinystr v0.8.1
-   Compiling icu_locale_core v2.0.0
    Compiling potential_utf v0.1.3
+   Compiling icu_locale_core v2.0.0
    Compiling icu_collections v2.0.0
+   Compiling futures-task v0.3.31
+   Compiling futures-util v0.3.31
    Compiling icu_provider v2.0.0
    Compiling icu_properties v2.0.1
    Compiling icu_normalizer v2.0.0
    Compiling indexmap v2.11.4
-   Compiling serde_derive v1.0.227
    Compiling tokio-util v0.7.16
+   Compiling serde_derive v1.0.227
    Compiling tracing v0.1.41
-   Compiling percent-encoding v2.3.2
-   Compiling try-lock v0.2.5
-   Compiling log v0.4.28
-   Compiling rustix v1.1.2
    Compiling openssl-probe v0.1.6
-   Compiling crossbeam-epoch v0.9.18
+   Compiling rustix v1.1.2
+   Compiling percent-encoding v2.3.2
+   Compiling log v0.4.28
+   Compiling try-lock v0.2.5
    Compiling want v0.3.1
    Compiling form_urlencoded v1.2.2
+   Compiling crossbeam-epoch v0.9.18
    Compiling h2 v0.3.27
    Compiling idna_adapter v1.2.1
    Compiling http-body v0.4.6
    Compiling futures-channel v0.3.31
    Compiling socket2 v0.5.10
    Compiling errno v0.3.14
-   Compiling utf8_iter v1.0.4
-   Compiling linux-raw-sys v0.11.0
    Compiling httpdate v1.0.3
-   Compiling rayon-core v1.13.0
+   Compiling linux-raw-sys v0.11.0
    Compiling crc32fast v1.5.0
+   Compiling rayon-core v1.13.0
    Compiling tower-service v0.3.3
+   Compiling utf8_iter v1.0.4
    Compiling idna v1.1.0
    Compiling hyper v0.14.32
    Compiling crossbeam-deque v0.8.6
    Compiling tokio-native-tls v0.3.1
    Compiling aho-corasick v1.1.3
    Compiling ref-cast v1.0.24
-   Compiling anyhow v1.0.100
-   Compiling ryu v1.0.20
-   Compiling rustversion v1.0.22
    Compiling adler2 v2.0.1
-   Compiling termcolor v1.4.1
-   Compiling base64 v0.21.7
    Compiling regex-syntax v0.8.6
+   Compiling ryu v1.0.20
+   Compiling base64 v0.21.7
+   Compiling termcolor v1.4.1
+   Compiling rustversion v1.0.22
+   Compiling anyhow v1.0.100
    Compiling syn v2.0.0 (/var/tmp/top100_artifacts/syn-2.0.0)
-   Compiling rustls-pemfile v1.0.4
-   Compiling regex-automata v0.4.11
    Compiling syn-test-suite-feature-check v0.0.0 (/var/tmp/top100_artifacts/syn-2.0.0/tests/features/macro)
-   Compiling hyper-tls v0.5.0
-   Compiling miniz_oxide v0.8.9
+   Compiling rustls-pemfile v1.0.4
    Compiling serde_urlencoded v0.7.1
+   Compiling miniz_oxide v0.8.9
+   Compiling regex-automata v0.4.11
    Compiling xattr v1.6.1
+   Compiling hyper-tls v0.5.0
    Compiling url v2.5.7
    Compiling ref-cast-impl v1.0.24
-   Compiling filetime v0.2.26
    Compiling console v0.15.11
+   Compiling filetime v0.2.26
    Compiling encoding_rs v0.8.35
-   Compiling mime v0.3.17
-   Compiling same-file v1.0.6
-   Compiling similar v2.7.0
-   Compiling either v1.15.0
    Compiling sync_wrapper v0.1.2
    Compiling ipnet v2.11.0
-   Compiling reqwest v0.11.27
+   Compiling mime v0.3.17
+   Compiling either v1.15.0
+   Compiling similar v2.7.0
+   Compiling same-file v1.0.6
+   Compiling walkdir v2.5.0
    Compiling insta v1.43.2
    Compiling rayon v1.11.0
-   Compiling walkdir v2.5.0
+   Compiling reqwest v0.11.27
    Compiling tar v0.4.44
-   Compiling flate2 v1.1.2
    Compiling regex v1.11.3
+   Compiling flate2 v1.1.2
    Compiling syn-test-suite v0.0.0 (/var/tmp/top100_artifacts/syn-2.0.0/tests/features)
    Compiling automod v1.0.15
 warning: unexpected `cfg` condition name: `doc_cfg`
@@ -5736,13 +5732,20 @@ warning: field `0` is never read
     |
     = help: consider removing this field
 
-warning: `syn` (lib test) generated 503 warnings (503 duplicates)
 warning: `syn` (lib) generated 503 warnings (90 duplicates) (run `cargo fix --lib -p syn` to apply 1 suggestion)
 error[E0425]: cannot find function `parse_file` in crate `syn`
-   --> tests/regression/issue1108.rs:4:18
+   --> tests/test_should_parse.rs:6:18
     |
-4   |     let _ = syn::parse_file(data);
-    |                  ^^^^^^^^^^ not found in `syn`
+6   |               syn::parse_file(stringify!($($in)*)).unwrap();
+    |                    ^^^^^^^^^^ not found in `syn`
+...
+11  | / should_parse!(generic_associated_type, {
+12  | |     impl Foo {
+13  | |         type Item = &'a i32;
+14  | |         fn foo<'a>(&'a self) -> Self::Item<'a> {}
+15  | |     }
+16  | | });
+    | |__- in this macro invocation
     |
 note: found an item that was configured out
    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:952:8
@@ -5754,89 +5757,144 @@ note: the item is gated here
     |
 950 | #[cfg(all(feature = "parsing", feature = "full"))]
     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    = note: this error originates in the macro `should_parse` (in Nightly builds, run with -Z macro-backtrace for more info)
 
-error[E0412]: cannot find type `File` in crate `syn`
-   --> tests/regression/issue1235.rs:12:35
+error[E0425]: cannot find function `parse_file` in crate `syn`
+   --> tests/test_should_parse.rs:6:18
     |
-12  |     let file = syn::parse2::<syn::File>(tokens).unwrap();
-    |                                   ^^^^ not found in `syn`
+6   |               syn::parse_file(stringify!($($in)*)).unwrap();
+    |                    ^^^^^^^^^^ not found in `syn`
+...
+19  | / should_parse!(const_generics_use, {
+20  | |     type X = Foo<5>;
+21  | |     type Y = Foo<"foo">;
+22  | |     type Z = Foo<X>;
+23  | |     type W = Foo<{ X + 10 }>;
+24  | | });
+    | |__- in this macro invocation
     |
 note: found an item that was configured out
-   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:363:22
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:952:8
     |
-363 | pub use crate::file::File;
-    |                      ^^^^
-note: the item is gated behind the `full` feature
-   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:362:7
+952 | pub fn parse_file(mut content: &str) -> Result<File> {
+    |        ^^^^^^^^^^
+note: the item is gated here
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:950:1
     |
-362 | #[cfg(feature = "full")]
-    |       ^^^^^^^^^^^^^^^^
-help: consider importing this struct
-    |
-1   + use std::fs::File;
-    |
-help: if you import `File`, refer to it directly
-    |
-12  -     let file = syn::parse2::<syn::File>(tokens).unwrap();
-12  +     let file = syn::parse2::<File>(tokens).unwrap();
-    |
+950 | #[cfg(all(feature = "parsing", feature = "full"))]
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    = note: this error originates in the macro `should_parse` (in Nightly builds, run with -Z macro-backtrace for more info)
 
-error[E0412]: cannot find type `File` in crate `syn`
-   --> tests/regression/issue1235.rs:21:35
+error[E0425]: cannot find function `parse_file` in crate `syn`
+   --> tests/test_should_parse.rs:6:18
     |
-21  |     let file = syn::parse2::<syn::File>(tokens).unwrap();
-    |                                   ^^^^ not found in `syn`
+6   |               syn::parse_file(stringify!($($in)*)).unwrap();
+    |                    ^^^^^^^^^^ not found in `syn`
+...
+26  | / should_parse!(trailing_plus_type, {
+27  | |     type A = Box<Foo>;
+28  | |     type A = Box<Foo + 'a>;
+29  | |     type A = Box<'a + Foo>;
+30  | | });
+    | |__- in this macro invocation
     |
 note: found an item that was configured out
-   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:363:22
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:952:8
     |
-363 | pub use crate::file::File;
-    |                      ^^^^
-note: the item is gated behind the `full` feature
-   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:362:7
+952 | pub fn parse_file(mut content: &str) -> Result<File> {
+    |        ^^^^^^^^^^
+note: the item is gated here
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:950:1
     |
-362 | #[cfg(feature = "full")]
-    |       ^^^^^^^^^^^^^^^^
-help: consider importing this struct
-    |
-1   + use std::fs::File;
-    |
-help: if you import `File`, refer to it directly
-    |
-21  -     let file = syn::parse2::<syn::File>(tokens).unwrap();
-21  +     let file = syn::parse2::<File>(tokens).unwrap();
-    |
+950 | #[cfg(all(feature = "parsing", feature = "full"))]
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    = note: this error originates in the macro `should_parse` (in Nightly builds, run with -Z macro-backtrace for more info)
 
-error[E0412]: cannot find type `File` in crate `syn`
-   --> tests/regression/issue1235.rs:30:35
+error[E0425]: cannot find function `parse_file` in crate `syn`
+   --> tests/test_should_parse.rs:6:18
     |
-30  |     let file = syn::parse2::<syn::File>(tokens).unwrap();
-    |                                   ^^^^ not found in `syn`
+6   |               syn::parse_file(stringify!($($in)*)).unwrap();
+    |                    ^^^^^^^^^^ not found in `syn`
+...
+32  | / should_parse!(generic_associated_type_where, {
+33  | |     trait Foo {
+34  | |         type Item;
+35  | |         fn foo<T>(&self, t: T) -> Self::Item<T>;
+36  | |     }
+37  | | });
+    | |__- in this macro invocation
     |
 note: found an item that was configured out
-   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:363:22
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:952:8
     |
-363 | pub use crate::file::File;
-    |                      ^^^^
-note: the item is gated behind the `full` feature
-   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:362:7
+952 | pub fn parse_file(mut content: &str) -> Result<File> {
+    |        ^^^^^^^^^^
+note: the item is gated here
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:950:1
     |
-362 | #[cfg(feature = "full")]
-    |       ^^^^^^^^^^^^^^^^
-help: consider importing this struct
-    |
-1   + use std::fs::File;
-    |
-help: if you import `File`, refer to it directly
-    |
-30  -     let file = syn::parse2::<syn::File>(tokens).unwrap();
-30  +     let file = syn::parse2::<File>(tokens).unwrap();
-    |
+950 | #[cfg(all(feature = "parsing", feature = "full"))]
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    = note: this error originates in the macro `should_parse` (in Nightly builds, run with -Z macro-backtrace for more info)
 
-Some errors have detailed explanations: E0412, E0425.
-For more information about an error, try `rustc --explain E0412`.
-error: could not compile `syn` (test "regression") due to 4 previous errors
+error[E0425]: cannot find function `parse_file` in crate `syn`
+   --> tests/test_should_parse.rs:6:18
+    |
+6   |               syn::parse_file(stringify!($($in)*)).unwrap();
+    |                    ^^^^^^^^^^ not found in `syn`
+...
+39  | / should_parse!(match_with_block_expr, {
+40  | |     fn main() {
+41  | |         match false {
+42  | |             _ => {}.a(),
+...   |
+45  | | });
+    | |__- in this macro invocation
+    |
+note: found an item that was configured out
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:952:8
+    |
+952 | pub fn parse_file(mut content: &str) -> Result<File> {
+    |        ^^^^^^^^^^
+note: the item is gated here
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:950:1
+    |
+950 | #[cfg(all(feature = "parsing", feature = "full"))]
+    | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    = note: this error originates in the macro `should_parse` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+For more information about this error, try `rustc --explain E0425`.
+error: could not compile `syn` (test "test_should_parse") due to 5 previous errors
 warning: build failed, waiting for other jobs to finish...
+error[E0432]: unresolved imports `syn::Item`, `syn::ItemTrait`
+   --> tests/test_item.rs:8:11
+    |
+8   | use syn::{Item, ItemTrait};
+    |           ^^^^  ^^^^^^^^^ no `ItemTrait` in the root
+    |           |
+    |           no `Item` in the root
+    |
+note: found an item that was configured out
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
+    |
+384 |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
+    |                                                                                        ^^^^
+note: the item is gated behind the `full` feature
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    |
+381 | #[cfg(feature = "full")]
+    |       ^^^^^^^^^^^^^^^^
+note: found an item that was configured out
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:386:29
+    |
+386 |     ItemStatic, ItemStruct, ItemTrait, ItemTraitAlias, ItemType, ItemUnion, ItemUse, Receiver,
+    |                             ^^^^^^^^^
+note: the item is gated behind the `full` feature
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
+    |
+381 | #[cfg(feature = "full")]
+    |       ^^^^^^^^^^^^^^^^
+
+warning: `syn` (lib test) generated 503 warnings (503 duplicates)
 error[E0433]: failed to resolve: could not find `FnArg` in `syn`
     --> tests/macros/../debug/gen.rs:1847:18
      |
@@ -10116,91 +10174,9 @@ error[E0609]: no field `expr` on type `ExprYield`
 1692 |         if let Some(val) = &self.value.expr {
      |                                        ^^^^ unknown field
 
-error[E0277]: `syn::Lit` doesn't implement `Debug`
-  --> tests/test_lit.rs:38:37
-   |
-38 |             wrong => panic!("{:?}", wrong),
-   |                                     ^^^^^ `syn::Lit` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-   |
-   = help: the trait `Debug` is not implemented for `syn::Lit`
-
-error[E0277]: `syn::Lit` doesn't implement `Debug`
-  --> tests/test_lit.rs:77:37
-   |
-77 |             wrong => panic!("{:?}", wrong),
-   |                                     ^^^^^ `syn::Lit` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-   |
-   = help: the trait `Debug` is not implemented for `syn::Lit`
-
-error[E0277]: `syn::Lit` doesn't implement `Debug`
-   --> tests/test_lit.rs:107:37
-    |
-107 |             wrong => panic!("{:?}", wrong),
-    |                                     ^^^^^ `syn::Lit` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-    |
-    = help: the trait `Debug` is not implemented for `syn::Lit`
-
-error[E0277]: `syn::Lit` doesn't implement `Debug`
-   --> tests/test_lit.rs:131:37
-    |
-131 |             wrong => panic!("{:?}", wrong),
-    |                                     ^^^^^ `syn::Lit` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-    |
-    = help: the trait `Debug` is not implemented for `syn::Lit`
-
-error[E0277]: `syn::Lit` doesn't implement `Debug`
-   --> tests/test_lit.rs:158:37
-    |
-158 |             wrong => panic!("{:?}", wrong),
-    |                                     ^^^^^ `syn::Lit` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-    |
-    = help: the trait `Debug` is not implemented for `syn::Lit`
-
-error[E0277]: `syn::Lit` doesn't implement `Debug`
-   --> tests/test_lit.rs:198:37
-    |
-198 |             wrong => panic!("{:?}", wrong),
-    |                                     ^^^^^ `syn::Lit` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-    |
-    = help: the trait `Debug` is not implemented for `syn::Lit`
-
-error[E0277]: `LitStr` doesn't implement `Debug`
-    --> tests/test_lit.rs:268:47
-     |
-268  |     let err = syn::parse_str::<LitStr>("...").unwrap_err();
-     |                                               ^^^^^^^^^^ `LitStr` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-     |
-     = help: the trait `Debug` is not implemented for `LitStr`
-note: required by a bound in `Result::<T, E>::unwrap_err`
-    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
-     |
-1198 |     pub fn unwrap_err(self) -> E
-     |            ---------- required by a bound in this associated function
-1199 |     where
-1200 |         T: fmt::Debug,
-     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
-
-error[E0277]: `LitStr` doesn't implement `Debug`
-    --> tests/test_lit.rs:271:45
-     |
-271  |     let err = syn::parse_str::<LitStr>("5").unwrap_err();
-     |                                             ^^^^^^^^^^ `LitStr` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-     |
-     = help: the trait `Debug` is not implemented for `LitStr`
-note: required by a bound in `Result::<T, E>::unwrap_err`
-    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
-     |
-1198 |     pub fn unwrap_err(self) -> E
-     |            ---------- required by a bound in this associated function
-1199 |     where
-1200 |         T: fmt::Debug,
-     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
-
-Some errors have detailed explanations: E0412, E0433, E0609.
-error: could not compile `syn` (test "test_iterators") due to 403 previous errors
-Some errors have detailed explanations: E0277, E0412, E0433, E0609.
-For more information about an error, try `rustc --explain E0277`.
-error: could not compile `syn` (test "test_lit") due to 411 previous errors
+Some errors have detailed explanations: E0412, E0432, E0433, E0609.
+For more information about an error, try `rustc --explain E0412`.
+error: could not compile `syn` (test "test_item") due to 404 previous errors
 + RESULT=101
 + cd /var/tmp/top100_artifacts
 + rm -rf /var/tmp/top100_artifacts/syn-2.0.0
