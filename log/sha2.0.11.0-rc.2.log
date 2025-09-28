@@ -6,9 +6,6 @@
      Removed 0 files
 + cargo +stable test ''
     Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
    Compiling typenum v1.18.0
    Compiling blobby v0.4.0-pre.0
    Compiling const-oid v0.10.1
