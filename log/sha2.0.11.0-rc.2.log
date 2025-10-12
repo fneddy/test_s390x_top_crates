@@ -1,10 +1,11 @@
 [sha2] download directory: /var/tmp/top100_artifacts/sha2-0.11.0-rc.2
-+ curl -sL https://crates.io/api/v1/crates/sha2/0.11.0-rc.2/download
 + tar xzf -
++ curl -sL https://crates.io/api/v1/crates/sha2/0.11.0-rc.2/download
 + cd /var/tmp/top100_artifacts/sha2-0.11.0-rc.2
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
+    Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
    Compiling typenum v1.18.0
