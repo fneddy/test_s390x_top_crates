@@ -1,0 +1,39 @@
+[cfg-if] download directory: /var/tmp/top100_artifacts/cfg-if-1.0.4
++ curl -sL https://crates.io/api/v1/crates/cfg-if/1.0.4/download
++ tar xzf -
++ cd /var/tmp/top100_artifacts/cfg-if-1.0.4
++ cargo clean
+     Removed 0 files
++ cargo +stable test ''
+   Compiling cfg-if v1.0.4 (/var/tmp/top100_artifacts/cfg-if-1.0.4)
+error[E0658]: `cfg(false)` is experimental and subject to change
+   --> src/lib.rs:159:18
+    |
+159 |         if #[cfg(false)] {
+    |                  ^^^^^
+    |
+    = note: see issue #131204 <https://github.com/rust-lang/rust/issues/131204> for more information
+
+error[E0658]: `cfg(true)` is experimental and subject to change
+   --> src/lib.rs:161:25
+    |
+161 |         } else if #[cfg(true)] {
+    |                         ^^^^
+    |
+    = note: see issue #131204 <https://github.com/rust-lang/rust/issues/131204> for more information
+
+error[E0658]: `cfg(false)` is experimental and subject to change
+   --> src/lib.rs:163:25
+    |
+163 |         } else if #[cfg(false)] {
+    |                         ^^^^^
+    |
+    = note: see issue #131204 <https://github.com/rust-lang/rust/issues/131204> for more information
+
+For more information about this error, try `rustc --explain E0658`.
+error: could not compile `cfg-if` (lib test) due to 3 previous errors
+warning: build failed, waiting for other jobs to finish...
++ RESULT=101
++ cd /var/tmp/top100_artifacts
++ rm -rf /var/tmp/top100_artifacts/cfg-if-1.0.4
++ exit 101
