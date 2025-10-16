@@ -1,6 +1,6 @@
-Testresults as of Wed Oct 15 02:53:01 PM CEST 2025
-PASS: 85
-FAIL: 14
+Testresults as of Thu Oct 16 02:53:01 PM CEST 2025
+PASS: 86
+FAIL: 13
 SKIPPED: 2
 
 FAILED_CRATES:
@@ -15,6 +15,5 @@ FAILED_CRATES:
 [81/100] sha2 0.11.0-rc.2 fail
 [85/100] chrono 0.4.42 fail
 [87/100] tracing 0.1.41 fail
-[92/100] tempfile 3.23.0 fail
-[89/100] h2 0.4.12 fail
-[94/100] tokio-util 0.7.16 fail
+[88/100] h2 0.4.12 fail
+[96/100] tokio-util 0.7.16 fail
