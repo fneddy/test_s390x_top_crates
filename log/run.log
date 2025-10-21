@@ -82,52 +82,52 @@ ID VERSION RESULT
 [20/100] serde_json 1.0.145 finished
 [21/100] once_cell 1.21.3 started
 [21/100] once_cell 1.21.3 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n once_cell -v 1.21.3 -t /var/tmp/top100_artifacts --
-[22/100] unicode-ident 1.0.19 started
-[22/100] unicode-ident 1.0.19 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n unicode-ident -v 1.0.19 -t /var/tmp/top100_artifacts --
-[23/100] log 0.4.28 started
-[23/100] log 0.4.28 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n log -v 0.4.28 -t /var/tmp/top100_artifacts --
-[24/100] thiserror-impl 2.0.17 started
-[24/100] thiserror-impl 2.0.17 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n thiserror-impl -v 2.0.17 -t /var/tmp/top100_artifacts --
-[24/100] thiserror-impl 2.0.17 pass
-[24/100] thiserror-impl 2.0.17 finished
-[23/100] log 0.4.28 pass
-[23/100] log 0.4.28 finished
-[22/100] unicode-ident 1.0.19 fail
-[22/100] unicode-ident 1.0.19 finished
+[22/100] unicode-ident 1.0.20 started
+[22/100] unicode-ident 1.0.20 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n unicode-ident -v 1.0.20 -t /var/tmp/top100_artifacts --
+[23/100] thiserror-impl 2.0.17 started
+[23/100] thiserror-impl 2.0.17 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n thiserror-impl -v 2.0.17 -t /var/tmp/top100_artifacts --
+[24/100] thiserror 2.0.17 started
+[24/100] thiserror 2.0.17 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n thiserror -v 2.0.17 -t /var/tmp/top100_artifacts --
+[23/100] thiserror-impl 2.0.17 pass
+[23/100] thiserror-impl 2.0.17 finished
+[24/100] thiserror 2.0.17 pass
+[24/100] thiserror 2.0.17 finished
+[22/100] unicode-ident 1.0.20 fail
+[22/100] unicode-ident 1.0.20 finished
 [21/100] once_cell 1.21.3 fail
 [21/100] once_cell 1.21.3 finished
-[25/100] thiserror 2.0.17 started
-[25/100] thiserror 2.0.17 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n thiserror -v 2.0.17 -t /var/tmp/top100_artifacts --
+[25/100] log 0.4.28 started
+[25/100] log 0.4.28 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n log -v 0.4.28 -t /var/tmp/top100_artifacts --
 [26/100] regex-automata regex-automata-0.4.9 started
 [26/100] regex-automata regex-automata-0.4.9 /home/eddy/src/test_s390x_top_crates/scripts/test_git.sh -n regex-automata -g https://github.com/rust-lang/regex.git -b regex-automata-0.4.9 -t /var/tmp/top100_artifacts -- --manifest-path regex-automata/Cargo.toml --test integration
 [27/100] heck 0.5.0 started
-[27/100] heck 0.5.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n heck -v 0.5.0 -t /var/tmp/top100_artifacts --
 [28/100] regex 1.12.2 started
+[27/100] heck 0.5.0 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n heck -v 0.5.0 -t /var/tmp/top100_artifacts --
 [28/100] regex 1.12.2 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n regex -v 1.12.2 -t /var/tmp/top100_artifacts --
 [27/100] heck 0.5.0 pass
 [27/100] heck 0.5.0 finished
-[25/100] thiserror 2.0.17 pass
-[25/100] thiserror 2.0.17 finished
+[25/100] log 0.4.28 pass
+[25/100] log 0.4.28 finished
 [28/100] regex 1.12.2 fail
 [28/100] regex 1.12.2 finished
 [26/100] regex-automata regex-automata-0.4.9 pass
 [26/100] regex-automata regex-automata-0.4.9 finished
-[29/100] ryu 1.0.20 started
-[29/100] ryu 1.0.20 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n ryu -v 1.0.20 -t /var/tmp/top100_artifacts --
-[30/100] cc 1.2.41 started
-[30/100] cc 1.2.41 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n cc -v 1.2.41 -t /var/tmp/top100_artifacts --
+[29/100] cc 1.2.41 started
+[29/100] cc 1.2.41 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n cc -v 1.2.41 -t /var/tmp/top100_artifacts --
+[30/100] ryu 1.0.20 started
+[30/100] ryu 1.0.20 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n ryu -v 1.0.20 -t /var/tmp/top100_artifacts --
 [31/100] aho-corasick 1.1.3 started
 [31/100] aho-corasick 1.1.3 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n aho-corasick -v 1.1.3 -t /var/tmp/top100_artifacts --
-[32/100] clap 4.5.49 started
-[32/100] clap 4.5.49 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n clap -v 4.5.49 -t /var/tmp/top100_artifacts --
-[30/100] cc 1.2.41 pass
-[30/100] cc 1.2.41 finished
+[32/100] clap 4.5.50 started
+[32/100] clap 4.5.50 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n clap -v 4.5.50 -t /var/tmp/top100_artifacts --
+[29/100] cc 1.2.41 pass
+[29/100] cc 1.2.41 finished
 [31/100] aho-corasick 1.1.3 pass
 [31/100] aho-corasick 1.1.3 finished
-[29/100] ryu 1.0.20 pass
-[29/100] ryu 1.0.20 finished
-[32/100] clap 4.5.49 pass
-[32/100] clap 4.5.49 finished
+[30/100] ryu 1.0.20 pass
+[30/100] ryu 1.0.20 finished
+[32/100] clap 4.5.50 pass
+[32/100] clap 4.5.50 finished
 [33/100] smallvec 1.15.1 started
 [33/100] smallvec 1.15.1 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n smallvec -v 1.15.1 -t /var/tmp/top100_artifacts --
 [34/100] parking_lot_core 0.9.12 started
@@ -280,12 +280,12 @@ ID VERSION RESULT
 [71/100] windows_aarch64_msvc 0.53.1 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n windows_aarch64_msvc -v 0.53.1 -t /var/tmp/top100_artifacts --
 [72/100] windows_i686_gnu 0.53.1 started
 [72/100] windows_i686_gnu 0.53.1 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n windows_i686_gnu -v 0.53.1 -t /var/tmp/top100_artifacts --
-[71/100] windows_aarch64_msvc 0.53.1 pass
-[70/100] windows_i686_msvc 0.53.1 pass
-[71/100] windows_aarch64_msvc 0.53.1 finished
-[70/100] windows_i686_msvc 0.53.1 finished
 [72/100] windows_i686_gnu 0.53.1 pass
 [72/100] windows_i686_gnu 0.53.1 finished
+[71/100] windows_aarch64_msvc 0.53.1 pass
+[71/100] windows_aarch64_msvc 0.53.1 finished
+[70/100] windows_i686_msvc 0.53.1 pass
+[70/100] windows_i686_msvc 0.53.1 finished
 [69/100] toml 0.9.8 pass
 [69/100] toml 0.9.8 finished
 [73/100] generic-array 1.3.4 started
@@ -330,10 +330,10 @@ ID VERSION RESULT
 [84/100] tracing-core 0.1.34 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n tracing-core -v 0.1.34 -t /var/tmp/top100_artifacts --
 [83/100] fnv 1.0.7 pass
 [83/100] fnv 1.0.7 finished
-[81/100] http-body 1.0.1 pass
-[81/100] http-body 1.0.1 finished
 [84/100] tracing-core 0.1.34 pass
 [84/100] tracing-core 0.1.34 finished
+[81/100] http-body 1.0.1 pass
+[81/100] http-body 1.0.1 finished
 [82/100] sha2 0.11.0-rc.2 fail
 [82/100] sha2 0.11.0-rc.2 finished
 [85/100] chrono 0.4.42 started
