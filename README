@@ -1,4 +1,4 @@
-Testresults as of Wed Oct 22 02:53:00 PM CEST 2025
+Testresults as of Thu Oct 23 02:53:00 PM CEST 2025
 PASS: 86
 FAIL: 13
 SKIPPED: 2
@@ -11,7 +11,7 @@ FAILED_CRATES:
 [28/100] regex 1.12.2 fail
 [44/100] idna 1.1.0 fail
 [51/100] pin-project-lite 0.2.16 fail
-[76/100] rustls 0.23.34 fail
+[75/100] rustls 0.23.34 fail
 [82/100] sha2 0.11.0-rc.2 fail
 [85/100] chrono 0.4.42 fail
 [87/100] h2 0.4.12 fail
