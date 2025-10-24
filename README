@@ -1,11 +1,11 @@
-Testresults as of Thu Oct 23 02:53:00 PM CEST 2025
+Testresults as of Fri Oct 24 02:53:01 PM CEST 2025
 PASS: 86
 FAIL: 13
 SKIPPED: 2
 
 FAILED_CRATES:
 [1/100] syn 2.0.0 fail
-[13/100] cfg-if 1.0.4 fail
+[14/100] cfg-if 1.0.4 fail
 [24/100] unicode-ident 1.0.20 fail
 [21/100] once_cell 1.21.3 fail
 [28/100] regex 1.12.2 fail
@@ -16,4 +16,4 @@ FAILED_CRATES:
 [85/100] chrono 0.4.42 fail
 [87/100] h2 0.4.12 fail
 [89/100] tracing 0.1.41 fail
-[96/100] tokio-util 0.7.16 fail
+[97/100] tokio-util 0.7.16 fail

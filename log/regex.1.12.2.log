@@ -10,13 +10,13 @@
    Compiling unicode-ident v1.0.19
    Compiling quote v1.0.41
    Compiling serde_core v1.0.228
-   Compiling serde v1.0.228
    Compiling libc v0.2.177
+   Compiling serde v1.0.228
    Compiling memchr v2.7.6
-   Compiling hashbrown v0.16.0
    Compiling syn v2.0.106
-   Compiling cfg-if v1.0.3
    Compiling equivalent v1.0.2
+   Compiling cfg-if v1.0.3
+   Compiling hashbrown v0.16.0
    Compiling getrandom v0.2.16
    Compiling anyhow v1.0.100
    Compiling indexmap v2.11.4
@@ -31,12 +31,12 @@
    Compiling serde_spanned v0.6.9
    Compiling toml_datetime v0.6.11
    Compiling toml_edit v0.22.27
-   Compiling toml v0.8.23
    Compiling bstr v1.12.0
+   Compiling toml v0.8.23
    Compiling atty v0.2.14
+   Compiling log v0.4.28
    Compiling termcolor v1.4.1
    Compiling humantime v2.3.0
-   Compiling log v0.4.28
    Compiling env_logger v0.9.3
    Compiling regex-test v0.1.1
    Compiling quickcheck v1.0.3
