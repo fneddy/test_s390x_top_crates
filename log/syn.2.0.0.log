@@ -10,136 +10,135 @@ warning: refs/tags/2.0.0 31ebf3d6058d97741e99d6d358ded5eada35de78 is not a commi
       Adding indexmap v1.9.3 (available: v2.12.0)
       Adding reqwest v0.11.27 (available: v0.12.24)
  Downloading crates ...
-  Downloaded proc-macro2 v1.0.103
-  Downloaded flate2 v1.1.5
+  Downloaded cc v1.2.43
    Compiling proc-macro2 v1.0.103
    Compiling unicode-ident v1.0.20
    Compiling quote v1.0.41
    Compiling libc v0.2.177
    Compiling stable_deref_trait v1.2.1
    Compiling once_cell v1.21.3
-   Compiling find-msvc-tools v0.1.4
    Compiling shlex v1.3.0
+   Compiling find-msvc-tools v0.1.4
    Compiling cfg-if v1.0.4
    Compiling pkg-config v0.3.32
-   Compiling cc v1.2.41
-   Compiling vcpkg v0.2.15
-   Compiling syn v2.0.108
+   Compiling cc v1.2.43
    Compiling pin-project-lite v0.2.16
+   Compiling vcpkg v0.2.15
    Compiling bytes v1.10.1
-   Compiling memchr v2.7.6
-   Compiling openssl-sys v0.9.110
+   Compiling syn v2.0.108
    Compiling bitflags v2.10.0
-   Compiling litemap v0.8.0
+   Compiling openssl-sys v0.9.110
+   Compiling memchr v2.7.6
    Compiling writeable v0.6.1
+   Compiling litemap v0.8.0
    Compiling socket2 v0.6.1
    Compiling mio v1.1.0
-   Compiling itoa v1.0.15
    Compiling futures-core v0.3.31
-   Compiling icu_normalizer_data v2.0.0
+   Compiling itoa v1.0.15
    Compiling icu_properties_data v2.0.1
+   Compiling icu_normalizer_data v2.0.0
    Compiling tokio v1.48.0
-   Compiling openssl v0.10.74
-   Compiling serde_core v1.0.228
    Compiling foreign-types-shared v0.1.1
    Compiling fnv v1.0.7
+   Compiling serde_core v1.0.228
+   Compiling openssl v0.10.74
    Compiling crossbeam-utils v0.8.21
    Compiling http v0.2.12
    Compiling foreign-types v0.3.2
    Compiling synstructure v0.13.2
    Compiling tracing-core v0.1.34
-   Compiling serde v1.0.228
-   Compiling futures-io v0.3.31
+   Compiling futures-task v0.3.31
+   Compiling slab v0.4.11
+   Compiling smallvec v1.15.1
+   Compiling futures-sink v0.3.31
+   Compiling hashbrown v0.16.0
    Compiling pin-utils v0.1.0
+   Compiling serde v1.0.228
    Compiling zerofrom-derive v0.1.6
    Compiling yoke-derive v0.8.0
    Compiling zerovec-derive v0.11.1
    Compiling displaydoc v0.2.5
-   Compiling openssl-macros v0.1.1
    Compiling zerofrom v0.1.6
    Compiling yoke v0.8.0
-   Compiling native-tls v0.2.14
+   Compiling openssl-macros v0.1.1
    Compiling zerovec v0.11.4
-   Compiling smallvec v1.15.1
    Compiling zerotrie v0.2.2
+   Compiling futures-io v0.3.31
+   Compiling native-tls v0.2.14
    Compiling equivalent v1.0.2
-   Compiling hashbrown v0.16.0
-   Compiling slab v0.4.11
-   Compiling futures-task v0.3.31
-   Compiling futures-sink v0.3.31
    Compiling httparse v1.10.1
-   Compiling tokio-util v0.7.16
+   Compiling indexmap v2.12.0
+   Compiling futures-util v0.3.31
    Compiling tinystr v0.8.1
    Compiling potential_utf v0.1.3
    Compiling icu_locale_core v2.0.0
    Compiling icu_collections v2.0.0
    Compiling icu_provider v2.0.0
-   Compiling indexmap v2.12.0
    Compiling icu_normalizer v2.0.0
    Compiling icu_properties v2.0.1
-   Compiling futures-util v0.3.31
    Compiling serde_derive v1.0.228
+   Compiling tokio-util v0.7.16
    Compiling tracing v0.1.41
-   Compiling log v0.4.28
-   Compiling try-lock v0.2.5
+   Compiling rustix v1.1.2
    Compiling openssl-probe v0.1.6
    Compiling percent-encoding v2.3.2
-   Compiling rustix v1.1.2
-   Compiling form_urlencoded v1.2.2
+   Compiling try-lock v0.2.5
+   Compiling log v0.4.28
    Compiling want v0.3.1
-   Compiling h2 v0.3.27
+   Compiling form_urlencoded v1.2.2
    Compiling crossbeam-epoch v0.9.18
+   Compiling h2 v0.3.27
    Compiling idna_adapter v1.2.1
    Compiling http-body v0.4.6
    Compiling futures-channel v0.3.31
-   Compiling errno v0.3.14
    Compiling socket2 v0.5.10
+   Compiling errno v0.3.14
+   Compiling httpdate v1.0.3
    Compiling rayon-core v1.13.0
+   Compiling crc32fast v1.5.0
    Compiling linux-raw-sys v0.11.0
    Compiling tower-service v0.3.3
-   Compiling httpdate v1.0.3
-   Compiling crc32fast v1.5.0
    Compiling utf8_iter v1.0.4
    Compiling idna v1.1.0
    Compiling hyper v0.14.32
    Compiling crossbeam-deque v0.8.6
    Compiling tokio-native-tls v0.3.1
    Compiling aho-corasick v1.1.3
-   Compiling syn v2.0.0 (/var/tmp/top100_artifacts/syn-2.0.0)
-   Compiling ryu v1.0.20
-   Compiling adler2 v2.0.1
-   Compiling rustversion v1.0.22
-   Compiling base64 v0.21.7
-   Compiling anyhow v1.0.100
    Compiling regex-syntax v0.8.8
-   Compiling simd-adler32 v0.3.7
-   Compiling termcolor v1.4.1
    Compiling ref-cast v1.0.25
+   Compiling adler2 v2.0.1
+   Compiling ryu v1.0.20
+   Compiling simd-adler32 v0.3.7
+   Compiling base64 v0.21.7
+   Compiling termcolor v1.4.1
+   Compiling anyhow v1.0.100
+   Compiling syn v2.0.0 (/var/tmp/top100_artifacts/syn-2.0.0)
+   Compiling rustversion v1.0.22
    Compiling syn-test-suite-feature-check v0.0.0 (/var/tmp/top100_artifacts/syn-2.0.0/tests/features/macro)
-   Compiling miniz_oxide v0.8.9
    Compiling rustls-pemfile v1.0.4
-   Compiling serde_urlencoded v0.7.1
-   Compiling xattr v1.6.1
-   Compiling hyper-tls v0.5.0
    Compiling regex-automata v0.4.13
+   Compiling miniz_oxide v0.8.9
+   Compiling serde_urlencoded v0.7.1
+   Compiling hyper-tls v0.5.0
+   Compiling xattr v1.6.1
    Compiling url v2.5.7
    Compiling ref-cast-impl v1.0.25
    Compiling console v0.15.11
    Compiling filetime v0.2.26
    Compiling encoding_rs v0.8.35
-   Compiling same-file v1.0.6
    Compiling either v1.15.0
+   Compiling mime v0.3.17
    Compiling ipnet v2.11.0
    Compiling similar v2.7.0
    Compiling sync_wrapper v0.1.2
-   Compiling mime v0.3.17
+   Compiling same-file v1.0.6
+   Compiling walkdir v2.5.0
    Compiling reqwest v0.11.27
    Compiling insta v1.43.2
    Compiling rayon v1.11.0
-   Compiling walkdir v2.5.0
    Compiling tar v0.4.44
-   Compiling regex v1.12.2
    Compiling flate2 v1.1.5
+   Compiling regex v1.12.2
    Compiling syn-test-suite v0.0.0 (/var/tmp/top100_artifacts/syn-2.0.0/tests/features)
    Compiling automod v1.0.15
 warning: unexpected `cfg` condition name: `doc_cfg`
@@ -5737,23 +5736,39 @@ warning: field `0` is never read
 
 warning: `syn` (lib test) generated 503 warnings (503 duplicates)
 warning: `syn` (lib) generated 503 warnings (90 duplicates) (run `cargo fix --lib -p syn` to apply 1 suggestion)
-error[E0432]: unresolved import `syn::Item`
-   --> tests/test_asyncness.rs:6:17
+warning: unexpected `cfg` condition name: `syn_disable_nightly_tests`
+ --> tests/test_precedence.rs:1:12
+  |
+1 | #![cfg(not(syn_disable_nightly_tests))]
+  |            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = help: expected names are: `docsrs`, `feature`, and `test` and 31 more
+  = help: consider using a Cargo feature instead
+  = help: or consider adding in `Cargo.toml` the `check-cfg` lint config for the lint:
+           [lints.rust]
+           unexpected_cfgs = { level = "warn", check-cfg = ['cfg(syn_disable_nightly_tests)'] }
+  = help: or consider adding `println!("cargo::rustc-check-cfg=cfg(syn_disable_nightly_tests)");` to the top of the `build.rs`
+  = note: see <https://doc.rust-lang.org/nightly/rustc/check-cfg/cargo-specifics.html> for more information about checking conditional configuration
+  = note: `#[warn(unexpected_cfgs)]` on by default
+
+error[E0432]: unresolved import `syn::ItemFn`
+   --> tests/test_generics.rs:11:24
     |
-6   | use syn::{Expr, Item};
-    |                 ^^^^ no `Item` in the root
+11  | use syn::{DeriveInput, ItemFn, TypeParamBound, WhereClause, WherePredicate};
+    |                        ^^^^^^ no `ItemFn` in the root
     |
 note: found an item that was configured out
-   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:385:43
     |
-384 |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
-    |                                                                                        ^^^^
+385 |     ItemConst, ItemEnum, ItemExternCrate, ItemFn, ItemForeignMod, ItemImpl, ItemMacro, ItemMod,
+    |                                           ^^^^^^
 note: the item is gated behind the `full` feature
    --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
     |
 381 | #[cfg(feature = "full")]
     |       ^^^^^^^^^^^^^^^^
 
+warning: `syn` (test "test_precedence") generated 1 warning
 error[E0433]: failed to resolve: could not find `FnArg` in `syn`
     --> tests/macros/../debug/gen.rs:1847:18
      |
@@ -5855,47 +5870,6 @@ note: the item is gated behind the `full` feature
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
-
-error[E0432]: unresolved imports `syn::Item`, `syn::Pat`, `syn::Stmt`
-   --> tests/test_pat.rs:9:11
-    |
-9   | use syn::{Item, Pat, Stmt};
-    |           ^^^^  ^^^  ^^^^ no `Stmt` in the root
-    |           |     |
-    |           |     no `Pat` in the root
-    |           |     help: a similar name exists in the module: `Path`
-    |           no `Item` in the root
-    |
-note: found an item that was configured out
-   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:384:88
-    |
-384 |     ImplItem, ImplItemConst, ImplItemFn, ImplItemMacro, ImplItemType, ImplRestriction, Item,
-    |                                                                                        ^^^^
-note: the item is gated behind the `full` feature
-   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:381:7
-    |
-381 | #[cfg(feature = "full")]
-    |       ^^^^^^^^^^^^^^^^
-note: found an item that was configured out
-   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:442:15
-    |
-442 |     FieldPat, Pat, PatIdent, PatOr, PatParen, PatReference, PatRest, PatSlice, PatStruct, PatTuple,
-    |               ^^^
-note: the item is gated behind the `full` feature
-   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:440:7
-    |
-440 | #[cfg(feature = "full")]
-    |       ^^^^^^^^^^^^^^^^
-note: found an item that was configured out
-   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:48
-    |
-475 | pub use crate::stmt::{Block, Local, LocalInit, Stmt, StmtMacro};
-    |                                                ^^^^
-note: the item is gated behind the `full` feature
-   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
-    |
-474 | #[cfg(feature = "full")]
-    |       ^^^^^^^^^^^^^^^^
 
 error[E0433]: failed to resolve: could not find `ForeignItem` in `syn`
     --> tests/macros/../debug/gen.rs:1902:18
@@ -7015,10 +6989,7 @@ note: the item is gated behind the `full` feature
     |
 474 | #[cfg(feature = "full")]
     |       ^^^^^^^^^^^^^^^^
-help: there is an enum variant `crate::Expr::Block` and 3 others; try using the variant's enum
-    |
-300 - impl Debug for Lite<syn::Block> {
-300 + impl Debug for Lite<crate::Expr> {
+help: there is an enum variant `syn::Expr::Block` and 1 other; try using the variant's enum
     |
 300 - impl Debug for Lite<syn::Block> {
 300 + impl Debug for Lite<syn::Expr> {
@@ -7647,31 +7618,6 @@ note: the item is gated behind the `full` feature
      |
 381  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
-
-error[E0412]: cannot find type `Block` in crate `syn`
-   --> tests/macros/../debug/gen.rs:300:26
-    |
-300 | impl Debug for Lite<syn::Block> {
-    |                          ^^^^^ not found in `syn`
-    |
-note: found an item that was configured out
-   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:23
-    |
-475 | pub use crate::stmt::{Block, Local, LocalInit, Stmt, StmtMacro};
-    |                       ^^^^^
-note: the item is gated behind the `full` feature
-   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
-    |
-474 | #[cfg(feature = "full")]
-    |       ^^^^^^^^^^^^^^^^
-help: there is an enum variant `syn::Expr::Block` and 1 other; try using the variant's enum
-    |
-300 - impl Debug for Lite<syn::Block> {
-300 + impl Debug for Lite<syn::Expr> {
-    |
-300 - impl Debug for Lite<syn::Block> {
-300 + impl Debug for Lite<tar::EntryType> {
-    |
 
 error[E0412]: cannot find type `ItemStruct` in crate `syn`
     --> tests/macros/../debug/gen.rs:2721:26
@@ -8366,10 +8312,7 @@ note: the item is gated behind the `full` feature
      |
 474  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
-help: there is an enum variant `crate::Expr::Block` and 3 others; try using the variant's enum
-     |
-3865 -                     struct Print(syn::Block);
-3865 +                     struct Print(crate::Expr);
+help: there is an enum variant `syn::Expr::Block` and 1 other; try using the variant's enum
      |
 3865 -                     struct Print(syn::Block);
 3865 +                     struct Print(syn::Expr);
@@ -8428,10 +8371,7 @@ note: the item is gated behind the `full` feature
      |
 474  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
-help: there is an enum variant `crate::Expr::Block` and 3 others; try using the variant's enum
-     |
-3968 -             struct Print(syn::Block);
-3968 +             struct Print(crate::Expr);
+help: there is an enum variant `syn::Expr::Block` and 1 other; try using the variant's enum
      |
 3968 -             struct Print(syn::Block);
 3968 +             struct Print(syn::Expr);
@@ -8621,6 +8561,34 @@ note: the item is gated behind the `full` feature
      |       ^^^^^^^^^^^^^^^^
 
 error[E0412]: cannot find type `Block` in crate `syn`
+   --> tests/macros/../debug/gen.rs:300:26
+    |
+300 | impl Debug for Lite<syn::Block> {
+    |                          ^^^^^ not found in `syn`
+    |
+note: found an item that was configured out
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:475:23
+    |
+475 | pub use crate::stmt::{Block, Local, LocalInit, Stmt, StmtMacro};
+    |                       ^^^^^
+note: the item is gated behind the `full` feature
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/lib.rs:474:7
+    |
+474 | #[cfg(feature = "full")]
+    |       ^^^^^^^^^^^^^^^^
+help: there is an enum variant `crate::Expr::Block` and 3 others; try using the variant's enum
+    |
+300 - impl Debug for Lite<syn::Block> {
+300 + impl Debug for Lite<crate::Expr> {
+    |
+300 - impl Debug for Lite<syn::Block> {
+300 + impl Debug for Lite<syn::Expr> {
+    |
+300 - impl Debug for Lite<syn::Block> {
+300 + impl Debug for Lite<tar::EntryType> {
+    |
+
+error[E0412]: cannot find type `Block` in crate `syn`
     --> tests/macros/../debug/gen.rs:3865:39
      |
 3865 |                     struct Print(syn::Block);
@@ -8636,7 +8604,10 @@ note: the item is gated behind the `full` feature
      |
 474  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
-help: there is an enum variant `syn::Expr::Block` and 1 other; try using the variant's enum
+help: there is an enum variant `crate::Expr::Block` and 3 others; try using the variant's enum
+     |
+3865 -                     struct Print(syn::Block);
+3865 +                     struct Print(crate::Expr);
      |
 3865 -                     struct Print(syn::Block);
 3865 +                     struct Print(syn::Expr);
@@ -8661,7 +8632,10 @@ note: the item is gated behind the `full` feature
      |
 474  | #[cfg(feature = "full")]
      |       ^^^^^^^^^^^^^^^^
-help: there is an enum variant `syn::Expr::Block` and 1 other; try using the variant's enum
+help: there is an enum variant `crate::Expr::Block` and 3 others; try using the variant's enum
+     |
+3968 -             struct Print(syn::Block);
+3968 +             struct Print(crate::Expr);
      |
 3968 -             struct Print(syn::Block);
 3968 +             struct Print(syn::Expr);
@@ -10158,96 +10132,115 @@ error[E0609]: no field `expr` on type `ExprYield`
 1692 |         if let Some(val) = &self.value.expr {
      |                                        ^^^^ unknown field
 
-error[E0277]: `syn::Lit` doesn't implement `Debug`
-  --> tests/test_lit.rs:38:37
-   |
-38 |             wrong => panic!("{:?}", wrong),
-   |                                     ^^^^^ `syn::Lit` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-   |
-   = help: the trait `Debug` is not implemented for `syn::Lit`
-
-error[E0277]: `syn::Lit` doesn't implement `Debug`
-  --> tests/test_lit.rs:77:37
-   |
-77 |             wrong => panic!("{:?}", wrong),
-   |                                     ^^^^^ `syn::Lit` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-   |
-   = help: the trait `Debug` is not implemented for `syn::Lit`
-
-error[E0277]: `syn::Lit` doesn't implement `Debug`
-   --> tests/test_lit.rs:107:37
+error[E0277]: `syn::punctuated::Punctuated<TypeParamBound, syn::token::Plus>` doesn't implement `Debug`
+   --> tests/test_generics.rs:258:52
     |
-107 |             wrong => panic!("{:?}", wrong),
-    |                                     ^^^^^ `syn::Lit` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+258 |     assert_eq!(predicate.bounds.len(), 2, "{:#?}", predicate.bounds);
+    |                                                    ^^^^^^^^^^^^^^^^ `syn::punctuated::Punctuated<TypeParamBound, syn::token::Plus>` cannot be formatted using `{:?}` because it doesn't implement `Debug`
     |
-    = help: the trait `Debug` is not implemented for `syn::Lit`
+    = help: the trait `Debug` is not implemented for `syn::punctuated::Punctuated<TypeParamBound, syn::token::Plus>`
+    = note: this error originates in the macro `$crate::format_args` which comes from the expansion of the macro `assert_eq` (in Nightly builds, run with -Z macro-backtrace for more info)
 
-error[E0277]: `syn::Lit` doesn't implement `Debug`
-   --> tests/test_lit.rs:131:37
-    |
-131 |             wrong => panic!("{:?}", wrong),
-    |                                     ^^^^^ `syn::Lit` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-    |
-    = help: the trait `Debug` is not implemented for `syn::Lit`
-
-error[E0277]: `syn::Lit` doesn't implement `Debug`
-   --> tests/test_lit.rs:158:37
-    |
-158 |             wrong => panic!("{:?}", wrong),
-    |                                     ^^^^^ `syn::Lit` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-    |
-    = help: the trait `Debug` is not implemented for `syn::Lit`
-
-error[E0277]: `syn::Lit` doesn't implement `Debug`
-   --> tests/test_lit.rs:198:37
-    |
-198 |             wrong => panic!("{:?}", wrong),
-    |                                     ^^^^^ `syn::Lit` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-    |
-    = help: the trait `Debug` is not implemented for `syn::Lit`
-
-error[E0277]: `LitStr` doesn't implement `Debug`
-    --> tests/test_lit.rs:268:47
-     |
-268  |     let err = syn::parse_str::<LitStr>("...").unwrap_err();
-     |                                               ^^^^^^^^^^ `LitStr` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-     |
-     = help: the trait `Debug` is not implemented for `LitStr`
-note: required by a bound in `Result::<T, E>::unwrap_err`
-    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
-     |
-1198 |     pub fn unwrap_err(self) -> E
-     |            ---------- required by a bound in this associated function
-1199 |     where
-1200 |         T: fmt::Debug,
-     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
-
-error[E0277]: `LitStr` doesn't implement `Debug`
-    --> tests/test_lit.rs:271:45
-     |
-271  |     let err = syn::parse_str::<LitStr>("5").unwrap_err();
-     |                                             ^^^^^^^^^^ `LitStr` cannot be formatted using `{:?}` because it doesn't implement `Debug`
-     |
-     = help: the trait `Debug` is not implemented for `LitStr`
-note: required by a bound in `Result::<T, E>::unwrap_err`
-    --> /home/eddy/.rustup/toolchains/stable-s390x-unknown-linux-gnu/lib/rustlib/src/rust/library/core/src/result.rs:1200:12
-     |
-1198 |     pub fn unwrap_err(self) -> E
-     |            ---------- required by a bound in this associated function
-1199 |     where
-1200 |         T: fmt::Debug,
-     |            ^^^^^^^^^^ required by this bound in `Result::<T, E>::unwrap_err`
-
-Some errors have detailed explanations: E0412, E0432, E0433, E0609.
-For more information about an error, try `rustc --explain E0412`.
-error: could not compile `syn` (test "test_asyncness") due to 404 previous errors
-warning: build failed, waiting for other jobs to finish...
 Some errors have detailed explanations: E0412, E0433, E0609.
-error: could not compile `syn` (test "test_iterators") due to 403 previous errors
-Some errors have detailed explanations: E0277, E0412, E0433, E0609.
+For more information about an error, try `rustc --explain E0412`.
+error[E0369]: binary operation `==` cannot be applied to type `Meta`
+   --> tests/test_meta.rs:62:5
+    |
+62  |     assert_eq!(meta, inner.into());
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     |
+    |     Meta
+    |     _
+    |
+note: the foreign item type `Meta` doesn't implement `PartialEq<_>`
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/attr.rs:462:1
+    |
+462 | / ast_enum_of_structs! {
+463 | |     /// Content of a compile-time structured attribute.
+464 | |     ///
+465 | |     /// ## Path
+...   |
+493 | | }
+    | |_^ not implement `PartialEq<_>`
+    = note: this error originates in the macro `assert_eq` which comes from the expansion of the macro `ast_enum_of_structs` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: `Meta` doesn't implement `Debug`
+  --> tests/test_meta.rs:62:5
+   |
+62 |     assert_eq!(meta, inner.into());
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `Meta` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+   |
+   = help: the trait `Debug` is not implemented for `Meta`
+   = note: this error originates in the macro `assert_eq` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0369]: binary operation `==` cannot be applied to type `Meta`
+   --> tests/test_meta.rs:98:5
+    |
+98  |     assert_eq!(meta, inner.into());
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     |
+    |     Meta
+    |     _
+    |
+note: the foreign item type `Meta` doesn't implement `PartialEq<_>`
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/attr.rs:462:1
+    |
+462 | / ast_enum_of_structs! {
+463 | |     /// Content of a compile-time structured attribute.
+464 | |     ///
+465 | |     /// ## Path
+...   |
+493 | | }
+    | |_^ not implement `PartialEq<_>`
+    = note: this error originates in the macro `assert_eq` which comes from the expansion of the macro `ast_enum_of_structs` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: `Meta` doesn't implement `Debug`
+  --> tests/test_meta.rs:98:5
+   |
+98 |     assert_eq!(meta, inner.into());
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `Meta` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+   |
+   = help: the trait `Debug` is not implemented for `Meta`
+   = note: this error originates in the macro `assert_eq` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error: could not compile `syn` (test "test_attribute") due to 403 previous errors
+warning: build failed, waiting for other jobs to finish...
+error[E0369]: binary operation `==` cannot be applied to type `Meta`
+   --> tests/test_meta.rs:134:5
+    |
+134 |     assert_eq!(meta, inner.into());
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |     |
+    |     Meta
+    |     _
+    |
+note: the foreign item type `Meta` doesn't implement `PartialEq<_>`
+   --> /var/tmp/top100_artifacts/syn-2.0.0/src/attr.rs:462:1
+    |
+462 | / ast_enum_of_structs! {
+463 | |     /// Content of a compile-time structured attribute.
+464 | |     ///
+465 | |     /// ## Path
+...   |
+493 | | }
+    | |_^ not implement `PartialEq<_>`
+    = note: this error originates in the macro `assert_eq` which comes from the expansion of the macro `ast_enum_of_structs` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0277]: `Meta` doesn't implement `Debug`
+   --> tests/test_meta.rs:134:5
+    |
+134 |     assert_eq!(meta, inner.into());
+    |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ `Meta` cannot be formatted using `{:?}` because it doesn't implement `Debug`
+    |
+    = help: the trait `Debug` is not implemented for `Meta`
+    = note: this error originates in the macro `assert_eq` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+Some errors have detailed explanations: E0277, E0412, E0432, E0433, E0609.
 For more information about an error, try `rustc --explain E0277`.
-error: could not compile `syn` (test "test_lit") due to 411 previous errors
-error: could not compile `syn` (test "test_pat") due to 404 previous errors
+error: could not compile `syn` (test "test_generics") due to 405 previous errors
+Some errors have detailed explanations: E0277, E0369, E0412, E0433, E0609.
+error: could not compile `syn` (test "test_meta") due to 409 previous errors
+error: could not compile `syn` (test "test_path") due to 403 previous errors
 + RESULT=101
 + cd /var/tmp/top100_artifacts
 + rm -rf /var/tmp/top100_artifacts/syn-2.0.0
