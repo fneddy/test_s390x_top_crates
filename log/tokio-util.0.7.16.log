@@ -1,82 +1,113 @@
 [tokio-util] download directory: /var/tmp/top100_artifacts/tokio-util-0.7.16
-+ tar xzf -
 + curl -sL https://crates.io/api/v1/crates/tokio-util/0.7.16/download
++ tar xzf -
 + cd /var/tmp/top100_artifacts/tokio-util-0.7.16
 + cargo clean
      Removed 0 files
 + cargo +stable test ''
     Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
-    Blocking waiting for file lock on package cache
    Compiling proc-macro2 v1.0.89
    Compiling unicode-ident v1.0.13
    Compiling autocfg v1.4.0
    Compiling libc v0.2.174
-   Compiling futures-core v0.3.31
    Compiling pin-project-lite v0.2.14
+   Compiling futures-core v0.3.31
    Compiling parking_lot_core v0.9.10
-   Compiling lock_api v0.4.12
    Compiling cfg-if v1.0.0
-   Compiling slab v0.4.9
-   Compiling quote v1.0.37
-   Compiling futures-sink v0.3.31
    Compiling scopeguard v1.2.0
-   Compiling syn v2.0.82
+   Compiling lock_api v0.4.12
+   Compiling slab v0.4.9
+   Compiling futures-sink v0.3.31
+   Compiling quote v1.0.37
    Compiling smallvec v1.13.2
+   Compiling syn v2.0.82
    Compiling futures-channel v0.3.31
-   Compiling futures-task v0.3.31
    Compiling memchr v2.7.4
-   Compiling bytes v1.8.0
-   Compiling signal-hook-registry v1.4.2
-   Compiling parking_lot v0.12.3
-   Compiling mio v1.0.2
-   Compiling socket2 v0.6.0
    Compiling pin-utils v0.1.0
+   Compiling bytes v1.8.0
+   Compiling parking_lot v0.12.3
+   Compiling socket2 v0.6.0
+   Compiling mio v1.0.2
+   Compiling signal-hook-registry v1.4.2
+   Compiling futures-task v0.3.31
    Compiling futures-io v0.3.31
    Compiling rustix v0.38.37
    Compiling errno v0.3.9
    Compiling linux-raw-sys v0.4.14
    Compiling bitflags v2.6.0
-   Compiling fastrand v2.1.1
    Compiling once_cell v1.20.2
+   Compiling fastrand v2.1.1
    Compiling futures-macro v0.3.31
    Compiling tokio-macros v2.5.0
-   Compiling async-stream-impl v0.3.6
    Compiling pin-project-internal v1.1.6
    Compiling tokio v1.47.1
    Compiling futures-util v0.3.31
-   Compiling async-stream v0.3.6
-   Compiling tempfile v3.13.0
+   Compiling async-stream-impl v0.3.6
    Compiling pin-project v1.1.6
+   Compiling tempfile v3.13.0
+   Compiling async-stream v0.3.6
    Compiling futures-executor v0.3.31
-   Compiling futures-test v0.3.31
    Compiling futures v0.3.31
+   Compiling futures-test v0.3.31
    Compiling tokio-stream v0.1.17
    Compiling tokio-util v0.7.16 (/var/tmp/top100_artifacts/tokio-util-0.7.16)
    Compiling tokio-test v0.4.4
-error[E0432]: unresolved import `tokio_util::io`
-  --> tests/io_inspect.rs:8:17
+error: run tokio-util tests with `--features full`
+ --> tests/_require_full.rs:2:1
+  |
+2 | compile_error!("run tokio-util tests with `--features full`");
+  | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+error: could not compile `tokio-util` (test "_require_full") due to 1 previous error
+warning: build failed, waiting for other jobs to finish...
+error[E0432]: unresolved import `tokio_util::codec`
+  --> tests/framed_read.rs:6:17
    |
-8  | use tokio_util::io::{InspectReader, InspectWriter};
-   |                 ^^ could not find `io` in `tokio_util`
+6  | use tokio_util::codec::{Decoder, FramedRead};
+   |                 ^^^^^ could not find `codec` in `tokio_util`
    |
 note: found an item that was configured out
-  --> /var/tmp/top100_artifacts/tokio-util-0.7.16/src/lib.rs:43:13
+  --> /var/tmp/top100_artifacts/tokio-util-0.7.16/src/lib.rs:29:13
    |
-43 |     pub mod io;
-   |             ^^
-note: the item is gated behind the `io` feature
-  --> /var/tmp/top100_artifacts/tokio-util-0.7.16/src/lib.rs:42:1
+29 |     pub mod codec;
+   |             ^^^^^
+note: the item is gated behind the `codec` feature
+  --> /var/tmp/top100_artifacts/tokio-util-0.7.16/src/lib.rs:25:1
    |
-42 | / cfg_io! {
-43 | |     pub mod io;
-44 | | }
+25 | / cfg_codec! {
+26 | |     #[macro_use]
+27 | |     mod tracing;
+...  |
+30 | | }
    | |_^
-   = note: this error originates in the macro `cfg_io` (in Nightly builds, run with -Z macro-backtrace for more info)
+   = note: this error originates in the macro `cfg_codec` (in Nightly builds, run with -Z macro-backtrace for more info)
+
+error[E0432]: unresolved import `tokio_util::codec`
+  --> tests/framed_stream.rs:4:17
+   |
+4  | use tokio_util::codec::{BytesCodec, FramedRead};
+   |                 ^^^^^ could not find `codec` in `tokio_util`
+   |
+note: found an item that was configured out
+  --> /var/tmp/top100_artifacts/tokio-util-0.7.16/src/lib.rs:29:13
+   |
+29 |     pub mod codec;
+   |             ^^^^^
+note: the item is gated behind the `codec` feature
+  --> /var/tmp/top100_artifacts/tokio-util-0.7.16/src/lib.rs:25:1
+   |
+25 | / cfg_codec! {
+26 | |     #[macro_use]
+27 | |     mod tracing;
+...  |
+30 | | }
+   | |_^
+   = note: this error originates in the macro `cfg_codec` (in Nightly builds, run with -Z macro-backtrace for more info)
 
 For more information about this error, try `rustc --explain E0432`.
-error: could not compile `tokio-util` (test "io_inspect") due to 1 previous error
-warning: build failed, waiting for other jobs to finish...
+error: could not compile `tokio-util` (test "framed_read") due to 1 previous error
+error: could not compile `tokio-util` (test "framed_stream") due to 1 previous error
 + RESULT=101
 + cd /var/tmp/top100_artifacts
 + rm -rf /var/tmp/top100_artifacts/tokio-util-0.7.16

@@ -1,6 +1,6 @@
 [pin-project-lite] download directory: /var/tmp/top100_artifacts/pin-project-lite-0.2.16
-+ tar xzf -
 + curl -sL https://crates.io/api/v1/crates/pin-project-lite/0.2.16/download
++ tar xzf -
 + cd /var/tmp/top100_artifacts/pin-project-lite-0.2.16
 + cargo clean
      Removed 0 files
@@ -8,6 +8,7 @@
     Updating crates.io index
     Blocking waiting for file lock on package cache
      Locking 2 packages to latest compatible versions
+    Blocking waiting for file lock on package cache
     Blocking waiting for file lock on package cache
    Compiling rustversion v1.0.22
    Compiling static_assertions v1.1.0
