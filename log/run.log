@@ -74,10 +74,10 @@ ID VERSION RESULT
 [20/100] serde_json 1.0.145 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n serde_json -v 1.0.145 -t /var/tmp/top100_artifacts --
 [18/100] itoa 1.0.15 pass
 [18/100] itoa 1.0.15 finished
-[19/100] rand_chacha 0.9.0 pass
-[19/100] rand_chacha 0.9.0 finished
 [17/100] serde_derive 1.0.228 pass
 [17/100] serde_derive 1.0.228 finished
+[19/100] rand_chacha 0.9.0 pass
+[19/100] rand_chacha 0.9.0 finished
 [20/100] serde_json 1.0.145 pass
 [20/100] serde_json 1.0.145 finished
 [21/100] thiserror-impl 2.0.17 started
@@ -265,11 +265,11 @@ ID VERSION RESULT
 [68/100] windows_i686_msvc 0.53.1 started
 [68/100] windows_i686_msvc 0.53.1 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n windows_i686_msvc -v 0.53.1 -t /var/tmp/top100_artifacts --
 [68/100] windows_i686_msvc 0.53.1 pass
-[66/100] windows_x86_64_gnu 0.53.1 pass
-[66/100] windows_x86_64_gnu 0.53.1 finished
 [68/100] windows_i686_msvc 0.53.1 finished
 [65/100] memoffset 0.9.1 pass
 [65/100] memoffset 0.9.1 finished
+[66/100] windows_x86_64_gnu 0.53.1 pass
+[66/100] windows_x86_64_gnu 0.53.1 finished
 [67/100] url 2.5.7 pass
 [67/100] url 2.5.7 finished
 [69/100] windows_aarch64_msvc 0.53.1 started
@@ -312,10 +312,10 @@ ID VERSION RESULT
 [79/100] futures-util 0.3.31 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n futures-util -v 0.3.31 -t /var/tmp/top100_artifacts --
 [80/100] futures-task 0.3.31 started
 [80/100] futures-task 0.3.31 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n futures-task -v 0.3.31 -t /var/tmp/top100_artifacts --
-[80/100] futures-task 0.3.31 pass
-[80/100] futures-task 0.3.31 finished
 [77/100] windows-targets 0.53.5 pass
 [77/100] windows-targets 0.53.5 finished
+[80/100] futures-task 0.3.31 pass
+[80/100] futures-task 0.3.31 finished
 [79/100] futures-util 0.3.31 pass
 [79/100] futures-util 0.3.31 finished
 [78/100] ahash 0.8.12 pass
@@ -364,10 +364,10 @@ ID VERSION RESULT
 [92/100] windows_x86_64_gnullvm 0.53.1 finished
 [91/100] unicode-width 0.2.2 pass
 [91/100] unicode-width 0.2.2 finished
-[90/100] futures-channel 0.3.31 pass
-[90/100] futures-channel 0.3.31 finished
 [89/100] tracing 0.1.41 fail
 [89/100] tracing 0.1.41 finished
+[90/100] futures-channel 0.3.31 pass
+[90/100] futures-channel 0.3.31 finished
 [93/100] windows_aarch64_gnullvm 0.53.1 started
 [93/100] windows_aarch64_gnullvm 0.53.1 /home/eddy/src/test_s390x_top_crates/scripts/test_cratesio.sh -n windows_aarch64_gnullvm -v 0.53.1 -t /var/tmp/top100_artifacts --
 [94/100] tempfile 3.23.0 started
