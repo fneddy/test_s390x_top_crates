@@ -10,76 +10,64 @@
      Locking 82 packages to latest compatible versions
       Adding criterion v0.3.6 (available: v0.7.0)
     Blocking waiting for file lock on package cache
-   Compiling serde_core v1.0.228
    Compiling proc-macro2 v1.0.103
+   Compiling serde_core v1.0.228
    Compiling quote v1.0.41
    Compiling crossbeam-utils v0.8.21
    Compiling unicode-ident v1.0.22
-   Compiling memchr v2.7.6
    Compiling serde v1.0.228
    Compiling autocfg v1.5.0
+   Compiling memchr v2.7.6
+   Compiling num-traits v0.2.19
    Compiling syn v2.0.108
    Compiling crossbeam-epoch v0.9.18
-   Compiling itoa v1.0.15
-   Compiling num-traits v0.2.19
-   Compiling either v1.15.0
-   Compiling ryu v1.0.20
-   Compiling rayon-core v1.13.0
    Compiling serde_json v1.0.145
+   Compiling rayon-core v1.13.0
+   Compiling either v1.15.0
    Compiling libc v0.2.177
+   Compiling ryu v1.0.20
+   Compiling itoa v1.0.15
    Compiling crossbeam-deque v0.8.6
-   Compiling unicode-width v0.1.14
-   Compiling futures-core v0.3.31
-   Compiling regex-syntax v0.8.8
    Compiling plotters-backend v0.3.7
-   Compiling pin-project-lite v0.2.16
+   Compiling futures-core v0.3.31
    Compiling futures-sink v0.3.31
-   Compiling plotters-svg v0.3.7
+   Compiling regex-syntax v0.8.8
+   Compiling unicode-width v0.1.14
+   Compiling pin-project-lite v0.2.16
    Compiling textwrap v0.11.0
    Compiling regex-automata v0.4.13
+   Compiling plotters-svg v0.3.7
    Compiling itertools v0.10.5
    Compiling csv-core v0.1.13
-   Compiling half v1.8.3
-   Compiling same-file v1.0.6
-   Compiling futures-task v0.3.31
    Compiling cast v0.3.0
    Compiling bitflags v1.3.2
    Compiling once_cell v1.21.3
+   Compiling same-file v1.0.6
+   Compiling half v1.8.3
+   Compiling futures-task v0.3.31
    Compiling pin-utils v0.1.0
-   Compiling criterion-plot v0.4.5
+   Compiling serde_cbor v0.11.2
    Compiling futures-util v0.3.31
+   Compiling walkdir v2.5.0
+   Compiling criterion-plot v0.4.5
+   Compiling tracing-core v0.1.34
+   Compiling atty v0.2.14
+   Compiling clap v2.34.0
+   Compiling csv v1.4.0
    Compiling serde_derive v1.0.228
    Compiling tracing-attributes v0.1.30
-   Compiling tracing-core v0.1.34
-   Compiling clap v2.34.0
-   Compiling walkdir v2.5.0
-   Compiling serde_cbor v0.11.2
-   Compiling csv v1.4.0
    Compiling plotters v0.3.7
-   Compiling atty v0.2.14
    Compiling rayon v1.11.0
    Compiling regex v1.12.2
    Compiling tinytemplate v1.2.1
    Compiling futures-channel v0.3.31
+   Compiling lazy_static v1.5.0
    Compiling oorandom v11.1.5
    Compiling futures-io v0.3.31
-   Compiling lazy_static v1.5.0
    Compiling futures v0.3.31
    Compiling log v0.4.28
    Compiling tracing v0.1.41 (/var/tmp/top100_artifacts/tracing-0.1.41)
    Compiling criterion v0.3.6
-error[E0432]: unresolved import `tracing_mock`
-  --> tests/filter_caching_is_lexically_scoped.rs:11:5
-   |
-11 | use tracing_mock::*;
-   |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `tracing_mock`
-   |
-help: there is a crate or module with a similar name
-   |
-11 - use tracing_mock::*;
-11 + use tracing_core::*;
-   |
-
 error[E0432]: unresolved import `tracing_mock`
  --> tests/no_subscriber.rs:3:5
   |
@@ -92,10 +80,35 @@ help: there is a crate or module with a similar name
 3 + use tracing_core::subscriber;
   |
 
+error[E0432]: unresolved import `tracing_mock`
+ --> tests/filters_dont_leak.rs:3:5
+  |
+3 | use tracing_mock::*;
+  |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `tracing_mock`
+  |
+help: there is a crate or module with a similar name
+  |
+3 - use tracing_mock::*;
+3 + use tracing_core::*;
+  |
+
 For more information about this error, try `rustc --explain E0432`.
 error: could not compile `tracing` (test "no_subscriber") due to 1 previous error
 warning: build failed, waiting for other jobs to finish...
-error: could not compile `tracing` (test "filter_caching_is_lexically_scoped") due to 1 previous error
+error[E0432]: unresolved import `tracing_mock`
+  --> tests/span.rs:14:5
+   |
+14 | use tracing_mock::*;
+   |     ^^^^^^^^^^^^ use of unresolved module or unlinked crate `tracing_mock`
+   |
+help: there is a crate or module with a similar name
+   |
+14 - use tracing_mock::*;
+14 + use tracing_core::*;
+   |
+
+error: could not compile `tracing` (test "filters_dont_leak") due to 1 previous error
+error: could not compile `tracing` (test "span") due to 1 previous error
 + RESULT=101
 + cd /var/tmp/top100_artifacts
 + rm -rf /var/tmp/top100_artifacts/tracing-0.1.41
