@@ -1,4 +1,4 @@
-Testresults as of Mon Nov  3 02:53:01 PM CET 2025
+Testresults as of Tue Nov  4 02:53:00 PM CET 2025
 PASS: 86
 FAIL: 13
 SKIPPED: 2
@@ -8,8 +8,8 @@ FAILED_CRATES:
 [14/100] cfg-if 1.0.4 fail
 [23/100] unicode-ident 1.0.22 fail
 [24/100] once_cell 1.21.3 fail
-[28/100] regex 1.12.2 fail
-[44/100] idna 1.1.0 fail
+[29/100] regex 1.12.2 fail
+[45/100] idna 1.1.0 fail
 [50/100] pin-project-lite 0.2.16 fail
 [75/100] rustls 0.23.34 fail
 [82/100] sha2 0.11.0-rc.2 fail

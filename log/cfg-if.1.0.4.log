@@ -1,6 +1,6 @@
 [cfg-if] download directory: /var/tmp/top100_artifacts/cfg-if-1.0.4
-+ tar xzf -
 + curl -sL https://crates.io/api/v1/crates/cfg-if/1.0.4/download
++ tar xzf -
 + cd /var/tmp/top100_artifacts/cfg-if-1.0.4
 + cargo clean
      Removed 0 files
